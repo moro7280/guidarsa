@@ -1,0 +1,219 @@
+// Mapping colonne per l'export open data di Regione Lombardia.
+// Un file per fonte: lo script di import (scripts/import-lombardia.mjs) resta
+// generico, qui sta tutto quello che cambia da una regione all'altra.
+
+export const fonte = {
+  file: "data/lombardia-rsa.csv",
+  nome: "Regione Lombardia — Elenco Residenze Sanitarie Assistenziali",
+  url: "https://dati.lombardia.it",
+  // Congelata qui: identifica la versione del dataset da cui provengono le righe.
+  scaricatoIl: "2026-08-18",
+  fonteDati: "opendata_lombardia",
+  regione: "Lombardia",
+  tipologia: "rsa",
+};
+
+/** Sigle delle province lombarde presenti nel dataset. */
+export const PROVINCE = {
+  BG: "Bergamo",
+  BS: "Brescia",
+  CO: "Como",
+  CR: "Cremona",
+  LC: "Lecco",
+  LO: "Lodi",
+  MB: "Monza e della Brianza",
+  MI: "Milano",
+  MN: "Mantova",
+  PV: "Pavia",
+  SO: "Sondrio",
+  VA: "Varese",
+};
+
+/** Parole che restano maiuscole quando si normalizza un nome tutto MAIUSCOLO. */
+const ACRONIMI = new Set([
+  "RSA", "RSD", "ASP", "ASST", "ATS", "IPAB", "ONLUS", "SRL", "S.R.L.", "SPA",
+  "S.P.A.", "SNC", "SAS", "COOP", "SOC", "IRCCS", "ASL", "CDI", "APS", "ODV",
+  "SS", "SP", "SC", "II", "III", "IV", "VI", "VII", "VIII", "IX", "XI", "XII",
+]);
+
+/** Parole che restano minuscole se non sono la prima. */
+const MINUSCOLE = new Set([
+  "di", "de", "del", "della", "dello", "dei", "degli", "delle", "da", "dal",
+  "dalla", "e", "ed", "in", "il", "lo", "la", "i", "gli", "le", "a", "al",
+  "alla", "per", "con", "su", "tra", "fra", "d", "l",
+]);
+
+/**
+ * "RSA SAN SISTO 2" -> "RSA San Sisto 2"
+ * "CASA DI RIPOSO S. GIUSEPPE" -> "Casa di Riposo S. Giuseppe"
+ * "CASSANO D'ADDA" -> "Cassano d'Adda"
+ */
+export function normalizzaMaiuscole(valore) {
+  const testo = (valore ?? "").trim().replace(/\s+/g, " ");
+  if (!testo) return "";
+  // Se non è tutto maiuscolo, la fonte ha già una sua forma: non la tocchiamo.
+  if (testo !== testo.toUpperCase()) return testo;
+
+  return testo
+    .split(" ")
+    .map((parola, indice) => {
+      if (ACRONIMI.has(parola)) return parola;
+      // Gestisce l'apostrofo: D'ADDA -> d'Adda, SANT'ANGELO -> Sant'Angelo
+      const pezzi = parola.split("'");
+      const composta = pezzi
+        .map((pezzo, i) => {
+          const minuscolo = pezzo.toLowerCase();
+          if (ACRONIMI.has(pezzo)) return pezzo;
+          if (i === 0 && indice > 0 && MINUSCOLE.has(minuscolo)) return minuscolo;
+          return minuscolo.charAt(0).toUpperCase() + minuscolo.slice(1);
+        })
+        .join("'");
+      // "Sant'angelo" -> "Sant'Angelo"
+      return composta.replace(/'([a-zà-ù])/g, (_, c) => `'${c.toUpperCase()}`);
+    })
+    .join(" ");
+}
+
+/** "24.126" -> "24126"; restituisce null se non sono 5 cifre. */
+export function normalizzaCap(valore) {
+  const cifre = (valore ?? "").replace(/\D/g, "");
+  return /^\d{5}$/.test(cifre) ? cifre : null;
+}
+
+/** "45,67749" -> 45.67749 */
+function numeroConVirgola(valore) {
+  const testo = (valore ?? "").trim().replace(",", ".");
+  const numero = Number.parseFloat(testo);
+  return Number.isFinite(numero) ? numero : null;
+}
+
+/** Riquadro geografico della Lombardia, per scartare coordinate assurde. */
+const RIQUADRO = { latMin: 44.6, latMax: 46.7, lngMin: 8.4, lngMax: 11.5 };
+
+/**
+ * Coordinate: preferisce la colonna Location ("POINT (lng lat)"), che usa già
+ * il punto decimale; ripiega su WGS84_Y/WGS84_X con la virgola.
+ */
+export function estraiCoordinate(riga) {
+  const point = (riga.Location ?? "").match(
+    /POINT\s*\(\s*(-?\d+(?:\.\d+)?)\s+(-?\d+(?:\.\d+)?)\s*\)/i,
+  );
+
+  const lng = point ? Number.parseFloat(point[1]) : numeroConVirgola(riga.WGS84_X);
+  const lat = point ? Number.parseFloat(point[2]) : numeroConVirgola(riga.WGS84_Y);
+
+  if (lat === null || lng === null) return { lat: null, lng: null, valide: false };
+
+  const dentro =
+    lat >= RIQUADRO.latMin && lat <= RIQUADRO.latMax &&
+    lng >= RIQUADRO.lngMin && lng <= RIQUADRO.lngMax;
+
+  return { lat, lng, valide: dentro };
+}
+
+function intero(valore) {
+  const numero = Number.parseInt((valore ?? "").replace(/\D/g, ""), 10);
+  return Number.isInteger(numero) && numero >= 0 ? numero : null;
+}
+
+/**
+ * Descrizione costruita solo con campi realmente presenti nella fonte.
+ * Nessun aggettivo inventato: se un dato manca, la frase corrispondente sparisce.
+ */
+function componiDescrizione({ nome, comune, provincia, gestore, natura, accreditati, autorizzati, convenzionata }) {
+  const frasi = [];
+
+  frasi.push(
+    `${nome} è una residenza sanitaria assistenziale (RSA) con sede a ${comune}, in provincia di ${provincia}.`,
+  );
+
+  if (accreditati !== null && autorizzati !== null && accreditati !== autorizzati) {
+    frasi.push(
+      `La struttura dispone di ${autorizzati} posti letto autorizzati, di cui ${accreditati} accreditati con il servizio sanitario regionale.`,
+    );
+  } else if (accreditati !== null) {
+    frasi.push(`La struttura dispone di ${accreditati} posti letto accreditati.`);
+  } else if (autorizzati !== null) {
+    frasi.push(`La struttura dispone di ${autorizzati} posti letto autorizzati.`);
+  }
+
+  if (gestore) {
+    frasi.push(
+      `È gestita da ${gestore}${natura ? ` ed è a gestione ${natura.toLowerCase()}` : ""}.`,
+    );
+  } else if (natura) {
+    frasi.push(`È una struttura a gestione ${natura.toLowerCase()}.`);
+  }
+
+  frasi.push(
+    convenzionata
+      ? "Risulta accreditata: una parte della retta può essere coperta dal servizio sanitario regionale."
+      : "Non risulta accreditata: la retta è interamente a carico dell'ospite o della famiglia.",
+  );
+
+  frasi.push(
+    "I dati provengono dall'elenco open data di Regione Lombardia e non includono recapiti telefonici, sito web e rette.",
+  );
+
+  return frasi.join(" ");
+}
+
+/**
+ * Trasforma una riga del CSV in una struttura del nostro schema.
+ * Restituisce { ok: true, struttura } oppure { ok: false, motivo }.
+ */
+export function normalizzaRiga(riga) {
+  const nome = normalizzaMaiuscole(riga.DENOM_STRUTTURA);
+  if (!nome) return { ok: false, motivo: "denominazione mancante" };
+
+  const comune = normalizzaMaiuscole(riga.COMUNE_UBICAZIONE);
+  if (!comune) return { ok: false, motivo: "comune mancante" };
+
+  const sigla = (riga.PROV_COMUNE_UBICAZIONE ?? "").trim().toUpperCase();
+  const provincia = PROVINCE[sigla];
+  if (!provincia) {
+    return { ok: false, motivo: `sigla provincia sconosciuta: "${sigla || "vuota"}"` };
+  }
+
+  const cap = normalizzaCap(riga.CAP);
+  if (!cap) return { ok: false, motivo: `CAP non valido: "${riga.CAP ?? ""}"` };
+
+  const { lat, lng, valide } = estraiCoordinate(riga);
+  if (!valide) return { ok: false, motivo: "coordinate assenti o fuori dalla Lombardia" };
+
+  const accreditati = intero(riga.TOT_POSTI_ACCREDITATI);
+  const autorizzati = intero(riga.TOT_POSTI_AUTORIZZATI);
+  const convenzionata = (riga.FL_ACCREDITATA ?? "").trim().toUpperCase() === "SI";
+  const gestore = normalizzaMaiuscole(riga.DENOM_GESTORE);
+  const natura = (riga.PUBBLICA_PRIVATA ?? "").trim();
+
+  return {
+    ok: true,
+    codiceFonte: (riga.COD_STRUTTURA ?? "").trim(),
+    struttura: {
+      nome,
+      tipologia: fonte.tipologia,
+      indirizzo: normalizzaMaiuscole(riga.INDIRIZZO_UBICAZIONE).replace(/,(\S)/g, ", $1") || null,
+      cap,
+      comune,
+      provincia,
+      provincia_sigla: sigla,
+      regione: fonte.regione,
+      lat,
+      lng,
+      telefono: null,
+      email: null,
+      sito_web: null,
+      posti_letto: accreditati ?? autorizzati,
+      convenzionata,
+      // La fonte non dice nulla sui nuclei Alzheimer: null, non false.
+      nucleo_alzheimer: null,
+      prezzo_min: null,
+      prezzo_max: null,
+      descrizione: componiDescrizione({
+        nome, comune, provincia, gestore, natura, accreditati, autorizzati, convenzionata,
+      }),
+      fonte_dati: fonte.fonteDati,
+    },
+  };
+}

@@ -106,7 +106,12 @@ export default async function PaginaStruttura({
           <div className="rounded-lg border border-slate-200 bg-white p-4">
             <dt className="text-sm text-slate-500">Nucleo Alzheimer</dt>
             <dd className="mt-1 font-medium text-slate-900">
-              {struttura.nucleo_alzheimer ? "Sì" : "No"}
+              {/* null = la fonte non lo dice: non va mai reso come un "No". */}
+              {struttura.nucleo_alzheimer === null
+                ? "Informazione non disponibile"
+                : struttura.nucleo_alzheimer
+                  ? "Sì"
+                  : "No"}
             </dd>
           </div>
           <div className="rounded-lg border border-slate-200 bg-white p-4">

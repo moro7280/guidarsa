@@ -2,11 +2,15 @@ import Link from "next/link";
 import { AvvisoDemo } from "@/components/AvvisoDemo";
 import { GUIDE } from "@/lib/guide";
 import { percorsi } from "@/lib/percorsi";
-import { getRegioni, isDatasetDemo } from "@/lib/strutture";
-import { SLUG_TIPOLOGIE, TIPOLOGIE } from "@/lib/tipologie";
+import { getRegioni, getTipologieDisponibili, isDatasetDemo } from "@/lib/strutture";
+import { TIPOLOGIE } from "@/lib/tipologie";
 
 export default async function Home() {
-  const regioni = await getRegioni();
+  const tipologie = await getTipologieDisponibili();
+  // I link "Regioni coperte" puntano alla prima tipologia disponibile: così
+  // ogni link porta a una pagina che esiste davvero.
+  const tipologiaPrincipale = tipologie[0];
+  const regioni = await getRegioni(tipologiaPrincipale);
   const demo = await isDatasetDemo();
 
   return (
@@ -26,7 +30,7 @@ export default async function Home() {
       <section>
         <h2 className="text-xl font-semibold text-slate-900">Cerca per tipologia</h2>
         <ul className="mt-4 grid gap-4 sm:grid-cols-2">
-          {SLUG_TIPOLOGIE.map((slug) => (
+          {tipologie.map((slug) => (
             <li key={slug}>
               <Link
                 href={percorsi.tipologia(slug)}
@@ -44,13 +48,14 @@ export default async function Home() {
         </ul>
       </section>
 
+      {tipologiaPrincipale && (
       <section>
         <h2 className="text-xl font-semibold text-slate-900">Regioni coperte</h2>
         <ul className="mt-4 flex flex-wrap gap-2">
           {regioni.map((regione) => (
             <li key={regione.slug}>
               <Link
-                href={percorsi.regione("rsa", regione.slug)}
+                href={percorsi.regione(tipologiaPrincipale, regione.slug)}
                 className="inline-block rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-700 transition hover:border-teal-300 hover:text-teal-800"
               >
                 {regione.nome}
@@ -59,6 +64,7 @@ export default async function Home() {
           ))}
         </ul>
       </section>
+      )}
 
       <section>
         <h2 className="text-xl font-semibold text-slate-900">Guide per le famiglie</h2>

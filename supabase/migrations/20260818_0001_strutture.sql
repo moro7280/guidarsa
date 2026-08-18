@@ -27,7 +27,9 @@ create table if not exists public.strutture (
 
   posti_letto integer check (posti_letto is null or posti_letto >= 0),
   convenzionata boolean not null default false,
-  nucleo_alzheimer boolean not null default false,
+  -- Nullable di proposito: null = "non sappiamo", diverso da false = "non c'e`".
+  -- Le fonti open data spesso non riportano il dato.
+  nucleo_alzheimer boolean,
   prezzo_min integer check (prezzo_min is null or prezzo_min >= 0),
   prezzo_max integer check (prezzo_max is null or prezzo_max >= 0),
 

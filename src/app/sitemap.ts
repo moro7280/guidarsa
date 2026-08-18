@@ -2,14 +2,21 @@ import type { MetadataRoute } from "next";
 import { GUIDE } from "@/lib/guide";
 import { percorsi } from "@/lib/percorsi";
 import { urlAssoluta } from "@/lib/seo";
-import { getCombinazioni, getStrutture } from "@/lib/strutture";
-import { SLUG_TIPOLOGIE } from "@/lib/tipologie";
+import { getCombinazioni, getStrutture, getTipologieDisponibili } from "@/lib/strutture";
 
 /**
  * Sitemap generata dai dati, raggruppata per tipo di pagina:
  * home e hub, pagine geografiche, schede struttura, guide.
  * Contiene solo pagine effettivamente generate (nessuna pagina vuota).
+ *
+ * force-dynamic non è un vezzo: senza, Next tratta questo Route Handler come
+ * cacheabile e tra una build e l'altra riusa la sitemap precedente. Dopo un
+ * import il file resterebbe fermo ai dati vecchi — successo silenzioso, il
+ * peggior tipo di errore per la SEO. I dati arrivano da un database esterno,
+ * che Next non può sapere quando cambia: la sitemap si rigenera a ogni
+ * richiesta, e con la lettura memoizzata costa una query per processo.
  */
+export const dynamic = "force-dynamic";
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const combinazioni = await getCombinazioni();
   const strutture = await getStrutture();
@@ -19,7 +26,9 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { url: urlAssoluta(percorsi.guide()), changeFrequency: "monthly", priority: 0.6 },
   ];
 
-  const hubTipologie: MetadataRoute.Sitemap = SLUG_TIPOLOGIE.map((tipologia) => ({
+  // Solo le tipologie con strutture: un hub vuoto risponde 404 e in sitemap
+  // sarebbe un errore di scansione.
+  const hubTipologie: MetadataRoute.Sitemap = (await getTipologieDisponibili()).map((tipologia) => ({
     url: urlAssoluta(percorsi.tipologia(tipologia)),
     changeFrequency: "weekly",
     priority: 0.8,

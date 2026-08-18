@@ -28,7 +28,8 @@ export interface Struttura {
   sito_web: string | null;
   posti_letto: number | null;
   convenzionata: boolean;
-  nucleo_alzheimer: boolean;
+  /** null = informazione non disponibile: non equivale a "non c'è". */
+  nucleo_alzheimer: boolean | null;
   prezzo_min: number | null;
   prezzo_max: number | null;
   descrizione: string;

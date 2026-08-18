@@ -1,6 +1,7 @@
 import { STRUTTURE_DEMO } from "./mock-data";
 import { slugify } from "./slug";
 import { getSupabaseClient, supabaseConfigurato } from "./supabase";
+import { SLUG_TIPOLOGIE } from "./tipologie";
 import type { NodoGeografico, Struttura, Tipologia } from "./types";
 
 /** Colonne lette dalla tabella `strutture`: corrispondono al type Struttura. */
@@ -184,5 +185,16 @@ export async function getSlugStrutture(): Promise<string[]> {
 /** true se il dataset attuale contiene solo dati dimostrativi. */
 export async function isDatasetDemo(): Promise<boolean> {
   const strutture = await tutte();
-  return strutture.every((struttura) => struttura.fonte_dati === "demo");
+  return strutture.length > 0 && strutture.every((struttura) => struttura.fonte_dati === "demo");
+}
+
+/**
+ * Tipologie che hanno almeno una struttura nel dataset corrente.
+ * Nav, footer e home linkano solo queste: una pagina hub senza strutture
+ * risponde 404 e CLAUDE.md vieta di linkare rotte che non esistono.
+ */
+export async function getTipologieDisponibili(): Promise<Tipologia[]> {
+  const strutture = await tutte();
+  const presenti = new Set(strutture.map((struttura) => struttura.tipologia));
+  return SLUG_TIPOLOGIE.filter((tipologia) => presenti.has(tipologia));
 }

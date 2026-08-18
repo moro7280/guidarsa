@@ -4,7 +4,8 @@ import { Geist } from "next/font/google";
 import "./globals.css";
 import { percorsi } from "@/lib/percorsi";
 import { NOME_SITO, URL_SITO } from "@/lib/seo";
-import { SLUG_TIPOLOGIE, TIPOLOGIE } from "@/lib/tipologie";
+import { getTipologieDisponibili } from "@/lib/strutture";
+import { TIPOLOGIE } from "@/lib/tipologie";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -21,11 +22,15 @@ export const metadata: Metadata = {
     "Directory delle strutture per anziani in Italia: RSA, case di riposo, centri diurni e assistenza domiciliare, comune per comune.",
 };
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  // Solo le tipologie che hanno strutture: linkare un hub vuoto significa
+  // linkare un 404 (CLAUDE.md, regole SEO).
+  const tipologie = await getTipologieDisponibili();
+
   return (
     <html lang="it" className={`${geistSans.variable} h-full antialiased`}>
       <body className="flex min-h-full flex-col bg-slate-50 text-slate-900">
@@ -36,7 +41,7 @@ export default function RootLayout({
             </Link>
             <nav aria-label="Navigazione principale">
               <ul className="flex flex-wrap gap-x-4 gap-y-2 text-sm">
-                {SLUG_TIPOLOGIE.map((slug) => (
+                {tipologie.map((slug) => (
                   <li key={slug}>
                     <Link
                       href={percorsi.tipologia(slug)}
