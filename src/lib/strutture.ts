@@ -1,16 +1,58 @@
 import { STRUTTURE_DEMO } from "./mock-data";
 import { slugify } from "./slug";
+import { getSupabaseClient, supabaseConfigurato } from "./supabase";
 import type { NodoGeografico, Struttura, Tipologia } from "./types";
 
+/** Colonne lette dalla tabella `strutture`: corrispondono al type Struttura. */
+const COLONNE =
+  "nome,slug,tipologia,indirizzo,cap,comune,provincia,provincia_sigla,regione,lat,lng,telefono,email,sito_web,posti_letto,convenzionata,nucleo_alzheimer,prezzo_min,prezzo_max,descrizione,fonte_dati,updated_at";
+
+/** PostgREST restituisce al massimo 1000 righe per richiesta. */
+const PAGINA = 1000;
+
+async function leggiDaSupabase(): Promise<Struttura[]> {
+  const client = getSupabaseClient();
+  const strutture: Struttura[] = [];
+
+  for (let inizio = 0; ; inizio += PAGINA) {
+    const { data, error } = await client
+      .from("strutture")
+      .select(COLONNE)
+      .order("nome", { ascending: true })
+      .range(inizio, inizio + PAGINA - 1);
+
+    if (error) {
+      // Nessun ripiego silenzioso sui dati demo: pubblicare dati finti
+      // credendo di pubblicare dati reali è peggio di una build rotta.
+      throw new Error(
+        `Lettura della tabella "strutture" da Supabase fallita (${error.code ?? "?"}): ${error.message}`,
+      );
+    }
+
+    const righe = (data ?? []) as unknown as Struttura[];
+    strutture.push(...righe);
+    if (righe.length < PAGINA) break;
+  }
+
+  return strutture;
+}
+
 /**
- * Unico punto di accesso ai dati delle strutture.
+ * Unico punto di accesso ai dati delle strutture: Supabase quando le variabili
+ * d'ambiente sono configurate, altrimenti i dati dimostrativi.
  *
- * TODO(dati reali): sostituire `STRUTTURE_DEMO` con le query a Supabase
- * (tabella `strutture`, vedi src/lib/supabase.ts). Le firme delle funzioni
- * sono già asincrone: le pagine non dovranno cambiare.
+ * Il risultato è memoizzato: durante la build ogni pagina chiama questa
+ * funzione più volte e senza cache sarebbero decine di query identiche.
  */
+let cache: Promise<Struttura[]> | null = null;
+
 async function tutte(): Promise<Struttura[]> {
-  return STRUTTURE_DEMO;
+  if (!cache) {
+    cache = supabaseConfigurato()
+      ? leggiDaSupabase()
+      : Promise.resolve(STRUTTURE_DEMO);
+  }
+  return cache;
 }
 
 export interface FiltroStrutture {

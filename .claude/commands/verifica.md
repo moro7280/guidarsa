@@ -19,9 +19,14 @@ Con uno script temporaneo Node che legge `.env.local` e usa la service role key:
 
 - Verifica che le tabelle `strutture` e `leads` esistano (una risposta `PGRST205`
   significa tabella assente; `GET /rest/v1/` elenca le tabelle esposte).
-- Verifica che RLS sia attiva con le policy previste. PostgREST non espone
-  `pg_policies`: usa una funzione RPC dedicata se esiste, altrimenti confronta il
-  comportamento tra chiave anon e service role e dichiara cosa non è verificabile.
+- Verifica RLS e policy chiamando la RPC dedicata:
+  `POST /rest/v1/rpc/verifica_schema` con la service role key (definita in
+  `supabase/migrations/20260818_0003_verifica_schema.sql`). Attesi:
+  - `strutture` → `rls_attiva: true`, policy `strutture_lettura_pubblica`
+  - `leads` → `rls_attiva: true`, policy `leads_inserimento_pubblico`
+  Un `PGRST202` significa che la migration della RPC non è stata applicata.
+- Controprova con la chiave anon: `select` su `strutture` deve funzionare,
+  `select` su `leads` non deve restituire righe.
 - Conta le righe di `strutture`, totali e **per provincia**.
 - Segnala: `slug` duplicati, righe con campi critici vuoti (`nome`, `comune`,
   `provincia`, `regione`), quante righe hanno `fonte_dati` = `"demo"` invece di
