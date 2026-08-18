@@ -187,6 +187,12 @@ function componiDescrizione({ nome, comune, provincia, gestore, natura, accredit
 /**
  * Trasforma una riga del CSV in una struttura del nostro schema.
  * Restituisce { ok: true, struttura } oppure { ok: false, motivo }.
+ *
+ * Include SOLO i campi che questa fonte contiene davvero. Telefono, email,
+ * sito, prezzi e nucleo_alzheimer restano fuori dal payload: mandarli a null
+ * significherebbe che un reimport cancella quanto aggiunto dall'arricchimento
+ * (OSM, siti ufficiali, dati forniti dalle strutture). Le colonne assenti
+ * dall'upsert non vengono toccate sulle righe esistenti.
  */
 export function normalizzaRiga(riga) {
   const nome = normalizzaMaiuscole(riga.DENOM_STRUTTURA);
@@ -227,15 +233,12 @@ export function normalizzaRiga(riga) {
       regione: fonte.regione,
       lat,
       lng,
-      telefono: null,
-      email: null,
-      sito_web: null,
       posti_letto: accreditati ?? autorizzati,
       convenzionata,
-      // La fonte non dice nulla sui nuclei Alzheimer: null, non false.
-      nucleo_alzheimer: null,
-      prezzo_min: null,
-      prezzo_max: null,
+      codice_struttura_fonte: (riga.COD_STRUTTURA ?? "").trim() || null,
+      denominazione_gestore: gestore || null,
+      partita_iva_gestore: (riga.P_IVA ?? "").trim() || null,
+      codice_fiscale_gestore: (riga.COD_FISCALE_GESTORE ?? "").trim() || null,
       descrizione: componiDescrizione({
         nome, comune, provincia, gestore, natura, accreditati, autorizzati, convenzionata,
       }),

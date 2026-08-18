@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { AttribuzioneOsm } from "@/components/AttribuzioneOsm";
 import { AvvisoDemo } from "@/components/AvvisoDemo";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { JsonLd } from "@/components/JsonLd";
@@ -147,6 +148,8 @@ export default async function PaginaStruttura({
           </li>
         </ul>
       </section>
+
+      <AttribuzioneOsm struttura={struttura} />
 
       <p className="text-sm text-slate-600">
         <Link href={percorsoComune} className="text-teal-700 hover:underline">

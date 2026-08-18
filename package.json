@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "import:lombardia": "node scripts/import-lombardia.mjs"
+    "import:lombardia": "node scripts/import-lombardia.mjs",
+    "enrich:osm": "node scripts/enrich-osm.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.112.3",

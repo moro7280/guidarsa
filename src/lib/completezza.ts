@@ -6,8 +6,11 @@ import type { Struttura } from "./types";
  * una scheda con solo nome e indirizzo è una pagina povera, e CLAUDE.md vieta
  * di pubblicare pagine sotto le 100 parole utili.
  *
- * Derivato, non salvato: si ricalcola da solo quando i dati si arricchiscono
- * (Google Places, dati forniti dalle strutture).
+ * Derivato, non salvato: si ricalcola da solo quando i dati si arricchiscono.
+ *
+ * I pesi guardano a cosa serve a una famiglia che cerca una struttura. I dati
+ * del gestore (partita IVA, PEC) non entrano nel punteggio: servono a noi per
+ * contattare le strutture, non a chi legge la scheda.
  */
 
 export type LivelloCompletezza = "minimo" | "parziale" | "buono";
@@ -16,7 +19,7 @@ export interface Completezza {
   /** 0-100. */
   punteggio: number;
   livello: LivelloCompletezza;
-  /** Etichette dei blocchi informativi assenti, per il report di import. */
+  /** Etichette dei blocchi informativi assenti, per i report di arricchimento. */
   mancanti: string[];
 }
 
@@ -31,11 +34,11 @@ const CRITERI: {
   peso: number;
   presente: (struttura: Struttura) => boolean;
 }[] = [
-  { etichetta: "telefono", peso: 20, presente: (s) => Boolean(s.telefono) },
-  { etichetta: "email o sito web", peso: 10, presente: (s) => Boolean(s.email || s.sito_web) },
-  { etichetta: "descrizione estesa", peso: 25, presente: (s) => paroleDescrizione(s) >= 40 },
-  { etichetta: "coordinate", peso: 15, presente: (s) => s.lat !== null && s.lng !== null },
+  { etichetta: "telefono", peso: 25, presente: (s) => Boolean(s.telefono) },
+  { etichetta: "email o sito web", peso: 15, presente: (s) => Boolean(s.email || s.sito_web) },
+  { etichetta: "descrizione estesa", peso: 20, presente: (s) => paroleDescrizione(s) >= 40 },
   { etichetta: "prezzi", peso: 15, presente: (s) => s.prezzo_min !== null && s.prezzo_max !== null },
+  { etichetta: "coordinate", peso: 10, presente: (s) => s.lat !== null && s.lng !== null },
   { etichetta: "posti letto", peso: 10, presente: (s) => s.posti_letto !== null },
   { etichetta: "nucleo Alzheimer noto", peso: 5, presente: (s) => s.nucleo_alzheimer !== null },
 ];

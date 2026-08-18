@@ -1,0 +1,1570 @@
+{
+  "eseguito_il": "2026-08-18T22:43:25.353Z",
+  "esaminate": 740,
+  "province_interrogate": 12,
+  "aggiornate": 0,
+  "per_confidenza": {
+    "alta": 0,
+    "media": 0
+  },
+  "campi_riempiti": {
+    "telefono": 0,
+    "sito_web": 0,
+    "email": 0
+  },
+  "senza_candidati_osm": 399,
+  "da_rivedere_a_mano": [
+    {
+      "slug": "rsa-monsignor-carlo-salvaderi-meleti",
+      "nostro": "RSA Monsignor Carlo Salvaderi",
+      "osm": "(senza nome)",
+      "distanza": 44,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "r-s-a-santa-francesca-cabrini-sant-angelo-lodigiano",
+      "nostro": "R.s.a. Santa Francesca Cabrini",
+      "osm": "RSA Fondazione Madre Cabrini",
+      "distanza": 79,
+      "somiglianza": "0.14",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-mons-trabattoni-maleo",
+      "nostro": "RSA Mons. Trabattoni",
+      "osm": "Piccola Casa della Divina Provvidenza Monsignor Pietro Trabattoni",
+      "distanza": 31,
+      "somiglianza": "0.14",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-angelica-vittadini-terzaghi-casalpusterlengo",
+      "nostro": "RSA Angelica Vittadini Terzaghi",
+      "osm": "(senza nome)",
+      "distanza": 106,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-san-francesco-d-assisi-casalpusterlengo",
+      "nostro": "RSA San Francesco d'Assisi",
+      "osm": "(senza nome)",
+      "distanza": 273,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-luigi-corazza-maleo",
+      "nostro": "RSA Luigi Corazza",
+      "osm": "Casa di riposo Corazza",
+      "distanza": 43,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "r-s-a-san-giorgio-codogno",
+      "nostro": "R.s.a. San Giorgio",
+      "osm": "Fondazione Opere Pie Riunite di Codogno-onlus",
+      "distanza": 88,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "fondazione-r-s-a-casa-di-riposo-nembro-e-t-s-nembro",
+      "nostro": "Fondazione R.s.a. Casa di Riposo Nembro E.t.s..",
+      "osm": "RSA Nembro",
+      "distanza": 26,
+      "somiglianza": "0.17",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-carisma-bergamo",
+      "nostro": "RSA Carisma",
+      "osm": "CA.RI.S.M.A. Casa di riposo Santa Maria Ausiliatrice",
+      "distanza": 89,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "santo-giovanni-paolo-ii-treviglio",
+      "nostro": "Santo Giovanni Paolo II",
+      "osm": "Fondazione Anni Sereni",
+      "distanza": 125,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "fondazione-cecilia-caccia-in-del-negro-onlus-gandino",
+      "nostro": "Fondazione Cecilia Caccia in del Negro ONLUS",
+      "osm": "Fondazione Cecilia Caccia",
+      "distanza": 99,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-sovere-sovere",
+      "nostro": "RSA Sovere",
+      "osm": "Casa di riposo Fondazione Bottaini De' Capitani - O.N.L.U.S",
+      "distanza": 76,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "ist-suore-cappuccine-casa-di-riposo-san-francesco-bergamo",
+      "nostro": "Ist. Suore Cappuccine Casa di Riposo San Francesco",
+      "osm": "RSA San Francesco",
+      "distanza": 20,
+      "somiglianza": "0.40",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "casa-sant-angela-merici-casazza",
+      "nostro": "Casa Sant'Angela Merici",
+      "osm": "(senza nome)",
+      "distanza": 165,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "istituto-ospitale-magri-urgnano",
+      "nostro": "Istituto Ospitale Magri",
+      "osm": "Istituto Ospedale Magri",
+      "distanza": 105,
+      "somiglianza": "0.33",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-san-sisto-bergamo",
+      "nostro": "RSA San Sisto",
+      "osm": "Residenza Anni Azzurri San Sisto",
+      "distanza": 40,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-fondazione-giovanni-carlo-rota-onlus-almenno-san-salvatore",
+      "nostro": "RSA Fondazione Giovanni Carlo Rota ONLUS",
+      "osm": "Fondazione Rota",
+      "distanza": 29,
+      "somiglianza": "0.33",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "opera-pia-caritas-onlus-r-s-a-casa-santa-maria-val-brembilla",
+      "nostro": "Opera Pia Caritas - ONLUS R.s.a. Casa Santa Maria",
+      "osm": "RSA Santa Maria",
+      "distanza": 101,
+      "somiglianza": "0.25",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "santa-gianna-beretta-molla-treviglio",
+      "nostro": "Santa Gianna Beretta Molla",
+      "osm": "Fondazione Anni Sereni",
+      "distanza": 175,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "rsa-istituto-s-giuseppe-villa-d-adda",
+      "nostro": "RSA Istituto S. Giuseppe",
+      "osm": "Istituto San Giuseppe",
+      "distanza": 50,
+      "somiglianza": "0.33",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "fondazione-bartolomea-spada-schilpario-valle-di-scalve-e-t-s-schilpario",
+      "nostro": "Fondazione Bartolomea Spada - Schilpario Valle di Scalve E.t.s.",
+      "osm": "Fondazione Bartolomeo Spada",
+      "distanza": 24,
+      "somiglianza": "0.11",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "istituto-palazzolo-r-s-a-torre-boldone",
+      "nostro": "Istituto Palazzolo R.s.a.",
+      "osm": "Istituto Palazzolo",
+      "distanza": 54,
+      "somiglianza": "0.25",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-bramante-pontida",
+      "nostro": "RSA Bramante",
+      "osm": "Villa San Mauro",
+      "distanza": 367,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "casamia-verdello-verdello",
+      "nostro": "Casamia - Verdello",
+      "osm": "Casa Mia Verdello",
+      "distanza": 87,
+      "somiglianza": "0.33",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "r-s-a-madonna-del-boldesico-grumello-del-monte",
+      "nostro": "R.s.a. Madonna del Boldesico",
+      "osm": "Fondazione Madonna del Boldesico",
+      "distanza": 61,
+      "somiglianza": "0.40",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-san-sisto-2-bergamo",
+      "nostro": "RSA San Sisto 2",
+      "osm": "Residenza Anni Azzurri San Sisto",
+      "distanza": 28,
+      "somiglianza": "0.40",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "casa-albergo-maria-immacolata-soc-coop-sociale-onlus-calvenzano",
+      "nostro": "Casa Albergo Maria Immacolata Soc.coop.sociale ONLUS",
+      "osm": "Casa Albergo Maria Immacolata",
+      "distanza": 14,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "telefono, sito, email"
+    },
+    {
+      "slug": "rsa-fondazione-i-p-s-card-gusmini-ets-vertova",
+      "nostro": "RSA Fondazione I.p.s. Card. Gusmini ETS",
+      "osm": "Fondazione Card. Gusmini",
+      "distanza": 118,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "telefono, sito"
+    },
+    {
+      "slug": "rsa-carisma-2-bergamo",
+      "nostro": "RSA Carisma 2",
+      "osm": "CA.RI.S.M.A. Casa di riposo Santa Maria Ausiliatrice",
+      "distanza": 120,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-arcobaleno-parc-san-martino-siccomario",
+      "nostro": "RSA Arcobaleno Parc",
+      "osm": "RSA Arcobaleno",
+      "distanza": 191,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "fond-c-f-cella-di-rivara-broni",
+      "nostro": "Fond. C. F. Cella di Rivara",
+      "osm": "(senza nome)",
+      "distanza": 79,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "sacro-cuore-broni",
+      "nostro": "Sacro Cuore",
+      "osm": "(senza nome)",
+      "distanza": 246,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "istituzioni-riunite-mede-mede",
+      "nostro": "Istituzioni Riunite Mede",
+      "osm": "RSA Fondazioni Riunite",
+      "distanza": 30,
+      "somiglianza": "0.25",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-arcobaleno-castellana-san-martino-siccomario",
+      "nostro": "RSA Arcobaleno Castellana",
+      "osm": "Residenza villa san martino",
+      "distanza": 326,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "arcobaleno-plus-cava-manara",
+      "nostro": "Arcobaleno Plus",
+      "osm": "RSA Arcobaleno",
+      "distanza": 64,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "casa-di-riposo-di-varzi-varzi",
+      "nostro": "Casa di Riposo di Varzi",
+      "osm": "Fondazione S. Germano",
+      "distanza": 41,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "r-s-a-arcobaleno-sole-cava-manara",
+      "nostro": "R.s.a. Arcobaleno Sole",
+      "osm": "RSA Arcobaleno",
+      "distanza": 64,
+      "somiglianza": "0.20",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "r-s-a-arcobaleno-luna-cava-manara",
+      "nostro": "R.s.a. Arcobaleno Luna",
+      "osm": "RSA Arcobaleno",
+      "distanza": 64,
+      "somiglianza": "0.20",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "villa-s-eulalia-valle-lomellina",
+      "nostro": "Villa S. Eulalia",
+      "osm": "Villa Sant'Eulalia - Casa di riposo per anziani",
+      "distanza": 56,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "residenza-sanitario-assistenziale-comunale-paolo-beccaria-cervesina",
+      "nostro": "Residenza Sanitario Assistenziale Comunale Paolo Beccaria",
+      "osm": "RSA \"Paolo Beccaria\"",
+      "distanza": 60,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-casa-solaris-sermide-e-felonica",
+      "nostro": "RSA Casa Solaris",
+      "osm": "(senza nome)",
+      "distanza": 17,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "fondazione-g-belfanti-onlus-ostiglia",
+      "nostro": "Fondazione G.belfanti ONLUS",
+      "osm": "Casa di riposo Belfanti",
+      "distanza": 77,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "r-s-a-boni-2-suzzara",
+      "nostro": "R.s.a. Boni 2",
+      "osm": "Fondazione Luigi Boni",
+      "distanza": 41,
+      "somiglianza": "0.17",
+      "avrebbeScritto": "telefono, sito, email"
+    },
+    {
+      "slug": "r-s-a-ernesta-bovi-pegognaga",
+      "nostro": "R.s.a. Ernesta Bovi",
+      "osm": "(senza nome)",
+      "distanza": 31,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "fondazione-mazzucchini-casa-di-riposo-pomponesco-onlus-pomponesco",
+      "nostro": "Fondazione Mazzucchini Casa di Riposo Pomponesco ONLUS",
+      "osm": "Fondazione Mazzucchini",
+      "distanza": 5,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "fondazione-domenico-giamboni-edolo",
+      "nostro": "Fondazione Domenico Giamboni",
+      "osm": "Il Cardo",
+      "distanza": 269,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "telefono"
+    },
+    {
+      "slug": "rsa-mons-f-pinzoni-brescia",
+      "nostro": "RSA Mons. F. Pinzoni",
+      "osm": "Residenza Sanitaria Assistenziale Monsignor Faustino Pinzoni",
+      "distanza": 7,
+      "somiglianza": "0.20",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "rsa-di-via-c-battisti-n-10-barbariga-barbariga",
+      "nostro": "RSA di Via C. Battisti N. 10 Barbariga",
+      "osm": "Casa di riposo Uccelli Bonetti",
+      "distanza": 52,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-casa-di-riposo-a-comini-collebeato",
+      "nostro": "RSA - Casa di Riposo A. Comini",
+      "osm": "Residenza Sanitaria Assistenziale Angelo Comini",
+      "distanza": 59,
+      "somiglianza": "0.33",
+      "avrebbeScritto": "telefono"
+    },
+    {
+      "slug": "rsa-la-residenza-brescia",
+      "nostro": "RSA - \"La Residenza",
+      "osm": "R.S.A. La Residenza - Fondazione Casa di Dio",
+      "distanza": 8,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "telefono, sito"
+    },
+    {
+      "slug": "rsa-evaristo-almici-rezzato",
+      "nostro": "RSA - Evaristo Almici",
+      "osm": "Azienda Speciale Evaristo Almici",
+      "distanza": 56,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-fondazione-onlus-longini-morelli-sironi-di-pralboino-pralboino",
+      "nostro": "RSA - Fondazione ONLUS \"Longini - Morelli-sironi di Pralboino",
+      "osm": "Casa di riposo Longini",
+      "distanza": 20,
+      "somiglianza": "0.25",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-casa-di-riposo-cenacolo-elisa-baldo-gavardo",
+      "nostro": "RSA - Casa di Riposo Cenacolo Elisa Baldo",
+      "osm": "Residenza Sanitaria Assistenziale La Memoria",
+      "distanza": 353,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-fondazione-mons-giacomo-carettoni-ets-ponte-di-legno",
+      "nostro": "RSA Fondazione Mons. Giacomo Carettoni ETS",
+      "osm": "Casa di Riposo Fondazione Monsignor Giacomo Carettoni O.N.L.U.S.",
+      "distanza": 225,
+      "somiglianza": "0.22",
+      "avrebbeScritto": "telefono, sito, email"
+    },
+    {
+      "slug": "rsa-don-ambrogio-cacciamatta-iseo",
+      "nostro": "RSA - Don Ambrogio Cacciamatta",
+      "osm": "RSA Cacciamatta",
+      "distanza": 25,
+      "somiglianza": "0.33",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "rsa-casa-di-riposo-g-b-valotti-onlus-isorella",
+      "nostro": "RSA - Casa di Riposo G.b. Valotti - ONLUS",
+      "osm": "Casa di Riposo Giambattista Valotti",
+      "distanza": 57,
+      "somiglianza": "0.25",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-alessandro-luzzago-brescia",
+      "nostro": "RSA - Alessandro Luzzago",
+      "osm": "Residenza Sanitaria Assistenziale Luzzago",
+      "distanza": 62,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-zaffiro-ninfea-brescia",
+      "nostro": "RSA Zaffiro Ninfea",
+      "osm": "Residenza Zaffiro",
+      "distanza": 111,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "telefono, sito"
+    },
+    {
+      "slug": "villaggio-insieme-carpenedolo",
+      "nostro": "Villaggio Insieme",
+      "osm": "Casa di Riposo Santa Maria Castello",
+      "distanza": 138,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-casa-sorelle-girelli-marone",
+      "nostro": "RSA \"Casa Sorelle Girelli",
+      "osm": "RSA Girelli",
+      "distanza": 38,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-fondazione-irene-rubini-falck-onlus-vobarno",
+      "nostro": "RSA - Fondazione Irene Rubini Falck ONLUS",
+      "osm": "Casa di riposo Falck Vobarno",
+      "distanza": 62,
+      "somiglianza": "0.25",
+      "avrebbeScritto": "telefono, sito, email"
+    },
+    {
+      "slug": "rsa-fondazione-casa-di-riposo-r-s-a-paolo-vi-onlus-bagnolo-mella",
+      "nostro": "RSA - Fondazione Casa di Riposo R.s.a Paolo VI ONLUS",
+      "osm": "RSA Casa di Riposo Paolo VI ONLUS",
+      "distanza": 73,
+      "somiglianza": "0.40",
+      "avrebbeScritto": "telefono, sito"
+    },
+    {
+      "slug": "residenza-vittoria-brescia",
+      "nostro": "Residenza Vittoria",
+      "osm": "Korian - Vittoria Casa di Riposo",
+      "distanza": 10,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-fondazione-villa-mons-damiano-zani-bienno",
+      "nostro": "RSA Fondazione Villa Mons. Damiano Zani",
+      "osm": "Ospizio di Bienno",
+      "distanza": 55,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-o-p-delbarba-maselli-dandolo-adro",
+      "nostro": "RSA - \"O.p. Delbarba-maselli-dandolo",
+      "osm": "(senza nome)",
+      "distanza": 81,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "r-s-a-spazzini-fabeni-castelcovati",
+      "nostro": "R.s.a. Spazzini - Fabeni",
+      "osm": "(senza nome)",
+      "distanza": 92,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-fondazione-madonna-del-corlo-onlus-lonato-del-garda",
+      "nostro": "RSA - Fondazione Madonna del Corlo ONLUS",
+      "osm": "(senza nome)",
+      "distanza": 86,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-fondazione-casa-di-riposo-di-manerbio-onlus-manerbio",
+      "nostro": "RSA - Fondazione Casa di Riposo di Manerbio ONLUS",
+      "osm": "(senza nome)",
+      "distanza": 4,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "fondazione-istituto-pietro-cadeo-onlus-chiari",
+      "nostro": "Fondazione Istituto Pietro Cadeo ONLUS",
+      "osm": "Centro Diurno Anziani",
+      "distanza": 91,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-zaffiro-loto-brescia",
+      "nostro": "RSA Zaffiro Loto",
+      "osm": "Residenza Zaffiro",
+      "distanza": 111,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "telefono, sito"
+    },
+    {
+      "slug": "rsa-fondazione-beata-lucia-versa-dalumi-onlus-bagolino",
+      "nostro": "RSA - Fondazione Beata Lucia Versa Dalumi ONLUS",
+      "osm": "Casa di Riposo Beata Lucia",
+      "distanza": 25,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "telefono, sito, email"
+    },
+    {
+      "slug": "r-s-a-livia-feroldi-brescia",
+      "nostro": "R.s.a. - \" Livia Feroldi",
+      "osm": "Residenza Sanitaria Assistenziale Luzzago",
+      "distanza": 92,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-fondazione-don-g-ferraglio-malonno",
+      "nostro": "RSA Fondazione Don G. Ferraglio",
+      "osm": "(senza nome)",
+      "distanza": 70,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-fondazione-ricovero-la-memoria-onlus-gavardo",
+      "nostro": "RSA - Fondazione Ricovero la Memoria ONLUS",
+      "osm": "Residenza Sanitaria Assistenziale La Memoria",
+      "distanza": 17,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-cav-paolo-rivadossi-borno",
+      "nostro": "RSA Cav. Paolo Rivadossi",
+      "osm": "Residenza Sanitaria Assistenziale Cavalier Paolo Rivadossi",
+      "distanza": 70,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "telefono"
+    },
+    {
+      "slug": "rsa-fondazione-onlus-casa-di-riposo-di-capriolo-don-gaudenzio-martinazzoli-capriolo",
+      "nostro": "RSA - Fondazione ONLUS Casa di Riposo di Capriolo Don Gaudenzio Martinazzoli",
+      "osm": "(senza nome)",
+      "distanza": 73,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-fondazione-s-maria-del-castello-onlus-carpenedolo",
+      "nostro": "RSA - Fondazione S. Maria del Castello ONLUS",
+      "osm": "Casa di Riposo Santa Maria Castello",
+      "distanza": 22,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-zaffiro-iris-brescia",
+      "nostro": "RSA Zaffiro Iris",
+      "osm": "Residenza Zaffiro",
+      "distanza": 111,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "telefono, sito"
+    },
+    {
+      "slug": "casa-famiglia-per-anziani-di-bussero-bussero",
+      "nostro": "Casa Famiglia per Anziani di Bussero",
+      "osm": "Casa di Riposo Ascanio Barbolini",
+      "distanza": 42,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "r-s-a-ippocrate-2-milano",
+      "nostro": "R.s.a. Ippocrate 2",
+      "osm": "Ippocrate RSA",
+      "distanza": 62,
+      "somiglianza": "0.20",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "rsa-belvedere-cassano-d-adda",
+      "nostro": "RSA Belvedere",
+      "osm": "(senza nome)",
+      "distanza": 52,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-s-giuseppe-castano-primo",
+      "nostro": "RSA S. Giuseppe",
+      "osm": "Fondazione Colleoni",
+      "distanza": 226,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "ricovero-f-uboldi-paderno-dugnano",
+      "nostro": "Ricovero F. Uboldi",
+      "osm": "Casa di Riposo Fernando Uboldi",
+      "distanza": 27,
+      "somiglianza": "0.25",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "r-s-a-alfredo-podesta-binasco",
+      "nostro": "R.s.a. Alfredo Podesta'",
+      "osm": "RSA Eliopolis",
+      "distanza": 63,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-castellini-di-melegnano-melegnano",
+      "nostro": "RSA Castellini di Melegnano",
+      "osm": "Fondazione Castellini",
+      "distanza": 62,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "istituto-geriatrico-p-redaelli-vimodrone",
+      "nostro": "Istituto Geriatrico \"P.redaelli",
+      "osm": "Istituto geriatrico Goggi Redaelli",
+      "distanza": 146,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "residenze-saccardo-edificio-b-milano",
+      "nostro": "Residenze Saccardo Edificio B",
+      "osm": "RSA Saccardo",
+      "distanza": 70,
+      "somiglianza": "0.25",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "fondazione-opera-pia-francesca-colleoni-de-maestri-onlus-castano-primo",
+      "nostro": "Fondazione Opera Pia Francesca Colleoni de Maestri ONLUS",
+      "osm": "Fondazione Colleoni",
+      "distanza": 14,
+      "somiglianza": "0.17",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "istituto-geriatrico-c-golgi-abbiategrasso",
+      "nostro": "Istituto Geriatrico C. Golgi",
+      "osm": "Istituto geriatrico Camillo Golgi",
+      "distanza": 353,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "r-s-a-via-quarenghi-milano",
+      "nostro": "R.s.a. Via Quarenghi",
+      "osm": "RSA Quarenghi Coopselios",
+      "distanza": 51,
+      "somiglianza": "0.17",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "istituto-mons-biraghi-cernusco-sul-naviglio",
+      "nostro": "Istituto Mons. Biraghi",
+      "osm": "Istituto Monsignor Luigi Biraghi RSA",
+      "distanza": 19,
+      "somiglianza": "0.25",
+      "avrebbeScritto": "telefono, sito, email"
+    },
+    {
+      "slug": "fondazione-san-giuseppe-moscati-onlus-milano",
+      "nostro": "Fondazione San Giuseppe Moscati ONLUS",
+      "osm": "Casa di cura \"Città di Milano\"",
+      "distanza": 279,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-casa-dell-anziano-san-camillo-carugate",
+      "nostro": "RSA Casa dell'Anziano San Camillo",
+      "osm": "(senza nome)",
+      "distanza": 133,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-i-fontanili-rodano",
+      "nostro": "RSA i Fontanili",
+      "osm": "Casa di riposo",
+      "distanza": 139,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "parco-sempione-milano",
+      "nostro": "Parco Sempione",
+      "osm": "Residenze Anni Azzurri",
+      "distanza": 1,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "rsa-casa-famiglia-per-anziani-di-milano-milano",
+      "nostro": "RSA Casa Famiglia per Anziani di Milano",
+      "osm": "Ippocrate RSA",
+      "distanza": 356,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "polo-geriatrico-riabilitativo-1-milano",
+      "nostro": "Polo Geriatrico Riabilitativo 1",
+      "osm": "Residenza Anni Azzurri San Faustino",
+      "distanza": 288,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "r-s-a-maria-lorenzon-binasco",
+      "nostro": "R.s.a. Maria Lorenzon",
+      "osm": "RSA Eliopolis",
+      "distanza": 63,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "san-francesco-d-assisi-milano",
+      "nostro": "San Francesco d'Assisi",
+      "osm": "Associazione Villa San Fermo",
+      "distanza": 5,
+      "somiglianza": "0.14",
+      "avrebbeScritto": "telefono, sito, email"
+    },
+    {
+      "slug": "don-felice-cozzi-corbetta",
+      "nostro": "Don Felice Cozzi",
+      "osm": "R.S.A. don Felice Cozzi",
+      "distanza": 82,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "residenza-emilio-bernardelli-paderno-dugnano",
+      "nostro": "Residenza Emilio Bernardelli",
+      "osm": "RSA Emilio Bernardelli - Padiglione E",
+      "distanza": 90,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "san-faustino-milano",
+      "nostro": "San Faustino",
+      "osm": "Residenza Anni Azzurri San Faustino",
+      "distanza": 85,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "residenza-s-martino-bollate",
+      "nostro": "Residenza S. Martino",
+      "osm": "Residenza Anni Azzurri San Martino",
+      "distanza": 240,
+      "somiglianza": "0.20",
+      "avrebbeScritto": "telefono, sito, email"
+    },
+    {
+      "slug": "fondazione-sacra-famiglia-rsa-san-luigi-cesano-boscone",
+      "nostro": "Fondazione Sacra Famiglia RSA San Luigi",
+      "osm": "Istituto Sacra Famiglia",
+      "distanza": 311,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "santa-chiara-milano",
+      "nostro": "Santa Chiara",
+      "osm": "RSA Santa Giulia e Chiara",
+      "distanza": 33,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "centro-santa-maria-al-castello-onlus-pessano-con-bornago",
+      "nostro": "Centro Santa Maria al Castello ONLUS",
+      "osm": "RSA Fondazione Don Carlo Gnocchi",
+      "distanza": 92,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "albergo-del-nonno-parabiago",
+      "nostro": "Albergo del Nonno",
+      "osm": "(senza nome)",
+      "distanza": 30,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "istituto-geriatrico-vergani-e-bassi-gorgonzola",
+      "nostro": "Istituto Geriatrico Vergani e Bassi",
+      "osm": "Casa di riposo",
+      "distanza": 81,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "azienda-speciale-casa-di-riposo-gallazzi-vismara-arese",
+      "nostro": "Azienda Speciale Casa di Riposo Gallazzi Vismara",
+      "osm": "Casa di riposo Gallazzi Vismara",
+      "distanza": 44,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "telefono, sito"
+    },
+    {
+      "slug": "asp-istituti-milanesi-martinitt-e-stelline-e-pio-a-milano",
+      "nostro": "ASP Istituti Milanesi Martinitt e Stelline e Pio a",
+      "osm": "Pio Albergo Trivulzio",
+      "distanza": 154,
+      "somiglianza": "0.10",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-casa-don-guanella-milano",
+      "nostro": "RSA Casa Don Guanella",
+      "osm": "Residenze Anni Azzurri",
+      "distanza": 346,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "rsa-san-marco-marcallo-con-casone",
+      "nostro": "RSA San Marco",
+      "osm": "(senza nome)",
+      "distanza": 20,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "r-s-a-acquamarina-binasco",
+      "nostro": "R.s.a. Acquamarina",
+      "osm": "RSA Eliopolis",
+      "distanza": 63,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "casa-padre-pio-legnano",
+      "nostro": "Casa Padre Pio",
+      "osm": "Casa di Riposo",
+      "distanza": 88,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-istituto-geriatrico-milanese-milano",
+      "nostro": "RSA Istituto Geriatrico Milanese",
+      "osm": "Casa di Cura San Giovanni",
+      "distanza": 374,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-residenza-del-sole-cinisello-balsamo",
+      "nostro": "RSA Residenza del Sole",
+      "osm": "Residenze del Sole",
+      "distanza": 44,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-i-mulini-milano",
+      "nostro": "RSA i Mulini",
+      "osm": "RSA Saccardo",
+      "distanza": 347,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "r-s-a-c-o-il-centro-comunale-polivalente-per-anziani-di-cusano-milanino-cusano-milanino",
+      "nostro": "R.s.a. C/o il Centro Comunale Polivalente per Anziani di Cusano Milanino",
+      "osm": "Centro Polivalente Anziani",
+      "distanza": 37,
+      "somiglianza": "0.11",
+      "avrebbeScritto": "telefono, sito, email"
+    },
+    {
+      "slug": "rsa-pontirolo-assago",
+      "nostro": "RSA Pontirolo",
+      "osm": "Casa di Riposo Fondazione Pontiroli",
+      "distanza": 261,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "telefono, sito"
+    },
+    {
+      "slug": "r-s-a-ippocrate-1-milano",
+      "nostro": "R.s.a. Ippocrate 1",
+      "osm": "Ippocrate RSA",
+      "distanza": 62,
+      "somiglianza": "0.20",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "residenza-sanitaria-assistenziale-pindaro-44-milano",
+      "nostro": "Residenza Sanitaria Assistenziale Pindaro 44",
+      "osm": "RSA Pindaro",
+      "distanza": 42,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "polo-geriatrico-riabilitativo-cinisello-balsamo",
+      "nostro": "Polo Geriatrico Riabilitativo",
+      "osm": "Residenza Anni Azzurri Polo Geriatrico Riabilitativo Cinisello",
+      "distanza": 67,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "telefono, sito"
+    },
+    {
+      "slug": "rsa-casa-famiglia-di-milano-affori-milano",
+      "nostro": "RSA Casa Famiglia di Milano Affori",
+      "osm": "Ippocrate RSA",
+      "distanza": 380,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "fondazione-sacra-famiglia-rsa-san-pietro-cesano-boscone",
+      "nostro": "Fondazione Sacra Famiglia RSA San Pietro",
+      "osm": "Istituto Sacra Famiglia",
+      "distanza": 311,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "residenze-saccardo-edificio-a-milano",
+      "nostro": "Residenze Saccardo Edificio a",
+      "osm": "RSA Saccardo",
+      "distanza": 75,
+      "somiglianza": "0.25",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "polo-geriatrico-riabilitativo-2-milano",
+      "nostro": "Polo Geriatrico Riabilitativo 2",
+      "osm": "Residenza Anni Azzurri San Faustino",
+      "distanza": 288,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "san-rocco-segrate",
+      "nostro": "San Rocco",
+      "osm": "R.S.A. San Rocco",
+      "distanza": 7,
+      "somiglianza": "0.40",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "r-s-a-melograno-cassina-de-pecchi",
+      "nostro": "R.s.a Melograno",
+      "osm": "Casa di Riposo Il Melograno",
+      "distanza": 39,
+      "somiglianza": "0.25",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-emmaus-milano",
+      "nostro": "RSA \"Emmaus",
+      "osm": "R.S.A. Baroni",
+      "distanza": 74,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "santa-giulia-milano",
+      "nostro": "Santa Giulia",
+      "osm": "RSA Santa Giulia e Chiara",
+      "distanza": 35,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "residenza-franco-bassani-laveno-mombello",
+      "nostro": "Residenza Franco Bassani",
+      "osm": "Menotti Bassani",
+      "distanza": 220,
+      "somiglianza": "0.33",
+      "avrebbeScritto": "telefono"
+    },
+    {
+      "slug": "rsa-casa-s-agnese-saronno",
+      "nostro": "RSA Casa S.agnese",
+      "osm": "Focris",
+      "distanza": 323,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "istituto-la-provvidenza-u-g-3-busto-arsizio",
+      "nostro": "Istituto la Provvidenza U.g. 3",
+      "osm": "Istituto La Provvidenza",
+      "distanza": 15,
+      "somiglianza": "0.25",
+      "avrebbeScritto": "telefono, sito, email"
+    },
+    {
+      "slug": "rsa-fondazione-casa-di-riposo-intercomunale-saronno-onlus-saronno",
+      "nostro": "RSA Fondazione Casa di Riposo Intercomunale Saronno ONLUS",
+      "osm": "Focris",
+      "distanza": 154,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "residenza-giannina-scotti-laveno-mombello",
+      "nostro": "Residenza Giannina Scotti",
+      "osm": "Menotti Bassani",
+      "distanza": 220,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "telefono"
+    },
+    {
+      "slug": "residenza-angelo-bellora-gallarate",
+      "nostro": "Residenza Angelo Bellora",
+      "osm": "Casa di riposo Carlo Bellora",
+      "distanza": 288,
+      "somiglianza": "0.33",
+      "avrebbeScritto": "telefono, sito, email"
+    },
+    {
+      "slug": "rsa-casa-s-maria-annunciata-cuveglio",
+      "nostro": "RSA Casa S.maria Annunciata",
+      "osm": "(senza nome)",
+      "distanza": 42,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "residenza-gennaro-arioli-laveno-mombello",
+      "nostro": "Residenza Gennaro Arioli",
+      "osm": "Menotti Bassani",
+      "distanza": 220,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "telefono"
+    },
+    {
+      "slug": "rsa-villa-parini-gorla-minore",
+      "nostro": "RSA Villa Parini",
+      "osm": "Residenza San Luigi Gonzaga",
+      "distanza": 90,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "telefono"
+    },
+    {
+      "slug": "rsa-a-s-far-m-induno-olona",
+      "nostro": "RSA A.s.far.m",
+      "osm": "Centro Polivalente Anziani",
+      "distanza": 217,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "casa-s-angelo-sesto-calende",
+      "nostro": "Casa S. Angelo",
+      "osm": "Casa Sant'Angelo",
+      "distanza": 46,
+      "somiglianza": "0.33",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "istituto-la-provvidenza-u-g-1-busto-arsizio",
+      "nostro": "Istituto la Provvidenza U.g. 1",
+      "osm": "Istituto La Provvidenza",
+      "distanza": 15,
+      "somiglianza": "0.25",
+      "avrebbeScritto": "telefono, sito, email"
+    },
+    {
+      "slug": "fondazione-casa-di-soggiorno-e-riposo-longhi-francesco-e-famiglia-pianezza-federico-onlus-casalzuigno",
+      "nostro": "Fondazione Casa di Soggiorno e Riposo Longhi Francesco e Famiglia Pianezza Federico ONLUS",
+      "osm": "Casa di Riposo Longhi e Pianezza",
+      "distanza": 62,
+      "somiglianza": "0.43",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "villa-puricelli-casa-card-g-lercaro-bodio-lomnago",
+      "nostro": "Villa Puricelli Casa Card. G. Lercaro",
+      "osm": "Villa Piero Puricelli",
+      "distanza": 83,
+      "somiglianza": "0.33",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "residenza-sanitaria-assistenziale-maria-immacolata-varese",
+      "nostro": "Residenza Sanitaria Assistenziale Maria Immacolata",
+      "osm": "R.S.A. Maria Immacolata",
+      "distanza": 36,
+      "somiglianza": "0.40",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "fondaz-fratelli-paolo-e-tito-molina-onlus-varese",
+      "nostro": "Fondaz. Fratelli Paolo e Tito Molina ONLUS",
+      "osm": "Fondazione Molina",
+      "distanza": 113,
+      "somiglianza": "0.17",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "fondazione-bellora-onlus-gallarate",
+      "nostro": "Fondazione Bellora ONLUS",
+      "osm": "Casa di riposo Carlo Bellora",
+      "distanza": 27,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "telefono, sito, email"
+    },
+    {
+      "slug": "residenza-prealpina-cuvio",
+      "nostro": "Residenza Prealpina",
+      "osm": "Chiosco Residenza Prealpina",
+      "distanza": 12,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "telefono, sito, email"
+    },
+    {
+      "slug": "rsa-cardinal-colombo-casciago",
+      "nostro": "RSA Cardinal Colombo",
+      "osm": "Casa di Riposo Colombo",
+      "distanza": 40,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "fondazione-angelo-poretti-e-angelo-magnani-ets-vedano-olona",
+      "nostro": "Fondazione Angelo Poretti e Angelo Magnani ETS",
+      "osm": "RSA Fondazione Poretti Magnani",
+      "distanza": 53,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "r-s-a-monsignor-borsieri-lecco",
+      "nostro": "R.s.a. Monsignor Borsieri",
+      "osm": "RSA Borsieri",
+      "distanza": 50,
+      "somiglianza": "0.20",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "casa-di-riposo-fondazione-fratelli-enrico-e-antonio-nobili-onlus-vigano",
+      "nostro": "Casa di Riposo Fondazione Fratelli Enrico e Antonio Nobili - ONLUS",
+      "osm": "(senza nome)",
+      "distanza": 54,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "fondazione-casa-del-cieco-mons-edoardo-gilardi-onlus-civate",
+      "nostro": "Fondazione Casa del Cieco Mons. Edoardo Gilardi ONLUS",
+      "osm": "(senza nome)",
+      "distanza": 60,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-pietro-buzzi-olginate",
+      "nostro": "RSA Pietro Buzzi",
+      "osm": "(senza nome)",
+      "distanza": 252,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "istituto-geriatrico-g-c-frisia-merate-merate",
+      "nostro": "Istituto Geriatrico \"G. & C. Frisia\" Merate",
+      "osm": "(senza nome)",
+      "distanza": 80,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "casa-madonna-della-fiducia-calolziocorte",
+      "nostro": "Casa Madonna della Fiducia",
+      "osm": "(senza nome)",
+      "distanza": 24,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "r-s-a-don-emilio-meani-cesano-maderno",
+      "nostro": "R.s.a. Don Emilio Meani",
+      "osm": "RSA Don Emilio Meani",
+      "distanza": 28,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "telefono, sito, email"
+    },
+    {
+      "slug": "rsa-la-rosa-d-argento-ronco-briantino",
+      "nostro": "RSA la Rosa d'Argento",
+      "osm": "(senza nome)",
+      "distanza": 203,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "machiavelli-2-bernareggio",
+      "nostro": "Machiavelli 2",
+      "osm": "CENTRO POLIFUNZIONALE “A . e V . Veronelli”",
+      "distanza": 58,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "machiavelli-1-bernareggio",
+      "nostro": "Machiavelli 1",
+      "osm": "CENTRO POLIFUNZIONALE “A . e V . Veronelli”",
+      "distanza": 58,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-casa-di-riposo-madre-ada-bianchi-agrate-brianza",
+      "nostro": "RSA Casa di Riposo Madre Ada Bianchi",
+      "osm": "(senza nome)",
+      "distanza": 51,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-fondazione-giuseppe-besana-onlus-meda",
+      "nostro": "RSA Fondazione Giuseppe Besana ONLUS",
+      "osm": "Fondazione Giuseppe Besana O.N.L.U.S.",
+      "distanza": 11,
+      "somiglianza": "0.29",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-anni-azzurri-vico-mercati-vimercate",
+      "nostro": "RSA Anni Azzurri Vico Mercati",
+      "osm": "Anni Azzurri",
+      "distanza": 163,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "telefono, sito, email"
+    },
+    {
+      "slug": "rsa-villa-reale-monza",
+      "nostro": "RSA Villa Reale",
+      "osm": "Residenza Anni Azzurri Villa Reale",
+      "distanza": 56,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "telefono, sito, email"
+    },
+    {
+      "slug": "rsa-l-arca-desio",
+      "nostro": "RSA l'Arca",
+      "osm": "A.S.P. “Pio e Ninetta Gavazzi“",
+      "distanza": 133,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-fondazione-casa-famiglia-s-giuseppe-onlus-vimercate",
+      "nostro": "RSA Fondazione Casa Famiglia S. Giuseppe ONLUS",
+      "osm": "RSA San Giuseppe",
+      "distanza": 109,
+      "somiglianza": "0.25",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "r-s-a-f-scaccabarozzi-ornago",
+      "nostro": "R.s.a. F. Scaccabarozzi",
+      "osm": "Residenza Sanitaria Assistenziale \"Fausto Scaccabarozzi\"",
+      "distanza": 102,
+      "somiglianza": "0.17",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "residenza-20-monza",
+      "nostro": "Residenza 20",
+      "osm": "(senza nome)",
+      "distanza": 14,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "telefono, sito, email"
+    },
+    {
+      "slug": "fondazione-ca-d-industria-ets-como",
+      "nostro": "Fondazione Ca' d'Industria ETS",
+      "osm": "(senza nome)",
+      "distanza": 35,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "fondazione-giuseppina-prina-ets-erba",
+      "nostro": "Fondazione Giuseppina Prina ETS",
+      "osm": "Residenza Sanitaria Ca' Prina",
+      "distanza": 48,
+      "somiglianza": "0.33",
+      "avrebbeScritto": "telefono, sito, email"
+    },
+    {
+      "slug": "villa-clarice-cermenate",
+      "nostro": "Villa Clarice",
+      "osm": "Residenza Anni Azzurri Villa Clarice",
+      "distanza": 34,
+      "somiglianza": "0.50",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "i-laghi-montorfano",
+      "nostro": "I Laghi",
+      "osm": "(senza nome)",
+      "distanza": 177,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "casa-di-riposo-villa-s-benedetto-albese-con-cassano",
+      "nostro": "Casa di Riposo Villa S.benedetto",
+      "osm": "Villa San Benedetto Menni",
+      "distanza": 76,
+      "somiglianza": "0.40",
+      "avrebbeScritto": "telefono, sito"
+    },
+    {
+      "slug": "fondazione-anna-borletti-per-invalidi-e-anziani-arosio",
+      "nostro": "Fondazione Anna Borletti per Invalidi e Anziani",
+      "osm": "(senza nome)",
+      "distanza": 25,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "casa-giardino-degli-ulivi-menaggio",
+      "nostro": "Casa Giardino degli Ulivi",
+      "osm": "(senza nome)",
+      "distanza": 129,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "casa-santa-maria-della-provvidenza-como",
+      "nostro": "Casa Santa Maria della Provvidenza",
+      "osm": "ARCA",
+      "distanza": 200,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "fondazione-case-di-riposo-riunite-di-bregnano-e-lomazzo-rsa-bregnano-bregnano",
+      "nostro": "Fondazione Case di Riposo Riunite di Bregnano e Lomazzo - RSA Bregnano",
+      "osm": "Casa di Riposo Casa del Sole",
+      "distanza": 105,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "fondazione-rsa-garibaldi-pogliani-onlus-rsa-3-cantu-cantu",
+      "nostro": "Fondazione RSA Garibaldi Pogliani ONLUS - RSA 3 Cantu'",
+      "osm": "Antonio Vivaldi",
+      "distanza": 297,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-don-giacomo-tantardini-bellagio",
+      "nostro": "RSA Don Giacomo Tantardini",
+      "osm": "Residenza Bellagio",
+      "distanza": 141,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "centro-servizi-alla-persona-sondrio",
+      "nostro": "Centro Servizi alla Persona",
+      "osm": "Residenza Giovanni Longoni",
+      "distanza": 20,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "r-s-a-citta-di-tirano-tirano",
+      "nostro": "R.s.a. \"Citta' di Tirano",
+      "osm": "Casa di Riposo",
+      "distanza": 282,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-di-roncaglia-di-civo-civo",
+      "nostro": "RSA di Roncaglia di Civo",
+      "osm": "La Nuova Colonia RSA",
+      "distanza": 37,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "telefono, sito"
+    },
+    {
+      "slug": "rsa-tomaso-ambrosetti-morbegno",
+      "nostro": "RSA Tomaso Ambrosetti",
+      "osm": "Casa di riposo Ambrosetti Paravicini",
+      "distanza": 46,
+      "somiglianza": "0.33",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-paolo-paravicini-morbegno",
+      "nostro": "RSA Paolo Paravicini",
+      "osm": "Casa di riposo Ambrosetti Paravicini",
+      "distanza": 195,
+      "somiglianza": "0.33",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "casa-di-riposo-s-orsola-teglio",
+      "nostro": "Casa di Riposo \"S. Orsola",
+      "osm": "Casa di Riposo Sant'Orsola",
+      "distanza": 28,
+      "somiglianza": "0.33",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "rsa-fondazione-ospedale-caimi-onlus-vailate",
+      "nostro": "RSA Fondazione Ospedale Caimi ONLUS",
+      "osm": "R.S.A. Ospedale Caimi",
+      "distanza": 80,
+      "somiglianza": "0.40",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "fondaz-casa-riposo-osp-dei-poveri-pandino-onlus-pandino",
+      "nostro": "Fondaz.casa Riposo Osp.dei Poveri Pandino ONLUS",
+      "osm": "Ospedale dei Poveri",
+      "distanza": 41,
+      "somiglianza": "0.20",
+      "avrebbeScritto": "sito"
+    },
+    {
+      "slug": "residenza-guerreschi-gianluigi-snc-capralba",
+      "nostro": "Residenza Guerreschi Gianluigi SNC",
+      "osm": "RSA Guerreschi",
+      "distanza": 145,
+      "somiglianza": "0.33",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "fondazione-ss-redentore-castelverde",
+      "nostro": "Fondazione Ss. Redentore",
+      "osm": "Opera Pia Redentore",
+      "distanza": 32,
+      "somiglianza": "0.25",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "fondazione-giuseppina-brunenghi-onlus-castelleone",
+      "nostro": "Fondazione Giuseppina Brunenghi ONLUS",
+      "osm": "(senza nome)",
+      "distanza": 172,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "fondazione-o-p-g-vezzoli-romanengo",
+      "nostro": "Fondazione O.p. G. Vezzoli",
+      "osm": "Casa di riposo Vezzoli",
+      "distanza": 54,
+      "somiglianza": "0.25",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "a-zucchi-e-m-falcina-soresina",
+      "nostro": "A. Zucchi e M. Falcina",
+      "osm": "Casa di Riposo Zucchi Falcina",
+      "distanza": 46,
+      "somiglianza": "0.40",
+      "avrebbeScritto": "telefono, sito"
+    },
+    {
+      "slug": "fondazione-di-servizi-alla-persona-luigina-milanesi-e-paolo-frosi-onlus-trigolo",
+      "nostro": "Fondazione di Servizi alla Persona Luigina Milanesi e Paolo Frosi ONLUS",
+      "osm": "(senza nome)",
+      "distanza": 25,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    },
+    {
+      "slug": "fondazione-bruno-pari-onlus-ostiano",
+      "nostro": "Fondazione Bruno Pari ONLUS",
+      "osm": "Casa di riposo",
+      "distanza": 54,
+      "somiglianza": "0.00",
+      "avrebbeScritto": "niente"
+    }
+  ]
+}

@@ -35,6 +35,21 @@ export interface Struttura {
   descrizione: string;
   /** Origine del dato: "demo" per i dati fittizi, altrimenti la fonte reale. */
   fonte_dati: string;
+  /** Dati del gestore, dalla fonte regionale: servono per le PEC da INI-PEC. */
+  codice_struttura_fonte?: string | null;
+  denominazione_gestore?: string | null;
+  partita_iva_gestore?: string | null;
+  codice_fiscale_gestore?: string | null;
+  pec_gestore?: string | null;
+  /** Riferimento OpenStreetMap del match e sua confidenza. */
+  osm_id?: string | null;
+  osm_confidenza?: "alta" | "media" | null;
+  /**
+   * Fonte di ogni singolo campo di contatto, es. { telefono: "osm" }.
+   * Permette di isolare sempre cosa viene da OSM: obbligo ODbL.
+   */
+  fonte_contatti?: Record<string, string> | null;
+  contatti_aggiornati_il?: string | null;
   updated_at: string;
 }
 

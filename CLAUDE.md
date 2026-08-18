@@ -41,6 +41,8 @@ nome, slug (unico), tipologia, indirizzo, cap, comune, provincia, regione, lat, 
 - Mai inventare dati sulle strutture: solo dati da fonti reali (open data regionali, Google Places API); i dati demo vanno marcati come tali
 
 ## Fonti dati
+- **Google Maps/Places non può essere usato per popolare o arricchire il database né per mostrare contenuti nella directory (vietato dai termini per i listing service); unico uso consentito nel progetto: autocomplete indirizzi nei form**
+- OpenStreetMap (ODbL): consentito salvare e ripubblicare con attribuzione; i campi che arrivano da OSM vanno sempre marcati in `fonte_contatti`
 - Open Data Regione Lombardia: elenco RSA accreditate (CSV)
 - Portale RSA Toscana, tabelle mensili Regione Piemonte, open data Friuli-Venezia Giulia / Umbria / Trentino
 - Google Places API per arricchimento (telefono, foto, coordinate, orari)
