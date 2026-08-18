@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "import:lombardia": "node scripts/import-lombardia.mjs",
-    "enrich:osm": "node scripts/enrich-osm.mjs"
+    "enrich:osm": "node scripts/enrich-osm.mjs",
+    "enrich:siti": "node scripts/enrich-siti.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.112.3",

@@ -45,7 +45,7 @@ nome, slug (unico), tipologia, indirizzo, cap, comune, provincia, regione, lat, 
 - OpenStreetMap (ODbL): consentito salvare e ripubblicare con attribuzione; i campi che arrivano da OSM vanno sempre marcati in `fonte_contatti`
 - Open Data Regione Lombardia: elenco RSA accreditate (CSV)
 - Portale RSA Toscana, tabelle mensili Regione Piemonte, open data Friuli-Venezia Giulia / Umbria / Trentino
-- Google Places API per arricchimento (telefono, foto, coordinate, orari)
+- Siti ufficiali delle strutture e dei gestori: solo dati fattuali di contatto (telefono, email, PEC, indirizzo), mai testi descrittivi; robots.txt onorato e provenienza registrata in `fonte_contatti`
 
 ## Fuori scope per ora (fase 2, non implementare)
 - Autenticazione utenti e area riservata per le strutture

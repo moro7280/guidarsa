@@ -1,0 +1,300 @@
+{
+  "eseguito_il": "2026-08-18T23:31:03.883Z",
+  "gestori_lavorati": 12,
+  "query_brave": 106,
+  "costo_stimato_usd": 0.53,
+  "siti_per_confidenza": {
+    "alta": 47,
+    "media": 1
+  },
+  "campi_riempiti": {
+    "telefono": 29,
+    "email": 39,
+    "sito_web": 48
+  },
+  "carte_servizi": 7,
+  "pec": 7,
+  "numeri_di_sede_scartati": 7,
+  "sovrascritture": [],
+  "da_rivedere_a_mano": [
+    {
+      "slug": "s-riccardo-pampuri-trivolzio",
+      "nome": "S. Riccardo Pampuri",
+      "comune": "Trivolzio",
+      "url": "https://peranziani.it/strutture/fondazione-s-riccardo-pampuri-onlus/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "casa-sacro-cuore-pianello-del-lario",
+      "nome": "Casa Sacro Cuore",
+      "comune": "Pianello del Lario",
+      "url": "https://casedonguanella.it/contattaci/",
+      "confidenza": "alta",
+      "motivo": "telefono 035871006 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "casa-san-lorenzo-ardenno",
+      "nome": "Casa San Lorenzo",
+      "comune": "Ardenno",
+      "url": "https://casedonguanella.it/contattaci/",
+      "confidenza": "alta",
+      "motivo": "telefono 035871006 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "casa-santa-maria-della-provvidenza-como",
+      "nome": "Casa Santa Maria della Provvidenza",
+      "comune": "Como",
+      "url": "https://peranziani.it/strutture/casa-di-riposo-istituto-delle-figlie-di-santa-maria-della-divina-provvidenza-casa-beato-l-guanella/",
+      "confidenza": "alta",
+      "motivo": "telefono 031555513 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-casa-don-guanella-milano",
+      "nome": "RSA Casa Don Guanella",
+      "comune": "Milano",
+      "url": "https://peranziani.it/strutture/casa-di-riposo-istituto-delle-figlie-di-santa-maria-della-divina-provvidenza-casa-beato-l-guanella/",
+      "confidenza": "alta",
+      "motivo": "telefono 031555513 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-casa-sorelle-girelli-marone",
+      "nome": "RSA \"Casa Sorelle Girelli",
+      "comune": "Marone",
+      "url": "https://www.lacasadiriposo.it/c/rsa-sorelle-girelli/2911",
+      "confidenza": "alta",
+      "motivo": "telefono 394990961 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-ducale-borgo-mantovano",
+      "nome": "RSA Ducale",
+      "comune": "Borgo Mantovano",
+      "url": "https://www.lacasadiriposo.it/c/rsa-ducale/2913",
+      "confidenza": "alta",
+      "motivo": "telefono 394990961 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-lorenzo-e-gianna-zirotti-sale-marasino",
+      "nome": "RSA Lorenzo e Gianna Zirotti",
+      "comune": "Sale Marasino",
+      "url": "https://www.lacasadiriposo.it/c/rsa-lorenzo-e-gianna-zirotti/7186",
+      "confidenza": "alta",
+      "motivo": "telefono 394990961 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "il-gioiello-rivanazzano-terme",
+      "nome": "Il Gioiello",
+      "comune": "Rivanazzano Terme",
+      "url": "https://sereniorizzonti.it/it/residenza/rsa-villa-il-gioiello/",
+      "confidenza": "alta",
+      "motivo": "telefono 0432506519 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "rsa-san-francesco-d-assisi-casalpusterlengo",
+      "nome": "RSA San Francesco d'Assisi",
+      "comune": "Casalpusterlengo",
+      "url": "https://sereniorizzonti.it/it/residenza/rsa-san-francesco-dassisi-casalpusterlengo/",
+      "confidenza": "alta",
+      "motivo": "telefono 0432506519 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "villa-abbadia-fiesco",
+      "nome": "Villa Abbadia",
+      "comune": "Fiesco",
+      "url": "https://sereniorizzonti.it/it/residenza/rsa-villa-abbadia/",
+      "confidenza": "alta",
+      "motivo": "telefono 0432506519 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    }
+  ],
+  "strutture_scoperte": 28,
+  "elenco_scoperte": [
+    {
+      "slug": "casa-di-riposo-l-accorsi-legnano",
+      "nome": "Casa di Riposo L. Accorsi",
+      "comune": "Legnano"
+    },
+    {
+      "slug": "residenze-saccardo-edificio-a-milano",
+      "nome": "Residenze Saccardo Edificio a",
+      "comune": "Milano"
+    },
+    {
+      "slug": "residenze-saccardo-edificio-b-milano",
+      "nome": "Residenze Saccardo Edificio B",
+      "comune": "Milano"
+    },
+    {
+      "slug": "r-s-a-villa-serena-galbiate",
+      "nome": "R.s.a. Villa Serena",
+      "comune": "Galbiate"
+    },
+    {
+      "slug": "rsa-bosco-in-citta-brugherio",
+      "nome": "RSA Bosco in Citta'",
+      "comune": "Brugherio"
+    },
+    {
+      "slug": "rsa-madre-teresa-di-calcutta-motta-visconti",
+      "nome": "RSA Madre Teresa di Calcutta",
+      "comune": "Motta Visconti"
+    },
+    {
+      "slug": "rsa-opere-pie-riunite-g-b-rubini-romano-di-lombardia",
+      "nome": "RSA Opere Pie Riunite G. B. Rubini",
+      "comune": "Romano di Lombardia"
+    },
+    {
+      "slug": "rsa-sant-andrea-monza",
+      "nome": "RSA Sant' Andrea",
+      "comune": "Monza"
+    },
+    {
+      "slug": "sant-andrea-2-monza",
+      "nome": "Sant'Andrea 2",
+      "comune": "Monza"
+    },
+    {
+      "slug": "r-s-a-melograno-cassina-de-pecchi",
+      "nome": "R.s.a Melograno",
+      "comune": "Cassina de' Pecchi"
+    },
+    {
+      "slug": "r-s-a-via-baroni-milano",
+      "nome": "R.s.a. Via Baroni",
+      "comune": "Milano"
+    },
+    {
+      "slug": "r-s-a-via-ornato-milano",
+      "nome": "R.s.a. Via Ornato",
+      "comune": "Milano"
+    },
+    {
+      "slug": "r-s-a-via-quarenghi-milano",
+      "nome": "R.s.a. Via Quarenghi",
+      "comune": "Milano"
+    },
+    {
+      "slug": "rsa-residenza-alle-barche-bereguardo",
+      "nome": "RSA Residenza Alle Barche",
+      "comune": "Bereguardo"
+    },
+    {
+      "slug": "residenza-s-martino-bollate",
+      "nome": "Residenza S. Martino",
+      "comune": "Bollate"
+    },
+    {
+      "slug": "r-s-a-c-o-il-centro-comunale-polivalente-per-anziani-di-cusano-milanino-cusano-milanino",
+      "nome": "R.s.a. C/o il Centro Comunale Polivalente per Anziani di Cusano Milanino",
+      "comune": "Cusano Milanino"
+    },
+    {
+      "slug": "rsa-anni-azzurri-rezzato-rezzato",
+      "nome": "RSA Anni Azzurri Rezzato",
+      "comune": "Rezzato"
+    },
+    {
+      "slug": "rsa-anni-azzurri-vico-mercati-vimercate",
+      "nome": "RSA Anni Azzurri Vico Mercati",
+      "comune": "Vimercate"
+    },
+    {
+      "slug": "rsa-san-luca-milano",
+      "nome": "RSA San Luca",
+      "comune": "Milano"
+    },
+    {
+      "slug": "rsa-villa-reale-monza",
+      "nome": "RSA Villa Reale",
+      "comune": "Monza"
+    },
+    {
+      "slug": "rsa-casa-s-agnese-saronno",
+      "nome": "RSA Casa S.agnese",
+      "comune": "Saronno"
+    },
+    {
+      "slug": "rsa-stefano-porro-lentate-sul-seveso",
+      "nome": "RSA Stefano Porro",
+      "comune": "Lentate Sul Seveso"
+    },
+    {
+      "slug": "rsa-villaggio-s-francesco-villanuova-sul-clisi",
+      "nome": "RSA Villaggio S. Francesco",
+      "comune": "Villanuova Sul Clisi"
+    },
+    {
+      "slug": "centro-santa-maria-al-castello-onlus-pessano-con-bornago",
+      "nome": "Centro Santa Maria al Castello ONLUS",
+      "comune": "Pessano con Bornago"
+    },
+    {
+      "slug": "fondazione-don-carlo-gnocchi-onlus-centro-santa-maria-al-monte-malnate",
+      "nome": "Fondazione Don Carlo Gnocchi ONLUS - Centro Santa Maria al Monte",
+      "comune": "Malnate"
+    },
+    {
+      "slug": "rsa-fondazione-don-carlo-gnocchi-onlus-centro-ronzoni-villa-seregno",
+      "nome": "RSA Fondazione Don Carlo Gnocchi ONLUS - Centro Ronzoni Villa",
+      "comune": "Seregno"
+    },
+    {
+      "slug": "sereni-orizzonti-villa-vanni-rivanazzano-terme",
+      "nome": "Sereni Orizzonti Villa Vanni",
+      "comune": "Rivanazzano Terme"
+    },
+    {
+      "slug": "zaffiro-rsa-smeraldo-carugo",
+      "nome": "Zaffiro RSA Smeraldo",
+      "comune": "Carugo"
+    }
+  ]
+}
