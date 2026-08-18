@@ -33,7 +33,7 @@ export const PROVINCE = {
 const ACRONIMI = new Set([
   "RSA", "RSD", "ASP", "ASST", "ATS", "IPAB", "ONLUS", "SRL", "S.R.L.", "SPA",
   "S.P.A.", "SNC", "SAS", "COOP", "SOC", "IRCCS", "ASL", "CDI", "APS", "ODV",
-  "SS", "SP", "SC", "II", "III", "IV", "VI", "VII", "VIII", "IX", "XI", "XII",
+  "ETS", "SS", "SP", "SC", "II", "III", "IV", "VI", "VII", "VIII", "IX", "XI", "XII",
 ]);
 
 /** Parole che restano minuscole se non sono la prima. */
@@ -41,15 +41,36 @@ const MINUSCOLE = new Set([
   "di", "de", "del", "della", "dello", "dei", "degli", "delle", "da", "dal",
   "dalla", "e", "ed", "in", "il", "lo", "la", "i", "gli", "le", "a", "al",
   "alla", "per", "con", "su", "tra", "fra", "d", "l",
+  // Forme elise: "dell'Anziano", non "Dell'Anziano".
+  "dell", "nell", "all", "dall", "sull", "coll",
 ]);
+
+/**
+ * L'export regionale ha campi doppiamente quotati: dopo il parsing CSV restano
+ * virgolette di troppo, es. `"CASA DELL'ANZIANO - RESIDENZA ""LUIGI STRADA"""`.
+ * Toglie l'involucro esterno e riporta le virgolette raddoppiate a una sola.
+ */
+export function ripulisciVirgolette(valore) {
+  let testo = (valore ?? "").trim();
+  while (testo.length > 1 && testo.startsWith('"') && testo.endsWith('"')) {
+    testo = testo.slice(1, -1).trim();
+  }
+  return testo
+    .replace(/""/g, '"')
+    // Alcune righe hanno una virgoletta di apertura senza chiusura: resta
+    // spaiata dopo il ciclo qui sopra e va tolta comunque.
+    .replace(/^"+|"+$/g, "")
+    .trim();
+}
 
 /**
  * "RSA SAN SISTO 2" -> "RSA San Sisto 2"
  * "CASA DI RIPOSO S. GIUSEPPE" -> "Casa di Riposo S. Giuseppe"
  * "CASSANO D'ADDA" -> "Cassano d'Adda"
+ * `"CASA DELL'ANZIANO - RESIDENZA ""LUIGI STRADA"""` -> `Casa dell'Anziano - Residenza "Luigi Strada"`
  */
 export function normalizzaMaiuscole(valore) {
-  const testo = (valore ?? "").trim().replace(/\s+/g, " ");
+  const testo = ripulisciVirgolette(valore).replace(/\s+/g, " ");
   if (!testo) return "";
   // Se non è tutto maiuscolo, la fonte ha già una sua forma: non la tocchiamo.
   if (testo !== testo.toUpperCase()) return testo;
@@ -65,7 +86,12 @@ export function normalizzaMaiuscole(valore) {
           const minuscolo = pezzo.toLowerCase();
           if (ACRONIMI.has(pezzo)) return pezzo;
           if (i === 0 && indice > 0 && MINUSCOLE.has(minuscolo)) return minuscolo;
-          return minuscolo.charAt(0).toUpperCase() + minuscolo.slice(1);
+          // Maiuscola sulla prima lettera vera: senza questo, una parola che
+          // inizia con virgolette o parentesi resterebbe minuscola.
+          return minuscolo.replace(
+            /^([^a-zà-ù]*)([a-zà-ù])/,
+            (_, prefisso, lettera) => prefisso + lettera.toUpperCase(),
+          );
         })
         .join("'");
       // "Sant'angelo" -> "Sant'Angelo"
