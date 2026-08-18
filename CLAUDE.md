@@ -24,6 +24,9 @@ Directory web delle strutture per anziani in Italia (RSA, case di riposo, centri
 nome, slug (unico), tipologia, indirizzo, cap, comune, provincia, regione, lat, lng, telefono, email, sito_web, posti_letto, convenzionata (bool), nucleo_alzheimer (bool), prezzo_min, prezzo_max, descrizione, fonte_dati, updated_at
 
 ## Regole SEO (priorità massima)
+- Ogni pagina hub linkata da nav/footer/breadcrumb deve esistere e rispondere 200 — mai link a rotte non implementate
+- Eseguire /verifica prima di ogni commit che tocca routing, template o dati
+- Nessuna pagina si pubblica con contenuto sotto le 100 parole utili: meglio non pubblicarla
 - Ogni pagina ha title, meta description e H1 unici, generati dai dati (mai duplicati)
 - JSON-LD schema.org su ogni scheda struttura (LocalBusiness) e su ogni guida (Article + breadcrumb)
 - Sitemap.xml dinamica, divisa per tipo di pagina; robots.txt corretto
