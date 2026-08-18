@@ -1,27 +1,703 @@
 {
-  "eseguito_il": "2026-08-18T23:31:03.883Z",
-  "gestori_lavorati": 12,
-  "query_brave": 106,
-  "costo_stimato_usd": 0.53,
+  "eseguito_il": "2026-08-18T23:54:01.471Z",
+  "gestori_lavorati": 467,
+  "query_brave": 757,
+  "costo_stimato_usd": 3.785,
   "siti_per_confidenza": {
-    "alta": 47,
-    "media": 1
+    "alta": 438,
+    "media": 66
   },
   "campi_riempiti": {
-    "telefono": 29,
-    "email": 39,
-    "sito_web": 48
+    "telefono": 388,
+    "email": 389,
+    "sito_web": 504
   },
-  "carte_servizi": 7,
-  "pec": 7,
-  "numeri_di_sede_scartati": 7,
-  "sovrascritture": [],
+  "carte_servizi": 125,
+  "pec": 147,
+  "numeri_di_sede_scartati": 13,
+  "sovrascritture": [
+    {
+      "slug": "casa-di-riposo-sant-antonio-barzio",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 0341 996228"
+    },
+    {
+      "slug": "casa-di-riposo-sant-antonio-barzio",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.nuovassistenza.it/Strutture/RSA-SAntonio-Barzio-Lecco.html"
+    },
+    {
+      "slug": "rsa-famagosta-milano",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 02 8912 7882"
+    },
+    {
+      "slug": "rsa-famagosta-milano",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.nuovassistenza.it/Strutture/RSA-Famagosta-Milano.html"
+    },
+    {
+      "slug": "virgilio-ferrari-milano",
+      "campo": "email",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "info@rsaferrari.it"
+    },
+    {
+      "slug": "virgilio-ferrari-milano",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.proges.it/nostre-strutture/strutture-anziani/virgilio-ferrari-1.aspx"
+    },
+    {
+      "slug": "rsa-l-oasi-cerro-maggiore",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 0331 533442"
+    },
+    {
+      "slug": "rsa-l-oasi-cerro-maggiore",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "http://www.rsaoasi.eu/"
+    },
+    {
+      "slug": "rsa-villa-maggi-milano",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+390257462801"
+    },
+    {
+      "slug": "rsa-villa-maggi-milano",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.lavillaspa.it/strutture/rsa-villa-maggi/"
+    },
+    {
+      "slug": "rsa-anna-sironi-trezzo-sull-adda",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 02 9093 9943"
+    },
+    {
+      "slug": "rsa-anna-sironi-trezzo-sull-adda",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.comune.trezzosulladda.mi.it/vivere-citta/sanita/casa-riposo-anna-sironi"
+    },
+    {
+      "slug": "residenza-ai-pini-besano",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 0332 916900"
+    },
+    {
+      "slug": "residenza-ai-pini-besano",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.leresidenze.it/strutture/casa-di-riposo-per-anziani-residenza-ai-pini-milano-varese-como/"
+    },
+    {
+      "slug": "casa-per-coniugi-milano",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 02 539 2964"
+    },
+    {
+      "slug": "casa-per-coniugi-milano",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.proges.it/nostre-strutture/strutture-anziani/coniugi.aspx"
+    },
+    {
+      "slug": "le-camelie-como",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 031 3381711"
+    },
+    {
+      "slug": "le-camelie-como",
+      "campo": "email",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "info@cadindustria.it"
+    },
+    {
+      "slug": "le-camelie-como",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.cadindustria.it/rsa/rsa-le-camelie"
+    },
+    {
+      "slug": "istituto-geriatrico-p-redaelli-milano",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.golgiredaelli.it/strutture-sanitarie/istituto-geriatrico-piero-redaelli-milano/"
+    },
+    {
+      "slug": "rsa-villa-di-salute-brescia",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.fondazionepaoladirosa.it/rsa/villa-di-salute/descrizione-villa-di-salute"
+    },
+    {
+      "slug": "casa-honegger-albino",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "http://www.fondazionehonegger.it/"
+    },
+    {
+      "slug": "struttura-protetta-honegger-albino",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "http://www.fondazionehonegger.it/"
+    },
+    {
+      "slug": "residenza-san-felice-segrate",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.emeisitalia.it/strutture/residenza-san-felice-segrate/?utm_source=mybusiness_san-felice"
+    },
+    {
+      "slug": "fondazione-istituto-vismara-de-petri-onlus-san-bassano",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 0374 373165"
+    },
+    {
+      "slug": "fondazione-istituto-vismara-de-petri-onlus-san-bassano",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.istitutovismara.it/"
+    },
+    {
+      "slug": "residenza-sanitaria-assistenziale-fondazione-luigi-boni-onlus-suzzara",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.fondazioneboni.it"
+    },
+    {
+      "slug": "rsa-don-angelo-bellani-monza",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.fondazionebellani.it/"
+    },
+    {
+      "slug": "ambrosiana-rsa-srl-milano",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 02 2630 9933"
+    },
+    {
+      "slug": "ambrosiana-rsa-srl-milano",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://ambrosianasrl.it/"
+    },
+    {
+      "slug": "casa-di-riposo-costante-patrizi-ponte-in-valtellina",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.casadiriposopatrizi.it/"
+    },
+    {
+      "slug": "casa-di-riposo-per-musicisti-milano",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39024996009"
+    },
+    {
+      "slug": "casa-di-riposo-per-musicisti-milano",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.casaverdi.it/"
+    },
+    {
+      "slug": "casa-di-riposo-san-giuseppe-gazzaniga",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.fondazionecasasangiuseppe.it/"
+    },
+    {
+      "slug": "casa-famiglia-padre-francesco-spinelli-rivolta-d-adda",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 0363 77022"
+    },
+    {
+      "slug": "casa-famiglia-padre-francesco-spinelli-rivolta-d-adda",
+      "campo": "email",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "segreteria@casafamigliaspinelli.com"
+    },
+    {
+      "slug": "casa-famiglia-padre-francesco-spinelli-rivolta-d-adda",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.casafamigliaspinelli.com/cfs/"
+    },
+    {
+      "slug": "fondazione-casa-serena-ets-brembate-di-sopra",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 035 620120"
+    },
+    {
+      "slug": "fondazione-casa-serena-ets-brembate-di-sopra",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.fondazionecasaserena.it"
+    },
+    {
+      "slug": "fondazione-casa-di-riposo-spirano-onlus-spirano",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.rsaspirano.it/"
+    },
+    {
+      "slug": "fondazione-casa-di-riposo-villa-della-pace-stezzano",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.villadellapace.it/"
+    },
+    {
+      "slug": "fondazione-centro-assistenza-anziani-giulio-moroni-onlus-castellanza",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 0331 502103"
+    },
+    {
+      "slug": "fondazione-centro-assistenza-anziani-giulio-moroni-onlus-castellanza",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.fondazionemoroni.it/"
+    },
+    {
+      "slug": "fondazione-mons-gerolamo-comi-onlus-luino",
+      "campo": "email",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "info@fondazionecomi.it"
+    },
+    {
+      "slug": "fondazione-mons-gerolamo-comi-onlus-luino",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://fondazionecomi.it"
+    },
+    {
+      "slug": "ida-parravicini-di-persia-albese-con-cassano",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 031 426024"
+    },
+    {
+      "slug": "ida-parravicini-di-persia-albese-con-cassano",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "http://www.idaparravicini.it"
+    },
+    {
+      "slug": "franco-nicolai-onlus-volta-mantovana",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 0376 83071"
+    },
+    {
+      "slug": "franco-nicolai-onlus-volta-mantovana",
+      "campo": "email",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "info@fondazionenicolai.it"
+    },
+    {
+      "slug": "franco-nicolai-onlus-volta-mantovana",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "http://www.fondazionenicolai.it/"
+    },
+    {
+      "slug": "istituti-riuniti-airoldi-e-muzzi-onlus-lecco",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 0341 497172"
+    },
+    {
+      "slug": "istituto-cavalier-francesco-menotti-cadegliano-viconago",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 0332 590001"
+    },
+    {
+      "slug": "istituto-cavalier-francesco-menotti-cadegliano-viconago",
+      "campo": "email",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "info@istitutomenotti.it"
+    },
+    {
+      "slug": "istituto-cavalier-francesco-menotti-cadegliano-viconago",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.istitutomenotti.it/"
+    },
+    {
+      "slug": "pensionato-zanaboni-voghera",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 0383 43364"
+    },
+    {
+      "slug": "pensionato-zanaboni-voghera",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.zanaboni.org"
+    },
+    {
+      "slug": "residenza-anziani-arzaga-milano",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.rsaarzaga.com/"
+    },
+    {
+      "slug": "residenza-san-celso-milano",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.emeisitalia.it/strutture/residenza-san-celso-milano/"
+    },
+    {
+      "slug": "rsa-casa-di-riposo-san-giovanni-onlus-bovegno",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.fondazionesangiovannionlus.it/"
+    },
+    {
+      "slug": "rsa-pasotti-cottinelli-brescia",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "http://www.pasotticottinelli.it/"
+    },
+    {
+      "slug": "rsa-fondazione-colturi-villa-dei-pini-onlus-villa-carcina",
+      "campo": "email",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "info@fondazionecolturi.it"
+    },
+    {
+      "slug": "rsa-fondazione-colturi-villa-dei-pini-onlus-villa-carcina",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "http://www.fondazione-colturi.it/"
+    },
+    {
+      "slug": "rsa-fondazione-g-b-bianchi-onlus-toscolano-maderno",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 0365 541742"
+    },
+    {
+      "slug": "rsa-fondazione-centro-servizi-assistenziali-cami-alberini-onlus-gottolengo",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 030 951 7318"
+    },
+    {
+      "slug": "rsa-fondazione-istituto-bregoli-onlus-pezzaze",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 030 030920271"
+    },
+    {
+      "slug": "rsa-azienda-speciale-comune-di-concesio-concesio",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "http://www.aziendaspecialeconcesio.it/"
+    },
+    {
+      "slug": "rsa-calicantus-srl-marchirolo",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 0332 723044"
+    },
+    {
+      "slug": "rsa-calicantus-srl-marchirolo",
+      "campo": "email",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "maito:informazioni@calicantus.com"
+    },
+    {
+      "slug": "rsa-calicantus-srl-marchirolo",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://calicantus.com"
+    },
+    {
+      "slug": "rsa-camelot-gallarate",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 0331 750301"
+    },
+    {
+      "slug": "rsa-camelot-gallarate",
+      "campo": "email",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "info@3sg.it"
+    },
+    {
+      "slug": "rsa-camelot-gallarate",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://3sg.it/rsa-camelot"
+    },
+    {
+      "slug": "rsa-il-melo-gallarate",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 033 177 6373"
+    },
+    {
+      "slug": "rsa-il-melo-gallarate",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.melo.it/"
+    },
+    {
+      "slug": "rsa-fondazione-residenza-amica-onlus-giussano",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 0362 354336"
+    },
+    {
+      "slug": "rsa-fondazione-residenza-amica-onlus-giussano",
+      "campo": "email",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "info@residenzaamica.com"
+    },
+    {
+      "slug": "rsa-fondazione-residenza-amica-onlus-giussano",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.residenzaamica.com/"
+    },
+    {
+      "slug": "rsa-sandro-pertini-garbagnate-milanese",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 02 9943 2111"
+    },
+    {
+      "slug": "rsa-villa-cenacolo-lentate-sul-seveso",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+390362560213"
+    },
+    {
+      "slug": "rsa-villa-cenacolo-lentate-sul-seveso",
+      "campo": "email",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "villacenacolo@emeis.com"
+    },
+    {
+      "slug": "rsa-villa-cenacolo-lentate-sul-seveso",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.emeisitalia.it/strutture/residenza-villa-cenacolo-lentate-seveso/"
+    },
+    {
+      "slug": "villa-antonietta-milano",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://www.fondazionebiffi.it/?page=struttura"
+    },
+    {
+      "slug": "villa-mater-voghera",
+      "campo": "telefono",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "+39 0383 366551"
+    },
+    {
+      "slug": "villa-mater-voghera",
+      "campo": "sito_web",
+      "da": "osm",
+      "a": "sito_ufficiale",
+      "valorePrecedente": "https://villamatersrl.it"
+    }
+  ],
   "da_rivedere_a_mano": [
     {
-      "slug": "s-riccardo-pampuri-trivolzio",
-      "nome": "S. Riccardo Pampuri",
-      "comune": "Trivolzio",
-      "url": "https://peranziani.it/strutture/fondazione-s-riccardo-pampuri-onlus/",
+      "slug": "machiavelli-1-bernareggio",
+      "nome": "Machiavelli 1",
+      "comune": "Bernareggio",
+      "url": "https://www.lavillaspa.it/strutture/rsa-machiavelli-1-rsa-machiavelli-2/",
+      "confidenza": "alta",
+      "motivo": "telefono 800688736 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "machiavelli-2-bernareggio",
+      "nome": "Machiavelli 2",
+      "comune": "Bernareggio",
+      "url": "https://www.lavillaspa.it/strutture/rsa-machiavelli-1-rsa-machiavelli-2/",
+      "confidenza": "alta",
+      "motivo": "telefono 800688736 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "pascoli-cucciago",
+      "nome": "Pascoli",
+      "comune": "Cucciago",
+      "url": "https://www.lavillaspa.it/strutture/rsa-pascoli/",
+      "confidenza": "alta",
+      "motivo": "telefono 800688736 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "giovanni-xxiii-merone",
+      "nome": "Giovanni Xxiii",
+      "comune": "Merone",
+      "url": "https://cooperativaquadrifoglio.com/rsa-giovanni-xxiii/",
+      "confidenza": "alta",
+      "motivo": "telefono 0121-324811 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "sito_web",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "r-s-a-santa-sara-milano",
+      "nome": "R.s.a. Santa Sara",
+      "comune": "Milano",
+      "url": "https://cooperativaquadrifoglio.com/rsaa-santa-sara/",
+      "confidenza": "alta",
+      "motivo": "telefono 0121-324811 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-san-marco-marcallo-con-casone",
+      "nome": "RSA San Marco",
+      "comune": "Marcallo con Casone",
+      "url": "https://cooperativaquadrifoglio.com/rsa-san-marco/",
+      "confidenza": "alta",
+      "motivo": "telefono 0121-324811 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "sito_web",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "r-s-a-opera-pia-magistris-valmadrera",
+      "nome": "R.s.a. Opera Pia Magistris",
+      "comune": "Valmadrera",
+      "url": "https://puntoservice.org/strutture/terza-eta/case-di-riposo-in-lombardia/residenza-opera-pia-magistris/",
+      "confidenza": "alta",
+      "motivo": "telefono 0161.234800 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "casa-di-riposo-sant-antonio-barzio",
+      "nome": "Casa di Riposo Sant' Antonio",
+      "comune": "Barzio",
+      "url": "https://www.casasantantonioacerra.it/",
       "confidenza": "media",
       "motivo": "gestore con una sola struttura, corrispondenza parziale",
       "scritto": [
@@ -31,96 +707,51 @@
       ]
     },
     {
-      "slug": "casa-sacro-cuore-pianello-del-lario",
-      "nome": "Casa Sacro Cuore",
-      "comune": "Pianello del Lario",
-      "url": "https://casedonguanella.it/contattaci/",
+      "slug": "rsa-anna-e-guido-fossati-monza",
+      "nome": "RSA Anna e Guido Fossati",
+      "comune": "Monza",
+      "url": "https://puntoservice.org/strutture/terza-eta/case-di-riposo-in-lombardia/residenza-anna-e-guido-fossati/",
       "confidenza": "alta",
-      "motivo": "telefono 035871006 scartato: ricorre su comuni diversi, e il numero della sede",
+      "motivo": "telefono 0161.234800 scartato: ricorre su comuni diversi, e il numero della sede",
       "scritto": [
         "email",
-        "sito_web"
+        "sito_web",
+        "url_carta_servizi"
       ]
     },
     {
-      "slug": "casa-san-lorenzo-ardenno",
-      "nome": "Casa San Lorenzo",
-      "comune": "Ardenno",
-      "url": "https://casedonguanella.it/contattaci/",
+      "slug": "villa-dossel-caglio",
+      "nome": "Villa Dossel",
+      "comune": "Caglio",
+      "url": "https://puntoservice.org/strutture/terza-eta/case-di-riposo-in-lombardia/villa-dossel/",
       "confidenza": "alta",
-      "motivo": "telefono 035871006 scartato: ricorre su comuni diversi, e il numero della sede",
+      "motivo": "telefono 0161.234800 scartato: ricorre su comuni diversi, e il numero della sede",
       "scritto": [
         "email",
-        "sito_web"
+        "sito_web",
+        "url_carta_servizi"
       ]
     },
     {
-      "slug": "casa-santa-maria-della-provvidenza-como",
-      "nome": "Casa Santa Maria della Provvidenza",
-      "comune": "Como",
-      "url": "https://peranziani.it/strutture/casa-di-riposo-istituto-delle-figlie-di-santa-maria-della-divina-provvidenza-casa-beato-l-guanella/",
-      "confidenza": "alta",
-      "motivo": "telefono 031555513 scartato: ricorre su comuni diversi, e il numero della sede",
-      "scritto": [
-        "email",
-        "sito_web"
-      ]
-    },
-    {
-      "slug": "rsa-casa-don-guanella-milano",
-      "nome": "RSA Casa Don Guanella",
+      "slug": "virgilio-ferrari-milano",
+      "nome": "Virgilio Ferrari",
       "comune": "Milano",
-      "url": "https://peranziani.it/strutture/casa-di-riposo-istituto-delle-figlie-di-santa-maria-della-divina-provvidenza-casa-beato-l-guanella/",
+      "url": "https://puntoservice.org/strutture/terza-eta/case-di-riposo-in-lombardia/residenza-virgilio-ferrari/",
       "confidenza": "alta",
-      "motivo": "telefono 031555513 scartato: ricorre su comuni diversi, e il numero della sede",
+      "motivo": "telefono 0161.234800 scartato: ricorre su comuni diversi, e il numero della sede",
       "scritto": [
         "email",
-        "sito_web"
+        "sito_web",
+        "url_carta_servizi"
       ]
     },
     {
-      "slug": "rsa-casa-sorelle-girelli-marone",
-      "nome": "RSA \"Casa Sorelle Girelli",
-      "comune": "Marone",
-      "url": "https://www.lacasadiriposo.it/c/rsa-sorelle-girelli/2911",
+      "slug": "rsa-villa-parini-gorla-minore",
+      "nome": "RSA Villa Parini",
+      "comune": "Gorla Minore",
+      "url": "https://www.lavillaspa.it/strutture/rsa-villa-parini/",
       "confidenza": "alta",
-      "motivo": "telefono 394990961 scartato: ricorre su comuni diversi, e il numero della sede",
-      "scritto": [
-        "email",
-        "sito_web"
-      ]
-    },
-    {
-      "slug": "rsa-ducale-borgo-mantovano",
-      "nome": "RSA Ducale",
-      "comune": "Borgo Mantovano",
-      "url": "https://www.lacasadiriposo.it/c/rsa-ducale/2913",
-      "confidenza": "alta",
-      "motivo": "telefono 394990961 scartato: ricorre su comuni diversi, e il numero della sede",
-      "scritto": [
-        "email",
-        "sito_web"
-      ]
-    },
-    {
-      "slug": "rsa-lorenzo-e-gianna-zirotti-sale-marasino",
-      "nome": "RSA Lorenzo e Gianna Zirotti",
-      "comune": "Sale Marasino",
-      "url": "https://www.lacasadiriposo.it/c/rsa-lorenzo-e-gianna-zirotti/7186",
-      "confidenza": "alta",
-      "motivo": "telefono 394990961 scartato: ricorre su comuni diversi, e il numero della sede",
-      "scritto": [
-        "email",
-        "sito_web"
-      ]
-    },
-    {
-      "slug": "il-gioiello-rivanazzano-terme",
-      "nome": "Il Gioiello",
-      "comune": "Rivanazzano Terme",
-      "url": "https://sereniorizzonti.it/it/residenza/rsa-villa-il-gioiello/",
-      "confidenza": "alta",
-      "motivo": "telefono 0432506519 scartato: ricorre su comuni diversi, e il numero della sede",
+      "motivo": "telefono 800688736 scartato: ricorre su comuni diversi, e il numero della sede",
       "scritto": [
         "email",
         "sito_web",
@@ -128,12 +759,12 @@
       ]
     },
     {
-      "slug": "rsa-san-francesco-d-assisi-casalpusterlengo",
-      "nome": "RSA San Francesco d'Assisi",
-      "comune": "Casalpusterlengo",
-      "url": "https://sereniorizzonti.it/it/residenza/rsa-san-francesco-dassisi-casalpusterlengo/",
+      "slug": "rsa-villa-vasari-cornaredo",
+      "nome": "RSA Villa Vasari",
+      "comune": "Cornaredo",
+      "url": "https://www.lavillaspa.it/strutture/rsa-villa-vasari/",
       "confidenza": "alta",
-      "motivo": "telefono 0432506519 scartato: ricorre su comuni diversi, e il numero della sede",
+      "motivo": "telefono 800688736 scartato: ricorre su comuni diversi, e il numero della sede",
       "scritto": [
         "email",
         "sito_web",
@@ -141,35 +772,1117 @@
       ]
     },
     {
-      "slug": "villa-abbadia-fiesco",
-      "nome": "Villa Abbadia",
-      "comune": "Fiesco",
-      "url": "https://sereniorizzonti.it/it/residenza/rsa-villa-abbadia/",
+      "slug": "fondazione-michela-e-franco-fornasari-mozzate",
+      "nome": "Fondazione Michela e Franco Fornasari",
+      "comune": "Mozzate",
+      "url": "https://www.hospitalia.it/case-di-riposo/lombardia/como/mozzate/rsa-fondazione-michela-e-franco-fornasari-2332",
       "confidenza": "alta",
-      "motivo": "telefono 0432506519 scartato: ricorre su comuni diversi, e il numero della sede",
+      "motivo": "telefono 0918580969 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-cardinal-colombo-casciago",
+      "nome": "RSA Cardinal Colombo",
+      "comune": "Casciago",
+      "url": "https://www.hospitalia.it/case-di-riposo/lombardia/varese/casciago/rsa-cardinal-colombo---fondazione-opera-pia-colleoni-de-maestri-onlus-6961",
+      "confidenza": "alta",
+      "motivo": "telefono 0918580969 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "fondazione-rsa-garibaldi-pogliani-onlus-cantu",
+      "nome": "Fondazione RSA Garibaldi Pogliani ONLUS",
+      "comune": "Cantu'",
+      "url": "https://www.fatti-trovare.org/dettaglio.php?lang_id=1&user_id=211",
+      "confidenza": "alta",
+      "motivo": "telefono 0313515358 scartato: ricorre su comuni diversi, e il numero della sede",
       "scritto": [
         "email",
         "sito_web",
         "pec_gestore"
+      ]
+    },
+    {
+      "slug": "fondazione-rsa-garibaldi-pogliani-onlus-capiago-intimiano",
+      "nome": "Fondazione RSA Garibaldi Pogliani ONLUS",
+      "comune": "Capiago Intimiano",
+      "url": "https://www.ats-insubria.it/component/chronoforms7/?chronoform=liste-attesa-rsa&gpage=viewDetail&CUDES=322002748",
+      "confidenza": "media",
+      "motivo": "telefono 0313515358 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "fondazione-rsa-garibaldi-pogliani-onlus-sede-3-fossano-cantu",
+      "nome": "Fondazione RSA Garibaldi Pogliani ONLUS Sede 3 Fossano",
+      "comune": "Cantu'",
+      "url": "https://www.fatti-trovare.org/dettaglio.php?lang_id=1&user_id=211",
+      "confidenza": "alta",
+      "motivo": "telefono 0313515358 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "r-s-a-rita-e-luigi-gelosa-briosco",
+      "nome": "R.s.a. Rita e Luigi Gelosa",
+      "comune": "Briosco",
+      "url": "https://www.scimaro.it/residenza-rita-e-luigi-gelosa-briosco/",
+      "confidenza": "alta",
+      "motivo": "telefono +390229536391 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web",
+        "pec_gestore",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "residenza-giovanni-amodeo-borgarello",
+      "nome": "Residenza Giovanni Amodeo",
+      "comune": "Borgarello",
+      "url": "https://www.scimaro.it/residenza-giovanni-amodeo-borgarello/",
+      "confidenza": "alta",
+      "motivo": "telefono +390229536391 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web",
+        "pec_gestore",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "rsa-don-leone-porta-milano",
+      "nome": "RSA Don Leone Porta",
+      "comune": "Milano",
+      "url": "https://www.scimaro.it/residenza-don-leone-porta-milano/",
+      "confidenza": "alta",
+      "motivo": "telefono +390229536391 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web",
+        "pec_gestore",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "villa-mafalda-borgo-san-siro",
+      "nome": "Villa Mafalda",
+      "comune": "Borgo San Siro",
+      "url": "https://www.scimaro.it/residenza-villa-mafalda-borgo-san-siro/",
+      "confidenza": "alta",
+      "motivo": "telefono +390229536391 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web",
+        "pec_gestore",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "la-sapienza-menaggio",
+      "nome": "La Sapienza",
+      "comune": "Menaggio",
+      "url": "https://www.hospitalia.it/case-di-riposo/lombardia/como/menaggio/rsa-la-sapienza-2294",
+      "confidenza": "alta",
+      "motivo": "telefono 0918580969 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "papa-giovanni-xxiii-turate",
+      "nome": "Papa Giovanni Xxiii",
+      "comune": "Turate",
+      "url": "https://www.hospitalia.it/case-di-riposo/lombardia/como/turate/rsa-papa-giovanni-xxiii-2296",
+      "confidenza": "alta",
+      "motivo": "telefono 0918580969 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-valle-intelvi-alta-valle-intelvi",
+      "nome": "RSA Valle Intelvi",
+      "comune": "Alta Valle Intelvi",
+      "url": "https://www.hospitalia.it/contatti",
+      "confidenza": "media",
+      "motivo": "telefono 0918580969 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "casa-famiglia-per-anziani-san-vittore-olona",
+      "nome": "Casa Famiglia per Anziani",
+      "comune": "San Vittore Olona",
+      "url": "https://peranziani.it/rsa/milano/san-vittore-olona/",
+      "confidenza": "alta",
+      "motivo": "telefono 378850965 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-casa-famiglia-per-anziani-cormano",
+      "nome": "RSA Casa Famiglia per Anziani",
+      "comune": "Cormano",
+      "url": "https://peranziani.it/contatti/",
+      "confidenza": "media",
+      "motivo": "telefono 378850965 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "istituto-geriatrico-p-redaelli-vimodrone",
+      "nome": "Istituto Geriatrico \"P.redaelli",
+      "comune": "Vimodrone",
+      "url": "https://www.golgiredaelli.it/noi-chi-siamo/il-nostro-valore/professioni-e-persone/istituto-geriatrico-piero-redaelli-vimodrone/",
+      "confidenza": "alta",
+      "motivo": "telefono 02413151 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "istituto-geriatrico-c-golgi-abbiategrasso",
+      "nome": "Istituto Geriatrico C. Golgi",
+      "comune": "Abbiategrasso",
+      "url": "https://www.golgiredaelli.it/noi-chi-siamo/il-nostro-valore/professioni-e-persone/istituto-geriatrico-camillo-golgi-abbiategrasso/",
+      "confidenza": "alta",
+      "motivo": "telefono 02413151 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "istituto-geriatrico-p-redaelli-milano",
+      "nome": "Istituto Geriatrico P. Redaelli",
+      "comune": "Milano",
+      "url": "https://www.golgiredaelli.it/noi-chi-siamo/il-nostro-valore/professioni-e-persone/istituto-geriatrico-piero-redaelli-milano/",
+      "confidenza": "alta",
+      "motivo": "telefono 02413151 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "residenza-franco-bassani-laveno-mombello",
+      "nome": "Residenza Franco Bassani",
+      "comune": "Laveno-mombello",
+      "url": "https://www.quotalo.it/azienda.php?azienda=fondazione-centro-residenziale-per-anziani-menotti-bassani-onlus",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-paola-di-rosa-capriano-del-colle",
+      "nome": "RSA - Paola di Rosa",
+      "comune": "Capriano del Colle",
+      "url": "https://www.fondazionepaoladirosa.it/rsa/paola-di-rosa",
+      "confidenza": "alta",
+      "motivo": "telefono 0302019011 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "rsa-mons-f-pinzoni-brescia",
+      "nome": "RSA Mons. F. Pinzoni",
+      "comune": "Brescia",
+      "url": "https://www.fondazionepaoladirosa.it/rsa/mons-faustino-pinzoni",
+      "confidenza": "alta",
+      "motivo": "telefono 0302019011 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "rsa-villa-di-salute-brescia",
+      "nome": "RSA Villa di Salute",
+      "comune": "Brescia",
+      "url": "https://www.fondazionepaoladirosa.it/rsa/villa-di-salute",
+      "confidenza": "alta",
+      "motivo": "telefono 0302019011 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "rsa-di-via-c-battisti-n-10-barbariga-barbariga",
+      "nome": "RSA di Via C. Battisti N. 10 Barbariga",
+      "comune": "Barbariga",
+      "url": "https://www.fondazioniriunite.it/",
+      "confidenza": "alta",
+      "motivo": "telefono 030.9949706 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-di-via-santa-giulia-n-1-orzivecchi",
+      "nome": "RSA di Via Santa Giulia N. 1",
+      "comune": "Orzivecchi",
+      "url": "https://www.fondazioniriunite.it/rsa-orzivecchi/presentazione/",
+      "confidenza": "alta",
+      "motivo": "telefono 030.9949706 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "rsa-di-via-veronica-gambara-n-20-orzinuovi",
+      "nome": "RSA di Via Veronica Gambara N. 20",
+      "comune": "Orzinuovi",
+      "url": "https://www.fondazioniriunite.it/",
+      "confidenza": "alta",
+      "motivo": "telefono 030.9949706 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "istituto-palazzolo-casa-san-giuseppe-cantello",
+      "nome": "Istituto Palazzolo Casa San Giuseppe",
+      "comune": "Cantello",
+      "url": "https://fatti-trovare.org/dettaglio.php?lang_id=1&user_id=236",
+      "confidenza": "alta",
+      "motivo": "telefono 0332419511 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "rsa-sacro-cuore-bergamo",
+      "nome": "RSA Sacro Cuore",
+      "comune": "Bergamo",
+      "url": "https://www.istitutopalazzolo.it/site/rsa-sacro-cuore-bergamo/",
+      "confidenza": "alta",
+      "motivo": "telefono 0332 419511 scartato: ricorre su comuni diversi, e il numero della sede",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "angelo-gasparotti-salo",
+      "nome": "Angelo Gasparotti",
+      "comune": "Salo'",
+      "url": "https://primabrescia.it/cronaca/rsa-residenza-gli-ulivi-di-salo-inaugurato-il-nucleo-dottor-angelo-gasparotti/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-residenza-gli-ulivi-salo",
+      "nome": "RSA Residenza gli Ulivi",
+      "comune": "Salo'",
+      "url": "https://www.curalune.com/it/residenze/rsa-residenza-gli-ulivi-salo",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "casa-di-riposo-s-orsola-teglio",
+      "nome": "Casa di Riposo \"S. Orsola",
+      "comune": "Teglio",
+      "url": "https://www.casariposo.org/contatti/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "casa-di-riposo-di-mandello-del-lario-onlus-mandello-del-lario",
+      "nome": "Casa di Riposo di Mandello del Lario ONLUS",
+      "comune": "Mandello del Lario",
+      "url": "https://www.casariposo.org/contatti/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "casa-di-riposo-giovanni-e-luciana-arvedi-cremona",
+      "nome": "Casa di Riposo Giovanni e Luciana Arvedi",
+      "comune": "Cremona",
+      "url": "https://peranziani.it/strutture/fondazione-la-pace-onlus/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "casa-di-riposo-la-madonnina-bellano",
+      "nome": "Casa di Riposo la Madonnina",
+      "comune": "Bellano",
+      "url": "https://oneitalia.eu/la-muggiasca-cooperativa-di-solidarieta-a-rl/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "casa-di-riposo-p-a-faccanoni-ets-sarnico",
+      "nome": "Casa di Riposo P. A. Faccanoni - ETS",
+      "comune": "Sarnico",
+      "url": "https://www.casariposo.org/contatti/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "casa-di-riposo-s-giuseppe-dorno",
+      "nome": "Casa di Riposo S. Giuseppe",
+      "comune": "Dorno",
+      "url": "https://www.casaripososangiuseppe.it/contatti",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "casa-di-riposo-san-giuseppe-isola-dovarese",
+      "nome": "Casa di Riposo San Giuseppe",
+      "comune": "Isola Dovarese",
+      "url": "https://www.casaripososangiuseppe.it/contatti",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "casa-di-riposo-san-giuseppe-ets-casnigo",
+      "nome": "Casa di Riposo San Giuseppe - ETS",
+      "comune": "Casnigo",
+      "url": "https://www.casaripososangiuseppe.it/contatti",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "casa-di-riposo-fratelli-carnevale-gambolo",
+      "nome": "Casa di Riposo Fratelli Carnevale",
+      "comune": "Gambolo'",
+      "url": "https://www.curalune.com/it/residenze/rsa-fratelli-carnevale-gambolo",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "casa-di-riposo-san-giuseppe-viggiu",
+      "nome": "Casa di Riposo San Giuseppe",
+      "comune": "Viggiu'",
+      "url": "https://www.sangiuseppecasadiriposo.com/contatti",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "casa-di-riposo-vallardi-ets-appiano-gentile",
+      "nome": "Casa di Riposo Vallardi ETS",
+      "comune": "Appiano Gentile",
+      "url": "https://www.casariposo.org/contatti/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-casa-s-agnese-saronno",
+      "nome": "RSA Casa S.agnese",
+      "comune": "Saronno",
+      "url": "https://peranziani.it/contatti/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "casa-famiglia-padre-francesco-spinelli-rivolta-d-adda",
+      "nome": "Casa Famiglia Padre Francesco Spinelli",
+      "comune": "Rivolta d'Adda",
+      "url": "https://ats-valpadana.it/strutture-rsa/casa-famiglia-padre-francesco-spinelli",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web",
+        "pec_gestore",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "casa-ospitale-don-pietro-aresi-onlus-brignano-gera-d-adda",
+      "nome": "Casa Ospitale Don Pietro Aresi ONLUS",
+      "comune": "Brignano Gera d'Adda",
+      "url": "https://www.casaospitalearesi.it/contatti.php",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "casa-famiglia-di-arconate-arconate",
+      "nome": "Casa Famiglia di Arconate",
+      "comune": "Arconate",
+      "url": "https://prefettura.interno.gov.it/it/prefetture/milano/opera-pia-castiglioni-srl",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "casa-san-giuseppe-gorlago",
+      "nome": "Casa San Giuseppe",
+      "comune": "Gorlago",
+      "url": "https://peranziani.it/contatti/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "fondazione-alceste-cortellona-onlus-mortara",
+      "nome": "Fondazione Alceste Cortellona ONLUS",
+      "comune": "Mortara",
+      "url": "https://www.rsacortellona.com/rsa/contatti/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "sito_web",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "fondazione-casa-di-riposo-di-robecco-d-oglio-onlus-robecco-d-oglio",
+      "nome": "Fondazione \"Casa di Riposo di Robecco d'Oglio ONLUS",
+      "comune": "Robecco d'Oglio",
+      "url": "https://peranziani.it/strutture/fondazione-casa-di-riposo-di-robecco-doglio-onlus/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "fondazione-bandera-vezzoli-onlus-urago-d-oglio",
+      "nome": "Fondazione Bandera Vezzoli ONLUS",
+      "comune": "Urago d'Oglio",
+      "url": "https://www.bresciatoday.it/guida/anziani/rsa-provincia-brescia.html",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "fondazione-baguzzi-dassu-san-martino-dall-argine",
+      "nome": "Fondazione Baguzzi Dassu'",
+      "comune": "San Martino dall'Argine",
+      "url": "https://ats-valpadana.it/strutture-rsa/fondazione-baguzzi-dassu",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web",
+        "pec_gestore",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "fondazione-casa-di-riposo-c-e-v-bellini-onlus-somma-lombardo",
+      "nome": "Fondazione Casa di Riposo \"C. e V. Bellini\" ONLUS",
+      "comune": "Somma Lombardo",
+      "url": "https://www.casariposo.org/contatti/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "fondazione-casa-di-riposo-di-ponte-san-pietro-o-n-l-u-s-ponte-san-pietro",
+      "nome": "Fondazione Casa di Riposo di Ponte San Pietro O.n.l.u.s.",
+      "comune": "Ponte San Pietro",
+      "url": "https://www.casariposo.org/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "fondazione-casa-di-riposo-g-scarpini-covo",
+      "nome": "Fondazione Casa di Riposo G. Scarpini",
+      "comune": "Covo",
+      "url": "https://www.casariposo.org/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "fondazione-casa-serena-ets-brembate-di-sopra",
+      "nome": "Fondazione Casa Serena - ETS",
+      "comune": "Brembate di Sopra",
+      "url": "https://casaserena.it/contatti/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "fondazione-casa-di-riposo-spirano-onlus-spirano",
+      "nome": "Fondazione Casa di Riposo Spirano ONLUS",
+      "comune": "Spirano",
+      "url": "https://www.casariposo.org/contatti/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "fondazione-casa-di-riposo-villa-della-pace-stezzano",
+      "nome": "Fondazione Casa di Riposo Villa della Pace",
+      "comune": "Stezzano",
+      "url": "https://www.casariposo.org/contatti/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "fondazione-e-germani-centro-assistenziale-sanitario-onlus-cingia-de-botti",
+      "nome": "Fondazione E. Germani Centro Assistenziale Sanitario - ONLUS",
+      "comune": "Cingia de' Botti",
+      "url": "https://ats-valpadana.it/amministrazione-trasparente/fondazione-elisabetta-germani-centro-sanitario-assistenziale-onlus",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "sito_web",
+        "pec_gestore",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "fondazione-istituto-madonna-della-croce-viggiu",
+      "nome": "Fondazione Istituto Madonna della Croce",
+      "comune": "Viggiu'",
+      "url": "https://www.madonnadellacroce.it/contatto",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "fondazione-di-servizi-alla-persona-luigina-milanesi-e-paolo-frosi-onlus-trigolo",
+      "nome": "Fondazione di Servizi alla Persona Luigina Milanesi e Paolo Frosi ONLUS",
+      "comune": "Trigolo",
+      "url": "https://www.rsatrigolo.it/contatti-contattaci",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web",
+        "pec_gestore",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "fondazione-onlus-casa-di-riposo-leandra-canneto-sull-oglio",
+      "nome": "Fondazione ONLUS Casa di Riposo Leandra",
+      "comune": "Canneto sull'Oglio",
+      "url": "https://www.casariposo.org/contatti/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "fondazione-pensionato-sannazzarese-onlus-sannazzaro-de-burgondi",
+      "nome": "Fondazione Pensionato Sannazzarese ONLUS",
+      "comune": "Sannazzaro de' Burgondi",
+      "url": "https://www.pensionatosannazzarese.it/contatti/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web",
+        "pec_gestore",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "fondazione-porta-spinola-arnaboldi-onlus-campospinoso",
+      "nome": "Fondazione Porta Spinola Arnaboldi ONLUS",
+      "comune": "Campospinoso",
+      "url": "https://www.portaspinola.it/contatti/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web",
+        "pec_gestore",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "la-dimora-sul-lago-vergiate",
+      "nome": "La Dimora Sul Lago",
+      "comune": "Vergiate",
+      "url": "https://residenzesantacecilia.it/contatti/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "piccola-casa-della-divina-provvidenza-cottolengo-cerro-maggiore",
+      "nome": "Piccola Casa della Divina Provvidenza - Cottolengo",
+      "comune": "Cerro Maggiore",
+      "url": "https://peranziani.it/strutture/piccola-casa-divina-provvidenza-cottolengo/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "r-s-a-casa-di-riposo-sandro-pertini-arluno",
+      "nome": "R.s.a. Casa di Riposo Sandro Pertini",
+      "comune": "Arluno",
+      "url": "https://comune.arluno.mi.it/servizi/servizio-dettaglio/2825190",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web",
+        "pec_gestore",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "r-s-a-citta-di-tirano-tirano",
+      "nome": "R.s.a. \"Citta' di Tirano",
+      "comune": "Tirano",
+      "url": "https://www.rsatirano.it/home",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "r-s-a-santa-francesca-cabrini-sant-angelo-lodigiano",
+      "nome": "R.s.a. Santa Francesca Cabrini",
+      "comune": "Sant'Angelo Lodigiano",
+      "url": "https://www.lacasadiriposo.it/c/casa-di-riposo-fondazione-madre-cabrini-onlus/2455",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "residenza-mario-e-rina-molina-luino",
+      "nome": "Residenza Mario e Rina Molina",
+      "comune": "Luino",
+      "url": "https://aldia.it/it",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "residenza-vittoria-brescia",
+      "nome": "Residenza Vittoria",
+      "comune": "Brescia",
+      "url": "https://villavittoria.org/contatti-2/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-casa-di-riposo-san-giovanni-onlus-bovegno",
+      "nome": "RSA - \"Casa di Riposo San Giovanni ONLUS",
+      "comune": "Bovegno",
+      "url": "https://www.casariposo.org/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-casa-albergo-per-anziani-montichiari",
+      "nome": "RSA - Casa Albergo per Anziani",
+      "comune": "Montichiari",
+      "url": "https://www.montichiarimultiservizi.it/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "rsa-casa-di-soggiorno-per-anziani-onlus-bedizzole",
+      "nome": "RSA - Casa di Soggiorno per Anziani - ONLUS",
+      "comune": "Bedizzole",
+      "url": "https://www.casasoggiorno.it/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-casa-di-riposo-don-f-cremona-onlus-palazzolo-sull-oglio",
+      "nome": "RSA - Casa di Riposo Don F. Cremona ONLUS",
+      "comune": "Palazzolo sull'Oglio",
+      "url": "https://www.curalune.com/it/residenze/rsa-don-f-cremona-onlus",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-fondazione-casa-di-riposo-per-anziani-di-botticino-onlus-botticino",
+      "nome": "RSA - Fondazione Casa di Riposo per Anziani di Botticino ONLUS",
+      "comune": "Botticino",
+      "url": "https://www.casariposo.org/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-fondazione-casa-di-riposo-villa-g-padovani-onlus-quinzano-d-oglio",
+      "nome": "RSA - Fondazione Casa di Riposo Villa G. Padovani ONLUS",
+      "comune": "Quinzano d'Oglio",
+      "url": "https://www.casariposo.org/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-fondazione-irene-rubini-falck-onlus-vobarno",
+      "nome": "RSA - Fondazione Irene Rubini Falck ONLUS",
+      "comune": "Vobarno",
+      "url": "https://peranziani.it/strutture/fondazione-irene-rubini-falck-onlus/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-beato-innocenzo-berzo-inferiore",
+      "nome": "RSA Beato Innocenzo",
+      "comune": "Berzo Inferiore",
+      "url": "https://www.visura.pro/imprese/645940288-rsa-berzo-inferiore-s-r-l.html",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "rsa-casa-gesu-maestro-cinisello-balsamo",
+      "nome": "RSA Casa Gesu' Maestro",
+      "comune": "Cinisello Balsamo",
+      "url": "https://www.socialcoop.it/Le-strutture/tag/residenze-per-anziani-autosufficienti",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-casa-pace-mantova",
+      "nome": "RSA Casa Pace",
+      "comune": "Mantova",
+      "url": "https://www.coress.org/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-corte-briantea-muggio",
+      "nome": "RSA Corte Briantea",
+      "comune": "Muggio'",
+      "url": "https://globalstoreitalia.com/blog/platino/10013947/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-fondazione-giovanni-carlo-rota-onlus-almenno-san-salvatore",
+      "nome": "RSA Fondazione Giovanni Carlo Rota ONLUS",
+      "comune": "Almenno San Salvatore",
+      "url": "https://peranziani.it/strutture/fondazione-giovanni-carlo-rota-onlus/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-fondazione-giuseppina-scola-onlus-besana-in-brianza",
+      "nome": "RSA Fondazione Giuseppina Scola - ONLUS",
+      "comune": "Besana in Brianza",
+      "url": "https://www.fondazionegscola.it/contatti/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "rsa-i-girasoli-borgo-virgilio",
+      "nome": "RSA i Girasoli",
+      "comune": "Borgo Virgilio",
+      "url": "https://www.girasolirsa.it/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-istituto-s-giuseppe-villa-d-adda",
+      "nome": "RSA Istituto S. Giuseppe",
+      "comune": "Villa d'Adda",
+      "url": "https://www.ats-bg.it/strutture-rsa/istituto-san-giuseppe-suore-orsoline-gandino-villa-d-adda",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "rsa-l-arca-desio",
+      "nome": "RSA l'Arca",
+      "comune": "Desio",
+      "url": "https://casadiriposogavazzi.it/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web",
+        "pec_gestore",
+        "url_carta_servizi"
+      ]
+    },
+    {
+      "slug": "rsa-mons-bicchierai-2-milano",
+      "nome": "RSA Mons. Bicchierai 2",
+      "comune": "Milano",
+      "url": "https://biopmed.eu/i-soci/istituto-auxologico-italiano/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web"
+      ]
+    },
+    {
+      "slug": "rsa-san-giorgio-oliveto-lario",
+      "nome": "RSA San Giorgio",
+      "comune": "Oliveto Lario",
+      "url": "http://cssm.it/",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "zaffiro-rsa-smeraldo-carugo",
+      "nome": "Zaffiro RSA Smeraldo",
+      "comune": "Carugo",
+      "url": "https://www.ats-brescia.it/atti/ente-gestore-zaffiro-nord-s-r-residenza-sanitario-assistenziale-anziani-rsa-zaffiro-ninfea-cudes-090230-esito-verifiche-seguito-scia-co",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "sito_web",
+        "pec_gestore"
+      ]
+    },
+    {
+      "slug": "sen-c-perini-rho",
+      "nome": "Sen. C. Perini",
+      "comune": "Rho",
+      "url": "http://www.farediversamente.it/scheda_soggetto.aspx?id=84",
+      "confidenza": "media",
+      "motivo": "gestore con una sola struttura, corrispondenza parziale",
+      "scritto": [
+        "telefono",
+        "email",
+        "sito_web"
       ]
     }
   ],
-  "strutture_scoperte": 28,
+  "strutture_scoperte": 137,
   "elenco_scoperte": [
     {
       "slug": "casa-di-riposo-l-accorsi-legnano",
       "nome": "Casa di Riposo L. Accorsi",
       "comune": "Legnano"
-    },
-    {
-      "slug": "residenze-saccardo-edificio-a-milano",
-      "nome": "Residenze Saccardo Edificio a",
-      "comune": "Milano"
-    },
-    {
-      "slug": "residenze-saccardo-edificio-b-milano",
-      "nome": "Residenze Saccardo Edificio B",
-      "comune": "Milano"
     },
     {
       "slug": "r-s-a-villa-serena-galbiate",
@@ -192,14 +1905,9 @@
       "comune": "Romano di Lombardia"
     },
     {
-      "slug": "rsa-sant-andrea-monza",
-      "nome": "RSA Sant' Andrea",
-      "comune": "Monza"
-    },
-    {
-      "slug": "sant-andrea-2-monza",
-      "nome": "Sant'Andrea 2",
-      "comune": "Monza"
+      "slug": "rsa-casa-di-riposo-villa-serena-predore",
+      "nome": "RSA Casa di Riposo Villa Serena",
+      "comune": "Predore"
     },
     {
       "slug": "r-s-a-melograno-cassina-de-pecchi",
@@ -207,34 +1915,9 @@
       "comune": "Cassina de' Pecchi"
     },
     {
-      "slug": "r-s-a-via-baroni-milano",
-      "nome": "R.s.a. Via Baroni",
-      "comune": "Milano"
-    },
-    {
-      "slug": "r-s-a-via-ornato-milano",
-      "nome": "R.s.a. Via Ornato",
-      "comune": "Milano"
-    },
-    {
-      "slug": "r-s-a-via-quarenghi-milano",
-      "nome": "R.s.a. Via Quarenghi",
-      "comune": "Milano"
-    },
-    {
-      "slug": "rsa-residenza-alle-barche-bereguardo",
-      "nome": "RSA Residenza Alle Barche",
-      "comune": "Bereguardo"
-    },
-    {
       "slug": "residenza-s-martino-bollate",
       "nome": "Residenza S. Martino",
       "comune": "Bollate"
-    },
-    {
-      "slug": "r-s-a-c-o-il-centro-comunale-polivalente-per-anziani-di-cusano-milanino-cusano-milanino",
-      "nome": "R.s.a. C/o il Centro Comunale Polivalente per Anziani di Cusano Milanino",
-      "comune": "Cusano Milanino"
     },
     {
       "slug": "rsa-anni-azzurri-rezzato-rezzato",
@@ -242,9 +1925,19 @@
       "comune": "Rezzato"
     },
     {
+      "slug": "residenza-sanitaria-assistenziale-morando-ostiglia",
+      "nome": "Residenza Sanitaria Assistenziale Morando",
+      "comune": "Ostiglia"
+    },
+    {
       "slug": "rsa-anni-azzurri-vico-mercati-vimercate",
       "nome": "RSA Anni Azzurri Vico Mercati",
       "comune": "Vimercate"
+    },
+    {
+      "slug": "r-s-a-mantegna-bozzolo",
+      "nome": "R.s.a. Mantegna",
+      "comune": "Bozzolo"
     },
     {
       "slug": "rsa-san-luca-milano",
@@ -257,24 +1950,164 @@
       "comune": "Monza"
     },
     {
-      "slug": "rsa-casa-s-agnese-saronno",
-      "nome": "RSA Casa S.agnese",
-      "comune": "Saronno"
-    },
-    {
-      "slug": "rsa-stefano-porro-lentate-sul-seveso",
-      "nome": "RSA Stefano Porro",
-      "comune": "Lentate Sul Seveso"
-    },
-    {
       "slug": "rsa-villaggio-s-francesco-villanuova-sul-clisi",
       "nome": "RSA Villaggio S. Francesco",
       "comune": "Villanuova Sul Clisi"
     },
     {
+      "slug": "casa-famiglia-anziani-busto-garolfo",
+      "nome": "Casa Famiglia Anziani",
+      "comune": "Busto Garolfo"
+    },
+    {
+      "slug": "casa-famiglia-per-anziani-di-bussero-bussero",
+      "nome": "Casa Famiglia per Anziani di Bussero",
+      "comune": "Bussero"
+    },
+    {
+      "slug": "casa-famiglia-per-anziani-dott-vittorio-crespi-villa-cortese",
+      "nome": "Casa Famiglia per Anziani Dott. Vittorio Crespi",
+      "comune": "Villa Cortese"
+    },
+    {
+      "slug": "rsa-s-giuseppe-castano-primo",
+      "nome": "RSA S. Giuseppe",
+      "comune": "Castano Primo"
+    },
+    {
+      "slug": "casa-famiglia-per-anziani-ernesto-azzalin-inveruno",
+      "nome": "Casa Famiglia per Anziani Ernesto Azzalin",
+      "comune": "Inveruno"
+    },
+    {
+      "slug": "il-palio-legnano",
+      "nome": "Il Palio",
+      "comune": "Legnano"
+    },
+    {
+      "slug": "rsa-casa-famiglia-di-milano-affori-milano",
+      "nome": "RSA Casa Famiglia di Milano Affori",
+      "comune": "Milano"
+    },
+    {
+      "slug": "r-s-a-villa-azzurra-borgo-virgilio",
+      "nome": "R.s.a. Villa Azzurra",
+      "comune": "Borgo Virgilio"
+    },
+    {
+      "slug": "r-s-a-monsignor-borsieri-lecco",
+      "nome": "R.s.a. Monsignor Borsieri",
+      "comune": "Lecco"
+    },
+    {
+      "slug": "santa-caterina-fondazione-istituto-sacra-famiglia-onlus-settimo-milanese",
+      "nome": "Santa Caterina - Fondazione Istituto Sacra Famiglia ONLUS",
+      "comune": "Settimo Milanese"
+    },
+    {
+      "slug": "casa-ospitalita-anziani-rescaldina",
+      "nome": "Casa Ospitalita' Anziani",
+      "comune": "Rescaldina"
+    },
+    {
+      "slug": "pensionato-don-orione-corvino-san-quirico",
+      "nome": "Pensionato Don Orione",
+      "comune": "Corvino San Quirico"
+    },
+    {
+      "slug": "rsa-piccolo-cottolengo-di-don-orione-seregno",
+      "nome": "RSA Piccolo Cottolengo di Don Orione",
+      "comune": "Seregno"
+    },
+    {
+      "slug": "villa-s-fermo-san-fermo-della-battaglia",
+      "nome": "Villa S. Fermo",
+      "comune": "San Fermo della Battaglia"
+    },
+    {
+      "slug": "r-s-a-b-cremona",
+      "nome": "R.s.a. \"B",
+      "comune": "Cremona"
+    },
+    {
+      "slug": "r-s-a-arcobaleno-luna-cava-manara",
+      "nome": "R.s.a. Arcobaleno Luna",
+      "comune": "Cava Manara"
+    },
+    {
+      "slug": "residenze-saccardo-edificio-a-milano",
+      "nome": "Residenze Saccardo Edificio a",
+      "comune": "Milano"
+    },
+    {
+      "slug": "r-s-a-arcobaleno-sole-cava-manara",
+      "nome": "R.s.a. Arcobaleno Sole",
+      "comune": "Cava Manara"
+    },
+    {
+      "slug": "residenze-saccardo-edificio-b-milano",
+      "nome": "Residenze Saccardo Edificio B",
+      "comune": "Milano"
+    },
+    {
+      "slug": "rsa-residenza-giardino-lavena-ponte-tresa",
+      "nome": "RSA Residenza Giardino",
+      "comune": "Lavena Ponte Tresa"
+    },
+    {
+      "slug": "rsa-sant-andrea-monza",
+      "nome": "RSA Sant' Andrea",
+      "comune": "Monza"
+    },
+    {
+      "slug": "r-s-a-via-baroni-milano",
+      "nome": "R.s.a. Via Baroni",
+      "comune": "Milano"
+    },
+    {
+      "slug": "sant-andrea-2-monza",
+      "nome": "Sant'Andrea 2",
+      "comune": "Monza"
+    },
+    {
+      "slug": "casa-comunale-per-anziani-san-giorgio-di-lomellina",
+      "nome": "Casa Comunale per Anziani",
+      "comune": "San Giorgio di Lomellina"
+    },
+    {
+      "slug": "r-s-a-via-ornato-milano",
+      "nome": "R.s.a. Via Ornato",
+      "comune": "Milano"
+    },
+    {
+      "slug": "r-s-a-via-quarenghi-milano",
+      "nome": "R.s.a. Via Quarenghi",
+      "comune": "Milano"
+    },
+    {
+      "slug": "centro-aperto-a-chiesa-visconti-rosasco",
+      "nome": "Centro Aperto A. Chiesa - Visconti",
+      "comune": "Rosasco"
+    },
+    {
+      "slug": "casa-fam-per-anz-mons-c-testa-cologno-monzese",
+      "nome": "Casa Fam. per Anz. Mons. C. Testa",
+      "comune": "Cologno Monzese"
+    },
+    {
+      "slug": "residenza-oasi-besana-in-brianza",
+      "nome": "Residenza Oasi",
+      "comune": "Besana in Brianza"
+    },
+    {
       "slug": "centro-santa-maria-al-castello-onlus-pessano-con-bornago",
       "nome": "Centro Santa Maria al Castello ONLUS",
       "comune": "Pessano con Bornago"
+    },
+    {
+      "slug": "fond-c-f-cella-di-rivara-broni",
+      "nome": "Fond. C. F. Cella di Rivara",
+      "comune": "Broni"
     },
     {
       "slug": "fondazione-don-carlo-gnocchi-onlus-centro-santa-maria-al-monte-malnate",
@@ -287,14 +2120,449 @@
       "comune": "Seregno"
     },
     {
+      "slug": "sacro-cuore-broni",
+      "nome": "Sacro Cuore",
+      "comune": "Broni"
+    },
+    {
+      "slug": "r-s-a-acquamarina-binasco",
+      "nome": "R.s.a. Acquamarina",
+      "comune": "Binasco"
+    },
+    {
+      "slug": "r-s-a-alfredo-podesta-binasco",
+      "nome": "R.s.a. Alfredo Podesta'",
+      "comune": "Binasco"
+    },
+    {
+      "slug": "r-s-a-maria-lorenzon-binasco",
+      "nome": "R.s.a. Maria Lorenzon",
+      "comune": "Binasco"
+    },
+    {
+      "slug": "residenza-gennaro-arioli-laveno-mombello",
+      "nome": "Residenza Gennaro Arioli",
+      "comune": "Laveno-mombello"
+    },
+    {
+      "slug": "rsa-il-focolare-santa-maria-di-loreto-alta-valle-intelvi",
+      "nome": "RSA il Focolare Santa Maria di Loreto",
+      "comune": "Alta Valle Intelvi"
+    },
+    {
+      "slug": "residenza-giannina-scotti-laveno-mombello",
+      "nome": "Residenza Giannina Scotti",
+      "comune": "Laveno-mombello"
+    },
+    {
+      "slug": "asp-istituti-milanesi-martinitt-e-stelline-e-pio-a-milano",
+      "nome": "ASP Istituti Milanesi Martinitt e Stelline e Pio a",
+      "comune": "Milano"
+    },
+    {
+      "slug": "r-s-a-c-o-il-centro-comunale-polivalente-per-anziani-di-cusano-milanino-cusano-milanino",
+      "nome": "R.s.a. C/o il Centro Comunale Polivalente per Anziani di Cusano Milanino",
+      "comune": "Cusano Milanino"
+    },
+    {
       "slug": "sereni-orizzonti-villa-vanni-rivanazzano-terme",
       "nome": "Sereni Orizzonti Villa Vanni",
       "comune": "Rivanazzano Terme"
     },
     {
-      "slug": "zaffiro-rsa-smeraldo-carugo",
-      "nome": "Zaffiro RSA Smeraldo",
-      "comune": "Carugo"
+      "slug": "casa-di-riposo-francesco-pertusati-pavia",
+      "nome": "Casa di Riposo Francesco Pertusati",
+      "comune": "Pavia"
+    },
+    {
+      "slug": "casa-di-riposo-citta-di-sondrio-sondrio",
+      "nome": "Casa di Riposo Citta' di Sondrio",
+      "comune": "Sondrio"
+    },
+    {
+      "slug": "fondazione-case-di-riposo-riunite-di-bregnano-e-lomazzo-rsa-bregnano-bregnano",
+      "nome": "Fondazione Case di Riposo Riunite di Bregnano e Lomazzo - RSA Bregnano",
+      "comune": "Bregnano"
+    },
+    {
+      "slug": "fondazione-case-di-riposo-riunite-di-bregnano-e-lomazzo-rsa-lomazzo-lomazzo",
+      "nome": "Fondazione Case di Riposo Riunite di Bregnano e Lomazzo - RSA Lomazzo",
+      "comune": "Lomazzo"
+    },
+    {
+      "slug": "ist-suore-cappuccine-casa-di-riposo-san-francesco-bergamo",
+      "nome": "Ist. Suore Cappuccine Casa di Riposo San Francesco",
+      "comune": "Bergamo"
+    },
+    {
+      "slug": "opera-pia-caritas-onlus-r-s-a-casa-mons-g-speranza-zogno",
+      "nome": "Opera Pia Caritas - ONLUS R.s.a. Casa Mons. G. Speranza",
+      "comune": "Zogno"
+    },
+    {
+      "slug": "residenza-sanitaria-assistenziale-di-corteolona-corteolona-e-genzone",
+      "nome": "Residenza Sanitaria Assistenziale di Corteolona",
+      "comune": "Corteolona e Genzone"
+    },
+    {
+      "slug": "r-s-a-emanuele-e-giuseppina-cordioli-marmirolo",
+      "nome": "R.s.a. Emanuele e Giuseppina Cordioli",
+      "comune": "Marmirolo"
+    },
+    {
+      "slug": "residenza-mons-luigi-olgiati-sesto-san-giovanni",
+      "nome": "Residenza Mons. Luigi Olgiati",
+      "comune": "Sesto San Giovanni"
+    },
+    {
+      "slug": "residenza-i-gigli-candia-lomellina",
+      "nome": "Residenza i Gigli",
+      "comune": "Candia Lomellina"
+    },
+    {
+      "slug": "residenza-sanitaria-assistenziale-pindaro-44-milano",
+      "nome": "Residenza Sanitaria Assistenziale Pindaro 44",
+      "comune": "Milano"
+    },
+    {
+      "slug": "rsa-residenza-alle-barche-bereguardo",
+      "nome": "RSA Residenza Alle Barche",
+      "comune": "Bereguardo"
+    },
+    {
+      "slug": "rsa-stefano-porro-lentate-sul-seveso",
+      "nome": "RSA Stefano Porro",
+      "comune": "Lentate Sul Seveso"
+    },
+    {
+      "slug": "rsa-1-asp-carlo-pezzani-voghera",
+      "nome": "RSA 1 ASP Carlo Pezzani",
+      "comune": "Voghera"
+    },
+    {
+      "slug": "rsa-fondazione-s-maria-del-castello-onlus-carpenedolo",
+      "nome": "RSA - Fondazione S. Maria del Castello ONLUS",
+      "comune": "Carpenedolo"
+    },
+    {
+      "slug": "rsa-casa-di-riposo-madre-ada-bianchi-agrate-brianza",
+      "nome": "RSA Casa di Riposo Madre Ada Bianchi",
+      "comune": "Agrate Brianza"
+    },
+    {
+      "slug": "rsa-f-lli-beretta-s-giuseppe-padenghe-sul-garda",
+      "nome": "RSA F.lli Beretta - S.giuseppe",
+      "comune": "Padenghe Sul Garda"
+    },
+    {
+      "slug": "r-s-a-villa-maddalena-goito",
+      "nome": "R.s.a. Villa Maddalena",
+      "comune": "Goito"
+    },
+    {
+      "slug": "rsa-casa-solaris-sermide-e-felonica",
+      "nome": "RSA Casa Solaris",
+      "comune": "Sermide e Felonica"
+    },
+    {
+      "slug": "rsa-casa-di-riposo-suore-infermiere-di-san-carlo-carate-brianza",
+      "nome": "RSA Casa di Riposo Suore Infermiere di San Carlo",
+      "comune": "Carate Brianza"
+    },
+    {
+      "slug": "rsa-residenza-san-camillo-besana-in-brianza",
+      "nome": "RSA Residenza San Camillo",
+      "comune": "Besana in Brianza"
+    },
+    {
+      "slug": "rsa-isabella-d-este-mantova",
+      "nome": "RSA Isabella d'Este",
+      "comune": "Mantova"
+    },
+    {
+      "slug": "rsa-luigi-bianchi-mantova",
+      "nome": "RSA Luigi Bianchi",
+      "comune": "Mantova"
+    },
+    {
+      "slug": "casa-albergo-maria-immacolata-soc-coop-sociale-onlus-calvenzano",
+      "nome": "Casa Albergo Maria Immacolata Soc.coop.sociale ONLUS",
+      "comune": "Calvenzano"
+    },
+    {
+      "slug": "rsa-fiammetta-polis-ispra",
+      "nome": "RSA Fiammetta Polis",
+      "comune": "Ispra"
+    },
+    {
+      "slug": "santo-giovanni-paolo-ii-treviglio",
+      "nome": "Santo Giovanni Paolo II",
+      "comune": "Treviglio"
+    },
+    {
+      "slug": "casa-di-riposo-comunale-mezzana-bigli",
+      "nome": "Casa di Riposo Comunale",
+      "comune": "Mezzana Bigli"
+    },
+    {
+      "slug": "casa-di-riposo-fondazione-fratelli-enrico-e-antonio-nobili-onlus-vigano",
+      "nome": "Casa di Riposo Fondazione Fratelli Enrico e Antonio Nobili - ONLUS",
+      "comune": "Vigano'"
+    },
+    {
+      "slug": "casa-di-riposo-monticello-azienda-speciale-del-comune-di-monticello-brianza-monticello-brianza",
+      "nome": "Casa di Riposo Monticello - Azienda Speciale del Comune di Monticello Brianza",
+      "comune": "Monticello Brianza"
+    },
+    {
+      "slug": "casa-di-riposo-residenza-alla-pace-borgocarbonara",
+      "nome": "Casa di Riposo Residenza alla Pace",
+      "comune": "Borgocarbonara"
+    },
+    {
+      "slug": "casa-di-riposo-s-tarcisio-ottobiano",
+      "nome": "Casa di Riposo S. Tarcisio",
+      "comune": "Ottobiano"
+    },
+    {
+      "slug": "casa-di-riposo-piatti-venanzi-fondazione-o-n-l-u-s-r-s-a-palosco",
+      "nome": "Casa di Riposo Piatti Venanzi - Fondazione O.n.l.u.s. - R.s.a.",
+      "comune": "Palosco"
+    },
+    {
+      "slug": "casa-di-riposo-sacra-famiglia-antoniani-colico",
+      "nome": "Casa di Riposo Sacra Famiglia Antoniani",
+      "comune": "Colico"
+    },
+    {
+      "slug": "casa-di-riposo-s-lorenzo-valbondione",
+      "nome": "Casa di Riposo S. Lorenzo",
+      "comune": "Valbondione"
+    },
+    {
+      "slug": "casa-riposo-bellavista-sondalo-sondalo",
+      "nome": "Casa Riposo Bellavista - Sondalo",
+      "comune": "Sondalo"
+    },
+    {
+      "slug": "fondaz-casa-di-riposo-brambilla-nava-onlus-civate",
+      "nome": "Fondaz. Casa di Riposo \"Brambilla-nava\" ONLUS",
+      "comune": "Civate"
+    },
+    {
+      "slug": "fondazione-bartolomea-spada-schilpario-valle-di-scalve-e-t-s-schilpario",
+      "nome": "Fondazione Bartolomea Spada - Schilpario Valle di Scalve E.t.s.",
+      "comune": "Schilpario"
+    },
+    {
+      "slug": "fondazione-casa-della-serenita-ets-cene",
+      "nome": "Fondazione Casa della Serenita' - ETS",
+      "comune": "Cene"
+    },
+    {
+      "slug": "fondazione-casa-di-riposo-rsa-ospedale-g-g-milesi-onlus-gromo",
+      "nome": "Fondazione Casa di Riposo RSA - Ospedale G.g.milesi - ONLUS",
+      "comune": "Gromo"
+    },
+    {
+      "slug": "fondazione-centro-accoglienza-per-anziani-ets-lonate-pozzolo",
+      "nome": "Fondazione Centro Accoglienza per Anziani ETS",
+      "comune": "Lonate Pozzolo"
+    },
+    {
+      "slug": "fondazione-conte-dr-carlo-caracci-onlus-gazzuolo",
+      "nome": "Fondazione Conte Dr. Carlo Caracci ONLUS",
+      "comune": "Gazzuolo"
+    },
+    {
+      "slug": "fondazione-gioventu-nova-villa-rovera-molina-onlus-barasso",
+      "nome": "Fondazione Gioventu' Nova Villa Rovera Molina ONLUS",
+      "comune": "Barasso"
+    },
+    {
+      "slug": "fondazione-in-partecipazione-casa-di-riposo-villa-del-sorriso-ets-bormio",
+      "nome": "Fondazione in Partecipazione Casa di Riposo Villa del Sorriso ETS",
+      "comune": "Bormio"
+    },
+    {
+      "slug": "fondazione-milani-ets-castiglione-d-adda",
+      "nome": "Fondazione Milani ETS",
+      "comune": "Castiglione d'Adda"
+    },
+    {
+      "slug": "fondazione-marzotto-mortara",
+      "nome": "Fondazione Marzotto",
+      "comune": "Mortara"
+    },
+    {
+      "slug": "fondazione-piero-piccinelli-casa-maria-consolatrice-onlus-scanzorosciate",
+      "nome": "Fondazione Piero Piccinelli Casa Maria Consolatrice ONLUS",
+      "comune": "Scanzorosciate"
+    },
+    {
+      "slug": "istituto-mons-biraghi-cernusco-sul-naviglio",
+      "nome": "Istituto Mons. Biraghi",
+      "comune": "Cernusco Sul Naviglio"
+    },
+    {
+      "slug": "pensionato-contessi-sangalli-fondazione-ets-costa-volpino",
+      "nome": "Pensionato Contessi-sangalli Fondazione - ETS",
+      "comune": "Costa Volpino"
+    },
+    {
+      "slug": "r-s-a-baita-serena-valfurva",
+      "nome": "R.s.a. Baita Serena",
+      "comune": "Valfurva"
+    },
+    {
+      "slug": "r-s-a-gli-oleandri-rozzano",
+      "nome": "R.s.a. gli Oleandri",
+      "comune": "Rozzano"
+    },
+    {
+      "slug": "residenza-prealpina-cuvio",
+      "nome": "Residenza Prealpina",
+      "comune": "Cuvio"
+    },
+    {
+      "slug": "residenza-guerreschi-gianluigi-snc-capralba",
+      "nome": "Residenza Guerreschi Gianluigi SNC",
+      "comune": "Capralba"
+    },
+    {
+      "slug": "residenza-la-tua-casa-cigognola",
+      "nome": "Residenza la Tua Casa",
+      "comune": "Cigognola"
+    },
+    {
+      "slug": "rsa-tilde-e-luigi-colosio-rodengo-saiano",
+      "nome": "RSA - \"Tilde e Luigi Colosio",
+      "comune": "Rodengo Saiano"
+    },
+    {
+      "slug": "rsa-casa-di-riposo-g-b-valotti-onlus-isorella",
+      "nome": "RSA - Casa di Riposo G.b. Valotti - ONLUS",
+      "comune": "Isorella"
+    },
+    {
+      "slug": "rsa-fondazione-casa-di-industria-onlus-brescia",
+      "nome": "RSA - Fondazione \"Casa di Industria\" ONLUS",
+      "comune": "Brescia"
+    },
+    {
+      "slug": "rsa-fondazione-casa-di-riposo-di-roe-volciano-onlus-roe-volciano",
+      "nome": "RSA - Fondazione Casa di Riposo di Roe' Volciano ONLUS",
+      "comune": "Roe' Volciano"
+    },
+    {
+      "slug": "rsa-fondazione-casa-di-riposo-feltrinelli-onlus-gargnano",
+      "nome": "RSA - Fondazione Casa di Riposo Feltrinelli ONLUS",
+      "comune": "Gargnano"
+    },
+    {
+      "slug": "rsa-fondazione-casa-di-riposo-francesco-e-beniamino-porta-nuvolera",
+      "nome": "RSA - Fondazione Casa di Riposo Francesco e Beniamino Porta",
+      "comune": "Nuvolera"
+    },
+    {
+      "slug": "rsa-fondazione-centro-di-servizi-per-anziani-casa-di-riposo-maggi-onlus-castrezzato",
+      "nome": "RSA - Fondazione Centro di Servizi per Anziani Casa di Riposo Maggi ONLUS",
+      "comune": "Castrezzato"
+    },
+    {
+      "slug": "rsa-fondazione-casa-di-riposo-r-s-a-paolo-vi-onlus-bagnolo-mella",
+      "nome": "RSA - Fondazione Casa di Riposo R.s.a Paolo VI ONLUS",
+      "comune": "Bagnolo Mella"
+    },
+    {
+      "slug": "rsa-fondazione-onlus-casa-di-riposo-di-capriolo-don-gaudenzio-martinazzoli-capriolo",
+      "nome": "RSA - Fondazione ONLUS Casa di Riposo di Capriolo Don Gaudenzio Martinazzoli",
+      "comune": "Capriolo"
+    },
+    {
+      "slug": "rsa-istituto-bassano-cremonesini-per-persone-con-disabilita-psichica-ets-pontevico",
+      "nome": "RSA - Istituto Bassano Cremonesini per Persone con Disabilita' Psichica ETS",
+      "comune": "Pontevico"
+    },
+    {
+      "slug": "rsa-pietro-beretta-gardone-val-trompia",
+      "nome": "RSA - Pietro Beretta",
+      "comune": "Gardone Val Trompia"
+    },
+    {
+      "slug": "rsa-a-s-far-m-induno-olona",
+      "nome": "RSA A.s.far.m",
+      "comune": "Induno Olona"
+    },
+    {
+      "slug": "rsa-fondazione-villa-serena-ets-pontoglio",
+      "nome": "RSA - Fondazione Villa Serena ETS",
+      "comune": "Pontoglio"
+    },
+    {
+      "slug": "rsa-casa-madonna-della-neve-onlus-premana",
+      "nome": "RSA Casa Madonna della Neve ONLUS",
+      "comune": "Premana"
+    },
+    {
+      "slug": "rsa-castellini-di-melegnano-melegnano",
+      "nome": "RSA Castellini di Melegnano",
+      "comune": "Melegnano"
+    },
+    {
+      "slug": "rsa-fondazione-casa-famiglia-s-giuseppe-onlus-vimercate",
+      "nome": "RSA Fondazione Casa Famiglia S. Giuseppe ONLUS",
+      "comune": "Vimercate"
+    },
+    {
+      "slug": "rsa-ferrera-erbognone-ferrera-erbognone",
+      "nome": "RSA Ferrera Erbognone",
+      "comune": "Ferrera Erbognone"
+    },
+    {
+      "slug": "rsa-fondazione-i-p-s-card-gusmini-ets-vertova",
+      "nome": "RSA Fondazione I.p.s. Card. Gusmini ETS",
+      "comune": "Vertova"
+    },
+    {
+      "slug": "rsa-fondazione-mons-giacomo-carettoni-ets-ponte-di-legno",
+      "nome": "RSA Fondazione Mons. Giacomo Carettoni ETS",
+      "comune": "Ponte di Legno"
+    },
+    {
+      "slug": "rsa-fondazione-santa-maria-della-neve-ets-pisogne",
+      "nome": "RSA Fondazione Santa Maria della Neve ETS",
+      "comune": "Pisogne"
+    },
+    {
+      "slug": "rsa-giuseppe-gerosa-brichetto-milano",
+      "nome": "RSA Giuseppe Gerosa Brichetto",
+      "comune": "Milano"
+    },
+    {
+      "slug": "rsa-il-giardino-sul-lago-dongo",
+      "nome": "RSA il Giardino Sul Lago",
+      "comune": "Dongo"
+    },
+    {
+      "slug": "rsa-residenza-il-parco-carate-brianza",
+      "nome": "RSA Residenza il Parco",
+      "comune": "Carate Brianza"
+    },
+    {
+      "slug": "san-carlo-borromeo-fatebenefratelli-solbiate-con-cagno",
+      "nome": "San Carlo Borromeo - Fatebenefratelli",
+      "comune": "Solbiate con Cagno"
+    },
+    {
+      "slug": "santa-francesca-cabrini-codogno",
+      "nome": "Santa Francesca Cabrini",
+      "comune": "Codogno"
+    },
+    {
+      "slug": "villa-puricelli-casa-card-g-lercaro-bodio-lomnago",
+      "nome": "Villa Puricelli Casa Card. G. Lercaro",
+      "comune": "Bodio Lomnago"
     }
   ]
 }
