@@ -72,15 +72,6 @@ function token(valore) {
     .filter((t) => t.length > 2);
 }
 
-function somiglianza(a, b) {
-  const ta = new Set(token(a));
-  const tb = new Set(token(b));
-  if (!ta.size || !tb.size) return 0;
-  let comuni = 0;
-  for (const t of ta) if (tb.has(t)) comuni++;
-  return comuni / Math.min(ta.size, tb.size);
-}
-
 const PAROLE_SETTORE = [
   "rsa",
   "residenza sanitaria",
