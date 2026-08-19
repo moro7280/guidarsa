@@ -23,8 +23,8 @@ export default function PaginaGuide() {
       />
 
       <header>
-        <h1 className="text-3xl font-bold text-slate-900">Guide per le famiglie</h1>
-        <p className="mt-3 max-w-3xl text-slate-700">
+        <h1 className="text-3xl font-semibold text-inchiostro">Guide per le famiglie</h1>
+        <p className="mt-3 max-w-3xl text-inchiostro-medio">
           Le informazioni essenziali per accompagnare un familiare anziano nella scelta della
           struttura o del servizio più adatto.
         </p>
@@ -35,10 +35,10 @@ export default function PaginaGuide() {
           <li key={guida.slug}>
             <Link
               href={percorsi.guida(guida.slug)}
-              className="block rounded-lg border border-slate-200 bg-white p-5 transition hover:border-teal-300 hover:bg-teal-50"
+              className="block rounded-lg border border-bordo bg-superficie p-5 transition hover:border-verde hover:bg-verde-tenue"
             >
-              <h2 className="text-lg font-semibold text-slate-900">{guida.titolo}</h2>
-              <p className="mt-2 text-sm text-slate-600">{guida.descrizione}</p>
+              <h2 className="text-lg font-semibold text-inchiostro">{guida.titolo}</h2>
+              <p className="mt-2 text-sm text-inchiostro-medio">{guida.descrizione}</p>
             </Link>
           </li>
         ))}

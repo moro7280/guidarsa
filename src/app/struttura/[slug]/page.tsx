@@ -3,13 +3,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AttribuzioneOsm } from "@/components/AttribuzioneOsm";
 import { BloccoRette } from "@/components/BloccoRette";
-import { AvvisoDemo } from "@/components/AvvisoDemo";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { JsonLd } from "@/components/JsonLd";
-import { percorsi } from "@/lib/percorsi";
-import { slugify } from "@/lib/slug";
 import { indicizzabile } from "@/lib/completezza";
+import { percorsi } from "@/lib/percorsi";
 import { jsonLdStruttura, metadataPagina } from "@/lib/seo";
+import { slugify } from "@/lib/slug";
 import { getSlugStrutture, getStrutturaBySlug } from "@/lib/strutture";
 import { TIPOLOGIE } from "@/lib/tipologie";
 
@@ -57,9 +56,10 @@ export default async function PaginaStruttura({
   const provincia = slugify(struttura.provincia);
   const comune = slugify(struttura.comune);
   const percorsoComune = percorsi.comune(info.slug, regione, provincia, comune);
+  const telefonoPulito = struttura.telefono?.replace(/\s/g, "");
 
   return (
-    <div className="space-y-8">
+    <div className="flex flex-col gap-9">
       <JsonLd dati={jsonLdStruttura(struttura)} />
 
       <Breadcrumb
@@ -76,82 +76,137 @@ export default async function PaginaStruttura({
         ]}
       />
 
-      {struttura.fonte_dati === "demo" && <AvvisoDemo />}
-
-      <header>
-        <p className="text-sm font-medium uppercase tracking-wide text-teal-700">
+      <header className="flex flex-col gap-3">
+        <p className="text-xs font-bold uppercase tracking-[0.09em] text-verde">
           {info.singolare}
         </p>
-        <h1 className="mt-1 text-3xl font-bold text-slate-900">{struttura.nome}</h1>
-        <p className="mt-2 text-slate-700">
-          {struttura.indirizzo}, {struttura.cap} {struttura.comune} (
-          {struttura.provincia_sigla}) — {struttura.regione}
+        <h1 className="text-[1.95rem] font-semibold leading-[1.15] sm:text-4xl">
+          {struttura.nome}
+        </h1>
+        <p className="text-lg text-inchiostro-medio">
+          {struttura.indirizzo ? `${struttura.indirizzo}, ` : ""}
+          {struttura.cap} {struttura.comune} ({struttura.provincia_sigla})
         </p>
+
+        <ul className="mt-1 flex flex-wrap gap-2 text-sm">
+          <li
+            className={`rounded px-2.5 py-1 font-medium ${
+              struttura.convenzionata
+                ? "bg-verde-tenue text-verde"
+                : "bg-carta text-inchiostro-medio"
+            }`}
+          >
+            {struttura.convenzionata ? "Convenzionata" : "Non convenzionata"}
+          </li>
+          {struttura.nucleo_alzheimer === true && (
+            <li className="rounded bg-indaco-tenue px-2.5 py-1 font-medium text-indaco">
+              Nucleo Alzheimer
+            </li>
+          )}
+          {struttura.posti_letto !== null && (
+            <li className="numeri rounded bg-carta px-2.5 py-1 text-inchiostro-medio">
+              {struttura.posti_letto} posti letto
+            </li>
+          )}
+        </ul>
       </header>
 
-      <section>
-        <h2 className="text-xl font-semibold text-slate-900">Descrizione</h2>
-        <p className="mt-3 max-w-3xl text-slate-700">{struttura.descrizione}</p>
-      </section>
+      <section className="rounded-lg border border-bordo bg-superficie p-5">
+        <h2 className="font-serif text-xl font-semibold">Contatti</h2>
 
-      <section>
-        <h2 className="text-xl font-semibold text-slate-900">Servizi e caratteristiche</h2>
-        <dl className="mt-4 grid gap-4 sm:grid-cols-2">
-          <div className="rounded-lg border border-slate-200 bg-white p-4">
-            <dt className="text-sm text-slate-500">Posti letto</dt>
-            <dd className="mt-1 font-medium text-slate-900">
-              {struttura.posti_letto ?? "Non disponibile"}
-            </dd>
-          </div>
-          <div className="rounded-lg border border-slate-200 bg-white p-4">
-            <dt className="text-sm text-slate-500">Convenzionata</dt>
-            <dd className="mt-1 font-medium text-slate-900">
-              {struttura.convenzionata ? "Sì" : "No"}
-            </dd>
-          </div>
-          <div className="rounded-lg border border-slate-200 bg-white p-4">
-            <dt className="text-sm text-slate-500">Nucleo Alzheimer</dt>
-            <dd className="mt-1 font-medium text-slate-900">
-              {/* null = la fonte non lo dice: non va mai reso come un "No". */}
-              {struttura.nucleo_alzheimer === null
-                ? "Informazione non disponibile"
-                : struttura.nucleo_alzheimer
-                  ? "Sì"
-                  : "No"}
-            </dd>
-          </div>
-        </dl>
+        {telefonoPulito || struttura.email || struttura.sito_web ? (
+          <>
+            <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:items-center">
+              {telefonoPulito && (
+                <a
+                  href={`tel:${telefonoPulito}`}
+                  className="numeri inline-flex items-center justify-center rounded-md bg-verde px-5 py-3 font-semibold text-carta transition-colors hover:bg-verde-scuro"
+                >
+                  Chiama {struttura.telefono}
+                </a>
+              )}
+              {struttura.sito_web && (
+                <a
+                  href={struttura.sito_web}
+                  className="inline-flex items-center justify-center rounded-md border border-bordo px-5 py-3 font-semibold text-inchiostro transition-colors hover:border-verde hover:text-verde"
+                  rel="nofollow noopener"
+                  target="_blank"
+                >
+                  Sito della struttura
+                </a>
+              )}
+            </div>
+            {struttura.email && (
+              <p className="mt-3 text-[0.98rem] text-inchiostro-medio">
+                Email:{" "}
+                <a
+                  href={`mailto:${struttura.email}`}
+                  className="text-verde underline underline-offset-4"
+                >
+                  {struttura.email}
+                </a>
+              </p>
+            )}
+          </>
+        ) : (
+          <p className="mt-3 text-[0.98rem] text-inchiostro-medio">
+            Non abbiamo ancora un recapito verificato per questa struttura. Il comune di{" "}
+            {struttura.comune} o l&apos;ATS di riferimento possono indicartelo.
+          </p>
+        )}
       </section>
 
       <BloccoRette struttura={struttura} />
 
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Contatti</h2>
-        <ul className="mt-3 space-y-2 text-slate-700">
-          <li>Telefono: {struttura.telefono ?? "non disponibile"}</li>
-          <li>Email: {struttura.email ?? "non disponibile"}</li>
-          <li>
-            Sito web:{" "}
-            {struttura.sito_web ? (
-              <a
-                href={struttura.sito_web}
-                className="text-teal-700 underline"
-                rel="nofollow noopener"
-                target="_blank"
-              >
-                {struttura.sito_web}
-              </a>
-            ) : (
-              "non disponibile"
-            )}
-          </li>
-        </ul>
+        <h2 className="font-serif text-xl font-semibold">La struttura</h2>
+        <p className="mt-3 max-w-[65ch] leading-relaxed text-inchiostro-medio">
+          {struttura.descrizione}
+        </p>
+      </section>
+
+      <section>
+        <h2 className="font-serif text-xl font-semibold">Dati di dettaglio</h2>
+        <dl className="mt-4 grid gap-px overflow-hidden rounded-lg border border-bordo bg-bordo sm:grid-cols-2">
+          {[
+            {
+              voce: "Posti letto",
+              valore: struttura.posti_letto?.toLocaleString("it-IT") ?? "Non disponibile",
+            },
+            {
+              voce: "Convenzionata con il servizio sanitario",
+              valore: struttura.convenzionata ? "Sì" : "No",
+            },
+            {
+              voce: "Nucleo Alzheimer",
+              // null = la fonte non lo dice: non va mai reso come un "No".
+              valore:
+                struttura.nucleo_alzheimer === null
+                  ? "Informazione non disponibile"
+                  : struttura.nucleo_alzheimer
+                    ? "Sì"
+                    : "No",
+            },
+            {
+              voce: "Gestore",
+              valore: struttura.denominazione_gestore ?? "Non disponibile",
+            },
+          ].map((riga) => (
+            <div key={riga.voce} className="bg-superficie px-4 py-3.5">
+              <dt className="text-sm text-inchiostro-tenue">{riga.voce}</dt>
+              <dd className="numeri mt-0.5 font-medium text-inchiostro">{riga.valore}</dd>
+            </div>
+          ))}
+        </dl>
       </section>
 
       <AttribuzioneOsm struttura={struttura} />
 
-      <p className="text-sm text-slate-600">
-        <Link href={percorsoComune} className="text-teal-700 hover:underline">
+      <p className="border-t border-bordo pt-6 text-[0.98rem]">
+        <Link
+          href={percorsoComune}
+          className="font-medium text-verde underline-offset-4 hover:underline"
+        >
           Vedi {info.tutti} {info.pluraleInFrase} a {struttura.comune}
         </Link>
       </p>

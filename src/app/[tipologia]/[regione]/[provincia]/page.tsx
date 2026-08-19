@@ -89,17 +89,17 @@ export default async function PaginaProvincia({
       {demo && <AvvisoDemo />}
 
       <header>
-        <h1 className="text-3xl font-bold text-slate-900">
+        <h1 className="text-3xl font-semibold text-inchiostro">
           {info.plurale} in provincia di {nomeProvincia}
         </h1>
-        <p className="mt-3 max-w-3xl text-slate-700">
+        <p className="mt-3 max-w-3xl text-inchiostro-medio">
           {totale} {totale === 1 ? "struttura" : "strutture"} in {comuni.length}{" "}
           {comuni.length === 1 ? "comune" : "comuni"} della provincia di {nomeProvincia}.
         </p>
       </header>
 
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Comuni</h2>
+        <h2 className="text-xl font-semibold text-inchiostro">Comuni</h2>
         <div className="mt-4">
           <ElencoLuoghi
             nodi={comuni}

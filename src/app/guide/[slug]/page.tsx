@@ -52,9 +52,9 @@ export default async function PaginaGuida({
       />
 
       <header>
-        <h1 className="text-3xl font-bold text-slate-900">{guida.titolo}</h1>
-        <p className="mt-3 max-w-3xl text-slate-700">{guida.descrizione}</p>
-        <p className="mt-2 text-sm text-slate-500">
+        <h1 className="text-3xl font-semibold text-inchiostro">{guida.titolo}</h1>
+        <p className="mt-3 max-w-3xl text-inchiostro-medio">{guida.descrizione}</p>
+        <p className="mt-2 text-sm text-inchiostro-tenue">
           Aggiornata il{" "}
           {new Date(guida.aggiornataIl).toLocaleDateString("it-IT", {
             day: "numeric",
@@ -67,8 +67,8 @@ export default async function PaginaGuida({
       <div className="space-y-6">
         {guida.paragrafi.map((paragrafo) => (
           <section key={paragrafo.titolo}>
-            <h2 className="text-xl font-semibold text-slate-900">{paragrafo.titolo}</h2>
-            <p className="mt-2 max-w-3xl text-slate-700">{paragrafo.testo}</p>
+            <h2 className="text-xl font-semibold text-inchiostro">{paragrafo.titolo}</h2>
+            <p className="mt-2 max-w-3xl text-inchiostro-medio">{paragrafo.testo}</p>
           </section>
         ))}
       </div>

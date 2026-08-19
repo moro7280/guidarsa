@@ -12,7 +12,8 @@
     "enrich:siti": "node scripts/enrich-siti.mjs",
     "pulisci:contatti": "node scripts/pulisci-contatti.mjs",
     "rette:scarica": "node scripts/rette-scarica.mjs",
-    "rette:estrai": "node scripts/rette-estrai.mjs"
+    "rette:estrai": "node scripts/rette-estrai.mjs",
+    "icone": "node scripts/genera-icone.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.112.3",

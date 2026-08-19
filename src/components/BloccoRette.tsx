@@ -13,10 +13,10 @@ const ANNI_PER_STORICA = 2;
 function formatta(min: number | null, max: number | null): string | null {
   if (min === null && max === null) return null;
   if (min !== null && max !== null && min !== max) {
-    return `${min.toLocaleString("it-IT")} - ${max.toLocaleString("it-IT")} € al mese`;
+    return `${min.toLocaleString("it-IT")} - ${max.toLocaleString("it-IT")} €`;
   }
   const valore = (min ?? max) as number;
-  return `${valore.toLocaleString("it-IT")} € al mese`;
+  return `${valore.toLocaleString("it-IT")} €`;
 }
 
 function dataItaliana(valore: string | null | undefined): string | null {
@@ -37,54 +37,76 @@ export function BloccoRette({ struttura }: { struttura: Struttura }) {
   if (!privata && !convenzionata) return null;
 
   const anno = struttura.carta_servizi_anno ?? null;
-  const annoCorrente = new Date().getFullYear();
-  const storica = anno !== null && annoCorrente - anno > ANNI_PER_STORICA;
+  const storica = anno !== null && new Date().getFullYear() - anno > ANNI_PER_STORICA;
   const controllo = dataItaliana(struttura.carta_servizi_scaricata_il);
+  const regimeNonNoto = struttura.retta_regime === "non_specificato";
 
   return (
-    <section>
-      <h2 className="text-xl font-semibold text-slate-900">Rette</h2>
+    <section className="overflow-hidden rounded-lg border border-sabbia bg-sabbia-tenue">
+      <div className="p-5">
+        <h2 className="font-serif text-xl font-semibold">Quanto costa</h2>
 
-      <dl className="mt-4 grid gap-4 sm:grid-cols-2">
-        {privata && (
-          <div className="rounded-lg border border-slate-200 bg-white p-4">
-            {/* Molte carte pubblicano una tariffa sola senza dichiarare il
-                regime: lo si dice, invece di far passare il dato per una
-                retta privata accertata. */}
-            <dt className="text-sm text-slate-500">
-              {struttura.retta_regime === "non_specificato"
-                ? "Retta a carico dell'ospite"
-                : "Retta privata (solvente)"}
-            </dt>
-            <dd className="mt-1 text-lg font-semibold text-slate-900">{privata}</dd>
-            <dd className="mt-1 text-sm text-slate-600">
-              {struttura.retta_regime === "non_specificato"
-                ? "Il documento non specifica se si tratti di tariffa privata o in convenzione."
-                : "Interamente a carico dell'ospite o della famiglia."}
-            </dd>
-          </div>
+        <dl className="mt-4 grid gap-4 sm:grid-cols-2">
+          {privata && (
+            <div className="rounded-md border border-sabbia bg-superficie p-4">
+              <dt className="text-sm font-medium text-inchiostro-tenue">
+                {regimeNonNoto ? "Retta a carico dell'ospite" : "Retta privata (solvente)"}
+              </dt>
+              <dd className="numeri mt-1 font-serif text-2xl font-semibold text-inchiostro">
+                {privata}
+                <span className="ml-1 font-sans text-base font-normal text-inchiostro-tenue">
+                  al mese
+                </span>
+              </dd>
+              <dd className="mt-1.5 text-sm leading-snug text-inchiostro-medio">
+                {regimeNonNoto
+                  ? "Il documento non specifica se sia tariffa privata o in convenzione."
+                  : "Interamente a carico dell'ospite o della famiglia."}
+              </dd>
+            </div>
+          )}
+
+          {convenzionata && (
+            <div className="rounded-md border border-sabbia bg-superficie p-4">
+              <dt className="text-sm font-medium text-inchiostro-tenue">
+                Quota in regime convenzionato
+              </dt>
+              <dd className="numeri mt-1 font-serif text-2xl font-semibold text-inchiostro">
+                {convenzionata}
+                <span className="ml-1 font-sans text-base font-normal text-inchiostro-tenue">
+                  al mese
+                </span>
+              </dd>
+              <dd className="mt-1.5 text-sm leading-snug text-inchiostro-medio">
+                A carico dell&apos;ospite; la quota sanitaria è coperta dal servizio sanitario
+                regionale.
+              </dd>
+            </div>
+          )}
+        </dl>
+
+        {struttura.costi_extra && (
+          <p className="mt-4 text-[0.95rem] text-inchiostro-medio">
+            <strong className="font-semibold text-inchiostro">
+              Costi aggiuntivi indicati nel documento:
+            </strong>{" "}
+            {struttura.costi_extra}
+          </p>
         )}
-        {convenzionata && (
-          <div className="rounded-lg border border-slate-200 bg-white p-4">
-            <dt className="text-sm text-slate-500">Quota in regime convenzionato</dt>
-            <dd className="mt-1 text-lg font-semibold text-slate-900">{convenzionata}</dd>
-            <dd className="mt-1 text-sm text-slate-600">
-              A carico dell&apos;ospite; la quota sanitaria è coperta dal servizio sanitario
-              regionale.
-            </dd>
-          </div>
-        )}
-      </dl>
+      </div>
 
-      {struttura.costi_extra && (
-        <p className="mt-3 text-sm text-slate-700">
-          <strong>Costi aggiuntivi indicati nel documento:</strong> {struttura.costi_extra}
-        </p>
-      )}
-
-      <p className="mt-3 rounded-md border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-700">
-        <strong>{storica ? "Tariffa storica" : "Tariffa indicativa"}: verificare con la struttura.</strong>{" "}
-        {storica && "Il documento da cui proviene ha più di due anni e le tariffe possono essere cambiate. "}
+      <div
+        className={`border-t px-5 py-4 text-sm leading-relaxed ${
+          storica
+            ? "border-ambra/30 bg-ambra-tenue text-inchiostro-medio"
+            : "border-sabbia bg-superficie text-inchiostro-medio"
+        }`}
+      >
+        <strong className={`font-semibold ${storica ? "text-ambra" : "text-inchiostro"}`}>
+          {storica ? "Tariffa storica" : "Tariffa indicativa"}: verificare con la struttura.
+        </strong>{" "}
+        {storica &&
+          "Il documento da cui proviene ha più di due anni e le tariffe possono essere cambiate. "}
         Fonte: carta dei servizi{anno ? ` ${anno}` : ""}
         {controllo ? `, ultimo controllo ${controllo}` : ""}
         {struttura.url_carta_servizi && (
@@ -92,7 +114,7 @@ export function BloccoRette({ struttura }: { struttura: Struttura }) {
             {" — "}
             <a
               href={struttura.url_carta_servizi}
-              className="text-teal-700 underline"
+              className="text-verde underline underline-offset-4"
               rel="nofollow noopener"
               target="_blank"
             >
@@ -100,14 +122,8 @@ export function BloccoRette({ struttura }: { struttura: Struttura }) {
             </a>
           </>
         )}
-        .
-        {struttura.retta_originale && (
-          <>
-            {" "}
-            Valore riportato nel documento: {struttura.retta_originale}.
-          </>
-        )}
-      </p>
+        .{struttura.retta_originale && ` Valore riportato nel documento: ${struttura.retta_originale}.`}
+      </div>
     </section>
   );
 }

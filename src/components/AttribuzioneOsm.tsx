@@ -17,12 +17,12 @@ export function AttribuzioneOsm({ struttura }: { struttura: Struttura }) {
   if (daOsm.length === 0) return null;
 
   return (
-    <p className="text-sm text-slate-600">
+    <p className="text-sm text-inchiostro-tenue">
       {daOsm.length === 1 ? "Il dato" : "I dati"} <strong>{daOsm.join(", ")}</strong>{" "}
       {daOsm.length === 1 ? "proviene" : "provengono"} da OpenStreetMap — ©{" "}
       <a
         href="https://www.openstreetmap.org/copyright"
-        className="text-teal-700 underline"
+        className="text-verde underline underline-offset-4"
         rel="noopener"
         target="_blank"
       >

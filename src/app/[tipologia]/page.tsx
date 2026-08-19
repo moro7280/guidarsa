@@ -63,16 +63,16 @@ export default async function PaginaTipologia({
       {demo && <AvvisoDemo />}
 
       <header>
-        <h1 className="text-3xl font-bold text-slate-900">{info.plurale} in Italia</h1>
-        <p className="mt-3 max-w-3xl text-slate-700">{info.descrizione}</p>
-        <p className="mt-2 text-sm text-slate-600">
+        <h1 className="text-3xl font-semibold text-inchiostro">{info.plurale} in Italia</h1>
+        <p className="mt-3 max-w-3xl text-inchiostro-medio">{info.descrizione}</p>
+        <p className="mt-2 text-sm text-inchiostro-medio">
           {totale} {totale === 1 ? "struttura censita" : "strutture censite"} in {regioni.length}{" "}
           {regioni.length === 1 ? "regione" : "regioni"}.
         </p>
       </header>
 
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Scegli la regione</h2>
+        <h2 className="text-xl font-semibold text-inchiostro">Scegli la regione</h2>
         <div className="mt-4">
           <ElencoLuoghi
             nodi={regioni}

@@ -111,10 +111,10 @@ export default async function PaginaComune({
       {demo && <AvvisoDemo />}
 
       <header>
-        <h1 className="text-3xl font-bold text-slate-900">
+        <h1 className="text-3xl font-semibold text-inchiostro">
           {info.plurale} a {nomeComune} ({sigla})
         </h1>
-        <p className="mt-3 max-w-3xl text-slate-700">
+        <p className="mt-3 max-w-3xl text-inchiostro-medio">
           {strutture.length} {strutture.length === 1 ? "struttura" : "strutture"} a {nomeComune}
           {convenzionate > 0 && `, di cui ${convenzionate} convenzionate`}
           {conAlzheimer > 0 && ` e ${conAlzheimer} con nucleo Alzheimer`}. Confronta contatti,
@@ -123,7 +123,7 @@ export default async function PaginaComune({
       </header>
 
       <section className="space-y-4">
-        <h2 className="text-xl font-semibold text-slate-900">
+        <h2 className="text-xl font-semibold text-inchiostro">
           Elenco {info.articoloDi} {info.pluraleInFrase} a {nomeComune}
         </h2>
         {strutture.map((struttura) => (
@@ -133,7 +133,7 @@ export default async function PaginaComune({
 
       {altreTipologie.length > 0 && (
         <section>
-          <h2 className="text-xl font-semibold text-slate-900">
+          <h2 className="text-xl font-semibold text-inchiostro">
             Altri servizi per anziani a {nomeComune}
           </h2>
           <ul className="mt-4 flex flex-wrap gap-2">
@@ -141,7 +141,7 @@ export default async function PaginaComune({
               <li key={slug}>
                 <Link
                   href={percorsi.comune(slug, regione, provincia, comune)}
-                  className="inline-block rounded-full border border-slate-200 bg-white px-4 py-2 text-sm text-slate-700 transition hover:border-teal-300 hover:text-teal-800"
+                  className="inline-block rounded-full border border-bordo bg-superficie px-4 py-2 text-sm text-inchiostro-medio transition hover:border-verde hover:text-verde"
                 >
                   {TIPOLOGIE[slug].plurale} a {nomeComune}
                 </Link>
@@ -152,16 +152,16 @@ export default async function PaginaComune({
       )}
 
       <section>
-        <h2 className="text-xl font-semibold text-slate-900">Guide utili prima di scegliere</h2>
+        <h2 className="text-xl font-semibold text-inchiostro">Guide utili prima di scegliere</h2>
         <ul className="mt-4 space-y-3">
           {GUIDE.map((guida) => (
             <li key={guida.slug}>
               <Link
                 href={percorsi.guida(guida.slug)}
-                className="block rounded-lg border border-slate-200 bg-white p-4 transition hover:border-teal-300 hover:bg-teal-50"
+                className="block rounded-lg border border-bordo bg-superficie p-4 transition hover:border-verde hover:bg-verde-tenue"
               >
-                <span className="font-medium text-slate-900">{guida.titolo}</span>
-                <span className="mt-1 block text-sm text-slate-600">{guida.descrizione}</span>
+                <span className="font-medium text-inchiostro">{guida.titolo}</span>
+                <span className="mt-1 block text-sm text-inchiostro-medio">{guida.descrizione}</span>
               </Link>
             </li>
           ))}

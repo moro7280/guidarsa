@@ -2,46 +2,90 @@ import Link from "next/link";
 import { percorsi } from "@/lib/percorsi";
 import type { Struttura } from "@/lib/types";
 
-function formattaPrezzo(struttura: Struttura): string | null {
-  if (struttura.prezzo_min === null || struttura.prezzo_max === null) return null;
-  const unita = struttura.tipologia === "rsa" || struttura.tipologia === "casa-di-riposo";
-  return unita
-    ? `${struttura.prezzo_min}-${struttura.prezzo_max} € / mese`
-    : `${struttura.prezzo_min}-${struttura.prezzo_max} € / giorno`;
+/**
+ * Card usata nelle pagine lista.
+ *
+ * Le informazioni sono ordinate come le cerca una famiglia: dove si trova,
+ * quanto costa, se e convenzionata, se ha un nucleo per le demenze, quanto e
+ * grande. Gli attributi sono etichette e non icone: a colpo d'occhio si legge
+ * la parola, non si decifra un simbolo.
+ */
+
+function fasciaPrezzo(struttura: Struttura): string | null {
+  const { prezzo_min: min, prezzo_max: max } = struttura;
+  if (min === null && max === null) return null;
+  if (min !== null && max !== null && min !== max) {
+    return `${min.toLocaleString("it-IT")}-${max.toLocaleString("it-IT")} € al mese`;
+  }
+  return `${((min ?? max) as number).toLocaleString("it-IT")} € al mese`;
 }
 
-/** Card usata nelle pagine lista dei comuni. */
 export function SchedaStruttura({ struttura }: { struttura: Struttura }) {
-  const prezzo = formattaPrezzo(struttura);
+  const prezzo = fasciaPrezzo(struttura);
+  const regimeNonNoto = struttura.retta_regime === "non_specificato";
 
   return (
-    <article className="rounded-lg border border-slate-200 bg-white p-5 transition hover:border-teal-300 hover:shadow-sm">
-      <h3 className="text-lg font-semibold text-slate-900">
-        <Link href={percorsi.struttura(struttura.slug)} className="hover:text-teal-700">
+    <article className="rounded-lg border border-bordo bg-superficie p-5 transition-colors hover:border-verde">
+      <h3 className="font-serif text-xl font-semibold leading-snug">
+        <Link
+          href={percorsi.struttura(struttura.slug)}
+          className="text-inchiostro underline-offset-4 hover:text-verde hover:underline"
+        >
           {struttura.nome}
         </Link>
       </h3>
-      <p className="mt-1 text-sm text-slate-600">
-        {struttura.indirizzo}, {struttura.cap} {struttura.comune} ({struttura.provincia_sigla})
-      </p>
-      <p className="mt-3 text-sm text-slate-700">{struttura.descrizione}</p>
 
-      <ul className="mt-4 flex flex-wrap gap-2 text-xs">
+      <p className="mt-1.5 text-[0.95rem] text-inchiostro-tenue">
+        {struttura.indirizzo ? `${struttura.indirizzo}, ` : ""}
+        {struttura.cap} {struttura.comune} ({struttura.provincia_sigla})
+      </p>
+
+      <ul className="mt-3.5 flex flex-wrap gap-2 text-sm">
         {struttura.convenzionata && (
-          <li className="rounded-full bg-teal-50 px-3 py-1 text-teal-800">Convenzionata</li>
+          <li className="rounded border border-verde-tenue bg-verde-tenue px-2.5 py-1 font-medium text-verde">
+            Convenzionata
+          </li>
         )}
-        {struttura.nucleo_alzheimer && (
-          <li className="rounded-full bg-amber-50 px-3 py-1 text-amber-800">Nucleo Alzheimer</li>
+        {struttura.nucleo_alzheimer === true && (
+          <li className="rounded border border-indaco-tenue bg-indaco-tenue px-2.5 py-1 font-medium text-indaco">
+            Nucleo Alzheimer
+          </li>
         )}
         {struttura.posti_letto !== null && (
-          <li className="rounded-full bg-slate-100 px-3 py-1 text-slate-700">
+          <li className="numeri rounded border border-bordo-tenue bg-carta px-2.5 py-1 text-inchiostro-medio">
             {struttura.posti_letto} posti letto
           </li>
         )}
         {prezzo && (
-          <li className="rounded-full bg-slate-100 px-3 py-1 text-slate-700">{prezzo}</li>
+          <li className="numeri rounded border border-sabbia bg-sabbia-tenue px-2.5 py-1 font-medium text-inchiostro">
+            {prezzo}
+            {regimeNonNoto ? " (regime non specificato)" : ""}
+          </li>
         )}
       </ul>
+
+      {(struttura.telefono || struttura.sito_web) && (
+        <p className="mt-3.5 flex flex-wrap items-center gap-x-4 gap-y-1 text-[0.95rem]">
+          {struttura.telefono && (
+            <a
+              href={`tel:${struttura.telefono.replace(/\s/g, "")}`}
+              className="numeri font-medium text-verde underline-offset-4 hover:underline"
+            >
+              {struttura.telefono}
+            </a>
+          )}
+          {struttura.sito_web && (
+            <a
+              href={struttura.sito_web}
+              className="text-inchiostro-medio underline underline-offset-4 hover:text-verde"
+              rel="nofollow noopener"
+              target="_blank"
+            >
+              Sito della struttura
+            </a>
+          )}
+        </p>
+      )}
     </article>
   );
 }

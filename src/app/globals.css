@@ -1,9 +1,97 @@
 @import "tailwindcss";
 
+/*
+ * Token di GuidaRSA.
+ *
+ * Verde istituzionale come colore portante, carta con sottotono freddo al
+ * posto del bianco puro, ambra riservata agli avvisi e indaco al solo nucleo
+ * Alzheimer: i colori semantici non si mescolano con l'accento, altrimenti
+ * smettono di segnalare qualcosa.
+ *
+ * Tema chiaro soltanto: un tema scuro a meta su 1.280 pagine di dati
+ * peggiorerebbe la leggibilita invece di migliorarla.
+ */
+:root {
+  --carta: #f7f8f6;
+  --superficie: #ffffff;
+  --inchiostro: #12211e;
+  --inchiostro-medio: #33443e;
+  --inchiostro-tenue: #5a6b63;
+  --bordo: #d5dcd7;
+  --bordo-tenue: #e6eae7;
+
+  --verde: #1f5d4c;
+  --verde-scuro: #16463a;
+  --verde-tenue: #eaf2ee;
+
+  --sabbia: #e8dfcf;
+  --sabbia-tenue: #f6f1e7;
+  --ambra: #b26a21;
+  --ambra-tenue: #fbf1e4;
+  --indaco: #3d5a9e;
+  --indaco-tenue: #edf1f9;
+}
+
 @theme inline {
-  --font-sans: var(--font-geist-sans);
+  --color-carta: var(--carta);
+  --color-superficie: var(--superficie);
+  --color-inchiostro: var(--inchiostro);
+  --color-inchiostro-medio: var(--inchiostro-medio);
+  --color-inchiostro-tenue: var(--inchiostro-tenue);
+  --color-bordo: var(--bordo);
+  --color-bordo-tenue: var(--bordo-tenue);
+  --color-verde: var(--verde);
+  --color-verde-scuro: var(--verde-scuro);
+  --color-verde-tenue: var(--verde-tenue);
+  --color-sabbia: var(--sabbia);
+  --color-sabbia-tenue: var(--sabbia-tenue);
+  --color-ambra: var(--ambra);
+  --color-ambra-tenue: var(--ambra-tenue);
+  --color-indaco: var(--indaco);
+  --color-indaco-tenue: var(--indaco-tenue);
+
+  --font-sans: var(--font-source-sans), system-ui, sans-serif;
+  --font-serif: var(--font-source-serif), Georgia, serif;
+
+  /* Corpo base 17px: il pubblico ha spesso oltre cinquant'anni ed e sul telefono. */
+  --text-base: 1.0625rem;
+  --text-base--line-height: 1.6;
+  --text-lg: 1.1875rem;
+  --text-lg--line-height: 1.55;
 }
 
 body {
-  font-family: var(--font-sans), system-ui, sans-serif;
+  background: var(--carta);
+  color: var(--inchiostro);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
+  text-wrap: balance;
+  letter-spacing: -0.011em;
+}
+
+/* I numeri stanno in colonna ovunque: prezzi, posti letto, conteggi. */
+.numeri {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Il focus deve restare visibile: parte del pubblico naviga da tastiera. */
+:focus-visible {
+  outline: 2px solid var(--verde);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
 }

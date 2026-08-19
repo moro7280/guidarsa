@@ -3,7 +3,7 @@ import type { Guida } from "./guide";
 import { percorsi } from "./percorsi";
 import type { Struttura } from "./types";
 
-export const NOME_SITO = "Directory RSA Italia";
+export const NOME_SITO = "GuidaRSA";
 
 /** URL pubblica del sito; in locale ricade su localhost. */
 export const URL_SITO = (
@@ -120,4 +120,22 @@ export function jsonLdGuida(guida: Guida) {
 /** "1 struttura" / "3 strutture": evita i plurali sbagliati nei title. */
 export function conta(numero: number, singolare: string, plurale: string): string {
   return `${numero} ${numero === 1 ? singolare : plurale}`;
+}
+
+/**
+ * JSON-LD dell'organizzazione, emesso una volta sola nel layout.
+ * Il logo e un PNG quadrato: i risultati arricchiti di Google non accettano SVG.
+ */
+export function jsonLdOrganizzazione() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: NOME_SITO,
+    url: URL_SITO,
+    logo: urlAssoluta("/marchio-512.png"),
+    description:
+      "Guida indipendente alle strutture per anziani in Italia: RSA, case di riposo, centri diurni e assistenza domiciliare.",
+    email: "info@guidarsa.it",
+    areaServed: { "@type": "Country", name: "Italia" },
+  };
 }
