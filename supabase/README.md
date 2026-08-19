@@ -45,6 +45,6 @@ riportare `strutture` e `leads` con `rls_attiva: true` e le due policy attese.
 | Ruolo | `strutture` | `leads` |
 | --- | --- | --- |
 | `anon` (browser, sito) | lettura | solo inserimento |
-| `service_role` (script di import, mai nel browser) | lettura e scrittura | lettura e scrittura |
+| `service_role` (script di import in locale, mai in produzione ne nel browser) | lettura e scrittura | lettura e scrittura |
 
 La chiave service role sta solo in `.env.local`, che è escluso da git.

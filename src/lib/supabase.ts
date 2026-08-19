@@ -1,9 +1,14 @@
 import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 
 /**
- * Client Supabase. Non ancora usato dalle pagine: i dati arrivano da
- * src/lib/mock-data.ts finché non viene importato il dataset reale.
- * Le variabili d'ambiente sono documentate in .env.example.
+ * Client Supabase del sito, con chiave anon: legge le strutture attraverso la
+ * policy RLS strutture_lettura_pubblica.
+ *
+ * Qui non esiste un client con service role, di proposito: il sito pubblico
+ * deve poter fare solo cio che la RLS consente a chiunque, e una chiave con
+ * privilegi pieni non ha ragione di stare in produzione. Gli script di import
+ * e arricchimento creano il proprio client service role leggendo .env.local,
+ * che resta sulla macchina di sviluppo.
  */
 
 function richiedi(nome: string): string {
@@ -27,26 +32,6 @@ export function getSupabaseClient(): SupabaseClient {
     );
   }
   return clientAnonimo;
-}
-
-let clientAdmin: SupabaseClient | null = null;
-
-/**
- * Client con service role: solo lato server (script di import dei dati).
- * Non deve mai finire in un bundle client.
- */
-export function getSupabaseAdmin(): SupabaseClient {
-  if (typeof window !== "undefined") {
-    throw new Error("getSupabaseAdmin() può essere usato solo lato server.");
-  }
-  if (!clientAdmin) {
-    clientAdmin = createClient(
-      richiedi("NEXT_PUBLIC_SUPABASE_URL"),
-      richiedi("SUPABASE_SERVICE_ROLE_KEY"),
-      { auth: { persistSession: false } },
-    );
-  }
-  return clientAdmin;
 }
 
 /** true se le variabili per la lettura pubblica sono configurate. */
