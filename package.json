@@ -15,7 +15,11 @@
     "rette:estrai": "node scripts/rette-estrai.mjs",
     "icone": "node scripts/genera-icone.mjs",
     "import:regione": "node scripts/import-regione.mjs",
-    "import:friuli": "node scripts/import-regione.mjs friuli"
+    "import:friuli": "node scripts/import-regione.mjs friuli",
+    "import:lombardia-cdi": "node scripts/import-regione.mjs lombardia-cdi",
+    "import:lombardia-centri-sociali": "node scripts/import-regione.mjs lombardia-centri-sociali",
+    "import:umbria": "node scripts/import-regione.mjs umbria",
+    "arricchisci:gestori": "node scripts/arricchisci-gestori.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.112.3",

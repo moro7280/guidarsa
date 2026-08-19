@@ -51,16 +51,34 @@ const MINUSCOLE = new Set([
  * Toglie l'involucro esterno e riporta le virgolette raddoppiate a una sola.
  */
 export function ripulisciVirgolette(valore) {
+  // 1. Involucro esterno lasciato dall'export, che quota di nuovo un campo gia
+  //    quotato: `"CDI ""RSA DI STRADELLA"""` -> `CDI ""RSA DI STRADELLA""`.
   let testo = (valore ?? "").trim();
   while (testo.length > 1 && testo.startsWith('"') && testo.endsWith('"')) {
     testo = testo.slice(1, -1).trim();
   }
-  return testo
-    .replace(/""/g, '"')
-    // Alcune righe hanno una virgoletta di apertura senza chiusura: resta
-    // spaiata dopo il ciclo qui sopra e va tolta comunque.
-    .replace(/^"+|"+$/g, "")
-    .trim();
+
+  // 2. Virgolette raddoppiate a una sola: quelle rimaste fanno parte del nome
+  //    — `CDI "RSA di Stradella"` — e vanno tenute.
+  testo = testo.replace(/""/g, '"');
+
+  // 3. Solo se ne resta una spaiata, cioe` se il totale e dispari, si toglie
+  //    quella a inizio o fine. Prima di questa correzione la si toglieva
+  //    sempre, e in pagina si leggeva `CDI "RSA di Stradella` con la
+  //    virgoletta di chiusura mancante.
+  if (((testo.match(/"/g) ?? []).length % 2) === 1) {
+    testo = testo.replace(/^"|"$/g, "");
+  }
+
+  // Se ne resta una dispari in mezzo alla frase, e un'apertura che la fonte non
+  // ha mai chiuso — succede in una riga dei CDI, dove l'export ha tre virgolette
+  // invece di quattro. Si toglie l'ultima: e quella rimasta senza compagna.
+  if (((testo.match(/"/g) ?? []).length % 2) === 1) {
+    const ultima = testo.lastIndexOf('"');
+    testo = testo.slice(0, ultima) + testo.slice(ultima + 1);
+  }
+
+  return testo.replace(/\s+/g, " ").trim();
 }
 
 /**
@@ -69,8 +87,20 @@ export function ripulisciVirgolette(valore) {
  * "CASSANO D'ADDA" -> "Cassano d'Adda"
  * `"CASA DELL'ANZIANO - RESIDENZA ""LUIGI STRADA"""` -> `Casa dell'Anziano - Residenza "Luigi Strada"`
  */
+/** Lettere della parola, senza punteggiatura: `"RSA` e `R.S.A.` danno `RSA`. */
+function nucleo(parola) {
+  return parola.replace(/[^A-Za-zÀ-ÿ]/g, "").toUpperCase();
+}
+
+/** "CITTA'" -> "CITTÀ": accento troncato come si scriveva a macchina. */
+const ACCENTATE = { A: "À", E: "È", I: "Ì", O: "Ò", U: "Ù" };
+
 export function normalizzaMaiuscole(valore) {
-  const testo = ripulisciVirgolette(valore).replace(/\s+/g, " ");
+  const testo = ripulisciVirgolette(valore)
+    .replace(/\s+/g, " ")
+    // Solo a fine parola: dentro la parola l'apostrofo e un'elisione
+    // ("DELL'ANZIANO") e va lasciato dov'e.
+    .replace(/([AEIOU])'(?=\s|$|")/g, (_, vocale) => ACCENTATE[vocale]);
   if (!testo) return "";
   // Se non è tutto maiuscolo, la fonte ha già una sua forma: non la tocchiamo.
   if (testo !== testo.toUpperCase()) return testo;
@@ -78,7 +108,9 @@ export function normalizzaMaiuscole(valore) {
   return testo
     .split(" ")
     .map((parola, indice) => {
-      if (ACRONIMI.has(parola)) return parola;
+      // La sigla si riconosce dalle lettere, non dalla punteggiatura che la
+      // circonda: senza questo, `"RSA` diventava `"Rsa` e `C.D.I.` `C.d.i.`.
+      if (ACRONIMI.has(parola) || ACRONIMI.has(nucleo(parola))) return parola;
       // Gestisce l'apostrofo: D'ADDA -> d'Adda, SANT'ANGELO -> Sant'Angelo
       const pezzi = parola.split("'");
       const composta = pezzi

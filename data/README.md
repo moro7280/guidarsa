@@ -18,3 +18,19 @@ di origine cambia formato o ritira il dataset.
 | --- | --- | --- | --- | --- |
 | `lombardia-rsa.csv` | Regione Lombardia — Elenco Residenze Sanitarie Assistenziali | https://dati.lombardia.it | 18/08/2026 | `opendata_lombardia` |
 | `friuli-anziani.csv` | Regione Friuli-Venezia Giulia — Elenco strutture residenziali per anziani | https://www.dati.friuliveneziagiulia.it | 19/08/2026 | `opendata_friuli` |
+| `lombardia-cdi.csv` | Regione Lombardia — Centri Diurni Integrati accreditati per anziani | https://www.dati.lombardia.it/d/rs6k-vuhs | 20/08/2026 | `opendata_lombardia_cdi` |
+| `lombardia-offerta-sociale.csv` | Regione Lombardia — Strutture di offerta sociale per anziani | https://www.dati.lombardia.it/d/i846-pq8q | 20/08/2026 | `opendata_lombardia_sociale` |
+| `umbria-anziani.csv` | Regione Umbria — Strutture sanitarie residenziali per anziani non autosufficienti | https://dati.regione.umbria.it | 20/08/2026 | `opendata_umbria` |
+| `istat-comuni.csv` | ISTAT — Codici delle unità amministrative territoriali | https://www.istat.it/it/archivio/6789 | 20/08/2026 | — (tabella di appoggio) |
+
+## Note per fonte
+
+- **`lombardia-offerta-sociale.csv`** contiene 199 righe ma ne importiamo 55: solo l'unità
+  d'offerta «centro diurni anziani». Le 144 righe di «alloggio protetto anziani» restano fuori
+  perché il nostro schema non ha una tipologia che le descriva senza mentire.
+- **`umbria-anziani.csv`** è in **windows-1252**, non in UTF-8, e non contiene il nome del comune
+  ma il codice ISTAT: per questo serve `istat-comuni.csv`. I dati sono la rilevazione ministeriale
+  dell'**anno 2020**, la più recente che la Regione pubblichi.
+- **`istat-comuni.csv`** non è una fonte di strutture: è la tabella che traduce i codici comune in
+  nome, provincia e regione. Serve a ogni fonte che identifichi i comuni per codice. È anch'esso in
+  windows-1252.
