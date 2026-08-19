@@ -48,3 +48,36 @@ riportare `strutture` e `leads` con `rls_attiva: true` e le due policy attese.
 | `service_role` (script di import in locale, mai in produzione ne nel browser) | lettura e scrittura | lettura e scrittura |
 
 La chiave service role sta solo in `.env.local`, che è escluso da git.
+
+## Notifiche dei nuovi lead
+
+Ogni riga inserita in  o  deve far scattare una notifica,
+altrimenti le richieste restano nel database e nessuno le legge. Il meccanismo e
+un **Database Webhook**: e il database a chiamare, non il browser, quindi la
+notifica parte anche se il visitatore chiude la scheda subito dopo l'invio.
+
+### Creare il webhook
+
+Dashboard → **Database** → **Webhooks** → **Create a new hook**:
+
+| Campo | Valore |
+| --- | --- |
+| Name |  (e poi ) |
+| Table |  (poi ) |
+| Events | solo **Insert** |
+| Type | **HTTP Request** |
+| Method |  |
+| URL |  — **con la barra finale** |
+| HTTP Headers |  = lo stesso valore di  su Vercel |
+
+La barra finale non e un dettaglio: il sito usa , e senza barra
+la richiesta riceve un 308 e il webhook non consegna nulla.
+
+### Diagnosi
+
+La rotta risponde in modo parlante, cosi i log del webhook dicono cosa non va:
+
+-  — header  assente o diverso
+-  — mancano le variabili di
+  Telegram e di Resend su Vercel
+-  — tutto a posto

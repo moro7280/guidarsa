@@ -21,6 +21,8 @@ export function ModuloIscrizione({ origine }: { origine: string }) {
   const [email, setEmail] = useState("");
   const [consenso, setConsenso] = useState(false);
   const [esca, setEsca] = useState("");
+  const [dettaglio, setDettaglio] = useState<string | null>(null);
+  const [apertoIl] = useState(() => Date.now());
   const [stato, setStato] = useState<"fermo" | "corso" | "fatto" | "errore">("fermo");
 
   async function iscrivi(evento: React.FormEvent) {
@@ -28,27 +30,38 @@ export function ModuloIscrizione({ origine }: { origine: string }) {
     if (!consenso) return;
     setStato("corso");
 
-    // Trappola per i bot: campo invisibile che un umano non compila mai.
-    if (esca.trim() !== "") {
+    // Due controlli antibot: esca compilata oppure invio troppo rapido.
+    // Il secondo è immune all'autofill dei gestori di password.
+    if (esca.trim() !== "" || Date.now() - apertoIl < 1500) {
       setStato("fatto");
       return;
     }
 
-    const { error } = await getSupabaseClient().from("iscritti").insert({
-      email: email.trim().toLowerCase(),
-      origine,
-      risorsa: RISORSA_GUIDA,
-      consenso: true,
-      consenso_testo_versione: VERSIONE_INFORMATIVA,
-      consenso_il: new Date().toISOString(),
-    });
+    // Senza try/catch un errore di rete lascerebbe il pulsante bloccato su
+    // "Un attimo…", disabilitato per sempre. L'email digitata resta nel campo.
+    try {
+      const { error } = await getSupabaseClient().from("iscritti").insert({
+        email: email.trim().toLowerCase(),
+        origine,
+        risorsa: RISORSA_GUIDA,
+        consenso: true,
+        consenso_testo_versione: VERSIONE_INFORMATIVA,
+        consenso_il: new Date().toISOString(),
+      });
 
-    // 23505 = email gia iscritta a questa risorsa: per chi legge non e un
-    // errore, ha gia diritto al documento.
-    if (error && error.code !== "23505") {
+      // 23505 = email gia iscritta a questa risorsa: per chi legge non e un
+      // errore, ha gia diritto al documento.
+      if (error && error.code !== "23505") {
+        setDettaglio((error.code ?? "?") + ": " + error.message);
+        setStato("errore");
+        return;
+      }
+    } catch (eccezione) {
+      setDettaglio(eccezione instanceof Error ? eccezione.message : String(eccezione));
       setStato("errore");
       return;
     }
+
     setStato("fatto");
   }
 
@@ -109,16 +122,19 @@ export function ModuloIscrizione({ origine }: { origine: string }) {
       </div>
 
       {/* Esca per i bot. */}
-      <div aria-hidden="true" className="absolute left-[-9999px]">
-        <label>
-          Non compilare
-          <input
-            tabIndex={-1}
-            autoComplete="off"
-            value={esca}
-            onChange={(evento) => setEsca(evento.target.value)}
-          />
-        </label>
+      <div aria-hidden="true" className="absolute left-[-9999px] top-0">
+        <label htmlFor="riferimento-modulo">Riferimento interno</label>
+        <input
+          id="riferimento-modulo"
+          name="riferimento-modulo"
+          type="text"
+          tabIndex={-1}
+          autoComplete="off"
+          data-lpignore="true"
+          data-1p-ignore="true"
+          value={esca}
+          onChange={(evento) => setEsca(evento.target.value)}
+        />
       </div>
 
       <label className="mt-4 flex items-start gap-3 text-[0.95rem] text-inchiostro-medio">
@@ -140,10 +156,15 @@ export function ModuloIscrizione({ origine }: { origine: string }) {
       </p>
 
       {stato === "errore" && (
-        <p role="alert" className="mt-3 text-[0.95rem] text-ambra">
-          Non siamo riusciti a registrare l&apos;iscrizione. Riprova, oppure scrivici a
-          info@guidarsa.it e ti mandiamo la guida a mano.
-        </p>
+        <div role="alert" className="mt-3 text-[0.95rem] text-ambra">
+          <p>
+            Non siamo riusciti a registrare l&apos;iscrizione. Riprova, oppure scrivici a
+            info@guidarsa.it e ti mandiamo la guida a mano.
+          </p>
+          {process.env.NODE_ENV !== "production" && dettaglio && (
+            <p className="mt-2 font-mono text-xs">[solo in sviluppo] {dettaglio}</p>
+          )}
+        </div>
       )}
     </form>
   );

@@ -11,25 +11,29 @@ import { createClient, type SupabaseClient } from "@supabase/supabase-js";
  * che resta sulla macchina di sviluppo.
  */
 
-function richiedi(nome: string): string {
-  const valore = process.env[nome];
-  if (!valore) {
-    throw new Error(
-      `Variabile d'ambiente mancante: ${nome}. Copia .env.example in .env.local e valorizzala.`,
-    );
-  }
-  return valore;
-}
-
 let clientAnonimo: SupabaseClient | null = null;
 
-/** Client con chiave anon: sola lettura dei dati pubblici. */
+/**
+ * Client con chiave anon: legge i dati pubblici e inserisce lead e iscritti.
+ *
+ * Le due variabili vanno lette con accesso STATICO — `process.env.NOME` scritto
+ * per esteso. Next sostituisce a compilazione solo questa forma: con un accesso
+ * dinamico tipo `process.env[nome]` il valore resta indefinito nel browser,
+ * perche li `process.env` e uno shim vuoto. Il codice funzionava lato server e
+ * falliva solo nel form dell'utente, che e il posto peggiore per accorgersene.
+ */
 export function getSupabaseClient(): SupabaseClient {
   if (!clientAnonimo) {
-    clientAnonimo = createClient(
-      richiedi("NEXT_PUBLIC_SUPABASE_URL"),
-      richiedi("NEXT_PUBLIC_SUPABASE_ANON_KEY"),
-    );
+    const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+    const chiave = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+    if (!url || !chiave) {
+      throw new Error(
+        "NEXT_PUBLIC_SUPABASE_URL o NEXT_PUBLIC_SUPABASE_ANON_KEY mancanti: copia .env.example in .env.local e valorizzale.",
+      );
+    }
+
+    clientAnonimo = createClient(url, chiave);
   }
   return clientAnonimo;
 }

@@ -81,6 +81,11 @@ export function Wizard({
   const [consensoContatto, setConsensoContatto] = useState(false);
   const [consensoCondivisione, setConsensoCondivisione] = useState(false);
   const [esca, setEsca] = useState("");
+  const [dettaglio, setDettaglio] = useState<string | null>(null);
+  // Istante di apertura del modulo: un invio in meno di due secondi non è
+  // umano. È il controllo antibot che nessun gestore di password può falsare,
+  // ed è il motivo per cui l'esca non deve più portare tutto il peso.
+  const [apertoIl] = useState(() => Date.now());
   const [invio, setInvio] = useState<"fermo" | "corso" | "errore">("fermo");
 
   const aggiorna = (campo: keyof Risposte, valore: string) =>
@@ -96,36 +101,50 @@ export function Wizard({
     if (!consensoContatto) return;
     setInvio("corso");
 
-    // Trappola per i bot: un campo invisibile che un umano non compila mai.
-    // Se e pieno fingiamo il successo senza scrivere nulla.
-    if (esca.trim() !== "") {
+    // Due controlli antibot, entrambi silenziosi: esca compilata oppure invio
+    // in meno di due secondi. Fingiamo il successo senza scrivere nulla, così
+    // il bot non impara cosa lo ha fermato.
+    if (esca.trim() !== "" || Date.now() - apertoIl < 2000) {
       router.push("/grazie/");
       return;
     }
 
-    const { error } = await getSupabaseClient()
-      .from("leads")
-      .insert({
-        nome: risposte.nome.trim(),
-        email: risposte.email.trim() || null,
-        telefono: risposte.telefono.trim() || null,
-        zona: risposte.zona.trim() || null,
-        budget: risposte.budget || null,
-        tempistiche: risposte.tempistiche || null,
-        relazione: risposte.relazione || null,
-        tipo_assistenza: risposte.tipo_assistenza || null,
-        struttura_id: strutturaId ?? null,
-        pagina_origine: paginaOrigine,
-        consenso_contatto: true,
-        consenso_condivisione: consensoCondivisione,
-        consenso_testo_versione: VERSIONE_INFORMATIVA,
-        consenso_il: new Date().toISOString(),
-      });
+    // Il try/catch non e ridondante rispetto a `error`: se la rete cade o il
+    // client lancia, la promise viene rifiutata e senza cattura lo stato
+    // resterebbe su "corso" per sempre, con il pulsante disabilitato e
+    // "Invio in corso…" a schermo. Le risposte restano nello stato, quindi
+    // dopo l'errore si riprova senza ricompilare niente.
+    try {
+      const { error } = await getSupabaseClient()
+        .from("leads")
+        .insert({
+          nome: risposte.nome.trim(),
+          email: risposte.email.trim() || null,
+          telefono: risposte.telefono.trim() || null,
+          zona: risposte.zona.trim() || null,
+          budget: risposte.budget || null,
+          tempistiche: risposte.tempistiche || null,
+          relazione: risposte.relazione || null,
+          tipo_assistenza: risposte.tipo_assistenza || null,
+          struttura_id: strutturaId ?? null,
+          pagina_origine: paginaOrigine,
+          consenso_contatto: true,
+          consenso_condivisione: consensoCondivisione,
+          consenso_testo_versione: VERSIONE_INFORMATIVA,
+          consenso_il: new Date().toISOString(),
+        });
 
-    if (error) {
+      if (error) {
+        setDettaglio(`${error.code ?? "?"}: ${error.message}`);
+        setInvio("errore");
+        return;
+      }
+    } catch (eccezione) {
+      setDettaglio(eccezione instanceof Error ? eccezione.message : String(eccezione));
       setInvio("errore");
       return;
     }
+
     router.push("/grazie/");
   }
 
@@ -274,17 +293,23 @@ export function Wizard({
             Almeno uno dei due: senza recapito non possiamo risponderti.
           </p>
 
-          {/* Esca per i bot: nascosta agli umani e agli screen reader. */}
-          <div aria-hidden="true" className="absolute left-[-9999px]">
-            <label>
-              Non compilare questo campo
-              <input
-                tabIndex={-1}
-                autoComplete="off"
-                value={esca}
-                onChange={(evento) => setEsca(evento.target.value)}
-              />
-            </label>
+          {/* Esca per i bot. Il nome non richiama niente che un gestore di
+              password voglia riempire — nessun "user", "mail", "tel", "nome" —
+              ed è marcata con gli attributi che 1Password e LastPass rispettano.
+              Non possiamo permetterci di perdere chi usa un password manager. */}
+          <div aria-hidden="true" className="absolute left-[-9999px] top-0">
+            <label htmlFor="riferimento-interno">Riferimento interno</label>
+            <input
+              id="riferimento-interno"
+              name="riferimento-interno"
+              type="text"
+              tabIndex={-1}
+              autoComplete="off"
+              data-lpignore="true"
+              data-1p-ignore="true"
+              value={esca}
+              onChange={(evento) => setEsca(evento.target.value)}
+            />
           </div>
 
           <fieldset className="mt-2 flex flex-col gap-3 rounded-md border border-bordo bg-carta p-4">
@@ -328,10 +353,19 @@ export function Wizard({
           </fieldset>
 
           {invio === "errore" && (
-            <p role="alert" className="rounded-md bg-ambra-tenue px-4 py-3 text-[0.95rem] text-ambra">
-              Non siamo riusciti a inviare la richiesta. Riprova fra un momento, oppure scrivici a
-              info@guidarsa.it.
-            </p>
+            <div role="alert" className="rounded-md bg-ambra-tenue px-4 py-3 text-[0.95rem] text-ambra">
+              <p>
+                Non siamo riusciti a inviare la richiesta. Le tue risposte sono salvate: riprova fra
+                un momento, oppure scrivici a info@guidarsa.it.
+              </p>
+              {/* Dettaglio tecnico solo in sviluppo: in produzione non deve mai
+                  comparire, ma in fase di test fa risparmiare mezz'ora di diagnosi. */}
+              {process.env.NODE_ENV !== "production" && dettaglio && (
+                <p className="mt-2 border-t border-ambra/30 pt-2 font-mono text-xs">
+                  [solo in sviluppo] {dettaglio}
+                </p>
+              )}
+            </div>
           )}
 
           <div className="mt-1 flex flex-col-reverse gap-3 sm:flex-row sm:items-center">
