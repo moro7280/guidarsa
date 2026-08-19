@@ -3,12 +3,17 @@ import { notFound } from "next/navigation";
 import { AvvisoDemo } from "@/components/AvvisoDemo";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { ElencoLuoghi } from "@/components/ElencoLuoghi";
+import { FaqLuogo } from "@/components/FaqLuogo";
+import { PanoramicaLuogo } from "@/components/PanoramicaLuogo";
+import { domandeLuogo } from "@/lib/domande";
+import { statistiche } from "@/lib/statistiche";
 import { percorsi } from "@/lib/percorsi";
 import { conta, metadataPagina } from "@/lib/seo";
 import {
   getCombinazioni,
   getNomeRegione,
   getProvince,
+  getStrutture,
   isDatasetDemo,
 } from "@/lib/strutture";
 import { getTipologia } from "@/lib/tipologie";
@@ -68,6 +73,9 @@ export default async function PaginaRegione({
 
   const totale = province.reduce((somma, provincia) => somma + provincia.conteggio, 0);
   const demo = await isDatasetDemo();
+  const strutture = await getStrutture({ tipologia: info.slug, regione });
+  const stat = statistiche(strutture);
+  const luogo = `in ${nomeRegione}`;
 
   return (
     <div className="space-y-8">
@@ -92,6 +100,13 @@ export default async function PaginaRegione({
         </p>
       </header>
 
+      <PanoramicaLuogo
+        stat={stat}
+        luogo={luogo}
+        tipologiaInFrase={info.pluraleInFrase}
+        livelloComuni="comuni"
+      />
+
       <section>
         <h2 className="text-xl font-semibold text-inchiostro">Province</h2>
         <div className="mt-4">
@@ -101,6 +116,15 @@ export default async function PaginaRegione({
           />
         </div>
       </section>
+
+      <FaqLuogo
+        domande={domandeLuogo(stat, {
+          luogo,
+          tipologiaPlurale: info.plurale,
+          tipologiaInFrase: info.pluraleInFrase,
+          livelloComuni: "comuni",
+        })}
+      />
     </div>
   );
 }

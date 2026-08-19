@@ -3,9 +3,13 @@ import { notFound } from "next/navigation";
 import { AvvisoDemo } from "@/components/AvvisoDemo";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { ElencoLuoghi } from "@/components/ElencoLuoghi";
+import { FaqLuogo } from "@/components/FaqLuogo";
+import { PanoramicaLuogo } from "@/components/PanoramicaLuogo";
+import { domandeLuogo } from "@/lib/domande";
+import { statistiche } from "@/lib/statistiche";
 import { percorsi } from "@/lib/percorsi";
 import { conta, metadataPagina } from "@/lib/seo";
-import { getRegioni, isDatasetDemo } from "@/lib/strutture";
+import { getRegioni, getStrutture, isDatasetDemo } from "@/lib/strutture";
 import { SLUG_TIPOLOGIE, getTipologia } from "@/lib/tipologie";
 
 type Parametri = { tipologia: string };
@@ -50,6 +54,9 @@ export default async function PaginaTipologia({
 
   const totale = regioni.reduce((somma, regione) => somma + regione.conteggio, 0);
   const demo = await isDatasetDemo();
+  const strutture = await getStrutture({ tipologia: info.slug });
+  const stat = statistiche(strutture);
+  const luogo = "in Italia";
 
   return (
     <div className="space-y-8">
@@ -71,6 +78,13 @@ export default async function PaginaTipologia({
         </p>
       </header>
 
+      <PanoramicaLuogo
+        stat={stat}
+        luogo={luogo}
+        tipologiaInFrase={info.pluraleInFrase}
+        livelloComuni="comuni"
+      />
+
       <section>
         <h2 className="text-xl font-semibold text-inchiostro">Scegli la regione</h2>
         <div className="mt-4">
@@ -80,6 +94,15 @@ export default async function PaginaTipologia({
           />
         </div>
       </section>
+
+      <FaqLuogo
+        domande={domandeLuogo(stat, {
+          luogo,
+          tipologiaPlurale: info.plurale,
+          tipologiaInFrase: info.pluraleInFrase,
+          livelloComuni: "comuni",
+        })}
+      />
     </div>
   );
 }

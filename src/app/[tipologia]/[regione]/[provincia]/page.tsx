@@ -3,6 +3,10 @@ import { notFound } from "next/navigation";
 import { AvvisoDemo } from "@/components/AvvisoDemo";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { ElencoLuoghi } from "@/components/ElencoLuoghi";
+import { FaqLuogo } from "@/components/FaqLuogo";
+import { PanoramicaLuogo } from "@/components/PanoramicaLuogo";
+import { domandeLuogo } from "@/lib/domande";
+import { statistiche } from "@/lib/statistiche";
 import { percorsi } from "@/lib/percorsi";
 import { conta, metadataPagina } from "@/lib/seo";
 import {
@@ -10,6 +14,7 @@ import {
   getComuni,
   getNomeProvincia,
   getNomeRegione,
+  getStrutture,
   isDatasetDemo,
 } from "@/lib/strutture";
 import { getTipologia } from "@/lib/tipologie";
@@ -71,6 +76,9 @@ export default async function PaginaProvincia({
 
   const totale = comuni.reduce((somma, comune) => somma + comune.conteggio, 0);
   const demo = await isDatasetDemo();
+  const strutture = await getStrutture({ tipologia: info.slug, regione, provincia });
+  const stat = statistiche(strutture);
+  const luogo = `in provincia di ${nomeProvincia}`;
 
   return (
     <div className="space-y-8">
@@ -98,6 +106,14 @@ export default async function PaginaProvincia({
         </p>
       </header>
 
+      <PanoramicaLuogo
+        stat={stat}
+        luogo={luogo}
+        tipologiaInFrase={info.pluraleInFrase}
+        livelloComuni="comuni"
+        hrefComune={(slug) => percorsi.comune(info.slug, regione, provincia, slug)}
+      />
+
       <section>
         <h2 className="text-xl font-semibold text-inchiostro">Comuni</h2>
         <div className="mt-4">
@@ -107,6 +123,15 @@ export default async function PaginaProvincia({
           />
         </div>
       </section>
+
+      <FaqLuogo
+        domande={domandeLuogo(stat, {
+          luogo,
+          tipologiaPlurale: info.plurale,
+          tipologiaInFrase: info.pluraleInFrase,
+          livelloComuni: "comuni",
+        })}
+      />
     </div>
   );
 }
