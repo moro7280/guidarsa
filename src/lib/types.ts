@@ -29,7 +29,8 @@ export interface Struttura {
   email: string | null;
   sito_web: string | null;
   posti_letto: number | null;
-  convenzionata: boolean;
+  /** null = l'elenco regionale di origine non dichiara l'accreditamento. */
+  convenzionata: boolean | null;
   /** null = informazione non disponibile: non equivale a "non c'è". */
   nucleo_alzheimer: boolean | null;
   prezzo_min: number | null;

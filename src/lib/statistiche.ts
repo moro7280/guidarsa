@@ -16,6 +16,8 @@ export interface Statistiche {
   postiTotali: number;
   postiMedi: number | null;
   convenzionate: number;
+  /** Strutture per cui la fonte non dichiara l accreditamento. */
+  accreditamentoIgnoto: number;
   conNucleo: number;
   conContatto: number;
   conRetta: number;
@@ -62,7 +64,8 @@ export function statistiche(strutture: Struttura[]): Statistiche {
     comuni: perComune.size,
     postiTotali,
     postiMedi: conPosti.length ? Math.round(postiTotali / conPosti.length) : null,
-    convenzionate: strutture.filter((s) => s.convenzionata).length,
+    convenzionate: strutture.filter((s) => s.convenzionata === true).length,
+    accreditamentoIgnoto: strutture.filter((s) => s.convenzionata === null).length,
     conNucleo: strutture.filter((s) => s.nucleo_alzheimer === true).length,
     conContatto: strutture.filter((s) => s.telefono || s.email || s.sito_web).length,
     conRetta: prezzi.length,

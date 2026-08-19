@@ -43,7 +43,7 @@ export function SchedaStruttura({ struttura }: { struttura: Struttura }) {
       </p>
 
       <ul className="mt-3.5 flex flex-wrap gap-2 text-sm">
-        {struttura.convenzionata && (
+        {struttura.convenzionata === true && (
           <li className="rounded border border-verde-tenue bg-verde-tenue px-2.5 py-1 font-medium text-verde">
             Convenzionata
           </li>

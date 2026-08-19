@@ -101,11 +101,27 @@ function frasePanoramica(
   }
   parti.push(". ");
 
-  parti.push(
-    stat.convenzionate > 0
-      ? `${numero(stat.convenzionate)} sono accreditate con il servizio sanitario regionale: in queste una parte della retta è coperta dalla Regione, ma i posti convenzionati sono contingentati e spesso soggetti a lista d'attesa.`
-      : "Nessuna risulta accreditata negli elenchi regionali: la retta è quindi interamente a carico dell'ospite o della famiglia.",
-  );
+  // Le strutture con accreditamento ignoto non vanno mai descritte come non
+  // accreditate: l'elenco di origine semplicemente non lo dice.
+  const noto = stat.strutture - stat.accreditamentoIgnoto;
+  if (stat.convenzionate > 0) {
+    parti.push(
+      `${numero(stat.convenzionate)} sono accreditate con il servizio sanitario regionale: in queste una parte della retta è coperta dalla Regione, ma i posti convenzionati sono contingentati e spesso soggetti a lista d'attesa.`,
+    );
+    if (stat.accreditamentoIgnoto > 0) {
+      parti.push(
+        ` Per altre ${numero(stat.accreditamentoIgnoto)} l'elenco regionale non dichiara l'accreditamento: è un dato da chiedere alla struttura.`,
+      );
+    }
+  } else if (noto === 0) {
+    parti.push(
+      "L'elenco regionale non dichiara l'accreditamento di queste strutture: conviene chiederlo direttamente a loro o all'azienda sanitaria di riferimento.",
+    );
+  } else {
+    parti.push(
+      "Nessuna risulta accreditata negli elenchi regionali: la retta è quindi interamente a carico dell'ospite o della famiglia.",
+    );
+  }
 
   return parti.join("");
 }

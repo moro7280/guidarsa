@@ -88,7 +88,7 @@ export default async function PaginaComune({
     ...new Set(nelComune.map((struttura) => struttura.tipologia)),
   ].filter((slug): slug is Tipologia => slug !== info.slug);
 
-  const convenzionate = strutture.filter((struttura) => struttura.convenzionata).length;
+  const convenzionate = strutture.filter((struttura) => struttura.convenzionata === true).length;
   const conAlzheimer = strutture.filter((struttura) => struttura.nucleo_alzheimer).length;
   const demo = await isDatasetDemo();
 

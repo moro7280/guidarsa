@@ -93,12 +93,17 @@ export default async function PaginaStruttura({
         <ul className="mt-1 flex flex-wrap gap-2 text-sm">
           <li
             className={`rounded px-2.5 py-1 font-medium ${
-              struttura.convenzionata
+              struttura.convenzionata === true
                 ? "bg-verde-tenue text-verde"
                 : "bg-carta text-inchiostro-medio"
             }`}
           >
-            {struttura.convenzionata ? "Convenzionata" : "Non convenzionata"}
+            {/* null = la fonte non dichiara l accreditamento: non e un no. */}
+            {struttura.convenzionata === null
+              ? "Accreditamento non dichiarato"
+              : struttura.convenzionata
+                ? "Convenzionata"
+                : "Non convenzionata"}
           </li>
           {struttura.nucleo_alzheimer === true && (
             <li className="rounded bg-indaco-tenue px-2.5 py-1 font-medium text-indaco">
@@ -191,7 +196,12 @@ export default async function PaginaStruttura({
             },
             {
               voce: "Convenzionata con il servizio sanitario",
-              valore: struttura.convenzionata ? "Sì" : "No",
+              valore:
+                struttura.convenzionata === null
+                  ? "Informazione non disponibile"
+                  : struttura.convenzionata
+                    ? "Sì"
+                    : "No",
             },
             {
               voce: "Nucleo Alzheimer",

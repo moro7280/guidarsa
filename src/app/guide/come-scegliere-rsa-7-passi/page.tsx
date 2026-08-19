@@ -31,7 +31,8 @@ function mediana(valori: number[]): number | null {
 export default async function GuidaSettePassi() {
   const strutture = await getStrutture();
 
-  const convenzionate = strutture.filter((s) => s.convenzionata).length;
+  const convenzionate = strutture.filter((s) => s.convenzionata === true).length;
+  const accreditamentoNoto = strutture.filter((s) => s.convenzionata !== null).length;
   const conRetta = strutture.filter((s) => s.prezzo_min !== null);
   const medianaPrivata = mediana(conRetta.map((s) => s.prezzo_min as number));
   const medianaConvenzionata = mediana(
@@ -52,7 +53,7 @@ export default async function GuidaSettePassi() {
       titolo: "Stabilite di che assistenza c'è bisogno",
       testo:
         "È la domanda che decide tutte le altre. Se serve assistenza sanitaria continuativa, la strada è la RSA. Se la persona è ancora parzialmente autonoma, una casa di riposo può bastare. Se il bisogno è dare sollievo a chi assiste durante il giorno, il centro diurno costa molto meno e lascia la persona a casa la sera.",
-      dato: `Delle ${strutture.length} strutture censite, ${convenzionate} risultano accreditate con il servizio sanitario regionale.`,
+      dato: `Su ${accreditamentoNoto} strutture per cui l'elenco regionale dichiara l'accreditamento, ${convenzionate} risultano accreditate con il servizio sanitario regionale.`,
     },
     {
       titolo: "Scegliete la zona pensando a chi andrà a trovarla",

@@ -57,12 +57,20 @@ export function domandeLuogo(
     },
     {
       domanda: `Quante ${tipologiaInFrase} sono convenzionate ${luogo}?`,
+      // Le strutture con accreditamento ignoto escono dal denominatore: contarle
+      // fra le non accreditate significherebbe affermare un dato che non abbiamo.
       risposta:
         stat.convenzionate > 0
           ? `${numero(stat.convenzionate)} su ${numero(
-              stat.strutture,
-            )} risultano accreditate con il servizio sanitario regionale. Nelle strutture accreditate una parte della retta è coperta dalla Regione, ma i posti convenzionati sono contingentati: conviene chiedere quanti ne ha la singola struttura, quanti sono liberi e quanto dura l'attesa media.`
-          : `Nessuna delle strutture censite risulta accreditata negli elenchi regionali: la retta è quindi interamente a carico dell'ospite o della famiglia.`,
+              stat.strutture - stat.accreditamentoIgnoto,
+            )} per cui l'elenco regionale dichiara l'accreditamento risultano accreditate con il servizio sanitario regionale. Nelle strutture accreditate una parte della retta è coperta dalla Regione, ma i posti convenzionati sono contingentati: conviene chiedere quanti ne ha la singola struttura, quanti sono liberi e quanto dura l'attesa media.${
+              stat.accreditamentoIgnoto > 0
+                ? ` Per le altre ${numero(stat.accreditamentoIgnoto)} l'informazione non è disponibile negli open data regionali.`
+                : ""
+            }`
+          : stat.accreditamentoIgnoto === stat.strutture
+            ? `L'elenco regionale non dichiara l'accreditamento di queste strutture: è un dato da chiedere alla struttura stessa o all'azienda sanitaria di riferimento, perché cambia molto la retta a carico della famiglia.`
+            : `Nessuna delle strutture censite risulta accreditata negli elenchi regionali: la retta è quindi interamente a carico dell'ospite o della famiglia.`,
     },
   ];
 

@@ -32,7 +32,11 @@ export function FaqComune({
   comune: string;
   tipologiaPlurale: string;
 }) {
-  const convenzionate = strutture.filter((struttura) => struttura.convenzionata).length;
+  const convenzionate = strutture.filter((struttura) => struttura.convenzionata === true).length;
+  // null = la fonte non lo dichiara: non va mai contato come "non convenzionata".
+  const accreditamentoNoto = strutture.filter(
+    (struttura) => struttura.convenzionata !== null,
+  ).length;
   const conAlzheimer = strutture.filter((struttura) => struttura.nucleo_alzheimer === true).length;
   const postiTotali = strutture.reduce(
     (somma, struttura) => somma + (struttura.posti_letto ?? 0),
@@ -53,8 +57,16 @@ export function FaqComune({
       domanda: `Quante sono convenzionate con il servizio sanitario?`,
       risposta:
         convenzionate > 0
-          ? `${convenzionate} su ${strutture.length}. Nelle strutture convenzionate una parte della retta è coperta dal servizio sanitario regionale, ma i posti convenzionati sono limitati e spesso soggetti a lista d'attesa.`
-          : `Nessuna delle strutture censite a ${comune} risulta convenzionata negli elenchi regionali: la retta è quindi interamente a carico dell'ospite o della famiglia.`,
+          ? `${convenzionate} su ${accreditamentoNoto}${
+              accreditamentoNoto < strutture.length
+                ? ` strutture per cui l'elenco regionale dichiara l'accreditamento (per le altre ${
+                    strutture.length - accreditamentoNoto
+                  } l'informazione non è disponibile)`
+                : ""
+            }. Nelle strutture convenzionate una parte della retta è coperta dal servizio sanitario regionale, ma i posti convenzionati sono limitati e spesso soggetti a lista d'attesa.`
+          : accreditamentoNoto === 0
+            ? `L'elenco regionale non dichiara l'accreditamento delle strutture di ${comune}: è un dato da chiedere direttamente alla struttura o all'azienda sanitaria di riferimento.`
+            : `Nessuna delle strutture censite a ${comune} risulta convenzionata negli elenchi regionali: la retta è quindi interamente a carico dell'ospite o della famiglia.`,
     },
   ];
 
