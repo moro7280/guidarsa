@@ -43,8 +43,6 @@ const TIPOLOGIA_PER_LIVELLO = {
   "comunita familiare": "casa-di-riposo",
 };
 
-const FORME = /\b(s\.?r\.?l\.?|s\.?p\.?a\.?|onlus|ets|cooperativa|coop|societa|sociale|fondazione|associazione|impresa)\b/gi;
-
 /**
  * Il file arriva con UTF-8 codificato due volte: "Comunità" diventa
  * "ComunitÃ ". Si ripara reinterpretando i byte come latin1 e rileggendoli
