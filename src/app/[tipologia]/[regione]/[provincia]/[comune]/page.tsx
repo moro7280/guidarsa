@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AvvisoDemo } from "@/components/AvvisoDemo";
+import { BarraMobile, BloccoCta, PadPerBarra } from "@/components/Cta";
+import { FaqComune } from "@/components/FaqComune";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { SchedaStruttura } from "@/components/SchedaStruttura";
 import { GUIDE } from "@/lib/guide";
@@ -151,6 +153,14 @@ export default async function PaginaComune({
         </section>
       )}
 
+      <FaqComune
+        strutture={strutture}
+        comune={nomeComune}
+        tipologiaPlurale={info.pluraleInFrase}
+      />
+
+      <BloccoCta comune={`${nomeComune} (${sigla})`} />
+
       <section>
         <h2 className="text-xl font-semibold text-inchiostro">Guide utili prima di scegliere</h2>
         <ul className="mt-4 space-y-3">
@@ -167,6 +177,9 @@ export default async function PaginaComune({
           ))}
         </ul>
       </section>
+
+      <PadPerBarra />
+      <BarraMobile comune={`${nomeComune} (${sigla})`} />
     </div>
   );
 }

@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { AttribuzioneOsm } from "@/components/AttribuzioneOsm";
 import { BloccoRette } from "@/components/BloccoRette";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { BarraMobile, CtaStruttura, PadPerBarra } from "@/components/Cta";
 import { JsonLd } from "@/components/JsonLd";
 import { indicizzabile } from "@/lib/completezza";
 import { percorsi } from "@/lib/percorsi";
@@ -156,6 +157,17 @@ export default async function PaginaStruttura({
         )}
       </section>
 
+      <section className="rounded-lg border border-verde/25 bg-verde-tenue p-5">
+        <h2 className="font-serif text-xl font-semibold">Non sai se è la struttura giusta?</h2>
+        <p className="mt-2 max-w-2xl text-[0.97rem] leading-relaxed text-inchiostro-medio">
+          Rispondi a cinque domande e ti aiutiamo a confrontarla con le altre della zona. Gratuito
+          per le famiglie: i contatti qui sopra restano comunque a tua disposizione.
+        </p>
+        <div className="mt-4">
+          <CtaStruttura slug={struttura.slug} />
+        </div>
+      </section>
+
       <BloccoRette struttura={struttura} />
 
       <section>
@@ -210,6 +222,9 @@ export default async function PaginaStruttura({
           Vedi {info.tutti} {info.pluraleInFrase} a {struttura.comune}
         </Link>
       </p>
+
+      <PadPerBarra />
+      <BarraMobile slug={struttura.slug} />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { CtaPrimaria } from "@/components/Cta";
 import { RicercaComune, type VoceComune } from "@/components/RicercaComune";
 import { GUIDE } from "@/lib/guide";
 import { percorsi } from "@/lib/percorsi";
@@ -60,6 +61,12 @@ export default async function Home() {
 
         <div className="rounded-lg border border-bordo bg-superficie p-5 sm:p-6">
           <RicercaComune comuni={comuniPerRicerca} />
+          <div className="mt-5 border-t border-bordo-tenue pt-5">
+            <p className="mb-3 text-[0.95rem] text-inchiostro-medio">
+              Oppure rispondi a cinque domande e restringiamo la ricerca insieme.
+            </p>
+            <CtaPrimaria />
+          </div>
           <p className="mt-3 text-sm text-inchiostro-tenue">
             {comuniPerRicerca.length} comuni coperti, per ora tutti in Lombardia.
           </p>

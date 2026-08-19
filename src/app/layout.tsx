@@ -91,8 +91,15 @@ export default async function RootLayout({
             <div className="flex flex-col gap-3">
               <Logo variante="scuro" dimensione={30} />
               <p className="max-w-xs text-[0.95rem] leading-relaxed">
-                Una guida indipendente alle strutture per anziani. Non gestiamo strutture e non
-                vendiamo posti letto: mettiamo in chiaro i dati per aiutare le famiglie a scegliere.
+                <strong className="font-semibold text-carta">GuidaRSA è gratuito per le famiglie.</strong>{" "}
+                Non gestiamo strutture e non vendiamo posti letto: mettiamo in chiaro i dati per
+                aiutare le famiglie a scegliere.
+              </p>
+              <p className="max-w-xs text-[0.95rem] leading-relaxed">
+                Come verifichiamo: partiamo dagli elenchi pubblici regionali, controlliamo i
+                contatti sui siti ufficiali delle strutture e pubblichiamo una retta solo quando la
+                struttura la mette per iscritto nella propria carta dei servizi. Dove un dato non ce
+                l&apos;abbiamo, lo scriviamo.
               </p>
             </div>
 
@@ -135,6 +142,11 @@ export default async function RootLayout({
                 <li>
                   Gestisci una struttura e vuoi correggere i tuoi dati? Segnalacelo e li aggiorniamo
                   citando la fonte.
+                </li>
+                <li>
+                  <Link href="/privacy/" className="underline underline-offset-4 hover:text-carta">
+                    Informativa privacy
+                  </Link>
                 </li>
               </ul>
             </div>

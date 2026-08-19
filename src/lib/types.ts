@@ -11,6 +11,8 @@ export type Tipologia =
  * sono derivati con `slugify()` (vedi src/lib/slug.ts).
  */
 export interface Struttura {
+  /** UUID della riga: serve a legare un lead alla struttura di origine. */
+  id?: string;
   nome: string;
   slug: string;
   tipologia: Tipologia;
