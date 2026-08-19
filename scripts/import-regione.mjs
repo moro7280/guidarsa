@@ -1,13 +1,15 @@
-// Import delle RSA lombarde da open data verso Supabase.
+// Import di un elenco regionale di strutture verso Supabase.
+//   npm run import:regione -- friuli
 //   npm run import:lombardia
 //
-// Lo script è generico: quello che cambia da una regione all'altra sta nel
-// file di mapping (scripts/mapping/lombardia.mjs).
+// Quello che cambia da una regione all'altra sta nel file di mapping
+// (scripts/mapping/<regione>.mjs): qui resta solo la meccanica.
 // Le chiavi non vengono mai stampate, nemmeno nei messaggi di errore.
 
 import { readFileSync } from "node:fs";
 import { createClient } from "@supabase/supabase-js";
-import { fonte, normalizzaRiga } from "./mapping/lombardia.mjs";
+const regione = process.argv[2] ?? "lombardia";
+const { fonte, normalizzaRiga } = await import(`./mapping/${regione}.mjs`);
 
 const BLOCCO = 500;
 
@@ -30,7 +32,7 @@ function caricaEnv(percorso = ".env.local") {
 
 // --- Parser CSV (RFC 4180: virgolette, virgole nei campi, CRLF) -------------
 
-function parseCsv(testo) {
+function parseCsv(testo, DELIMITATORE = ",") {
   const righe = [];
   let riga = [];
   let campo = "";
@@ -51,7 +53,7 @@ function parseCsv(testo) {
       }
     } else if (carattere === '"') {
       inQuote = true;
-    } else if (carattere === ",") {
+    } else if (carattere === DELIMITATORE) {
       riga.push(campo);
       campo = "";
     } else if (carattere === "\n") {
@@ -73,7 +75,7 @@ function parseCsv(testo) {
 function leggiCsv(percorso) {
   let testo = readFileSync(percorso, "utf8");
   if (testo.charCodeAt(0) === 0xfeff) testo = testo.slice(1); // BOM
-  const righe = parseCsv(testo).filter((r) => r.some((c) => c.trim() !== ""));
+  const righe = parseCsv(testo, fonte.delimitatore ?? ",").filter((r) => r.some((c) => c.trim() !== ""));
   const intestazione = righe[0].map((c) => c.trim());
   return righe.slice(1).map((valori) =>
     Object.fromEntries(intestazione.map((nome, i) => [nome, valori[i] ?? ""])),

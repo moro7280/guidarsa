@@ -17,3 +17,4 @@ di origine cambia formato o ritira il dataset.
 | File | Fonte | URL | Scaricato il | `fonte_dati` |
 | --- | --- | --- | --- | --- |
 | `lombardia-rsa.csv` | Regione Lombardia — Elenco Residenze Sanitarie Assistenziali | https://dati.lombardia.it | 18/08/2026 | `opendata_lombardia` |
+| `friuli-anziani.csv` | Regione Friuli-Venezia Giulia — Elenco strutture residenziali per anziani | https://www.dati.friuliveneziagiulia.it | 19/08/2026 | `opendata_friuli` |

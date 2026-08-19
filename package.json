@@ -7,13 +7,15 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "import:lombardia": "node scripts/import-lombardia.mjs",
+    "import:lombardia": "node scripts/import-regione.mjs lombardia",
     "enrich:osm": "node scripts/enrich-osm.mjs",
     "enrich:siti": "node scripts/enrich-siti.mjs",
     "pulisci:contatti": "node scripts/pulisci-contatti.mjs",
     "rette:scarica": "node scripts/rette-scarica.mjs",
     "rette:estrai": "node scripts/rette-estrai.mjs",
-    "icone": "node scripts/genera-icone.mjs"
+    "icone": "node scripts/genera-icone.mjs",
+    "import:regione": "node scripts/import-regione.mjs",
+    "import:friuli": "node scripts/import-regione.mjs friuli"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.112.3",
