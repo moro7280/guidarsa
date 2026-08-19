@@ -206,19 +206,15 @@ for (const [slug, voce] of Object.entries(manifest)) {
   const privato = intervallo(privati);
   const convenzionato = intervallo(convenzionati);
 
-  if (!privato && !convenzionato) {
-    if (nonClassificati.length) {
-      daRivedere.push({
-        slug,
-        nome: struttura.nome,
-        url: voce.url,
-        motivo: "importi trovati ma senza etichetta privato/convenzionato",
-        importi: nonClassificati.slice(0, 6).map((v) => `${v.valore} (${v.unitaRilevata}) — ${v.riga.slice(0, 90)}`),
-      });
-    } else {
-      esiti.senzaImporti++;
-      daRivedere.push({ slug, nome: struttura.nome, url: voce.url, motivo: "nessun importo riconducibile a una retta" });
-    }
+  // Molte carte pubblicano una tariffa sola senza dire se sia privata o in
+  // convenzione. L'importo e` certo, il regime no: si salva dichiarando
+  // "non specificato", invece di scegliere un'etichetta a caso o di buttare
+  // via il dato. In pagina comparira` con quella dicitura.
+  const generico = !privato && !convenzionato ? intervallo(nonClassificati) : null;
+
+  if (!privato && !convenzionato && !generico) {
+    esiti.senzaImporti++;
+    daRivedere.push({ slug, nome: struttura.nome, url: voce.url, motivo: "nessun importo riconducibile a una retta" });
     // Anche senza retta, il nucleo Alzheimer resta un dato utile.
     if (alzheimer && struttura.nucleo_alzheimer !== true) {
       aggiornamenti.push({ slug, campi: { nucleo_alzheimer: true }, soloAlzheimer: true });
@@ -227,15 +223,18 @@ for (const [slug, voce] of Object.entries(manifest)) {
     continue;
   }
 
-  // Confidenza: alta se la categoria e` esplicita e l'unita` riconosciuta.
-  const vociUsate = [...privati, ...convenzionati];
+  const vociUsate = privato || convenzionato ? [...privati, ...convenzionati] : nonClassificati;
   const unitaEsplicita = vociUsate.every((v) => unitaDi(v.contesto) !== null);
+  // Alta solo quando il regime e` dichiarato nel documento e l'unita` riconosciuta.
   const confidenza = unitaEsplicita && (privato || convenzionato) ? "alta" : "media";
   esiti[confidenza]++;
+
+  const regime = privato ? "privata" : convenzionato && !generico ? "convenzionata" : "non_specificato";
 
   const originale = [
     privati[0] && `${privati[0].valore} €/${privati[0].unitaRilevata} (privato)`,
     convenzionati[0] && `${convenzionati[0].valore} €/${convenzionati[0].unitaRilevata} (convenzionato)`,
+    generico && `${nonClassificati[0].valore} €/${nonClassificati[0].unitaRilevata} (regime non specificato)`,
   ]
     .filter(Boolean)
     .join("; ");
@@ -245,19 +244,30 @@ for (const [slug, voce] of Object.entries(manifest)) {
     carta_servizi_anno: anno,
     carta_servizi_scaricata_il: voce.scaricato_il,
     retta_confidenza: confidenza,
+    retta_regime: regime,
     costi_extra:
       extra.length > 0
         ? [...new Set(extra.slice(0, 3).map((e) => `${e.valore} € — ${e.riga.slice(0, 60)}`))].join("; ")
         : null,
   };
-  if (privato) {
-    campi.prezzo_min = privato.min;
-    campi.prezzo_max = privato.max;
-    prezziTrovati.push(privato.min, privato.max);
+  if (privato || generico) {
+    const scelto = privato ?? generico;
+    campi.prezzo_min = scelto.min;
+    campi.prezzo_max = scelto.max;
+    prezziTrovati.push(scelto.min, scelto.max);
   }
   if (convenzionato) {
     campi.retta_convenzionata_min = convenzionato.min;
     campi.retta_convenzionata_max = convenzionato.max;
+  }
+  if (generico) {
+    daRivedere.push({
+      slug,
+      nome: struttura.nome,
+      url: voce.url,
+      motivo: "regime non dichiarato nel documento: importo salvato come non specificato",
+      estratto: originale,
+    });
   }
   if (alzheimer && struttura.nucleo_alzheimer !== true) {
     campi.nucleo_alzheimer = true;
@@ -273,7 +283,7 @@ for (const [slug, voce] of Object.entries(manifest)) {
 
   aggiornamenti.push({ slug, campi, confidenza });
 
-  if (confidenza === "media") {
+  if (confidenza === "media" && !generico) {
     daRivedere.push({
       slug,
       nome: struttura.nome,

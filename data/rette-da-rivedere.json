@@ -1,0 +1,1046 @@
+{
+  "eseguito_il": "2026-08-19T10:47:32.012Z",
+  "esiti": {
+    "leggibili": 108,
+    "scansioni": 6,
+    "senzaImporti": 38,
+    "alta": 12,
+    "media": 58
+  },
+  "casi": [
+    {
+      "slug": "ambrosiana-rsa-srl-milano",
+      "nome": "Ambrosiana RSA SRL",
+      "url": "http://ambrosianasrl.it/wp-content/uploads/2026/07/carta_servizi_Ambrosiana_luglio-2026.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "82 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "ambrosiana-rsa-srl-milano",
+      "nome": "Ambrosiana RSA SRL",
+      "url": "http://ambrosianasrl.it/wp-content/uploads/2026/07/carta_servizi_Ambrosiana_luglio-2026.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "82 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "casa-di-riposo-giulio-gianetti-saronno",
+      "nome": "Casa di Riposo Giulio Gianetti",
+      "url": "https://casagianetti.it/wp-content/uploads/2024/07/CARTA_SERVIZI_ONLINE.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "casa-famiglia-milano",
+      "nome": "Casa Famiglia",
+      "url": "https://www.istciechimilano.it/images/allegati/casa_famiglia/2026/2026%20Carta%20Servizi%20RSA%20FULL.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "125 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "casa-famiglia-milano",
+      "nome": "Casa Famiglia",
+      "url": "https://www.istciechimilano.it/images/allegati/casa_famiglia/2026/2026%20Carta%20Servizi%20RSA%20FULL.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "125 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "casa-famiglia-padre-francesco-spinelli-rivolta-d-adda",
+      "nome": "Casa Famiglia Padre Francesco Spinelli",
+      "url": "https://ats-valpadana.it/system/files/rsa_struttura/files/3841/16655/carta%20dei%20servizi%20unica%20RSA%20e%20solventi%20sett%202025.pdf",
+      "motivo": "PDF scansionato: nessun livello di testo"
+    },
+    {
+      "slug": "casa-serena-cilavegna",
+      "nome": "Casa Serena",
+      "url": "https://casaserenarsa.it/wp-content/uploads/2025/11/CARTA_DEI_SERVIZI_2025.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "60 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "casa-serena-cilavegna",
+      "nome": "Casa Serena",
+      "url": "https://casaserenarsa.it/wp-content/uploads/2025/11/CARTA_DEI_SERVIZI_2025.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "60 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "cascina-cortenuova-paullo",
+      "nome": "Cascina Cortenuova",
+      "url": "http://www.crmsociale.it/wp-content/uploads/2026/07/Carta-dei-servizi-Cavenago-2026-attuale-Att.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "90 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "cascina-cortenuova-paullo",
+      "nome": "Cascina Cortenuova",
+      "url": "http://www.crmsociale.it/wp-content/uploads/2026/07/Carta-dei-servizi-Cavenago-2026-attuale-Att.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "90 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "centro-geriatrico-porta-spinola-mariano-comense",
+      "nome": "Centro Geriatrico Porta Spinola",
+      "url": "http://www.portaspinola.it/wp-content/uploads/2026/03/carta-servizi-Fondazione.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "81 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "centro-geriatrico-porta-spinola-mariano-comense",
+      "nome": "Centro Geriatrico Porta Spinola",
+      "url": "http://www.portaspinola.it/wp-content/uploads/2026/03/carta-servizi-Fondazione.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "81 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "centro-padre-ambrosoli-giuseppe-milano",
+      "nome": "Centro Padre Ambrosoli Giuseppe",
+      "url": "https://rsaambrosoli.it/wp-content/uploads/2026/07/CARTA-DEI-SERVIZI-RSA-AMBROSOLI.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "50 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "centro-padre-ambrosoli-giuseppe-milano",
+      "nome": "Centro Padre Ambrosoli Giuseppe",
+      "url": "https://rsaambrosoli.it/wp-content/uploads/2026/07/CARTA-DEI-SERVIZI-RSA-AMBROSOLI.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "50 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "citta-di-bollate-giovanni-paolo-ii-bollate",
+      "nome": "Citta' di Bollate Giovanni Paolo II",
+      "url": "https://www.gaiaservizi.eu/it-it/download/carta-dei-servizi-allegato-1-2386-89-20057-87ee55fbddaa245593045428dd84f1c2",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "don-alessandro-pozzoli-canzo",
+      "nome": "Don Alessandro Pozzoli",
+      "url": "https://www.rsadonpozzoli.it/docs/CARTA_SERVIZI.pdf",
+      "motivo": "PDF scansionato: nessun livello di testo"
+    },
+    {
+      "slug": "don-carlo-ferrandi-breme",
+      "nome": "Don Carlo Ferrandi",
+      "url": "https://www.fondazionedonferrandi.it/documenti/cartadeiservizi.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "56 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "don-carlo-ferrandi-breme",
+      "nome": "Don Carlo Ferrandi",
+      "url": "https://www.fondazionedonferrandi.it/documenti/cartadeiservizi.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "56 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "don-f-mori-stagno-lombardo",
+      "nome": "Don F. Mori",
+      "url": "https://emmausitalia.it/wp-content/uploads/2026/01/2026_01_01_carta_servizi_RSA_Don_Mori_ALLEGATI.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "don-giuseppe-gennaro-garlasco",
+      "nome": "Don Giuseppe Gennaro",
+      "url": "https://www.operacharitas.it/new/wp-content/uploads/2026/01/Carta-servizi-2026-Garlasco.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "74 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "don-giuseppe-gennaro-garlasco",
+      "nome": "Don Giuseppe Gennaro",
+      "url": "https://www.operacharitas.it/new/wp-content/uploads/2026/01/Carta-servizi-2026-Garlasco.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "74 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "fondaz-casa-riposo-osp-dei-poveri-pandino-onlus-pandino",
+      "nome": "Fondaz.casa Riposo Osp.dei Poveri Pandino ONLUS",
+      "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3892/17019/Carta%20Servizi%202025.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "fondazione-anna-borletti-per-invalidi-e-anziani-arosio",
+      "nome": "Fondazione Anna Borletti per Invalidi e Anziani",
+      "url": "https://fondazioneborletti.it/wp-content/uploads/2026/06/carta-dei-servizi.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "fondazione-baguzzi-dassu-san-martino-dall-argine",
+      "nome": "Fondazione Baguzzi Dassu'",
+      "url": "https://ats-valpadana.it/system/files/rsa_struttura/files/3887/17916/CARTA%20DEI%20SERVIZI%20APRILE%202026.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "60 €/giorno (convenzionato)"
+    },
+    {
+      "slug": "fondazione-benefattori-cremaschi-crema",
+      "nome": "Fondazione Benefattori Cremaschi",
+      "url": "https://www.fondazionefbc.it/wp-content/uploads/2026/01/Carta-dei-servizi-Fbc-20260126.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "fondazione-benefattori-cremaschi-onlus-crema",
+      "nome": "Fondazione Benefattori Cremaschi ONLUS",
+      "url": "https://www.fondazionefbc.it/wp-content/uploads/2026/01/Carta-dei-servizi-Fbc-20260126.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "fondazione-casa-di-riposo-citta-di-olgiate-comasco-onlus-olgiate-comasco",
+      "nome": "Fondazione Casa di Riposo Citta' di Olgiate Comasco ONLUS",
+      "url": "https://rsaolgiatecomasco.it/wp-content/uploads/2026/06/CARTA-dei-SERVIZI.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "90 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "fondazione-casa-di-riposo-citta-di-olgiate-comasco-onlus-olgiate-comasco",
+      "nome": "Fondazione Casa di Riposo Citta' di Olgiate Comasco ONLUS",
+      "url": "https://rsaolgiatecomasco.it/wp-content/uploads/2026/06/CARTA-dei-SERVIZI.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "90 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "fondazione-cecilia-caccia-in-del-negro-onlus-gandino",
+      "nome": "Fondazione Cecilia Caccia in del Negro ONLUS",
+      "url": "https://www.rsagandino.it/wp-content/uploads/2024/05/Carta-dei-Servizi-Revisione-30-mag.-2024.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "61 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "fondazione-cecilia-caccia-in-del-negro-onlus-gandino",
+      "nome": "Fondazione Cecilia Caccia in del Negro ONLUS",
+      "url": "https://www.rsagandino.it/wp-content/uploads/2024/05/Carta-dei-Servizi-Revisione-30-mag.-2024.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "61 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "fondazione-di-servizi-alla-persona-luigina-milanesi-e-paolo-frosi-onlus-trigolo",
+      "nome": "Fondazione di Servizi alla Persona Luigina Milanesi e Paolo Frosi ONLUS",
+      "url": "https://files.supersite.aruba.it/media/30170_618dee8b620c9b94762747e790ee66e07aa4d79e.pdf/o/7%20carta%20servizi%20fondazione%20ets%202026%20nuova.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "fondazione-e-germani-centro-assistenziale-sanitario-onlus-cingia-de-botti",
+      "nome": "Fondazione E. Germani Centro Assistenziale Sanitario - ONLUS",
+      "url": "https://ats-valpadana.it/system/files/field_allegati_trasparenza/allegati/2511/paragrafi/17591/Standard%20Qualit%C3%A0_2025-2026%20-%20pubblicato%20in%20data%2024.02.2026.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "fondazione-guida-dr-venceslao-o-n-l-u-s-acquanegra-cremonese",
+      "nome": "Fondazione Guida Dr. Venceslao O.n.l.u.s.",
+      "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3883/18854/7_carta%20servizi%20rsa%20luglio%202026.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "76 €/giorno (privato)"
+    },
+    {
+      "slug": "fondazione-istituto-madonna-della-croce-viggiu",
+      "nome": "Fondazione Istituto Madonna della Croce",
+      "url": "https://www.madonnadellacroce.it/_files/ugd/0c04a0_a9088486bda84200ac29d7317665a207.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "45 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "fondazione-istituto-madonna-della-croce-viggiu",
+      "nome": "Fondazione Istituto Madonna della Croce",
+      "url": "https://www.madonnadellacroce.it/_files/ugd/0c04a0_a9088486bda84200ac29d7317665a207.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "45 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "fondazione-ospedale-civile-di-gonzaga-gonzaga",
+      "nome": "Fondazione Ospedale Civile di Gonzaga",
+      "url": "https://www.ospedalegonzaga.it/documenti/Carta%20Servizi%20RSA%20e%20SOLLIEVO%202026.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "63 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "fondazione-ospedale-civile-di-gonzaga-gonzaga",
+      "nome": "Fondazione Ospedale Civile di Gonzaga",
+      "url": "https://www.ospedalegonzaga.it/documenti/Carta%20Servizi%20RSA%20e%20SOLLIEVO%202026.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "63 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "fondazione-pensionato-sannazzarese-onlus-sannazzaro-de-burgondi",
+      "nome": "Fondazione Pensionato Sannazzarese ONLUS",
+      "url": "https://www.pensionatosannazzarese.it/wp-content/uploads/2026/03/Carta-dei-Servizi-RSA-GEN-2026.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "fondazione-pio-istituto-adelina-nigra-ets-sartirana-lomellina",
+      "nome": "Fondazione Pio Istituto Adelina Nigra ETS",
+      "url": "https://www.adelinanigra.it/LinkClick.aspx?fileticket=sY7qYibgqWs%3d&amp;tabid=42&amp;portalid=0",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "1705 €/mese (regime non specificato)"
+    },
+    {
+      "slug": "fondazione-pio-istituto-adelina-nigra-ets-sartirana-lomellina",
+      "nome": "Fondazione Pio Istituto Adelina Nigra ETS",
+      "url": "https://www.adelinanigra.it/LinkClick.aspx?fileticket=sY7qYibgqWs%3d&amp;tabid=42&amp;portalid=0",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "1705 €/mese (regime non specificato)"
+    },
+    {
+      "slug": "fondazione-porta-spinola-arnaboldi-onlus-campospinoso",
+      "nome": "Fondazione Porta Spinola Arnaboldi ONLUS",
+      "url": "http://www.portaspinola.it/wp-content/uploads/2026/03/carta-servizi-Fondazione.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "81 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "fondazione-porta-spinola-arnaboldi-onlus-campospinoso",
+      "nome": "Fondazione Porta Spinola Arnaboldi ONLUS",
+      "url": "http://www.portaspinola.it/wp-content/uploads/2026/03/carta-servizi-Fondazione.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "81 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "fondazione-rsa-vaglietti-corsini-ets-cologno-al-serio",
+      "nome": "Fondazione RSA Vaglietti-corsini ETS",
+      "url": "https://www.fondazionevaglietti.it/wp-content/uploads/RSA-CARTA-SERVIZI-05-2023.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "fondazione-san-giuseppe-moscati-onlus-milano",
+      "nome": "Fondazione San Giuseppe Moscati ONLUS",
+      "url": "https://www.fondazionemoscati.it/static//files/files/Carta-Servizi-2025.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "101 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "fondazione-san-giuseppe-moscati-onlus-milano",
+      "nome": "Fondazione San Giuseppe Moscati ONLUS",
+      "url": "https://www.fondazionemoscati.it/static//files/files/Carta-Servizi-2025.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "101 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "fondazione-sant-erasmo-legnano",
+      "nome": "Fondazione Sant'Erasmo",
+      "url": "https://www.fondazionesanterasmo.it/docs/documenti/37_CARTA_DEI_SERVIZI_REV._NOVEMBRE_2025.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "1500 €/mese (regime non specificato)"
+    },
+    {
+      "slug": "fondazione-sant-erasmo-legnano",
+      "nome": "Fondazione Sant'Erasmo",
+      "url": "https://www.fondazionesanterasmo.it/docs/documenti/37_CARTA_DEI_SERVIZI_REV._NOVEMBRE_2025.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "1500 €/mese (regime non specificato)"
+    },
+    {
+      "slug": "fondazione-scarpari-forattini-onlus-schivenoglia",
+      "nome": "Fondazione Scarpari Forattini ONLUS",
+      "url": "https://scarpari.it/assets/carta_dei_servizi/rsa_2026_carta-servizi.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "fondazione-varni-agnetti-godiasco-salice-terme",
+      "nome": "Fondazione Varni Agnetti",
+      "url": "https://www.varniagnetti.it/wp-content/uploads/2026/04/CARTA-dei-SERVIZI-RSA-VARNI-AGNETTI-ETS-n.-55-del-2-01-2026.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "61.64 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "fondazione-varni-agnetti-godiasco-salice-terme",
+      "nome": "Fondazione Varni Agnetti",
+      "url": "https://www.varniagnetti.it/wp-content/uploads/2026/04/CARTA-dei-SERVIZI-RSA-VARNI-AGNETTI-ETS-n.-55-del-2-01-2026.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "61.64 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "fondazione-vigoni-della-somaglia-ets-somaglia",
+      "nome": "Fondazione Vigoni della Somaglia ETS",
+      "url": "https://www.fondazionevigonisomaglia.it/app/download/16188736296/Carta+dei+servizi+aggiornamento+13+del+05_2026.pdf?t=1781277118",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "giovanni-xxiii-merone",
+      "nome": "Giovanni Xxiii",
+      "url": "https://cooperativaquadrifoglio.com/wp-content/uploads/2023/10/2023-Carta-dei-Servizi-e-Regolamento_compressed.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "82 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "giovanni-xxiii-merone",
+      "nome": "Giovanni Xxiii",
+      "url": "https://cooperativaquadrifoglio.com/wp-content/uploads/2023/10/2023-Carta-dei-Servizi-e-Regolamento_compressed.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "82 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "ida-parravicini-di-persia-albese-con-cassano",
+      "nome": "Ida Parravicini di Persia",
+      "url": "https://lnx.idaparravicini.it/fondazione/wp-content/uploads/2026/05/carta_servizi-1.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "69 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "ida-parravicini-di-persia-albese-con-cassano",
+      "nome": "Ida Parravicini di Persia",
+      "url": "https://lnx.idaparravicini.it/fondazione/wp-content/uploads/2026/05/carta_servizi-1.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "69 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "il-gelso-vittuone",
+      "nome": "Il Gelso",
+      "url": "https://avvittuone.it/wp-content/uploads/sites/18/2026/01/Carta-Servizi-Rsa-Il-Gelso-GENNAIO-2026.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "50 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "il-gelso-vittuone",
+      "nome": "Il Gelso",
+      "url": "https://avvittuone.it/wp-content/uploads/sites/18/2026/01/Carta-Servizi-Rsa-Il-Gelso-GENNAIO-2026.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "50 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "istituzioni-don-carlo-botta-rsa-s-chiara-bergamo",
+      "nome": "Istituzioni Don Carlo Botta RSA S. Chiara",
+      "url": "https://www.idcb.it/wp-content/uploads/2024/09/carta_servizi_2024_febbraio-sito.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "73.5 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "istituzioni-don-carlo-botta-rsa-s-chiara-bergamo",
+      "nome": "Istituzioni Don Carlo Botta RSA S. Chiara",
+      "url": "https://www.idcb.it/wp-content/uploads/2024/09/carta_servizi_2024_febbraio-sito.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "73.5 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "la-certosa-di-pavia-certosa-di-pavia",
+      "nome": "La Certosa di Pavia",
+      "url": "https://www.korian.it/wp-content/uploads/2022/09/CdS-La-Certosa-di-Pavia-RSA-aperta-rev5-febbraio-2026-260225.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "lina-erba-porlezza",
+      "nome": "Lina Erba",
+      "url": "https://irp.cdn-website.com/073a2c17/files/uploaded/DOC+004b+Carta+dei+servizi+RSA+Rev.+06_+01-01-2026.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "mons-luigi-novarese-palestro",
+      "nome": "Mons. Luigi Novarese",
+      "url": "https://www.coopselios.com/uploads/2026/07/CdS_RSAPalestro_Rev.15_01.06.2026.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "nuova-rsa-casa-famiglia-milano",
+      "nome": "Nuova RSA Casa Famiglia",
+      "url": "https://www.istciechimilano.it/images/allegati/casa_famiglia/2026/2026%20Carta%20Servizi%20RSA%20FULL.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "125 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "nuova-rsa-casa-famiglia-milano",
+      "nome": "Nuova RSA Casa Famiglia",
+      "url": "https://www.istciechimilano.it/images/allegati/casa_famiglia/2026/2026%20Carta%20Servizi%20RSA%20FULL.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "125 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "parco-sempione-milano",
+      "nome": "Parco Sempione",
+      "url": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-parco-sempione/Carta%20dei%20servizi%20RSA%20aperta.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "pensionato-zanaboni-voghera",
+      "nome": "Pensionato Zanaboni",
+      "url": "https://www.zanaboni.org/it/wp-content/uploads/2026/03/c.d.s.19.01.2026.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "polo-geriatrico-riabilitativo-1-milano",
+      "nome": "Polo Geriatrico Riabilitativo 1",
+      "url": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-abitare-il-tempo/Carta%20dei%20servizi.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "42.5 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "polo-geriatrico-riabilitativo-1-milano",
+      "nome": "Polo Geriatrico Riabilitativo 1",
+      "url": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-abitare-il-tempo/Carta%20dei%20servizi.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "42.5 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "polo-geriatrico-riabilitativo-cinisello-balsamo",
+      "nome": "Polo Geriatrico Riabilitativo",
+      "url": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-pgr-cinisello/Carta%20dei%20servizi%20Dipartimento%20di%20Medicina%20Fisica%20e%20Riabilitativa.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "50 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "polo-geriatrico-riabilitativo-cinisello-balsamo",
+      "nome": "Polo Geriatrico Riabilitativo",
+      "url": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-pgr-cinisello/Carta%20dei%20servizi%20Dipartimento%20di%20Medicina%20Fisica%20e%20Riabilitativa.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "50 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "r-s-a-casa-di-riposo-sandro-pertini-arluno",
+      "nome": "R.s.a. Casa di Riposo Sandro Pertini",
+      "url": "https://mycity.s3.sbg.io.cloud.ovh.net/4878285/Carta-servizi-aggiornamento-gennaio-2026.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "71 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "r-s-a-casa-di-riposo-sandro-pertini-arluno",
+      "nome": "R.s.a. Casa di Riposo Sandro Pertini",
+      "url": "https://mycity.s3.sbg.io.cloud.ovh.net/4878285/Carta-servizi-aggiornamento-gennaio-2026.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "71 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "r-s-a-fondazione-mons-arrigo-mazzali-onlus-di-mantova-mantova",
+      "nome": "R.s.a. Fondazione Mons Arrigo Mazzali ONLUS di Mantova",
+      "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3856/18449/Carta%20dei%20Servizi%20Mazzali.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "64 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "r-s-a-fondazione-mons-arrigo-mazzali-onlus-di-mantova-mantova",
+      "nome": "R.s.a. Fondazione Mons Arrigo Mazzali ONLUS di Mantova",
+      "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3856/18449/Carta%20dei%20Servizi%20Mazzali.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "64 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "r-s-a-livia-feroldi-brescia",
+      "nome": "R.s.a. - \" Livia Feroldi",
+      "url": "https://casadidio.eu/wp-content/uploads/2026/02/Carta-servizi-RSA-febbraio-2026-con-allegati-rev23.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "50 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "r-s-a-livia-feroldi-brescia",
+      "nome": "R.s.a. - \" Livia Feroldi",
+      "url": "https://casadidio.eu/wp-content/uploads/2026/02/Carta-servizi-RSA-febbraio-2026-con-allegati-rev23.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "50 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "r-s-a-rita-e-luigi-gelosa-briosco",
+      "nome": "R.s.a. Rita e Luigi Gelosa",
+      "url": "https://www.scimaro.it/wp-content/uploads/2026/07/Carta-dei-servizi-BRI-07-2026.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "92 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "r-s-a-rita-e-luigi-gelosa-briosco",
+      "nome": "R.s.a. Rita e Luigi Gelosa",
+      "url": "https://www.scimaro.it/wp-content/uploads/2026/07/Carta-dei-servizi-BRI-07-2026.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "92 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "r-s-a-san-giorgio-codogno",
+      "nome": "R.s.a. San Giorgio",
+      "url": "http://aspbassolodigiano.it/2017/wp-content/uploads/2019/03/carta-dei-servizi-TERRITORIALI-rev-5.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "residenza-anziani-arzaga-milano",
+      "nome": "Residenza Anziani Arzaga",
+      "url": "https://www.mosaico-cem.it/wp-content/uploads/2019/05/Allegati-carta-dei-servizi-2019.pdf",
+      "motivo": "PDF scansionato: nessun livello di testo"
+    },
+    {
+      "slug": "residenza-borromea-mediglia",
+      "nome": "Residenza Borromea",
+      "url": "http://residenzaborromea.it/wp-content/uploads/2026/07/carta_servizi_GIUGNO-2026-RES-BORROMEA.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "76 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "residenza-borromea-mediglia",
+      "nome": "Residenza Borromea",
+      "url": "http://residenzaborromea.it/wp-content/uploads/2026/07/carta_servizi_GIUGNO-2026-RES-BORROMEA.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "76 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "residenza-del-parco-cesate",
+      "nome": "Residenza del Parco",
+      "url": "http://residenzadelparco.it/wp-content/uploads/2026/07/Carta_servizi_residenzaParco_luglio2026.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "75.5 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "residenza-del-parco-cesate",
+      "nome": "Residenza del Parco",
+      "url": "http://residenzadelparco.it/wp-content/uploads/2026/07/Carta_servizi_residenzaParco_luglio2026.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "75.5 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "residenza-giovanni-amodeo-borgarello",
+      "nome": "Residenza Giovanni Amodeo",
+      "url": "https://www.scimaro.it/wp-content/uploads/2026/07/Carta-dei-servizi-BOR-07-2026.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "50 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "residenza-giovanni-amodeo-borgarello",
+      "nome": "Residenza Giovanni Amodeo",
+      "url": "https://www.scimaro.it/wp-content/uploads/2026/07/Carta-dei-servizi-BOR-07-2026.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "50 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "residenza-mirasole-opera",
+      "nome": "Residenza Mirasole",
+      "url": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-mirasole/Carta%20dei%20servizi%20RSA%20aperta.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "residenza-navigli-milano",
+      "nome": "Residenza Navigli",
+      "url": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-navigli/Carta%20dei%20servizi%20RSA%20aperta.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "residenza-san-giovanni-asso",
+      "nome": "Residenza San Giovanni",
+      "url": "https://emmausitalia.it/wp-content/uploads/2026/02/2026_02_24_carta_servizi_CUREINTERMEDIE_SanGiovanni_CON_ALLEGATI.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "residenza-sanitaria-assistenziale-di-asola-asola",
+      "nome": "Residenza Sanitaria Assistenziale di Asola",
+      "url": "https://ats-valpadana.it/system/files/rsa_struttura/files/3845/18034/CARTA%20DEI%20SERVIZI%202026.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "residenza-sant-ambrogio-milano",
+      "nome": "Residenza Sant'Ambrogio",
+      "url": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-santambrogio/Carta%20dei%20servizi%20RSA%20aperta.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "residenza-te-mantova",
+      "nome": "Residenza Te",
+      "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3888/18932/CARTA%20DEI%20SERVIZI%20%20maggio%202026%20ufficiale.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "66 €/giorno (convenzionato)"
+    },
+    {
+      "slug": "rsa-anna-e-guido-fossati-monza",
+      "nome": "RSA Anna e Guido Fossati",
+      "url": "https://puntoservice.org/wp-content/uploads/2026/07/2026_08_01_Carta_dei_Servizi_Fossati_allegati.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "78.21 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-anna-e-guido-fossati-monza",
+      "nome": "RSA Anna e Guido Fossati",
+      "url": "https://puntoservice.org/wp-content/uploads/2026/07/2026_08_01_Carta_dei_Servizi_Fossati_allegati.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "78.21 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-beata-paola-volta-mantovana",
+      "nome": "RSA Beata Paola",
+      "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3836/17315/CARTA%20SERVIZI%202026%20Rev.03.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "rsa-casa-di-dio-brescia",
+      "nome": "RSA - \"Casa di Dio",
+      "url": "https://casadidio.eu/wp-content/uploads/2026/02/Carta-servizi-RSA-febbraio-2026-con-allegati-rev23.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "50 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-casa-di-dio-brescia",
+      "nome": "RSA - \"Casa di Dio",
+      "url": "https://casadidio.eu/wp-content/uploads/2026/02/Carta-servizi-RSA-febbraio-2026-con-allegati-rev23.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "50 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-casa-di-riposo-don-giuseppe-baldo-puegnago-del-garda",
+      "nome": "RSA - Casa di Riposo \"Don Giuseppe Baldo",
+      "url": "https://www.casadiriposopuegnago.it/pdf/carta-servizi2025.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "rsa-comunale-san-benedetto-po",
+      "nome": "RSA Comunale",
+      "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3881/17505/CARTA%20DEI%20SERVIZI%20REVISIONE%202026.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "59 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-comunale-san-benedetto-po",
+      "nome": "RSA Comunale",
+      "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3881/17505/CARTA%20DEI%20SERVIZI%20REVISIONE%202026.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "59 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-don-leone-porta-milano",
+      "nome": "RSA Don Leone Porta",
+      "url": "https://www.scimaro.it/wp-content/uploads/2026/07/Carta-dei-servizi-MI-07-2026.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "111.7 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-don-leone-porta-milano",
+      "nome": "RSA Don Leone Porta",
+      "url": "https://www.scimaro.it/wp-content/uploads/2026/07/Carta-dei-servizi-MI-07-2026.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "111.7 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-emmaus-milano",
+      "nome": "RSA \"Emmaus",
+      "url": "https://emmausitalia.it/wp-content/uploads/2026/03/2026_03_25_carta_servizi_RSA_Emmaus.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "rsa-evaristo-almici-rezzato",
+      "nome": "RSA - Evaristo Almici",
+      "url": "https://www.ealmici.it/wp-content/uploads/2026/01/CARTA-DEI-SERVIZI-RSA-CDI-2026.pdf",
+      "motivo": "PDF scansionato: nessun livello di testo"
+    },
+    {
+      "slug": "rsa-famagosta-milano",
+      "nome": "RSA Famagosta",
+      "url": "https://www.nuovassistenza.it/download/downloader.php?id=39912",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "rsa-fondazione-conte-carlo-busi-casalmaggiore",
+      "nome": "RSA Fondazione Conte Carlo Busi",
+      "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3879/18941/CARTA%20SERVIZI%20RSA%20revisione%20maggio%202026.pdf",
+      "motivo": "PDF scansionato: nessun livello di testo"
+    },
+    {
+      "slug": "rsa-fondazione-don-g-ferraglio-malonno",
+      "nome": "RSA Fondazione Don G. Ferraglio",
+      "url": "https://www.siminformatica.it/templates/sim/web/doc/SIMINFO_Carta-Servizi.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "rsa-fondazione-madonna-del-corlo-onlus-lonato-del-garda",
+      "nome": "RSA - Fondazione Madonna del Corlo ONLUS",
+      "url": "https://madonnadelcorlo.it/wp-content/uploads/2026/05/Carta-dei-servizi-APRILE-2026.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "64 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-fondazione-madonna-del-corlo-onlus-lonato-del-garda",
+      "nome": "RSA - Fondazione Madonna del Corlo ONLUS",
+      "url": "https://madonnadelcorlo.it/wp-content/uploads/2026/05/Carta-dei-servizi-APRILE-2026.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "64 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-fondazione-ospedale-caimi-onlus-vailate",
+      "nome": "RSA Fondazione Ospedale Caimi ONLUS",
+      "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3890/18863/CARTA%20DEI%20SERVIZI%20R.S.A.%20AGGIORNATA%20AL%2028%20APRILE%202026.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "68 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-fondazione-ospedale-caimi-onlus-vailate",
+      "nome": "RSA Fondazione Ospedale Caimi ONLUS",
+      "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3890/18863/CARTA%20DEI%20SERVIZI%20R.S.A.%20AGGIORNATA%20AL%2028%20APRILE%202026.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "68 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-fondazione-sen-grossi-franzini-senna-lodigiana",
+      "nome": "RSA Fondazione Sen. Grossi - Franzini",
+      "url": "https://www.fondazionegrossi.it/app/download/5712420366/Carta+dei+servizi+Rev.+08+del+12-2022.pdf?t=1673626720",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "rsa-istituto-s-giuseppe-villa-d-adda",
+      "nome": "RSA Istituto S. Giuseppe",
+      "url": "https://rsasangiuseppe.it/wp-content/uploads/2024/07/Carta-dei-servizi-RSA-2024.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "rsa-istituto-santa-savina-lodi",
+      "nome": "RSA Istituto Santa Savina",
+      "url": "https://emmausitalia.it/wp-content/uploads/2026/01/2026_01_01_carta_servizi_RSA_santasavina_ALLEGATI.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "1000 €/mese (convenzionato)"
+    },
+    {
+      "slug": "rsa-l-arca-desio",
+      "nome": "RSA l'Arca",
+      "url": "http://casadiriposogavazzi.it/wp-content/uploads/2026/08/CARTA-DEI-SERVIZI-Rev.-30.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "60 €/giorno (convenzionato)"
+    },
+    {
+      "slug": "rsa-la-residenza-brescia",
+      "nome": "RSA - \"La Residenza",
+      "url": "https://casadidio.eu/wp-content/uploads/2026/02/Carta-servizi-RSA-febbraio-2026-con-allegati-rev23.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "50 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-la-residenza-brescia",
+      "nome": "RSA - \"La Residenza",
+      "url": "https://casadidio.eu/wp-content/uploads/2026/02/Carta-servizi-RSA-febbraio-2026-con-allegati-rev23.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "50 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-mons-benedini-marcaria",
+      "nome": "RSA Mons. Benedini",
+      "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3844/17818/CARTA%20SERVIZI%202026.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "rsa-mons-f-pinzoni-brescia",
+      "nome": "RSA Mons. F. Pinzoni",
+      "url": "https://www.fondazionepaoladirosa.it/images/carta-dei-servizi-ed-04-2026-rev-07.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "68 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-mons-f-pinzoni-brescia",
+      "nome": "RSA Mons. F. Pinzoni",
+      "url": "https://www.fondazionepaoladirosa.it/images/carta-dei-servizi-ed-04-2026-rev-07.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "68 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-orchidea-vittuone",
+      "nome": "RSA Orchidea",
+      "url": "https://avvittuone.it/wp-content/uploads/sites/18/2026/01/Carta-Servizi-Rsa-Il-Gelso-GENNAIO-2026.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "50 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-orchidea-vittuone",
+      "nome": "RSA Orchidea",
+      "url": "https://avvittuone.it/wp-content/uploads/sites/18/2026/01/Carta-Servizi-Rsa-Il-Gelso-GENNAIO-2026.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "50 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-paola-di-rosa-capriano-del-colle",
+      "nome": "RSA - Paola di Rosa",
+      "url": "https://www.fondazionepaoladirosa.it/images/carta-dei-servizi-ed-04-2026-rev-07.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "68 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-paola-di-rosa-capriano-del-colle",
+      "nome": "RSA - Paola di Rosa",
+      "url": "https://www.fondazionepaoladirosa.it/images/carta-dei-servizi-ed-04-2026-rev-07.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "68 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-pasotti-cottinelli-brescia",
+      "nome": "RSA - \"Pasotti Cottinelli",
+      "url": "http://www.pasotticottinelli.it/wp-content/uploads/2026/03/Carta-Servizi-2026.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "65 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-pasotti-cottinelli-brescia",
+      "nome": "RSA - \"Pasotti Cottinelli",
+      "url": "http://www.pasotticottinelli.it/wp-content/uploads/2026/03/Carta-Servizi-2026.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "65 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-s-croce-pavia",
+      "nome": "RSA S. Croce",
+      "url": "https://www.asppavia.it/wp-content/uploads/2026/04/Nuova-Carta-Servizi-A3_2026-1.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "rsa-s-vincenzo-piadena-drizzona",
+      "nome": "RSA S. Vincenzo",
+      "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3876/17589/CARTA%20DEI%20SERVIZI%202026.pdf",
+      "motivo": "PDF scansionato: nessun livello di testo"
+    },
+    {
+      "slug": "rsa-san-giacomo-vedano-olona",
+      "nome": "RSA San Giacomo",
+      "url": "https://www.societadolce.it/wp-content/uploads/2024/04/CartadeiServizi_RSASanGiacomo_VA_1223.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "rsa-san-sisto-bergamo",
+      "nome": "RSA San Sisto",
+      "url": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-san-sisto/Carta%20dei%20servizi.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "120 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-san-sisto-bergamo",
+      "nome": "RSA San Sisto",
+      "url": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-san-sisto/Carta%20dei%20servizi.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "120 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-tosi-cippelletti-di-rivarolo-mantovano-rivarolo-mantovano",
+      "nome": "RSA Tosi Cippelletti di Rivarolo Mantovano",
+      "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3835/18088/Carta%20dei%20servizi%20Maggio%202026%20-%20RSA.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "76 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-tosi-cippelletti-di-rivarolo-mantovano-rivarolo-mantovano",
+      "nome": "RSA Tosi Cippelletti di Rivarolo Mantovano",
+      "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3835/18088/Carta%20dei%20servizi%20Maggio%202026%20-%20RSA.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "76 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-villa-di-salute-brescia",
+      "nome": "RSA Villa di Salute",
+      "url": "https://www.fondazionepaoladirosa.it/images/carta-dei-servizi-ed-04-2026-rev-07.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "68 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-villa-di-salute-brescia",
+      "nome": "RSA Villa di Salute",
+      "url": "https://www.fondazionepaoladirosa.it/images/carta-dei-servizi-ed-04-2026-rev-07.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "68 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-villa-elisa-brescia",
+      "nome": "RSA - \"Villa Elisa",
+      "url": "https://www.fondazionebssolidale.it/wp-content/uploads/carta-dei-servizi-RSA-VILLA-ELISA-2025.docx-1.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "65.5 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "rsa-villa-elisa-brescia",
+      "nome": "RSA - \"Villa Elisa",
+      "url": "https://www.fondazionebssolidale.it/wp-content/uploads/carta-dei-servizi-RSA-VILLA-ELISA-2025.docx-1.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "65.5 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "san-francesco-d-assisi-milano",
+      "nome": "San Francesco d'Assisi",
+      "url": "https://www.rsasanfrancesco.it/resources/2026/carta-dei-servizi_maggio-2026.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "san-francesco-pinarolo-po",
+      "nome": "San Francesco",
+      "url": "https://www.coopselios.com/uploads/2020/03/CdS_RSASFrancesco_Rev17-del-27-maggio-26.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "san-rocco-segrate",
+      "nome": "San Rocco",
+      "url": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-san-rocco/Carta%20dei%20servizi%20RSA%20aperta.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "villa-chiara-dorno",
+      "nome": "Villa Chiara",
+      "url": "https://villachiararsa.it/wp-content/uploads/2026/04/VILLA-CHIARA-CARTA-DEI-SERVIZI-03-26.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "65 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "villa-chiara-dorno",
+      "nome": "Villa Chiara",
+      "url": "https://villachiararsa.it/wp-content/uploads/2026/04/VILLA-CHIARA-CARTA-DEI-SERVIZI-03-26.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "65 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "villa-clarice-cermenate",
+      "nome": "Villa Clarice",
+      "url": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-villa-clarice/Carta%20dei%20servizi%20RSA%20aperta.pdf",
+      "motivo": "nessun importo riconducibile a una retta"
+    },
+    {
+      "slug": "villa-dossel-caglio",
+      "nome": "Villa Dossel",
+      "url": "https://puntoservice.org/wp-content/uploads/2026/05/2026_06_01_Carta_dei_Servizi_Villa_Dossel_ALLEGATI.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "1000 €/mese (convenzionato)"
+    },
+    {
+      "slug": "villa-elvira-santa-maria-della-versa",
+      "nome": "Villa Elvira",
+      "url": "https://www.coopselios.com/uploads/2026/07/CdS_RSA-Villa-Elvira_Rev17-del-25.05.2026.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "73.37 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "villa-elvira-santa-maria-della-versa",
+      "nome": "Villa Elvira",
+      "url": "https://www.coopselios.com/uploads/2026/07/CdS_RSA-Villa-Elvira_Rev17-del-25.05.2026.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "73.37 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "villa-enrica-albonese",
+      "nome": "Villa Enrica",
+      "url": "https://www.operacharitas.it/new/wp-content/uploads/2026/01/Carta-servizi-rev-31-del-1.1.26-Albonese.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "74 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "villa-enrica-albonese",
+      "nome": "Villa Enrica",
+      "url": "https://www.operacharitas.it/new/wp-content/uploads/2026/01/Carta-servizi-rev-31-del-1.1.26-Albonese.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "74 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "villa-flora-s-r-l-cormano",
+      "nome": "Villa Flora S.R.L.",
+      "url": "http://villaflorasrl.it/wp-content/uploads/2026/07/carta-dei-servizi-VILLA-FLORA-luglio-2026.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "77.5 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "villa-flora-s-r-l-cormano",
+      "nome": "Villa Flora S.R.L.",
+      "url": "http://villaflorasrl.it/wp-content/uploads/2026/07/carta-dei-servizi-VILLA-FLORA-luglio-2026.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "77.5 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "villa-mafalda-borgo-san-siro",
+      "nome": "Villa Mafalda",
+      "url": "https://www.scimaro.it/wp-content/uploads/2026/07/Carta-dei-servizi-BSS-07-2026.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "50 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "villa-mafalda-borgo-san-siro",
+      "nome": "Villa Mafalda",
+      "url": "https://www.scimaro.it/wp-content/uploads/2026/07/Carta-dei-servizi-BSS-07-2026.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "50 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "virgilio-ferrari-milano",
+      "nome": "Virgilio Ferrari",
+      "url": "https://puntoservice.org/wp-content/uploads/2026/08/2026_07_01_Carta_dei_Servizi_Ferrari_RSA_conallegati.pdf",
+      "motivo": "regime non dichiarato nel documento: importo salvato come non specificato",
+      "estratto": "90 €/giorno (regime non specificato)"
+    },
+    {
+      "slug": "virgilio-ferrari-milano",
+      "nome": "Virgilio Ferrari",
+      "url": "https://puntoservice.org/wp-content/uploads/2026/08/2026_07_01_Carta_dei_Servizi_Ferrari_RSA_conallegati.pdf",
+      "motivo": "unita di misura non esplicita in tutte le voci: verificare",
+      "estratto": "90 €/giorno (regime non specificato)"
+    }
+  ]
+}

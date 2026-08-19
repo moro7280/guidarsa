@@ -1,0 +1,152 @@
+{
+  "eseguito_il": "2026-08-19T10:37:37.756Z",
+  "esiti": {
+    "pdf": 114,
+    "html_seguita": 31,
+    "non_pdf": 15,
+    "errore": 13,
+    "troppo_grande": 0
+  },
+  "problemi": [
+    {
+      "slug": "albergo-del-nonno-parabiago",
+      "url": "https://www.comune.parabiago.mi.it/area_letturaDocumento/11731/pagsistema.html",
+      "motivo": "pagina senza link a PDF"
+    },
+    {
+      "slug": "casa-di-riposo-san-giuseppe-gazzaniga",
+      "url": "https://www.fondazionecasasangiuseppe.it/wp-content/uploads/2023/09/CARTA-DEI-SERV-settembre-2023.doc",
+      "motivo": "non e un PDF (application/msword)"
+    },
+    {
+      "slug": "casa-soggiorno-nolli-pigoli-sesto-ed-uniti",
+      "url": "https://ats-valpadana.it/system/files/rsa_struttura/files/3813/12021/RSA%20NOLLI%20PIGOLI%20%20CARTA%20SERVIZI%202024.docx",
+      "motivo": "non e un PDF (application/vnd.openxmlformats-officedocument.wordprocessingml.document)"
+    },
+    {
+      "slug": "fondazione-casa-di-riposo-infermeria-filisetti-ets-ardesio",
+      "url": "http://www.infermeriafilisetti.it/moduli/carta-dei-servizi-2023.pdf",
+      "motivo": "HTTP 404"
+    },
+    {
+      "slug": "fondazione-fratelli-bona-capo-di-ponte",
+      "url": "https://www.fondazionefratellibona.it/documentazione/amministrazione-trasparente/carta-dei-servizi",
+      "motivo": "pagina senza link a PDF"
+    },
+    {
+      "slug": "r-s-a-casa-rosanna-monzambano",
+      "url": "https://it.readkong.com/page/carta-dei-servizi-pisa-mover-4688551",
+      "motivo": "pagina senza link a PDF"
+    },
+    {
+      "slug": "residenza-lago-maggiore-porto-valtravaglia",
+      "url": "https://leresidenze.it/carta-dei-servizi/",
+      "motivo": "pagina senza link a PDF"
+    },
+    {
+      "slug": "riva-del-tempo-rivanazzano-terme",
+      "url": "https://www.rivadeltempo.com/download/carta.pdf",
+      "motivo": "richiesta fallita: TimeoutError"
+    },
+    {
+      "slug": "rsa-arcobaleno-castellana-san-martino-siccomario",
+      "url": "https://www.faipontevecchio.com/wp-content/uploads/2026/05/Domanda-Unica-Ingresso.pdf",
+      "motivo": "richiesta fallita: TimeoutError"
+    },
+    {
+      "slug": "rsa-arcobaleno-parc-san-martino-siccomario",
+      "url": "https://www.faipontevecchio.com/documenti/",
+      "motivo": "richiesta fallita: TypeError"
+    },
+    {
+      "slug": "rsa-arici-sega-brescia",
+      "url": "https://www.fondazionebssolidale.it/wp-content/uploads/carta-dei-servizi-CDI-PRIMAVERE-2025.docx.pdf",
+      "motivo": "richiesta fallita: TypeError"
+    },
+    {
+      "slug": "rsa-azzolini-cremona",
+      "url": "http://informagiovani.comune.cremona.it/content/carta-dei-servizi-dellinformagiovani-del-comune-di-cremona",
+      "motivo": "richiesta fallita: TypeError"
+    },
+    {
+      "slug": "rsa-belvedere-cassano-d-adda",
+      "url": "https://cassanodadda.trasparenza-valutazione-merito.it/web/trasparenza/papca-ap?p_p_id=jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet&amp;p_p_lifecycle=2&amp;p_p_state=pop_up&amp;p_p_mode=view&amp;p_p_resource_id=downloadAllegato&amp;p_p_cacheability=cacheLevelPage&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_downloadSigned=true&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_id=8896874&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_action=mostraDettaglio&amp;_jcitygovalbopubblicazioni_WAR_jcitygovalbiportlet_fromAction=recuperaDettaglio",
+      "motivo": "pagina senza link a PDF"
+    },
+    {
+      "slug": "rsa-casa-per-l-anziano-parona",
+      "url": "https://www.aziendaspecialeparona.it/rsa-casa-per-lanziano/servizi-carta-dei-servizi/",
+      "motivo": "pagina senza link a PDF"
+    },
+    {
+      "slug": "rsa-fondazione-beata-lucia-versa-dalumi-onlus-bagolino",
+      "url": "https://www.beatalucia.it/T/359025/359093/carta-dei-servizi-e-standard-di-qualita-.php",
+      "motivo": "pagina senza link a PDF"
+    },
+    {
+      "slug": "rsa-fondazione-casa-di-riposo-di-manerbio-onlus-manerbio",
+      "url": "https://it.readkong.com/page/casa-marani-carta-dei-servizi-2019-8737369",
+      "motivo": "pagina senza link a PDF"
+    },
+    {
+      "slug": "rsa-fondazione-ospedale-fagnani-galtrucco-robbio",
+      "url": "https://www.fagnanigaltruccorsa.it/a-carta-dei-servizi/",
+      "motivo": "pagina senza link a PDF"
+    },
+    {
+      "slug": "rsa-il-girasole-somma-lombardo",
+      "url": "https://www.aspilgirasole.it/il-sistema-qualita/#dz-carta",
+      "motivo": "pagina senza link a PDF"
+    },
+    {
+      "slug": "rsa-il-melo-gallarate",
+      "url": "https://www.melo.it/download/CARTE%20SERVIZI/CARTA%20SERVIZI%20RSA%2014%20novembre%202024.pdf",
+      "motivo": "HTTP 500"
+    },
+    {
+      "slug": "rsa-il-nuovo-focolare-di-s-maria-di-loreto-milano",
+      "url": "http://mediagallery.comune.milano.it/cdm/objects/changeme:74153/datastreams/dataStream7647995579836453/content?pgpath=/SA_SiteContent/UTILIZZA_SERVIZI/PER_SOCIALE/Pubblicazioni/Carta%20dei%20Servizi%20Social",
+      "motivo": "richiesta fallita: TypeError"
+    },
+    {
+      "slug": "rsa-istituto-palazzolo-milano",
+      "url": "http://mediagallery.comune.milano.it/cdm/objects/changeme:74153/datastreams/dataStream7647995579836453/content?pgpath=/SA_SiteContent/UTILIZZA_SERVIZI/PER_SOCIALE/Pubblicazioni/Carta%20dei%20Servizi%20Social",
+      "motivo": "richiesta fallita: TypeError"
+    },
+    {
+      "slug": "rsa-lainate-lainate",
+      "url": "https://www.sercop.it/index.php?section_id=422&amp;parent_id=152&amp;p=articles&amp;o=view&amp;article_id=277",
+      "motivo": "pagina senza link a PDF"
+    },
+    {
+      "slug": "rsa-mainardi-cremona",
+      "url": "http://informagiovani.comune.cremona.it/content/carta-dei-servizi-dellinformagiovani-del-comune-di-cremona",
+      "motivo": "HTTP 500"
+    },
+    {
+      "slug": "rsa-papa-giovanni-xxiii-trescore-balneario",
+      "url": "https://www.comune.trescore-balneario.bg.it/c016218/images/Settore%20Servizi%20alla%20Persona/Carta%20dei%20Servizi%20RSA%20e%20CDI%20Papa%20Giovanni%20XXIII%20_Aggiornata_.pdf",
+      "motivo": "HTTP 404"
+    },
+    {
+      "slug": "rsa-somenzi-cremona",
+      "url": "http://informagiovani.comune.cremona.it/content/carta-dei-servizi-dellinformagiovani-del-comune-di-cremona",
+      "motivo": "HTTP 500"
+    },
+    {
+      "slug": "sacro-cuore-1-dizzasco",
+      "url": "https://www.ilfocolare.info/index.php?option=com_content&amp;view=article&amp;id=25&amp;Itemid=435",
+      "motivo": "pagina senza link a PDF"
+    },
+    {
+      "slug": "sacro-cuore-2-dizzasco",
+      "url": "https://www.ilfocolare.info/index.php?option=com_content&amp;view=article&amp;id=25&amp;Itemid=435",
+      "motivo": "pagina senza link a PDF"
+    },
+    {
+      "slug": "san-paolo-residenza-sanitaria-assistenziale-azzano-san-paolo",
+      "url": "https://www.rsasanpaolo.it/wp-content/uploads/2024/07/carta-servizi_RSA-San-Paolo-aprile-2024.pdf",
+      "motivo": "HTTP 404"
+    }
+  ]
+}

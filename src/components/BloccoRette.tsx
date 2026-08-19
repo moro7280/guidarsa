@@ -48,10 +48,19 @@ export function BloccoRette({ struttura }: { struttura: Struttura }) {
       <dl className="mt-4 grid gap-4 sm:grid-cols-2">
         {privata && (
           <div className="rounded-lg border border-slate-200 bg-white p-4">
-            <dt className="text-sm text-slate-500">Retta privata (solvente)</dt>
+            {/* Molte carte pubblicano una tariffa sola senza dichiarare il
+                regime: lo si dice, invece di far passare il dato per una
+                retta privata accertata. */}
+            <dt className="text-sm text-slate-500">
+              {struttura.retta_regime === "non_specificato"
+                ? "Retta a carico dell'ospite"
+                : "Retta privata (solvente)"}
+            </dt>
             <dd className="mt-1 text-lg font-semibold text-slate-900">{privata}</dd>
             <dd className="mt-1 text-sm text-slate-600">
-              Interamente a carico dell&apos;ospite o della famiglia.
+              {struttura.retta_regime === "non_specificato"
+                ? "Il documento non specifica se si tratti di tariffa privata o in convenzione."
+                : "Interamente a carico dell'ospite o della famiglia."}
             </dd>
           </div>
         )}

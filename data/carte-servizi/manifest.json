@@ -1,0 +1,914 @@
+{
+  "ambrosiana-rsa-srl-milano": {
+    "url": "http://ambrosianasrl.it/wp-content/uploads/2026/07/carta_servizi_Ambrosiana_luglio-2026.pdf",
+    "url_censito": "http://ambrosianasrl.it/wp-content/uploads/2026/07/carta_servizi_Ambrosiana_luglio-2026.pdf",
+    "file": "ambrosiana-rsa-srl-milano.pdf",
+    "byte": 1497942,
+    "sha256": "9f50303f799359973bf0d6a3d8d2d455b308fa180335930ac22320a285766c91",
+    "scaricato_il": "2026-08-19T00:08:08.946Z"
+  },
+  "casa-di-riposo-giulio-gianetti-saronno": {
+    "url": "https://casagianetti.it/wp-content/uploads/2024/07/CARTA_SERVIZI_ONLINE.pdf",
+    "url_censito": "https://casagianetti.it/wp-content/uploads/2024/07/CARTA_SERVIZI_ONLINE.pdf",
+    "file": "casa-di-riposo-giulio-gianetti-saronno.pdf",
+    "byte": 5633761,
+    "sha256": "556894595f61835b80024a30545229e0f8838c65fede8172ecb705c5c6c1a5a1",
+    "scaricato_il": "2026-08-19T00:08:12.246Z"
+  },
+  "casa-famiglia-milano": {
+    "url": "https://www.istciechimilano.it/images/allegati/casa_famiglia/2026/2026%20Carta%20Servizi%20RSA%20FULL.pdf",
+    "url_censito": "https://www.istciechimilano.it/images/allegati/casa_famiglia/2026/2026%20Carta%20Servizi%20RSA%20FULL.pdf",
+    "file": "casa-famiglia-milano.pdf",
+    "byte": 1479433,
+    "sha256": "cc46ccee127d1a0a6e77cb0b6d4d0109f969eb659448200df941c8a6b9d173fa",
+    "scaricato_il": "2026-08-19T00:08:17.421Z"
+  },
+  "casa-famiglia-padre-francesco-spinelli-rivolta-d-adda": {
+    "url": "https://ats-valpadana.it/system/files/rsa_struttura/files/3841/16655/carta%20dei%20servizi%20unica%20RSA%20e%20solventi%20sett%202025.pdf",
+    "url_censito": "https://ats-valpadana.it/system/files/rsa_struttura/files/3841/16655/carta%20dei%20servizi%20unica%20RSA%20e%20solventi%20sett%202025.pdf",
+    "file": "casa-famiglia-padre-francesco-spinelli-rivolta-d-adda.pdf",
+    "byte": 13391609,
+    "sha256": "c611e94cdecafe427f6851cbcc9cd7baad1bbe5d8d239a689f3bdb76c124573a",
+    "scaricato_il": "2026-08-19T00:08:22.161Z"
+  },
+  "casa-serena-cilavegna": {
+    "url": "https://casaserenarsa.it/wp-content/uploads/2025/11/CARTA_DEI_SERVIZI_2025.pdf",
+    "url_censito": "https://casaserenarsa.it/rsa/servizi-e-carta-dei-servizi/",
+    "file": "casa-serena-cilavegna.pdf",
+    "byte": 1907259,
+    "sha256": "6f45286752b2c5294608b6c00d5ef20038c630b4cc3243ca27f7583420feaa1d",
+    "scaricato_il": "2026-08-19T00:08:28.498Z"
+  },
+  "cascina-cortenuova-paullo": {
+    "url": "http://www.crmsociale.it/wp-content/uploads/2026/07/Carta-dei-servizi-Cavenago-2026-attuale-Att.pdf",
+    "url_censito": "http://www.crmsociale.it/wp-content/uploads/2026/07/Carta-dei-servizi-Cavenago-2026-attuale-Att.pdf",
+    "file": "cascina-cortenuova-paullo.pdf",
+    "byte": 528848,
+    "sha256": "608b00a6baaf60ea68a99095e9195482568e9ce8c613c02b59fa9970b8c35304",
+    "scaricato_il": "2026-08-19T00:08:34.117Z"
+  },
+  "centro-geriatrico-porta-spinola-mariano-comense": {
+    "url": "http://www.portaspinola.it/wp-content/uploads/2026/03/carta-servizi-Fondazione.pdf",
+    "url_censito": "https://www.portaspinola.it/contatti/#",
+    "file": "centro-geriatrico-porta-spinola-mariano-comense.pdf",
+    "byte": 2377485,
+    "sha256": "f8adb7058c671e0347a512c78d597d29562e2c72bbdca73f7e316f9e5d54df96",
+    "scaricato_il": "2026-08-19T00:08:39.125Z"
+  },
+  "centro-padre-ambrosoli-giuseppe-milano": {
+    "url": "https://rsaambrosoli.it/wp-content/uploads/2026/07/CARTA-DEI-SERVIZI-RSA-AMBROSOLI.pdf",
+    "url_censito": "https://rsaambrosoli.it/wp-content/uploads/2026/07/CARTA-DEI-SERVIZI-RSA-AMBROSOLI.pdf",
+    "file": "centro-padre-ambrosoli-giuseppe-milano.pdf",
+    "byte": 350179,
+    "sha256": "92f7d0ff369722bb59799d94d763341dd3129fd5a834d2769294c9fc7ccdc555",
+    "scaricato_il": "2026-08-19T00:08:41.618Z"
+  },
+  "citta-di-bollate-giovanni-paolo-ii-bollate": {
+    "url": "https://www.gaiaservizi.eu/it-it/download/carta-dei-servizi-allegato-1-2386-89-20057-87ee55fbddaa245593045428dd84f1c2",
+    "url_censito": "https://www.gaiaservizi.eu/it-it/download/carta-dei-servizi-allegato-1-2386-89-20057-87ee55fbddaa245593045428dd84f1c2",
+    "file": "citta-di-bollate-giovanni-paolo-ii-bollate.pdf",
+    "byte": 238802,
+    "sha256": "785b6bdaa417e41c50d7e940d2f5b4ad4b766ece936a2e85a51d67f13280a8ec",
+    "scaricato_il": "2026-08-19T00:08:44.122Z"
+  },
+  "don-alessandro-pozzoli-canzo": {
+    "url": "https://www.rsadonpozzoli.it/docs/CARTA_SERVIZI.pdf",
+    "url_censito": "https://www.rsadonpozzoli.it/download/carta-dei-servizi",
+    "file": "don-alessandro-pozzoli-canzo.pdf",
+    "byte": 11923583,
+    "sha256": "c23e22bd531f1dc1d094e8de99f48d74ff62740d59ef61a70459e928db7f98f5",
+    "scaricato_il": "2026-08-19T00:08:51.732Z"
+  },
+  "don-carlo-ferrandi-breme": {
+    "url": "https://www.fondazionedonferrandi.it/documenti/cartadeiservizi.pdf",
+    "url_censito": "https://www.fondazionedonferrandi.it/documenti/cartadeiservizi.pdf",
+    "file": "don-carlo-ferrandi-breme.pdf",
+    "byte": 2664534,
+    "sha256": "ca36cc1cc3e1bcd13699bfc6585dd5ea6204f591a11f7e5d9519e003a55e8987",
+    "scaricato_il": "2026-08-19T00:08:55.391Z"
+  },
+  "don-f-mori-stagno-lombardo": {
+    "url": "https://emmausitalia.it/wp-content/uploads/2026/01/2026_01_01_carta_servizi_RSA_Don_Mori_ALLEGATI.pdf",
+    "url_censito": "https://emmausitalia.it/wp-content/uploads/2026/01/2026_01_01_carta_servizi_RSA_Don_Mori_ALLEGATI.pdf",
+    "file": "don-f-mori-stagno-lombardo.pdf",
+    "byte": 850020,
+    "sha256": "c56bc3622c2e2609d5621ca0406ad59c04217b2be952b695939bebd182e4c1a3",
+    "scaricato_il": "2026-08-19T00:08:58.396Z"
+  },
+  "don-giuseppe-gennaro-garlasco": {
+    "url": "https://www.operacharitas.it/new/wp-content/uploads/2026/01/Carta-servizi-2026-Garlasco.pdf",
+    "url_censito": "https://www.operacharitas.it/new/wp-content/uploads/2026/01/Carta-servizi-2026-Garlasco.pdf",
+    "file": "don-giuseppe-gennaro-garlasco.pdf",
+    "byte": 489323,
+    "sha256": "c39c2c7f40a62c2ea36791622811a7d21197028642e1ba67a1b1ce20adf84a5f",
+    "scaricato_il": "2026-08-19T00:09:00.903Z"
+  },
+  "fondaz-casa-riposo-osp-dei-poveri-pandino-onlus-pandino": {
+    "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3892/17019/Carta%20Servizi%202025.pdf",
+    "url_censito": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3892/17019/Carta%20Servizi%202025.pdf",
+    "file": "fondaz-casa-riposo-osp-dei-poveri-pandino-onlus-pandino.pdf",
+    "byte": 899119,
+    "sha256": "069a5c42373f8d00013edba6e0d66e06994726151def35ad840c38818f35c4b7",
+    "scaricato_il": "2026-08-19T00:09:03.957Z"
+  },
+  "fondazione-alceste-cortellona-onlus-mortara": {
+    "url": "https://www.rsacortellona.com/rsa/wp-content/uploads/2021/05/Carta-dei-Servizi-2026.pdf",
+    "url_censito": "https://www.rsacortellona.com/rsa/carta-dei-servizi-e-standard-di-qualita/",
+    "file": "fondazione-alceste-cortellona-onlus-mortara.pdf",
+    "byte": 782467,
+    "sha256": "16c861176d207b845f06706442eee18ab119f253e66c2f8f25f2771508b27bf1",
+    "scaricato_il": "2026-08-19T00:09:08.763Z"
+  },
+  "fondazione-anna-borletti-per-invalidi-e-anziani-arosio": {
+    "url": "https://fondazioneborletti.it/wp-content/uploads/2026/06/carta-dei-servizi.pdf",
+    "url_censito": "https://fondazioneborletti.it/wp-content/uploads/2026/06/carta-dei-servizi.pdf",
+    "file": "fondazione-anna-borletti-per-invalidi-e-anziani-arosio.pdf",
+    "byte": 3570649,
+    "sha256": "7b104bc2f48a7b023acb7c754d46357e3b05c0793494c1c10f05444456fba84e",
+    "scaricato_il": "2026-08-19T00:09:12.050Z"
+  },
+  "fondazione-baguzzi-dassu-san-martino-dall-argine": {
+    "url": "https://ats-valpadana.it/system/files/rsa_struttura/files/3887/17916/CARTA%20DEI%20SERVIZI%20APRILE%202026.pdf",
+    "url_censito": "https://ats-valpadana.it/system/files/rsa_struttura/files/3887/17916/CARTA%20DEI%20SERVIZI%20APRILE%202026.pdf",
+    "file": "fondazione-baguzzi-dassu-san-martino-dall-argine.pdf",
+    "byte": 878112,
+    "sha256": "d723e533117953c94c11a14d2cfbf1b7a096d49699f1501a0226ec1d586639f3",
+    "scaricato_il": "2026-08-19T00:09:15.023Z"
+  },
+  "fondazione-benefattori-cremaschi-crema": {
+    "url": "https://www.fondazionefbc.it/wp-content/uploads/2026/01/Carta-dei-servizi-Fbc-20260126.pdf",
+    "url_censito": "https://www.fondazionefbc.it/servizi/carta-dei-servizi/",
+    "file": "fondazione-benefattori-cremaschi-crema.pdf",
+    "byte": 22190709,
+    "sha256": "0e2610d4d7090987f3faa20ead13f2ac5b07ed66451dd15d92fce8cf571bb41f",
+    "scaricato_il": "2026-08-19T00:09:26.592Z"
+  },
+  "fondazione-benefattori-cremaschi-onlus-crema": {
+    "url": "https://www.fondazionefbc.it/wp-content/uploads/2026/01/Carta-dei-servizi-Fbc-20260126.pdf",
+    "url_censito": "https://www.fondazionefbc.it/servizi/carta-dei-servizi/",
+    "file": "fondazione-benefattori-cremaschi-onlus-crema.pdf",
+    "byte": 22190709,
+    "sha256": "0e2610d4d7090987f3faa20ead13f2ac5b07ed66451dd15d92fce8cf571bb41f",
+    "scaricato_il": "2026-08-19T00:09:34.634Z"
+  },
+  "fondazione-casa-di-riposo-citta-di-olgiate-comasco-onlus-olgiate-comasco": {
+    "url": "https://rsaolgiatecomasco.it/wp-content/uploads/2026/06/CARTA-dei-SERVIZI.pdf",
+    "url_censito": "https://rsaolgiatecomasco.it/carta-dei-servizi/",
+    "file": "fondazione-casa-di-riposo-citta-di-olgiate-comasco-onlus-olgiate-comasco.pdf",
+    "byte": 1549253,
+    "sha256": "780ed3afc6500b743fe3fc482479f5eb0e4721ba82d4cbcac097a38c3d832c33",
+    "scaricato_il": "2026-08-19T00:09:41.505Z"
+  },
+  "fondazione-cecilia-caccia-in-del-negro-onlus-gandino": {
+    "url": "https://www.rsagandino.it/wp-content/uploads/2024/05/Carta-dei-Servizi-Revisione-30-mag.-2024.pdf",
+    "url_censito": "https://www.rsagandino.it/wp-content/uploads/2024/05/Carta-dei-Servizi-Revisione-30-mag.-2024.pdf",
+    "file": "fondazione-cecilia-caccia-in-del-negro-onlus-gandino.pdf",
+    "byte": 7747861,
+    "sha256": "76f3dd64f8602ba72fe8c1e184941cc809e7fa05e4f78240ba204468fbb29c27",
+    "scaricato_il": "2026-08-19T00:09:49.902Z"
+  },
+  "fondazione-di-servizi-alla-persona-luigina-milanesi-e-paolo-frosi-onlus-trigolo": {
+    "url": "https://files.supersite.aruba.it/media/30170_618dee8b620c9b94762747e790ee66e07aa4d79e.pdf/o/7%20carta%20servizi%20fondazione%20ets%202026%20nuova.pdf",
+    "url_censito": "https://www.rsatrigolo.it/fondazione-carta-dei-servizi",
+    "file": "fondazione-di-servizi-alla-persona-luigina-milanesi-e-paolo-frosi-onlus-trigolo.pdf",
+    "byte": 1314860,
+    "sha256": "d878d953146719a32fe627156dca2a5e9ee2aa42c837e441f6b8e2d77f054580",
+    "scaricato_il": "2026-08-19T00:09:55.280Z"
+  },
+  "fondazione-e-germani-centro-assistenziale-sanitario-onlus-cingia-de-botti": {
+    "url": "https://ats-valpadana.it/system/files/field_allegati_trasparenza/allegati/2511/paragrafi/17591/Standard%20Qualit%C3%A0_2025-2026%20-%20pubblicato%20in%20data%2024.02.2026.pdf",
+    "url_censito": "https://ats-valpadana.it/amministrazione-trasparente/carta-servizi-e-standard-qualita",
+    "file": "fondazione-e-germani-centro-assistenziale-sanitario-onlus-cingia-de-botti.pdf",
+    "byte": 1228580,
+    "sha256": "44112546b5a498f08d0a6b8913a636088704ab41bdeaacdc3e14096ffedb5c76",
+    "scaricato_il": "2026-08-19T00:10:00.391Z"
+  },
+  "fondazione-guida-dr-venceslao-o-n-l-u-s-acquanegra-cremonese": {
+    "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3883/18854/7_carta%20servizi%20rsa%20luglio%202026.pdf",
+    "url_censito": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3883/18854/7_carta%20servizi%20rsa%20luglio%202026.pdf",
+    "file": "fondazione-guida-dr-venceslao-o-n-l-u-s-acquanegra-cremonese.pdf",
+    "byte": 1108711,
+    "sha256": "0b081dd2915f6c52686c1aec1989dfe34a090bd3566b48f6782b5fc796cf1251",
+    "scaricato_il": "2026-08-19T00:10:06.030Z"
+  },
+  "fondazione-innocenta-zanetti-e-angelo-cominelli-onlus-castiglione-delle-stiviere": {
+    "url": "https://ats-valpadana.it/system/files/rsa_struttura/files/3826/18174/Carta%20dei%20servizi%20RSA%202026%20ETS.pdf",
+    "url_censito": "https://ats-valpadana.it/system/files/rsa_struttura/files/3826/18174/Carta%20dei%20servizi%20RSA%202026%20ETS.pdf",
+    "file": "fondazione-innocenta-zanetti-e-angelo-cominelli-onlus-castiglione-delle-stiviere.pdf",
+    "byte": 1990122,
+    "sha256": "ef8663e0256968a3f3cc1304049bd5cd07026d8ab1d147dc28d0de356b80ab8c",
+    "scaricato_il": "2026-08-19T00:10:10.094Z"
+  },
+  "fondazione-istituto-madonna-della-croce-viggiu": {
+    "url": "https://www.madonnadellacroce.it/_files/ugd/0c04a0_a9088486bda84200ac29d7317665a207.pdf",
+    "url_censito": "https://www.madonnadellacroce.it/carta-dei-servizi",
+    "file": "fondazione-istituto-madonna-della-croce-viggiu.pdf",
+    "byte": 5038432,
+    "sha256": "f391c1d7c9e33a22c3ab2328210d7a7d295fc35081ace2feb7b47b35df3beea7",
+    "scaricato_il": "2026-08-19T00:10:16.505Z"
+  },
+  "fondazione-mazzucchini-casa-di-riposo-pomponesco-onlus-pomponesco": {
+    "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3830/16884/CARTA%20DEI%20SERVIZI%20RSA%2025.02.2025.PDF",
+    "url_censito": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3830/16884/CARTA%20DEI%20SERVIZI%20RSA%2025.02.2025.PDF",
+    "file": "fondazione-mazzucchini-casa-di-riposo-pomponesco-onlus-pomponesco.pdf",
+    "byte": 1832624,
+    "sha256": "87d57f1799380d29178217b4084674d50e45f6ef830893ef265655df541f2b52",
+    "scaricato_il": "2026-08-19T00:10:19.681Z"
+  },
+  "fondazione-o-p-g-vezzoli-romanengo": {
+    "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3839/16872/carta%20dei%20servizi.pdf",
+    "url_censito": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3839/16872/carta%20dei%20servizi.pdf",
+    "file": "fondazione-o-p-g-vezzoli-romanengo.pdf",
+    "byte": 1291456,
+    "sha256": "3207818954419323a0dbaed30445f5e5561040a6a3f931ae66b42574b05e8010",
+    "scaricato_il": "2026-08-19T00:10:22.085Z"
+  },
+  "fondazione-ospedale-civile-di-gonzaga-gonzaga": {
+    "url": "https://www.ospedalegonzaga.it/documenti/Carta%20Servizi%20RSA%20e%20SOLLIEVO%202026.pdf",
+    "url_censito": "https://www.ospedalegonzaga.it/rsa_cartaservizi.html",
+    "file": "fondazione-ospedale-civile-di-gonzaga-gonzaga.pdf",
+    "byte": 593277,
+    "sha256": "52fb91ca68d9dae4574250461bfdbb9a35e9616f34d1bc79ed7e83cc633986a4",
+    "scaricato_il": "2026-08-19T00:10:27.414Z"
+  },
+  "fondazione-pensionato-sannazzarese-onlus-sannazzaro-de-burgondi": {
+    "url": "https://www.pensionatosannazzarese.it/wp-content/uploads/2026/03/Carta-dei-Servizi-RSA-GEN-2026.pdf",
+    "url_censito": "https://www.pensionatosannazzarese.it/wp-content/uploads/2026/03/Carta-dei-Servizi-RSA-GEN-2026.pdf",
+    "file": "fondazione-pensionato-sannazzarese-onlus-sannazzaro-de-burgondi.pdf",
+    "byte": 1167205,
+    "sha256": "63521ad49fb3dc22df1f78991a5ad48fe5a03afcb9bab3620380bb035c28ced9",
+    "scaricato_il": "2026-08-19T00:10:30.099Z"
+  },
+  "fondazione-pio-istituto-adelina-nigra-ets-sartirana-lomellina": {
+    "url": "https://www.adelinanigra.it/LinkClick.aspx?fileticket=sY7qYibgqWs%3d&amp;tabid=42&amp;portalid=0",
+    "url_censito": "https://www.adelinanigra.it/LinkClick.aspx?fileticket=sY7qYibgqWs%3d&amp;tabid=42&amp;portalid=0",
+    "file": "fondazione-pio-istituto-adelina-nigra-ets-sartirana-lomellina.pdf",
+    "byte": 504005,
+    "sha256": "6728c7cf55b294aafd03b8ae0ca4c852cca4eefc0f90be3029d9bda4c63ba7c1",
+    "scaricato_il": "2026-08-19T00:10:34.995Z"
+  },
+  "fondazione-porta-spinola-arnaboldi-onlus-campospinoso": {
+    "url": "http://www.portaspinola.it/wp-content/uploads/2026/03/carta-servizi-Fondazione.pdf",
+    "url_censito": "https://www.portaspinola.it/contatti/#",
+    "file": "fondazione-porta-spinola-arnaboldi-onlus-campospinoso.pdf",
+    "byte": 2377485,
+    "sha256": "f8adb7058c671e0347a512c78d597d29562e2c72bbdca73f7e316f9e5d54df96",
+    "scaricato_il": "2026-08-19T00:10:40.338Z"
+  },
+  "fondazione-rsa-vaglietti-corsini-ets-cologno-al-serio": {
+    "url": "https://www.fondazionevaglietti.it/wp-content/uploads/RSA-CARTA-SERVIZI-05-2023.pdf",
+    "url_censito": "https://www.fondazionevaglietti.it/wp-content/uploads/RSA-CARTA-SERVIZI-05-2023.pdf",
+    "file": "fondazione-rsa-vaglietti-corsini-ets-cologno-al-serio.pdf",
+    "byte": 491842,
+    "sha256": "7173adfd3f3fcd9af7f74207ac53c3758fe2f3f9185eecffacc5e27a8a7273b5",
+    "scaricato_il": "2026-08-19T00:10:42.976Z"
+  },
+  "fondazione-san-giuseppe-moscati-onlus-milano": {
+    "url": "https://www.fondazionemoscati.it/static//files/files/Carta-Servizi-2025.pdf",
+    "url_censito": "https://www.fondazionemoscati.it/Modulistica/Carta-Servizi",
+    "file": "fondazione-san-giuseppe-moscati-onlus-milano.pdf",
+    "byte": 5769774,
+    "sha256": "27ed540d3c91b013fc0fbff1a84eeed173429e4bbc53677deb8733ab7018c2a5",
+    "scaricato_il": "2026-08-19T00:10:49.775Z"
+  },
+  "fondazione-sant-erasmo-legnano": {
+    "url": "https://www.fondazionesanterasmo.it/docs/documenti/37_CARTA_DEI_SERVIZI_REV._NOVEMBRE_2025.pdf",
+    "url_censito": "https://www.fondazionesanterasmo.it/pagine/carta-dei-servizi/",
+    "file": "fondazione-sant-erasmo-legnano.pdf",
+    "byte": 1945854,
+    "sha256": "73d4c2fa2a41ce0950acd63ef42cdd8abbd7b74f2c213a9d5a856135c46e0b79",
+    "scaricato_il": "2026-08-19T00:10:55.324Z"
+  },
+  "fondazione-scarpari-forattini-onlus-schivenoglia": {
+    "url": "https://scarpari.it/assets/carta_dei_servizi/rsa_2026_carta-servizi.pdf",
+    "url_censito": "https://scarpari.it/trasparenza/carta-dei-servizi",
+    "file": "fondazione-scarpari-forattini-onlus-schivenoglia.pdf",
+    "byte": 1013730,
+    "sha256": "47df92a9bf5b1b2caeb7f3631275a1237f07c0bc3bca83ae95c41f7bea19206a",
+    "scaricato_il": "2026-08-19T00:11:00.484Z"
+  },
+  "fondazione-varni-agnetti-godiasco-salice-terme": {
+    "url": "https://www.varniagnetti.it/wp-content/uploads/2026/04/CARTA-dei-SERVIZI-RSA-VARNI-AGNETTI-ETS-n.-55-del-2-01-2026.pdf",
+    "url_censito": "https://www.varniagnetti.it/carta-dei-servizi/",
+    "file": "fondazione-varni-agnetti-godiasco-salice-terme.pdf",
+    "byte": 1020764,
+    "sha256": "d1a7ac74b94b9a80f2c8bc542f90922881a761059526358f1cf56c0c9f4126b2",
+    "scaricato_il": "2026-08-19T00:11:06.543Z"
+  },
+  "fondazione-vigoni-della-somaglia-ets-somaglia": {
+    "url": "https://www.fondazionevigonisomaglia.it/app/download/16188736296/Carta+dei+servizi+aggiornamento+13+del+05_2026.pdf?t=1781277118",
+    "url_censito": "https://www.fondazionevigonisomaglia.it/home/carta-servizi-doc-ne/",
+    "file": "fondazione-vigoni-della-somaglia-ets-somaglia.pdf",
+    "byte": 2958593,
+    "sha256": "d7d957a5eb30849166030a54a6238017616575abffa1ebed0eea9fc5aed0837e",
+    "scaricato_il": "2026-08-19T00:11:12.355Z"
+  },
+  "giovanni-xxiii-merone": {
+    "url": "https://cooperativaquadrifoglio.com/wp-content/uploads/2023/10/2023-Carta-dei-Servizi-e-Regolamento_compressed.pdf",
+    "url_censito": "https://cooperativaquadrifoglio.com/wp-content/uploads/2023/10/2023-Carta-dei-Servizi-e-Regolamento_compressed.pdf",
+    "file": "giovanni-xxiii-merone.pdf",
+    "byte": 910388,
+    "sha256": "297dd851f5172c4685664b6ff01dfae3525e56e3d5729b62ef124f1bb3df2c53",
+    "scaricato_il": "2026-08-19T00:11:14.828Z"
+  },
+  "ida-parravicini-di-persia-albese-con-cassano": {
+    "url": "https://lnx.idaparravicini.it/fondazione/wp-content/uploads/2026/05/carta_servizi-1.pdf",
+    "url_censito": "https://lnx.idaparravicini.it/fondazione/wp-content/uploads/2026/05/carta_servizi-1.pdf",
+    "file": "ida-parravicini-di-persia-albese-con-cassano.pdf",
+    "byte": 20385054,
+    "sha256": "59540327438d9d92ae6a69d5bb2ca199237b196e6b10ef0ccf2c8e955d9e1b23",
+    "scaricato_il": "2026-08-19T00:11:21.401Z"
+  },
+  "il-gelso-vittuone": {
+    "url": "https://avvittuone.it/wp-content/uploads/sites/18/2026/01/Carta-Servizi-Rsa-Il-Gelso-GENNAIO-2026.pdf",
+    "url_censito": "https://avvittuone.it/modulistica-e-carta-dei-servizi/",
+    "file": "il-gelso-vittuone.pdf",
+    "byte": 2689612,
+    "sha256": "426c47db06fc487a9cfc8b01802574d5e5bd3c49345ff24a12cd1953191cc0a2",
+    "scaricato_il": "2026-08-19T00:11:32.433Z"
+  },
+  "istituzioni-don-carlo-botta-rsa-s-chiara-bergamo": {
+    "url": "https://www.idcb.it/wp-content/uploads/2024/09/carta_servizi_2024_febbraio-sito.pdf",
+    "url_censito": "https://www.idcb.it/wp-content/uploads/2024/09/carta_servizi_2024_febbraio-sito.pdf",
+    "file": "istituzioni-don-carlo-botta-rsa-s-chiara-bergamo.pdf",
+    "byte": 1317746,
+    "sha256": "45dae8f4c7e6cd8253ee1fac56110e927ceaa3b8c1a4527431fede95b6b93cba",
+    "scaricato_il": "2026-08-19T00:11:35.233Z"
+  },
+  "la-certosa-di-pavia-certosa-di-pavia": {
+    "url": "https://www.korian.it/wp-content/uploads/2022/09/CdS-La-Certosa-di-Pavia-RSA-aperta-rev5-febbraio-2026-260225.pdf",
+    "url_censito": "https://www.korian.it/wp-content/uploads/2022/09/CdS-La-Certosa-di-Pavia-RSA-aperta-rev5-febbraio-2026-260225.pdf",
+    "file": "la-certosa-di-pavia-certosa-di-pavia.pdf",
+    "byte": 279782,
+    "sha256": "5af30086f8a6fd13f65889bf14b310b7937ffefeec22e5cbae9e9f266128fe40",
+    "scaricato_il": "2026-08-19T00:11:37.892Z"
+  },
+  "lina-erba-porlezza": {
+    "url": "https://irp.cdn-website.com/073a2c17/files/uploaded/DOC+004b+Carta+dei+servizi+RSA+Rev.+06_+01-01-2026.pdf",
+    "url_censito": "https://irp.cdn-website.com/073a2c17/files/uploaded/DOC+004b+Carta+dei+servizi+RSA+Rev.+06_+01-01-2026.pdf",
+    "file": "lina-erba-porlezza.pdf",
+    "byte": 447370,
+    "sha256": "525bbf5ff3da9affb113a81d8b263efa50f5a647192a7c67f933cd9756020c5e",
+    "scaricato_il": "2026-08-19T00:11:40.970Z"
+  },
+  "mons-luigi-novarese-palestro": {
+    "url": "https://www.coopselios.com/uploads/2026/07/CdS_RSAPalestro_Rev.15_01.06.2026.pdf",
+    "url_censito": "https://www.coopselios.com/uploads/2026/07/CdS_RSAPalestro_Rev.15_01.06.2026.pdf",
+    "file": "mons-luigi-novarese-palestro.pdf",
+    "byte": 761894,
+    "sha256": "6e0320c61cd19aeaa61a94c3cd501a1fc08a314a31683b599593849f0439d5a2",
+    "scaricato_il": "2026-08-19T00:11:43.598Z"
+  },
+  "nuova-rsa-casa-famiglia-milano": {
+    "url": "https://www.istciechimilano.it/images/allegati/casa_famiglia/2026/2026%20Carta%20Servizi%20RSA%20FULL.pdf",
+    "url_censito": "https://www.istciechimilano.it/images/allegati/casa_famiglia/2026/2026%20Carta%20Servizi%20RSA%20FULL.pdf",
+    "file": "nuova-rsa-casa-famiglia-milano.pdf",
+    "byte": 1479433,
+    "sha256": "cc46ccee127d1a0a6e77cb0b6d4d0109f969eb659448200df941c8a6b9d173fa",
+    "scaricato_il": "2026-08-19T00:11:46.278Z"
+  },
+  "parco-sempione-milano": {
+    "url": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-parco-sempione/Carta%20dei%20servizi%20RSA%20aperta.pdf",
+    "url_censito": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-parco-sempione/Carta%20dei%20servizi%20RSA%20aperta.pdf",
+    "file": "parco-sempione-milano.pdf",
+    "byte": 712045,
+    "sha256": "070c3727623ca72fde1492f032bbaf0fa2ac59adbdc22c4771547f02822c57f3",
+    "scaricato_il": "2026-08-19T00:11:48.898Z"
+  },
+  "pensionato-zanaboni-voghera": {
+    "url": "https://www.zanaboni.org/it/wp-content/uploads/2026/03/c.d.s.19.01.2026.pdf",
+    "url_censito": "https://www.zanaboni.org/it/carta-dei-servizi/",
+    "file": "pensionato-zanaboni-voghera.pdf",
+    "byte": 2345406,
+    "sha256": "08eaabe2b70142390a55b6d4b1cfe78b270c60d572d83dc3a30b48a9b606b884",
+    "scaricato_il": "2026-08-19T00:11:53.858Z"
+  },
+  "polo-geriatrico-riabilitativo-1-milano": {
+    "url": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-abitare-il-tempo/Carta%20dei%20servizi.pdf",
+    "url_censito": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-abitare-il-tempo/Carta%20dei%20servizi.pdf",
+    "file": "polo-geriatrico-riabilitativo-1-milano.pdf",
+    "byte": 3369784,
+    "sha256": "1f5c05a5fb767dd591f97cd8e6e4f495aa2f0ba7c6b268194e5881a53641b0b6",
+    "scaricato_il": "2026-08-19T00:11:57.008Z"
+  },
+  "polo-geriatrico-riabilitativo-cinisello-balsamo": {
+    "url": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-pgr-cinisello/Carta%20dei%20servizi%20Dipartimento%20di%20Medicina%20Fisica%20e%20Riabilitativa.pdf",
+    "url_censito": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-pgr-cinisello/Carta%20dei%20servizi%20Dipartimento%20di%20Medicina%20Fisica%20e%20Riabilitativa.pdf",
+    "file": "polo-geriatrico-riabilitativo-cinisello-balsamo.pdf",
+    "byte": 1368167,
+    "sha256": "1d4408b3843b2ce85de488dff3153fb1919d533fdcb9029399be64bf59962016",
+    "scaricato_il": "2026-08-19T00:11:59.549Z"
+  },
+  "r-s-a-casa-di-riposo-sandro-pertini-arluno": {
+    "url": "https://mycity.s3.sbg.io.cloud.ovh.net/4878285/Carta-servizi-aggiornamento-gennaio-2026.pdf",
+    "url_censito": "https://comune.arluno.mi.it/documenti/2825211/carta-servizi-rsa-2024",
+    "file": "r-s-a-casa-di-riposo-sandro-pertini-arluno.pdf",
+    "byte": 1794973,
+    "sha256": "a62817331ba50bc9d16a89b2aa9f6d2ac4bab552b5f78bc1b5b07fff85d6c1bc",
+    "scaricato_il": "2026-08-19T00:12:08.911Z"
+  },
+  "r-s-a-fondazione-mons-arrigo-mazzali-onlus-di-mantova-mantova": {
+    "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3856/18449/Carta%20dei%20Servizi%20Mazzali.pdf",
+    "url_censito": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3856/18449/Carta%20dei%20Servizi%20Mazzali.pdf",
+    "file": "r-s-a-fondazione-mons-arrigo-mazzali-onlus-di-mantova-mantova.pdf",
+    "byte": 8010088,
+    "sha256": "0c74b23f6039fd2f28c1cfe285f83a30550089ecc721f86e290751ff9a04dc09",
+    "scaricato_il": "2026-08-19T00:12:15.661Z"
+  },
+  "r-s-a-il-gelso-castel-goffredo": {
+    "url": "https://ats-valpadana.it/system/files/rsa_struttura/files/3859/17100/Carta-dei-Servizi-RSA-Il-Gelso-giugno-2025.pdf",
+    "url_censito": "https://ats-valpadana.it/system/files/rsa_struttura/files/3859/17100/Carta-dei-Servizi-RSA-Il-Gelso-giugno-2025.pdf",
+    "file": "r-s-a-il-gelso-castel-goffredo.pdf",
+    "byte": 1127412,
+    "sha256": "ca8cb8eb57a66b089663fae5e1a2a8cc7b2c872f62fc5256b43b9a6dbaa2b573",
+    "scaricato_il": "2026-08-19T00:12:18.647Z"
+  },
+  "r-s-a-livia-feroldi-brescia": {
+    "url": "https://casadidio.eu/wp-content/uploads/2026/02/Carta-servizi-RSA-febbraio-2026-con-allegati-rev23.pdf",
+    "url_censito": "https://casadidio.eu/wp-content/uploads/2026/02/Carta-servizi-RSA-febbraio-2026-con-allegati-rev23.pdf",
+    "file": "r-s-a-livia-feroldi-brescia.pdf",
+    "byte": 4505258,
+    "sha256": "9fc88ab2fed0aa9efdbcb04f00cdb1f9b5a686b6bb9389c8a481cc548efed449",
+    "scaricato_il": "2026-08-19T00:12:22.274Z"
+  },
+  "r-s-a-opera-pia-magistris-valmadrera": {
+    "url": "https://puntoservice.org/wp-content/uploads/2026/06/2026_05_04_carta_servizi_valmadrera_CON-ALLEGATI.pdf",
+    "url_censito": "https://puntoservice.org/wp-content/uploads/2026/06/2026_05_04_carta_servizi_valmadrera_CON-ALLEGATI.pdf",
+    "file": "r-s-a-opera-pia-magistris-valmadrera.pdf",
+    "byte": 2919462,
+    "sha256": "50b18d8a90507cdc40b355880fc52d29809dc96a9361edfdebfac79f9e9bd11b",
+    "scaricato_il": "2026-08-19T00:12:25.687Z"
+  },
+  "r-s-a-rita-e-luigi-gelosa-briosco": {
+    "url": "https://www.scimaro.it/wp-content/uploads/2026/07/Carta-dei-servizi-BRI-07-2026.pdf",
+    "url_censito": "https://www.scimaro.it/wp-content/uploads/2026/07/Carta-dei-servizi-BRI-07-2026.pdf",
+    "file": "r-s-a-rita-e-luigi-gelosa-briosco.pdf",
+    "byte": 1499490,
+    "sha256": "ebe67635f791a1ee8c43310a14c21023d86e061cf3854a9df7d2525c1a5b9dcf",
+    "scaricato_il": "2026-08-19T00:12:28.858Z"
+  },
+  "r-s-a-san-giorgio-codogno": {
+    "url": "http://aspbassolodigiano.it/2017/wp-content/uploads/2019/03/carta-dei-servizi-TERRITORIALI-rev-5.pdf",
+    "url_censito": "https://aspbassolodigiano.it/chi-siamo/carta-dei-servizi/",
+    "file": "r-s-a-san-giorgio-codogno.pdf",
+    "byte": 718389,
+    "sha256": "3350275b2ac499b12f0666f61b41eaadb4ada5bd261c1dbcc5336705ff19c475",
+    "scaricato_il": "2026-08-19T00:12:33.561Z"
+  },
+  "residenza-anziani-arzaga-milano": {
+    "url": "https://www.mosaico-cem.it/wp-content/uploads/2019/05/Allegati-carta-dei-servizi-2019.pdf",
+    "url_censito": "https://www.mosaico-cem.it/wp-content/uploads/2019/05/Allegati-carta-dei-servizi-2019.pdf",
+    "file": "residenza-anziani-arzaga-milano.pdf",
+    "byte": 14079120,
+    "sha256": "fa6f493ca950b4777e2779fe45f38300abd83e409ce718d42fa3f90fa42a191f",
+    "scaricato_il": "2026-08-19T00:12:39.322Z"
+  },
+  "residenza-borromea-mediglia": {
+    "url": "http://residenzaborromea.it/wp-content/uploads/2026/07/carta_servizi_GIUGNO-2026-RES-BORROMEA.pdf",
+    "url_censito": "http://residenzaborromea.it/wp-content/uploads/2026/07/carta_servizi_GIUGNO-2026-RES-BORROMEA.pdf",
+    "file": "residenza-borromea-mediglia.pdf",
+    "byte": 629575,
+    "sha256": "e278ebae5de1bb64184e0beaca59b2220eb26d127e06755d982e37c7f12bad0c",
+    "scaricato_il": "2026-08-19T00:12:41.981Z"
+  },
+  "residenza-del-parco-cesate": {
+    "url": "http://residenzadelparco.it/wp-content/uploads/2026/07/Carta_servizi_residenzaParco_luglio2026.pdf",
+    "url_censito": "http://residenzadelparco.it/wp-content/uploads/2026/07/Carta_servizi_residenzaParco_luglio2026.pdf",
+    "file": "residenza-del-parco-cesate.pdf",
+    "byte": 916323,
+    "sha256": "444f2f2dbacb1a2eadcff5465f4d8c06eb90fed6f9cf74222b3f8276f36c79a6",
+    "scaricato_il": "2026-08-19T00:12:44.711Z"
+  },
+  "residenza-giovanni-amodeo-borgarello": {
+    "url": "https://www.scimaro.it/wp-content/uploads/2026/07/Carta-dei-servizi-BOR-07-2026.pdf",
+    "url_censito": "https://www.scimaro.it/wp-content/uploads/2026/07/Carta-dei-servizi-BOR-07-2026.pdf",
+    "file": "residenza-giovanni-amodeo-borgarello.pdf",
+    "byte": 1505125,
+    "sha256": "971c8913fe4a121473ab85c6479cdd37042605905b394df55d0b9bd1282376bb",
+    "scaricato_il": "2026-08-19T00:12:47.836Z"
+  },
+  "residenza-mirasole-opera": {
+    "url": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-mirasole/Carta%20dei%20servizi%20RSA%20aperta.pdf",
+    "url_censito": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-mirasole/Carta%20dei%20servizi%20RSA%20aperta.pdf",
+    "file": "residenza-mirasole-opera.pdf",
+    "byte": 712045,
+    "sha256": "070c3727623ca72fde1492f032bbaf0fa2ac59adbdc22c4771547f02822c57f3",
+    "scaricato_il": "2026-08-19T00:12:54.034Z"
+  },
+  "residenza-navigli-milano": {
+    "url": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-navigli/Carta%20dei%20servizi%20RSA%20aperta.pdf",
+    "url_censito": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-navigli/Carta%20dei%20servizi%20RSA%20aperta.pdf",
+    "file": "residenza-navigli-milano.pdf",
+    "byte": 712045,
+    "sha256": "070c3727623ca72fde1492f032bbaf0fa2ac59adbdc22c4771547f02822c57f3",
+    "scaricato_il": "2026-08-19T00:12:56.430Z"
+  },
+  "residenza-san-giovanni-asso": {
+    "url": "https://emmausitalia.it/wp-content/uploads/2026/02/2026_02_24_carta_servizi_CUREINTERMEDIE_SanGiovanni_CON_ALLEGATI.pdf",
+    "url_censito": "https://emmausitalia.it/wp-content/uploads/2026/02/2026_02_24_carta_servizi_CUREINTERMEDIE_SanGiovanni_CON_ALLEGATI.pdf",
+    "file": "residenza-san-giovanni-asso.pdf",
+    "byte": 796290,
+    "sha256": "2c30156c71818dddc86a9815796d0a6504f7546f3b6d1a62b5d939d11755824d",
+    "scaricato_il": "2026-08-19T00:12:58.888Z"
+  },
+  "residenza-sanitaria-assistenziale-di-asola-asola": {
+    "url": "https://ats-valpadana.it/system/files/rsa_struttura/files/3845/18034/CARTA%20DEI%20SERVIZI%202026.pdf",
+    "url_censito": "https://ats-valpadana.it/system/files/rsa_struttura/files/3845/18034/CARTA%20DEI%20SERVIZI%202026.pdf",
+    "file": "residenza-sanitaria-assistenziale-di-asola-asola.pdf",
+    "byte": 7347784,
+    "sha256": "7dc353476ba20b005c26b74d7c3734a4a73d252484a4945015d68c9306c8b5d8",
+    "scaricato_il": "2026-08-19T00:13:02.749Z"
+  },
+  "residenza-sant-ambrogio-milano": {
+    "url": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-santambrogio/Carta%20dei%20servizi%20RSA%20aperta.pdf",
+    "url_censito": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-santambrogio/Carta%20dei%20servizi%20RSA%20aperta.pdf",
+    "file": "residenza-sant-ambrogio-milano.pdf",
+    "byte": 712045,
+    "sha256": "070c3727623ca72fde1492f032bbaf0fa2ac59adbdc22c4771547f02822c57f3",
+    "scaricato_il": "2026-08-19T00:13:05.348Z"
+  },
+  "residenza-te-mantova": {
+    "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3888/18932/CARTA%20DEI%20SERVIZI%20%20maggio%202026%20ufficiale.pdf",
+    "url_censito": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3888/18932/CARTA%20DEI%20SERVIZI%20%20maggio%202026%20ufficiale.pdf",
+    "file": "residenza-te-mantova.pdf",
+    "byte": 4042125,
+    "sha256": "8c39262cd4950a4d2d3944b490065f50ef03d7a79eb9546547c510479792d9d2",
+    "scaricato_il": "2026-08-19T00:13:08.733Z"
+  },
+  "rsa-anna-e-guido-fossati-monza": {
+    "url": "https://puntoservice.org/wp-content/uploads/2026/07/2026_08_01_Carta_dei_Servizi_Fossati_allegati.pdf",
+    "url_censito": "https://puntoservice.org/wp-content/uploads/2026/07/2026_08_01_Carta_dei_Servizi_Fossati_allegati.pdf",
+    "file": "rsa-anna-e-guido-fossati-monza.pdf",
+    "byte": 4225916,
+    "sha256": "ef3217c6b85e4866d313b443713219470c37db8be8d2351d48cf6e153fc77332",
+    "scaricato_il": "2026-08-19T03:13:16.650Z"
+  },
+  "rsa-beata-paola-volta-mantovana": {
+    "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3836/17315/CARTA%20SERVIZI%202026%20Rev.03.pdf",
+    "url_censito": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3836/17315/CARTA%20SERVIZI%202026%20Rev.03.pdf",
+    "file": "rsa-beata-paola-volta-mantovana.pdf",
+    "byte": 5378245,
+    "sha256": "dd5d5606b433d32a9e7d7700fb1b8039b2fb2016638220ffda486403d88d3304",
+    "scaricato_il": "2026-08-19T10:29:59.786Z"
+  },
+  "rsa-bramante-pontida": {
+    "url": "https://www.lavillaspa.it/download/carta-dei-servizi/Carta-dei-Servizi-RSA-Bramante-Gruppo-La-Villa.pdf",
+    "url_censito": "https://www.lavillaspa.it/download/carta-dei-servizi/Carta-dei-Servizi-RSA-Bramante-Gruppo-La-Villa.pdf",
+    "file": "rsa-bramante-pontida.pdf",
+    "byte": 2248324,
+    "sha256": "4c33e537acce340a58626ab50dea2e6b7ee0d3fc748d9fea362914ea863b6cd6",
+    "scaricato_il": "2026-08-19T10:30:26.878Z"
+  },
+  "rsa-casa-di-dio-brescia": {
+    "url": "https://casadidio.eu/wp-content/uploads/2026/02/Carta-servizi-RSA-febbraio-2026-con-allegati-rev23.pdf",
+    "url_censito": "https://casadidio.eu/wp-content/uploads/2026/02/Carta-servizi-RSA-febbraio-2026-con-allegati-rev23.pdf",
+    "file": "rsa-casa-di-dio-brescia.pdf",
+    "byte": 4505258,
+    "sha256": "9fc88ab2fed0aa9efdbcb04f00cdb1f9b5a686b6bb9389c8a481cc548efed449",
+    "scaricato_il": "2026-08-19T10:30:31.494Z"
+  },
+  "rsa-casa-di-riposo-cenacolo-elisa-baldo-gavardo": {
+    "url": "https://www.cenacoloelisabaldo.it/wp-content/uploads/2025/07/2025-CARTA-DEI-SERVIZI.pdf",
+    "url_censito": "https://www.cenacoloelisabaldo.it/wp-content/uploads/2025/07/2025-CARTA-DEI-SERVIZI.pdf",
+    "file": "rsa-casa-di-riposo-cenacolo-elisa-baldo-gavardo.pdf",
+    "byte": 691388,
+    "sha256": "9fee8b6118220b794c7235fd18b18b865b4de1794570aee871701367f7bf75ee",
+    "scaricato_il": "2026-08-19T10:30:37.193Z"
+  },
+  "rsa-casa-di-riposo-don-giuseppe-baldo-puegnago-del-garda": {
+    "url": "https://www.casadiriposopuegnago.it/pdf/carta-servizi2025.pdf",
+    "url_censito": "https://www.casadiriposopuegnago.it/pdf/carta-servizi2025.pdf",
+    "file": "rsa-casa-di-riposo-don-giuseppe-baldo-puegnago-del-garda.pdf",
+    "byte": 1163448,
+    "sha256": "f5205a68de05f4262a1b2b9778febb56f80390c7523db6ed152725be2283632f",
+    "scaricato_il": "2026-08-19T10:30:46.277Z"
+  },
+  "rsa-comunale-san-benedetto-po": {
+    "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3881/17505/CARTA%20DEI%20SERVIZI%20REVISIONE%202026.pdf",
+    "url_censito": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3881/17505/CARTA%20DEI%20SERVIZI%20REVISIONE%202026.pdf",
+    "file": "rsa-comunale-san-benedetto-po.pdf",
+    "byte": 956930,
+    "sha256": "6094d57ae10d6e7cb88626141ac97e6b64724c0208e04df482ae10696c94e719",
+    "scaricato_il": "2026-08-19T10:31:01.086Z"
+  },
+  "rsa-di-via-santa-giulia-n-1-orzivecchi": {
+    "url": "https://www.fondazioniriunite.it/wp-content/uploads/2026/05/carta-servizi-fondazioni-riunite-rsa-orzivecchi-rev-17.pdf",
+    "url_censito": "https://www.fondazioniriunite.it/wp-content/uploads/2026/05/carta-servizi-fondazioni-riunite-rsa-orzivecchi-rev-17.pdf",
+    "file": "rsa-di-via-santa-giulia-n-1-orzivecchi.pdf",
+    "byte": 535040,
+    "sha256": "f4d9706d8917ce0b40a4bed1aa67de612c9958ab7ef86cb1ac4faef763bb99a1",
+    "scaricato_il": "2026-08-19T10:31:05.406Z"
+  },
+  "rsa-don-leone-porta-milano": {
+    "url": "https://www.scimaro.it/wp-content/uploads/2026/07/Carta-dei-servizi-MI-07-2026.pdf",
+    "url_censito": "https://www.scimaro.it/wp-content/uploads/2026/07/Carta-dei-servizi-MI-07-2026.pdf",
+    "file": "rsa-don-leone-porta-milano.pdf",
+    "byte": 1617003,
+    "sha256": "eed5c9c661bb60f28f7a30e75404d317f8b8de51d808efeb75b901ca5e2515ed",
+    "scaricato_il": "2026-08-19T10:31:16.716Z"
+  },
+  "rsa-emmaus-milano": {
+    "url": "https://emmausitalia.it/wp-content/uploads/2026/03/2026_03_25_carta_servizi_RSA_Emmaus.pdf",
+    "url_censito": "https://emmausitalia.it/wp-content/uploads/2026/03/2026_03_25_carta_servizi_RSA_Emmaus.pdf",
+    "file": "rsa-emmaus-milano.pdf",
+    "byte": 580280,
+    "sha256": "90dbb9238cbe90f91f3b2cde32f6e404e3502fa2ec52d3203cde0cc0a5727237",
+    "scaricato_il": "2026-08-19T10:31:20.532Z"
+  },
+  "rsa-evaristo-almici-rezzato": {
+    "url": "https://www.ealmici.it/wp-content/uploads/2026/01/CARTA-DEI-SERVIZI-RSA-CDI-2026.pdf",
+    "url_censito": "https://www.ealmici.it/documentiamministrazione/carta-dei-servizi-rsa/",
+    "file": "rsa-evaristo-almici-rezzato.pdf",
+    "byte": 19489691,
+    "sha256": "4c190e063fc276b454bc514689515393af01770d7d8331226fab755e0bea9b9a",
+    "scaricato_il": "2026-08-19T10:31:47.376Z"
+  },
+  "rsa-famagosta-milano": {
+    "url": "https://www.nuovassistenza.it/download/downloader.php?id=39912",
+    "url_censito": "https://www.nuovassistenza.it/download/downloader.php?id=39912",
+    "file": "rsa-famagosta-milano.pdf",
+    "byte": 422860,
+    "sha256": "b1b92990ecf2ef3af65c7da78ae62bc49e14b274ebe514147d9c024d7824121c",
+    "scaricato_il": "2026-08-19T10:31:51.186Z"
+  },
+  "rsa-fondazione-conte-carlo-busi-casalmaggiore": {
+    "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3879/18941/CARTA%20SERVIZI%20RSA%20revisione%20maggio%202026.pdf",
+    "url_censito": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3879/18941/CARTA%20SERVIZI%20RSA%20revisione%20maggio%202026.pdf",
+    "file": "rsa-fondazione-conte-carlo-busi-casalmaggiore.pdf",
+    "byte": 10888840,
+    "sha256": "668bef1331bf32d0fe48fd86c41e62c8c252857cc332d616794754728d06f88c",
+    "scaricato_il": "2026-08-19T10:32:24.602Z"
+  },
+  "rsa-fondazione-don-g-ferraglio-malonno": {
+    "url": "https://www.siminformatica.it/templates/sim/web/doc/SIMINFO_Carta-Servizi.pdf",
+    "url_censito": "https://www.siminformatica.it/templates/sim/web/doc/SIMINFO_Carta-Servizi.pdf",
+    "file": "rsa-fondazione-don-g-ferraglio-malonno.pdf",
+    "byte": 296012,
+    "sha256": "78e73e4ef141a2a0c8e4ee77477b961a9dfe8f9f70cfc515f3136b4b2401c385",
+    "scaricato_il": "2026-08-19T10:32:28.304Z"
+  },
+  "rsa-fondazione-madonna-del-corlo-onlus-lonato-del-garda": {
+    "url": "https://madonnadelcorlo.it/wp-content/uploads/2026/05/Carta-dei-servizi-APRILE-2026.pdf",
+    "url_censito": "https://madonnadelcorlo.it/wp-content/uploads/2026/05/Carta-dei-servizi-APRILE-2026.pdf",
+    "file": "rsa-fondazione-madonna-del-corlo-onlus-lonato-del-garda.pdf",
+    "byte": 1088426,
+    "sha256": "bf265577600eeb8320eabd31325ae4f659b1b76deeeabe1c4abf893fed13a76a",
+    "scaricato_il": "2026-08-19T10:32:36.824Z"
+  },
+  "rsa-fondazione-ospedale-caimi-onlus-vailate": {
+    "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3890/18863/CARTA%20DEI%20SERVIZI%20R.S.A.%20AGGIORNATA%20AL%2028%20APRILE%202026.pdf",
+    "url_censito": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3890/18863/CARTA%20DEI%20SERVIZI%20R.S.A.%20AGGIORNATA%20AL%2028%20APRILE%202026.pdf",
+    "file": "rsa-fondazione-ospedale-caimi-onlus-vailate.pdf",
+    "byte": 1751537,
+    "sha256": "8cd6b8fb0f502befdec5886a8f1d9de3adea4da9a222da8933983b7f494b59b4",
+    "scaricato_il": "2026-08-19T10:33:04.367Z"
+  },
+  "rsa-fondazione-sen-grossi-franzini-senna-lodigiana": {
+    "url": "https://www.fondazionegrossi.it/app/download/5712420366/Carta+dei+servizi+Rev.+08+del+12-2022.pdf?t=1673626720",
+    "url_censito": "https://www.fondazionegrossi.it/carta-dei-servizi-e-documentazione/",
+    "file": "rsa-fondazione-sen-grossi-franzini-senna-lodigiana.pdf",
+    "byte": 1809695,
+    "sha256": "4388f22152e4b012f8996387aa843e324fc6dcadb6a9763b34908366571e9a17",
+    "scaricato_il": "2026-08-19T10:33:17.533Z"
+  },
+  "rsa-istituto-s-giuseppe-villa-d-adda": {
+    "url": "https://rsasangiuseppe.it/wp-content/uploads/2024/07/Carta-dei-servizi-RSA-2024.pdf",
+    "url_censito": "https://rsasangiuseppe.it/wp-content/uploads/2024/07/Carta-dei-servizi-RSA-2024.pdf",
+    "file": "rsa-istituto-s-giuseppe-villa-d-adda.pdf",
+    "byte": 1346714,
+    "sha256": "55aeaa9cdb407b78f97dc8857f63dbfe63b6b625c7089ea465b5bbe3d028e6dc",
+    "scaricato_il": "2026-08-19T10:33:35.592Z"
+  },
+  "rsa-istituto-santa-savina-lodi": {
+    "url": "https://emmausitalia.it/wp-content/uploads/2026/01/2026_01_01_carta_servizi_RSA_santasavina_ALLEGATI.pdf",
+    "url_censito": "https://emmausitalia.it/wp-content/uploads/2026/01/2026_01_01_carta_servizi_RSA_santasavina_ALLEGATI.pdf",
+    "file": "rsa-istituto-santa-savina-lodi.pdf",
+    "byte": 913024,
+    "sha256": "c000a0593e2622a624dfc60a4e67fa8f7176b412d3707f1bcbcf646b4163ec85",
+    "scaricato_il": "2026-08-19T10:33:38.867Z"
+  },
+  "rsa-l-arca-desio": {
+    "url": "http://casadiriposogavazzi.it/wp-content/uploads/2026/08/CARTA-DEI-SERVIZI-Rev.-30.pdf",
+    "url_censito": "http://casadiriposogavazzi.it/wp-content/uploads/2026/08/CARTA-DEI-SERVIZI-Rev.-30.pdf",
+    "file": "rsa-l-arca-desio.pdf",
+    "byte": 2018166,
+    "sha256": "8f8bf801b8598802fb8f00823d1b97bc67ad3dc57c91f9f4281062a7a1127b9e",
+    "scaricato_il": "2026-08-19T10:33:44.960Z"
+  },
+  "rsa-la-residenza-brescia": {
+    "url": "https://casadidio.eu/wp-content/uploads/2026/02/Carta-servizi-RSA-febbraio-2026-con-allegati-rev23.pdf",
+    "url_censito": "https://casadidio.eu/wp-content/uploads/2026/02/Carta-servizi-RSA-febbraio-2026-con-allegati-rev23.pdf",
+    "file": "rsa-la-residenza-brescia.pdf",
+    "byte": 4505258,
+    "sha256": "9fc88ab2fed0aa9efdbcb04f00cdb1f9b5a686b6bb9389c8a481cc548efed449",
+    "scaricato_il": "2026-08-19T10:33:52.085Z"
+  },
+  "rsa-mons-benedini-marcaria": {
+    "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3844/17818/CARTA%20SERVIZI%202026.pdf",
+    "url_censito": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3844/17818/CARTA%20SERVIZI%202026.pdf",
+    "file": "rsa-mons-benedini-marcaria.pdf",
+    "byte": 762827,
+    "sha256": "06305c567d0f689378e2baf919030d918cc09745ac7454e7a7cb5923edda8d09",
+    "scaricato_il": "2026-08-19T10:34:06.897Z"
+  },
+  "rsa-mons-f-pinzoni-brescia": {
+    "url": "https://www.fondazionepaoladirosa.it/images/carta-dei-servizi-ed-04-2026-rev-07.pdf",
+    "url_censito": "https://www.fondazionepaoladirosa.it/informazioni/carta-dei-servizi",
+    "file": "rsa-mons-f-pinzoni-brescia.pdf",
+    "byte": 2386445,
+    "sha256": "7c5c6cbcf4bef6caea96ccbdddee086b8b42ee06290a02fe8fd9d50288bf6518",
+    "scaricato_il": "2026-08-19T10:34:15.568Z"
+  },
+  "rsa-orchidea-vittuone": {
+    "url": "https://avvittuone.it/wp-content/uploads/sites/18/2026/01/Carta-Servizi-Rsa-Il-Gelso-GENNAIO-2026.pdf",
+    "url_censito": "https://avvittuone.it/modulistica-e-carta-dei-servizi/",
+    "file": "rsa-orchidea-vittuone.pdf",
+    "byte": 2689612,
+    "sha256": "426c47db06fc487a9cfc8b01802574d5e5bd3c49345ff24a12cd1953191cc0a2",
+    "scaricato_il": "2026-08-19T10:34:22.361Z"
+  },
+  "rsa-paola-di-rosa-capriano-del-colle": {
+    "url": "https://www.fondazionepaoladirosa.it/images/carta-dei-servizi-ed-04-2026-rev-07.pdf",
+    "url_censito": "https://www.fondazionepaoladirosa.it/informazioni/carta-dei-servizi",
+    "file": "rsa-paola-di-rosa-capriano-del-colle.pdf",
+    "byte": 2386445,
+    "sha256": "7c5c6cbcf4bef6caea96ccbdddee086b8b42ee06290a02fe8fd9d50288bf6518",
+    "scaricato_il": "2026-08-19T10:34:28.699Z"
+  },
+  "rsa-paolo-paravicini-morbegno": {
+    "url": "http://www.ambrosettiparavicini.it/sites/default/files/2026.05%20Carta%20dei%20Servizi%20RSA%20Paravicini%20%2B%20allegati%20WEB_0.pdf",
+    "url_censito": "http://www.ambrosettiparavicini.it/sites/default/files/2026.05%20Carta%20dei%20Servizi%20RSA%20Paravicini%20%2B%20allegati%20WEB_0.pdf",
+    "file": "rsa-paolo-paravicini-morbegno.pdf",
+    "byte": 1678937,
+    "sha256": "d4ac664d3d4bdff6b7de0fb1a0bdca11073a6d7ff840fa81c1f7bc6d7bffe9fa",
+    "scaricato_il": "2026-08-19T10:34:32.695Z"
+  },
+  "rsa-pasotti-cottinelli-brescia": {
+    "url": "http://www.pasotticottinelli.it/wp-content/uploads/2026/03/Carta-Servizi-2026.pdf",
+    "url_censito": "http://www.pasotticottinelli.it/wp-content/uploads/2026/03/Carta-Servizi-2026.pdf",
+    "file": "rsa-pasotti-cottinelli-brescia.pdf",
+    "byte": 370448,
+    "sha256": "9b1f2294f15adbf0556cc3b715ec779bebac3c69743ebf1962a19ff42ffe98f1",
+    "scaricato_il": "2026-08-19T10:34:40.341Z"
+  },
+  "rsa-s-croce-pavia": {
+    "url": "https://www.asppavia.it/wp-content/uploads/2026/04/Nuova-Carta-Servizi-A3_2026-1.pdf",
+    "url_censito": "https://www.asppavia.it/amministrazione-trasparente/carta-dei-servizi-e-standard-di-qualita/",
+    "file": "rsa-s-croce-pavia.pdf",
+    "byte": 685408,
+    "sha256": "5c0aa3f5a87ae2e5e613ca3a2d57555b67b1653a0fd91d1aba27a0a594efbf03",
+    "scaricato_il": "2026-08-19T10:34:47.291Z"
+  },
+  "rsa-s-vincenzo-piadena-drizzona": {
+    "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3876/17589/CARTA%20DEI%20SERVIZI%202026.pdf",
+    "url_censito": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3876/17589/CARTA%20DEI%20SERVIZI%202026.pdf",
+    "file": "rsa-s-vincenzo-piadena-drizzona.pdf",
+    "byte": 7686955,
+    "sha256": "fd5845ce2766bc601fae9c33b54d5f19c58fb1a748730acd6a6781bb9f0d5f86",
+    "scaricato_il": "2026-08-19T10:34:53.338Z"
+  },
+  "rsa-san-giacomo-vedano-olona": {
+    "url": "https://www.societadolce.it/wp-content/uploads/2024/04/CartadeiServizi_RSASanGiacomo_VA_1223.pdf",
+    "url_censito": "https://www.societadolce.it/wp-content/uploads/2024/04/CartadeiServizi_RSASanGiacomo_VA_1223.pdf",
+    "file": "rsa-san-giacomo-vedano-olona.pdf",
+    "byte": 447387,
+    "sha256": "b67e355323658f8ba453a464cb17c31fd016bb38f30c9ccf7d04ef69197353fe",
+    "scaricato_il": "2026-08-19T10:34:58.311Z"
+  },
+  "rsa-san-marco-marcallo-con-casone": {
+    "url": "https://cooperativaquadrifoglio.com/wp-content/uploads/2018/12/carta-servizi-03lug24.pdf",
+    "url_censito": "https://cooperativaquadrifoglio.com/wp-content/uploads/2018/12/carta-servizi-03lug24.pdf",
+    "file": "rsa-san-marco-marcallo-con-casone.pdf",
+    "byte": 3606792,
+    "sha256": "fc824d49de7c51dc5c3541ceeb861447a301a3b2c51d22247cda67d328ced971",
+    "scaricato_il": "2026-08-19T10:35:08.394Z"
+  },
+  "rsa-san-sisto-bergamo": {
+    "url": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-san-sisto/Carta%20dei%20servizi.pdf",
+    "url_censito": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-san-sisto/Carta%20dei%20servizi.pdf",
+    "file": "rsa-san-sisto-bergamo.pdf",
+    "byte": 2666262,
+    "sha256": "dedb605af3d350cb5de6cea92deedfbeba2169289f142e489c5db1109aa3f7dc",
+    "scaricato_il": "2026-08-19T10:35:14.656Z"
+  },
+  "rsa-tomaso-ambrosetti-morbegno": {
+    "url": "http://www.ambrosettiparavicini.it/sites/default/files/2026.05%20Carta%20dei%20Servizi%20RSA%20Ambrosetti%20%2B%20allegati%20WEB.pdf",
+    "url_censito": "http://www.ambrosettiparavicini.it/sites/default/files/2026.05%20Carta%20dei%20Servizi%20RSA%20Ambrosetti%20%2B%20allegati%20WEB.pdf",
+    "file": "rsa-tomaso-ambrosetti-morbegno.pdf",
+    "byte": 1407171,
+    "sha256": "70a22fd4c8d0a17a3b0d165b2462540d888cf14d9f7fba0cb13588326e52d5cf",
+    "scaricato_il": "2026-08-19T10:35:21.582Z"
+  },
+  "rsa-tosi-cippelletti-di-rivarolo-mantovano-rivarolo-mantovano": {
+    "url": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3835/18088/Carta%20dei%20servizi%20Maggio%202026%20-%20RSA.pdf",
+    "url_censito": "https://www.ats-valpadana.it/system/files/rsa_struttura/files/3835/18088/Carta%20dei%20servizi%20Maggio%202026%20-%20RSA.pdf",
+    "file": "rsa-tosi-cippelletti-di-rivarolo-mantovano-rivarolo-mantovano.pdf",
+    "byte": 2020775,
+    "sha256": "ca5f0982b74622de6fbc4d5b539c454d675e00f35065097194c3e691391b2c6b",
+    "scaricato_il": "2026-08-19T10:35:50.849Z"
+  },
+  "rsa-villa-di-salute-brescia": {
+    "url": "https://www.fondazionepaoladirosa.it/images/carta-dei-servizi-ed-04-2026-rev-07.pdf",
+    "url_censito": "https://www.fondazionepaoladirosa.it/informazioni/carta-dei-servizi",
+    "file": "rsa-villa-di-salute-brescia.pdf",
+    "byte": 2386445,
+    "sha256": "7c5c6cbcf4bef6caea96ccbdddee086b8b42ee06290a02fe8fd9d50288bf6518",
+    "scaricato_il": "2026-08-19T10:35:59.624Z"
+  },
+  "rsa-villa-elisa-brescia": {
+    "url": "https://www.fondazionebssolidale.it/wp-content/uploads/carta-dei-servizi-RSA-VILLA-ELISA-2025.docx-1.pdf",
+    "url_censito": "https://www.fondazionebssolidale.it/wp-content/uploads/carta-dei-servizi-RSA-VILLA-ELISA-2025.docx-1.pdf",
+    "file": "rsa-villa-elisa-brescia.pdf",
+    "byte": 1425109,
+    "sha256": "a73a9dcabb837c82a0032bb82376c9519764d04e9944a0a808d2c520d96e717a",
+    "scaricato_il": "2026-08-19T10:36:05.084Z"
+  },
+  "san-francesco-d-assisi-milano": {
+    "url": "https://www.rsasanfrancesco.it/resources/2026/carta-dei-servizi_maggio-2026.pdf",
+    "url_censito": "https://www.rsasanfrancesco.it/carta-dei-servizi/",
+    "file": "san-francesco-d-assisi-milano.pdf",
+    "byte": 1111356,
+    "sha256": "7d76b28c955d4a07a6514e1152f7478d0ec6f08402329d7911b9c28d2a0546f1",
+    "scaricato_il": "2026-08-19T10:36:21.395Z"
+  },
+  "san-francesco-pinarolo-po": {
+    "url": "https://www.coopselios.com/uploads/2020/03/CdS_RSASFrancesco_Rev17-del-27-maggio-26.pdf",
+    "url_censito": "https://www.coopselios.com/uploads/2020/03/CdS_RSASFrancesco_Rev17-del-27-maggio-26.pdf",
+    "file": "san-francesco-pinarolo-po.pdf",
+    "byte": 416289,
+    "sha256": "36e4553bf08a95cc3cad4009d3cbd5973ebe8a4f318136cb548d1fcfca825d93",
+    "scaricato_il": "2026-08-19T10:36:24.978Z"
+  },
+  "san-rocco-segrate": {
+    "url": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-san-rocco/Carta%20dei%20servizi%20RSA%20aperta.pdf",
+    "url_censito": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-san-rocco/Carta%20dei%20servizi%20RSA%20aperta.pdf",
+    "file": "san-rocco-segrate.pdf",
+    "byte": 712045,
+    "sha256": "070c3727623ca72fde1492f032bbaf0fa2ac59adbdc22c4771547f02822c57f3",
+    "scaricato_il": "2026-08-19T10:36:36.120Z"
+  },
+  "villa-chiara-dorno": {
+    "url": "https://villachiararsa.it/wp-content/uploads/2026/04/VILLA-CHIARA-CARTA-DEI-SERVIZI-03-26.pdf",
+    "url_censito": "https://villachiararsa.it/wp-content/uploads/2026/04/VILLA-CHIARA-CARTA-DEI-SERVIZI-03-26.pdf",
+    "file": "villa-chiara-dorno.pdf",
+    "byte": 2249137,
+    "sha256": "af30a3e95ae03c8c79e200553f7e4492dd6fe8e943eb05b05a67c27a8962e25d",
+    "scaricato_il": "2026-08-19T10:36:43.866Z"
+  },
+  "villa-clarice-cermenate": {
+    "url": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-villa-clarice/Carta%20dei%20servizi%20RSA%20aperta.pdf",
+    "url_censito": "https://anniazzurri.it/assets/doc/strutture/residenza-anni-azzurri-villa-clarice/Carta%20dei%20servizi%20RSA%20aperta.pdf",
+    "file": "villa-clarice-cermenate.pdf",
+    "byte": 712045,
+    "sha256": "070c3727623ca72fde1492f032bbaf0fa2ac59adbdc22c4771547f02822c57f3",
+    "scaricato_il": "2026-08-19T10:36:48.063Z"
+  },
+  "villa-dossel-caglio": {
+    "url": "https://puntoservice.org/wp-content/uploads/2026/05/2026_06_01_Carta_dei_Servizi_Villa_Dossel_ALLEGATI.pdf",
+    "url_censito": "https://puntoservice.org/wp-content/uploads/2026/05/2026_06_01_Carta_dei_Servizi_Villa_Dossel_ALLEGATI.pdf",
+    "file": "villa-dossel-caglio.pdf",
+    "byte": 3478641,
+    "sha256": "d78103b2629cb07f3f0ec7c86340f71147938752404e10089d3b7a3c3159e166",
+    "scaricato_il": "2026-08-19T10:37:00.717Z"
+  },
+  "villa-elvira-santa-maria-della-versa": {
+    "url": "https://www.coopselios.com/uploads/2026/07/CdS_RSA-Villa-Elvira_Rev17-del-25.05.2026.pdf",
+    "url_censito": "https://www.coopselios.com/uploads/2026/07/CdS_RSA-Villa-Elvira_Rev17-del-25.05.2026.pdf",
+    "file": "villa-elvira-santa-maria-della-versa.pdf",
+    "byte": 1469351,
+    "sha256": "7f2d165c7df1949bfbc2f3773715923545e0c02b76f51043e1225f857d6fdcac",
+    "scaricato_il": "2026-08-19T10:37:05.140Z"
+  },
+  "villa-enrica-albonese": {
+    "url": "https://www.operacharitas.it/new/wp-content/uploads/2026/01/Carta-servizi-rev-31-del-1.1.26-Albonese.pdf",
+    "url_censito": "https://www.operacharitas.it/new/wp-content/uploads/2026/01/Carta-servizi-rev-31-del-1.1.26-Albonese.pdf",
+    "file": "villa-enrica-albonese.pdf",
+    "byte": 875092,
+    "sha256": "735caa94bd7397b965752934b08a6a3caca5c2bdc9edf9d98a27ad20a28c9ee9",
+    "scaricato_il": "2026-08-19T10:37:10.256Z"
+  },
+  "villa-flora-s-r-l-cormano": {
+    "url": "http://villaflorasrl.it/wp-content/uploads/2026/07/carta-dei-servizi-VILLA-FLORA-luglio-2026.pdf",
+    "url_censito": "http://villaflorasrl.it/wp-content/uploads/2026/07/carta-dei-servizi-VILLA-FLORA-luglio-2026.pdf",
+    "file": "villa-flora-s-r-l-cormano.pdf",
+    "byte": 1431087,
+    "sha256": "02386eca644370117a3b6105223c8ed71c3e9e7ab9b8231fbf1762880dc0f3dc",
+    "scaricato_il": "2026-08-19T10:37:16.418Z"
+  },
+  "villa-mafalda-borgo-san-siro": {
+    "url": "https://www.scimaro.it/wp-content/uploads/2026/07/Carta-dei-servizi-BSS-07-2026.pdf",
+    "url_censito": "https://www.scimaro.it/wp-content/uploads/2026/07/Carta-dei-servizi-BSS-07-2026.pdf",
+    "file": "villa-mafalda-borgo-san-siro.pdf",
+    "byte": 1530055,
+    "sha256": "791a47dec1898fddffdf6b083b0dbc716fa9d56ee88631bc7c437fc4683bfcb2",
+    "scaricato_il": "2026-08-19T10:37:20.530Z"
+  },
+  "virgilio-ferrari-milano": {
+    "url": "https://puntoservice.org/wp-content/uploads/2026/08/2026_07_01_Carta_dei_Servizi_Ferrari_RSA_conallegati.pdf",
+    "url_censito": "https://puntoservice.org/wp-content/uploads/2026/08/2026_07_01_Carta_dei_Servizi_Ferrari_RSA_conallegati.pdf",
+    "file": "virgilio-ferrari-milano.pdf",
+    "byte": 3726795,
+    "sha256": "8b04ddb261c5dac0073d7949cb8bbd2503f18f19e69d345d3125580bceb5ce7c",
+    "scaricato_il": "2026-08-19T10:37:35.734Z"
+  }
+}

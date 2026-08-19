@@ -6,7 +6,7 @@ import type { NodoGeografico, Struttura, Tipologia } from "./types";
 
 /** Colonne lette dalla tabella `strutture`: corrispondono al type Struttura. */
 const COLONNE =
-  "nome,slug,tipologia,indirizzo,cap,comune,provincia,provincia_sigla,regione,lat,lng,telefono,email,sito_web,posti_letto,convenzionata,nucleo_alzheimer,prezzo_min,prezzo_max,descrizione,fonte_dati,updated_at,codice_struttura_fonte,denominazione_gestore,partita_iva_gestore,codice_fiscale_gestore,pec_gestore,osm_id,osm_confidenza,fonte_contatti,contatti_aggiornati_il,retta_convenzionata_min,retta_convenzionata_max,retta_originale,costi_extra,carta_servizi_anno,carta_servizi_scaricata_il,retta_confidenza,url_carta_servizi";
+  "nome,slug,tipologia,indirizzo,cap,comune,provincia,provincia_sigla,regione,lat,lng,telefono,email,sito_web,posti_letto,convenzionata,nucleo_alzheimer,prezzo_min,prezzo_max,descrizione,fonte_dati,updated_at,codice_struttura_fonte,denominazione_gestore,partita_iva_gestore,codice_fiscale_gestore,pec_gestore,osm_id,osm_confidenza,fonte_contatti,contatti_aggiornati_il,retta_convenzionata_min,retta_convenzionata_max,retta_originale,costi_extra,carta_servizi_anno,carta_servizi_scaricata_il,retta_confidenza,retta_regime,url_carta_servizi";
 
 /** PostgREST restituisce al massimo 1000 righe per richiesta. */
 const PAGINA = 1000;

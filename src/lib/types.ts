@@ -58,6 +58,8 @@ export interface Struttura {
   carta_servizi_anno?: number | null;
   carta_servizi_scaricata_il?: string | null;
   retta_confidenza?: "alta" | "media" | null;
+  /** Regime della retta: molte carte non lo dichiarano. */
+  retta_regime?: "privata" | "convenzionata" | "non_specificato" | null;
   url_carta_servizi?: string | null;
   updated_at: string;
 }

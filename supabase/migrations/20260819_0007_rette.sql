@@ -19,7 +19,12 @@ alter table public.strutture
     check (carta_servizi_anno is null or carta_servizi_anno between 2000 and 2100),
   add column if not exists carta_servizi_scaricata_il timestamptz,
   add column if not exists retta_confidenza text
-    check (retta_confidenza is null or retta_confidenza in ('alta', 'media'));
+    check (retta_confidenza is null or retta_confidenza in ('alta', 'media')),
+  -- Molte carte pubblicano una tariffa sola senza dire se sia privata o in
+  -- convenzione: l'importo e` certo, il regime no. Terzo stato esplicito
+  -- invece di scegliere a caso o di buttare via il dato.
+  add column if not exists retta_regime text
+    check (retta_regime is null or retta_regime in ('privata', 'convenzionata', 'non_specificato'));
 
 comment on column public.strutture.prezzo_min is
   'Retta privata minima in euro/mese (dalla carta dei servizi).';
