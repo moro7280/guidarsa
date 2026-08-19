@@ -1,4 +1,5 @@
 import type { MetadataRoute } from "next";
+import { indicizzabile } from "@/lib/completezza";
 import { GUIDE } from "@/lib/guide";
 import { percorsi } from "@/lib/percorsi";
 import { urlAssoluta } from "@/lib/seo";
@@ -67,12 +68,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     });
   }
 
-  const schede: MetadataRoute.Sitemap = strutture.map((struttura) => ({
-    url: urlAssoluta(percorsi.struttura(struttura.slug)),
-    lastModified: new Date(struttura.updated_at),
-    changeFrequency: "monthly",
-    priority: 0.8,
-  }));
+  // Solo le schede sopra la soglia di completezza: chiedere a Google di
+  // indicizzare una pagina che porta noindex e` una contraddizione, e riempire
+  // la sitemap di schede povere abbassa la qualita` percepita del dominio.
+  const schede: MetadataRoute.Sitemap = strutture
+    .filter((struttura) => indicizzabile(struttura))
+    .map((struttura) => ({
+      url: urlAssoluta(percorsi.struttura(struttura.slug)),
+      lastModified: new Date(struttura.updated_at),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    }));
 
   const guide: MetadataRoute.Sitemap = GUIDE.map((guida) => ({
     url: urlAssoluta(percorsi.guida(guida.slug)),

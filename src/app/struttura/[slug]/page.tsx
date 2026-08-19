@@ -8,6 +8,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { JsonLd } from "@/components/JsonLd";
 import { percorsi } from "@/lib/percorsi";
 import { slugify } from "@/lib/slug";
+import { indicizzabile } from "@/lib/completezza";
 import { jsonLdStruttura, metadataPagina } from "@/lib/seo";
 import { getSlugStrutture, getStrutturaBySlug } from "@/lib/strutture";
 import { TIPOLOGIE } from "@/lib/tipologie";
@@ -33,6 +34,9 @@ export async function generateMetadata({
   const info = TIPOLOGIE[struttura.tipologia];
 
   return metadataPagina({
+    // Sotto la soglia di completezza la scheda resta online ma fuori
+    // dall indice: una pagina povera che si posiziona danneggia il dominio.
+    indicizzabile: indicizzabile(struttura),
     titolo: `${struttura.nome} — ${info.singolare} a ${struttura.comune} (${struttura.provincia_sigla})`,
     descrizione: `${struttura.nome}: ${info.singolare} a ${struttura.comune}, ${struttura.indirizzo}. Contatti, posti letto, convenzione e rette indicative.`,
     percorso: percorsi.struttura(struttura.slug),

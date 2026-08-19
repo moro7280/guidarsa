@@ -22,15 +22,22 @@ export function metadataPagina({
   titolo,
   descrizione,
   percorso,
+  indicizzabile = true,
 }: {
   titolo: string;
   descrizione: string;
   percorso: string;
+  /**
+   * false per le schede sotto la soglia di completezza: restano raggiungibili
+   * e i loro link continuano a valere (`follow`), ma non entrano nell'indice.
+   */
+  indicizzabile?: boolean;
 }): Metadata {
   return {
     title: titolo,
     description: descrizione,
     alternates: { canonical: percorso },
+    robots: indicizzabile ? undefined : { index: false, follow: true },
     openGraph: {
       title: titolo,
       description: descrizione,
