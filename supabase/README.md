@@ -51,10 +51,10 @@ La chiave service role sta solo in `.env.local`, che è escluso da git.
 
 ## Notifiche dei nuovi lead
 
-Ogni riga inserita in  o  deve far scattare una notifica,
-altrimenti le richieste restano nel database e nessuno le legge. Il meccanismo e
-un **Database Webhook**: e il database a chiamare, non il browser, quindi la
-notifica parte anche se il visitatore chiude la scheda subito dopo l'invio.
+Ogni riga inserita in `leads` o `iscritti` deve far scattare una notifica, altrimenti le richieste
+restano nel database e nessuno le legge. Il meccanismo è un **Database Webhook**: a chiamare è il
+database, non il browser, quindi la notifica parte anche se il visitatore chiude la scheda subito
+dopo l'invio o la sua connessione cade.
 
 ### Creare il webhook
 
@@ -62,22 +62,32 @@ Dashboard → **Database** → **Webhooks** → **Create a new hook**:
 
 | Campo | Valore |
 | --- | --- |
-| Name |  (e poi ) |
-| Table |  (poi ) |
+| Name | `notifica-lead` (e poi `notifica-iscritto`) |
+| Table | `leads` (poi `iscritti`) |
 | Events | solo **Insert** |
 | Type | **HTTP Request** |
-| Method |  |
-| URL |  — **con la barra finale** |
-| HTTP Headers |  = lo stesso valore di  su Vercel |
+| Method | `POST` |
+| URL | `https://guidarsa.it/api/notifica/` — **con la barra finale** |
+| HTTP Headers | `x-guidarsa-segreto` = lo stesso valore di `NOTIFICA_SEGRETO` su Vercel |
 
-La barra finale non e un dettaglio: il sito usa , e senza barra
-la richiesta riceve un 308 e il webhook non consegna nulla.
+La barra finale non è un dettaglio: il sito usa `trailingSlash`, e senza barra la richiesta riceve
+un 308 e il webhook non consegna nulla.
 
-### Diagnosi
+### Variabili su Vercel
 
-La rotta risponde in modo parlante, cosi i log del webhook dicono cosa non va:
+| Variabile | A cosa serve |
+| --- | --- |
+| `NOTIFICA_SEGRETO` | stringa lunga a caso, la stessa nell'header del webhook |
+| `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID` | canale Telegram: gratuito, immediato, nessun DNS |
+| `RESEND_API_KEY`, `NOTIFICA_EMAIL_A`, `NOTIFICA_EMAIL_DA` | canale email, facoltativo |
 
--  — header  assente o diverso
--  — mancano le variabili di
-  Telegram e di Resend su Vercel
--  — tutto a posto
+I due canali convivono: se ci sono entrambi, la notifica parte su entrambi.
+
+### Diagnosi dai log del webhook
+
+La rotta risponde in modo parlante, così i log di Supabase dicono cosa non va:
+
+- **401** — header `x-guidarsa-segreto` assente o diverso
+- **500 `nessun canale di notifica configurato`** — mancano le variabili di Telegram e di Resend
+- **308** — manca la barra finale nell'URL
+- **200 `{"telegram":"inviata"}`** — tutto a posto
