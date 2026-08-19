@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BloccoGuidaScaricabile } from "@/components/BloccoGuidaScaricabile";
 import { CtaPrimaria } from "@/components/Cta";
 import { RicercaComune, type VoceComune } from "@/components/RicercaComune";
 import { GUIDE } from "@/lib/guide";
@@ -138,6 +139,8 @@ export default async function Home() {
           ))}
         </ul>
       </section>
+
+      <BloccoGuidaScaricabile />
 
       {tipologiaPrincipale && (
         <section>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { Breadcrumb } from "@/components/Breadcrumb";
+import { BloccoGuidaScaricabile } from "@/components/BloccoGuidaScaricabile";
 import { BloccoCta } from "@/components/Cta";
 import { JsonLd } from "@/components/JsonLd";
 import { GUIDE, getGuida } from "@/lib/guide";
@@ -73,6 +74,8 @@ export default async function PaginaGuida({
           </section>
         ))}
       </div>
+
+      <BloccoGuidaScaricabile />
 
       <BloccoCta />
     </article>

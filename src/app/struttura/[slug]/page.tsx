@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { numero } from "@/lib/formato";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AttribuzioneOsm } from "@/components/AttribuzioneOsm";
@@ -183,7 +184,10 @@ export default async function PaginaStruttura({
           {[
             {
               voce: "Posti letto",
-              valore: struttura.posti_letto?.toLocaleString("it-IT") ?? "Non disponibile",
+              valore:
+                struttura.posti_letto !== null
+                  ? numero(struttura.posti_letto)
+                  : "Non disponibile",
             },
             {
               voce: "Convenzionata con il servizio sanitario",

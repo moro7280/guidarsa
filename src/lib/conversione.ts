@@ -79,3 +79,9 @@ export const BUDGET: Opzione[] = [
   { valore: "oltre_3500", etichetta: "Oltre 3.500 € al mese" },
   { valore: "non_so", etichetta: "Non so ancora, dipende dai servizi" },
 ];
+
+/** Risorsa scaricabile: la guida in sette passi. */
+export const RISORSA_GUIDA = "guida-7-passi";
+
+export const TESTO_CONSENSO_ISCRIZIONE =
+  "Acconsento al trattamento della mia email da parte di GuidaRSA per ricevere la guida e, occasionalmente, aggiornamenti sulle strutture per anziani. Posso disiscrivermi in qualsiasi momento.";

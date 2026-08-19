@@ -95,3 +95,46 @@ h3 {
     transition-duration: 0.01ms !important;
   }
 }
+
+/*
+ * Stampa: la guida in sette passi e pensata per finire su carta o in PDF.
+ * Spariscono navigazione, footer e moduli; restano testo, dati e le righe su
+ * cui annotare le risposte durante la visita.
+ */
+@media print {
+  header,
+  footer,
+  nav {
+    display: none !important;
+  }
+
+  main {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 11pt;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 9pt;
+    color: #555;
+  }
+
+  h1,
+  h2 {
+    break-after: avoid;
+  }
+
+  .break-inside-avoid {
+    break-inside: avoid;
+  }
+
+  .break-before-page {
+    break-before: page;
+  }
+}

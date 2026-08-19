@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { BloccoGuidaScaricabile } from "@/components/BloccoGuidaScaricabile";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { GUIDE } from "@/lib/guide";
 import { percorsi } from "@/lib/percorsi";
@@ -29,6 +30,8 @@ export default function PaginaGuide() {
           struttura o del servizio più adatto.
         </p>
       </header>
+
+      <BloccoGuidaScaricabile />
 
       <ul className="space-y-4">
         {GUIDE.map((guida) => (

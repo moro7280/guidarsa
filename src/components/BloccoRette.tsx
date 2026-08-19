@@ -1,4 +1,5 @@
 import type { Struttura } from "@/lib/types";
+import { numero } from "@/lib/formato";
 
 /**
  * Rette in pagina. Regole permanenti (CLAUDE.md):
@@ -13,10 +14,10 @@ const ANNI_PER_STORICA = 2;
 function formatta(min: number | null, max: number | null): string | null {
   if (min === null && max === null) return null;
   if (min !== null && max !== null && min !== max) {
-    return `${min.toLocaleString("it-IT")} - ${max.toLocaleString("it-IT")} €`;
+    return `${numero(min)} - ${numero(max)} €`;
   }
   const valore = (min ?? max) as number;
-  return `${valore.toLocaleString("it-IT")} €`;
+  return `${numero(valore)} €`;
 }
 
 function dataItaliana(valore: string | null | undefined): string | null {

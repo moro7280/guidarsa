@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { numero } from "@/lib/formato";
 import { CtaStruttura } from "./Cta";
 import { percorsi } from "@/lib/percorsi";
 import type { Struttura } from "@/lib/types";
@@ -17,8 +18,8 @@ function fasciaPrezzo(struttura: Struttura): string | null {
   if (min === null && max === null) return null;
   // "A partire da" mostra il minimo, non l intervallo: se dicessimo "a partire
   // da 2.000-2.700" non vorrebbe dire niente.
-  if (min !== null) return `${min.toLocaleString("it-IT")} € al mese`;
-  return `${((min ?? max) as number).toLocaleString("it-IT")} € al mese`;
+  if (min !== null) return `${numero(min)} € al mese`;
+  return `${numero(max as number)} € al mese`;
 }
 
 export function SchedaStruttura({ struttura }: { struttura: Struttura }) {

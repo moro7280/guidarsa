@@ -1,4 +1,5 @@
 import { JsonLd } from "./JsonLd";
+import { numero } from "@/lib/formato";
 import type { Struttura } from "@/lib/types";
 
 /**
@@ -45,7 +46,7 @@ export function FaqComune({
       risposta: `A ${comune} risultano ${strutture.length} ${
         strutture.length === 1 ? "struttura censita" : "strutture censite"
       } negli elenchi pubblici regionali${
-        postiTotali > 0 ? `, per un totale di ${postiTotali.toLocaleString("it-IT")} posti letto dichiarati` : ""
+        postiTotali > 0 ? `, per un totale di ${numero(postiTotali)} posti letto dichiarati` : ""
       }.`,
     },
     {
@@ -60,9 +61,9 @@ export function FaqComune({
   domande.push({
     domanda: `Quanto costa una struttura per anziani a ${comune}?`,
     risposta: prezzi
-      ? `Le rette che abbiamo documentato a ${comune} vanno da ${prezzi.min.toLocaleString(
-          "it-IT",
-        )} a ${prezzi.max.toLocaleString("it-IT")} euro al mese, su ${prezzi.quante} ${
+      ? `Le rette che abbiamo documentato a ${comune} vanno da ${numero(prezzi.min)} a ${numero(
+          prezzi.max,
+        )} euro al mese, su ${prezzi.quante} ${
           prezzi.quante === 1 ? "struttura" : "strutture"
         }. Sono tariffe prese dalle carte dei servizi pubblicate dalle strutture stesse, indicative e da verificare al momento del contatto.`
       : `Per le strutture di ${comune} non abbiamo ancora una retta documentata: la pubblichiamo solo quando la struttura la rende disponibile nella propria carta dei servizi, senza stimarla.`,

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { BloccoGuidaScaricabile } from "@/components/BloccoGuidaScaricabile";
 import { conversioneAttiva } from "@/lib/conversione";
 import { GUIDE } from "@/lib/guide";
 import { percorsi } from "@/lib/percorsi";
@@ -62,6 +63,8 @@ export default function PaginaGrazie() {
           ))}
         </ol>
       </section>
+
+      <BloccoGuidaScaricabile />
 
       <section>
         <h2 className="font-serif text-xl font-semibold">Nel frattempo</h2>

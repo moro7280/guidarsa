@@ -80,6 +80,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     }));
 
+  const guidaScaricabile: MetadataRoute.Sitemap = [
+    {
+      url: urlAssoluta("/guide/come-scegliere-rsa-7-passi/"),
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+  ];
+
   const guide: MetadataRoute.Sitemap = GUIDE.map((guida) => ({
     url: urlAssoluta(percorsi.guida(guida.slug)),
     lastModified: new Date(guida.aggiornataIl),
@@ -87,5 +95,5 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.6,
   }));
 
-  return [...home, ...hubTipologie, ...hubRegioni, ...hubProvince, ...comuni, ...schede, ...guide];
+  return [...home, ...hubTipologie, ...hubRegioni, ...hubProvince, ...comuni, ...schede, ...guide, ...guidaScaricabile];
 }
