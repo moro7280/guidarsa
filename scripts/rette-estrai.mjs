@@ -149,7 +149,11 @@ function analizza(testo) {
 
 /** Anno della carta: dal testo o, in mancanza, dai riferimenti temporali. */
 function annoDellaCarta(testo) {
-  const anni = [...testo.matchAll(/\b(20[12][0-9])\b/g)].map((m) => Number.parseInt(m[1], 10));
+  const annoCorrente = new Date().getFullYear();
+  // Gli anni futuri sono scadenze ("in vigore fino al..."), non date del documento.
+  const anni = [...testo.matchAll(/\b(20[12][0-9])\b/g)]
+    .map((m) => Number.parseInt(m[1], 10))
+    .filter((anno) => anno <= annoCorrente);
   if (!anni.length) return null;
   const conteggi = new Map();
   for (const anno of anni) conteggi.set(anno, (conteggi.get(anno) ?? 0) + 1);
