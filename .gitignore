@@ -40,3 +40,6 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 !.env.example
+
+# PDF di terzi: archiviati in locale come prova di provenienza, mai ridistribuiti
+data/carte-servizi/*.pdf

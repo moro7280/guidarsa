@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { AttribuzioneOsm } from "@/components/AttribuzioneOsm";
+import { BloccoRette } from "@/components/BloccoRette";
 import { AvvisoDemo } from "@/components/AvvisoDemo";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { JsonLd } from "@/components/JsonLd";
@@ -115,16 +116,10 @@ export default async function PaginaStruttura({
                   : "No"}
             </dd>
           </div>
-          <div className="rounded-lg border border-slate-200 bg-white p-4">
-            <dt className="text-sm text-slate-500">Retta indicativa</dt>
-            <dd className="mt-1 font-medium text-slate-900">
-              {struttura.prezzo_min !== null && struttura.prezzo_max !== null
-                ? `${struttura.prezzo_min}-${struttura.prezzo_max} €`
-                : "Non disponibile"}
-            </dd>
-          </div>
         </dl>
       </section>
+
+      <BloccoRette struttura={struttura} />
 
       <section>
         <h2 className="text-xl font-semibold text-slate-900">Contatti</h2>

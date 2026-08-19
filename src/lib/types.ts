@@ -50,6 +50,15 @@ export interface Struttura {
    */
   fonte_contatti?: Record<string, string> | null;
   contatti_aggiornati_il?: string | null;
+  /** Rette dalla carta dei servizi: privata in prezzo_min/prezzo_max, convenzionata a parte. */
+  retta_convenzionata_min?: number | null;
+  retta_convenzionata_max?: number | null;
+  retta_originale?: string | null;
+  costi_extra?: string | null;
+  carta_servizi_anno?: number | null;
+  carta_servizi_scaricata_il?: string | null;
+  retta_confidenza?: "alta" | "media" | null;
+  url_carta_servizi?: string | null;
   updated_at: string;
 }
 
