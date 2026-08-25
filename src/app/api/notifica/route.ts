@@ -26,33 +26,63 @@ function valore(record: Record<string, unknown>, campo: string): string {
   return String(dato);
 }
 
+/**
+ * Link alla tabella nella dashboard di Supabase, ricavato dal riferimento del
+ * progetto che sta gia nell'URL: `https://abcdefgh.supabase.co` -> `abcdefgh`.
+ * `NOTIFICA_DASHBOARD_URL` lo sostituisce, se un giorno servisse puntare
+ * altrove.
+ */
+function linkDashboard(tabella: string): string | null {
+  const esplicito = process.env.NOTIFICA_DASHBOARD_URL;
+  if (esplicito) return esplicito;
+
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const riferimento = url?.match(/^https:\/\/([a-z0-9]+)\.supabase\.co/i)?.[1];
+  if (!riferimento) return null;
+  return `https://supabase.com/dashboard/project/${riferimento}/editor?schema=public&table=${tabella}`;
+}
+
+/**
+ * La notifica dice che e arrivata una richiesta e da dove: nient'altro.
+ *
+ * Telegram e un servizio di terzi, e i messaggi restano sul telefono, sui
+ * server di Telegram e in ogni backup di quel telefono. Il recapito di una
+ * persona, e a maggior ragione la combinazione di recapito, tipo di assistenza
+ * cercata e budget, non ha ragione di finire li: e gia in una tabella con RLS,
+ * e da li si legge. Il messaggio serve a sapere che bisogna aprirla, non a
+ * sostituirla.
+ */
 function testoLead(record: Record<string, unknown>): string {
-  return [
+  const righe = [
     "🔔 Nuova richiesta su GuidaRSA",
     "",
     `Nome: ${valore(record, "nome")}`,
-    `Telefono: ${valore(record, "telefono")}`,
-    `Email: ${valore(record, "email")}`,
-    "",
     `Zona: ${valore(record, "zona")}`,
-    `Per chi: ${valore(record, "relazione")}`,
-    `Assistenza: ${valore(record, "tipo_assistenza")}`,
-    `Quando: ${valore(record, "tempistiche")}`,
-    `Budget: ${valore(record, "budget")}`,
-    "",
-    `Da: ${valore(record, "pagina_origine")}`,
-    `Condivisione con le strutture: ${record.consenso_condivisione ? "sì" : "no"}`,
-  ].join("\n");
+  ];
+
+  const link = linkDashboard("leads");
+  if (link) {
+    righe.push("", `Contatti e risposte: ${link}`);
+  }
+  righe.push("", `Riferimento riga: ${valore(record, "id")}`);
+
+  return righe.join("\n");
 }
 
 function testoIscritto(record: Record<string, unknown>): string {
-  return [
+  const righe = [
     "📄 Nuova iscrizione alla guida",
     "",
-    `Email: ${valore(record, "email")}`,
     `Risorsa: ${valore(record, "risorsa")}`,
-    `Da: ${valore(record, "origine")}`,
-  ].join("\n");
+  ];
+
+  const link = linkDashboard("iscritti");
+  if (link) {
+    righe.push("", `Indirizzo email: ${link}`);
+  }
+  righe.push("", `Riferimento riga: ${valore(record, "id")}`);
+
+  return righe.join("\n");
 }
 
 async function inviaTelegram(testo: string): Promise<string | null> {
