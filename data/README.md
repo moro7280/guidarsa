@@ -22,6 +22,8 @@ di origine cambia formato o ritira il dataset.
 | `lombardia-offerta-sociale.csv` | Regione Lombardia — Strutture di offerta sociale per anziani | https://www.dati.lombardia.it/d/i846-pq8q | 20/08/2026 | `opendata_lombardia_sociale` |
 | `umbria-anziani.csv` | Regione Umbria — Strutture sanitarie residenziali per anziani non autosufficienti | https://dati.regione.umbria.it | 20/08/2026 | `opendata_umbria` |
 | `toscana-rsa.json` | Regione Toscana — Portale RSA | https://servizi.toscana.it/RT/RSA/ | 20/08/2026 | `portale_rsa_toscana` |
+| `trentino-strutture.csv` | APSS Trento — Strutture sanitarie pubbliche e accreditate | https://dati.trentino.it/dataset/strutture-sanitarie-dell-azienda-sanitaria-e-convenzionate | 25/08/2026 | `opendata_trentino` |
+| `campania-rsa.csv` | Regione Campania — RSA accreditate | https://dati.regione.campania.it/ | 25/08/2026 | `opendata_campania` |
 | `istat-comuni.csv` | ISTAT — Codici delle unità amministrative territoriali | https://www.istat.it/it/archivio/6789 | 20/08/2026 | — (tabella di appoggio) |
 
 ## Note per fonte

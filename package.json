@@ -21,7 +21,9 @@
     "import:umbria": "node scripts/import-regione.mjs umbria",
     "import:toscana": "node scripts/import-regione.mjs toscana",
     "raccogli:toscana": "node scripts/raccogli/toscana.mjs",
-    "arricchisci:gestori": "node scripts/arricchisci-gestori.mjs"
+    "arricchisci:gestori": "node scripts/arricchisci-gestori.mjs",
+    "import:trentino": "node scripts/import-regione.mjs trentino",
+    "import:campania": "node scripts/import-regione.mjs campania"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.112.3",

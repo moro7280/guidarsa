@@ -142,7 +142,45 @@ volta e tenerlo come tabella di riferimento, non come import.
 
 ## 3. Veneto, Emilia-Romagna, Piemonte
 
-### Emilia-Romagna — la più promettente delle tre
+### Emilia-Romagna — endpoint trovato, il connettore è scrivibile
+
+**Aggiornamento del 25/08/2026: la ricognizione tecnica è chiusa, con esito positivo.**
+
+`reporter.regione.emilia-romagna.it` **non ha un robots.txt**: la richiesta risponde 302 e rimanda
+all'applicazione stessa. Il robots.txt del dominio regionale principale non contiene alcun
+divieto che ci riguardi — solo `crawl-delay` per gigabot e googlebot e qualche percorso di ricerca.
+Nessun ostacolo, quindi, ma nemmeno un permesso esplicito: le pause fra le richieste restano
+d'obbligo.
+
+Gli endpoint non erano nei chunk caricati all'avvio, perché la rotta `/flusso/` li carica in
+differita. Sono stati catturati dal traffico di rete della pagina:
+
+| Chiamata | Cosa fa |
+| --- | --- |
+| `GET /ReportERHomeService/methods/viewer/ViewerWizard?id=1001` | definizione del flusso: titolo «Banca dati sui Presidi socio-assistenziali», nome interno `PRS`, e tutti i filtri disponibili |
+| `POST /ReportERHomeService/methods/viewer/ViewerResult?id=1001` | **i dati**: elenco di record con recapiti, ente titolare ed ente gestore |
+
+I filtri del wizard sono a cascata e già codificati: `DII_507` provincia (le nove sigle
+emiliano-romagnole), `DII_508` distretto, `DII_509` **comune, per codice ISTAT**, `DII_686`
+denominazione in testo libero. Il che significa che la strategia di raccolta è la stessa della
+Toscana — si enumera per comune e si deduplica — e che il join con `istat-comuni.csv` funziona
+senza traduzioni.
+
+Ogni record restituito ha `title` (denominazione), `subTitle` con **la tipologia** e un `content`
+con codice struttura, indirizzo, telefono, email, azienda USL, distretto, ente titolare ed ente
+gestore completi di indirizzo e recapiti. Senza filtri il flusso restituisce tutti i presidi
+socio-assistenziali, compresi i centri antiviolenza: il filtro per tipologia è quindi obbligatorio,
+e va impostato prima ancora di contare le righe.
+
+Nell'interfaccia esiste anche un pulsante «Esporta Dati in formato ZIP», che vale la pena
+intercettare nella sessione del connettore: se produce un export completo, evita del tutto le
+richieste per comune.
+
+**Stima aggiornata: la mezza sessione di ricognizione è consumata e ha dato il risultato. Resta
+una sessione per il connettore**, con due incognite già circoscritte — il corpo esatto della POST
+e la tipologia da selezionare.
+
+### Emilia-Romagna — la ricognizione preliminare (20/08)
 
 Il dataset ufficiale esiste ed è censito: **«Banca dati sui Presidi socio-assistenziali della
 Regione Emilia-Romagna»**, licenza **CC-BY 2.5**, aggiornata 08/08/2025. Ma la sua unica risorsa
@@ -218,7 +256,7 @@ meglio una ricognizione che si chiude con «non trovato» che un connettore frag
 
 | Ondata | Quando | Contenuto | Perché |
 | --- | --- | --- | --- |
-| **3** | approvazione + GSC verde | **Trentino** (87) + ricognizione tecnica **Emilia-Romagna** | vittoria veloce e completa; apre la più promettente delle grandi |
+| **3** | ~~approvazione + GSC verde~~ **fatta il 25/08/2026** | **Trentino** (85 importate su 87) + **Campania** (34) + ricognizione tecnica **Emilia-Romagna**: endpoint trovato | vittoria veloce e completa; apre la più promettente delle grandi |
 | **4** | +7-14 gg | **Emilia-Romagna** connettore + **Calabria** (89) | la grande si chiude; la Calabria entra col giro OSM |
 | **5** | +7-14 gg | **Sicilia** (~225 + 42) + **Bolzano** (79) | due fonti proprie; Bolzano porta la riproiezione UTM, la Sicilia il trattamento-Umbria su `data_decreto` |
 | **6** | +7-14 gg | **Veneto**: ricognizione e, se va, connettore | la più incerta, affrontata quando il raccoglitore multi-sorgente è maturo |
