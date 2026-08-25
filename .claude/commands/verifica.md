@@ -65,3 +65,43 @@ A server avviato:
 - `.env.local` è escluso da git: verifica con `git check-ignore -v .env.local` e
   `git ls-files --error-unmatch .env.local`.
 - Gli script temporanei di verifica sono stati eliminati.
+
+## 5. Allineamento fra repo e produzione
+
+Il controllo che manca a tutti gli altri: qui sopra si verifica il sito **locale**,
+ma quello che vedono le famiglie e Google è il build su Vercel. La sitemap è
+dinamica e legge il database dal vivo, le pagine sono statiche e nascono al build:
+se il database cresce e il deploy non parte, la sitemap dichiara URL che
+rispondono 404, e nessuno degli altri controlli se ne accorge. È già successo con
+la Toscana, per cinque giorni.
+
+**Non fidarsi di `origin/main`**: è un ref locale e può essere vecchio. L'unica
+fonte attendibile è il server.
+
+```bash
+git ls-remote origin main           # verità dal server GitHub
+git rev-parse HEAD                  # commit locale
+curl -s https://guidarsa.it/api/versione/   # commit effettivamente distribuito
+```
+
+La **barra finale** non è un dettaglio: il sito usa `trailingSlash` e senza barra
+la richiesta riceve un 308, che letto di fretta sembra "rotta assente". È la
+stessa trappola documentata in `supabase/README.md` per il webhook.
+
+Tre confronti, tutti obbligatori:
+
+1. **GitHub = HEAD.** `git ls-remote origin main` deve restituire lo stesso SHA di
+   `git rev-parse HEAD`. Diverso ⇒ ci sono commit non pushati: dirlo e fermarsi.
+2. **Produzione = HEAD.** Il campo `commit` di `/api/versione` deve coincidere con
+   `HEAD`. Diverso ⇒ deploy non partito, fallito o ancora in corso. Se la rotta
+   risponde 404, la produzione è precedente all'introduzione di `/api/versione` e
+   quindi già disallineata.
+3. **Spot-check su una URL nuova.** Scegli in produzione almeno una URL che esiste
+   solo grazie ai dati o al codice di questa sessione — una pagina comune o una
+   scheda struttura della regione appena importata — e verifica che risponda
+   **200**, non solo che sia elencata nella sitemap. Confronta poi il numero di
+   URL della sitemap pubblica con quello della sitemap locale: se coincidono ma
+   una URL nuova dà 404, il database è avanti rispetto al build ed è esattamente
+   il guasto che questo controllo esiste per intercettare.
+
+Riporta i tre SHA per esteso: non è verificato finché non si vedono uguali.

@@ -42,6 +42,8 @@ nome, slug (unico), tipologia, indirizzo, cap, comune, provincia, regione, lat, 
 - Commit piccoli e frequenti; un task per sessione
 - Eseguire `npm run build` e sistemare gli errori prima di dichiarare concluso un task
 - Mai inventare dati sulle strutture: solo dati da fonti reali (open data regionali, Google Places API); i dati demo vanno marcati come tali
+- Ogni sessione che scrive sul database di produzione termina con push e deploy verificati: la sitemap è dinamica e le pagine sono statiche, quindi dati nuovi senza redeploy fanno dichiarare a Google URL che rispondono 404. Verificato significa controllato, non lanciato: `git ls-remote origin main` deve coincidere con `HEAD`, e la produzione deve servire quel commit
+- `/verifica` confronta il commit deployato (`/api/versione`) con `HEAD` e fa uno spot-check su una URL nuova in produzione, cioè una che esiste solo grazie ai dati o al codice di questa sessione
 
 ## Fonti dati
 - **Google Maps/Places non può essere usato per popolare o arricchire il database né per mostrare contenuti nella directory (vietato dai termini per i listing service); unico uso consentito nel progetto: autocomplete indirizzi nei form**
