@@ -54,12 +54,27 @@ struttura.
 **al giorno**. Le 54 rette che abbiamo oggi, estratte dalle carte dei servizi, sono mensili.
 Mescolarle senza accorgersene produrrebbe pagine che confrontano 112 € con 2.400 €.
 
-**Proposta:** riempire `prezzo_min` / `prezzo_max` con il mensile calcolato (giornaliera × 30,4) e
-salvare il valore dichiarato in `retta_originale`, colonna che già esiste, nella forma
-`"100,00–118,48 €/giorno (tariffa privata dichiarata al Portale RSA)"`. In pagina si mostra la
-giornaliera come dato della fonte e la mensile come stima esplicita. `retta_regime` distingue già
-privata e convenzionata, e qui **per la prima volta la Regione dichiara entrambe**: niente
-estrazione, niente confidenza "media".
+**Deciso e implementato:** `prezzo_min` / `prezzo_max` con il mensile calcolato a **30,44** giorni
+(365,25 / 12), il valore giornaliero dichiarato in `retta_originale`, `retta_confidenza = "alta"`
+perché il dato è della Regione e non estratto da un PDF. In pagina si mostrano entrambi, e la riga
+di disclosure dice esplicitamente che il mensile è calcolato.
+
+**Attenzione, qui la prima stesura del piano sbagliava.** Il portale ha due campi di quota e non
+sono intercambiabili. Il codice del portale li etichetta così, con parole sue:
+
+| Campo | Etichetta nel portale | Chi paga | Dove va da noi |
+| --- | --- | --- | --- |
+| `rsa_quota` | «Quota sociale (a carico dell'assistito)» | la famiglia | `retta_convenzionata_min/max` |
+| `rsa_quotasanitaria` | «Quota sanitaria (a carico del servizio sanitario)» | la Regione | solo nella descrizione, come contesto |
+
+Mettere la quota sanitaria fra le rette a carico della famiglia avrebbe pubblicato su 334 schede lo
+stesso identico importo — 59,10 € al giorno per tutte, perché è la tariffa regionale — presentando
+come costo per la famiglia esattamente la parte che la famiglia **non** paga. La quota sociale,
+invece, varia davvero: 81 valori distinti fra 42 e 75 € al giorno.
+
+**Valori anomali.** Sei strutture dichiarano tariffe private fra 1.075 e 11.025 € **al giorno**:
+quasi certamente importi mensili finiti nel campo sbagliato. Indovinare sarebbe inventare, quindi
+il mapping scarta tutto ciò che sta fuori da 40–350 € al giorno e lo stampa nel report dell'import.
 
 ### 2. Cosa non importiamo, e perché
 
@@ -72,7 +87,67 @@ estrazione, niente confidenza "media".
   su pagine statiche significa mostrare a settembre la disponibilità di agosto. Meglio niente.
 - **Servizi con giorni e orari**: ricchissimi, ma sono la sessione dopo. Prima le rette e i contatti.
 
-### 3. La licenza va confermata
+### 3. La licenza: come procediamo, e come si torna indietro
+
+**Decisione presa il 20/08/2026:** si procede citando la fonte in ogni scheda, in attesa della
+conferma formale della Regione. Le righe restano isolabili perché hanno un `fonte_dati` dedicato.
+
+**In caso di diniego, il ritiro è una query.** Non serve un intervento sul codice né una
+ricostruzione: le 334 righe si tolgono con
+
+```sql
+delete from public.strutture where fonte_dati = 'portale_rsa_toscana';
+```
+
+seguita da un nuovo deploy, che rigenera sitemap e pagine senza la Toscana. Le pagine comune
+toscane spariscono da sole, perché una pagina comune esiste solo se contiene almeno una struttura.
+Nessun'altra fonte viene toccata. Va cancellato anche lo snapshot `data/toscana-rsa.json`.
+
+### La bozza da mandare all'URP
+
+Da inviare da `info@guidarsa.it` all'URP di Regione Toscana (`urp@regione.toscana.it`), oppure via
+PEC a `regionetoscana@postacert.toscana.it`.
+
+> **Oggetto:** Richiesta di conferma della licenza di riutilizzo dei dati del Portale RSA
+> (LR 19/2015)
+>
+> Spettabile Ufficio Relazioni con il Pubblico,
+>
+> sono Moreno Pascucci, titolare del sito GuidaRSA (https://guidarsa.it), una directory
+> informativa gratuita delle strutture per anziani in Italia rivolta alle famiglie che devono
+> scegliere una residenza per un familiare.
+>
+> Il Portale RSA di Regione Toscana (https://servizi.toscana.it/RT/RSA/) espone i dati delle
+> strutture residenziali attraverso due endpoint JSON pubblici e non protetti
+> (`Comuni.json` e `Lista.json`), raggiungibili senza autenticazione e non esclusi dal file
+> robots.txt del dominio `servizi.toscana.it`.
+>
+> Vorrei riutilizzare tali dati — denominazione, indirizzo, recapiti, quota sociale a carico
+> dell'assistito e tariffa privata dichiarate — per pubblicarli sul mio sito, con citazione
+> esplicita della fonte in ogni scheda e con il rimando al portale regionale per la verifica
+> della disponibilità aggiornata.
+>
+> Chiedo cortesemente conferma di quanto segue:
+>
+> 1. che i dati del Portale RSA rientrino fra i dati aperti riutilizzabili ai sensi della
+>    **legge regionale 18 febbraio 2015, n. 19** («Disposizioni in materia di dati aperti e
+>    loro riutilizzo») e dell'art. 52 del Codice dell'amministrazione digitale;
+> 2. quale sia la **licenza applicabile** e la formula di attribuzione che la Regione preferisce
+>    veda pubblicata (ad esempio CC-BY 4.0, come per i dataset del catalogo dati.toscana.it);
+> 3. se vi siano **limiti di frequenza** nell'interrogazione degli endpoint che dovrei rispettare.
+>    Attualmente effettuo una raccolta completa con una pausa di 300 millisecondi fra le richieste,
+>    per un totale di circa 276 chiamate, non più di una volta al mese.
+>
+> Preciso che non ripubblico fotografie, brochure né i dati del direttore sanitario, e che non
+> pubblico i posti liberi, rimandando per quelli al portale regionale.
+>
+> Resto a disposizione per qualsiasi chiarimento e, in caso di riscontro negativo o di condizioni
+> particolari, provvederò tempestivamente a rimuovere i dati.
+>
+> Cordiali saluti,
+> Moreno Pascucci — GuidaRSA — info@guidarsa.it
+
+### 3-bis. I fatti su cui poggia la decisione
 
 - `servizi.toscana.it/robots.txt` vieta solo `/cgi-bin/`: gli endpoint sono liberamente
   interrogabili e la regola di CLAUDE.md sul rispetto di robots.txt è soddisfatta.
@@ -132,24 +207,38 @@ Da valutare anche l'alternativa: gli elenchi delle strutture autorizzate e accre
 in PDF su `salute.regione.veneto.it`, meno comodi ma ufficiali.
 **Stima: una sessione per la ricognizione, una per il connettore.**
 
-## Passi della sessione Toscana
+## Esito della sessione Toscana — 20/08/2026
 
-1. **Raccolta** — `scripts/raccogli/toscana.mjs`: scarica `Comuni.json`, poi `Lista.json` per i 276
-   comuni con un ritardo di ~300 ms fra le richieste e un `User-Agent` che ci identifica; deduplica
-   per `id`; decodifica `json_data`; scrive `data/toscana-rsa.json` e un riepilogo di quante
-   strutture, quanti comuni coperti, quante senza tariffa.
-2. **Verifica del raccolto** — quante strutture in totale (attese circa 400), quante attive
-   (`rsa_attiva = 1`), distribuzione per provincia, quante con tariffa privata e con quota
-   sanitaria, quali comuni non ne hanno nessuna.
-3. **Mapping** — `scripts/mapping/toscana.mjs`. Comune e provincia dal codice ISTAT tramite
-   `scripts/lib/istat.mjs`, che esiste già. `convenzionata` dal campo `accordo`. `nucleo_alzheimer`
-   dal modulo cognitivo comportamentale. Rette come al punto 1 delle decisioni.
-4. **Prova a vuoto** — `node scripts/import-regione.mjs toscana --prova`, controllo dei nomi
-   normalizzati e delle collisioni di slug.
-5. **Import**, poi `npm run build`, `/verifica` completo, commit.
-6. **Nella stessa sessione o subito dopo:** la pagina di attribuzione, sul modello di `/dati/osm`,
-   e la formula di disclosure delle rette adattata a questa fonte — "Fonte: Portale RSA Regione
-   Toscana, dato aggiornato il [rsa_data_aggiornamento]" al posto di "carta dei servizi [anno]".
+Eseguito. Quello che è stato scritto:
+
+| File | Ruolo |
+| --- | --- |
+| `scripts/raccogli/toscana.mjs` | interroga i 276 comuni, deduplica, decodifica `json_data`, scrive lo snapshot |
+| `data/toscana-rsa.json` | snapshot datato, versionato nel repo |
+| `scripts/mapping/toscana.mjs` | colonne del portale → nostro schema |
+| `src/components/DisponibilitaPortale.tsx` | rimando al portale per i posti liberi |
+| `src/components/BloccoRette.tsx` | disclosure delle rette consapevole della fonte |
+| `scripts/import-regione.mjs` | sa leggere anche fonti JSON, non solo CSV |
+
+**334 strutture**, tutte attive, in **155 comuni** e in tutte e 10 le province. Copertura: telefono
+325, email 330, sito 234, PEC 286, coordinate 334, posti 332, quota sociale 334, tariffa privata
+270. Il dato più recente è aggiornato al **19/08/2026, il giorno prima della raccolta**; il più
+vecchio al 2018, e per quelle poche schede la regola dei due anni fa già scattare la dicitura
+«tariffa storica».
+
+Due cose emerse solo scrivendo il connettore, oltre allo scambio fra le due quote:
+
+- **Il telefono giusto è `telefono_rsa`, non `telefono_sede`.** Su 334 strutture i due numeri
+  differiscono **171 volte**, e la sede legale è spesso il centralino di un gruppo in un'altra
+  provincia: la prima versione del mapping dava a una RSA di Camaiore un numero di Firenze. È lo
+  stesso errore già corretto in passato sui siti ufficiali, ricomparso da un'altra porta.
+- **Il portale non ha un indirizzo per singola struttura.** L'applicazione non legge parametri
+  dall'URL: qualsiasi `?id=` viene ignorato. Il rimando alla disponibilità porta quindi alla
+  ricerca del portale e il testo dice quale comune cercare — un link finto sarebbe stato peggio.
+
+**Resta da fare:** inviare la richiesta all'URP (bozza qui sopra) e valutare la pagina di
+attribuzione sul modello di `/dati/osm`, che con più fonti in CC-BY comincia ad avere senso come
+pagina unica delle provenienze.
 
 ## Rischi
 

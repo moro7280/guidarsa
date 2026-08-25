@@ -21,6 +21,7 @@ di origine cambia formato o ritira il dataset.
 | `lombardia-cdi.csv` | Regione Lombardia — Centri Diurni Integrati accreditati per anziani | https://www.dati.lombardia.it/d/rs6k-vuhs | 20/08/2026 | `opendata_lombardia_cdi` |
 | `lombardia-offerta-sociale.csv` | Regione Lombardia — Strutture di offerta sociale per anziani | https://www.dati.lombardia.it/d/i846-pq8q | 20/08/2026 | `opendata_lombardia_sociale` |
 | `umbria-anziani.csv` | Regione Umbria — Strutture sanitarie residenziali per anziani non autosufficienti | https://dati.regione.umbria.it | 20/08/2026 | `opendata_umbria` |
+| `toscana-rsa.json` | Regione Toscana — Portale RSA | https://servizi.toscana.it/RT/RSA/ | 20/08/2026 | `portale_rsa_toscana` |
 | `istat-comuni.csv` | ISTAT — Codici delle unità amministrative territoriali | https://www.istat.it/it/archivio/6789 | 20/08/2026 | — (tabella di appoggio) |
 
 ## Note per fonte
@@ -31,6 +32,10 @@ di origine cambia formato o ritira il dataset.
 - **`umbria-anziani.csv`** è in **windows-1252**, non in UTF-8, e non contiene il nome del comune
   ma il codice ISTAT: per questo serve `istat-comuni.csv`. I dati sono la rilevazione ministeriale
   dell'**anno 2020**, la più recente che la Regione pubblichi.
+- **`toscana-rsa.json`** non si scarica con un comando: è composto da
+  `scripts/raccogli/toscana.mjs`, che interroga il servizio del Portale RSA un comune alla volta
+  (276 richieste, ~300 ms l'una) e deduplica le strutture per `id`. Contiene anche il blocco
+  `dettaglio`, cioè il campo `json_data` del portale già decodificato da base64.
 - **`istat-comuni.csv`** non è una fonte di strutture: è la tabella che traduce i codici comune in
   nome, provincia e regione. Serve a ogni fonte che identifichi i comuni per codice. È anch'esso in
   windows-1252.

@@ -1,5 +1,6 @@
-import type { Struttura } from "@/lib/types";
+import { FONTI_DIRETTE } from "@/lib/fonti";
 import { numero } from "@/lib/formato";
+import type { Struttura } from "@/lib/types";
 
 /**
  * Rette in pagina. Regole permanenti (CLAUDE.md):
@@ -41,6 +42,7 @@ export function BloccoRette({ struttura }: { struttura: Struttura }) {
   const storica = anno !== null && new Date().getFullYear() - anno > ANNI_PER_STORICA;
   const controllo = dataItaliana(struttura.carta_servizi_scaricata_il);
   const regimeNonNoto = struttura.retta_regime === "non_specificato";
+  const diretta = FONTI_DIRETTE[struttura.fonte_dati ?? ""] ?? null;
 
   return (
     <section className="overflow-hidden rounded-lg border border-sabbia bg-sabbia-tenue">
@@ -108,22 +110,52 @@ export function BloccoRette({ struttura }: { struttura: Struttura }) {
         </strong>{" "}
         {storica &&
           "Il documento da cui proviene ha più di due anni e le tariffe possono essere cambiate. "}
-        Fonte: carta dei servizi{anno ? ` ${anno}` : ""}
-        {controllo ? `, ultimo controllo ${controllo}` : ""}
-        {struttura.url_carta_servizi && (
+        {diretta ? (
           <>
-            {" — "}
-            <a
-              href={struttura.url_carta_servizi}
-              className="text-verde underline underline-offset-4"
-              rel="nofollow noopener"
-              target="_blank"
-            >
-              documento originale
-            </a>
+            Fonte: {diretta.nome}
+            {controllo ? `, dato aggiornato il ${controllo}` : ""}
+            {diretta.url && (
+              <>
+                {" — "}
+                <a
+                  href={diretta.url}
+                  className="text-verde underline underline-offset-4"
+                  rel="nofollow noopener"
+                  target="_blank"
+                >
+                  elenco regionale
+                </a>
+              </>
+            )}
+            {/* Il punto sta dentro il ramo: fuori, JSX ci mette uno spazio davanti. */}
+            {"."}
+          </>
+        ) : (
+          <>
+            Fonte: carta dei servizi{anno ? ` ${anno}` : ""}
+            {controllo ? `, ultimo controllo ${controllo}` : ""}
+            {struttura.url_carta_servizi && (
+              <>
+                {" — "}
+                <a
+                  href={struttura.url_carta_servizi}
+                  className="text-verde underline underline-offset-4"
+                  rel="nofollow noopener"
+                  target="_blank"
+                >
+                  documento originale
+                </a>
+              </>
+            )}
+            {"."}
           </>
         )}
-        .{struttura.retta_originale && ` Valore riportato nel documento: ${struttura.retta_originale}.`}
+        {struttura.retta_originale &&
+          ` ${
+            diretta ? "Valori dichiarati alla Regione" : "Valore riportato nel documento"
+          }: ${struttura.retta_originale}.`}
+        {diretta &&
+          " Gli importi mensili qui sopra sono calcolati dalle tariffe giornaliere, moltiplicate per 30,44 giorni medi."}
       </div>
     </section>
   );

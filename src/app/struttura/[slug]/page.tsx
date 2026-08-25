@@ -6,6 +6,7 @@ import { AttribuzioneOsm } from "@/components/AttribuzioneOsm";
 import { BloccoRette } from "@/components/BloccoRette";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { BarraMobile, CtaStruttura, PadPerBarra } from "@/components/Cta";
+import { DisponibilitaPortale } from "@/components/DisponibilitaPortale";
 import { JsonLd } from "@/components/JsonLd";
 import { indicizzabile } from "@/lib/completezza";
 import { percorsi } from "@/lib/percorsi";
@@ -175,6 +176,8 @@ export default async function PaginaStruttura({
       </section>
 
       <BloccoRette struttura={struttura} />
+
+      <DisponibilitaPortale struttura={struttura} />
 
       <section>
         <h2 className="font-serif text-xl font-semibold">La struttura</h2>

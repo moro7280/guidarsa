@@ -87,6 +87,27 @@ function leggiCsv(percorso) {
   );
 }
 
+/**
+ * Fonti che non arrivano in CSV. La Toscana e la prima: le sue strutture stanno
+ * dietro un servizio JSON e il file locale lo compone
+ * `scripts/raccogli/toscana.mjs`. Da qui in avanti e una lista di record come
+ * le altre.
+ */
+function leggiJson(percorso) {
+  const contenuto = JSON.parse(readFileSync(percorso, "utf8"));
+  const righe = fonte.chiaveRighe ? contenuto[fonte.chiaveRighe] : contenuto;
+  if (!Array.isArray(righe)) {
+    throw new Error(
+      `In ${percorso} non trovo un elenco alla chiave "${fonte.chiaveRighe ?? "(radice)"}".`,
+    );
+  }
+  return righe;
+}
+
+function leggiFonte() {
+  return fonte.formato === "json" ? leggiJson(fonte.file) : leggiCsv(fonte.file);
+}
+
 // --- Slug -------------------------------------------------------------------
 
 function slugify(valore) {
@@ -113,7 +134,7 @@ console.log(`Fonte: ${fonte.nome}`);
 console.log(`File:  ${fonte.file} (scaricato il ${fonte.scaricatoIl})`);
 if (prova) console.log("Modalita PROVA: nessuna scrittura su Supabase.");
 
-const righe = leggiCsv(fonte.file);
+const righe = leggiFonte();
 console.log(`Righe lette: ${righe.length}\n`);
 
 const scartate = [];
