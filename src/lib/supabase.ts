@@ -14,6 +14,36 @@ import { createClient, type SupabaseClient } from "@supabase/supabase-js";
 let clientAnonimo: SupabaseClient | null = null;
 
 /**
+ * Impronta della build corrente, mandata come header a ogni query.
+ *
+ * Serve a impedire che una build prerenderizzi dati vecchi. Next mette in cache
+ * le fetch dentro `.next/cache` e la riusa fra una build e l'altra — Vercel la
+ * ripristina apposta fra un deploy e il successivo. Dopo un import succede
+ * allora che `generateStaticParams`, ricalcolato, elenchi le pagine nuove
+ * mentre il corpo della pagina legge dalla cache i dati di prima, non trova la
+ * provincia e chiama `notFound()`: la rotta entra nel manifest ma il file
+ * prerenderizzato e una 404, e la sitemap — che e force-dynamic e quindi
+ * sempre fresca — annuncia quelle URL a Google. È successo davvero, in locale,
+ * con Trentino e Campania: pagine regione a 200 e pagine provincia a 404.
+ *
+ * L'header entra nella chiave di cache di Next, quindi cambiarlo a ogni deploy
+ * invalida tutto quanto senza disattivare niente. Non si puo usare
+ * `cache: "no-store"`: Next rifiuta di prerenderizzare una pagina che legge
+ * senza cache, e la build fallisce con "Dynamic server usage".
+ *
+ * PostgREST ignora gli header che non conosce, quindi per Supabase e inerte.
+ * Il costo e nullo: `tutte()` memoizza il risultato, quindi ogni processo di
+ * build fa una manciata di query, non una per pagina.
+ */
+const IMPRONTA_BUILD =
+  process.env.VERCEL_DEPLOYMENT_ID ??
+  process.env.VERCEL_GIT_COMMIT_SHA ??
+  // In locale non esiste un identificativo di deploy: si usa l'avvio del
+  // processo, cosi ogni `npm run build` riparte pulito senza dover cancellare
+  // .next a mano — che e il rimedio che ci si ricorda solo dopo il danno.
+  `locale-${Date.now()}`;
+
+/**
  * Client con chiave anon: legge i dati pubblici e inserisce lead e iscritti.
  *
  * Le due variabili vanno lette con accesso STATICO — `process.env.NOME` scritto
@@ -33,7 +63,9 @@ export function getSupabaseClient(): SupabaseClient {
       );
     }
 
-    clientAnonimo = createClient(url, chiave);
+    clientAnonimo = createClient(url, chiave, {
+      global: { headers: { "x-build": IMPRONTA_BUILD } },
+    });
   }
   return clientAnonimo;
 }
