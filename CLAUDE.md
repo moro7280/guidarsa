@@ -29,6 +29,7 @@ nome, slug (unico), tipologia, indirizzo, cap, comune, provincia, regione, lat, 
 - Nessuna pagina si pubblica con contenuto sotto le 100 parole utili: meglio non pubblicarla
 - Ogni retta mostrata dichiara la natura del dato: "Fonte: carta dei servizi [anno], ultimo controllo [data]" con link al documento originale sul sito della struttura, più la dicitura "tariffa indicativa: verificare con la struttura"; se la carta ha più di 2 anni la dicitura diventa "tariffa storica"
 - Rette convenzionate e rette private si mostrano sempre distinte, con etichette esplicite: mai mescolate né presentate come un unico prezzo
+- Medie e mediane si calcolano e pubblicano solo entro la stessa fonte e lo stesso concetto tariffario; nessun confronto tra regioni o fonti diverse senza nota metodologica esplicita (un mensile letto in una carta dei servizi e un mensile calcolato da una tariffa giornaliera dichiarata alla Regione non sono la stessa grandezza: dove convivono, le popolazioni si mostrano separate)
 - Ogni pagina ha title, meta description e H1 unici, generati dai dati (mai duplicati)
 - JSON-LD schema.org su ogni scheda struttura (LocalBusiness) e su ogni guida (Article + breadcrumb)
 - Sitemap.xml dinamica, divisa per tipo di pagina; robots.txt corretto

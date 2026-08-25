@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { euro, numero } from "@/lib/formato";
-import type { Statistiche } from "@/lib/statistiche";
+import type { RettePerFonte, Statistiche } from "@/lib/statistiche";
 
 /**
  * Panoramica di un territorio: numeri, testo che li spiega, e i comuni dove si
@@ -51,7 +51,7 @@ export function PanoramicaLuogo({
           virgola. In italiano è un errore tipografico che si nota. */}
       <div className="flex max-w-[68ch] flex-col gap-3 leading-relaxed text-inchiostro-medio">
         <p>{frasePanoramica(stat, luogo, tipologiaInFrase, livelloComuni)}</p>
-        <p>{fraseRette(stat)}</p>
+        <Rette stat={stat} />
         {fraseContatti(stat) && <p>{fraseContatti(stat)}</p>}
       </div>
 
@@ -126,26 +126,102 @@ function frasePanoramica(
   return parti.join("");
 }
 
-function fraseRette(stat: Statistiche): string {
-  if (stat.rettaMediana === null) {
-    return "Per queste strutture non abbiamo ancora rette documentate: le pubblichiamo solo quando la struttura le rende disponibili nella propria carta dei servizi, senza stimarle.";
+/**
+ * Le rette del territorio.
+ *
+ * Con una sola fonte si riassumono in una frase. Con piu fonti no: la regola
+ * sui prezzi in CLAUDE.md vieta la mediana unica, perche un mensile letto in
+ * una carta dei servizi e un mensile calcolato da una tariffa giornaliera
+ * dichiarata alla Regione non misurano la stessa cosa. In quel caso la pagina
+ * mostra le popolazioni separate e dice perche.
+ */
+function Rette({ stat }: { stat: Statistiche }) {
+  if (stat.rettePerFonte.length === 0) {
+    return (
+      <p>
+        Per queste strutture non abbiamo ancora rette documentate: le pubblichiamo solo quando la
+        fonte le rende disponibili, senza stimarle.
+      </p>
+    );
   }
 
-  const parti = [
-    `Abbiamo la retta documentata per ${numero(stat.conRetta)} ${stat.conRetta === 1 ? "struttura" : "strutture"}: va da ${euro(stat.rettaMin as number)} a ${euro(stat.rettaMax as number)} al mese, con un valore mediano di ${euro(stat.rettaMediana)}.`,
-  ];
+  if (stat.rettePerFonte.length === 1) {
+    return <p>{fraseFonteUnica(stat.rettePerFonte[0])}</p>;
+  }
 
-  if (stat.convenzionataMediana !== null) {
+  const totale = stat.rettePerFonte.reduce((somma, voce) => somma + voce.strutture, 0);
+
+  return (
+    <>
+      <p>
+        {`Abbiamo rette documentate per ${numero(totale)} strutture, da fonti che non misurano la stessa cosa: restano separate, perché una mediana unica confonderebbe due grandezze diverse.`}
+      </p>
+      <ul className="flex list-disc flex-col gap-2 pl-5">
+        {stat.rettePerFonte.map((voce) => (
+          <li key={voce.fonte.chiave}>{fraseVoce(voce)}</li>
+        ))}
+      </ul>
+      <p>
+        {`Il valore di sintesi si legge sulle pagine regionali, dove la fonte è una sola.${notaMetodo(stat.rettePerFonte)}`}
+      </p>
+    </>
+  );
+}
+
+function fraseFonteUnica(voce: RettePerFonte): string {
+  const parti: string[] = [];
+
+  if (voce.privataMediana !== null) {
     parti.push(
-      ` La quota a carico dell'ospite in regime convenzionato ha una mediana di ${euro(stat.convenzionataMediana)} al mese.`,
+      `Abbiamo la retta documentata per ${numero(voce.privataN)} ${voce.privataN === 1 ? "struttura" : "strutture"}: va da ${euro(voce.privataMin as number)} a ${euro(voce.privataMax as number)} al mese, con un valore mediano di ${euro(voce.privataMediana)}.`,
+    );
+  }
+
+  if (voce.convenzionataMediana !== null) {
+    parti.push(
+      `${parti.length ? " " : ""}La quota a carico dell'ospite in regime convenzionato ha una mediana di ${euro(voce.convenzionataMediana)} al mese, su ${numero(voce.convenzionataN)} ${voce.convenzionataN === 1 ? "struttura" : "strutture"}.`,
     );
   }
 
   parti.push(
-    " Sono tariffe prese dalle carte dei servizi pubblicate dalle strutture stesse: indicative, da verificare al momento del contatto.",
+    ` Sono tariffe ${voce.fonte.inFrase}: indicative, da verificare al momento del contatto.`,
   );
+  if (voce.fonte.mensileCalcolato) {
+    parti.push(
+      " Gli importi mensili sono calcolati dalle tariffe giornaliere dichiarate, moltiplicate per 30,44 giorni medi.",
+    );
+  }
 
   return parti.join("");
+}
+
+function fraseVoce(voce: RettePerFonte): string {
+  const parti = [`${maiuscola(voce.fonte.breve)}, ${numero(voce.strutture)} strutture: `];
+
+  if (voce.privataMediana !== null) {
+    parti.push(
+      `retta a carico dell'ospite da ${euro(voce.privataMin as number)} a ${euro(voce.privataMax as number)} al mese, mediana ${euro(voce.privataMediana)}`,
+    );
+  } else {
+    parti.push("nessuna tariffa privata dichiarata");
+  }
+
+  if (voce.convenzionataMediana !== null) {
+    parti.push(
+      `; in regime convenzionato la mediana è ${euro(voce.convenzionataMediana)} al mese su ${numero(voce.convenzionataN)} strutture`,
+    );
+  }
+  parti.push(".");
+
+  return parti.join("");
+}
+
+/** Perche le popolazioni non si sommano: si dice, non si lascia intuire. */
+function notaMetodo(voci: RettePerFonte[]): string {
+  const calcolate = voci.filter((voce) => voce.fonte.mensileCalcolato);
+  if (calcolate.length === 0) return "";
+  const nomi = calcolate.map((voce) => voce.fonte.nome).join(" e ");
+  return ` Le tariffe che arrivano dagli elenchi regionali (${nomi}) nascono giornaliere e qui sono moltiplicate per 30,44 giorni medi, mentre le carte dei servizi dichiarano importi già mensili, che comprendono voci diverse.`;
 }
 
 function fraseContatti(stat: Statistiche): string | null {

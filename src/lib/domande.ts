@@ -10,6 +10,67 @@ import type { Statistiche } from "./statistiche";
  * database. Se un dato non ce l'abbiamo, la risposta lo dice invece di girarci
  * intorno: e la stessa regola che vale per le schede.
  */
+/**
+ * "Quanto costa" e la domanda che porta il traffico, ed e anche quella dove si
+ * sbaglia piu facilmente: basta sommare due popolazioni tariffarie diverse per
+ * rispondere con un numero che non descrive nessuna delle due. Finche la fonte
+ * e una sola la risposta e una mediana; quando sono piu di una la risposta le
+ * tiene separate e dice da dove vengono (regola sui prezzi in CLAUDE.md).
+ */
+function rispostaRette(stat: Statistiche): string {
+  if (stat.rettePerFonte.length === 0) {
+    return "Non abbiamo ancora rette documentate per questo territorio: pubblichiamo un prezzo solo quando la fonte lo rende disponibile, senza stimarlo.";
+  }
+
+  if (stat.rettePerFonte.length === 1) {
+    const voce = stat.rettePerFonte[0];
+    const parti: string[] = [];
+    if (voce.privataMediana !== null) {
+      parti.push(
+        `Le rette documentate vanno da ${euro(voce.privataMin as number)} a ${euro(
+          voce.privataMax as number,
+        )} al mese, con un valore mediano di ${euro(voce.privataMediana)}, su ${numero(
+          voce.privataN,
+        )} strutture.`,
+      );
+    }
+    if (voce.convenzionataMediana !== null) {
+      parti.push(
+        `${parti.length ? " " : ""}In regime convenzionato la quota a carico dell'ospite ha una mediana di ${euro(
+          voce.convenzionataMediana,
+        )} al mese, su ${numero(voce.convenzionataN)} strutture.`,
+      );
+    }
+    parti.push(
+      ` Sono tariffe ${voce.fonte.inFrase}: indicative, da verificare con la struttura al momento del contatto.`,
+    );
+    if (voce.fonte.mensileCalcolato) {
+      parti.push(
+        " Gli importi mensili sono calcolati dalle tariffe giornaliere dichiarate, moltiplicate per 30,44 giorni medi.",
+      );
+    }
+    return parti.join("");
+  }
+
+  const elenco = stat.rettePerFonte
+    .map((voce) => {
+      const privata =
+        voce.privataMediana !== null
+          ? `da ${euro(voce.privataMin as number)} a ${euro(
+              voce.privataMax as number,
+            )} al mese, mediana ${euro(voce.privataMediana)}`
+          : "nessuna tariffa privata dichiarata";
+      const convenzionata =
+        voce.convenzionataMediana !== null
+          ? `, con mediana in regime convenzionato di ${euro(voce.convenzionataMediana)} al mese`
+          : "";
+      return `${voce.fonte.breve} (${numero(voce.strutture)} strutture): ${privata}${convenzionata}`;
+    })
+    .join("; ");
+
+  return `Le rette che abbiamo per questo territorio vengono da fonti diverse, che non misurano la stessa cosa, quindi non le riassumiamo in un unico valore: ${elenco}. Le tariffe raccolte dai portali regionali sono dichiarate al giorno e qui convertite in mensile moltiplicandole per 30,44 giorni medi; quelle delle carte dei servizi sono già mensili e comprendono voci diverse. Per un valore di sintesi conviene guardare le pagine regionali, dove la fonte è una sola.`;
+}
+
 export function domandeLuogo(
   stat: Statistiche,
   {
@@ -40,20 +101,7 @@ export function domandeLuogo(
     },
     {
       domanda: `Quanto costa una struttura per anziani ${luogo}?`,
-      risposta:
-        stat.rettaMediana !== null
-          ? `Le rette documentate vanno da ${euro(stat.rettaMin as number)} a ${euro(
-              stat.rettaMax as number,
-            )} al mese, con un valore mediano di ${euro(stat.rettaMediana)}, su ${numero(
-              stat.conRetta,
-            )} strutture di cui abbiamo la carta dei servizi.${
-              stat.convenzionataMediana !== null
-                ? ` In regime convenzionato la quota a carico dell'ospite ha una mediana di ${euro(
-                    stat.convenzionataMediana,
-                  )} al mese.`
-                : ""
-            } Sono tariffe indicative, da verificare con la struttura al momento del contatto.`
-          : `Non abbiamo ancora rette documentate per questo territorio: pubblichiamo un prezzo solo quando la struttura lo rende disponibile nella propria carta dei servizi, senza stimarlo.`,
+      risposta: rispostaRette(stat),
     },
     {
       domanda: `Quante ${tipologiaInFrase} sono convenzionate ${luogo}?`,
