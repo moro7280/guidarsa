@@ -44,6 +44,8 @@ nome, slug (unico), tipologia, indirizzo, cap, comune, provincia, regione, lat, 
 - Mai inventare dati sulle strutture: solo dati da fonti reali (open data regionali, Google Places API); i dati demo vanno marcati come tali
 - Ogni sessione che scrive sul database di produzione termina con push e deploy verificati: la sitemap è dinamica e le pagine sono statiche, quindi dati nuovi senza redeploy fanno dichiarare a Google URL che rispondono 404. Verificato significa controllato, non lanciato: `git ls-remote origin main` deve coincidere con `HEAD`, e la produzione deve servire quel commit
 - `/verifica` confronta il commit deployato (`/api/versione`) con `HEAD` e fa uno spot-check su una URL nuova in produzione, cioè una che esiste solo grazie ai dati o al codice di questa sessione
+- Dopo ogni modifica alle variabili d'ambiente la verifica di produzione include le **sonde runtime**, mai solo pagine statiche: le pagine statiche sono state generate prima della modifica e risponderebbero 200 anche con una credenziale morta. Le sonde sono `/sitemap.xml` e `/dati/osm/`, che leggono il database a ogni richiesta; la sitemap si controlla per prima
+- Le migrazioni di credenziali si chiudono con `/verifica` completo, non con script ad hoc: uno script scritto per l'occasione prova quello che chi lo scrive si aspetta, e non ciò che ha dimenticato
 
 ## Fonti dati
 - **Google Maps/Places non può essere usato per popolare o arricchire il database né per mostrare contenuti nella directory (vietato dai termini per i listing service); unico uso consentito nel progetto: autocomplete indirizzi nei form**

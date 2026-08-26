@@ -105,3 +105,40 @@ Tre confronti, tutti obbligatori:
    il guasto che questo controllo esiste per intercettare.
 
 Riporta i tre SHA per esteso: non è verificato finché non si vedono uguali.
+
+### Sonde runtime — obbligatorie dopo ogni modifica alle variabili d'ambiente
+
+Le pagine statiche **non provano niente** su una credenziale appena cambiata: sono
+state scritte su disco al build precedente e rispondono 200 anche quando la chiave
+che le ha generate è stata revocata. È successo davvero, durante la migrazione alle
+nuove API key di Supabase: tutto il sito a 200 e la sitemap a 500 per un'ora, senza
+che nessun controllo se ne accorgesse.
+
+Servono quindi rotte che leggano il database **a ogni richiesta**. Sono due, e la
+prima si controlla prima di ogni altra cosa:
+
+```bash
+curl -s -o /dev/null -w "%{http_code}\n" https://guidarsa.it/sitemap.xml
+curl -s -o /dev/null -w "%{http_code}\n" https://guidarsa.it/dati/osm/
+```
+
+Entrambe devono rispondere **200**, e la sitemap deve contenere un numero di URL
+coerente con quello locale. Un 500 su queste due con le pagine a 200 significa
+sempre la stessa cosa: la produzione non riesce più a leggere il database.
+
+**Per dimostrare che è la chiave di Vercel a leggere, e non quella locale:**
+`/sitemap.xml` è `force-dynamic`, quindi Vercel la costruisce a ogni richiesta con
+la chiave del **suo** ambiente. Si estraggono i `<lastmod>` di alcune schede dalla
+sitemap di produzione e si confrontano con `updated_at` letto in locale **con la
+secret**, che è una chiave diversa: se coincidono al millisecondo, la chiave di
+Vercel sta leggendo le stesse righe vive con gli stessi privilegi. Scegliere il
+campione **fra le schede presenti in sitemap**, non a caso: quelle sotto la soglia
+di completezza non ci sono per costruzione, e la loro assenza non è un guasto.
+
+### Migrazioni di credenziali
+
+Una migrazione di credenziali non si chiude con uno script scritto per l'occasione:
+si chiude con questo `/verifica` per intero. Uno script ad hoc verifica ciò che chi
+lo scrive si aspetta, e per definizione non copre ciò che ha dimenticato — durante
+la migrazione Supabase le prove ad hoc erano tutte verdi mentre la produzione era
+rotta, perché nessuna di esse interrogava una rotta runtime.
