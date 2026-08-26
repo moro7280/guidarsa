@@ -1,0 +1,773 @@
+TIPOLOGIA_STRUTTURA;ASP;DENOMINAZIONE_STRUTTURA;INDIRIZZO_SEDE_OPERATIVA;CITTA';SOGGETTO_GESTORE;INDIRIZZO_SEDE_LEGALE;NUMERO_TELEFONO;PEC;PROVVEDIMENTO_DI_ACCREDITAMENTO
+RETE LAC;KR;Cerba HealthCare Crotone Srl;Via Avogadro - Loc. Passovecchio;Crotone;Cerba HealthCare Crotone Srl;Via Roma, 111 Crotone;0962 24586;morronelab@pec.it;D.P.G.R. N. 1/2011 DCA n. 48 del 01-03-17 DCA N. 100 DEL 07/07/2017
+RETE LAC;KR;Cerba HealthCare Crotone Srl;Via Roma, 111;Crotone;Cerba HealthCare Crotone Srl;Via Roma, 111 Crotone;;morronelab@pec.it;D.P.G.R. N. 1/2011 DCA n. 48 del 01-03-17 DCA N. 100 DEL 07/07/2017
+RETE LAC;KR;Cerba HealthCare Crotone Srl;Via Rialto, 3;Strongoli;Cerba HealthCare Crotone Srl;Via Roma, 111 Crotone;0962 81047;morronelab@pec.it;D.P.G.R. N. 1/2011 DCA n. 191 del 23/10/2018
+RETE LAC;KR;Laboratorio Analisi Cliniche ALTOMARI S.r.l.;Via A. Moro, 15;Cirò Marina;Laboratorio Analisi Cliniche ALTOMARI S.r.l.;Via A. Moro, 15 Cirò Marina (KR);0962 31265;laboratorioaltomari@legalmail.it;D.P.G.R. N. 1/2011
+RETE LAC;CS;Cerba HealthCare Cosenza Srl;Via G. e F. Falcone, 202/A;Cosenza;Cerba HealthCare Cosenza Srl;Via G. e F. Falcone, 202/A Cosenza;0984 392394;cosenza@pec.cerbahealthcare.it;D.P.G.R. N. 1/2011 NOTA 11056/2019 NOTA 213966/2019
+RETE LAC;CS;Cerba HealthCare Cosenza Srl;Via G. Puccini, 3;Rende;Cerba HealthCare Cosenza Srl;Via G. e F. Falcone, 202/A Cosenza;0984 465040;cosenza@pec.cerbahealthcare.it;D.P.G.R. N. 1/2011 Nota prot. N.417752 del 07/12/2018 DCA N. 257 DEL 07/12/2018 Nota prot. n. 6868 del 18/02/2019
+RETE LAC;CS;Cerba HealthCare Cosenza Srl;Via Ugo Cavalcanti, 7-11;Cosenza;Cerba HealthCare Cosenza Srl;Via G. e F. Falcone, 202/A Cosenza;0984 391028;cosenza@pec.cerbahealthcare.it;D.P.G.R. N. 1/2011 Nota prot. n. 68797 del 18/02/2019
+RETE LAC;CS;ANMI Centro Diagnostico s.r.l. (ex Laboratorio Analisi Cliniche Diagnostica Medica Coscarella & C. s.n.c.);Viale Sant'Angelo - Località Crosetto;Corigliano-Rossano;ANMI Centro Diagnostico s.r.l.  ;Via Monte S. Michele, 13 Cosenza;0983 513856;anmicentrodiagnostico@pec.it;DCA N. 23/2017 DCA N. 103 del 12/07/2017
+RETE LAC;CS;Laboratorio Analisi Cliniche SALUS Dr. Gravina & C. s.n.c.;Via Calabria;Montalto Uffugo;Laboratorio Analisi Cliniche SALUS Dr. Gravina & C. s.n.c.;Via Calabria Montalto Uffigo (CS);0984 932294;salusmontalto@arubapec.it;D.P.G.R. N. 1/2011
+RETE LAC;KR;Laboratorio Analisi Cliniche Polispecialistica  BIOS s.r.l. ;Piazza Umberto I°, 41;Crotone;Polispecialistica BIOS srl;Piazza Umberto I°, 41 Crotone;0962 25711;info@pec.biosmedica.it;D.P.G.R. N. 1/2011
+RETE LAC;KR;Laboratorio Analisi Cliniche PASTEUR s.r.l. ;Via Vigna della Corte;Petilia Policastro;Laboratorio Analisi Cliniche PASTEUR s.r.l. ;Via Vigna della Corte Petilia Policastro (KR);0962 432118;pasteursrl@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;CS;Laboratorio Analisi Cliniche BIOLAB s.a.s. di Pugliese Fabrizio & C.;Via Monviso, 90;S. Giovanni in Fiore;Biolab sas di Pugliese F. & C.;Via Monviso, 90 S. Giovanni in Fiore (CS);0984 993894; biolabsas@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;KR;Laboratorio Analisi Cliniche Riillo Sas di Pierluigi Riillo;Via A. Gramsci, 1;Isola Capo Rizzuto;Laboratorio Analisi Cliniche Riillo Sas di Pierluigi Riillo;Via A. Gramsci, 1 Isola Capo Rizzuto (KR);0962 791063;laboratorioanalisiriillo@pec.it;D.P.G.R. N. 1/2011 DCA n. 95/2018
+RETE LAC;CS;Laboratorio Analisi Cliniche Dr. BORZI' Domenico S.r.l.;Via S. Michele, 10;Fuscaldo Marina;Laboratorio Analisi Cliniche Dr. BORZI' Domenico S.r.l.;Via S. Michele, 10 Fuscaldo Marina (CS);0982 686636;laboratorioborzi@pec.it;D.P.G.R. N. 1/2011 DCA n. 93/2018 DCA n. 178/2018 D.D.G. n.17928 del 29/10/2004 DCA n. 206/2018
+RETE LAC;CS;Laboratorio Saulo S.r.l.;Via Ponte Bagni;Acquappesa;Laboratorio Saulo S.r.l.;Via Ponte Bagni Acquappesa (CS);0982 94368;brunosaulo@pec.libero.it;D.P.G.R. N. 1/2011 DCA n. 25/2017
+RETE LAC;CS;Laboratorio Analisi Cliniche LAC s.a.s.;Via Margherita ;Amantea;Laboratorio Analisi Cliniche LAC s.a.s.;Via Margherita Amantea (CS);0982 41980;munnovincenzo@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;CS;Laboratorio Analisi Caliò della Dr.ssa M.L. Iaconianni & C. Sas;Via Vivaldi, 8/10;Trebisacce;Laboratorio Analisi Caliò Sas ;Via Vivaldi, 8/10 Trebisacce (CS);0981 51789;laboratorioanalisicaliosas@pec.it;D.P.G.R. N. 1/2011 NOTA prot. N. 301167 12/09/2012
+RETE LAC;CS;Laboratorio Analisi Cliniche Centro Diagnostico  S. ANTONIO s.r.l.;Via Verona, 14 ;Amantea;Centro Diagnostico  S. ANTONIO s.r.l.;Via Verona, 14 Amantea (CS);0982 41498;analisis.antonio@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;KR;Laboratorio Analisi Cliniche L.A.B.  S.r.l.;Via M. Nicoletta, 31;Crotone;Laboratorio Analisi Cliniche L.A.B.  S.r.l.;Via M. Nicoletta, 31 Crotone;0962 901772;laboratoriolab@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;KR;Laboratorio Analisi Cliniche Salvatore VIA s.r.l.;Via Giovanni Paolo II, 48;Crotone;Laboratorio Analisi Cliniche Salvatore VIA s.r.l.;Via Giovanni Paolo II, 48 Crotone;0962 21712;laboratoriovia@pec.it;"D.P.G.R. N. 1/2011 
+Nota prot. N. 261084 26/07/2012"
+RETE LAC;KR;Laboratorio Analisi Cliniche Cutro s.r.l.;Via Risorgimento, 81;Cutro;Laboratorio Analisi Cliniche Cutro s.r.l.;Via Risorgimento, 81 Cutro (KR);0962 773444;laboratorioanalisicliniche@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;KR;Laboratorio Analisi Cliniche Dr. Angelo TOMASSO s.a.s.;Corso Mazzini Pal. Riganello;Crotone;Laboratorio Analisi Cliniche Dr. Angelo TOMASSO s.a.s.;Corso Mazzini, 74 Crotone;0962 29842;lab.tomasso@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Istituto Diagnostico Prof. Demetrio Meduri s.r.l. ;Corso Garibaldi, 563;Reggio Calabria ;Istituto Diagnostico Prof. Demetrio Meduri s.r.l. ;Corso Garibaldi, 563 Reggio Calabria;0965 813399;istitutodiagnostico@pec.it;D.P.G.R. N. 1/2011 Nota prot. N. 27217 24/11/2010
+RETE LAC;RC;Laboratorio Analisi Cliniche I.D.E.A. s.a.s.;Via Del Gelsomino, 45/D;Reggio Calabria ;Laboratorio Analisi Cliniche I.D.E.A. s.a.s.;Via Del Gelsomino, 45/D Reggio Calabria;0965 899050;istitutoidea@pecstudio.it;D.P.G.R. N. 1/2011
+RETE LAC;VV;Laboratorio Analisi Cliniche SALUS Mangialavori s.r.l.;Via Don Bosco;Vibo Valentia;SALUS Mangialavori s.r.l.;Via Don Bosco Vibo Valentia;0963 45360;salusmangialavori@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;VV;Laboratorio Analisi Cliniche LABOGEST s.r.l.;Via Kennedy, 104;Mileto;LABOGEST s.r.l.;Via Kennedy, 104 Mileto (VV);0963 339185             320 0232179;labogestsrl@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;VV;La Praevidentia s.r.l.;Via Corte, 1 Trav. I;Nicotera;La Praevidentia s.r.l.;Via Corte, 1 Trav. I Nicotera (VV);0963 880009;lapraevidentiasrl@pec.it;DCA N. 95/2014 DCA n. 86 del 23/05/2019
+RETE LAC;KR;Laboratorio Analisi Cliniche VOLANTE s.r.l.;Via M. Nicoletta, 168;Crotone;Laboratorio Analisi Cliniche VOLANTE s.r.l.;Via M. Nicoletta, 168 Crotone;0962 29975;laboratoriovolante@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;KR;Laboratorio Analisi Cliniche Dr.  RODIO Pasquale s.r.l.;Via Tribuna, 4;Petilia Policastro;Laboratorio Analisi Cliniche Dr.  RODIO Pasquale s.r.l.;Via Tribuna, 4 Petilia Policastro (KR);0962 433415;lab.rodiosrl@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;CZ;Laboratorio Analisi Cliniche Centro Medico A. Fleming s.r.l.;Via Magna Grecia, 245;Catanzaro;Laboratorio A. Fleming s.r.l.;Via Magna Grecia, 245 Catanzaro;0961 781223;laboratoriofleming@pec.it;D.P.G.R. N. 1/2011 DCA 151 del 20/7/18
+RETE LAC;CS;Laboratorio Analisi Cliniche LUSAL di Angela Argirò & C s.n.c.;Via Kennedy, 2;Tortora ;Laboratorio Analisi Cliniche LUSAL di Angela Argirò & C s.n.c.;Via Kennedy, 2 Tortora (CS);0985 73025;laboratorio.lusal@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;CS;Laboratorio Analisi Cliniche  F.lli LUCA & C s.a.s.;Corso Garibaldi, 129;Paola;Laboratorio Analisi Fratelli Luca di Valenza Corinna & C. SAS;Corso Garibaldi, 129 Paola;0982 582188;labluca@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;CS;Biomedical Center s.r.l.;Via Lava Ganza, 57;Amantea;Biomedical Center s.r.l.;Via Lava Ganza, 57 Amantea (CS);0982 41616;biomedicalcenter.srl@pec.it;D.P.G.R. N. 152/2013
+RETE LAC;CS;Laboratorio Analisi Cliniche SALUS s.r.l.;Via Reale, 4;Roggiano Gravina;Salus Srl;Via Reale, 4 Roggiano Gravina (CS);0984 502183;salusrl@mypec.eu;D.P.G.R. N. 1/2011
+RETE LAC;CS;Laboratorio Analisi Cliniche Centro Jonico di Diagnostica Dr. IPPOLITO  & C. s.a.s.;Via Dolcedorme, 2;Francavilla Marittima;Centro Jonico di Diagnostica Sas;Via Dolcedorme, 2 Francavilla Marittima (CS);0981 992295;dott.ippolitovincenzo@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;CS;BIO-DATA  S.a.s di Palermo Eugenio & C.;Via Giulio Ario Tarrutenio, 59;S. Marco Argentano;BIO-DATA  S.a.s di Palermo Eugenio & C.;Via Giulio Ario Tarrutenio, 59 San Marco Argentano (CS);0984 511131;biodatalab@arubapec.it;D.P.G.R. N. 1/2011 Nota prot. n. 48587 del 16/2/2016
+RETE LAC;CS;Laboratorio Analisi Cliniche Dr. Nicastro Giovanni Carlo & C. s.n.c.;Via S. Francesco di Paola, 2;S. Giovanni in Fiore;Laboratorio Analisi Cliniche Dr. Nicastro Giovanni Carlo & C. s.n.c.;Via S. Francesco di Paola, 2 S. Giovanni in Fiore (CS);0984 992328;nicastro.gio@arubapec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Laboratorio Analisi  Cliniche Pio Center s.r.l. ;C.da Borrello, 22;Bovalino ;Laboratorio Analisi  Cliniche Pio Center s.r.l. ;C.da Borrello, 22 Bovalino (RC);0964 66330;piocenter@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Centro Analisi e Ricerche Cliniche Dr. Francesco Galasso & C. s.a.s.;Via Tevere, 125;Locri;Centro Analisi e Ricerche Cliniche Dr. Francesco Galasso & C. s.a.s.;Via Tevere, 125 Locri (RC);0964 22770;analisiclin.galasso@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Laboratorio Analisi Cliniche Dr. Giorgio Barreca s.n.c.;Via Sbarre Inf., 69;Reggio Calabria ;Laboratorio Analisi Cliniche Dr. Giorgio Barreca s.n.c.;Via Sbarre Inf., 69 Reggio Calabria;0965 622876;laboratoriobarrecasnc@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Laboratorio San Giuseppe di Demarte Giuseppe S.a.s.;Piazza Mercato, 9;Taurianova;Laboratorio San Giuseppe di Demarte Giuseppe S.a.s.;Piazza Caruso e Condello, 9 Taurianova (RC); 0966 612503;labsangiuseppe@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Laboratorio Analisi Cliniche FLEMING S.R.L.;Via Regina Margherita, 32;Rosarno;Laboratorio Analisi Cliniche FLEMING S.R.L.;Via Regina Margherita, 32 Rosarno (RC);0966 773200;laboratorioflemingrosarno@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;CS;Laboratorio Analisi Cliniche Centro Diagnostico S. FRANCESCO s.r.l.;Via degli Stadi, 2;Cosenza;Centro Diagnostico S. FRANCESCO s.r.l.;Via degli Stadi, 2 Cosenza;0984 412191;centrodiagnosticosfrancesco@pec.it;"D.P.G.R. N. 1/2011 
+
+DCA N.18 DEL 4/2/2016"
+RETE LAC;CS;Laboratorio Analisi Cliniche BIOCONTROL CHECK-UP Srl;Viale F. e G. Falcone ;Cosenza;Laboratorio Analisi Cliniche BIOCONTROL CHECK-UP Srl;Viale F. e G. Falcone Cosenza;0984 35705;biocontrolcheckupsas@legalmail.it;D.P.G.R. N. 1/2011
+RETE LAC;CS;Laboratorio Analisi Cliniche Dr. DE PIETRO Francesco s.r.l.;Via A. Moravia, 2;Cariati Marina;Laboratorio Analisi Cliniche Dr. DE PIETRO Francesco s.r.l.;Via A. Moravia, 2 Cariati Marina (CS);0983 91455;labdepietro@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;CS;Laboratorio Analisi Cliniche I.D.I.M. s.r.l.;Via Nazionale, 45;Corigliano-Rossano;Laboratorio Analisi Cliniche I.D.I.M. s.r.l.;Via Nazionale, 45 Corigliano-Rossano (CS);0983 511625;idimrossano@legalpec.net;D.P.G.R. N. 1/2011
+RETE LAC;CS;Laboratorio Analisi Cliniche Centro Diagnostico SALIMBENI-VERSACE s.r.l.;Via Nazionale,40/42;Corigliano-Rossano;Centro Diagnostico SALIMBENI-VERSACE s.r.l.;Via Nazionale, 42 Corigliano-Rossano (CS);0983 885036;centrodiagnostico.srl@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;CS;Laboratorio Analisi Cliniche e Microbiologiche Dr. Cosentino Agostino;Via Margherita, 176;Corigliano-Rossano;Laboratorio Analisi Cliniche Dr. Cosentino Agostino;Via Margherita, 176 Corigliano-Rossano (CS);0983 512451;agostino.cosentino@pec.enpab.it;D.P.G.R. N. 1/2011
+RETE LAC;CS;Laboratorio Analisi Cliniche BIO-LAB s.n.c.;Via delle Querce-Complesso Padula;Castrovillari;Laboratorio Analisi Cliniche BIO-LAB s.n.c.;Via delle Querce-Complesso Padula Castrovillari (CS);0981 26513;biolabcentroanalisi@arubapec.it;D.P.G.R. N. 1/2011
+RETE LAC;CS;Laboratorio Analisi Cliniche BIODIAGNOSTICA;Via G. Amendola, 136;Cassano allo Jonio;Laboratorio Analisi Cliniche BIODIAGNOSTICA;Via G. Amendola, 136 Cassano allo Jonio (CS);0981 71521;carmelafloriana.milano@pec.enpab.it;DCA N. 170 del 30/11/2022
+RETE LAC;CS;Laboratorio Analisi Cliniche Serio Lab di Carlo Ponticelli e C. s.a.s.;C.so L. Saraceni     Parco Pia, 9/a;Castrovillari;Serio Lab Sas;Via Parco Pia, 9 Castrovillari (CS);0981 209699/21571;seriolabsas@pec.it ;D.P.G.R. N. 1/2011
+RETE LAC;CS;Laboratorio Analisi Cliniche BIOMEDICAL s.n.c.;Via Degli Achei,11 ;Castrovillari;Laboratorio di Analisi Cliniche BIOMEDICAL Snc;Via Degli Achei,11 Castrovillari (CS);0981 489147;mariaconcetta.rummolo@pec.enpab.it;"D.P.G.R. N. 1/2011 
+DCA N. 108 del 30/08/2022"
+RETE LAC;CS;Laboratorio Analisi Cliniche s.n.c di SALIMBENI F.& C.;Via Machiavelli, 28;Corigliano-Rossano;Laboratorio Analisi Cliniche s.n.c di SALIMBENI F.& C.;Via Machiavelli, 28 Corigliano-Rossano (CS);0983 885827;labo.salimbeni@pec.it;D.P.G.R. N. 1/2011 Nota prot.n.369775 del 27/11/2017
+RETE LAC;CS;Laboratorio Analisi Cliniche Centro Diagnostico S. NILO s.r.l.;Via A. Volta                              Loc. Crosetto;Corigliano-Rossano;Laboratorio Analisi Cliniche Centro Diagnostico S. NILO s.r.l.;Via A. Volta Corigliano-Rossano;0983 512677;snilosrl@registerpec.it;D.D.G. N. 9750/2009 D.P.G.R. N. 1/2011 DCA n. 158/2017 DCA n. 177/2018
+RETE LAC;CS;Laboratorio Analisi Cliniche Centro Diagnostico SYBARIS S.r.l.;Corso Garibaldi, 3;Cassano allo Jonio;Centro Diagnostico SYBARIS S.r.l.;Corso Garibaldi, 3 Cassano allo Jonio (CS);0981 77089;centrodiagnosticosybaris@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;CS;Laboratorio Analisi Cliniche LABMONACO s.r.l.;Via del Cannone, 24;Paola;Labmonaco Srl;Via del Cannone, 24 Paola (CS);0982 582175;labmonaco@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;CS;Laboratorio Analisi Cliniche CE.ME.TAC. s.r.l.;Via M. Bianchi, 61;Scalea;CE.ME.TAC. s.r.l.;Via M. Bianchi, 61 Scalea (CS);0985 91290;cemetac@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;CS;Laboratorio Analisi Cliniche Associato Nitti;Via A. Arabia, 11/d;Cosenza;Laboratorio Analisi Cliniche Associato Nitti;Via A. Arabia, 11/d Cosenza;0984 27150;labnitti@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;CS;Laboratorio Analisi Cliniche Dr. Adolfo VERCILLO e C. s.n.c.;Via XXIV Maggio, 47/G;Cosenza;Dr. Adolfo VERCILLO e C. s.n.c.;Via XXIV Maggio, 47/G Cosenza;0984 24986;labvercillo@pec.it;D.P.G.R. N. 1/2011 Nota PROT. N.172602 DEL 24/05/2017
+RETE LAC;CS;Studio Radiologico FEDERICO s.r.l. (ex Laboratorio Analisi Cliniche IPPOLITO s.n.c.);Viale G. Mancini, 355;Cosenza;Studio Radiologico FEDERICO s.r.l.;Viale G. Mancini, 355 Cosenza;0984 22984;radiologiafederico@pec.it;D.P.G.R. N. 1/2011 DCA n. 29 del 28/01/2020
+RETE LAC;CS;Laboratorio Analisi Cliniche  PERUGINI S.R.L.;Via Rodotà, 43;Cosenza;Laboratorio Analisi Cliniche  PERUGINI S.R.L.;Via Rodotà, 43 Cosenza;0984 28165;peruginilab@pec.it;D.P.G.R. N. 1/2011 Nota prot. N.383908 DEL 22/12/2016
+RETE LAC;CS;Laboratorio Analisi Cliniche DI DONNA s.n.c.;Corso Mazzini, 11;Cosenza;Laboratorio Analisi Cliniche DI DONNA s.n.c.;Corso Mazzini, 11 Cosenza;0984 24555;laboratoriodidonna@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;CS;Laboratorio Analisi Cliniche F. MICELI s.r.l.;Via Edison, 1;Rende;Laboratorio Analisi Cliniche F. MICELI s.r.l.;Via Edison, 1 Roma;0984 838723;laboratoriofrancescomiceli.srl@pec.it;D.P.G.R. N. 1/2011 nota prot.n. 188482/2018 nota prot. n. 338527/2019
+RETE LAC;CS;Laboratorio Analisi Cliniche Antonio POLITANO & Maria Vittoria LOIZZO s.r.l.;Via Trieste 10/14 - ang. C.so Mazzini, 28;Cosenza;Laboratorio Analisi Cliniche Antonio POLITANO & Maria Vittoria LOIZZO s.r.l.;Via Trieste 10/14 - ang. C.so Mazzini, 28 Cosenza;0984 74057;laboratoriopolitanoloizzosrl@legalmail.it;D.P.G.R. N. 1/2011
+RETE LAC;CS;Laboratorio Analisi Cliniche Centro Diagnostico Ippocrate s.r.l.;Via Tavolaro, 32;Cosenza;Laboratorio Analisi Cliniche Centro Diagnostico Ippocrate s.r.l.;Via Tavolaro, 32 Cosenza;0984 21580;centro.ippocrate@arubapec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Laboratorio Analisi Cliniche di Antico Alfredo & C. s.a.s. ;Via Conciliazione, 75/C;Siderno ;Laboratorio Analisi Cliniche di Antico Alfredo & C. s.a.s. ;Via L. Misuraca, 16 Siderno (RC);0964 380517;anticolaboratori@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Laboratorio Analisi Cliniche                              Istituto Clinico Prof. Dott. R. DE BLASI S.r.l.;Via Torrione Prol., 55;Reggio Calabria;Istituto Clinico Prof. Dott. R. DE BLASI S.r.l.;Via Torrione Prol., 55 Reggio Calabria;0965 811855;istitutodeblasi@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Laboratorio Analisi Cliniche  F. Cavaliere & C. s.r.l.;Via D. Cavaliere, 16;Cittanova;Laboratorio Analisi Cliniche  F. Cavaliere & C. s.r.l.;Via D. Cavaliere, 16 Cittanova (RC);0966 382190;laboratorioanalisicavaliere@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Laboratorio Analisi Cliniche Centro Diagnostico SALUS  s.r.l.;Via Trieste, 40;Polistena;Centro Diagnostico SALUS  s.r.l.;Via Trieste, 40 Polistena (RC);0966 932483;cdsalus@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Laboratorio Analisi Cliniche Caruso s.n.c.;Via S. Maria, 10 ;Gioia Tauro ;Analisi Cliniche Caruso S.r.l.;Via S. Maria, 10 Gioia Tauro (RC);0966 51864;labcaruso@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Centro Diagnostico Gamma s.r.l. ;Via Piria, 25;Gioia Tauro;Centro Diagnostico Gamma s.r.l. ;Via Piria, 25 Gioia Tauro (RC);0966 55488;info@pec.centrodiagnosticogamma.it;DCA N. 101 del 30/08/2022
+RETE LAC;RC;Laboratorio Analisi Cliniche L.A.C. S.r.l. di Fotia D. Marincola F.;Via N. Sauro, 74;Palmi;Laboratorio Analisi Cliniche L.A.C. S.r.l. di Fotia D. Marincola F.;Via N. Sauro, 74 Palmi (RC);0966 23860;lacpalmi@pec.it;D.P.G.R. N. 1/2011 Nota PROT. N. 251496 DEL 31/07/2017
+RETE LAC;RC;Laboratorio Analisi Cliniche San Rocco s.r.l.;Piazzale Giovanni Bovi, 4;Palmi;Laboratorio Analisi Cliniche San Rocco s.r.l.;Piazzale G. Bovi, 4 Palmi (RC);0966 45896;labsanroccosrl@arubapec.it;"D.P.G.R. N. 1/2011 
+Nota prot. n. 33673 del 28/01/2019"
+RETE LAC;RC;Laboratorio Analisi Cliniche  Minerva s.r.l.;Via Corrado Alvaro, 1;Gioia Tauro;Laboratorio Analisi Cliniche  Minerva s.r.l.;Via Corrado Alvaro, 1 Gioia Tauro (RC);0966 57966;analisiminerva@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;VV;Laboratorio Analisi  Cliniche  Nusdeo s.r.l.;Via E. Gagliardi, 56;Vibo Valentia;Laboratorio Analisi  Cliniche  Nusdeo s.r.l.;Via E. Gagliardi, 56 Vibo Valentia;0963 45850;labnusdeo@pec.it;D.P.G.R. N. 1/2011 Nota Prot. N. 1360 17/11/2011
+RETE LAC;VV;Laboratorio Analisi Cliniche Multimed LAB s.r.l.;Via Affaccio, 59;Vibo Valentia;Multimed LAB s.r.l.;Viale Affaccio, 59 Vibo Valentia;0963 591803;pecmultimed@pec.it                         forosrl@pec.it;D.P.G.R. N. 1/2011 Nota PROT. N.172663 DEL 24/05/2017
+RETE LAC;VV;Laboratorio Analisi Cliniche  Multimed s.r.l.;Via F. Seminara, 9;Tropea ;Multimed s.r.l.;Viale Affaccio, 59 Vibo Valentia;0963 62665;pecmultimed@pec.it                         forosrl@pec.it;D.P.G.R. N. 1/2011 Nota Prot. n. 311281 del 21/10/2015
+RETE LAC;CZ;Laboratorio Analisi Cliniche Poliambulatorio Lametino s.r.l.;Via XX  Settembre, 91;Lamezia Terme;Poliambulatorio Lametino s.r.l.;Via XX Settembre, 91 Lamezia Terme (CZ);0968 27565;amministrazione.poliambulatoriolametino@pec.it;DCA N. 64 del 21/02/2023
+RETE LAC;RC;Laboratorio Analisi  Cliniche Centro Diagnostico Dr. Ventra Giuseppe s.r.l.;Via Mare, 41;Caulonia ;Laboratorio Analisi  Cliniche Centro Diagnostico Dr. Ventra Giuseppe s.r.l.;Viale Mare Jonio, 6 Caulonia Marina (RC);0964.82682 ;centrodiagnosticoventra@pec.studiosaraco.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Laboratorio Analisi Cliniche Dr. Quintino & Rocco Tassone;Via Marconi, 97 ;Locri;Laboratorio Analisi Cliniche Dr. Quintino & Rocco Tassone;Via Marconi, 97 Locri (RC);0964 20843;labtassone@pec.it;D.P.G.R. N. 1/2011 DCA n. 22 del 08-02-17
+RETE LAC;CZ;Ippocrate S.r.l.;Via Crispi, 149;Catanzaro;Ippocrate S.r.l.;Via N. Pizi, 1 Catanzaro;0961 720742;ippocratelab@pec.it;DCA N.10 DEL 27/1/2016 DCA n. 71 del 19/04/2019 Nota prot. n. 441411 del 23/12/2019
+RETE LAC;CZ;Life Clinic Srl;Via Nazionale, 254;Botricello;Life Clinic Srl;"Via Nazionale, 254
+Botricello";0961 963898;ceolifeclinicgroup@pec.it;"D.P.G.R. N. 1/2011 DCA N.10 DEL 27/1/2016 
+Nota prot. n.40679 del 10.2.2016 Nota prot. n. 441411 del 23/12/2019"
+RETE LAC;CZ;Biomedica S.a.s.;Corso Stagliano, 373;Chiaravalle Centrale;Laboratorio Biomedica di Elena Vono & C. S.a.s;"Corso Stagliano, 373
+Chiaravalle Centrale";0967 631075;laboratoriobiomedica@pec.it;D.P.G.R. N. 1/2011 DCA N.10 DEL 27/1/2016 Nota prot. N.116628 DEL 05/04/2017 Nota prot. n. 441411 del 23/12/2019
+RETE LAC;CZ;LAB MEDICAL S.R.L.                                                         (ex Lab. Scalzi & C. S.a.s.);Via Crispi, 147/149;Catanzaro;LAB MEDICAL S.R.L.    ;Via Crispi, 147/149 Catanzaro;0961 720742;labmedical@pec.it;"D.P.G.R. N. 1/2011 Nota PROT. N. 251491 DEL 31/07/2017 DCA n. 141 del 25/10/17
+DDG N. 6367 del 15/06/2022"
+RETE LAC;CZ;CA.GI Villa Serena SPA;Via Pascali,11;Catanzaro;CA.GI Villa Serena SPA;"Via Pascali,11
+Catanzaro";0961 724782;villaserena@legalmail.it;DGR 2792/1994
+RETE LAC;CZ;Laboratorio Analisi Cliniche Dr. Antonio Matozzo & C. s.a.s.;Via C. Battisti, 38;Soverato;Laboratorio Analisi Cliniche Dr. Antonio Matozzo & C. s.a.s.;Via C. Battisti, 38 Soverato (CZ);0967 521270;laboratoriomatozzo@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;CS;Laboratorio Analisi Cliniche BIOS s.r.l.;Viale Mancini Pal. GPS corpo D;Cosenza;Laboratorio Analisi Cliniche BIOS s.r.l.;Viale Mancini, 343 Cosenza;0984 483357;biossrl@gigapec.it;D.P.G.R. N. 1/2011 DCA n. 180/2018
+RETE LAC;RC;Laboratorio Analisi  Cliniche Centro Diagnostico Alfa s.n.c.;Via Marchese;Bianco;Laboratorio Analisi  Cliniche Centro Diagnostico Alfa s.n.c.;Via Marchese Bianco (RC);0964 911597;laboratorioanalisialfa.ascoa@legalmail.it;D.P.G.R. N. 1/2011 Nota prot. 214230 del 05/06/19
+RETE LAC;RC;Laboratorio Analisi  Cliniche IGEA s.r.l.;Via Trastevere,77;Roccella Jonica;Laboratorio Analisi  Cliniche IGEA s.r.l.;Via Trastevere,77 Roccella Jonica (RC);0964 85993;laboratorioigeasrl@pec.it;D.P.G.R. N. 1/2011 DCA n.128 del 01/12/2016
+RETE LAC;RC;Laboratorio Analisi Cliniche Polidiagnostica Meridionale s.r.l.;Via Vitetta, 6;Reggio Calabria;Laboratorio Analisi Cliniche Polidiagnostica Meridionale s.r.l.;Via Vitetta, 6 Reggio Calabria;0965 590612;poli.meridionale@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Laboratorio Analisi Cliniche                      Istituto di Patologia Clinica EUROPA s.r.l.;Via S. Caterina, 57;Reggio Calabria;Analisi Cliniche EUROPA s.r.l.;Via S. Caterina, 57 Reggio Calabria; 0965 44998;analisi.cliniche.europa@postecert.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Laboratorio Analisi Clinico Chimiche Dr.ssa G. Zoccali Srl;Via N. Bixio, 8;Melito Porto Salvo;Laboratorio Analisi Clinico Chimiche Dr.ssa G. Zoccali Srl;Via N. Bixio, 8 Melito Porto Salvo (RC);0965 781659;g.zoccali.labzoccali@cert.ticertifica.it;D.P.G.R. N. 1/2011 - nota prot. 138780 del 04/04/2019
+RETE LAC;RC;Laboratorio Analisi Cliniche  Dr. Francesco Siracusa Rizzi s.r.l.;Via Nazionale, 38;Archi, Reggio Calabria;Laboratorio Analisi Cliniche  Dr. Francesco Siracusa Rizzi s.r.l.;Via Nazionale, 38 Archi, Reggio Calabria;0965 45611;francescosiracusa.rizzi@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Laboratorio Analisi Cliniche A.S.A.C. S.r.l. ;Via Garibaldi, 62;Melito Porto Salvo;Laboratorio Analisi Cliniche A.S.A.C. S.r.l. ;Via Garibaldi, 62 Melito Porto Salvo (RC);0965 789328;labasac@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Laboratorio Analisi Cliniche Diagnostica Jonica S.r.l.;Via SS. Jonica, 123;Pellaro, Reggio Calabria;Laboratorio Analisi Cliniche Diagnostica Jonica S.r.l.;Via SS. Jonica, 123 Pellaro, Reggio Calabria;0965 358400;diagnostica.jonica@interfreepec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Laboratorio Analisi Cliniche L. Pasteur s.a.s.;Via Nazionale, 174;Catona, Reggio Calabria;Laboratorio Analisi Cliniche L. Pasteur s.a.s.;Via Nazionale, 174 Catona, Reggio Calabria;0965 304911-329 3684997;pasteursas@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Centro Ricerche Cliniche Laser di Maria Morabito & C. s.n.c.;Via Micene, 16;Reggio Calabria;Centro Ricerche Cliniche Laser di Maria Morabito & C. s.n.c.;Via Micene, 16 Reggio Calabria;;centroricercheclinichelaser@pec.it;"D.P.G.R. N.18/2014
+"
+RETE LAC;CS;Nuova Gamma S.r.l. (ex Laboratorio Analisi Cliniche GAMMA s.n.c.);Viale Mancini, 355;Cosenza;Nuova Gamma S.r.l.;Viale della Repubblica, 77 Cosenza;0984  37307;nuova_gamma@pec.it;D.P.G.R. N. 1/2011 Nota PROT. N. 228345 DEL 11/07/2017 DCA N. 130 del 19/10/2017 DCA N. 203 DEL 23/10/2018 Nota prot. n. 33690 del 28/01/2019
+RETE LAC;CS;Laboratorio Analisi Cliniche Dr. Luigi LEPORACE s.r.l.;Via Brenta, 24;Cosenza;Laboratorio Analisi Cliniche Dr. Luigi LEPORACE s.r.l.;Via Brenta, 24 Cosenza;0984 76543;lableporace@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;CS;Gamma Lab S.r.l.;Via Roma, 29;Castrovillari;Gamma Lab S.r.l.;Via Roma, 29 Castrovillari (CS);0981 446981;analysiscentersnc@legalmail.it;D.P.G.R. N. 1/2011 Nota prot. n. 90924 del 20 marzo 2015
+RETE LAC;CS;Laboratorio Analisi Cliniche Centro Diagnostico CLINICAL CONTROL s.r.l.;Corso Italia, 154;Montalto Uffugo;Clinical Control Srl;Corso Italia, 170 Montalto Uffugo (CS);0984 939777;clinicalcontrol@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Studio Medico Polispeciliastico S. Anna di M. Saiaci & C. s.a.s.;Via S. Anna, 5      ;Laureana di Borrello;Studio Medico Polispeciliastico S. Anna di M. Saiaci & C. s.a.s.;Via S. Anna, 5 Laureana di Borrello (RC);0966 901290;studiomedicosantanna@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Laboratorio Analisi Cliniche Dr. Roberto Richichi s.r.l.;Via Figurella, 38;Catona-Reggio Calabria;Laboratorio Analisi Cliniche Dr. Roberto Richichi s.r.l.;Via Figurella, 38 Catona, Reggio C.;0965 302588;robertorichichisrl@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Laboratorio Analisi Cliniche Spanò di Spanò Teresa Elena Maria Marta & C. s.a.s.;Via Gorizia , 15;Siderno;Laboratorio Analisi Cliniche Spanò di Spanò Teresa Elena Maria Marta & C. s.a.s.;Via Gorizia , 15 Siderno (RC);0964 381327-387133;lab.spanogentile@pec.it;D.P.G.R. N. 1/2011 Nota prot. N. 135156 DEL 21/04/2017 - Nota PROT. N. 251591 DEL 31/07/2017
+RETE LAC;RC;Istituto Diagnostico Medico GMM s.r.l.;Via Riviera, 4;Villa S. Giovanni;Istituto Diagnostico Medico GMM s.r.l.;Via Riviera, 4 Villa S. Giovanni (RC);0965 751075;istitutodiagnosticogmm@legalmail.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Laboratorio Analisi  Cliniche ENZIMETER Istituto di Ricerche Cliniche di Scalì Gianluca & C s.a.s.;Largo Cesare Battisti, 8;Gioiosa Jonica;Laboratorio Analisi  Cliniche ENZIMETER Istituto di Ricerche Cliniche di Scalì Gianluca & C s.a.s.;Via Gramsci, 38 Gioiosa Jonica (RC);0964 419151;lab.enzimeter@legalmail.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Laboratorio Analisi Cliniche Calabrese s.r.l.;Via D. Marvasi, 8;Reggio Calabria;Laboratorio Analisi Cliniche Calabrese s.r.l.;Via D. Marvasi, 8 Reggio Calabria;0965 331660;analisiclinichecalabresesrl@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Laboratorio Analisi Cliniche S. Antonio s.r.l.;C.so Garibaldi, 597;Reggio Calabria;Laboratorio Analisi Cliniche S. Antonio s.r.l.;C.so Garibaldi, 597 Reggio Calabria;0965 892020;analisiclinichesantonio@legalmail.it;D.P.G.R. N. 1/2011 DCA n. 120 del 24/05/2018 (decadenza autorizzazione) Ordinanza TAR 282/2018
+RETE LAC;RC;Laboratorio Analisi Cliniche ANDROMEDA s.n.c.;Via P. di Piemonte, 6;S. Eufemia D'Aspromonte;Laboratorio Analisi Cliniche ANDROMEDA s.n.c.;Via P. di Piemonte, 6 S. Eufemia D'Aspromonte (RC);0966 961990;andromeda.snc@pec.it;D.P.G.R. N. 1/2011
+RETE LAC;RC;Laboratorio Analisi Cliniche  Dr. Fortunato Libri s.r.l. ;Viale A. Moro Trav.XI, 36;Reggio Calabria ;Laboratorio Analisi Cliniche  Dr. Fortunato Libri s.r.l. ;Viale A. Moro Trav.XI, 36 Reggio Calabria;0965 58171;laboratoriolibri@pec.it;D.P.G.R. N. 1/2011 Nota PROT. N.172767 DEL 24/05/2017 nota prot. 433359 del 17/12/2019
+RETE LAC;CS;Laboratorio Analisi Cliniche MEDICAL Analisi Cliniche S.r.l.;Via Luigi De Franco, 14;Cosenza;MEDICAL ANALISI CLINICHE S.R.L.;Via Luigi De Franco, 14 Cosenza;0984 74674;medicalanalisiclinichesrl@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Centro di Medicina Fisica e Riabilitativa La Palestra S.r.l.;Via Vittorio Veneto;Cirella di Diamante;Centro di Medicina Fisica e Riabilitativa La Palestra S.r.l.;Via Vittorio Veneto Cirella di Diamante (CS);0985 86043;centrofktsrl@pec.it;"D.P.G.R. N. 1/2011 
+ DCA n. 223/2018"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Terme Sibarite SpA;Loc. Terme Luigiane;Acquappesa;Terme Sibarite SpA;Via Terme, 2 Cassano allo Jonio (CS);0981 71376;termesibarite@legalmail.it;"D.P.G.R. N. 1/2011
+DCA N. 85 del 16/08/2022"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Studio Dentistico Dr.ssa Valeria CAMERA;Via Valitutti, 18;Paola;Studio Dentistico Dr.ssa Valeria CAMERA;Via Valitutti, 18 Paola (CS);0982 582165;valeria.camera.nye6@cs.omceo.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Centro Odontoiatrico Nord Calabria s.r.l.;Viale delle Querce, 42/C;Castrovillari;Centro Odontoiatrico Nord Calabria s.r.l.;Viale delle Querce, 42/C Castrovillari (CS);0981 21309;centronordcalabria.srl@legalmail.it;D.P.G.R. N. 1/2011 Nota Prot. N. 526 28/06/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;ANMI Centro Diagnostico s.r.l.                                                   (ex Centro Diagnostico Meridionale s.r.l.);Via Cardame                         (pal. Pignataro);Corigliano-Rossano;ANMI Centro Diagnostico s.r.l.  ;Via Monte S. Michele, 13 Cosenza;0983 038132;anmicentrodiagnostico@pec.it;"D.P.G.R. N. 1/2011 
+DCA N. 154/2017 nota prot. n. 382699/2017: errore materiale DCA 111/2018 
+D.D.G. n.13 del 13/07/1999 DCA N. 154/2017 DCA N. 112/2018"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Ambulatorio di Fisiokinesiterapia Guido Maria & C s.n.c.;Via A. Negri, 52;Corigliano-Rossano;Ambulatorio di Fisiokinesiterapia Guido Maria & C s.n.c.;Via A. Negri, 52 Corigliano-Rossano (CS);0983 889734;ambfisio.guido@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Centro Benessere ORES di Lepera V. & C. s.a.s.;Via G. Natale;Cariati Marina;Centro Benessere ORES di Lepera V. & C. s.a.s.;Via G. Natale Cariati Marina (CS);0983 968077;centrores@pec.it;D.P.G.R. N. 1/2011 Nota Prot. N. 301168 del 12/09/2012
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Ambulatorio di Fisiokinesiterapia  PADRE PIO di PAGLIARO Angelo & C. s.n.c.;Vico I dx D. Alighieri, 7;S. Demetrio Corone;Ambulatorio di Fisiokinesiterapia Padre Pio s.n.c. & C;Vico I dx D. Alighieri, 7 San Demetrio C. (CS);0984 956161;ambulatoriosnc@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Terme Sibarite s.p.a. ;Via Terme, 2 ;Cassano allo Jonio;Terme Sibarite s.p.a.;Via Terme, 2 Cassano allo Jonio (CS);0981 71376;termesibarite@legalmail.it;DCA N. 21 del 10/01/2023
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Studio Medico Odontoiatrico Dr.ssa Claudia BIONDI;Via Milano, 1;Corigliano-Rossano;Studio Medico-Odontoiatrico “Dott.ssa Claudia Biondi”;Via Milano, 1 Corigliano-Rossano (CS);0983 513421;claudia.biondi.70rk@cs.omceo.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Studio Odontoiatrico Dr. Antonio Francesco Carmine PIRO;Via S. Pertini, 15;Corigliano-Rossano;Studio Odontoiatrico Dr. Antonio Francesco Carmine PIRO;Via S. Pertini, 15 Corigliano-Rossano (CS);0983 888030;antoniofrancesco.piro.mrl4@cs.omceo.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Studio Medico Otorino Dr. MARINCOLO Liberato I.;Piazza Rinascimento, 11;Corigliano-Rossano;Studio Medico Otorino Dr. MARINCOLO Liberato I.;Piazza Rinascimento, 11 Corigliano-Rossano (CS);0983 511860;liberatoirenio.marincolo.oavz@cs.omceo.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Studio Medico Oculistico Dr.ssa Rosa SCHIAVELLI s.r.l.;Via S. Stefano, 15;Corigliano-Rossano;Studio Medico Oculistico Dr.ssa Rosa SCHIAVELLI s.r.l.;Via S. Stefano, Corigliano-Rossano (CS);0983 886065;studioschiavelli@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Studio Medico Dermatologico Dr. VERRINA ;Via Largo Firenze, 3;Corigliano-Rossano;Studio Medico Dermatologico Dr. VERRINA ;Via Largo Firenze, 11 Corigliano-Rossano (CS);0983 512960;francoverrina@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Centro Diabetologico Dea s.r.l.;Via G. di Vittorio, 19;Corigliano-Rossano;Centro Diabetologico Dea s.r.l.;Via G. di Vittorio, 19 Corigliano-Rossano (CS);0983 530263;deasrl@registerpec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Centro Sanitario dell'Università della Calabria;Campus di Arcavacata, Piazza Bianchi - cubo 34/b;Rende;Centro Sanitario dell'Università della Calabria;Campus di Arcavacata, Piazza Bianchi - cubo 34/b Rende (CS);0984 496201;c.sanitario@pec.unical.it;"D.P.G.R. N. 1/2011 
+DCA N. 112 del 26/04/2023"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;CNR Istituto di Scienze Neurologiche;C.da Burga Piano Lago;Mangone;Consiglio Nazionale delle Ricerche;Piazzale A. Moro n° 7 ROMA;0984 98011;isn@pec.cnr.it;D.P.G.R. N. 1/2011 DCA n. 21 del 08-02-17 Nota prot. n. 60067/2018
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Laboratorio specializzato di Genetica Medica Biogenet s.r.l.;Via Cesare Gabriele, 70;Cosenza;Biogenet S.r.l.;Via Cesare Gabriele, 78 Cosenza;0984 846425;info@pec.biogenet.it;D.P.G.R. N. 1/2011 DCA n. 173/2017 DCA n. 176/2018
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;BIOCONTROL IMAGING s.r.l.;Via F. e G. Falcone, 5/7 ;Cosenza;BIOCONTROL IMAGING s.r.l.;"Via Trieste, 13
+Rende";0984 35705;biocontrolimagingsrl@legalmail.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Studio Radiologico Sant'Anna di Caputo Maria Chiara & C. s.a.s.;Via Ugo Spirito, 25;Cosenza;Studio Radiologico Sant'Anna di Caputo Maria Chiara & C. s.a.s.;Via Ugo Spirito, 25 Cosenza;0984 27843;radiologicosantanna@pec.it;D.P.G.R. N. 1/2011 DCA N. 208 DEL 24/10/2018 DCA n. 15 del 28/01/2020
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Centro di Diagnostica per Immagine San Francesco s.r.l.;Piazza Donato Bergamini , 21;Cosenza;Centro di Diagnostica per Immagine San Francesco s.r.l.;"Piazza Donato Bergamini , 21 
+Cosenza";0984 412191;immaginesanfrancesco@pec.it;DCA N. 06 del 09/01/2023
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Studio Radiologico FEDERICO s.r.l.;Viale G. Mancini, 355;Cosenza;Studio Radiologico FEDERICO s.r.l.;Viale G. Mancini, 355 Cosenza;0984 22984;radiologiafederico@pec.it;"D.P.G.R. N. 1/2011 
+DCA n. 27 del 28/01/2020"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Studio Radiologico Dr. Giovanni PERRI & C. s.a.s.;Via G. Falcone, 202;Cosenza;Studio Radiologico Dr. Giovanni PERRI & C. s.a.s.;Via G. Falcone, 202 Cosenza;0984 36195;radiologiaperri@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Ambulatorio di Fisiatria F. RUFFOLO s.r.l.;C.so L. Fera, 72;Cosenza;Ambulatorio di Fisiatria F. RUFFOLO s.r.l.;C.so L. Fera, 72 Cosenza;0984 35823;ambulatorioruffolosrl@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Studio Medico di Fisiokinesiterapia del Dr. G. STANCATI s.r.l.;Corso Mazzini, 92;Cosenza;Studio Medico di Fisiokinesiterapia del Dr. G. STANCATI s.r.l.;Corso Mazzini, 92 Cosenza;0984 74437;fktstancati@poste-certificate.eu;D.P.G.R. N. 1/2011 Nota prot. n.28620 del 1/2/2016
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;K.T. Aldo FATA Studio di Fisiokinesiterapia;Via Monte Balbo, 20;Cosenza;K.T. Aldo FATA Studio di Fisiokinesiterapia;Via Monte Balbo, 20 Cosenza;0984 21970;studiofata@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Magamo S.r.l. (ex Studio GABRIELE di Curcio Petronio Anna Maria & C. s.a.s.);Via Tancredi, 10;Cosenza;Magamo S.r.l.;Via Tancredi, 10 Cosenza;0984 74453;magamosrl@pec.it;D.P.G.R. N. 1/2011 DCA N. 131 del 19/10/2017
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Clinic Service Center s.r.l.;Via Provinciale ;Piano Lago Mangone;Clinic Service Center s.r.l.;Via Provinciale P. Lago Mangone (CS);0984 969955;clinic@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Centro di Riabilitazione ANMIC;Via Panoramica, 326;San Giovanni in Fiore;Associazione ANMIC;Via Roma ang. S. Croce, 132 Crotone;0984 970912;anmiccdr@legalmail.it;D.P.G.R. N. 1/2011 DCA n. 187 del 20/12/2019
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Ambulatorio di Medicina Fisica e Riabilitativa Casa di Cura M. Misasi;Via F.Miceli Picardi, 32;Cosenza;San Bartolo S.r.l.;P.zza F. Crispi, 6 Cosenza;0984 482231;sanbartolosrl@legalmail.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Studio Odontoiatrico Dr.ssa Maria Vittoria Del Console;Corso D'Italia, 93;Cosenza;Studio Odontoiatrico Dr.ssa Maria Vittoria Del Console;Corso D'Italia, 93 Cosenza;0984 36822;mariavittoriadelconsole@pec.andi.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Studio Odontoiatrico Dr.ssa Alessandra Lo Polito ;Via Misasi, 57;Cosenza;Studio Odontoiatrico Dr.ssa Alessandra Lo Polito ;Via Misasi, 57 Cosenza;0984 74149;alessandralopolito@pec.andi.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Studio Odontoiatrico Dr. Giampiero De Maria;Via Trento, 2;Montalto Uffugo;Studio Odontoiatrico Dr. Giampiero De Maria;Via Trento, 2 Montalto Uffugo (CS);0984 937540;giampiero.demaria.6cyf@cs.omceo.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Studio Odontoiatrico Mazzuca Srls;Viale della Repubblica, 215;Cosenza;Studio Odontoiatrico Mazzuca Srls;Viale della Repubblica, 215 Cosenza;0984 28067;mazzucagiovanni@legalmail.it;D.P.G.R. N. 1/2011 DCA n. 172 del 05/12/2019
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Studio Odontoiatrico Dr.ssa Michela Romano;Viale della Resistenza;Rende;Studio Odontoiatrico Dr.ssa Michela Romano;Viale della Resistenza Rende (CS);0984 467928;romanomichela@legalmail.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Ginecos;Via Rossini, 247;Rende;Centro Clinico San Vitaliano Srl;Via Rossini, 247 Rende (CS);0984 466629;centroclinicosanvitaliano@pec.it;"D.P.G.R. N. 1/2011 
+Nota prot. N. 242985 11/07/2012"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Centro per la cura delle malattie allergiche e cardiopolmonari del Dr. Roberto Marenda s.r.l.;Via Umberto Nobile, 80 Centro Direzionale Marco Polo;Rende;Centro per la cura delle malattie allergiche e cardiopolmonari del Dr. Roberto Marenda s.r.l.;Via Umberto Nobile, 80 Rende (CS);0984 392572;centro.malattie.marendasrl@arubapec.it;D.P.G.R. N. 1/2011 D.P.G.R.-CA N. 133/2013
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;EURO 2000 s.r.l.;Via B. Croce;Montalto Uffugo;EURO 2000 s.r.l.;Piazza Vanvitelli, 15 Napoli;0984 927022;euro2000dialisi@legalmail.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;ANMI Centro Diagnostico s.r.l. (ex Studio Radiologia Medica Perri e Bilotta del Dott. P.G. s.a.s.);Viale Sant'Angelo - Località Crosetto;Corigliano-Rossano;ANMI Centro Diagnostico s.r.l.  ;Via Monte S. Michele, 13 Cosenza;0983 513856;anmicentrodiagnostico@pec.it;"DCA N. 110/2014 
+DCA n. 24 DEL 08/02/2017 DCA N. 77 DEL 09.05.2017 DCA n. 106 del 10/05/2018 
+DCA n. 210 del 24/10/2018 DCA n. 168 del 03/12/2019 DCA n. 20 del 28/01/2020
+DCA n. 26 del 28/012020"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Santa Lucia s.r.l.;Viale Trieste, 71 ;Cosenza;Santa Lucia s.r.l.;Viale Trieste, 71 Cosenza;0984 26826;santalucia1950@pec.it;"D.C.A. N. 62 DEL 27/02/2018 e N.82 DEL 12/04/2018 DCA N. 82 DEL 08/05/2019
+DCA N. 139 del 19/10/2022"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;ANMI SISS S.r.l.;Viale Sant'Angelo loc. Crosetto ;Corigliano-Rossano;ANMI SISS S.r.l.;Via Monte S. Michele, 13 Cosenza;0983 293019;anmisiss@pec.it ;DCA N. 246 DEL 06/12/2018
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;ANMI SISS S.r.l.;Via Molicella Vicinale, 7/13 - 7/15;Cosenza;ANMI SISS S.r.l.;Via Monte S. Michele, 13 Cosenza;0984 482790;anmisiss@pec.it ;DCA n. 21 del 28/01/2020
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Centro Fisioterapia Kinesis Dott. Conforti Giuseppe;Via Magna Grecia, 3/F;Corigliano-Rossano;Centro Fisioterapia Kinesis Dott. Conforti Giuseppe;Via Magna Grecia, 3/F Corigliano-Rossano (CS);0983 511331;kinesisriab@pec.it;DCA N. 16 DEL 28/01/2020
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;C.S.B. s.r.l. Unipersonale;C.da Cozzo Giardino;Corigliano-Rossano;C.S.B. s.r.l. Unipersonale;C.da Cozzo Giardino Corigliano-Rossano (CS);0983 859110;csbsrl1@legalmail.it;DCA N. 17 DEL 28/01/2020
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Centro di Riabilitazione San Lorenzo A/S s.r.l. ;Via Gelsomini, 9;S. Giovanni in Fiore;Centro di Riabilitazione San Lorenzo A/S s.r.l. ;Via Gelsomini, 9 San Giovanni in Fiore (CS);0984 970020;centrosanlorenzo@pec.it;DCA N. 16 del 10/01/2023
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Laboratorio Analisi Cliniche Centro Diagnostico SALIMBENI-VERSACE s.r.l.;Via Nazionale,40/42;Corigliano-Rossano;Centro Diagnostico SALIMBENI-VERSACE s.r.l.;Via Nazionale, 42 Corigliano-Rossano (CS);0983 885036;centrodiagnostico.srl@pec.it;DCA N. 19 DEL 28/01/2020
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Fisiocenter s.r.l.;Contrada Petraro snc;Cariati;Fisiocenter s.r.l.;Contrada Petraro snc Cariati (CS);0983 91598;fisiocentermaduli@legalmail.it;DCA N. 25 DEL 28/01/2020
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Laboratorio Analisi Cliniche Centro Diagnostico S. FRANCESCO s.r.l.;Via degli Stadi, 2;Cosenza;Centro Diagnostico S. FRANCESCO s.r.l.;Via degli Stadi, 2 Cosenza;0984 412191;centrodiagnosticosfrancesco@pec.it;DCA n. 31 del 28/01/2020
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;CMD s.r.l.;Corso Italia;Montalto Uffugo;CMD s.r.l.;"Corso Italia
+Montalto Uffugo (CS)";;cmdpaola@pec.it;DCA N. 102 del 30/08/2022
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Medical Center Karol Wojtila S.r.l.;Via S. Rota, 3;San Giovanni in Fiore;Medical Center Karol Wojtila S.r.l.;"Via S. Rota, 3
+San Giovanni in Fiore (CS)";0984 975297;medicalcenterkw@pec.it;DCA N. 99 del 30/08/2022
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Fisiomedical S.r.l.;Via Campo Minore;Belvedere Marittimo;Fisiomedical S.r.l.;"Via Campo Minore
+Belvedere Marittimo (CS)";0985 82908;fisiomedical@pec.it;DCA N. 122 del 11/10/2022
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Costruire Il Domani Onlus;Via Gallo Vincenzo, snc;Rogliano;Associazione Costruire Il Domani Onlus;Via Regina Elena, 72 Rogliano (CS);0984 961530;costruireildomanionlus@pec.it;DCA N. 173 del 05/12/2022
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Biocontrol Imaging s.r.l.;Via Schiavello, snc;Castrovillari;Biocontrol Imaging s.r.l.;"Via Trieste, 13
+Rende";0981 070012;biocontrolimagingsrl@legalmail.it;DCA N. 175 del 05/12/2022
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Centro Diagnostico Luigi Impieri;Via Giuseppe Fiorillo n. 108;Belvedere Marittimo;Centro Diagnostico Luigi Impieri;"Via Giuseppe Fiorillo n. 108
+Belvedere Marittimo";0985 849331;info@centrodiagnosticoimpieri.it;DCA N. 176 del 05/12/2022
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Presidio Ambulatoriale di Riabilitazione e Fisioterapia Giovanni Paolo II ;"Corso Italia, snc
+Località Pantoni";Montalto Uffugo;F.D.R. S.r.l.;"Corso Italia, 2
+Montalto Uffugo";0984 939316;fdrsrl@pec.it;DCA N. 171 del 30/11/2022
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Studio/Ambulatorio Libero Professionale del Dott. Remo Battendieri;C.da Mancarelli snc;Roggiano Gravina;Studio/Ambulatorio Libero Professionale del Dott. Remo Battendieri;"C.da Mancarelli snc
+Roggiano Gravina";0984 503815;remo.battendieri.fciu@cs.omceo.it;DECRETO DEL COMMISSARIO AD ACTA DEL 14/01/2022
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Centro Diagnostico e Poliambulatorio Specialistico Adelchi;Via Dogana Angolo Via Monte Amiata;Amantea;Centro Clinico San Vitaliano S.r.l.;"Via Tommaso Campanella n. 60
+Catanzaro";0961 773834;centroclinicosanvitaliano@pec.it;DCA N. 05 del 09/01/2023
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Studio Odontoiatrico Dr. Alberto Riccardi;Via Della Grotta n. 3;Praia a Mare;Studio Odontoiatrico Dr. Alberto Riccardi;"Via Della Grotta n. 3
+Praia a Mare";0985 74069 ;alberto.riccardi.s.7bk@cs.omceo.it;DCA N. 07 del 09/01/2023
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CS;Laboratorio analici cliniche della Dr.ssa Canino Marina Francesca;Via Ex Strada Statale 19 n. 57;Mangone;Laboratorio analici cliniche della Dr.ssa Canino Marina Francesca;"Via Ex Strada Statale 19 n. 57
+Mangone";;marinafrancesca.canino@pec.it;DCA N. 13 del 09/01/2023
+STABILIMENTO TERMALE;CS;Terme Sibarite SpA;Loc. Terme Luigiane;Acquappesa;Terme Sibarite SpA;Via Terme, 2 Cassano allo Jonio (CS);0981 71376;termesibarite@legalmail.it;"D.P.G.R. N. 1/2011
+DCA N. 85 del 16/08/2022"
+STABILIMENTO TERMALE;CS;Terme Sibarite S.p.a.;Via delle Terme, 2;Cassano allo Jonio;Terme Sibarite s.p.a.;Via Terme, 2 Cassano allo Jonio (CS);0981 71376;termesibarite@legalmail.it;DCA N. 21 del 10/01/2023
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;KR;Centro Radiologico Piro s.r.l.;Via Giovanni Paolo II,16/20;Crotone;Centro Radiologico Piro s.r.l.;Via Giovanni Paolo II,18 Crotone;0962 21590;centroradiologiamedicapiro@pec.it;"D.P.G.R. N. 1/2011 DCA N.66 DEL 13/7/2016 Nota prot. n. 104245/2018
+DCA N. 45 del 09/02/2023"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;KR;Centro Radiologico  di Diagnostica e Roentgenterapia FAMILIARI di F. Ciliberto & C. s.a.s.;Via M. Nicoletta;Crotone;Centro Radiologico FAMILIARI di F. Ciliberto & C. s.a.s.;Via M. Nicoletta Crotone;0962 23971 - 3485150145;centrofamiliari@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;KR;"Presidio di Riabilitazione Estensiva
+Extraospedaliera Centro San Giuseppe ""Centro Diagnostico per Immagini”";Via S. Baffa, 250;Cotronei;SADEL di Salvatore BAFFA SpA;Via degli Scipioni, 252 Roma;0962 44344;sadel.spa@pec.it;"D.P.G.R. N. 1/2011 Nota prot. n. 152189 del 14/05/2015
+DCA n. 44 del 04/02/2020
+"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;KR;Polispecialistica BIOS s.r.l. ;Via Panella, 137;Crotone;Polispecialistica BIOS srl;Piazza Umberto I°, 41 Crotone;0962 22115;info@pec.biosmedica.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;KR;Centro STARBENE s.r.l.;Largo Covelli, 4;Crotone;STARBENE s.r.l.;Largo Covelli, 4 Crotone;0962 26961;starbenekr@pec.it;DCA N. 63 del 21/02/2023
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;KR;Fisiokinesiterapico SALUS s.r.l.;Via P. Zito n.10;Crotone;Fisiokinesiterapico SALUS s.r.l.;Via P. Zito, 10 Crotone;0962 24700;fktsalus@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;KR;ANMIC RIABILITAZIONE;Via P. Impastato, 57;Crotone;ANMIC RIABILITAZIONE;Via P. Impastato, 57 Crotone;0962 28071;anmiccdr@legalmail.it;D.P.G.R. N. 1/2011 DCA 145/2018
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;KR;Atena s.r.l. Servizi Sanitari;Via  B. Telesio/Galluppi;Crotone;Atena s.r.l. Servizi Sanitari;Via B. Telesio, 21 Crotone;0962 1920111;rosatena@peccenacolo.com;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;KR;R.M. s.r.l. di Scalise Francesco & C.;Via Caponnetto, 5;Crotone;R.M. s.r.l. di Scalise Francesco & C.;Via Caponnetto, 5 Crotone;0962 29907;r.m.sas@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;KR;Studio Dentistico Dr. Nicola GARRITANI s.r.l.;Via Giovanni XXIII;Strongoli;Studio Dentistico Dr. Nicola GARRITANI s.r.l.;Via Giovanni XXIII Strongoli;0962 072613;garritanisrl@pec.it;DCA 103 del 30/08/2022
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;KR;Studio Dentistico Dr. Marrazzo Costantino s.r.l. Unipersonale;Via Marinella, 27;Crotone;Studio Dentistico Dr. Marrazzo Costantino s.r.l. Unipersonale;Via M. F. Rocca, 7 Mesoraca (KR);0962 20570;studiodentisticomarrazzocostantinostp@pec.it;D.P.G.R. N. 1/2011 DCA 148/2018
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;KR;Istituto Stomatologico Meridionale S.r.l.;Via XXIX Ottobre;Torre Melissa ;Istituto Stomatologico Meridionale S.r.l.;"Via XXIX Ottobre
+Torre Melissa (KR)";0962 865137;istitutokr@mypec.eu;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;KR;Poliambulatorio SALUS S.r.l.;Via Reggio, 2;Isola Capo Rizzuto;SALUS S.r.l.;Via Reggio, 2 Isola Capo Rizzuto (KR);0962 791131;salus.srl@legalmail.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;KR;Studio Dentistico C.M.G. s.r.l.;Via XXV Aprile, 46;Crotone;C.M.G. Centro Medico Gentile Srl;Via XXV Aprile, 46 Crotone;0962 900610;cmgsrl@mypec.eu;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;KR;ARS MEDICA SERVIZI s.r.l.  del Dr. Domenico Paletta;Via Fibonacci;Crotone;ARS MEDICA SERVIZI s.r.l.;"Via Fibonacci
+Crotone";0962 29459;arsmedicacom@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;KR;TURANO C. & C. s.r.l.;Via Tommaso Campanella, 52;Crotone;TURANO C. & C. s.r.l.;Via Tommaso Campanella, 52 Crotone;0962 27713;centroturano@lamiapec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;KR;Centro Medico IGEA               ex Casa di Cura Reumatologica Oliveti spa;Via Mediterraneo, 21;Crotone;Progetto Terza Età Srl;Loc. Pozzoseccagno Cutro (KR);0962 902782;ptesrl@pec.it;DCA N. 113/2015
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;KR;Studio Medico Fisiokinesiterapico Alcmeone del Dott. Antonio Gentile S.a.s.;Piazza I Maggio, 3;Isola Capo Rizzuto;Studio Medico Fisiokinesiterapico Alcmeone del Dott. Antonio Gentile S.a.s.;"Via C. Colombo , 6
+Isola Capo Rizzuto (KR)";0962 791505;pecstudiomedico@legalmail.it;DCA N. 44 del 08/02/2023
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CZ;Studio Radiologico S. Domenico di A. Cristiano & C. s.a.s.  ;Via Musolino Pal. Pileggi;Lamezia Terme;Studio Radiologico S. Domenico di A. Cristiano & C. s.a.s.  ;Via Musolino, 4 Lamezia Terme (CZ);0968 221802;studiocristiano@sicurezzapostale.it;"DCA N. 93/2014 
+DCA N. 96 del 30/08/2022"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CZ;Fondazione BETANIA ONLUS;Via Molise, 31;Catanzaro;Karol Betania Strutture Sanitarie S.r.l.;Via Molise, 21 Catanzaro;0961 763111;fondazionebetania@pec.it;"D.P.G.R. N. 1/2011 Nota prot. n. 68691 del 18/02/2019 Nota prot. n. 408636 del 27/11/2019 
+"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CZ;Centro Medico Diagnostico - ALGOS Srl;Via F. Chiaravalloti;Cropani Marina;ALGOS Srl;Via F. Chiaravalloti Cropani Marina (CZ);0961 961334;algossrl@blupec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CZ;Villa Elisa Soverato s.r.l.;Via Galliano, 12/14;Soverato;Villa Elisa Soverato s.r.l.;Via Galliano, 14 Soverato (CZ);0967 521370;villaelisa@legalmail.com;"D.P.G.R. N. 1/2011
+PRESA D'ATTO n.406110 del 06/12/2012"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CZ;Ambulatorio di Medicina Riabilitativa;Via Frischia, ,139;Sellia Marina;Medicina Riabilitativa s.r.l.;Via Frischia, 139 Sellia Marina (CZ);0961 964071;medicinariabilitativa@pec.it;"D.P.G.R. N. 138/2013
+"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CZ;CE.MO.FIS. - Centro Medico Ortopedico Fisiokinesiterapico Sportivo S.A.S.;Viale Magna Grecia 197/O;Catanzaro;CE.MO.FIS. S.A.S.;Viale Magna Grecia 197/O Catanzaro;0961 746204;cemofis@pec.it;"D.P.G.R. N. 29/2014
+
+"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CZ;Poliambulatorio Dr.ssa Levato Antonia;Via Nazionale, 35;Sellia Marina;Studio Odontoiatrico Dr.ssa Levato Antonia;Via Nazionale, 35 Sellia Marina (CZ);0961 964789;levato.antonia@pec.cgn.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CZ;Poliambulatorio Medico Specialistico Levato S.a.s. di Levato A. & C.;Via Nazionale, 35;Sellia Marina;Poliambulatorio Medico Specialistico Levato S.a.s. di Levato A. & C.;"Loc. Basilicata, snc
+Cropani";0961 964789;poliambulatoriosas@pec.it;"D.P.G.R. N. 1/2011 
+DCA n. 133 del 19/10/2017 DCA N. 245 DEL 06/12/2018 Nota prot. n. 68713 del 18/02/2019"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CZ;FISIOKINESITERAPICA Sud s.r.l.;Via G. Staglianò;Chiaravalle Centrale;FISIOKINESITERAPICA Sud s.r.l.;Via G. Staglianò, 489 Chiaravalle C.le (CZ);0967 91717;fktsrl@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CZ;Istituto Fisiokinesiterapico Sporting Club s.n.c. ;Via Lombardi-Scopelliti;Catanzaro;Istituto Fisiokinesiterapico Sporting Club s.n.c. ;Via Scopelliti, 2 Catanzaro;0961 777913;sportingclub@certificatamail.it;D.P.G.R. N. 1/2011 Nota prot. n. 206216 DEL 12/6/18
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CZ;Dental Medical s.r.l.;Via A. Turco, 89;Catanzaro;Dental Medical s.r.l.;Via A. Turco, 89 Catanzaro;0961 727988;dentalmedicalsrl@pec.it;"D.P.G.R. N. 1/2011 Nota prot. n. 10499 del 16/01/2017
+
+Nota prot. N. 491 21/06/2011"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CZ;Studio Dentistico Dr. Giovanni Verzina;Via Ludovisi, 7;Botricello;Studio Dentistico Dr. Giovanni Verzina;Via Ludovisi, 12 Botricello (CZ);0961 532565;studioverzina@pec.it;"DCA N. 88/2014
+"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CZ;"Alessia s.r.l.
+Centro Odontoiatrico Calabrese ";Via Scesa Eroi 1799, 23;Catanzaro;Alessia s.r.l.;Via Scesa Eroi 1799, 23 Catanzaro;0961 723200;alessia.srl@arubapec.it;"D.P.G.R. N. 1/2011 
+DCA n. 114/2015 Nota prot. N.116835 DEL 05/04/2017"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CZ;Studio Odontoiatrico Dr. Procopio Antonio;Via SS. Rosario ;Sellia Marina;Studio Odontoiatrico Dr. Procopio Antonio;Via SS. Rosario Sellia Marina (CZ);335 8386323;antonioprocopio1@pec.it               ;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CZ;Ambulatorio Specialistico di Oculistica EOS S.R.L;C.da San Nicola Villetta, 10;Soverato;EOS S.r.l.;Via S. Nicola, 27 Soverato (CZ);0967 736209 -339 5041638;eosoculistica63@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CZ;Studio Medico di Otorinolaringoiatria Dr.  Primerano Giovanni;Via F.lli Drosi snc;Satriano;Studio Medico di Otorinolaringoiatria Dr.  Primerano Giovanni;Via F.lli Drosi snc Satriano (CZ);0967 521469;giovanni.primerano.la0b@cz.omceo.it;D.P.G.R. N. 1/2011 Nota prot. N. 493 DEL 21/06/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CZ;Diagnostica Nausicaa s.r.l.;Via Costa degli Aranci, 2;Montauro Scalo;Diagnostica Nausicaa s.r.l.;Via Costa degli Aranci, 2 Montauro (CZ);0967 577613;frigas@legalpec.net;D.P.G.R. N. 1/2011 Nota prot. n. 110311/2018
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CZ;Centro Cilnico S. Vitaliano s.r.l.;Via T. Campanella, 60;Catanzaro;Centro Cilnico S. Vitaliano s.r.l.;Via T. Campanella, 60 Catanzaro;0961 773834-0984 163695;centroclinicosanvitaliano@pec.it;"DCA n. 147 del 20/07/2018 
+DCA n. 155 del 26/11/2019 
+DCA n. 173 del 05/12/2019"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;CZ;Studio Odontoiatrico Libero Professionale del Dott. Dario Condò;Corso Umberto I, 290;Soverato;Studio Odontoiatrico Libero Professionale del Dott. Dario Condò;"Corso Umberto I, 290
+Soverato (CZ)";;dariocondo@pec.it;DCA N. 98 del 30/08/2022
+STABILIMENTO TERMALE;CZ;Terme Caronte s.p.a.;C.da Caronte;Lamezia Terme;Terme Caronte s.p.a.;C.da Caronte Lamezia Terme (CZ);0968 437180-0968 27996;termecaronte@pec.it;DCA N. 115 del 26/04/2023
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;VV;Studio Radiologio dei Dottori Giuseppe e Piefrancesco Maruccio s.n.c.;Via Spogliatore, 34;Vibo Valentia;Studio Radiologio dei Dottori Giuseppe e Piefrancesco Maruccio s.n.c.;Via Spogliatore, 34 Vibo Valentia;0963 41082;studio.maruccio@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;VV;Studio Radiologico Riga S.r.l.;Via Lacquari, Pal. Rizzuti;Vibo Valentia;Studio Radiologico Riga S.r.l.;Via Lacquari, Vibo Valentia;0963 591412;studioriga@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;VV;Studio Radiologioco Hipponion s.n.c.di La Gamba A.;Via San D. Savio, 12;Vibo Valentia;Studio Radiologioco Hipponion s.n.c.di La Gamba A.;Via San D. Savio, 12 Vibo Valentia;0963 471659;hipponion@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;VV;ASPR VIGI 2 s.r.l.;Viale della Pace I Trav. N. 1/A;Vibo Valentia ;ASPR VIGI 2 s.r.l.;Via Matilde Serao, 2 Vibo Valentia;0963 301256;info@pec.centrovigi.it;D.P.G.R. N. 1/2011 Nota prot. n. 1165 12/10/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;VV;TERI s.r.l. Studio di Fisioterapia e Riabilitazione;Via Bucciarelli,12;Vibo Valentia;TERI s.r.l.;Via Bucciarelli,12 Vibo Valentia;0963 44005;terisrl@pcert.it;D.P.G.R. N. 1/2011 Nota prot. n. 283427 23/08/2012
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;VV;Studio Odontoiatrico Dr.ssa D'Elia Lucia Letizia;Via Collina degli Angeli, 36;Sorianello;Studio Odontoiatrico Dr.ssa D'Elia Lucia Letizia;Via Collina degli Angeli, 36 Sorianello (VV);0963 352288;lucialetiziadelia@pec.andi.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;VV;Renaissance s.a.s. di Colelli Francesco;Via Giosuè Carducci;Ionadi;Renaissance s.a.s. di Colelli Francesco;Via Nazionale S.S. 18 snc Ionadi (VV);0963 263494;renaissancesas@pec.it;D.C.A. n. 70 del 16/04/2019
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;VV;Physiomedical;Viale della Pace snc;Serra San Bruno;Physiomedical;"Viale della Pace snc
+Serra San Bruno (VV)";0963 1964020;danieledenino@pec.it;DCA N. 105 del 30/08/2022
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;VV;Laboratorio Analisi Cliniche Biolab Dr. Roberto Nisticò;Via A. Moro, 4;Serra San Bruno;Laboratorio Analisi Cliniche Biolab Dr. Roberto Nisticò;Via A. Moro, 4 Serra San Bruno (VV);0963 71376;biolabnistico@pec.it;"D.P.G.R. N. 1/2011 
+Attività sospesa"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Studio Radiologico S.r.l.;Via E. Fermi, 107;Siderno;Studio Radiologico S.r.l.;Via E. Fermi, 103 Siderno (RC);0964 3821211;amministrazione@pec.studiorad.it;D.P.G.R. N. 1/2011 Nota prot. n. 209693/2018
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Studio Radiologico S.r.l.;Via Progresso, 41/43;Siderno;Studio Radiologico S.r.l.;Via E. Fermi, 103 Siderno (RC);0964 382111;amministrazione@pec.studiorad.it;D.P.G.R. N. 1/2011 Nota prot. n. 209693/2018
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Nuova Radiodiagnostica Polifroni  s.a.s.;Via Matteotti, 146;Locri;Nuova Radiodiagnostica Polifroni  s.a.s.;Via Matteotti, 210 Locri (RC);0964 21720;nuovarad@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Centro Medico ToMmaso Campanella s.r.l.;Via Nazionale Jonica, 308;Monasterace;Centro Medico Tonmaso Campanella s.r.l.;Via Nazionale Jonica, 308 Monasterace (RC);0964 735024;centromedicotc@pec.it;D.P.G.R. N. 1/2011 Nota prot. n. 242229/2018
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Medical Dental Dr. G. Strangio & C. s.a.s.;Piazza Marconi, 6;Siderno ;Medical Dental Dr. G. Strangio & C. s.a.s.;Piazza Marconi, 6 Siderno (RC);0964 387036;medicaldental@pecimprese.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Centro Odontoiatrico Paola Spadaro s.r.l.;Via Domenico Brancatisano, 2;Ardore ;Centro Odontoiatrico Paola Spadaro s.r.l.;Via Domenico Brancatisano, 2 Ardore (RC);0964 628438;centroodontoiatricopaolaspadaro@legalmail.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Raschellà Odontoiatria e Medicina s.r.l.;Via Milite Ignote, 34;Locri;Raschellà Odontoiatria e Medicina s.r.l.;Via Milite Ignote, 34 Locri (RC);0964 040072;raschellaodontoiatria@pec.raschellaodontoiatria.it ;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Studio Odontoiatrico Dr. Marando Domenico Giovanni;Via Nazionale, 120;Bianco;Studio Dentistico Dr. Domenico Marando Srl;Via Nazionale, 193 Bianco (RC);0964 911756;studiomarando@gigapec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Studio Medico Dentistico Dr. Antonino Praticò;C.so Umberto I, 137;Brancaleone;Studio Medico Dentistico Dr. Antonino Praticò;C.so Umberto I, 137 Brancaleone (RC);0964 933266;pratico.nino@pec.it;D.P.G.R. N. 1/2011 D.C.A. n. 28 del 20/02/2019
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Centro Odontoiatrico Paola Spadaro s.r.l.;Via Zara, 34;Locri;Centro Odontoiatrico Paola Spadaro s.r.l.;Via Zara, 34 Locri (RC);0964 20296;centroodontoiatricopaolaspadaro@legalmail.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Centro Odonto-Medical Company del Dr. Pancallo s.r.l.;C.so Garibaldi;Siderno;Centro Odonto-Medical Company del Dr. Pancallo s.r.l.;C.so Garibaldi Siderno (RC);0964 343185;renato.pancallo@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Medi-Odonto-Center s.r.l.;Via Santa Tecla 19/c;Gioiosa Jonica;Medi-Odonto-Center s.r.l.;Via Santa Tecla 19/c Gioiosa Jonica (RC);0964 51637;medi.odonto.center.srl@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Policlinico di Monza Casa di Cura S.p.a.            (ex Centro Ric. Card. D.A.Cooley);Viale Calabria, 14;Bovalino;Policlinico di Monza Casa di Cura S.p.a.    ;Via Passalacqua, 10 Novara;0964 61316;direzione.generale@policlinicodimonza.legalmail.it;D.P.G.R. N. 1/2011 Nota prot. n. 283416 23/08/2012 Nota prot. n. 145960/2018
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Studio di Cardiologia Dr.ssa Musitano Maria Antonia ;Via Cirillo, 3;Bovalino;Studio di Cardiologia Dr.ssa Musitano Maria Antonia ;Via Cirillo, 3 Bovalino (RC);0964 66137;musitano@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Studio Medico Polispecialistico S. Anna di M. Saiaci & C. s.a.s.;Via Prolungamento Iannizzi ;Laureana di Borrello;Studio Medico Polispecialistico S. Anna di M. Saiaci & C. s.a.s.;Via S. Anna, 5 Laureana di Borrello (RC);0966 25195;studiomedicosantanna@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Studio Medico Polispecialistico S. Anna di M. Saiaci & C. s.a.s.;Via S. Anna, 5      ;Laureana di Borrello;Studio Medico Polispecialistico S. Anna di M. Saiaci & C. s.a.s.;Via S. Anna, 5 Laureana di Borrello (RC);0966 25195;studiomedicosantanna@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Studio Medico Polispecialistico S. Anna di M. Saiaci & C. s.a.s.;Via B. Buozzi, 169;Palmi;Studio Medico Polispecialistico S. Anna di M. Saiaci & C. s.a.s.;Via S. Anna, 5 Laureana di Borrello (RC);0966 25195;studiomedicosantanna@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Centro Medico Diagnostico IMAGINE SYSTEM s.r.l. ;Via Nazionale - 111, 187;Gioia Tauro ;IMAGINE SYSTEM s.r.l. ;Via Nazionale, 111 Gioia Tauro (RC);0966 500623;imaginesystem@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Centro Polispecialistico RONTGEN s.r.l.;Via Roma, 15                 ;Gioia Tauro;RONTGEN s.r.l.;Via Roma, 15 Gioia Tauro (RC);0966 55888;centroroentgen@arubapec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Studio Radiologico Dr. Vincenzo Arceri s.a.s.;Via Circonvallazione n. 262/264 (oggi Viale Prof. Vincenzo Ricci);Taurianova;Studio Radiologico Dr. Vincenzo Arceri s.a.s.;Viale Prof. V. Ricci, 262/264 Taurianova (RC);0966 643454;vincenzo.arceri.mwsb@rc.omceo.it;"D.P.G.R. N. 1/2011 
+DCA N. 23 del 22/04/2015"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Gamma Poliambulatorio Specialistico S.r.l.;Via Piria, 25;Gioia Tauro;Gamma Poliambulatorio Specialistico S.r.l.;Via Piria, 25 Gioia Tauro (RC);3470781686;gammapoliambulatorio@pec.it;"D.P.G.R. N. 1/2011 
+DG N. 10300 del 07/09/2022
+DCA N. 101 del 30/08/2022
+DCA N. 166 del 29/11/2022
+"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Alfa s.a.s. di Riccardo Tigani;Via Scultore G.Renda, 14;Polistena;Alfa s.a.s. di Riccardo Tigani;Via Scultore G.Renda, 14 Polistena (RC);0966 932535;alfasaspolistena@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Ortofisiomedical di Misiti F e C  S.a.s;Via Morandi, 12;Cinquefrondi;Ortofisiomedical di Misiti F e C  S.a.s;Via Morandi, 14 Cinquefrondi (RC);0966 949364;ortofisiomedical@legalmail.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Studio Odontoiatrico Polispecialistico Russo S.r.l.;Via Bellini, 28;Gioia Tauro;Studio Odontoiatrico Polispecialistico Russo S.r.l.;Via Bellini, 28 Gioia Tauro (RC); 0966 51677  ;studiorusso@arubapec.it;"D.P.G.R. N. 134/2013
+"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Odontomedica  di Vecchio Domenica & C.s.a.s.;Via P. Nenni;Rosarno;Odontomedica  di Vecchio Domenica & C.s.a.s.;Via P. Nenni Rosarno (RC);0966 773747;odontomedicasas@legalmail.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Studio di Cardiologia Greco S.r.l.;Via Convento, 19;Rosarno;Studio di Cardiologia Greco S.r.l.;Via Convento, 19 Rosarno (RC);0966 773577;studiodicardiologiagrecosrl@pec.it;D.P.G.R. N. 1/2011 DCA n. 61 del 06.04.17
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;ECORAD s.r.l.  Studio di Radiologia ed Ecografia ;Via Marconi, 38;Villa S. Giovanni;ECORAD s.r.l.  Studio di Radiologia ed Ecografia ;Via Marconi, 38 Villa S. Giovanni (RC);0965 758156;ecorad@pec.it;D.P.G.R. N. 1/2011 Nota prot. n. 11032/2019 DCA n. 185 del 20.12.2019 DCA n. 186 del 20.12.2019
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Centro Diagnostico per Immagini C.E.D. s.r.l.;Via Torrione prol., 55;Reggio Calabria ;Centro Diagnostico per Immagini C.E.D. s.r.l.;Via Torrione Prol., 55 Reggio Calabria;0965 811855;cedrcsrl@pec.it;"D.P.G.R. N. 1/2011 
+DCA n. 30 del 28/01/2020"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Istutito Radiologico Cassone Costantino S.r.l.;Viale Boccioni, 14;Reggio Calabria;Istutito Radiologico Cassone Costantino S.r.l.;Viale Boccioni, 14 Reggio Calabria;0965 898879;radiologiacassone@pec.it;D.P.G.R. N. 1/2011 DCA n. 122 del 24/05/2018
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Centro Risonanza Magnetica C.R.M. S.r.l.;Via S.S. 18 Pentimele, 105;Reggio Calabria;Centro Risonanza Magnetica s.r.l.;Via S.S. 18 Pentimele, 105 Reggio Calabria;0965 650065;crmrc@pec.it;D.P.G.R. N. 1/2011 Nota prot. n. 216642 del 10/07/2015
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Fisiosanisport Reggio Calabria s.r.l.;Via Aschenez, Prol. 15/c;Reggio Calabria;Fisiosanisport Reggio Calabria s.r.l.;Via Aschenez, Prol. 15/c Reggio Calabria;0965 890048;fss.reggiocalabria@pec.it                up.giomirc@pec.it;D.P.G.R. N. 1/2011 Nota prot. n. 198583 del 23/05/2019
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;"Centro di Cure Fisiche ""Guarire di Daniela Filangeri & C. & s.a.s.""";Via Quarnaro I°, 19;Gallico,                                   Reggio Calabria;"Centro di Cure Fisiche ""Guarire di Daniela Filangeri & C. & s.a.s.""";Via Quarnaro I°, 19 Gallico, Reggio Calabria;0965 373492;centroguarire@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Fisiokinesiterapia Bagnarese s.r.l.;Via C. Cantù;Bagnara Calabra;Fisiokinesiterapia Bagnarese s.r.l.;Via C. Cantù Bagnara Calabra (RC);0966 371075;postmaster@pec.fisiokinesiterapiabagnarese.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Centro Medico di Fiokinesiterapia Dr. P. Crupi s.r.l.;Via D. Muratori, 3;Reggio Calabria;Centro Medico di Fiokinesiterapia Dr. P. Crupi s.r.l.;Via D. Muratori, 3 Reggio Calabria;0965 892421;centromedicocrupi@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;T.A. s.r.l. Terapia Ambulatoriale ;Via Giulia, 2;Reggio Calabria;T.A. s.r.l. Terapia Ambulatoriale ;Via Giulia, 2 Reggio Calabria;0965 890503;tasrl@pecprofessionale.net;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;FISIOCAM s.r.l.;Via De Nava, 43;Reggio Calabria ;FISIOCAM s.r.l.;Via De Nava, 43 Reggio Calabria;0965 26716;fisiocam@pec.it;D.P.G.R. N. 1/2011 Nota prot. n. 261089 26/07/2012
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Centro FKT del Dr. Mario Smorto  S.r.l.;Via Nazionale Pentimele, 198;Reggio Calabria;Centro FKT del Dr. Mario Smorto  S.r.l.;Via Nazionale Pentimele, 198 Reggio Calabria;0965 44580;dr.mariosmortosrl@arubapec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;F.K.T.  Fisiokinesiterapia del Dr. Bruno Saraceno & C. s.r.l.;Via Nazionale, 77-79;Archi, Reggio Calabria;FKT S.r.l.;Via Nazionale, 79 Archi, Reggio Calabria;0965 44190;istitutofktsrl@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Centro di Fisiokinesiterapia CE.FI.K s.r.l.;Via R. La Russa, 73;Villa S. Giovanni;Centro di Fisiokinesiterapia CE.FI.K s.r.l.;Via R. La Russa, 73 Villa S. Giovanni (RC);0965 756661-794949;centrocefiksrl@pec.it;"D.P.G.R. N. 137/2013
+"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Istituto di Terapia Fisica e Riabilitazione di Aloisio & C s.a.s.;Via B. Buozzi, 8                               ;Reggio Calabria;Istituto di Terapia Fisica e Riabilitazione di Aloisio & C s.a.s.;Via B. Buozzi, 8 Reggio Calabria;0965 895514;istituto.aloisio@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Centro Diagnostico s.r.l.;Via Vita, 4;Reggio Calabria;Centro Diagnostico s.r.l.;Via Vita, 4 Reggio Calabria;0965 55535;centrodiagnosticoscordino@pec.buffetti.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Studio Odontoiatrico Dr. Carlo Annunziata  ;Via Monsignor De Lorenzo, 70 ;Reggio Calabria ;Studio Odontoiatrico Dr. Carlo Annunziata  ;Via Monsignor De Lorenzo, 70 Reggio Calabria;0965 21729;cannunziata@peccenacolo.com;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;TEO S.r.l.;Via P. Pellicano, 14;Reggio Calabria;TEO S.r.l.;Via P. Pellicano, 14 Reggio Calabria;0965 24746;teodorovadala@pec.andi.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Studio Dentistico Tortorella S.r.l. S.T.P.;Via S. Francesco da Paola, 53/A;Reggio Calabria;Studio Dentistico Tortorella S.r.l. S.T.P.;Via S. Francesco da Paola, 53/A Reggio Calabria;0965 331386;ifostudiodentisticotortorella@pec.it;"D.P.G.R. N. 1/2011 
+DCA N. 102 del 27/06/2019"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Studio Polispecialistico Dr. A. Postorino & C. s.a.s.;Via Amerigo, Vespucci 11/A;Reggio Calabria;Studio Polispecialistico Dr. A. Postorino & C. s.a.s.;Via Amerigo Vespucci, 11/A Reggio Calabria;0965 896063;smp_dr.postorino@pec.it;"D.P.G.R. N. 1/2011 
+D.P.G.R. N. 180/2012
+"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Policlinico di Monza Casa di Cura S.p.a.            (ex Alpigi di V. Galasso);Via Italia, 24;Reggio Calabria;Policlinico di Monza Casa di Cura S.p.a.    ;Via Passalacqua, 10 Novara;0965 654641;direzione.generale@policlinicodimonza.legalmail.it;D.P.G.R. N. 1/2011 DCA n.127 del 01/12/2016
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;F.C.F. Centro Dermo di Cristofaro Postorino & C. s.a.s.;Via Tenente Panella, 13 ;Reggio Calabria ;F.C.F. Centro Dermo di Cristofaro Postorino & C. s.a.s.;Via Tenente Panella, 13 Reggio Calabria;0965 21953;fcfpec@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Studio Oculistico Rechichi s.r.l.;Via Reggio Campi I° Tronco, 11/D;Reggio Calabria ;Studio Oculistico Rechichi s.r.l.;Via Reggio Campi I° Tronco, 11/D Reggio Calabria;0965 891214;caterinarechichi@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Laboratorio di patologia clinica Delta di Maria Morabito s.n.c.;Via Micene, 16/b  ;Reggio Calabria;Laboratorio di patologia clinica Delta di Maria Morabito s.n.c.;Via Micene, 16/b Reggio Calabria;0965 1891096;delta-radiologiaediagnosticaperimmagini@pec.it;"Decreto n. 8414 del 28/07/2017 del Commissario ad acta nominato con Sentenza T.A.R. Calabria 
+DCA N. 158 del 14/06/2023"
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Istituto Diagnostico Prof. Demetrio Meduri s.r.l. ;Corso Garibaldi, 563;Reggio Calabria ;Istituto Diagnostico Prof. Demetrio Meduri s.r.l. ;Corso Garibaldi, 563 Reggio Calabria;0965 813399;istitutodiagnostico@pec.it;D.P.G.R. N. 1/2011 Nota prot. N. 27217 24/11/2010
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Istituto Diagnostico Medico GMM s.r.l.;Via Riviera, 4;Villa S. Giovanni;Istituto Diagnostico Medico GMM s.r.l.;Via Riviera, 4 Villa S. Giovanni (RC);0965 751075;istitutodiagnosticogmm@legalmail.it;D.P.G.R. N. 1/2011
+STRUTTURA DI SPECIALISTICA AMBULATORIALE      ;RC;Laboratorio Analisi Cliniche SIMEF s.r.l.;Via N. da Recco, 4;Reggio Calabria;Laboratorio Analisi Cliniche SIMEF s.r.l.;Via N. da Recco, 4 Reggio Calabria;0965 891184 ;simef@pec.it;"D.P.G.R. N. 1/2011
+Attività Sospesa"
+STABILIMENTO TERMALE;RC;Terme di Galatro Srl;Viale delle Terme,1 ;Galatro;Terme di Galatro Srl;Viale delle Terme,1 Galatro (RC);0966 903775;termedigalatrosrl@pec.it;"D.P.G.R. N. 1/2011 - Nota prot. n. 215918 DEL 29/06/2017
+DG N. 8702 del 25/07/2022"
+STABILIMENTO TERMALE;RC;Consorzio Termale Antonimina-Locri;Via Bagni;Antonimina;Consorzio Termale Antonimina-Locri;Via Bagni Antonimina (RC);0964 312040;terme.antoniminalocri@asmepec.it;"D.P.G.R. N. 1/2011 DCA 156/2018 DCA 114/2014 
+Nota prot. 410789 del 04/12/1989"
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CS;Centro Polivalente di Riabilitazione A.I.A.S. sez. Cetraro ONLUS;Via D. Savio;Diamante;AIAS - Associazione Italiana Assistenza Spastici;Via Lungo Aron, 10 Cetraro (CS);0985 81638;aiascetraro@quattrosrlpec.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CS;Villa Adelchi;Contrada Frailliti;Longobardi;Riace Srl;Via Panebianco, 293 Cosenza;0982 78067;riacesrl@legpec.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CS;S. Chiara;Viale Dei Giardini;Paola;Santachiara Srl;Viale Dei Giardini, 70 Paola (CS);0982 610225;clinica.santachiara@pec.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CS;Don Milani;Loc. Carmine;Lungro;AIE Srl;Via Dei Conti Ruffo, 15 Catanzaro;0981 947480;aie@pec.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CS;Riabil Center s.r.l.;Via delle Vigne snc;Castrovillari;Riabil Center s.r.l.;Via delle Vigne, 1 Castrovillari (CS);0981 27396;riabilcentercastrovillari@pec.it;"D.P.G.R. N. 1/2011 DCA N. 24 del 22/04/2015 
+DCA N.132 del 04/11/2021
+DCA 169 del 30/11/2022"
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CS;ANMI SISS s.r.l.;Viale Sant'Angelo Loc. Crosetto;Corigliano-Rossano;ANMI SISS s.r.l.;Via Monte S. Michele, 13 Cosenza;0983 293019;anmisiss@pec.it;D.P.G.R. N. 1/2011 Provvedimento n. 298 01/03/2012 DCA n. 42 del 30/01/2020
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CS;Terme Sibarite s.p.a.;Via Terme , 2;Cassano allo Jonio;Terme Sibarite s.p.a.;Via Terme, 2 Cassano allo Jonio (CS);0981 71376;termesibarite@legalmail.it;DCA N. 21 del 21/01/2023
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CS;Fisiocenter s.r.l.;Contrada Petraro snc;Cariati;Fisiocenter s.r.l.;Contrada Petraro snc Cariati (CS);0983 91598;fisiocentermaduli@legalmail.it;D.P.G.R. N. 1/2011 DCA N.13 DEL 27/1/2016
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CS;Centro di Riabilitazione A.I.A.S.;Via Nazionale, 51;Vadue di Carolei ;AIAS - Associazione Italiana Assistenza Spastici;Via Lungo Aron, 10 Cetraro (CS);0984 624021;aiascosenza@pec.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CS;Clinic Service Center s.r.l.;Via Provinciale ;Piano Lago Mangone;Clinic Service Center s.r.l.;Via Provinciale Piano Lago, Mangone (CS);0984 969955;clinic@pec.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CS;Villa Torano ;C.da Macchia Tavola;Torano Castello ;Medical Sport Center Srl;Via Dei Conti Ruffo, 15 Catanzaro;0984 506181;medicalsportcenter@pec.it;DCA N. 10 DEL 09/01/2023
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CS;Costruire Il Domani Onlus;Via San Domenico, 20;Rogliano;Associazione Costruire Il Domani Onlus;Via Regina Elena, 72 Rogliano (CS);0984 452230;costruireildomanionlus@pec.it;D.P.G.R. N. 1/2011 DCA n. 23 del 28/01/2020
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CS;Centro di Riabilitazione ANMIC;Via Panoramica, 340;San Giovanni in Fiore;Associazione Anmic Riabilitazione;Via Roma ang. S. Croce, 132 Crotone;0984 970912;anmiccdr@legalmail.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CS;Centro di Riabilitazione San Lorenzo A/S s.r.l. ;Via Gelsomini, 9;S. Giovanni in Fiore;Centro di Riabilitazione San Lorenzo A/S s.r.l. ;Via Gelsomini, 9 San Giovanni in Fiore (CS);0984 970020;centrosanlorenzo@pec.it;"DCA N. 14 del 09/01/2023 
+DCA N. 16 del 10/01/2023
+"
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CS;Santa Chiara s.r.l.;Via dei Cedri;S. Giovanni in Fiore;Santa Chiara s.r.l.;Via dei Cedri S. Giovanni in Fiore (CS);0984 975965;sachiara@pec.it;D.P.G.R. N. 1/2011 Note prot. n. 242442/2018 e prot. n. 256126/2018
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CS;Biolife s.r.l.;Viale G. Mancini, 132;Cosenza;Biolife s.r.l.;Viale G. Mancini,128 Cosenza;0984 413466;centrobiolife@pec.it;"D.P.G.R. N. 1/2011 
+DDG N. 10033 del 31/08/2022
+DCA N. 131 DEL 17/10/2022"
+ND;ND;ND;Viale G. Mancini, 128;ND;ND;ND;ND;ND;ND
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CS;ANMI SISS s.r.l.;Via Molicella Vicinale, 7/13 - 7/15;Cosenza;ANMI SISS s.r.l.;Via Monte S. Michele, 13 Cosenza;0984 482790;anmisiss@pec.it;D.P.G.R. N. 1/2011 Provvedimento n. 297 01/03/2012
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CS;iGreco ospedali Riuniti s.r.l.;Via Fra Benedetto, 33;Dipignano ;iGreco ospedali Riuniti s.r.l.;Piazza M. Quintieri, 1 Cosenza;0984 822311;igreco@pec.it;"D.P.G.R. N. 20 13/02/2014
+DCA N. 89/2014 Nota prot. n. 159602 del 17/5/2016 - Nota prot. n. 288722/2018 - Nota prot n. 198603 del 23/05/2019"
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CS;Villa S. Pio s.r.l. Unipersonale;Via Boschi;Marano Principato;Villa S. Pio s.r.l. Unipersonale;Via S. Francesco D'Assisi Dipignano (CS);0984 621635;crevillasanpio.villasanpiosrl@cert.ticertifica.it;D.P.G.R. N. 1/2011 DCA n. 22 del 31/01/2019 DCA n. 22 del 28/01/2020
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;KR;ANMIC RIABILITAZIONE;Via P. Impastato, 57;Crotone;ANMIC RIABILITAZIONE;Via P. Impastato, 57 Crotone;0962 28071;anmiccdr@legalmail.it;D.P.G.R. N. 1/2011 DCA 145/2018
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;KR;Villa San Giuseppe;Via S. Baffa, 246-250;Cotronei;SADEL di Salvatore BAFFA SpA;Via degli Scipioni, 252 Roma;0962 44108;sadel.spa@pec.it;"D.P.G.R. N. 1/2011 
+Nota prot. N. 152189 del 14/05/2015 
+DCA N. 249 DEL 07/12/2018
+DCA n. 34 del 28.01.2020"
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;KR;Presidio di Riabilitazione Centro San Giuseppe;Via S. Baffa, 250;Cotronei;SADEL di Salvatore BAFFA SpA;Via degli Scipioni, 252 Roma;0962 492016;sadel.spa@pec.it;"D.P.G.R. N. 1/2011 
+DCA N. 136 del 19/10/2017 Nota prot. N. 152189 del 14/05/2015 
+DCA N. 250 DEL 07/12/2018
+DCA n. 33 del 28.01.2020"
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;KR;Centro Fisiokinesiterapico Starbene S.r.l.;Largo Covelli, 4;Crotone;STARBENE s.r.l.;Largo Covelli, 4 Crotone;0962 26961;starbenekr@pec.it;"D.P.G.R. N. 1/2011 
+DCA N.123 del 11/10/2022
+DCA N. 177 del 05/12/2022"
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;KR;Life s.r.l.;Via Crotone, 154;Isola Capo Rizzuto;Life s.r.l.;Via della Repubblica, 10 Isola Capo Rizzuto (KR);0962 792510;lifesrl.icr@pec.it;"D.P.G.R. N. 1/2011 
+DCA n.11 del 27/1/2016 
+DCA n. 52 del 21/03/2019"
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;KR;Turano C. & C. s.r.l.;Via Tommaso Campanella, 52;Crotone;TURANO C. & C. s.r.l.;Via Tommaso Campanella, 52 Crotone;0962 27713;centroturano@lamiapec.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CZ;Associazione Comunità Progetto Sud;Via Reillo;Lamezia Terme;Associazione Comunità Progetto Sud Onlus;Via Conforti, 61/A Lamezia Terme (CZ);0968 432594;progettosud@pec.it;"DCA N. 9 del 09/01/2023
+DCA N. 65 del 21/02/2023
+"
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CZ;S. Domenico;Loc. Bastia;Lamezia Terme;G.A. 29 s.r.l.;Via D. Curcio, 2 Lamezia Terme (CZ);0968 27859;ga29srl@pec.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CZ;San Vito Hospital;Loc. Mesa;S. Vito sullo Jonio ;Casa di Cura Giovanni Paolo II Srl;Via Dei Conti Ruffo, 15 Catanzaro;0961 904142;vivereinsieme@pec.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CZ;Aquasalus Centro di Riabilitazione Estensiva;Via Frischia, 12;Sellia Marina ;Medicina Riabilitativa s.r.l.;Via Frischia, 139 Sellia Marina (CZ);0961 964071;medicinariabilitativa@pec.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CZ;Fondazione Betania  ONLUS;Via Molise, 21;Catanzaro;Karol Betania Strutture Sanitarie S.r.l.;Via Molise, 21 Catanzaro;0961 763111;fondazionebetania@pec.it;"D.P.G.R. N. 1/2011 Nota prot. n. 68691 del 18/02/2019 
+Nota prot. n. 408636 del 27/11/2019 
+DCA N. 167 del 29/11/2022"
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;CZ;Centro Cilnico S. Vitaliano s.r.l.;Via T. Campanella;Catanzaro;Centro Cilnico S. Vitaliano s.r.l.;Via T. Campanella, 60 Catanzaro;0961 773834-0984 163695;centroclinicosanvitaliano@pec.it;"D.P.G.R. N. 1/2011 
+DCA N.136 DEL 20/12/2016 DCA n. 153 del 26/11/2019"
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA DISTURBI COMPORTAMENTO ALIMENTARE;CZ;Centro Riabilitativo Lucrezia;Via Lucrezia della Valle;Catanzaro;Soc. San Vincenzo Srl;Via B. da Seminara, 26 Catanzaro;0961 367006;soc.sanvincenzo@pec.it;D.P.G.R. N. 1/2011 attività sospesa
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;VV;Casa della Carità ;Via Ruggero il Normanno,1;Vibo Valentia;Fondazione Casa della Carità;"Via Abate Sergio, 12
+Tropea (VV)";0963 41070;fondazione@pec.casadellacarita.com;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;VV;Don Mottola Medical Center;Località Sant’Angelo;Drapia;Villa delle Rose Srl;"Via Roma, 270
+Monterosso Calabro (VV)";0963 325241;villadellerosesrl@pec.it;DCA N. 50 del 09/02/2023
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;RC;Clinica Villa Vittoria s.r.l.;via cav. Ettore Ursino snc Antonimina (RC);Antonimina;Clinica Villa Vittoria s.r.l.;via cav. Ettore Ursino snc Antonimina (RC);0964 312371;mutua_benevolentia@pec.it;"D.P.G.R. N. 1/2011 
+nota prot. n. 380958 del 20.11.2020 (presa d'atto trasformazione societaria)"
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;RC;Villa Salus s.p.a.;C.da Marinella                   Via Madre Teresa Di Calcutta, 1;Bruzzano Zeffirio;Villa Salus s.p.a.;C.da Marinella Via Madre Teresa Di Calcutta, 1 Bruzzano Zeffirio (RC);0964 934967;villasalus@legalmail.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;RC;Istituto di Cure Medical & Psycology         Coop. Soc. R.L.;Via Pugliano, 27;Bianco;Istituto di Cure Medical & Psycology         Coop. Soc. R.L.;Via C. Alvaro Bianco (RC);0964 992577;m_and_p@legalmail.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;RC;Associazione Piccola Opera Papa Giovanni Onlus;Via Garibaldi, 1;Bianco;Associazione Piccola Opera Papa Giovanni Onlus;Via Vallone Mariannazzo Reggio Calabria;0965 810013;piccolaopera@pec.it;"D.P.G.R. N. 139/2013
+"
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;RC;Centro Ambulatoriale di Psicoterapia, Riabilitazione Logopedica e Psicomotoria SOPHIA s.r.l.;Via Carbone, 4;Palmi;Centro Ambulatoriale di Psicoterapia, Riabilitazione Logopedica e Psicomotoria SOPHIA s.r.l.;Via Carbone, 4 Palmi (RC);0966 46239;sophiasrl@mypec.eu;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;RC;Centro Emmanuele;Via Rocco Pugliese, 1;Palmi;Associazione di Volontariato Presenza;Via Rocco Pugliese, 1 Palmi (RC);0966 2674100;presenzaonluscalabria@pec.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;RC;Riabilia di Luigi Barillaro & C. S.r.l.;Trav. Di Via Francesco Sofia Alessio, n. 2;Taurianova;Riabilia di Luigi Barillaro & C. S.r.l.;Via Monte Grappa, 7 Taurianova (RC);0966 612095;riabilia@pec.it;"D.P.G.R. N. 1/2011 Nota prot. n. 36760 del 29/01/2020
+DG N. 3182 del 24/03/2022"
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;RC;Centro di Rianilitazione Estensiva per Disabili Ambulatoriale ed a Ciclo Diurno;Piazza Orfanotrofio, 3;Oppido Mamertina;Ente Morale Fondazione Famiglia Germanò Onlus;Piazza Orfanotrofio, 3 Oppido Mamertina (RC);0966 86250;famigliagermano.onlus@pec.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;RC;Alfa s.a.s. di Riccardo Tigani;Via Scultore G. Renda, 16;Polistena;Alfa s.a.s. di Riccardo Tigani;Via Scultore G. Renda, 16 Polistena (RC);0966 932535;alfasaspolistena@pec.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;RC;Centro di Fisiokinesiterapia Bagnarese s.r.l.;Via Cesare Cantu';Bagnara Calabra;Centro di Fisiokinesiterapia Bagnarese s.r.l.;Via Cesare Cantu' Bagnara Calabra (RC);0966 372433;postmaster@pec.fisiokinesiterapiabagnarese.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;RC;Nova Salus;Loc. Cannitello ;Villa S. Giovanni;Anphora Coop. Soc. R.L.;Via N. Pentimele, 157 Reggio Calabria;0965 79899;anphoracooperativa@pec.it ;D.P.G.R. N. 1/2011 Nota prot. n. 54491/2018
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;RC;Associazione Piccola Opera Papa Giovanni - Centro di Riabilitazione Tripepi Mariotti;"Via Vallone Mariannazzo Stabile ""A""";Reggio Calabria;Associazione Piccola Opera Papa Giovanni Onlus;Via Vallone Mariannazzo Reggio Calabria;0965 890135;piccolaopera@pec.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;RC;Associazione Piccola Opera Papa Giovanni - Centro di Riabilitazione Carlo Pizzi;Via Vallone Mariannazzo;Reggio Calabria;Associazione Piccola Opera Papa Giovanni Onlus;Via Vallone Mariannazzo Reggio Calabria;0965 890768;piccolaopera@pec.it;DCA N. 15 del 09/01/2023
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;RC;Associazione Piccola Opera Papa Giovanni - Centro di Riabilitazione Nadia Vadalà;C.da Prunella ;Melito Porto Salvo;Associazione Piccola Opera Papa Giovanni Onlus;Via Vallone Mariannazzo Reggio Calabria;0965 788349;piccolaopera@pec.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;RC;Casa Serena S. Giovanni Bosco;Via Palamolla, 37;Reggio Calabria;Casa Serena S. Giovanni Bosco;Via Palamolla, 37 Reggio Calabria;0965 893541;cif_rc@pec.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;RC;Villa Betania S.r.l.;Via A. Garibaldi, 186 Gallico;Reggio Calabria;Villa Betania S.r.l.;Via A. Garibaldi, 186 Gallico Reggio Calabria;0965 370881;villabetania@pec.it;D.P.G.R. N. 1/2011 Nota prot. n. 248132 del 8/8/2016 Nota prot. n. 384789 del 14/11/2018
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;RC;Coop. Sociale Skinner s.r.l. Onlus ;Via Pio XI Dir. Gullì, 37;Reggio Calabria;Coop. Sociale Skinner s.r.l. Onlus ;Via Pio XI - Trav. De Blasio, 21 Reggio Calabria;0965 590813;cooperativasocialeskinner@registerpec.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;RC;Centro Medico e di FKT Dott. P. Crupi S.r.l.;Via D. Muratori, 3;Reggio Calabria;Centro Medico e di FKT Dott. P. Crupi S.r.l.;Via D. Muratori, 3 Reggio Calabria;0965 892421;centromedicocrupi@pec.it;D.P.G.R. N. 1/2011
+CENTRO DI RIABILITAZIONE ESTENSIVA EXTRAOSPEDALIERA;RC;Villa S. Agata s.a.s.;Via Asprea;Gallico, Reggio Calabria;Villa S. Agata s.a.s.;Via Rimembranze, 36 Gallico, Reggio Calabria;0965 682992;villasantagata@pec.villasantagata.it;D.P.G.R. N. 30/2014
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CS;Villa Adelchi;Contrada Frailliti;Longobardi;Riace Srl;Via Panebianco, 293 Cosenza;0982 78067;riacesrl@legpec.it;"D.P.G.R. N. 1/2011 
+DCA N. 174 del 05/12/2022"
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CS;San Francesco di Paola;C.so Principi Lanza di Tabbia;San Nicola Arcella;Universiis Coop. Soc.;Via Cividina, 41/A Udine;0985 300511;sannicola@pec.universiis.it;D.P.G.R. N. 1/2011 Struttura ex art. 20 L. 67/88
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CS;RSA Caloveto;C.da Dema;Caloveto;ASP Cosenza;Viale degli Alimena, Cosenza;ND;ND;D.P.G.R. N. 1/2011 Struttura ex art. 20 L. 67/88 attività sospesa
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CS;Villa Torano ;C.da Macchia Tavola;Torano Castello;Medical Sport Center Srl;Via Dei Conti Ruffo, 15 Catanzaro;0984 506181;medicalsportcenter@pec.it;DCA N. 10 DEL 09/01/2023
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CS;Villa Silvia;Via Degli Stadi snc;Altilia ;Villa Silvia S.r.l.;Via Degli Stadi snc Altilia (CS);0961 996168;villasilviasrl@pec.it;D.P.G.R. N. 1/2011 DCA n. 158 del 27/11/2019
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CS;La Quiete s.a.s. di Pasquale Autolitano & C.;Contrada Canterame, 58;Castiglione Cosentino;La Quiete Srl;Via Filari, 18 Castiglione Cosentino (CS);0984 442229;rsalaquiete@pec.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CS;Villa Bianca;Via Pirrò Schettini;Aprigliano;Villa Bianca;Via Pirrò Schettini Aprigliano (CS);0984 421155;villabianca-ma@pec.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CS;Villa S. Stefano;Contrada Vallegiannò;S. Stefano di Rogliano;Villa Santo Stefano S.r.l.;Contrada Vallegiannò, Santo Stefano di Rogliano (CS);0961 996168;villa.santostefanosrl@pec.it;D.P.G.R. N. 1/2011 DCA n. 157 del 27/11/2019
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CS;San Bartolo s.r.l.;Contrada San Bartolo;Mendicino;San Bartolo S.r.l.;P.zza F. Crispi, 6 Cosenza;0984 474965;rsasanbartolo@pec.libero.it                                                sanbartolosrl@legalmail.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CS;Sadel CS di Salvatore Baffa s.r.l.;Via Surani, 18;Castiglione Cosentino;Sadel CS di Salvatore Baffa s.r.l.;Loc. Mola Cotronei (KR);0984 441808;sadel.sanraffaele@pec.it;"D.P.G.R. N. 1/2011 
+Nota Prot.N. 207351 21/06/2013 
+
+Nota prot. N. 152189 del 14/05/2015
+"
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CS;Villa Igea s.r.l.;Loc. Cozzi;San Fili;Villa Igea s.r.l.;Loc. Cozzi San Fili (CS);0984 642128;casadicuravillaigea@pec.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CS;Villa Gioiosa;C.da Caldopiano;Montalto Uffugo;EFFEGI S.U.R.L. ;Via G. Sambiase, 24/F Cosenza;0984 930888;effegics@pec.it;"D.P.G.R. N. 1/2011 DCA n.35 del 08/02/2017 
+DCA N. 97 del 30/08/2022"
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CS;RU.IM. S.r.l.                                   (ex RSA Rizzo);Via A. De Gasperi;Campana;RU.IM. S.r.l. ;Via A. Ponchielli, 85 Pesaro;0983 93195;rsa.rizzo@open.legalmail.it                                                                    ru.im@open.legalmail.it;D.P.G.R. N. 1/2011 Nota prot. N. 337 04/05/2011 DCA n. 48 del 20/03/2019 DCA n. 11 del 23/01/2020
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CS;RSA Anziani Spezzano Albanese;Via L. Pirandello, 4;Spezzano Albanese;"ATI MEDICASAIE
+Capogruppo Medical Sport Center s.r.l.";Via Dei Conti Ruffo, 15 Catanzaro;0981 954158;medicalsportcenter@pec.it;DCA -TAR n. 00472 del 30/10/2015 Struttura ex art. 20 L. 67/88 DCA n. 1 del 07/01/2020
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CS;RSA Anziani Mottafollone;Via L. Sciascia, 15;Mottafollone;"ATI MEDICASAIE
+Capogruppo Medical Sport Center s.r.l.";Via Dei Conti Ruffo, 15 Catanzaro;0981 61155;medicalsportcenter@pec.it;DCA-TAR Calabria n. 00471 del 30/10/2015 Struttura ex art. 20 L. 67/88 DCA n. 1 del 07/01/2020
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CS;Villa San Francesco;Viale degli Oleandri;Roggiano Gravina;Villa del Rosario s.r.l;Loc. Trepidò Sottano Cotronei (KR);0984 507010;villadelrosario.srl@pec.it;DCA n. 46 del 04/02/2020
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CS;RSA San Carlo Borromeo;Via Tesauro n.2;Panettieri;I Greco Ospedali Riuniti Srl;Piazza M. Quintieri, 1 Cosenza;0984 822311;igreco@pec.it;DCA N. 129 del 17/10/2022
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CS;Villa Azzurra;Via Olimpia, 1;Roseto Capo Spulico;Pegaso Srl;"Via Olimpia, 1
+Roseto Capo Spulico (CS)";0981 913635;pegasoanziani@legalmail.it;DCA N. 168 del 30/11/2022
+RESIDENZA SANITARIA ASSISTENZIALE MEDICALIZZATA (R1);CS;RSA Caloveto;C.da Dema;Caloveto;ASP Cosenza;Viale degli Alimena, Cosenza;ND;ND;D.P.G.R. N. 1/2011 Struttura ex art. 20 L. 67/88 attività sospesa
+RESIDENZA SANITARIA ASSISTENZIALE MEDICALIZZATA (R1);CS;Sadel CS di Salvatore Baffa s.r.l.;Contrada Crocevia;Castiglione Cosentino;Sadel CS di Salvatore Baffa s.r.l.;Loc. Mola Cotronei (KR);0984 441808;sadel.sanraffaele@pec.it;"D.P.G.R. N. 1/2011 
+Nota Prot.N. 207351 21/06/2013 
+
+Nota prot. N. 152189 del 14/05/2015
+"
+RESIDENZA SANITARIA ASSISTENZIALE MEDICALIZZATA (R1);CS;Villa Gioiosa;C.da Caldopiano;Montalto Uffugo;EFFEGI S.U.R.L. ;Via G. Sambiase, 24/F Cosenza;0984 930888;effegics@pec.it;"D.P.G.R. N. 1/2011 DCA n.35 del 08/02/2017 
+DCA N. 97 del 30/08/2022"
+RESIDENZA SANITARIA ASSISTENZIALE MEDICALIZZATA (R1);CS;Villa Igea s.r.l.;Loc. Cozzi;San Fili;Villa Igea s.r.l.;Loc. Cozzi San Fili (CS);0984 642128;casadicuravillaigea@pec.it;DCA N.33 del 07/04/2022
+RESIDENZA SANITARIA ASSISTENZIALE PER DISABILI (RD4);CS;La Quiete s.a.s. di Pasquale Autolitano & C.;Contrada Canterame, 58;Castiglione Cosentino;La Quiete Srl;Via Filari, 18 Castiglione Cosentino (CS);0984 442229;rsalaquiete@pec.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE PER DISABILI (RD4);CS;Santa Chiara s.r.l.;Via dei Cedri;S. Giovanni in Fiore;Santa Chiara s.r.l.;Via dei Cedri S. Giovanni in Fiore (CS);0984 975965;sachiara@pec.it;D.P.G.R. N. 1/2011 Note prot. n. 242442/2018 e prot. n. 256126/2018
+RESIDENZA SANITARIA ASSISTENZIALE PER DISABILI (RD4);CS;Villa Igea s.r.l.;Loc. Cozzi;San Fili;Villa Igea s.r.l.;Loc. Cozzi San Fili (CS);0984 642128;casadicuravillaigea@pec.it;D.P.G.R. N. 1/2011
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;CS;L'ULIVO                                                                                                                                                               ;Via Crisoria, 15;Tortora;L'Ulivo Soc. Coop. Onlus;Via Crisoria, 15 Tortora (CS);0985 764822;ulivo@pec.confcooperative.it;D.P.G.R. N. 1/2011
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;CS;REGINA PACIS;Via Nazionale, 12;Spezzano Albanese;Assoc. Comunità Regina Pacis Onlus;Viale della Repubblica, 136 Cosenza;0984 393877;associazionereginapacis@pec.it;D.P.G.R. N. 1/2011
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;CS;IL MANDORLO SOC. COOP.;Contrada Laccata;Lauropoli - Cassano allo Jonio;Il Mandorlo società cooperativa ;C.da Laccata Lauropoli Cassano allo Ionio (CS);02 29400930;ilmandorlocooperativasociale@open.legalmail.it;"D.P.G.R. N. 1/2011 
+DCA 19 del 08-02-17"
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;CS;REGINA PACIS;Via Risorgimento, 49;Torano Castello;Assoc. Comunità Regina Pacis Onlus;Viale della Repubblica, 136 Cosenza;0984 393877;associazionereginapacis@pec.it;D.P.G.R. N. 1/2011
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;CS;IL DELFINO  Eden;Contrada Spina;Castiglione Cosentino;Centro di Solidarietà Il Delfino Soc. Coop. Onlus;Ctr Macchiabbella,58 Cosenza;0984 1655730;centrodisolidarietaildelfino@legalmail.it;D.P.G.R. N. 1/2011 Nota prot. n. 145970/2018
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;CS;REGINA PACIS;C.da Maglionzi;San Benedetto Ullano;Assoc. Comunità Regina Pacis Onlus;Viale della Repubblica, 136 Cosenza;0984 393877;associazionereginapacis@pec.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);KR;Centro S. Giuseppe;Via S. Baffa, 250;Cotronei;SADEL di Salvatore BAFFA SpA;Via degli Scipioni, 252 Roma;0962 492016;sadel.spa@pec.it;"DCA n. 66 del 03.05.17 
+DCA n. 36 del 28.01.2020"
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);KR;Santa Rita;Via S. Paolo, 22 Contr. Filippa;Mesoraca;Santa Rita Soc. Coop.;Via S. Paolo, 22 Mesoraca (KR);0962 489103;presidenza@pec.santaritarsa.it;D.P.G.R. N. 1/2011 Nota prot. n. 21341/2018 Nota prot. n. 314033/2019
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);KR;Villa San Giuseppe;Via S. Baffa, 250;Cotronei;SADEL di Salvatore BAFFA SpA;Via degli Scipioni, 252 Roma;0962 44108;sadel.spa@pec.it;DCA n. 65 del 03.05.17 DCA n. 35 del 28.01.2020
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);KR;Villa Ermelinda;Via Pozzoseccagno;Cutro;Progetto Terza Età Srl;Loc. Pozzoseccagno Cutro (KR);0962 771139;ptesrl@pec.it;"DCA n. 69 del 04.05.2017
+DECRETO DEL COMMISSARIO AD ACTA del 01/09/2022"
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);KR;Casa Giardino S.r.l.;Via Laghi Silani;Cotronei;Casa Giardino S.r.l.;Via Laghi Silani Cotronei (KR);0962 44108;casagiardino.oliveti@pec.it;DCA n. 75 del 04.05.2017 Nota prot. n. 25011 del 22/01/2019
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);KR;Savelli Hospital Srl;Via Roma;Savelli;Savelli Hospital Srl;Via Roma Savelli (KR);0962 44108;savellihospital.srl@pec.it;DCA n. 135 del 19/10/17DECRETO DEL COMMISARIO AD ACTA MINISTERIALE del 20/09/2021
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);KR;SADEL San Teodoro s.r.l.;Loc. San Lorenzo;Cerenzia;SADEL San Teodoro s.r.l.;Via S. Baffa, 246 Cotronei (KR);0984 995450;sadel.santeodoro@pec.it;"DCA n. 138 del 19/10/17
+DECRETO DEL COMMISARIO AD ACTA MINISTERIALE del 22/09/2021"
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);KR;Villa del Rosario s.r.l.;Loc. Trepidò Sottano;Cotronei;Villa del Rosario s.r.l.;Loc. Trepidò Sottano Cotronei (KR);0962 46121;villadelrosario.srl@pec.it;"DCA N. 251 DEL 07/12/2018
+DECRETO DEL COMMISARIO AD ACTA MINISTERIALE del 22/09/2021"
+RESIDENZA SANITARIA ASSISTENZIALE PER DISABILI (RD4);KR;Santino Covelli;Loc. Carusa;Cotronei;Correnti S.r.l.;C.da Chiusa, 4 Cotronei (KR);0962 44682/44751;correnti1srl@legalmail.it;DCA n. 62 del 03.05.17 DCA n. 189 del 23.10.18
+RESIDENZA SANITARIA ASSISTENZIALE MEDICALIZZATA (R1);KR;Villa San Giuseppe;Via S. Baffa, 250;Cotronei;SADEL di Salvatore BAFFA SpA;Via degli Scipioni, 252 Roma;0962 44108;sadel.spa@pec.it;DCA n. 65 del 03.05.17 DCA n. 35 del 28.01.2020
+RESIDENZA SANITARIA ASSISTENZIALE MEDICALIZZATA (R1);KR;Centro S. Giuseppe;Via S. Baffa, 250;Cotronei;SADEL di Salvatore BAFFA SpA;Via degli Scipioni, 252 Roma;0962 492016;sadel.spa@pec.it;DCA n. 66 del 03.05.17 DCA n. 36 del 28.01.2020
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;KR;CENTRO CAST Onlus;C.da Alice;Cirò Marina;CAST Onlus;C.da Alice Cirò Marina (KR);0962 35313;castonlus@legalmail.it;D.P.G.R. N. 1/2011
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;KR;AGORA' KROTON;Località Sovereto Statale 106;Isola Capo Rizzuto;Soc. Coop Sociale AGORA’ KROTON O.N.L.U.S.;Via Spiaggia delle Forche, 25 Crotone;0962 901674;info@pec.agorakroton.it ;D.P.G.R. N. 1/2011 Nota prot. n. 41904 del 6.2.2018 Nota prot. n. 41904/2018
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;KR;CO.RI.S.S. DROGA STOP;Via S. Francesco, 49;Crotone;CO.RI.S.S.;Via C. Levi, 75 Sarrottino Tiriolo (CZ);0962 905049;coriss@pec.coriss.it;D.P.G.R. N. 1/2011
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;KR;EXODUS;C.da S. Lorenzo;Caccuri;Fondazione Exodus Onlus;V.le Marotta, 18/20 Milano;0984 994369;fondazione.exodus@pec.exodus.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CZ;S. Maria del Soccorso;C.da Gelluise - Loc. Petra, 8;Serrastretta ;Istituto Santa Maria del Soccorso S.r.l.;Via Dei Conti Ruffo, 15 Catanzaro;0968 818816;vivereinsieme@pec.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CZ;Ippolito Dodaro;Via Generale Carini, 75;Falerna ;Arenella Srl;Via Generale Carini, 75 Falerna (CZ);;arenellasrl@pec.it;DCA N. 143 del 27/10/2022
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CZ;Villa Elisabetta ;S.S. Km 13 ;Cortale;G.A. 29 s.r.l.;Via D. Curcio, 2 Lamezia Terme (CZ);0968 27859;ga29srl@pec.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CZ;S. Domenico;Loc. Bastia;Lamezia Terme;G.A. 29 s.r.l.;Via D. Curcio, 2 Lamezia Terme (CZ);0968 27859;ga29srl@pec.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CZ;S. Vito Hospital;Loc. Mesa;S. Vito sullo Jonio;Casa di Cura Giovanni Paolo II Srl;Via Dei Conti Ruffo, 15 Catanzaro;0961 904142;vivereinsieme@pec.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CZ;S. Francesco Hospital;Loc. Carfellà;Settingiano ;Associazione Vivere Insieme;Via Dei Conti Ruffo, 15 Catanzaro;0961 904156;vivereinsieme@pec.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CZ;S. Maria Del Monte;Via Roma, 272;S. Sostene ;Centro Medico A. Fleming s.r.l.;Via Dalmazia, 3 Soverato (CZ);0967 533108;centromedicoafleming@pec.it;"D.P.G.R. N. 1/2011 
+DCA N. 115/2015"
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CZ;La Ginestra Hospital;Via Filangeri;Chiaravalle C.le;Società Salus M.C. S.r.l.;Via M. Ceravolo, 34 Chiaravalle C.le (CZ);0961 919810;desantisdomenicoantonio@pec.it;DCA N. 73 del 03/03/2023
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CZ;Casa Amica;Corso Umberto I ;Fossato Serralta ;PA.OB. S.r.l.;Corso Umberto I Fossato Serralta (CZ);0961 925141;paob.srl@pec.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CZ;Madonna di Porto ;Loc. Madonna di Porto;Gimigliano;AIE S.r.l.;Via dei Conti Ruffo, 15 Catanzaro;0961 999746;aie@pec.it;DCA N. 18 del 10/01/2023
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CZ;Padre G. Moscati ;Loc. Tre Fontane;Sersale;AIE S.r.l.;Via dei Conti Ruffo, 15 Catanzaro;0961 936194;aie@pec.it;DCA N. 17 del 10/01/2023
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CZ;"Casa della Carità               
+don Nicola Paparo";Loc. Madonna dei Termini;Gasperina;Fondazione BETANIA ONLUS;Via Molise, 21 Catanzaro;0961 763252;fondazionebetania@pec.it;D.P.G.R. N. 1/2011 Nota prot. n. 68691 del 18/02/2019 Nota prot. n. 408636 del 27/11/2019
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CZ;S. Anna;Via Berlinguer, 52;Botricello ;UALSI Sant’Anna Impresa SocialeS.r.l;Via Berlinguer, 52 Botricello (CZ);0961 963695;fondazioneualsi@postecert.it;"D.P.G.R. N. 1/2011 
+DCA N. 23 del 10/01/2023"
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);CZ;Mons.  G. Apa;Via Madonna dei Cieli;Catanzaro;Karol Betania Strutture Sanitarie S.r.l.;Via Molise, 21 Catanzaro;;fondazionebetania@pec.it;"D.P.G.R. N. 1/2011 Nota prot. n. 68691 del 18/02/2019 Nota prot. n. 408636 del 27/11/2019
+DG N. 11825 del 05/10/2022
+DCA N. 167 del 29/11/2022"
+RESIDENZA SANITARIA ASSISTENZIALE PER DISABILI (RD4);CZ;Casa Sacri Cuori;Via Madonna dei Cieli;Catanzaro;Karol Betania Strutture Sanitarie S.r.l.;Via Molise, 21 Catanzaro;;fondazionebetania@pec.it;"D.P.G.R. N. 1/2011 Nota prot. n. 68691 del 18/02/2019 Nota prot. n. 408636 del 27/11/2019
+DG N. 11825 del 05/10/2022"
+RESIDENZA SANITARIA ASSISTENZIALE PER DISABILI (RD4);CZ;La Rinascita;C.da Monaci, 1;S. Caterina sullo Jonio;La Rinascita S.r.l.;C.da Monaci, 1 S. Caterina sullo Jonio (CZ);0967 84000;casadicuralarinascita@pec.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE PER DISABILI (RD4);CZ;S. Anna;Via Berlinguer, 52;Botricello ;UALSI Sant’Anna Impresa SocialeS.r.l;Via Berlinguer, 52 Botricello (CZ);0961 963695;fondazioneualsi@postecert.it;"D.P.G.R. N. 1/2011 
+DCA N. 23 del 10/01/2023"
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;CZ;PROGETTO SUD;Via delle Vigne;Lamezia Terme;Associazione Comunità Progetto Sud Onlus;Via Conforti, 61/A Lamezia Terme (CZ);0968 462483;progettosud@pec.it;D.P.G.R. N. 1/2011 DCA n. 28/2017 Nota prot. n. 89623/2017: errore materiale
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;CZ;PROGETTO SUD;Via Reillo, 5;Lamezia Terme;Associazione Comunità Progetto Sud Onlus;Via Conforti, 61/A Lamezia Terme (CZ);0968 462482;progettosud@pec.it;D.P.G.R. N. 1/2011 DCA n. 185/2018
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;CZ;"MALGRADO TUTTO
+Brutto Anatroccolo";Loc. Trigna;Lamezia Terme;Malgrado Tutto Soc. Coop.;Via S. Foderaro, 120 Lamezia Terme (CZ);0968 453387;coopmalgradotutto@pec.it;D.P.G.R. N. 1/2011 Nota prot. n. 10965/2019
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;CZ;"MALGRADO TUTTO
+Brutto Anatroccolo";Loc. Pian del Duca;Lamezia Terme;Malgrado Tutto Soc. Coop.;Via S. Foderaro, 120 Lamezia Terme (CZ);0968 453387;coopmalgradotutto@pec.it;D.P.G.R. N. 1/2011 Nota prot. n. 10965/2019
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;CZ;"Centro Calabrese Solidarietà
+Villa Samuele";C.da Cuturelle, 46/A;Catanzaro;Centro Calabrese Solidarietà;Via L. della Valle, 106 Catanzaro;0961 769722;ccscatanzaro@pec.it;D.P.G.R. N. 1/2011 Nota prot. n. 320392 DEL 24/10/2016
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;CZ;"Centro Calabrese Solidarietà
+Villa Emilia";Via degli Abruzzi, 38;Catanzaro;Centro Calabrese Solidarietà;Via L. della Valle, 106 Catanzaro;0961 769720;ccscatanzaro@pec.it;D.P.G.R. N. 1/2011 Nota prot. n. 320392 DEL 24/10/2016
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;CZ;Zarapoti Società Cooperativa Sociale;Viale Lucrezia della Valle snc c/o Parco Commerciale Le Aquile;Catanzaro;Zarapoti Società Cooperativa Sociale;"Viale Lucrezia della Valle snc c/o Parco Commerciale Le Aquile
+Catanzaro";0961  553558;zarapoti@pec.it;DCA n. 54 del 08/02/2018
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);VV;Madonna delle Grazie;Via A. Moro;Filadelfia;Madonna delle Grazie Srl;Via Dei Conti Ruffo, 15 Catanzaro;0968 725299;vivereinsieme@pec.it;D.P.G.R. N. 1/2011
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;VV;"MARANATHA'
+Centro di prima accoglienza                 ";Via Saccari, 78;Mileto;Associaz. Gruppo Maranathà Onlus;Via Saccari, 78 Mileto (VV);0963 336566;maranatha@pec.it;D.P.G.R. N. 1/2011
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;VV;MARANATHA'                        Casa degli Alberi;Via C. Battisti;Mileto;Associaz. Gruppo Maranathà Onlus;Via Saccari, 78 Mileto (VV);0963 338339;maranatha@pec.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE MEDICALIZZATA (R1);VV;Don Mottola Medical Center;Località Sant’Angelo;Drapia;Villa delle Rose Srl;"Via Roma, 270
+Monterosso Calabro (VV)";0963 325241;villadellerosesrl@pec.it;DCA N. 50 del 09/02/2023
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);RC;Clinica Villa Vittoria s.r.l.;via cav. Ettore Ursino snc Antonimina (RC);Antonimina;Clinica Villa Vittoria s.r.l.;via cav. Ettore Ursino snc Antonimina (RC);0964 312371;mutua_benevolentia@pec.it;"D.P.G.R. N. 1/2011 
+nota prot. n. 380958 del 20.11.2020 (presa d'atto trasformazione societaria)"
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);RC;Universo;Via Nazionale, 6;Africo;ARPAH Onlus;Via Nazionale, 23 Africo (RC);0964 991034;arpah@pec.cgn.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);RC;Villa Salus s.p.a.;C.da Marinella                   Via Madre Teresa Di Calcutta, 1;Bruzzano Zeffirio;Villa Salus s.p.a.;C.da Marinella Via Madre Teresa Di Calcutta, 1 Bruzzano Zeffirio (RC);0964 934967;villasalus@legalmail.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);RC;Don Loria;Via Zanotti Bianco;Oppido Mamertina;Ente Morale Fondazione Famiglia Germanò Onlus;Piazza Orfanotrofio, 3 Oppido Mamertina (RC);0966 85082;famigliagermano.onlus@pec.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);RC;Mons. Prof. Antonino Messina;Via S. Pellico, 1;S. Eufemia                 D' Aspromonte;Antonino S.r.l.;Via Silvio Pellico, 1 Sant'Eufemia D'Aspromonte (RC);0966 967108;cooperativa.attiva.scs@pec.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);RC; Villa Anya s.r.l.;Via SS 106 km 28,5;Melito Porto Salvo; Villa Anya s.r.l.;Via SS 106 km 28,5 Melito Porto Salvo (RC);"0965 777158 
+ 347 4441247";villaanya@pec.it;D.P.G.R. N. 1/2011 Nota prot. n. 251597 DEL 31/07/2017
+RESIDENZA SANITARIA ASSISTENZIALE PER ANZIANI  (R2);RC; Villa Serena s.r.l.;C.da Modenella  ;Rosalì - Reggio Calabria; Villa Serena s.r.l.;ND;0965 670030;rsavillaserena@arubapec.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE PER DISABILI (RD4);RC;Villa Salus s.p.a.;C.da Marinella                   Via Madre Teresa Di Calcutta, 1;Bruzzano Zeffirio;Villa Salus s.p.a.;C.da Marinella Via Madre Teresa Di Calcutta, 1 Bruzzano Zeffirio (RC);0964 934967;villasalus@legalmail.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE MEDICALIZZATA (R1);RC;Villa Salus s.p.a.;C.da Marinella                   Via Madre Teresa Di Calcutta, 1;Bruzzano Zeffirio;Villa Salus s.p.a.;C.da Marinella Via Madre Teresa Di Calcutta, 1 Bruzzano Zeffirio (RC);0964 934967;villasalus@legalmail.it;D.P.G.R. N. 1/2011
+RESIDENZA SANITARIA ASSISTENZIALE MEDICALIZZATA (R1);RC; Villa Anya s.r.l.;Via SS 106 km 28,5;Melito Porto Salvo; Villa Anya s.r.l.;Via SS 106 km 28,5 Melito Porto Salvo (RC);"0965 777158 
+ 347 4441247";villaanya@pec.it;D.P.G.R. N. 1/2011 Nota prot. n. 251597 DEL 31/07/2017
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;RC;CE.RE.SO.                                            Comunità Archè;Via Roma, 5;S.Alessio d'Aspromonte;CE.RE.SO.;Via S. Giuseppe, 97 Reggio Calabria;0965 741272;cereso@arubapec.it;D.P.G.R. N. 1/2011
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;RC;CE.RE.SO.                                                                   Don Tonino Bello;Via Nazionale, 57;Sambatello - Reggio Calabria;CE.RE.SO.;Via S. Giuseppe, 97 Reggio Calabria;0965 598983;cereso@arubapec.it;D.P.G.R. N. 135/2013
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;RC;LA CASA del SOLE;Via Ravagnese;Gallina, Reggio Calabria;LA CASA del SOLE;Via Ravagnese Gallina, Reggio Calabria; 0965 682018;info@pec.comunitalacasadelsole.it;D.P.G.R. N. 1/2011
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;RC;"EXODUS
+La Casa di Mimmo";C.da Polvere,30;S.Stefano d'Aspromonte;Fondazione Exodus Onlus;Viale Marotta, 18/20 Milano;0965 740532;santostefano@pec.exodus.it;D.P.G.R. N. 1/2011
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;RC;EMMANUEL ;C.da Trigoni;Melito Porto Salvo;Associazione Comunità Emmanuel Onlus;S.da P.le Lecce-Novoli, 25 Lecce;0965 788400;presidenzaemmanuel@legalmail.it;D.P.G.R. N. 1/2011
+SERVIZI PRIVATI DI ASSISTENZA ALLE PERSONE DIPENDENTI DA SOSTANZE D'ABUSO;RC;Vecchio Borgo;Loc. Ciosso, 6;Motta S. Giovanni;Associazione William Latella Onlus;Loc. Ciosso, 6 Motta S. Giovanni (RC);0965 346457;williamlatella@pec.it;D.P.G.R. N. 1/2011 nota prot. 11046/2019
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);CS;Sanigest s.r.l.  (ex Villa Augusta);Via L. Nicoletti, 24;Castrovillari;Sanigest S.r.l.;C/DA INFASCINATO SPEZZANO ALBANESE (CS);0981 483360;sanigest2016@legalmail.it ;D.P.G.R. N. 1/2011 DCA N. 20 del 08-02-17
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);CS;Terra dei Semplici;Via Piave, 21;Mandatoriccio;Il Giardino dei Semplici Srl;C.da Mortilla Mandatoriccio (CS);0983 994963;ilgiardinodeisemplicisrl@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);CS;La Ghironda;Via Cesare Terranova, 24;Cosenza;La Ghironda Soc. Coop. Onlus;Via Cesare Terranova, 24 Cosenza;0984 75900;laghironda@superpec.eu;"D.P.G.R. N. 1/2011 
+DDG N. 9638 del 10/08/2022"
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);CS;Lucia Mannella;C.da Fontana;Malito;Centro di Solidarietà Il Delfino Soc. Coop. Onlus;Ctr Macchiabbella,58 Cosenza;0984 1655730;centrodisolidarietaildelfino@legalmail.it;D.P.G.R. N. 1/2011 Nota prot. n.145970/2018
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);CS;Il Giardino dei Semplici;Loc. Mortilla;Mandatoriccio;Il Giardino dei Semplici Srl;C.da Mortilla Mandatoriccio (CS);0983 994963;ilgiardinodeisemplicisrl@pec.it;D.P.G.R. N. 98 del 28/6/2012
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);CS;Borgo dei Mastri s.r.l.;C.da S. Maria di Pugliano;Paterno C.;Borgo dei Mastri s.r.l.;C.da S. Maria di Pugliano Paterno C. (CS);0984 476194;borgodeimastri@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);CS;Borgo dei Mastri s.r.l.;C.da S. Maria di Pugliano;Paterno C.;Borgo dei Mastri s.r.l.;C.da S. Maria di Pugliano Paterno C. (CS);0984 476194;borgodeimastri@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);CS;Borgo dei Mastri s.r.l.;C.da S. Maria di Pugliano;Paterno C.;Borgo dei Mastri s.r.l.;C.da S. Maria di Pugliano Paterno C. (CS);0984 476194;borgodeimastri@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);CS;Villa degli Oleandri s.r.l.;C.da Pasquali, 117;Mendicino;Villa degli Oleandri s.r.l.;C.da Pasquali, 117 Mendicino (CS);0984 632227/632003;villaole@gigapec.it;D.P.G.R. N. 1/2011 Nota prot. n.328164 del 31/10/2016
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);CS;Villa degli Oleandri s.r.l.;C.da Pasquali, 117;Mendicino;Villa degli Oleandri s.r.l.;C.da Pasquali, 117 Mendicino (CS);0984 632227/632003;villaole@gigapec.it;D.P.G.R. N. 1/2011 Nota prot. n.328164 del 31/10/2016
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);CS;Clinic Service Center s.r.l.;Via Provinciale ;Piano Lago Mangone;Clinic Service Center s.r.l.;C.da Fiego Donnici Inf. Cosenza;0984 969955;clinic@pec.it, villaverde@legalmail.it;DCA N. 79 del 09/05/2017
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);CS;Clinic Service Center s.r.l.;Via Provinciale ;Piano Lago Mangone;Clinic Service Center s.r.l.;C.da Fiego Donnici Inf. Cosenza;0984 969955;clinic@pec.it, villaverde@legalmail.it;DCA N. 79 del 09/05/2017
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);CS;Residenza Santa Sofia D'Epiro REMS “transitoria”;Via Scigata;Santa Sofia D'Epiro;Centro di Solidarietà Il Delfino Soc. Coop. Onlus;Ctr Macchiabbella,58 Cosenza;0984 1655730;centrodisolidarietaildelfino@legalmail.it;DCA N.109 del 12/10/2016 Nota prot. n. 145970/2018 Struttura ex art. 20 L. 67/88 DCA n. 24 del 28/01/2020
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);CS;Villa San Francesco;Via F. De Franco Pietro (Orto dei Monaci) ;Villapiana;Villa San Francesco s.r.l;"Via F. De Franco Pietro (Orto dei Monaci) 
+Villapiana";0981 505001;ND;"DDG N. 6362 del 15/06/2022
+DECRETO DEL COMMISSARIO AD ACTA DEL 13/10/2022"
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);KR;Verzino Solidale;Loc. Serre Pennuti;Verzino;Consorzio Mare Nostrum Onlus s.c.s.;Via Magenta, 9 Catanzaro;0962 763706;marenostrumonlus@messaggipec.it;D.P.G.R. N. 1/2011
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);KR;Carusa;Via Carusa;Cotronei;Correnti S.r.l.;C.da Chiusa, 4 Cotronei (KR);0962 44682/44751;correnti1srl@legalmail.it;DCA n. 63 del 03.05.2017 DCA n. 189 del 23.10.18
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);KR;Spirito Santo;Via Carusa;Cotronei;Correnti S.r.l.;C.da Chiusa, 4 Cotronei (KR);0962 44682/44751;correnti1srl@legalmail.it;DCA n. 64 del 03.05.2017 DCA n. 189 del 23.10.18
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);CZ;Redancia Sud s.r.l.;Via Largo Regina Elena;S. Andrea dello Jonio ;Redancia Sud s.r.l.;Via Largo Regina Elena S. Andrea dello Jonio (CZ);0967 547818;redanciasudsrl@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);CZ;Villa S. Vincenzo s.r.l.;Via Barlaam da Seminara, 26;Catanzaro;Soc. San Vincenzo Srl;Via B. da Seminara, 26 Catanzaro;0961 775463;soc.sanvincenzo@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);CZ;Villa S. Vincenzo s.r.l.;Via Barlaam da Seminara, 26;Catanzaro;Soc. San Vincenzo Srl;Via B. da Seminara, 26 Catanzaro;0961 775463;soc.sanvincenzo@pec.it;D.P.G.R. N. 1/2011
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);CZ;SalusMentis s.r.l.;Loc. La Petrizia SS.106;Sellia Marina;SalusMentis s.r.l.;Loc. La Petrizia SS.106 Sellia Marina (CZ);0961 968201;salusmentis@pec.it;"D.P.G.R. N. 1/2011 Nota prot. n. 406373 06/12/2012 
+ Nota prot. n. 242133/2018"
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);CZ;SalusMentis s.r.l.;Loc. La Petrizia SS.106;Sellia Marina;SalusMentis s.r.l.;Loc. La Petrizia SS.106 Sellia Marina (CZ);0961 968201;salusmentis@pec.it;"D.P.G.R. N. 1/2011 Nota prot. n. 406373 06/12/2012 
+ Nota prot. n. 242133/2018"
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);VV;Villa Arcobaleno;Fraz. S. Nicola De Legistis;Limbadi;CO.RI.S.S.;Via C. Levi, 75 Sarrottino Tiriolo (CZ);0963 85893;coriss@pec.coriss.it;D.P.G.R. N. 1/2011
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);RC;Consorzio Sociale GOEL;Via P. Brugnano;Siderno;Consorzio Sociale GOEL;C.da Limina, 3 Gioiosa Jonica (RC);0964 419191;consorziogoel@pec.it;"D.P.G.R. N. 1/2011 
+Nota 384373/2018"
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);RC;Consorzio Sociale GOEL;Via P. Brugnano;Siderno;Consorzio Sociale GOEL;C.da Limina, 3 Gioiosa Jonica (RC);0964 419191;consorziogoel@pec.it;"D.P.G.R. N. 1/2011 
+Nota 384373/2018"
+STRUTTURA RESIDENZIALE RIABILITATIVA PSICHIATRICA (SRP1 – SRP2 – SRP3);RC;La Chimera ;C.da Ellera,16;Camini;La Chimera Soc. Coop Onlus;"C.da Ellera,16
+Camini (RC)";0964 389017;lachimera@pec.psichiatrica.it;"D.P.G.R. N. 1/2011
+DCA N. 159 del 02/08/2018
+DCA N. 26 del 17/03/2022"
+RESIDENZA SANITARIA PER SLA E MALATTIE DEGENERATIVE DEL SISTEMA NERVOSO (RD1);KR;Presidio di Riabilitazione Centro San Giuseppe;Via S. Baffa, 250;Cotronei;SADEL di Salvatore BAFFA SpA;Via degli Scipioni, 252 Roma;0962 492016;sadel.spa@pec.it;DCA n. 136 del 19.10.2017 DCA n. 33 del 28.01.2020
+RESIDENZA SANITARIA PER SLA E MALATTIE DEGENERATIVE DEL SISTEMA NERVOSO (RD1);CZ;Centro Clinico S. Vitaliano s.r.l.;Via T. Campanella;Catanzaro;Centro Cilnico S. Vitaliano s.r.l.;Via T. Campanella, 60 Catanzaro;0961 773834-0984 163695;centroclinicosanvitaliano@pec.it;DCA n. 54 del 22.03.2017 DCA n. 153 del 26/11/2019
+RESIDENZA SANITARIA PER PERSONE AFFETTE DA HIV/AIDS;RC;Casa Malati AIDS;Fraz. Castellace - Via Buzzano;Oppido Mamertina;Ente Morale Fondazione Famiglia Germanò Onlus;Piazza Orfanotrofio, 3 Oppido Mamertina (RC);;famigliagermano.onlus@pec.it;DCA N. 243 DEL 06/12/2018
+CASA PROTETTA PER ANZIANI (R3);CS;San Camillo;Via G.Matteotti, 101;Sangineto;Tema Servizi S.r.l.;C.da S. Antonio. 177 Fuscaldo (CS);0982 993889;temaservizisrl@pec.it;"D.P.G.R. N. 1/2011 
+DCA N. 4 DEL 23/01/2019 
+DCA N. 165 DEL 03/12/2019"
+CASA PROTETTA PER ANZIANI (R3);CS;San Giuseppe;Loc. Pettoruto;San Sosti;AGI Srl;Via degli Scipioni, 252 Roma;0981 64093;agi.srl@pec.it;D.P.G.R. N. 1/2011
+CASA PROTETTA PER ANZIANI (R3);CS;Casa Serena Santa Maria di Loreto;Via Indipendenza, 4;Cassano allo Jonio;Casa Serena Santa Maria di Loreto;Via Indipendenza, 4 Cassano allo Jonio (CS);0981 71022;info@pec.casaserenacassano.it;D.P.G.R. N. 1/2011 Nota prot. n. 295278/2018
+CASA PROTETTA PER ANZIANI (R3);CS;S.Pio e Madonna dell’Immacolata;C.da Cozzo Giardino;Corigliano-Rossano;C.S.B. s.r.l. Unipersonale;C.da Cozzo Giardino Corigliano-Rossano (CS);0983 859110;csbsrl1@legalmail.it;D.P.G.R. N. 1/2011
+CASA PROTETTA PER ANZIANI (R3);CS;Villa Azzurra;Via Olimpia, 1;Roseto Capo Spulico;Pegaso Srl;Via Olimpia, 1 Roseto Capo Spulico (CS);0981 913635;pegasoanziani@legalmail.it;D.P.G.R. N. 1/2011
+CASA PROTETTA PER ANZIANI (R3);CS;Villa Sorriso s.r.l.;Via E.D’Amato;Montalto Uffugo;Villa Sorriso s.r.l.;Via E.D’Amato, 91 Montalto Uffgo (CS);0984 1902818;villasorrisosrl@legal.email.it;D.P.G.R. N. 1/2011 Nota Prot.N. 49352 del 05/02/2020
+CASA PROTETTA PER ANZIANI (R3);CS;S. Maria di Bocchigliero;Via Riforma, 121;Bocchigliero;Madonna della Catena Hospital S.r.l.;Via Riforma Bocchigliero (CS);0983 92591;mdchospital@pec.it                                                                     fondazionesantamaria@kelipec.it;D.P.G.R. N. 1/2011 DCA n. 40/2017
+CASA PROTETTA PER ANZIANI (R3);CS;Villa Adelchi;Contrada Frailliti;Longobardi;Riace Srl;Via Panebianco, 293 Cosenza;0982 78067;riacesrl@legpec.it;D.P.G.R. N. 1/2011
+CASA PROTETTA PER ANZIANI (R3);CS;Villa Florensia;Via Monastero, 56;San Giovanni in Fiore;San Vincenzo De Paoli Srl;Via Monastero, 56 San Giovanni in Fiore (CS);0984 992036;sanvincenzodepaoli@legpec.it;D.P.G.R. N. 1/2011
+CASA PROTETTA PER ANZIANI (R3);CS;Don Milani;C.da Carmine snc;Lungro;AIE Srl;"Via dei Conti Ruffo, 15
+Catanzaro";0981 947480;aie@pec.it;"DCA N. 100 del 30/08/2022
+DCA N. 128 del 17/10/2022"
+CASA PROTETTA PER ANZIANI (R3);CS;Casa di Riposo Villa Letizia s.r.l.;Loc. Frisone;Spezzano della Sila - Camigliatello Silano;Letizia Casa di Riposo Protetta s.r.l.;Loc. Frisone;;;DCA N. 113 del 26/04/2023
+CASA PROTETTA PER DISABILI (RD5);CS;Sant'Antonio;Contrada Carpansacchio;Castrovillari;Villa Iride S.r.l.;Via Don Giuseppe Bellizzi, 6 Castrovillari (CS);0981 1901031;villairidesrl@legalmail.it;D.P.G.R. N. 1/2011
+CASA PROTETTA PER DISABILI (RD5);CS;Borgo dei Mastri Pad. C. D.;C.da S. Maria di Pugliano;Paterno Calabro;Borgo dei Mastri Srl;C.da S. Maria di Pugliano Paterno Calabro (CS);0984 476194;borgodeimastri@pec.it;D.P.G.R. N. 1/2011
+CASA PROTETTA PER DISABILI (RD5);CS;Borgo dei Mastri Pad. F.;C.da S. Maria di Pugliano;Paterno Calabro;Borgo dei Mastri Srl;C.da S. Maria di Pugliano Paterno Calabro (CS);0984 476194;borgodeimastri@pec.it;D.P.G.R. N. 1/2011
+CASA PROTETTA PER ANZIANI (R3);KR;Casa Giardino S.r.l.;Via Laghi Silani;Cotronei;Casa Giardino S.r.l.;Via Laghi Silani Cotronei (KR);0962 44108;casagiardino.oliveti@pec.it;DCA n. 75 del 04.05.2017 Nota prot. n. 25011 del 22/01/2019
+CASA PROTETTA PER ANZIANI (R3);KR;Savelli Hospital Srl;Via Roma;Savelli;Savelli Hospital Srl;Via Roma Savelli (KR);0962 44108;savellihospital.srl@pec.it;"DCA n. 135 del 19/10/17
+DECRETO DEL COMMISARIO AD ACTA MINISTERIALE del 20/09/2021"
+CASA PROTETTA PER ANZIANI (R3);KR;Villa Ermelinda;Via Pozzoseccagno;Cutro;Progetto Terza Età Srl;Loc. Pozzoseccagno Cutro (KR);0962 771139;ptesrl@pec.it;"DCA n. 69 del 04.05.2017
+DECRETO DEL COMMISSARIO AD ACTA del 01/09/2022"
+CASA PROTETTA PER ANZIANI (R3);KR;SADEL San Teodoro s.r.l.;Loc. San Lorenzo;Cerenzia;SADEL San Teodoro s.r.l.;Via S. Baffa, 246 Cotronei (KR);0984 995450;sadel.santeodoro@pec.it;"DCA n. 138 del 19/10/17 Nota prot. N. 152189 del 14/05/2015
+DECRETO DEL COMMISARIO AD ACTA MINISTERIALE del 22/09/2021
+"
+CASA PROTETTA PER ANZIANI (R3);KR;Villa del Rosario s.r.l.;Loc. Trepidò Sottano;Cotronei;Villa del Rosario s.r.l.;Loc. Trepidò Sottano Cotronei (KR);0962 46121;villadelrosario.srl@pec.it;"D.P.G.R. N. 1/2011 DCA N. 251 DEL 07/12/2018
+DECRETO DEL COMMISARIO AD ACTA MINISTERIALE del 22/09/2021"
+CASA PROTETTA PER DISABILI (RD5);KR;Spirito Santo;Via Carusa;Cotronei;Correnti S.r.l.;C.da Chiusa, 4 Cotronei (KR);0962 44682/44751;correnti1srl@legalmail.it;DCA n. 64 del 03.05.2017 DCA n. 189 del 23.10.18
+CASA PROTETTA PER ANZIANI (R3);CZ;Alpha Service S.r.l.                                       (ex Madonna del Rosario);Via Torre, 81;Lamezia T.;Alpha Service S.r.l.      ;Via Torre, 81 Lamezia Terme (CZ);0968 400478;infoalphaservicesrl@pec.it                ;D.P.G.R. N. 1/2011 DCA 57/2018
+CASA PROTETTA PER ANZIANI (R3);CZ;San Francesco di Paola;C.da Vallini;Maida;San Francesco di Paola sas;C.da Vallini Maida (CZ);0968 155900;residenzasanfrancesco@pec.it;D.P.G.R. N. 1/2011
+CASA PROTETTA PER ANZIANI (R3);CZ;San Domenico;Via Federico Iannini;Palermiti;Centro Medico A. Fleming s.r.l.;Via Dalmazia, 3 Soverato (CZ);0961 730183;centromedicoafleming@pec.it;D.P.G.R. N. 1/2011
+CASA PROTETTA PER ANZIANI (R3);CZ;Mons. A. Stanizzi;Via Flaminia;Cropani  M.na;La Speranza Impresa Sociale Srl;"Via Tangeri ,Snc
+Cropani Marina (CZ)";0961 960948;fondazioneualsi@postecert.it;DCA N. 68 del 22/02/2023
+CASA PROTETTA PER ANZIANI (R3);CZ;EBEN EZER S.r.l.;C.da Mumuriana;Chiaravalle Centrale;EBEN EZER S.r.l.;C.da Mumuriana Chiaravalle C.le (CZ);0967 632049;ebenezer2013@pec.it;DCA N. 49 del 09/02/2023
+CASA PROTETTA PER ANZIANI (R3);CZ;Villa Mariolina;Contr. Palladino, 1;Montauro;Casa di Cura Giovanni Paolo II Srl;Via Dei Conti Ruffo, 15 Catanzaro;0967 548827;vivereinsieme@pec.it;DCA N. 27 del 12/01/2023
+CASA PROTETTA PER ANZIANI (R3);CZ;Villa S. Elia;Via C. A. Dalla Chiesa, 10;Marcellinara;Associazione Vivere Insieme;Via Dei Conti Ruffo, 15 Catanzaro;0961 996168;vivereinsieme@pec.it;D.P.G.R. N. 1/2011
+CASA PROTETTA PER ANZIANI (R3);CZ;Fondazione Betania  ONLUS Mimosa;Via Molise, 21;Catanzaro;Karol Betania Strutture Sanitarie S.r.l.;Via Molise, 21 Catanzaro;;fondazionebetania@pec.it;"D.P.G.R. N. 1/2011 Nota prot. n. 68691 del 18/02/2019 Nota prot. n. 408636 del 27/11/2019
+DCA N. 167 del 29/11/2022"
+CASA PROTETTA PER ANZIANI (R3);CZ;Fondazione Betania  ONLUS Casa degli Ulivi;Strada Provinciale 127 n.7;Girifalco;Karol Betania Strutture Sanitarie S.r.l.;Via Molise, 21 Catanzaro;;fondazionebetania@pec.it;"D.P.G.R. N. 1/2011 Nota prot. n. 68691 del 18/02/2019 
+Nota prot. n. 408636 del 27/11/2019
+DCA N. 167 del 29/11/2022"
+CASA PROTETTA PER DISABILI (RD5);CZ;Il Gabbiano;Via Nazionale s.s. 18;Gizzeria;IL GABBIANO SRL;Via Nazionale s.s. 18 Gizzeria Lido (CZ);0968 419492;infoilgabbiano@pec.it;D.P.G.R. N. 1/2011 Nota prot. n. 242128/2018
+CASA PROTETTA PER DISABILI (RD5);CZ;Mons. A. Stanizzi;Via Flaminia;Cropani  M.na;La Speranza Impresa Sociale Srl;"Via Tangeri ,Snc
+Cropani Marina (CZ)";0961 960948;fondazioneualsi@postecert.it;DCA N. 68 del 22/02/2023
+CASA PROTETTA PER ANZIANI (R3);VV;Villa delle Rose S.r.l.;Via Roma, 270;Monterosso C.;Villa delle Rose S.r.l.;Via Roma, 270 Monterosso C. (VV);0963 325241;casaprotettavilladellerose@pec.it;D.P.G.R. N. 1/2011
+CASA PROTETTA PER ANZIANI (R3);VV;La Madonnina;C.da Prato;Filadelfia;Garo Antonio S.r.l.;Via Torre, 81 Lamezia Terme (CZ);0968 725212;garoantoniosrl@pec.it;DCA n. 144 del 11/11/2019
+CASA PROTETTA PER DISABILI (RD5);VV;S. Antonio;C.da Prato;Filadelfia;Garo Antonio S.r.l.;Via Torre, 81 Lamezia Terme (CZ);0968 725212;garoantoniosrl@pec.it;DCA n. 32 del 20/02/2019
+CASA PROTETTA PER ANZIANI (R3);RC;Clinica Villa Vittoria s.r.l.;via cav. Ettore Ursino snc Antonimina (RC);Antonimina;Clinica Villa Vittoria s.r.l.;via cav. Ettore Ursino snc Antonimina (RC);0964 312371;mutua_benevolentia@pec.it;"D.P.G.R. N. 1/2011 
+nota prot. n. 380958 del 20.11.2020 (presa d'atto trasformazione societaria)"
+CASA PROTETTA PER ANZIANI (R3);RC;Universo;Via Nazionale, 6;Africo;ARPAH Onlus;Via Nazionale, 23 Africo (RC);0964 991034;arpah@pec.cgn.it;D.P.G.R. N. 1/2011
+CASA PROTETTA PER ANZIANI (R3);RC;Emmaus;Via Rocco Pugliese, 1;Palmi;Associazione di Volontariato Presenza;Via Rocco Pugliese, 1 Palmi (RC);0966 267411;presenzaonluscalabria@pec.it;D.P.G.R. N. 1/2011
+CASA PROTETTA PER ANZIANI (R3);RC;Opera San Francesco D’Assisi;Via S. Maria Superiore, 118;Rizziconi;Opera San Francesco D’Assisi;Via S. Maria Superiore, 118 Rizziconi (RC);0966 53093;operasanfrancesco@legalmail.it;D.P.G.R. N. 1/2011
+CASA PROTETTA PER ANZIANI (R3);RC;Casa della Carità;Via G. Minasi, 11/13;Scilla;Casa della Carità;Via G. Minasi, 11/13 Scilla (RC);0965 754091;casaprotetta.casadellacarita@pec.it;D.P.G.R. N. 1/2011
+HOSPICE  (R1);CS;Villa Gioiosa;C.da Caldopiano;Montalto Uffugo;Effegi S.u.r.l.;Via Sambiase, 24/F Cosenza;0984 930888;effegics@pec.it;"DCA n.35 del 08/02/2017
+DCA N. 97 del 30/08/2022"
+HOSPICE  (R1);KR;San Dionigi Hospital  ;Via San Luca;Crotone;Progetto Terza Età S.r.l.;Loc. Pozzoseccagno Cutro (KR);0962 948098;ptesrl@pec.it;DCA n. 119 del 09/08/2019
+HOSPICE  (R1);CZ;Centro Cilnico S. Vitaliano s.r.l.;Via T. Campanella;Catanzaro;Centro Cilnico S. Vitaliano s.r.l.;Via T. Campanella, 60 Catanzaro;0961 773834-0984 163695;centroclinicosanvitaliano@pec.it;DCA N.136 DEL 20/12/2016 DCA n. 29 del 20/02/2019 DCA n. 153 del 26/11/2019
+HOSPICE  (R1);CZ;Sant'Andrea Hospice;Via della Fraternità snc;Sant'Andrea Apostolo dello Ionio;Giomi Care srl;"Via Antonio Chinotto,16
+Roma";0967 44145 -47123;villadellafraternita@pec.it;"DCA n.6 del 23/01/2017 Presa d'atto superamento prescrizioni prot. n. 31303 del 02/02/2017 Nota prot. 417940/2018 DCA n. 64 del 09/04/2019
+DCA N. 141 del 19/10/2022"
+HOSPICE  (R1);RC;Fondazione Via delle Stelle;Via delle Camelie snc;Reggio Calabria;Fondazione Via delle Stelle;Via delle Camelie snc Reggio Calabria;0965 683626;fondazioneviadellestelle@pec.buffetti.it;DCA N. 103 del 09/08/2021
+ASSISTENZA DOMICILIARE INTEGRATA (ADI);KR;Villa San Giuseppe;Via S. Baffa, 246-250;Cotronei;SADEL di Salvatore BAFFA SpA;Via degli Scipioni, 252 Roma;0962 44108;sadel.spa@pec.it;"DCA N. 249 DEL 07/12/2018
+DCA n. 34 del 28.01.2020"
+ASSISTENZA DOMICILIARE INTEGRATA (ADI);KR;SADEL San Teodoro s.r.l.;Loc. San Lorenzo;Cerenzia;SADEL San Teodoro s.r.l.;Via S. Baffa, 246 Cotronei (KR);0984 995450;sadel.santeodoro@pec.it;"DCA n. 138 del 19/10/17 DCA N. 53 DEL 09/04/2019
+DECRETO DEL COMMISARIO AD ACTA MINISTERIALE del 22/09/2021"
+ASSISTENZA DOMICILIARE INTEGRATA (ADI);KR;Savelli Hospital Srl;Via Roma;Savelli;Savelli Hospital Srl;Via Roma Savelli (KR);0962 44108;savellihospital.srl@pec.it;"DCA n. 135 del 19/10/17 DCA N. 54 DEL 09/04/2019
+DECRETO DEL COMMISARIO AD ACTA MINISTERIALE del 20/09/2021"
+ASSISTENZA DOMICILIARE INTEGRATA (ADI);KR;Presidio di Riabilitazione Centro San Giuseppe;Via S. Baffa, 250;Cotronei;SADEL di Salvatore BAFFA SpA;Via degli Scipioni, 252 Roma;0962 492016;sadel.spa@pec.it;DCA n. 45 del 04/02/2020
+ASSISTENZA DOMICILIARE INTEGRATA (ADI);KR;Centro Salute e Benessere dei F .Ili Baffa & C. S.r.l.;Contrada Polveracchio snc;Cotronei;Centro Salute e Benessere S.r.l. dei F.lli Baffa e C.;"Contrada Polveracchio snc
+Cotronei";0962 44620;csbsrl@arubapec.it;DCA N. 106 del 30/08/2022
+ASSISTENZA DOMICILIARE INTEGRATA (ADI);KR;Centro Fisiokinesiterapico Starbene S.r.l.;Largo Covelli, 4;Crotone;STARBENE s.r.l.;Largo Covelli, 4 Crotone;0962 26961;starbenekr@pec.it;DCA N. 63 del 21/02/2023
+ASSISTENZA DOMICILIARE INTEGRATA (ADI);KR;Villa del Rosario s.r.l.;Loc. Trepidò Sottano;Cotronei;Villa del Rosario s.r.l.;Loc. Trepidò Sottano Cotronei (KR);0962 46121;villadelrosario.srl@pec.it;"
+DECRETO DEL COMMISARIO AD ACTA MINISTERIALE del 22/09/2021"
+ASSISTENZA DOMICILIARE INTEGRATA (ADI);KR;Centro di Riabilitazione ANMIC;Via P. Impastato, 57;Crotone;ANMIC RIABILITAZIONE;Via P. Impastato, 57 Crotone;0962 28071;anmiccdr@legalmail.it;DCA N. 08 del 09/01/2023
+ASSISTENZA DOMICILIARE INTEGRATA (ADI);CZ;Centro Cilnico S. Vitaliano s.r.l.;Via T. Campanella;Catanzaro;Centro Cilnico S. Vitaliano s.r.l.;Via T. Campanella, 60 Catanzaro;0961 773834-0984 163695;centroclinicosanvitaliano@pec.it;"D.P.G.R. N. 1/2011 
+DCA N.136 DEL 20/12/2016 DCA n. 153 del 26/11/2019"
+STRUTTURE RESIDENZIALI - SEMIRESIDENZIALI - AMBULATORIALI PER AUTISMO;CS;ANMI SISS s.r.l.;Viale Sant'Angelo Loc. Crosetto;Corigliano-Rossano;ANMI SISS s.r.l.;Via Monte S. Michele, 13 Cosenza;0983 293019;anmisiss@pec.it;DCA n. 42 del 30/01/2020
+STRUTTURE RESIDENZIALI - SEMIRESIDENZIALI - AMBULATORIALI PER AUTISMO;CZ;Centro Riabilitativo Lucrezia;Via Lucrezia della Valle;Catanzaro;Soc. San Vincenzo Srl;Via B. da Seminara, 26 Catanzaro;0961 367006;soc.sanvincenzo@pec.it;D.P.G.R. N. 1/2011
+STRUTTURE RESIDENZIALI - SEMIRESIDENZIALI - AMBULATORIALI PER AUTISMO;RC;Fondazione Marino per l'Autismo Onlus;Via Prunella inf., 3;Melito Porto Salvo;Fondazione Marino per l'Autismo Onlus;Via Prunella inf., 3 Melito Porto Salvo (RC);0965 789373;fondazionemarino@pec.it;"DCA N. 11 del 09/01/2023
+DCA N. 12 del 09/01/2023"
+Casa di Cura;CS;Casa di Cura Cascini s.r.l.;Piazza De Seta, 2;Belvedere Marittimo;Casa di Cura Cascini s.r.l.;Piazza De Seta, 2 Belvedere Marittimo (CS);0985 8001;casadicura@pec.it;"D.P.G.R. N. 116 11/07/2012
+D.P.G.R. N. 181 09/11/2012
+D.P.G.R. N. 37 07/03/2013; D.P.G.R. N. 33 07/03/2013
+DCA N.100 20/09/2016 
+"
+Casa di Cura;CS;Tirrenia Hospital S.r.l. (ex INR - Istituto Ninetta Rosano s.r.l.);Via Capo Tirone,12;Belvedere Marittimo;Tirrenia Hospital S.r.l.;Via Provinciale snc Frazione Piano Lago, Mangone (CS);0985 849091;tirreniahospital@pec.it;"D.P.G.R. N. 119 11/07/2012
+D.P.G.R. N. 8 29/01/2013
+DCA n. 14 del 28/01/2020
+D.P.G.R. N. 7 29/01/2013
+D.P.G.R. - CA n.1/2011
+DCA n. 107 del 10/05/2018 DCA n. 186 del 23/10/2018"
+Casa di Cura;CS;Casa di Cura Arena s.r.l.;Via S.S. 18, 70;Sangineto;Casa di Cura Arena s.r.l.;Via Nazionale, 70 Sangineto (CS);0982 96187;casadicuraarena@pec.it;D.P.G.R. N.19 13/02/2014 Nota prot. 295388/2018
+Casa di Cura;CS;iGreco ospedali Riuniti s.r.l. (ex La Madonnina s.r.l.);Via P. Rossi, 109;Cosenza;iGreco ospedali Riuniti s.r.l.;Piazza M. Quintieri, 1 Cosenza;0984 822311;igreco@pec.it;"D.P.G.R. N. 117 11/07/2012
+D.P.G.R. N. 172 11/10/2012 
+D.P.G.R. N. 85 17/06/2013
+D.P.G.R. N. 84 17/06/2013
+DCA 29 DEL 08/02/2017
+DCA 29 DEL 08/02/2017
+Nota prot. n. 288722/2018 Nota prot n. 198603/2019"
+Casa di Cura;CS;iGreco ospedali Riuniti s.r.l. (ex Madonna della Catena);Via Fra Benedetto, 33 ;Dipignano;iGreco ospedali Riuniti s.r.l.;Piazza M. Quintieri, 1 Cosenza;0984 445666;igreco@pec.it;D.P.G.R. N. 20 13/02/2014 DCA N.17 DEL 4/2/2016 DCA 29 DEL 08/02/2017 Nota prot. n. 288722/2018 Nota prot n. 198603/2019
+Casa di Cura;CS;iGreco ospedali Riuniti s.r.l. (ex Sacro Cuore s.r.l.);Corso L. Fera, 50;Cosenza;iGreco ospedali Riuniti s.r.l.;Piazza M. Quintieri, 1 Cosenza;0984 412953;igreco@pec.it;"D.P.G.R. N. 118 11/07/2012
+D.P.G.R. N. 79 17/06/2013 DCA 29 DEL 08/02/2017 Nota prot. n. 288722/2018 Nota prot n. 198603/2019"
+Casa di Cura;CS;M.Misasi;P.zza F. Crispi, 6;Cosenza;San Bartolo S.r.l.;P.zza F. Crispi, 6 Cosenza;0984 21084;sanbartolosrl@legalmail.it;D.P.G.R. N. 140 16/10/2013
+Casa di Cura;CS;Casa di Cura San Francesco di Rao Rosina s.r.l.;Via Candelisi;Mendicino;Casa di Cura San Francesco di Rao Rosina s.r.l. ;Via Mortati, 43 Mendicino (CS);0984 630769;clinica.sanfrancescosrl@pec.it;"D.P.G.R. N. 90 19/06/2013 DCA N. 90/2014
+Nota prot. n.134369 del 27/4/2016 Nota prot. n.188085 del 06/06/2017"
+Casa di Cura;CS;Casa di Cura Scarnati s.r.l.;Via Zara, 4;Cosenza;Casa di Cura Scarnati s.r.l.;Via Zara, 4 Cosenza;0984 21933;casadicurascarnati@pec.it;"D.P.G.R. N. 115 11/07/2012
+D.P.G.R. N. 83 17/06/2013
+DCA 14 DEL 08/02/2017"
+Casa di Cura;CS;Casa di Cura Villa Del Sole s.r.l.;Via E. Galli, 1/9 - Rione S. Vito;Cosenza;Casa di Cura Villa Del Sole s.r.l.;Rione S. Vito Cosenza;0984 34026;villadelsole@pec.it;"D.P.G.R. N. 120 11/07/2012
+D.P.G.R. N. 81 17/06/2013D.P.G.R. N. 80 17/06/2013 Nota prot. n.290644 del 27/09/2016
+DCA 67 DEL 03/05/2017"
+Casa di Cura;KR;Santa Rita s.r.l.;Via Roma, 227;Cirò Marina;Santa Rita s.r.l.;Via Roma, 227 Cirò Marina (KR);0962 231078;cdcsantarita@pec.it;"D.P.G.R. N. 9 29/01/2013
+DCA n.64 del 05/07/2016
+DCA N. 12 DEL 08.02.2017
+DCA N. 171 DEL 04/08/2018
+DCA n. 3 del 23/01/2019"
+Casa di Cura;KR;Istituto S.Anna;Via Siris, 11;Crotone;Istituto S.Anna;ND;ND;risorseumane@pec.istitutosantanna.it;"DCA n. 160 del 02/08/2018
+D.P.G.R. N. 12 DEL 29/01/2013
+D.P.G.R. N. 12 29/01/2013"
+Casa di Cura;KR;Romolo Hospital s.r.l.;Via S. Pertini, 6     loc. Cupone;Rocca di Neto;Romolo Hospital s.r.l.;Via S. Pertini, 6 loc. Cupone Rocca di Neto (KR);0962 983084;romolohospital@legalmail.it;"D.P.G.R. N. 127 11/07/2012
+D.P.G.R. N. 201 20/12/2012
+D.P.G.R. N. 130 16/10/2013
+DCA N. 71 DEL 04.05.2017"
+Casa di Cura;KR;Madonna dello Scoglio s.r.l.;Via Laghi Silani;Cotronei;Madonna dello Scoglio s.r.l.;Loc. Mola Cotronei (KR);0962 44188;casadicuramds@pec.it;"D.P.G.R. N. 126 11/07/2012
+D.P.G.R. N. 173 11/10/2012
+D.P.G.R. N. 200 20/12/2012
+D.P.G.R. N. 45 10/04/2014
+DCA n. 94 del 15.06.2017"
+Casa di Cura;KR;Marrelli Health s.r.l.;Via E. Fermi (Loc. Passovecchio);Crotone;Marrelli Health s.r.l.;Via E. Fermi (Loc. Passovecchio) Crotone;0962 930414;marrellihospital@pec.it;"D.P.G.R. N. 124 11/07/2012
+D.P.G.R. N. 199 20/12/2012 NOTA PROT. N.248088 DEL 8/8/2016 DCA n.2 del 10/01/2017 DCA n. 167 del 03/12/2019"
+Casa di Cura;KR;Sadel di Salvatore Baffa s.p.a.;Via Laghi Silani;Cotronei;SADEL di Salvatore BAFFA SpA;Via degli Scipioni, 252 Roma;0962 44108;sadel.spa@pec.it;"Nota prot. N. 152189 del 14/05/2015
+D.P.G.R. N. 131 16/10/2013
+D.P.G.R. N. 46 10/04/2014
+"
+Casa di Cura;KR;Marrelli Health s.r.l.;Via Gioacchino da Fiore;Crotone;Marrelli Health s.r.l.;Via E. Fermi (Loc. Passovecchio) Crotone;962960101;marrellicasadicura@pec.it;"DCA n.110 del 12/10/2016 DCA n.2 del 10/01/2017 DCA n.129 del 18/10/2017 
+DCA n. 104 del 10/05/2018 DCA n. 215 del 08/11/2018 DCA n. 167 del 03/12/2019"
+Casa di Cura;CZ;Villa Michelino;Via Duca D'Aosta, 164;Lamezia Terme;FRA.RO. S.r.l.;Via Duca D'Aosta, 164 Lamezia Terme (CZ);0968 22840;frarosrl@arubapec.it;"D.P.G.R. N. 122 DEL 11/07/2012
+D.P.G.R. N. 17 05/02/2013
+DCA N. 244 DEL 06/12/2018
+DCA 13 DEL 08.02.2017 
+D.P.G.R. N. 49 DEL 17/04/2013
+D.C.A. N. 63 DEL 27/02/2018 DCA N. 71 del 03/03/2023"
+Casa di Cura;CZ;Villa Serena;Via Pascali, 11;Catanzaro; CA.GI. S.p.a.;Via Pascali, 11 Catanzaro;0961 724782;villaserena@legalmail.it;DCA N. 102 del 31/03/2023
+Casa di Cura;CZ;Villa Sant'Anna S.p.a.;Viale Pio X, 111;Catanzaro;Villa Sant'Anna S.p.a.;Viale Pio X, 111 Catanzaro;0961 5070111;vsaspa@legalmail.it;"D.P.G.R. N. 121 11/07/2012
+D.P.G.R. N. 21 20/02/2014
+DCA N. 91/2014
+D.P.G.R. N. 21 20/02/2014
+Nota prot. n. 134396 DEL 27/4/2016 
+DCA n. 231 del 28/11/2018"
+Casa di Cura;CZ;Villa del Sole s.r.l.;Viale Pio X, 202;Catanzaro;Villa del Sole s.r.l.;Viale Pio X, 202 Catanzaro;0961 741909;villadelsolesrl@pec.it;DCA N. 20 del 10/01/2023
+Casa di Cura;CZ;Villa Rachele s.r.l.;Via C.da Acqua Bianca;Maida;Villa Rachele s.r.l.;Via C.da Acqua Bianca, Maida;;villarachelesrl@pec.it;DCA N. 101 del 31/03/2023
+Casa di Cura;VV;Villa dei Gerani gestione s.r.l.;Via San D. Savio,10;Vibo Valentia;Villa dei Gerani gestione s.r.l.;Via San D. Savio, 10 Vibo Valentia;0963 547556;villadeigerani@pec.it;"D.P.G.R. N. 128 DEL 11/07/2012
+Nota prot. n. 89602/2017: errore materiale
+DCA 15 DEL 08/02/2017 
+DCA 31 del 20/02/2019"
+Casa di Cura;RC;Villa Elisa s.r.l.;Via Vittorio Veneto, 141;Cinquefrondi;Villa Elisa s.r.l.;Via Vittorio Veneto, 141 Cinquefrondi (RC);"0966 943171
+";cdc-villaelisa@pec.it;"D.P.G.R. N. 106 29/07/2013
+DCA N. 11 DEL 08.02.2017 DCA n. 87 del 23.05.2019
+Nota prot. n. 129207/2017: errore materiale"
+Casa di Cura;RC;Caminiti s.r.l.;Via Umberto I, 8;Villa S. Giovanni ;Caminiti s.r.l.;Via Umberto I, 61 Villa S. Giovanni (RC);0965 756410;casadicuracaminiti@legalmail.it;"D.P.G.R. N. 131 11/07/2012
+D.P.G.R. N. 209 20/12/2012
+D.P.G.R. N. 210 20/12/2012
+DCA N. 80 DEL 09.05.2017"
+Casa di Cura;RC;Policlinico Madonna della Consolazione;Via Cardinale Portanova, 126 ;Reggio Calabria;Società Farmaceutica F.lli Pulitanò Arcudi snc;Via Cardinale Portanova, 126 Reggio Calabria;0965 8501-850328;policlinico@pec.ombc.it;DCA N. 51 del 09/02/2023
+Casa di Cura;RC;Villa Aurora Hospital S.r.l.;Via Villa Aurora, 25;Reggio Calabria;Villa Aurora Hospital S.r.l.;Via Provinciale snc Mangone (CS);0965 878544;villaaurorahospital@pec.it ;"D.P.G.R. N. 134 11/07/2012
+D.P.G.R. N. 36 07/03/2013
+DCA N. 55 DEL 22.03.2017
+DCA n. 5 del 23/01/2019"
+Casa di Cura;RC;Istituto Ortopedico del Mezzogiorno d'Italia;Via Eremo, 10;Reggio Calabria;G.I.O.M.I.  S.p.a.;Via Eremo, 10 Reggio Calabria;0965 3611;iomi.reggiocalabria@pec.it                           up.giomirc@pec.it;"D.P.G.R. N. 132 11/07/2012
+D.P.G.R. N. 207 20/12/2012
+D.P.G.R. N. 208 20/12/2012"
+Casa di Cura;RC;Villa S.Anna S.P.A.;Via Crocefisso, 25;Reggio Calabria;Villa S.Anna S.P.A.;Via Crocefisso, 25 Reggio Calabria;0965 27381;villasanna@pec.it;"D.P.G.R. N. 135 11/07/2012
+D.P.G.R. N. 203 20/12/2012
+Nota prot. n. 33217 DEL 03/02/2017
+DCA N. 145 DEL 07.11.2017 DCA N. 255 DEL 07/12/2018"

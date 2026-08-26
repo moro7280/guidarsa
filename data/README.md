@@ -24,6 +24,8 @@ di origine cambia formato o ritira il dataset.
 | `toscana-rsa.json` | Regione Toscana — Portale RSA | https://servizi.toscana.it/RT/RSA/ | 20/08/2026 | `portale_rsa_toscana` |
 | `trentino-strutture.csv` | APSS Trento — Strutture sanitarie pubbliche e accreditate | https://dati.trentino.it/dataset/strutture-sanitarie-dell-azienda-sanitaria-e-convenzionate | 25/08/2026 | `opendata_trentino` |
 | `campania-rsa.csv` | Regione Campania — RSA accreditate | https://dati.regione.campania.it/ | 25/08/2026 | `opendata_campania` |
+| `emilia-romagna-presidi.json` | Regione Emilia-Romagna — Banca dati Presidi socio-assistenziali (ReportER) | https://reporter.regione.emilia-romagna.it/ReportER/viewer/flusso/1001 | 26/08/2026 | `opendata_emilia_romagna` |
+| `calabria-accreditate.csv` | Regione Calabria — Registro strutture sanitarie private accreditate | https://dati.regione.calabria.it | 26/08/2026 | `opendata_calabria` |
 | `istat-comuni.csv` | ISTAT — Codici delle unità amministrative territoriali | https://www.istat.it/it/archivio/6789 | 20/08/2026 | — (tabella di appoggio) |
 
 ## Note per fonte

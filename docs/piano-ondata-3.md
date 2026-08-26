@@ -257,7 +257,7 @@ meglio una ricognizione che si chiude con «non trovato» che un connettore frag
 | Ondata | Quando | Contenuto | Perché |
 | --- | --- | --- | --- |
 | **3** | ~~approvazione + GSC verde~~ **fatta il 25/08/2026** | **Trentino** (85 importate su 87) + **Campania** (34) + ricognizione tecnica **Emilia-Romagna**: endpoint trovato | vittoria veloce e completa; apre la più promettente delle grandi |
-| **4** | +7-14 gg | **Emilia-Romagna** connettore + **Calabria** (89) | la grande si chiude; la Calabria entra col giro OSM |
+| **4** | +7-14 gg, a semaforo verde | **Emilia-Romagna** (1.284) + **Calabria** (71) + giro OSM — connettori pronti e collaudati il 26/08, stima esatta sotto | la grande si chiude; la Calabria entra col giro OSM |
 | **5** | +7-14 gg | **Sicilia** (~225 + 42) + **Bolzano** (79) | due fonti proprie; Bolzano porta la riproiezione UTM, la Sicilia il trattamento-Umbria su `data_decreto` |
 | **6** | +7-14 gg | **Veneto**: ricognizione e, se va, connettore | la più incerta, affrontata quando il raccoglitore multi-sorgente è maturo |
 | **7** | +7-14 gg | **Piemonte**: caccia all'elenco + **Marche** frammentata | le due che richiedono lavoro di indagine, non di trasporto |
@@ -268,6 +268,77 @@ accreditate con colonne `RSA_ANZIANI` e `RSA_DEMENZE` — quest'ultima riempireb
 con un valore vero), **Lazio** (71 righe che citano RSA o anziani, 586 righe su 1.073 con
 coordinate), **Puglia** (registri regionali socio-assistenziali in CSV; attenzione, diversi link del
 catalogo sono `goo.gl` ormai dismessi e vanno sostituiti).
+
+## 4-bis. Ondata 4: i connettori sono pronti, i numeri sono contati
+
+Sessione del 26/08/2026, di sola costruzione: nessuna scrittura sul database, nessun import. Le
+cifre che seguono vengono da prove a secco sui dati veri, non da stime.
+
+### Emilia-Romagna — 1.284 strutture
+
+La ricognizione prevedeva di girare i 312 comuni. Non serve: il servizio accetta un filtro per
+macroarea e destinatari, quindi **due sole richieste** coprono tutta la regione — "Residenziale +
+Anziani" e "Semiresidenziale + Anziani". Il corpo della POST è un oggetto di otto filtri, e i
+valori vanno rimandati **riempiti di spazi fino a 100 caratteri** esattamente come li manda il
+servizio: senza il riempimento la risposta torna vuota, ed è la cosa che fa perdere più tempo.
+
+Dalle 1.579 righe raccolte restano **1.284 strutture**: 438 RSA, 548 case di riposo, 298 centri
+diurni, in **267 comuni** e tutte e 9 le province. Le 295 escluse sono comunità alloggio, alloggi
+con servizi e gruppi appartamento: soluzioni abitative, non strutture assistenziali — stessa
+decisione presa per gli alloggi protetti friulani.
+
+| Campo | Copertura |
+| --- | --- |
+| telefono | **1.283 / 1.284** |
+| email | 993 / 1.284 |
+| descrizione ≥ 40 parole | 1.284 / 1.284 |
+| coordinate, posti letto, prezzi | nessuno |
+
+**993 su 1.284 (77%) nascono sopra soglia.** Le 291 sotto sono esattamente quelle senza email:
+hanno 45 punti e ne servono 60.
+
+Campione su tre province: Bologna 309 strutture in 53 comuni (240 sopra soglia), Parma 139 in 36
+comuni (130 sopra soglia), Rimini 56 in 18 comuni (42 sopra soglia).
+
+Il registro attesta l'**autorizzazione al funzionamento**, non l'accreditamento con il servizio
+sanitario: `convenzionata` resta quindi `null`, mai `false`.
+
+### Calabria — 71 strutture
+
+Il file ha 531 righe logiche, non 772: i campi del provvedimento di accreditamento sono su più
+righe, virgolettati. Delle 80 righe per anziani, **9 sono la stessa struttura contata due volte** —
+stesso indirizzo, stesso telefono, accreditata insieme come R2 e come R3. Non sono doppioni da
+scartare: sono un edificio solo e meritano una pagina sola, classificata al livello più alto e con
+entrambi i livelli dichiarati nella scheda.
+
+Restano **71 strutture fisiche**: 48 RSA (livello R2) e 23 case di riposo (casa protetta, livello
+R3), in **62 comuni** e tutte e 5 le province. Telefono su 64, PEC del gestore, nessuna email,
+nessuna coordinata: **zero sopra soglia** senza arricchimento.
+
+Sei comuni sono scritti in forme che l'anagrafe ISTAT non riconosce — tre varianti ortografiche
+(`Jonio`/`Ionio`, `C.le`, `M.na`) e tre frazioni scritte al posto del comune (Rosalì, Camigliatello
+Silano, Cropani Marina). Stanno in una tabella di alias esplicita dentro il mapping, non risolti da
+un'euristica: il comune finisce nell'URL e nel breadcrumb, e se sbaglia sbaglia in modo permanente.
+**Vanno confermati prima dell'import.**
+
+### Il totale dell'ondata 4
+
+| | |
+| --- | ---: |
+| strutture nuove | **1.355** |
+| di cui sopra soglia all'import | **993** (73%) |
+| pagine comune nuove | **633** |
+| pagine provincia nuove | 36 |
+| pagine regione nuove | 5 |
+| schede struttura indicizzabili | 993 |
+
+In URL nuove annunciate a Google: **674 pagine geografiche più 993 schede**, cioè circa **1.667**.
+È un salto grosso — la sitemap passerebbe da 2.292 a circa 3.960 — e va soppesato contro le 1.747
+URL che oggi Google conosce e non ha ancora scansionato. Se il semaforo dice di andare piano, la
+via è spezzare l'ondata: prima la Calabria e una parte dell'Emilia-Romagna, il resto dopo.
+
+Il giro di arricchimento OSM che accompagna l'import è in [piano-arricchimento-osm.md](piano-arricchimento-osm.md):
+porterebbe sopra soglia anche le 362 nuove sotto soglia e le 704 già in produzione oggi.
 
 ## 5. Semaforo Google Search Console fra un'ondata e l'altra
 

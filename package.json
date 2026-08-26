@@ -23,7 +23,10 @@
     "raccogli:toscana": "node scripts/raccogli/toscana.mjs",
     "arricchisci:gestori": "node scripts/arricchisci-gestori.mjs",
     "import:trentino": "node scripts/import-regione.mjs trentino",
-    "import:campania": "node scripts/import-regione.mjs campania"
+    "import:campania": "node scripts/import-regione.mjs campania",
+    "raccogli:emilia-romagna": "node scripts/raccogli/emilia-romagna.mjs",
+    "import:emilia-romagna": "node scripts/import-regione.mjs emilia-romagna",
+    "import:calabria": "node scripts/import-regione.mjs calabria"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.112.3",
