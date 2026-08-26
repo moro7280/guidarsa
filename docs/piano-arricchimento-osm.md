@@ -31,6 +31,44 @@ sitemap: lavoro fatto che non produce traffico.
 ottimistica: è il calcolo del punteggio con quei due campi valorizzati, fatto struttura per
 struttura.
 
+## Correzione del 26/08/2026: misurato, e il piano qui sotto non regge
+
+Le tre sezioni che seguono sono state scritte prima di provare gli endpoint. Provati, danno numeri
+che cambiano la conclusione. **Si conservano perché il ragionamento resta valido — è la premessa a
+essere falsa** — ma la strategia operativa è quella della sezione finale, non questa.
+
+**Geocodifica: funziona solo in Emilia-Romagna.** Campione reale su Nominatim, query strutturate
+con via e comune:
+
+| Regione | Vie risolte | Perché |
+| --- | --- | --- |
+| Emilia-Romagna | **6 / 8** | vie urbane, ben mappate |
+| Calabria | **0 / 8** | indirizzi come «Contrada Frailliti», «C.da Dema»: le contrade non sono vie in OSM |
+| Campania | **0 / 3** | stesso problema: contrade e strade rurali |
+
+Il centroide del comune si ottiene sempre, ma **non va usato**: metterebbe la struttura al municipio
+invece che dove sta, e assegnerebbe 10 punti di completezza a una coordinata che non è sua. È
+inventare un dato, e CLAUDE.md lo vieta.
+
+**Contatti in OSM: troppo pochi per essere la leva.** Interrogazione Overpass per provincia su tutte
+le `amenity=social_facility` e assimilate:
+
+| Provincia | Elementi | Con nome | Con telefono | Con sito | Con email | Nostre strutture lì |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Bologna | 101 | 97 | **17** | 31 | **7** | 309 |
+| Cosenza | 19 | 14 | **0** | 1 | 0 | 27 |
+
+A Bologna, la provincia dove abbiamo più strutture di tutta l'ondata 4, OSM offre diciassette numeri
+di telefono e sette email **in totale**, e non tutti riferiti a strutture per anziani. A Cosenza,
+zero. Anche con un abbinamento perfetto, il raccolto sarebbe di poche decine di campi su 1.355
+strutture.
+
+**Conseguenza.** Il giro OSM non è il modo per portare le schede sopra soglia. Resta utile come
+supplemento — è gratuito, è ODbL, e dove il match c'è il dato è buono — ma non va messo sul percorso
+critico dell'ondata 4, e soprattutto non va promesso come la soluzione delle 704 schede sotto soglia.
+
+---
+
 ## L'ostacolo che va risolto prima: le coordinate
 
 `scripts/enrich-osm.mjs` fa una query Overpass per provincia e poi **abbina per prossimità**: cerca
@@ -102,6 +140,57 @@ L'ordine non è indifferente, perché ogni passo abilita il successivo:
 Il punto 4 non è cerimoniale: è la misura del ritorno del giro. Se dopo l'arricchimento le schede
 sopra soglia non crescono in modo sensibile, il problema non è nei dati ma nella strategia di
 matching, e va affrontato prima di aggiungere altre regioni.
+
+## La strategia corretta, dopo le misure
+
+### Dove sta davvero il problema
+
+Le 704 schede sotto soglia non sono distribuite: **654 sono lombarde** — 356 RSA e 298 centri
+diurni — e mancano di telefono. Le altre 50 sono briciole sparse. L'ondata 4 ne aggiunge 362, ma di
+natura diversa: le 291 emiliano-romagnole hanno già il telefono e mancano solo di email o sito, le
+71 calabresi hanno il telefono e mancano di tutto il resto.
+
+Tradotto in ciò che serve procurare:
+
+| Gruppo | Quante | Cosa manca | Quanto vale |
+| --- | ---: | --- | --- |
+| Lombardia RSA + CDI | 654 | telefono (e spesso anche web) | 25 punti: da 40-48 a 65-73 |
+| Emilia-Romagna | 291 | **solo** email o sito | 15 punti: da 45 a 60, esattamente la soglia |
+| Calabria | 71 | email o sito, coordinate | 15 punti bastano: da 45 a 60 |
+| Campania | 34 | telefono, web, coordinate | servono almeno telefono + web |
+
+L'Emilia-Romagna e la Calabria sono i casi più facili di tutti: **un solo campo** le porta sopra
+soglia, e quel campo è il sito ufficiale della struttura.
+
+### La leva giusta: i siti ufficiali, non OSM
+
+`scripts/enrich-siti.mjs` esiste già, cerca il sito ufficiale di una struttura e ne estrae i
+recapiti fattuali onorando robots.txt. Era classificato come «tempo 3, facoltativo». Le misure lo
+promuovono a **strumento principale**, per una ragione semplice: una casa di riposo con 60 posti
+letto ha quasi sempre un sito o almeno una pagina, mentre quasi mai qualcuno l'ha mappata su
+OpenStreetMap con il numero di telefono.
+
+Ordine rivisto per la sessione dell'ondata 4:
+
+1. **import** di Emilia-Romagna e Calabria
+2. **`enrich:siti`** sulle 362 nuove sotto soglia — è il passo che decide il ritorno dell'ondata
+3. **`enrich:osm`** solo dove le coordinate ci sono già (Lombardia, Toscana, Friuli, Trentino):
+   costa poco e qualcosa raccoglie
+4. **geocodifica** limitata all'Emilia-Romagna, e solo se serve al punto 3 — non per i 10 punti,
+   che da soli non bastano a superare la soglia
+5. ricalcolo delle schede sopra soglia, `/verifica`, deploy verificato coi tre SHA
+
+### Cosa aspettarsi, detto prima
+
+Se `enrich:siti` trova il sito a metà delle 362 nuove, l'ondata 4 chiude con circa **1.170 schede
+indicizzabili su 1.355** invece di 993. Se ne trova a un quinto, si chiude a 1.065. Il numero va
+misurato al punto 5 e confrontato con questa previsione: se resta sotto, il problema non è nei dati
+ma nella strategia di ricerca dei siti, e va affrontato prima di aggiungere altre regioni.
+
+**La Calabria va importata sapendo che le sue 71 schede nasceranno sotto soglia** e forse ci
+resteranno. Non è un motivo per rinunciare: le 62 pagine comune calabresi hanno contenuto proprio —
+elenco, statistiche, FAQ generate dai dati — e sono indicizzabili comunque. Ma va detto adesso,
+invece di scoprirlo dopo l'import.
 
 ## Cosa non fare
 

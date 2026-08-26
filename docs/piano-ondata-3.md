@@ -65,6 +65,11 @@ colonna `TIPOLOGIA_STRUTTURA` è pulita e già mappabile:
 | `CASA PROTETTA PER ANZIANI (R3)` | 32 | `casa-di-riposo` |
 | `RESIDENZA SANITARIA ASSISTENZIALE MEDICALIZZATA (R1)` | 9 | `rsa` |
 
+> **Corretto il 26/08:** sono **71**, non 89. Il conteggio qui sotto veniva da una lettura del CSV
+> che ignorava i campi su più righe, e nove strutture erano contate due volte perché accreditate
+> insieme come R2 e come R3. Il livello R1 per anziani non esiste: l'unico R1 è l'hospice. Dettagli
+> nella sezione 4-bis.
+
 **89 strutture** in un'ottantina di comuni, con `NUMERO_TELEFONO` su 119 righe su 137 del blocco
 residenziale e la PEC del gestore — utile per l'arricchimento gestori già in piedi. Mancano le
 coordinate. Da escludere esplicitamente le righe RD4/RD5 (disabili) e SRP (psichiatriche): sono
@@ -337,8 +342,12 @@ In URL nuove annunciate a Google: **674 pagine geografiche più 993 schede**, ci
 URL che oggi Google conosce e non ha ancora scansionato. Se il semaforo dice di andare piano, la
 via è spezzare l'ondata: prima la Calabria e una parte dell'Emilia-Romagna, il resto dopo.
 
-Il giro di arricchimento OSM che accompagna l'import è in [piano-arricchimento-osm.md](piano-arricchimento-osm.md):
-porterebbe sopra soglia anche le 362 nuove sotto soglia e le 704 già in produzione oggi.
+Il giro di arricchimento che accompagna l'import è in [piano-arricchimento-osm.md](piano-arricchimento-osm.md).
+**Attenzione: la strategia è stata corretta il 26/08 dopo averla misurata.** OSM non è la leva —
+a Bologna offre 17 telefoni in tutta la provincia, a Cosenza zero — e la geocodifica funziona
+solo in Emilia-Romagna, perché al sud gli indirizzi sono contrade che in OSM non esistono come
+vie. La leva è la ricerca dei siti ufficiali: alle 291 emiliano-romagnole e alle 71 calabresi
+manca **un solo campo** — email o sito — per superare la soglia.
 
 ## 5. Semaforo Google Search Console fra un'ondata e l'altra
 
