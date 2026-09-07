@@ -1,0 +1,155 @@
+TASK C — PROPOSTA: FAR DIRE QUALCOSA ALLE PAGINE
+Scritta il 07/09/2026. E una proposta da leggere, non un lavoro iniziato.
+
+
+PERCHE QUESTO E IL LAVORO CHE CONTA
+===================================
+
+Il gate v2 toglie dall'indice 907 URL che dicevano poco. Ma l'analisi delle 145
+schede rifiutate da Google ha mostrato una cosa che il gate non puo risolvere:
+quelle schede avevano i campi pieni. Punteggio medio 78 su 100, trenta con il
+punteggio pieno, il 98% con un recapito. Google non le ha scartate perche erano
+vuote. Le ha scartate perche **si somigliano**.
+
+E il numero che lo dimostra: 248 gruppi di schede allo stesso indirizzo e stesso
+comune, per 522 strutture — quasi un terzo del database. A Cremona, in via
+Brescia 207, ci sono sette nostre pagine. Chi ne apre due non capisce cosa
+cambia, perche il testo generato dice le stesse cose in entrambe.
+
+Il gate rende l'indice piu piccolo. Questo lavoro lo rende piu utile.
+
+
+1. LA SCHEDA: COSA DIREBBE, CON I DATI CHE ABBIAMO GIA
+=====================================================
+
+Oggi la descrizione generata dice, in sostanza: cos'e, dov'e, se e accreditata,
+da dove viene il dato. Sono le stesse quattro frasi per tutti.
+
+Quello che abbiamo nel database e non diciamo:
+
+  posti_letto          su 1.478 strutture su 1.773
+  tipologia            sempre
+  nucleo_alzheimer     dichiarato su 398
+  retta                su 404
+  indirizzo condiviso  su 522 (il segnale delle unita sorelle)
+  convenzionata        su 1.552
+
+  a) LA DIMENSIONE, DETTA COME NUMERO E COME SCALA
+
+     "RSA Somenzi e una residenza da 121 posti" non e la stessa frase di
+     "R.S.A. \"B\" e un nucleo da 40 posti". Sono due strutture allo stesso
+     indirizzo, e il numero e la prima cosa che le distingue.
+
+     Dove ha senso, aggiungere il confronto: "e la piu grande delle sette
+     unita di questo complesso" oppure "e la piu piccola". Il dato per dirlo
+     ce l'abbiamo gia, e nessun aggregatore lo dice.
+
+  b) IL COMPLESSO E LE UNITA SORELLE, CON I LINK
+
+     La frase che oggi manca del tutto:
+
+       "Fa parte di un complesso in via Brescia 207 a Cremona, insieme ad
+        altre sei unita: RSA Azzolini (120 posti), RSA Mainardi (84),
+        R.S.A. \"B\" (40), CDI \"Soldi\" (40 posti, centro diurno),
+        CDI \"Casa Ozanam\" (20), CDI Alzheimer (20)."
+
+     Con i link. Tre effetti in una frase sola:
+       - chi legge capisce dove sta e cosa ha intorno
+       - ogni pagina diventa diversa dalle altre sei, perche le nomina
+       - le sette pagine si passano autorita a vicenda invece di competere
+
+     E informazione vera, presa dall'indirizzo: non si inventa niente.
+
+  c) IL NUCLEO ALZHEIMER, QUANDO C'E
+
+     398 strutture lo dichiarano. E il primo filtro che usa chi cerca per un
+     genitore con demenza, e oggi compare come un pallino in una lista di
+     servizi. Va detto a parole, nella descrizione e nel title dove pertinente.
+
+     Attenzione alla regola gia stabilita: null non e false. "Non risulta un
+     nucleo dedicato" si scrive solo dove la fonte lo dichiara.
+
+  d) LA RETTA, CON LA SUA NATURA
+
+     404 strutture. Le regole di CLAUDE.md sono gia scritte e vanno rispettate:
+     fonte e anno, privata e convenzionata sempre distinte, mai una media fra
+     concetti diversi. Nella descrizione basta una frase: "La carta dei servizi
+     2026 indica 2.400 euro al mese per la retta privata".
+
+  e) COSA NON FARE
+
+     Non riempire con aggettivi. "Accogliente", "moderna", "immersa nel verde"
+     sono le parole che rendono le pagine indistinguibili anche quando i dati
+     sono diversi. Se un campo manca, la frase non si scrive: e la stessa
+     regola dei prezzi e delle fonti.
+
+
+2. GLI HUB REGIONALI: COSA DIREBBERO
+====================================
+
+Oggi un hub regionale dice quante strutture ci sono, quante accreditate, e le
+rette quando ci sono. E gia meglio della media del settore, ma e lo stesso
+schema per tutte le regioni.
+
+Quello che potrebbe dire, sempre dai dati:
+
+  a) COM'E FATTA L'OFFERTA, NON SOLO QUANTA E
+
+     "In Lombardia le 740 RSA hanno in media 89 posti, ma la meta ne ha meno di
+      60: la dimensione tipica e quella di una casa da sessanta persone, non
+      dell'istituto grande."
+
+     Mediana e distribuzione dei posti letto: sono numeri che abbiamo e che
+     nessuno pubblica.
+
+  b) DOVE SI CONCENTRA E DOVE MANCA
+
+     Gia c'e "dove si concentra l'offerta". Manca il rovescio: quante province
+     hanno meno di N strutture, quali comuni capoluogo ne hanno una sola. E
+     l'informazione che serve a chi deve spostare un genitore.
+
+  c) COSA CAMBIA IN QUESTA REGIONE RISPETTO ALLE ALTRE
+
+     Con le cautele della regola sui prezzi: non confronti fra popolazioni
+     tariffarie diverse, ma differenze strutturali si — il Friuli ha le case di
+     riposo, la Lombardia ha i centri diurni integrati, la Toscana pubblica le
+     rette e quasi nessun altro lo fa. Una frase per regione, dai dati.
+
+  d) L'ONESTA SULLA COPERTURA
+
+     "Di queste 740 strutture, 420 hanno una scheda completa; per le altre
+      abbiamo nome, indirizzo e poco piu."
+
+     Dirlo aumenta la fiducia e spiega perche alcune schede sono povere. Oggi
+     il lettore lo scopre da solo, cliccando.
+
+
+3. ORDINE PROPOSTO
+==================
+
+  1. Le unita sorelle (punto 1b): e il cambiamento che tocca 522 schede — un
+     terzo del database — ed e quello che risolve il problema misurato.
+  2. Dimensione e nucleo nella descrizione (1a, 1c): tocca quasi tutte le
+     schede, e lavoro di template.
+  3. Retta a parole (1d): 404 schede, ma va fatto con le regole gia scritte.
+  4. Hub regionali (2): sono 8 pagine, alto ritorno per pagina.
+
+Nessun cambio di URL. Nessuna cancellazione. Solo cosa dicono le pagine.
+
+
+4. COME SI MISURA SE HA FUNZIONATO
+==================================
+
+Non dal traffico subito: dalle stesse metriche di Search Console che hanno
+fatto scattare questo lavoro.
+
+  - "scansionata, attualmente non indicizzata" deve smettere di crescere sulle
+    schede: e il segnale diretto di "l'ho letta e non mi serve"
+  - le 145 rifiutate vanno riproposte e riseguite una per una
+  - se dopo tre settimane il numero non si muove, il problema non e il testo:
+    e la quantita di pagine, e allora si stringe ancora il gate
+
+Da rifare comunque prima di iniziare: chiedere l'export delle pagine
+**indicizzate**. Senza il gruppo di confronto vero, tutto questo poggia su
+un'approssimazione — le 907 che passano il gate e che Google non ha rifiutato —
+e andrebbe verificato su dati veri prima di investirci una sessione.

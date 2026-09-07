@@ -1,0 +1,91 @@
+GATE v2 — REPORT
+data: 2026-09-07
+
+PRIMA / DOPO
+                              prima     dopo   differenza
+  schede indicizzabili         1047     1038          -9
+  pagine comune in indice      1152      264        -888
+  hub in indice                  61       51         -10
+    di cui tipologia              3        3           0
+    di cui regione               10        8          -2
+    di cui provincia             48       40          -8
+  URL in sitemap               2270     1363        -907
+
+  Sitemap: -40%.
+
+LA REGOLA
+  schede         punteggio >= 60 E almeno un recapito (telefono o sito_web)
+  pagine comune  >= 2 schede indicizzabili OPPURE >= 1 con retta documentata
+  hub            >= 1 scheda indicizzabile sotto
+
+  Scartata la regola (c) "almeno un dato distintivo": toglieva 222 schede per
+  intercettarne 20 fra quelle gia rifiutate da Google, e azzerava il Friuli —
+  160 schede con convenzionata a null per la decisione "accreditamento ignoto
+  non e non accreditato".
+
+  Tutto in una funzione sola, src/lib/completezza.ts:
+    indicizzabile(struttura)        decide la scheda
+    comuneIndicizzabile(strutture)  decide la pagina comune
+    hubIndicizzabile(strutture)     decide l'hub
+  Da qui dipendono meta robots, sitemap ed elenchi. Prima la regola stava
+  scritta due volte e sitemap e pagine potevano non essere d'accordo.
+
+SCHEDE PER REGIONE
+  regione                   totale   prima    dopo
+  Lombardia                   1093     420     416
+  Toscana                      334     332     327
+  Friuli-Venezia Giulia        166     160     160
+  Trentino-Alto Adige           85      82      82
+  Umbria                        61      53      53
+  Campania                      34       0       0
+
+PAGINE COMUNE PER REGIONE
+  regione                   totale   in indice   noindex,follow
+  Lombardia                    795          73              722
+  Toscana                      155         153                2
+  Friuli-Venezia Giulia         80          18               62
+  Trentino-Alto Adige           62           7               55
+  Umbria                        31          13               18
+  Campania                      29           0               29
+  TOTALE                      1152         264              888
+
+HUB USCITI DALL'INDICE (10)
+  /rsa/campania/                        /rsa/campania/napoli/
+  /centro-diurno/campania/              /rsa/campania/benevento/
+  /rsa/campania/avellino/               /centro-diurno/campania/caserta/
+  /rsa/campania/caserta/                /centro-diurno/lombardia/cremona/
+  /rsa/campania/salerno/                /centro-diurno/lombardia/lodi/
+
+  Rientrano da soli appena una scheda sotto diventa indicizzabile.
+
+SCORCIATOIA NEGLI ELENCHI DI PROVINCIA
+  402 pagine comune non indicizzabili hanno una sola scheda indicizzabile: in
+  quei casi l'elenco della provincia punta direttamente alla scheda. La pagina
+  comune resta raggiungibile dal breadcrumb.
+  Verificato: /rsa/lombardia/cremona/ ha 22 link diretti a schede,
+  /rsa/toscana/firenze/ ne ha 0 (li le pagine comune sono indicizzabili).
+
+301
+  Nessuno. Gli 88 URL dati per 404 da Search Console rispondono tutti 200 oggi:
+  erano la deriva di agosto, i deploy successivi li hanno fatti esistere di
+  nuovo. Verificato con HEAD su tutti e 88 e con GET + title su un campione.
+
+TEST
+  npm test — 9 test, tutti verdi. Importano la funzione vera da
+  src/lib/completezza.ts, non una copia.
+  Dimostrano il rientro automatico nei due versi:
+    scheda senza recapito -> aggiungi telefono -> torna indicizzabile
+    scheda completa -> togli il telefono -> esce
+    due schede mute -> ne arricchisci una -> la pagina comune resta fuori
+                    -> ne arricchisci due -> la pagina comune rientra
+                    -> una si impoverisce -> la pagina comune esce
+    hub campano muto -> una scheda riceve il telefono -> l'hub rientra
+  Nessuna migrazione, nessuna lista da tenere a mano: il punteggio si ricalcola
+  dai dati a ogni build.
+
+VERIFICHE
+  URL in sitemap                1363, tutte 200
+  pagine in sitemap con noindex    0   (era la contraddizione da evitare)
+  link interni fuori sitemap     943, 0 rotti
+  pagine con avviso demo           0
+  build / lint / tsc            puliti

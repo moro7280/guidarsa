@@ -5,9 +5,11 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { ElencoLuoghi } from "@/components/ElencoLuoghi";
 import { FaqLuogo } from "@/components/FaqLuogo";
 import { PanoramicaLuogo } from "@/components/PanoramicaLuogo";
+import { comuneIndicizzabile, hubIndicizzabile, indicizzabile } from "@/lib/completezza";
 import { domandeLuogo } from "@/lib/domande";
 import { statistiche } from "@/lib/statistiche";
 import { percorsi } from "@/lib/percorsi";
+import { slugify } from "@/lib/slug";
 import { conta, metadataPagina } from "@/lib/seo";
 import {
   getCombinazioni,
@@ -57,6 +59,7 @@ export async function generateMetadata({
     titolo: `${info.plurale} in provincia di ${nomeProvincia}: ${conta(totale, "struttura", "strutture")}`,
     descrizione: `Elenco ${info.articoloDi} ${info.pluraleInFrase} in provincia di ${nomeProvincia} (${nomeRegione}), comune per comune: ${conta(totale, "struttura", "strutture")} con contatti, servizi e rette indicative.`,
     percorso: percorsi.provincia(info.slug, regione, provincia),
+    indicizzabile: hubIndicizzabile(await getStrutture({ tipologia: info.slug, regione, provincia })),
   });
 }
 
@@ -77,6 +80,28 @@ export default async function PaginaProvincia({
   const totale = comuni.reduce((somma, comune) => somma + comune.conteggio, 0);
   const demo = await isDatasetDemo();
   const strutture = await getStrutture({ tipologia: info.slug, regione, provincia });
+
+  /**
+   * Dove una pagina comune non entra nell'indice e sotto ha una sola scheda
+   * indicizzabile, l'elenco punta direttamente a quella scheda: il passaggio
+   * intermedio non aggiungerebbe niente a chi legge, e chiederebbe a Google di
+   * seguire un link verso una pagina che gli abbiamo detto di non indicizzare.
+   */
+  const perComune = new Map<string, typeof strutture>();
+  for (const s of strutture) {
+    const chiave = slugify(s.comune);
+    const elenco = perComune.get(chiave);
+    if (elenco) elenco.push(s);
+    else perComune.set(chiave, [s]);
+  }
+  const comuniConScorciatoia = comuni.map((comune) => {
+    const dentro = perComune.get(comune.slug) ?? [];
+    if (comuneIndicizzabile(dentro)) return comune;
+    const indicizzabili = dentro.filter(indicizzabile);
+    return indicizzabili.length === 1
+      ? { ...comune, percorsoDiretto: percorsi.struttura(indicizzabili[0].slug) }
+      : comune;
+  });
   const stat = statistiche(strutture);
   const luogo = `in provincia di ${nomeProvincia}`;
 
@@ -118,7 +143,7 @@ export default async function PaginaProvincia({
         <h2 className="text-xl font-semibold text-inchiostro">Comuni</h2>
         <div className="mt-4">
           <ElencoLuoghi
-            nodi={comuni}
+            nodi={comuniConScorciatoia}
             href={(comune) => percorsi.comune(info.slug, regione, provincia, comune.slug)}
           />
         </div>

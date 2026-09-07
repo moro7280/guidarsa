@@ -59,13 +59,69 @@ export function completezza(struttura: Struttura): Completezza {
 }
 
 /**
- * Soglia proposta per l'indicizzazione al momento del deploy: sotto questo
- * punteggio la scheda resta raggiungibile ma andrebbe esclusa dai motori
- * (noindex) finché non viene arricchita. Decisione da confermare nella
- * sessione sui template SEO.
+ * Soglia di completezza sotto la quale una scheda resta raggiungibile ma non
+ * entra nell'indice.
  */
 export const SOGLIA_INDICIZZAZIONE = 60;
 
+/**
+ * Un recapito raggiungibile. Non è un criterio di ricchezza: è la differenza
+ * fra una scheda che serve a qualcosa e un vicolo cieco. Una famiglia che
+ * arriva su una struttura senza telefono né sito non può farci niente.
+ */
+function haRecapito(struttura: Struttura): boolean {
+  return Boolean(struttura.telefono || struttura.sito_web);
+}
+
+/** Una retta pubblicata, privata o convenzionata: il dato che nessun altro dà. */
+export function haRettaDocumentata(struttura: Struttura): boolean {
+  return struttura.prezzo_min != null || (struttura.retta_convenzionata_min ?? null) != null;
+}
+
+/**
+ * L'unica funzione che decide se una scheda entra nell'indice. Da qui dipendono
+ * il meta robots della scheda, la sitemap, e — attraverso le due funzioni sotto
+ * — anche le pagine geografiche.
+ *
+ * Averla in un posto solo non è ordine fine a sé stesso: quando la regola stava
+ * scritta due volte, la sitemap e le pagine potevano dire cose diverse sulla
+ * stessa URL, ed è esattamente il genere di contraddizione che Google punisce.
+ *
+ * Il rientro è automatico e non richiede nessuna migrazione: il punteggio si
+ * ricalcola dai dati a ogni build, quindi una scheda che riceve un telefono
+ * tramite arricchimento torna nell'indice da sola al deploy successivo.
+ */
 export function indicizzabile(struttura: Struttura): boolean {
-  return completezza(struttura).punteggio >= SOGLIA_INDICIZZAZIONE;
+  return completezza(struttura).punteggio >= SOGLIA_INDICIZZAZIONE && haRecapito(struttura);
+}
+
+/**
+ * Una pagina comune entra nell'indice se ha almeno due schede indicizzabili,
+ * oppure almeno una che pubblica la retta.
+ *
+ * Il perché sta nei dati di Search Console del 07/09: delle 49 pagine comune
+ * che Google ha letto e rifiutato, 34 avevano una struttura sola. Una pagina
+ * comune con una struttura è il doppione della scheda di quella struttura —
+ * stesso titolo, stessi numeri, stesse frasi generate. Con due schede l'elenco
+ * comincia a essere un confronto; con una retta pubblicata dice qualcosa che la
+ * scheda da sola non direbbe.
+ *
+ * Le pagine escluse restano raggiungibili e continuano a passare autorità alle
+ * schede: `noindex, follow`, mai rimosse.
+ */
+export function comuneIndicizzabile(strutture: Struttura[]): boolean {
+  const indicizzabili = strutture.filter(indicizzabile);
+  return indicizzabili.length >= 2 || indicizzabili.some(haRettaDocumentata);
+}
+
+/**
+ * Un hub — tipologia, regione, provincia — entra nell'indice se sotto di sé ha
+ * almeno una scheda indicizzabile.
+ *
+ * Un hub che elenca soltanto pagine `noindex` è un elenco di porte chiuse: è la
+ * definizione della pagina che dice poco. La Campania è il caso limite, con 34
+ * strutture importate e nessun recapito.
+ */
+export function hubIndicizzabile(strutture: Struttura[]): boolean {
+  return strutture.some(indicizzabile);
 }

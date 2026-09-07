@@ -5,6 +5,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { ElencoLuoghi } from "@/components/ElencoLuoghi";
 import { FaqLuogo } from "@/components/FaqLuogo";
 import { PanoramicaLuogo } from "@/components/PanoramicaLuogo";
+import { hubIndicizzabile } from "@/lib/completezza";
 import { domandeLuogo } from "@/lib/domande";
 import { statistiche } from "@/lib/statistiche";
 import { percorsi } from "@/lib/percorsi";
@@ -55,6 +56,7 @@ export async function generateMetadata({
     titolo: `${info.plurale} in ${nomeRegione}: ${conta(totale, "struttura", "strutture")}`,
     descrizione: `Elenco ${info.articoloDi} ${info.pluraleInFrase} in ${nomeRegione}, provincia per provincia: ${conta(totale, "struttura", "strutture")} con indirizzo, contatti, posti letto e rette indicative.`,
     percorso: percorsi.regione(info.slug, regione),
+    indicizzabile: hubIndicizzabile(await getStrutture({ tipologia: info.slug, regione })),
   });
 }
 

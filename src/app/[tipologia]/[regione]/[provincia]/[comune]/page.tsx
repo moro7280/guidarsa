@@ -6,6 +6,7 @@ import { BarraMobile, BloccoCta, PadPerBarra } from "@/components/Cta";
 import { FaqComune } from "@/components/FaqComune";
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { SchedaStruttura } from "@/components/SchedaStruttura";
+import { comuneIndicizzabile } from "@/lib/completezza";
 import { GUIDE } from "@/lib/guide";
 import { percorsi } from "@/lib/percorsi";
 import { conta, metadataPagina } from "@/lib/seo";
@@ -57,6 +58,7 @@ export async function generateMetadata({
     titolo: `${info.plurale} a ${nomeComune} (${sigla}): ${conta(strutture.length, "struttura", "strutture")}`,
     descrizione: `${info.plurale} a ${nomeComune}: ${conta(strutture.length, "struttura", "strutture")} con indirizzo, contatti, posti letto, convenzione e rette indicative.`,
     percorso: percorsi.comune(info.slug, regione, provincia, comune),
+    indicizzabile: comuneIndicizzabile(strutture),
   });
 }
 

@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { indicizzabile } from "@/lib/completezza";
+import { comuneIndicizzabile, hubIndicizzabile, indicizzabile } from "@/lib/completezza";
 import { GUIDE } from "@/lib/guide";
 import { percorsi } from "@/lib/percorsi";
 import { urlAssoluta } from "@/lib/seo";
@@ -83,6 +83,30 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const aggiornamenti = aggiornamentiPerPercorso(strutture);
   const quando = (percorso: string) => piuRecente([aggiornamenti.get(percorso)]);
 
+  /**
+   * Le strutture che stanno sotto ogni percorso geografico. Serve a decidere
+   * con le stesse funzioni delle pagine chi entra in sitemap: una URL annunciata
+   * a Google e servita con `noindex` e una contraddizione, e finora la sitemap e
+   * le pagine potevano non essere d'accordo.
+   */
+  const sottoPercorso = new Map<string, Struttura[]>();
+  const registra = (percorso: string, struttura: Struttura) => {
+    const elenco = sottoPercorso.get(percorso);
+    if (elenco) elenco.push(struttura);
+    else sottoPercorso.set(percorso, [struttura]);
+  };
+  for (const struttura of strutture) {
+    const tipologia = struttura.tipologia;
+    const regione = slugify(struttura.regione);
+    const provincia = slugify(struttura.provincia);
+    const comune = slugify(struttura.comune);
+    registra(percorsi.tipologia(tipologia), struttura);
+    registra(percorsi.regione(tipologia, regione), struttura);
+    registra(percorsi.provincia(tipologia, regione, provincia), struttura);
+    registra(percorsi.comune(tipologia, regione, provincia, comune), struttura);
+  }
+  const dentro = (percorso: string) => sottoPercorso.get(percorso) ?? [];
+
   // La home mostra i numeri complessivi e le guide in evidenza: cambia quando
   // cambia una delle due cose.
   const ultimaGuida = piuRecente(GUIDE.map((guida) => guida.aggiornataIl));
@@ -105,12 +129,14 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Solo le tipologie con strutture: un hub vuoto risponde 404 e in sitemap
   // sarebbe un errore di scansione.
-  const hubTipologie: MetadataRoute.Sitemap = (await getTipologieDisponibili()).map((tipologia) => ({
-    url: urlAssoluta(percorsi.tipologia(tipologia)),
-    lastModified: quando(percorsi.tipologia(tipologia)),
-    changeFrequency: "weekly",
-    priority: 0.8,
-  }));
+  const hubTipologie: MetadataRoute.Sitemap = (await getTipologieDisponibili())
+    .filter((tipologia) => hubIndicizzabile(dentro(percorsi.tipologia(tipologia))))
+    .map((tipologia) => ({
+      url: urlAssoluta(percorsi.tipologia(tipologia)),
+      lastModified: quando(percorsi.tipologia(tipologia)),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    }));
 
   const viste = new Set<string>();
   const hubRegioni: MetadataRoute.Sitemap = [];
@@ -121,7 +147,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const percorsoRegione = percorsi.regione(tipologia, regione);
     if (!viste.has(percorsoRegione)) {
       viste.add(percorsoRegione);
-      hubRegioni.push({
+      if (hubIndicizzabile(dentro(percorsoRegione))) hubRegioni.push({
         url: urlAssoluta(percorsoRegione),
         lastModified: quando(percorsoRegione),
         changeFrequency: "weekly",
@@ -132,7 +158,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const percorsoProvincia = percorsi.provincia(tipologia, regione, provincia);
     if (!viste.has(percorsoProvincia)) {
       viste.add(percorsoProvincia);
-      hubProvince.push({
+      if (hubIndicizzabile(dentro(percorsoProvincia))) hubProvince.push({
         url: urlAssoluta(percorsoProvincia),
         lastModified: quando(percorsoProvincia),
         changeFrequency: "weekly",
@@ -141,7 +167,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     }
 
     const percorsoComune = percorsi.comune(tipologia, regione, provincia, comune);
-    comuni.push({
+    if (comuneIndicizzabile(dentro(percorsoComune))) comuni.push({
       url: urlAssoluta(percorsoComune),
       lastModified: quando(percorsoComune),
       changeFrequency: "weekly",

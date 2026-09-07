@@ -1,0 +1,304 @@
+TASK B — GATE v2: ANALISI
+data: 2026-09-07   nessuna scrittura eseguita
+
+NOTA SULL'INPUT: nella cartella data/gsc/ ci sono i tre CSV e il LEGGIMI,
+ma NON lo zip delle pagine indicizzate. Il gruppo di confronto "cosa hanno
+le accettate che le rifiutate non hanno" non e quindi calcolabile su dati
+veri. Al suo posto uso come riferimento le schede che oggi passano il gate e
+che GSC non ha rifiutato: e un'approssimazione, ed e segnalata come tale.
+
+============================================================================
+1. LE 145 SCHEDE RIFIUTATE
+============================================================================
+URL scheda nel CSV: 145   ritrovate nel database: 145
+
+Gruppo di riferimento (passano il gate, non rifiutate, non noindex): 907
+
+Cosa distingue le due popolazioni:
+  telefono                       rifiutate  133/145 ( 92%)   riferimento  876/907 ( 97%)   scarto +5
+  sito_web                       rifiutate   84/145 ( 58%)   riferimento  487/907 ( 54%)   scarto -4
+  almeno un recapito             rifiutate  142/145 ( 98%)   riferimento  901/907 ( 99%)   scarto +1
+  retta documentata              rifiutate   47/145 ( 32%)   riferimento  353/907 ( 39%)   scarto +7
+  nucleo_alzheimer dichiarato    rifiutate   42/145 ( 29%)   riferimento  355/907 ( 39%)   scarto +10
+  carta dei servizi              rifiutate   60/145 ( 41%)   riferimento  408/907 ( 45%)   scarto +4
+  convenzione dichiarata         rifiutate  128/145 ( 88%)   riferimento  711/907 ( 78%)   scarto -10
+  coordinate                     rifiutate  136/145 ( 94%)   riferimento  861/907 ( 95%)   scarto +1
+  posti letto                    rifiutate  120/145 ( 83%)   riferimento  796/907 ( 88%)   scarto +5
+  almeno un dato distintivo      rifiutate  128/145 ( 88%)   riferimento  711/907 ( 78%)   scarto -10
+
+Punteggio medio: rifiutate 78/100   riferimento 80/100
+Distribuzione rifiutate:   100pt×30  95pt×6  85pt×6  80pt×39  75pt×2  70pt×18  65pt×27  60pt×12  55pt×4  45pt×1
+Distribuzione riferimento: 100pt×249  95pt×14  85pt×78  80pt×204  75pt×14  70pt×70  65pt×219  60pt×59
+
+Rifiutate per regione:   [["Lombardia",78],["Toscana",33],["Trentino-Alto Adige",16],["Friuli-Venezia Giulia",9],["Umbria",9]]
+Rifiutate per tipologia: [["rsa",132],["centro-diurno",11],["casa-di-riposo",2]]
+Rifiutate per fonte:     [["opendata_lombardia",70],["portale_rsa_toscana",33],["opendata_trentino",16],["opendata_friuli",9],["opendata_umbria",9],["opendata_lombardia_sociale",8]]
+
+Eta della fonte: le schede rifiutate con fonte dichiarata vecchia (Trentino 2021, Umbria 2020):
+  25 su 145
+
+============================================================================
+2. LE 49 PAGINE-COMUNE RIFIUTATE
+============================================================================
+pagine-comune rifiutate: 49   ritrovate nel database: 49   sparite: 0
+  con una sola struttura:            34/49
+  con zero schede sopra soglia:      17/49
+  con zero schede con retta:         42/49
+  strutture per pagina, media:       1.4
+
+Le prime venti, per numero di strutture:
+    5 strutture ·   4 sopra soglia ·   0 con retta   /rsa/lombardia/cremona/cremona/
+    4 strutture ·   4 sopra soglia ·   4 con retta   /rsa/toscana/pistoia/san-marcello-piteglio/
+    3 strutture ·   2 sopra soglia ·   0 con retta   /centro-diurno/lombardia/brescia/palazzolo-sull-oglio/
+    3 strutture ·   2 sopra soglia ·   1 con retta   /rsa/lombardia/pavia/mortara/
+    2 strutture ·   0 sopra soglia ·   0 con retta   /rsa/campania/salerno/cava-de-tirreni/
+    2 strutture ·   2 sopra soglia ·   2 con retta   /rsa/toscana/massa-carrara/carrara/
+    2 strutture ·   0 sopra soglia ·   0 con retta   /rsa/lombardia/monza-e-della-brianza/bernareggio/
+    2 strutture ·   1 sopra soglia ·   0 con retta   /rsa/lombardia/milano/castano-primo/
+    2 strutture ·   1 sopra soglia ·   0 con retta   /rsa/lombardia/como/appiano-gentile/
+    2 strutture ·   1 sopra soglia ·   0 con retta   /rsa/lombardia/milano/abbiategrasso/
+    2 strutture ·   2 sopra soglia ·   0 con retta   /rsa/lombardia/bergamo/albino/
+    2 strutture ·   2 sopra soglia ·   0 con retta   /rsa/lombardia/mantova/marcaria/
+    2 strutture ·   2 sopra soglia ·   0 con retta   /rsa/lombardia/mantova/volta-mantovana/
+    2 strutture ·   1 sopra soglia ·   0 con retta   /rsa/lombardia/mantova/borgo-virgilio/
+    2 strutture ·   1 sopra soglia ·   0 con retta   /rsa/lombardia/brescia/pontevico/
+    1 strutture ·   0 sopra soglia ·   0 con retta   /centro-diurno/lombardia/mantova/viadana/
+    1 strutture ·   1 sopra soglia ·   1 con retta   /rsa/toscana/arezzo/bibbiena/
+    1 strutture ·   0 sopra soglia ·   0 con retta   /rsa/campania/salerno/giffoni-valle-piana/
+    1 strutture ·   0 sopra soglia ·   0 con retta   /centro-diurno/lombardia/monza-e-della-brianza/bovisio-masciago/
+    1 strutture ·   0 sopra soglia ·   0 con retta   /centro-diurno/lombardia/monza-e-della-brianza/arcore/
+
+============================================================================
+4. TRE REGOLE A CONFRONTO — SCHEDE
+============================================================================
+regione                   totale     (a) >=60   (b) +recapito   (c) +distintivo
+Campania                      34            0               0                0
+Friuli-Venezia Giulia        166          160             160                0
+Lombardia                   1093          420             416              363
+Toscana                      334          332             327              327
+Trentino-Alto Adige           85           82              82               82
+Umbria                        61           53              53               53
+TOTALE                      1773         1047            1038              825
+
+Delle 145 rifiutate da Google, quante resterebbero indicizzabili:
+  (a) 140   (b) 137   (c) 120
+Cioe la regola (c) toglie dall'indice 20 delle schede che Google ha gia rifiutato.
+
+============================================================================
+3. GLI 88 URL A 404 — stato di oggi in produzione
+============================================================================
+oggi 200 (stato GSC vecchio, nulla da fare): 88
+oggi non 200:                                0
+
+301 proposti:      0
+restano 404:       0
+
+301 PROPOSTI:
+
+RESTANO 404 (nessun equivalente ovvio: non si inventa una destinazione):
+
+============================================================================
+5. PAGINE-COMUNE — regola proposta
+============================================================================
+Indicizzabile se ha >=2 schede indicizzabili, oppure >=1 con retta documentata.
+
+Con schede secondo la regola (b):
+  regione                    pagine-comune   indicizzabili   noindex,follow
+  Lombardia                            795              73              722
+  Toscana                              155             153                2
+  Friuli-Venezia Giulia                 80              18               62
+  Trentino-Alto Adige                   62               7               55
+  Umbria                                31              13               18
+  Campania                              29               0               29
+  TOTALE                              1152             264              888
+
+Con schede secondo la regola (c):
+  regione                    pagine-comune   indicizzabili   noindex,follow
+  Lombardia                            795              72              723
+  Toscana                              155             153                2
+  Friuli-Venezia Giulia                 80               0               80
+  Trentino-Alto Adige                   62               7               55
+  Umbria                                31              13               18
+  Campania                              29               0               29
+  TOTALE                              1152             245              907
+
+DIMENSIONE SITEMAP STIMATA
+  oggi (regola a, tutte le pagine-comune):  2259   (reale: 2270)
+  regola (b) + pagine-comune filtrate:      1362
+  regola (c) + pagine-comune filtrate:      1130
+
+============================================================================
+6. HUB CON ZERO SCHEDE INDICIZZABILI SOTTO
+============================================================================
+(a) attuale: 10 hub senza nemmeno una scheda indicizzabile
+     /rsa/campania/
+     /centro-diurno/campania/
+     /rsa/campania/avellino/
+     /rsa/campania/caserta/
+     /centro-diurno/lombardia/cremona/
+     /rsa/campania/salerno/
+     /rsa/campania/napoli/
+     /centro-diurno/lombardia/lodi/
+     /rsa/campania/benevento/
+     /centro-diurno/campania/caserta/
+
+(b): 10 hub senza nemmeno una scheda indicizzabile
+     /rsa/campania/
+     /centro-diurno/campania/
+     /rsa/campania/avellino/
+     /rsa/campania/caserta/
+     /centro-diurno/lombardia/cremona/
+     /rsa/campania/salerno/
+     /rsa/campania/napoli/
+     /centro-diurno/lombardia/lodi/
+     /rsa/campania/benevento/
+     /centro-diurno/campania/caserta/
+
+(c): 32 hub senza nemmeno una scheda indicizzabile
+     /casa-di-riposo/
+     /rsa/friuli-venezia-giulia/
+     /casa-di-riposo/friuli-venezia-giulia/
+     /rsa/campania/
+     /centro-diurno/lombardia/
+     /centro-diurno/campania/
+     /rsa/friuli-venezia-giulia/trieste/
+     /casa-di-riposo/friuli-venezia-giulia/trieste/
+     /casa-di-riposo/friuli-venezia-giulia/udine/
+     /rsa/campania/avellino/
+     /centro-diurno/lombardia/pavia/
+     /rsa/friuli-venezia-giulia/udine/
+     /rsa/friuli-venezia-giulia/pordenone/
+     /centro-diurno/lombardia/como/
+     ... e altri 18
+
+============================================================================
+7. SCHEDE QUASI IDENTICHE (stesso indirizzo e stesso comune)
+============================================================================
+gruppi di schede allo stesso indirizzo: 248   strutture coinvolte: 522
+
+Cremona (CR) — Via Brescia, 207
+   CDI Alzheimer                                 20 posti · centro-diurno
+   CDI "Casa Ozanam"                             20 posti · centro-diurno
+   CDI "Soldi"                                   40 posti · centro-diurno
+   R.S.A. "B"                                    40 posti · rsa
+   RSA Azzolini                                  120 posti · rsa
+   RSA Mainardi                                  84 posti · rsa
+   RSA Somenzi                                   121 posti · rsa
+
+Cava Manara (PV) — Via Ferruccio Belli, 8
+   Arcobaleno                                    40 posti · centro-diurno
+   Arcobaleno Plus                               80 posti · rsa
+   R.S.A. Arcobaleno Luna                        70 posti · rsa
+   R.S.A. Arcobaleno Sole                        64 posti · rsa
+
+Laveno-mombello (VA) — Via Avvocato Franco Bassani, 13
+   CDI Menotti Bassani                           20 posti · centro-diurno
+   Residenza Franco Bassani                      120 posti · rsa
+   Residenza Gennaro Arioli                      51 posti · rsa
+   Residenza Giannina Scotti                     103 posti · rsa
+
+Pavia (PV) — Viale Giacomo Matteotti, 63
+   Casa di Riposo Francesco Pertusati            238 posti · rsa
+   CDI "Francesco Pertusati"                     12 posti · centro-diurno
+   RSA S. Croce                                  42 posti · nucleo Alzheimer · rsa
+
+Pralboino (BS) — Via Morelli, 10
+   Cda Fondazione Longini Morelli ONLUS          5 posti · centro-diurno
+   CDI Fondazione ONLUS Longini-morelli-sironi   20 posti · centro-diurno
+   RSA - Fondazione ONLUS "Longini - Morelli-si  81 posti · rsa
+
+Voghera (PV) — Viale della Repubblica, 86
+   CDI ASP Carlo Pezzani                         30 posti · centro-diurno
+   RSA 1 ASP Carlo Pezzani                       66 posti · rsa
+   RSA 2 ASP Carlo Pezzani                       68 posti · rsa
+
+Desenzano del Garda (BS) — Viale Antonio Gramsci, 25
+   CDI C/o Casa di Riposo S. Angela Merici ONLU  20 posti · centro-diurno
+   CDI C/o Fondazione S.angela Merici ONLUS      12 posti · centro-diurno
+   RSA - Fondazione S. Angela Merici ONLUS       166 posti · rsa
+
+Pontevico (BS) — Via Cavalieri di Vittorio Veneto, 9/a
+   CDI C/o Fondazione Giroldi Forcella Ugoni ON  20 posti · centro-diurno
+   Centro Diurno Anziani Fondazione Giroldi For  5 posti · centro-diurno
+   RSA - Fondazione Giroldi Forcella Ugoni ONLU  122 posti · rsa
+
+Erba (CO) — Piazza Giuseppina Prina, 1
+   CDI C/o RSA "G. Prina"                        40 posti · centro-diurno
+   Fondazione Giuseppina Prina ETS               202 posti · rsa
+   Giuseppina Prina 2                            15 posti · centro-diurno
+
+Vittuone (MI) — Via Milano, 51
+   CDI "Il Gelso"                                20 posti · centro-diurno
+   Il Gelso                                      120 posti · retta · rsa
+   RSA Orchidea                                  20 posti · retta · rsa
+
+Gallarate (VA) — Via Magenta, 3
+   CDI il Melo                                   40 posti · centro-diurno
+   Centro Diurno Integrato Protetto il Melo      25 posti · centro-diurno
+   RSA il Melo                                   120 posti · rsa
+
+Trieste (TS) — Via Cellini 3
+   Cellini                                       22 posti · casa-di-riposo
+   Futura-Anni d'oro                             44 posti · rsa
+   Residenza Arcobaleno                          34 posti · casa-di-riposo
+
+San Martino Siccomario (PV) — Via degli Ontani, 2
+   Centro Diurno Integrato Arcobaleno Parc       15 posti · centro-diurno
+   RSA Arcobaleno Castellana                     20 posti · rsa
+   RSA Arcobaleno Parc                           120 posti · rsa
+
+Suzzara (MN) — Viale Luigi Cadorna, 4
+   Centro Diurno Integrato Luigi Boni            23 posti · centro-diurno
+   R.S.A. Boni 2                                 80 posti · rsa
+   Residenza Sanitaria Assistenziale Fondazione  85 posti · rsa
+
+Rodigo (MN) — Via Cantarana, 25
+   Centro Diurno Integrato Villa Carpaneda       20 posti · centro-diurno
+   RSA Rodigo                                    120 posti · rsa
+   RSA Villa Carpaneda                           106 posti · rsa
+
+Pergine Valsugana (TN) — Via Marconi 4
+   Centro Diurno per Anziani - Pergine           centro-diurno
+   Centro Diurno Presa in Carico Demenze APSP    centro-diurno
+   RSA Pergine                                   rsa
+
+Corsico (MI) — Via Alzaia Trento, 1
+   Il Naviglio                                   120 posti · rsa
+   Il Naviglio                                   40 posti · centro-diurno
+   Naviglio Grande                               60 posti · rsa
+
+Busto Arsizio (VA) — Via San Giovanni Bosco, 3
+   Istituto la Provvidenza U.g. 1                298 posti · rsa
+   Istituto la Provvidenza U.g. 3                86 posti · rsa
+   Istituto la Provvidenza U.g. 4                30 posti · centro-diurno
+
+Binasco (MI) — Strada Cerca, 2
+   R.S.A. Acquamarina                            40 posti · rsa
+   R.S.A. Alfredo Podestà                        120 posti · rsa
+   R.S.A. Maria Lorenzon                         120 posti · rsa
+
+Brescia (BS) — Via Bose, 1/quater
+   RSA Zaffiro Iris                              100 posti · rsa
+   RSA Zaffiro Loto                              120 posti · rsa
+   RSA Zaffiro Ninfea                            60 posti · rsa
+
+Soresina (CR) — Via Antonio Gramsci, 7
+   A. Zucchi e M. Falcina                        213 posti · rsa
+   CDI C/o Casa di Riposo Antonio Zucchi - Mari  40 posti · centro-diurno
+
+Parabiago (MI) — Via Don Balzarini, 51
+   Albergo del Nonno                             66 posti · rsa
+   CDI C/o RSA "Ermanno Donati"                  30 posti · centro-diurno
+
+Trieste (TS) — Via Coroneo 3
+   Albertina                                     25 posti · casa-di-riposo
+   Senilità                                      25 posti · casa-di-riposo
+
+Salò (BS) — Via Francesco Zane, 10
+   Angelo Gasparotti                             20 posti · rsa
+   CDI Pietro Contarelli                         40 posti · centro-diurno
+
+Grosseto (GR) — Via Genova, 17
+   Anni azzurri Il Poggione                      80 posti · retta · rsa
+   RSA Anni Azzurri il Poggione 2                39 posti · retta · rsa
+

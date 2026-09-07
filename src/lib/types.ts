@@ -72,4 +72,12 @@ export interface NodoGeografico {
   nome: string;
   slug: string;
   conteggio: number;
+  /**
+   * Destinazione alternativa: si usa quando la pagina del livello sotto non
+   * entra nell'indice e ha una sola struttura indicizzabile. In quel caso
+   * mandare il lettore alla pagina comune significa fargli fare un passo in
+   * piu per vedere una scheda sola; il link va dritto alla scheda. La pagina
+   * comune resta raggiungibile dal breadcrumb della scheda.
+   */
+  percorsoDiretto?: string;
 }

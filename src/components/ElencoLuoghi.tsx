@@ -14,7 +14,7 @@ export function ElencoLuoghi({
       {nodi.map((nodo) => (
         <li key={nodo.slug}>
           <Link
-            href={href(nodo)}
+            href={nodo.percorsoDiretto ?? href(nodo)}
             className="flex items-baseline justify-between gap-3 rounded-md border border-bordo bg-superficie px-4 py-3 transition-colors hover:border-verde"
           >
             <span className="font-medium text-inchiostro">{nodo.nome}</span>

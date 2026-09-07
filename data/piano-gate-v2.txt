@@ -1,0 +1,254 @@
+TASK B — GATE v2, PAGINE-COMUNE, 404
+Analisi del 07/09/2026. Nessuna scrittura eseguita.
+
+
+SINTESI: L'IPOTESI DI PARTENZA NON REGGE
+========================================
+
+L'idea era che Google avesse rifiutato le schede piu povere, e che bastasse
+stringere il gate per togliere dall'indice proprio quelle. I numeri dicono di
+no.
+
+Le 145 schede rifiutate e le 907 che passano il gate senza essere state
+rifiutate hanno praticamente gli stessi dati:
+
+                                 rifiutate    riferimento
+  punteggio medio                  78/100        80/100
+  almeno un recapito                 98%           99%
+  coordinate                         94%           95%
+  posti letto                        83%           88%
+  carta dei servizi                  41%           45%
+  retta documentata                  32%           39%
+  nucleo Alzheimer dichiarato        29%           39%
+  almeno un dato distintivo          88%           78%   <-- le rifiutate ne
+                                                              hanno DI PIU
+
+Trenta delle 145 rifiutate hanno il punteggio pieno, 100 su 100.
+
+Conclusione: **il problema non e quali campi ha la singola scheda.** Stringere
+il gate sui campi non colpisce cio che Google ha scartato. Serve guardare
+altrove, e i dati indicano dove: le pagine-comune con una struttura sola e le
+schede che si somigliano tutte.
+
+
+AVVERTENZA SULL'INPUT
+=====================
+Nella cartella non c'e lo zip delle pagine indicizzate: il gruppo di confronto
+vero (le ~313 accettate) non e disponibile. Al suo posto ho usato le 907 schede
+che passano il gate e che GSC non ha ne rifiutato ne escluso. E
+un'approssimazione: contiene anche pagine che Google non ha ancora guardato.
+Con lo zip il confronto sarebbe piu netto, ma il divario e cosi piccolo che e
+improbabile si rovesci.
+
+
+1. LE 145 SCHEDE RIFIUTATE
+==========================
+Tutte e 145 ritrovate nel database.
+
+Per regione:    Lombardia 78 · Toscana 33 · Trentino 16 · Friuli 9 · Umbria 9
+Per tipologia:  rsa 132 · centro-diurno 11 · casa-di-riposo 2
+Per fonte:      opendata_lombardia 70 · portale_rsa_toscana 33 ·
+                opendata_trentino 16 · opendata_friuli 9 · opendata_umbria 9 ·
+                opendata_lombardia_sociale 8
+
+Eta della fonte: 25 su 145 vengono da fonti dichiarate vecchie (Trentino 2021,
+Umbria 2020). Non e il fattore dominante.
+
+Distribuzione del punteggio (rifiutate):
+  100pt x30   95pt x6   85pt x6   80pt x39   75pt x2   70pt x18   65pt x27
+   60pt x12   55pt x4   45pt x1
+
+Le cinque sotto 60 sono ricadute della bonifica di stamattina: erano sopra
+quando Google le ha lette.
+
+
+2. LE 49 PAGINE-COMUNE RIFIUTATE
+================================
+  con una sola struttura                34 / 49
+  con zero schede sopra soglia          17 / 49
+  con zero schede con retta             42 / 49
+  strutture per pagina, media              1.4
+
+Qui il segnale e forte e va nella direzione giusta: una pagina-comune con una
+struttura sola e, di fatto, un doppione della scheda di quella struttura —
+stesso titolo, stessi numeri, stesse due frasi generate. Google le legge, le
+trova ridondanti e le scarta.
+
+Le poche con piu strutture rifiutate lo stesso (Cremona citta, 5 strutture)
+sono quelle senza nemmeno una retta: l'elenco c'e, ma non dice niente che non
+sia gia nelle schede.
+
+
+3. GLI 88 URL A 404 — non c'e niente da redirigere
+==================================================
+HEAD su tutti e 88 in produzione, piu verifica GET e title su un campione:
+
+  oggi 200 (stato GSC vecchio):    88
+  oggi non 200:                     0
+
+  301 proposti:                     0
+  restano 404:                      0
+
+Controprova su cinque, con GET e title reale:
+  200  /rsa/toscana/grosseto/scansano/       "RSA a Scansano (GR): 1 struttura"
+  200  /rsa/toscana/pisa/volterra/           "RSA a Volterra (PI): 1 struttura"
+  200  /rsa/toscana/siena/chiusdino/         "RSA a Chiusdino (SI): 1 struttura"
+  200  /struttura/centro-diurno-per-anziani-castel-d-ario/
+  200  /casa-di-riposo/friuli-venezia-giulia/pordenone/
+
+Gli 88 erano gli URL della deriva dei primi giorni, letti fra il 20 e il 24/8 e
+mai piu riviste. Nel frattempo il deploy della Toscana e delle ondate
+successive li ha fatti esistere di nuovo. **La sezione 301 del task B non ha
+lavoro da fare**: nessuna riga in next.config, perche non c'e niente da
+redirigere e inventare una destinazione sarebbe peggio del 404.
+
+Da fare invece: chiedere a Search Console di riesaminarli, o semplicemente
+aspettare che li riscansioni trovandoli in sitemap.
+
+
+4. TRE REGOLE PER LE SCHEDE
+===========================
+  (a) attuale:      punteggio >= 60
+  (b) + recapito:   >= 60 e almeno telefono o sito_web
+  (c) + distintivo: (b) e almeno una fra retta, nucleo dichiarato,
+                    carta dei servizi, convenzione dichiarata
+
+  regione                   totale   (a)      (b)      (c)
+  Campania                      34     0        0        0
+  Friuli-Venezia Giulia        166   160      160        0   <-- azzerata
+  Lombardia                   1093   420      416      363
+  Toscana                      334   332      327      327
+  Trentino-Alto Adige           85    82       82       82
+  Umbria                        61    53       53       53
+  TOTALE                      1773  1047     1038      825
+
+Delle 145 rifiutate da Google resterebbero indicizzabili:
+  (a) 140    (b) 137    (c) 120
+
+La regola (c) toglie 222 schede dall'indice per intercettarne 20 fra quelle che
+Google ha gia rifiutato. Undici schede sacrificate per ognuna colpita.
+
+E soprattutto **azzera il Friuli**: tutte e 160 le schede friulane hanno
+convenzionata a null — e la decisione presa a suo tempo, "accreditamento ignoto
+non e non accreditato" — non hanno rette, non hanno nucleo dichiarato, non
+hanno carta dei servizi. Con la (c) la regione sparisce dall'indice, e con lei
+gli hub /casa-di-riposo/ e /rsa/friuli-venezia-giulia/.
+
+La regola (b) invece costa quasi niente (-9 schede) ed e giusta di suo: una
+scheda senza telefono e senza sito e un vicolo cieco per chi la legge.
+
+  RACCOMANDAZIONE: adottare (b), scartare (c).
+
+
+5. PAGINE-COMUNE
+================
+Regola simulata: indicizzabile se ha >=2 schede indicizzabili, oppure >=1 con
+retta documentata. Altrimenti noindex,follow e fuori sitemap.
+
+Con schede secondo la regola (b):
+  regione                    pagine-comune   indicizzabili   noindex,follow
+  Lombardia                            795              73              722
+  Toscana                              155             153                2
+  Friuli-Venezia Giulia                 80              18               62
+  Trentino-Alto Adige                   62               7               55
+  Umbria                                31              13               18
+  Campania                              29               0               29
+  TOTALE                              1152             264              888
+
+Con schede secondo la regola (c): 245 indicizzabili, 907 noindex — e il Friuli
+passa da 18 a 0.
+
+E un taglio grosso: 888 pagine su 1152 escono dall'indice. Ma e esattamente la
+massa che il LEGGIMI descrive come "troppe pagine che dicono poco", ed e
+coerente con cio che Google ha gia deciso da solo sulle 49 che ha letto.
+
+Le pagine restano raggiungibili e continuano a passare autorita alle schede:
+noindex,follow, non rimozione.
+
+DIMENSIONE SITEMAP
+  oggi                                        2270
+  (b) + pagine-comune filtrate                1362      -40%
+  (c) + pagine-comune filtrate                1130      -50%
+
+
+6. HUB SENZA NEMMENO UNA SCHEDA INDICIZZABILE
+=============================================
+Con (a) e con (b), dieci hub — gli stessi:
+  /rsa/campania/ e le sue quattro province (avellino, caserta, salerno,
+  napoli, benevento), /centro-diurno/campania/, /centro-diurno/campania/caserta/
+  /centro-diurno/lombardia/cremona/, /centro-diurno/lombardia/lodi/
+
+La Campania e il caso noto: 34 strutture importate senza un solo recapito.
+Nessuna delle sue schede e indicizzabile, quindi i suoi hub sono elenchi di
+pagine che portano a pagine noindex.
+
+Con (c) diventano 32, perche si aggiungono /casa-di-riposo/ e tutto il Friuli.
+
+Gli hub restano indicizzabili come da tua indicazione. Ma questi dieci vanno
+guardati: un hub che elenca solo pagine noindex e la definizione di pagina che
+dice poco. Proposta: lasciarli indicizzabili ma non metterli in sitemap finche
+non hanno almeno una scheda indicizzabile sotto — sono 10 URL, e il segnale a
+Google e "non ho niente da farti vedere qui".
+
+
+7. SCHEDE QUASI IDENTICHE
+=========================
+248 gruppi di schede allo stesso indirizzo e stesso comune, per 522 strutture
+coinvolte: quasi un terzo del database.
+
+Non sono doppioni da cancellare: sono unita distinte dello stesso complesso —
+nuclei diversi, tipologie diverse, numeri di posti diversi. Esempi:
+
+  Cremona (CR) — Via Brescia, 207        7 schede
+     CDI Alzheimer 20 posti · CDI "Casa Ozanam" 20 · CDI "Soldi" 40 ·
+     R.S.A. "B" 40 · RSA Azzolini 120 · RSA Mainardi 84 · RSA Somenzi 121
+
+  Cava Manara (PV) — Via Ferruccio Belli, 8      4 schede
+     Arcobaleno 40 (centro diurno) · Arcobaleno Plus 80 ·
+     R.S.A. Arcobaleno Luna 70 · R.S.A. Arcobaleno Sole 64
+
+  Laveno-Mombello (VA) — Via Bassani, 13         4 schede
+     CDI Menotti Bassani 20 · Residenza Franco Bassani 120 ·
+     Residenza Gennaro Arioli 51 · Residenza Giannina Scotti 103
+
+Il problema non e che esistano: e che le loro pagine si assomigliano, perche il
+testo generato dice le stesse cose. Chi legge due schede dello stesso indirizzo
+non capisce cosa cambia.
+
+COME DISTINGUERLE SENZA TOCCARE GLI URL
+  I dati per farlo ci sono gia, e sono proprio quelli che oggi non compaiono
+  nel testo:
+  - dire nella descrizione **quanti posti** ha quella unita e che **tipologia**
+    e: "nucleo da 40 posti" contro "residenza da 121 posti" e una differenza
+    che si legge
+  - dire che sta **dentro un complesso piu grande** e quali sono le altre unita
+    allo stesso indirizzo, con il link: e informazione vera, utile a chi cerca,
+    e trasforma sette pagine che si somigliano in sette pagine che si spiegano
+    a vicenda
+  - dove c'e, mettere in evidenza **il nucleo Alzheimer** e **la retta**, che
+    sono gli unici campi che gia oggi variano fra unita dello stesso indirizzo
+
+  Nessun cambio di URL, nessuna cancellazione: cambia solo cosa dice la pagina.
+  Questo e il lavoro che affronta davvero "dicono poco", ed e piu promettente
+  del gate — perche il gate toglie pagine, questo le rende diverse.
+
+
+PROPOSTA PER LA FASE 2
+======================
+1. Una sola funzione `indicizzabile()` in src/lib/completezza.ts, che decide per
+   schede, pagine-comune e hub, e da cui dipendono meta robots, sitemap e
+   ElencoLuoghi. Oggi la regola e duplicata fra sitemap.ts e le pagine.
+2. Schede: regola (b). Costo 9 schede, guadagno in coerenza.
+   NON la (c): 222 schede e un'intera regione non valgono 20 pagine.
+3. Pagine-comune: >=2 schede indicizzabili oppure >=1 con retta. 888 passano a
+   noindex,follow e escono dalla sitemap. Rientro automatico quando la pagina
+   si arricchisce, perche la funzione si ricalcola a ogni build.
+4. Hub: restano indicizzabili; i 10 senza schede indicizzabili escono dalla
+   sitemap finche restano vuoti.
+5. Un test che dimostri il rientro automatico: una struttura sotto soglia che
+   riceve un telefono torna indicizzabile, e la sua pagina-comune con lei.
+6. 301: nessuno. Gli 88 URL rispondono gia 200.
+7. Le schede quasi identiche: proposta separata, non in questa fase — e lavoro
+   sui contenuti, non sul gate, e merita di essere valutato a parte.
+
+Sitemap attesa dopo la fase 2: da 2270 a circa 1362 URL.

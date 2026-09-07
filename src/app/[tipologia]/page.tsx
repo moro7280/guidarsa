@@ -5,6 +5,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { ElencoLuoghi } from "@/components/ElencoLuoghi";
 import { FaqLuogo } from "@/components/FaqLuogo";
 import { PanoramicaLuogo } from "@/components/PanoramicaLuogo";
+import { hubIndicizzabile } from "@/lib/completezza";
 import { domandeLuogo } from "@/lib/domande";
 import { statistiche } from "@/lib/statistiche";
 import { percorsi } from "@/lib/percorsi";
@@ -36,6 +37,7 @@ export async function generateMetadata({
     titolo: `${info.plurale} in Italia: elenco per regione`,
     descrizione: `${totale} ${info.pluraleInFrase} in ${conta(regioni.length, "regione", "regioni")}. Confronta strutture, servizi e rette e trova quella giusta nel tuo territorio.`,
     percorso: percorsi.tipologia(info.slug),
+    indicizzabile: hubIndicizzabile(await getStrutture({ tipologia: info.slug })),
   });
 }
 
