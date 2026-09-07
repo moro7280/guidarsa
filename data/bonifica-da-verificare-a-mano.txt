@@ -1,0 +1,35 @@
+SITI DA VERIFICARE A MANO — la bonifica non li ha toccati
+data: 2026-09-07   ambito: tutto
+
+Due casi finiscono qui:
+  - il nome della struttura e fatto solo di parole generiche (Casa di Dio,
+    La Residenza, San Giuseppe): non c'e nessuna parola distintiva da cercare,
+    e il controllo non deve decidere al posto di una persona
+  - la stessa URL serve piu strutture: e la pagina di un gruppo gestore,
+    non un link sbagliato per distrazione
+
+Il link e ancora nel database: queste righe sono da decidere una per una.
+
+==============================================================================
+
+Casa Sacro Cuore — Pianello del Lario (CO)
+   URL:    https://casedonguanella.it/contattaci/
+   title:  Contattaci - Case Don Guanella
+   perche: pagina di gruppo, condivisa da piu strutture
+
+Casa San Lorenzo — Ardenno (SO)
+   URL:    https://casedonguanella.it/contattaci/
+   title:  Contattaci - Case Don Guanella
+   perche: pagina di gruppo, condivisa da piu strutture
+
+Residenza San Celso — Milano (MI)
+   URL:    https://www.emeisitalia.it/contatti/
+   title:  emeis: i contatti della sede centrale e delle Strutture
+   perche: pagina di gruppo, condivisa da piu strutture
+
+Residenza San Felice — Segrate (MI)
+   URL:    https://www.emeisitalia.it/contatti/
+   title:  emeis: i contatti della sede centrale e delle Strutture
+   perche: pagina di gruppo, condivisa da piu strutture
+
+totale: 4

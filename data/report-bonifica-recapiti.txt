@@ -1,6 +1,6 @@
 BONIFICA DEI RECAPITI — RESOCONTO COMPLESSIVO
 data: 2026-09-07
-strutture in database: 1773   strutture bonificate: 447
+strutture in database: 1773   strutture bonificate: 312
 
 Ricostruito dal registro fonte_contatti.rimossi, quindi copre tutti gli ambiti
 eseguiti: Milano, i 26 comuni sopra le 5 strutture, e l'intero database.
@@ -12,25 +12,33 @@ Per annullarne una basta rileggere fonte_contatti.rimossi.<campo>.valore.
 1. NUMERI FINALI PER REGIONE
 ==============================================================================
 regione                     bonificate   siti tolti   telefoni tolti   scese sotto 60
-Lombardia                          306          292               20             17
-Toscana                             97           96                3              0
-Umbria                              24           24                0              5
-Trentino-Alto Adige                 20           20                0              0
+Lombardia                          291          277               20             17
+Umbria                              16           16                0              5
+Toscana                              5            2                3              0
 
-TOTALE   strutture 447 · siti tolti 432 · telefoni tolti 23
+TOTALE   strutture 312 · siti tolti 295 · telefoni tolti 23
 
 motivi delle rimozioni:
-    279  dominio che non e la struttura
-    152  ne la struttura ne il gestore compaiono in title, H1 o URL
+    283  dominio che non e la struttura
       9  prefisso N di provincia lontana
       7  prefisso inesistente N
       5  prefisso N dove Milano usa 02
+      2  pagina non istituzionale
+      1  nessuna delle parole distintive (cascina, cortenuova, rieducazione) compare in title, H1, URL o dominio
       1  prefisso N dove il comune usa un altro prefisso
-      1  pagina non istituzionale
+      1  nessuna delle parole distintive (laghi, oasi, cerro) compare in title, H1, URL o dominio
+      1  nessuna delle parole distintive (rodolfi, speciale, multiservizi) compare in title, H1, URL o dominio
+      1  nessuna delle parole distintive (milanese, pastor, angelicus) compare in title, H1, URL o dominio
+      1  nessuna delle parole distintive (dimora, lago, impresa) compare in title, H1, URL o dominio
+      1  nessuna delle parole distintive (arzaga, comunita, ebraica) compare in title, H1, URL o dominio
+      1  nessuna delle parole distintive (ducale, solidarieta, mantova) compare in title, H1, URL o dominio
+      1  nessuna delle parole distintive (lago, maggiore, mariner) compare in title, H1, URL o dominio
       1  numero senza prefisso
+      1  nessuna delle parole distintive (milanese, milano) compare in title, H1, URL o dominio
+      1  nessuna delle parole distintive (giardino, mariner, lavena) compare in title, H1, URL o dominio
 
 stato dei recapiti dopo la bonifica:
-  con sito_web: 495 (erano 927)
+  con sito_web: 632 (erano 927)
   con telefono: 1018 (erano 1041)
   schede sopra la soglia 60: 1047 su 1773
 
@@ -38,7 +46,7 @@ stato dei recapiti dopo la bonifica:
 2. SCHEDE SCESE SOTTO LA SOGLIA 60 — vanno noindex, e voluto
 ==============================================================================
 22 schede sono scese sotto soglia per effetto della bonifica.
-Altre 139 bonificate erano gia sotto prima e ci restano: non le conta questa sezione.
+Altre 132 bonificate erano gia sotto prima e ci restano: non le conta questa sezione.
 
  80 ->  55  Casa di Riposo Giulio Gianetti            Saronno             (VA)  tolto: telefono
  80 ->  55  Casa di Riposo San Giuseppe               Viggiù              (VA)  tolto: telefono
@@ -126,539 +134,15 @@ Villa Sorriso                       Pontedera             3440578815
 Il nome della struttura e quello del gestore non compaiono ne nel title, ne
 nell'H1, ne nell'URL della pagina collegata.
 
-152 siti tolti per questo motivo.
+0 siti tolti per questo motivo.
 
-Casa Sacro Cuore — Pianello del Lario (CO)
-   URL:   https://casedonguanella.it/contattaci/
-   title: Contattaci - Case Don Guanella
-Casa San Lorenzo — Ardenno (SO)
-   URL:   https://casedonguanella.it/contattaci/
-   title: Contattaci - Case Don Guanella
-Cascina Cortenuova — Paullo (MI)
-   URL:   https://www.crmsociale.it/anziani-rsa/
-   title: Anziani RSA &#8211; C.R.M. COOP. SOCIALE ONLUS
-Fondazione Casa di Riposo Madonna della Neve ETS — Chiuro (SO)
-   URL:   https://www.casadiriposochiuro.it/contatti/
-   title: CONTATTI | Casa di riposo Chiuro
-Fondazione Galtrucco — Robbio (PV)
-   URL:   https://www.comune.robbio.pv.it/amm-trasparente/strutture-sanitarie-private-accreditate/
-   title: Strutture sanitarie private accreditate - Comune di Robbio
-Fondazione Opera Pia Francesca Colleoni de Maestri ONLUS — Castano Primo (MI)
-   URL:   https://www.fondazioneticinoolona.it/projects/contrasto-covid19-rsa-castano-primo/
-   title: Contrasto Covid19 RSA Castano Primo - Fondazione Ticino Olona
-Fondazione R.S.A. di Soncino ONLUS — Soncino (CR)
-   URL:   https://www.inprimapagina.com/contattaci
-   title: Contattaci | inPRIMAPAGINA
-I Laghi — Montorfano (CO)
-   URL:   https://colisee.it/contatti/
-   title: Contatti - Colisée Italia
-Istituto de Rodolfi — Vigevano (PV)
-   URL:   https://asmv.it/contatti
-   title: Contatti - Asmv
-Istituto Geriatrico Milanese "Opera Pastor Angelicus" — Milano (MI)
-   URL:   http://caresharing.it/rsa-aperta-orari-contatti/
-   title: RSA Aperta- Orari &#038; Contatti &#8211; Care Sharing
-La Dimora Sul Lago — Vergiate (VA)
-   URL:   https://residenzesantacecilia.it/contatti/
-   title: Contatti - Residenze Santa Cecilia
-Residenza Anziani Arzaga — Milano (MI)
-   URL:   https://www.mosaico-cem.it/servizi-2/casa-di-riposo/
-   title: Casa di riposo - Mosaico
-Residenza Ducale — Mantova (MN)
-   URL:   https://www.residenzegreenpark.it/contatti
-   title: Contatti - Residenze Green Park
-Residenza Emilio Bernardelli — Paderno Dugnano (MI)
-   URL:   https://www.comune.paderno-dugnano.mi.it/servizi/salute-benessere-e-assistenza/strutture-residenziali/
-   title: Comune di Paderno Dugnano : Strutture Residenziali
-Residenza Lago Maggiore — Porto Valtravaglia (VA)
-   URL:   https://leresidenze.it/contatti/
-   title: contatti - LE RESIDENZE - Case di Riposo a Milano, Varese e Como.
-Residenza San Celso — Milano (MI)
-   URL:   https://www.emeisitalia.it/contatti/
-   title: emeis: i contatti della sede centrale e delle Strutture
-Residenza San Felice — Segrate (MI)
-   URL:   https://www.emeisitalia.it/contatti/
-   title: emeis: i contatti della sede centrale e delle Strutture
-RSA Anna Sironi — Trezzo sull'Adda (MI)
-   URL:   https://spaziopiu.comune.trezzosulladda.mi.it/procedure:c_l411:residenza.sanitaria.assistenziale
-   title: Accesso a case di riposo e residenze sanitarie assistenziali (RSA) | Comune di Trezzo sull&#039;Adda
-RSA Arborea — Lodi Vecchio (LO)
-   URL:   https://residenzelodivecchio.it/contattaci/
-   title: Contattaci - Residenze Lodi Vecchio
-RSA Campo dei Fiori — Varese (VA)
-   URL:   https://residenzevarese.it/contattaci/
-   title: Contattaci - Residenze Varese
-RSA - "Casa di Dio" — Brescia (BS)
-   URL:   https://casadidio.eu/r-s-a-casa-di-dio/
-   title: R.S.A. Casa di Dio &#8211; Fondazione Casa di Dio ETS
-RSA Fondazione Don G. Ferraglio — Malonno (BS)
-   URL:   https://www.siminformatica.it/contattaci
-   title: SIM Informatica | Contattaci
-RSA Istituto Geriatrico Milanese — Milano (MI)
-   URL:   http://caresharing.it/adi-orari-contatti/
-   title: ADI-Orari &#038; Contatti &#8211; Care Sharing
-RSA - "La Residenza" — Brescia (BS)
-   URL:   https://casadidio.eu/r-s-a-la-residenza/
-   title: R.S.A. La Residenza &#8211; Fondazione Casa di Dio ETS
-RSA Laus — Lodi Vecchio (LO)
-   URL:   https://www.residenzediadema.it/rsa/residenze-lodi-vecchio/
-   title: Residenze Lodi Vecchio - Residenze Diadema
-RSA le Ville — Lentate Sul Seveso (MB)
-   URL:   https://www.residenzelentate.it/contattaci/
-   title: Contattaci - Residenze Lentate
-RSA Residenza Giardino — Lavena Ponte Tresa (VA)
-   URL:   https://leresidenze.it/
-   title: Case di riposo a Milano in Lombardia - LE RESIDENZE
-RSA Sacro Monte — Varese (VA)
-   URL:   https://residenzevarese.it/contattaci/
-   title: Contattaci - Residenze Varese
-Armony — Arezzo (AR)
-   URL:   https://www.residencelacasadianna.it
-   title: Residenze per anziani La Casa di Anna
-Arrighi Griffoli — Lucignano (AR)
-   URL:   https://www.comune.lucignano.ar.it
-   title: Comune di Lucignano | Comune di Lucignano
-Belvedere — Barga (LU)
-   URL:   https://www.sereniorizzonti.it
-   title: Gruppo Sereni Orizzonti S.p.A
-Belvedere — Cavriglia (AR)
-   URL:   https://www.consorzio-zenit.it
-   title: (non registrato)
-Bonelle — Pistoia (PT)
-   URL:   https://www.arcacoop.org
-   title: Servizi sociali infanzia, giovani, anziani | Cooperativa Arca
-Botticelli — Greve in Chianti (FI)
-   URL:   https://www.lavillaspa.it
-   title: Gruppo La Villa | Residenze per Anziani e Servizi alla persona
-Caccialupi — Siena (SI)
-   URL:   https://www.asp.siena.it
-   title: Asp Azienda Pubblica di Servizi alla Persona - Siena
-Campansi — Siena (SI)
-   URL:   https://www.asp.siena.it
-   title: Asp Azienda Pubblica di Servizi alla Persona - Siena
-Cantagrillo — Serravalle Pistoiese (PT)
-   URL:   https://www.arcacoop.org
-   title: Servizi sociali infanzia, giovani, anziani | Cooperativa Arca
-Caravaggio — Scarlino (GR)
-   URL:   https://www.lavillaspa.it
-   title: Gruppo La Villa | Residenze per Anziani e Servizi alla persona
-Carolina Pierotti — Coreglia Antelminelli (LU)
-   URL:   https://www.consorziokcs.it
-   title: KCS Caregiver | Dal 1991 ogni giorno, la cura che merita.
-Casa Albergo per Anziani — Castel San Niccolò (AR)
-   URL:   https://www.comars.org
-   title: Home - Consorzio sociale Comars Onlus
-Casa dei Nonni — Camaiore (LU)
-   URL:   https://www.coopcrea.it
-   title: C.RE.A. Cooperativa Sociale Viareggio &#8211; Disabilità &#8211; Anziani &#8211; Minori &#8211; Migranti
-Casa di Michele — Arezzo (AR)
-   URL:   https://www.koine.org
-   title: Koinè cooperativa sociale &#8211; Nessuno deve essere lasciato indietro
-Casa di Riposo Gino Incontri — Gambassi Terme (FI)
-   URL:   https://www.suoredimariabambina.org
-   title: Congregazione Suore di Carità | Suore di Maria Bambina
-Casa Maiani — Gavorrano (GR)
-   URL:   https://www.istitutofalusi.org
-   title: www.istitutofalusi.org
-Casa San Giuseppe — Firenze (FI)
-   URL:   https://www.consorziozenit.it
-   title: Consorzio Zenit Parma - Facility Management
-Casciana Terme — Casciana Terme Lari (PI)
-   URL:   https://www.gruppopaim.it
-   title: Gruppo Paim &bull; Guidati dalla Passione, Sostenuti dalla Qualità
-Chiassatelle — Empoli (FI)
-   URL:   https://www.colori.it
-   title: Colori.it - Il portale dei colori
-Cicignano — Montemurlo (PO)
-   URL:   https://www.incammino.it
-   title: In Cammino | Cooperativa Sociale ONLUS
-Cocconi Bernabei — Montepulciano (SI)
-   URL:   https://www.misericordiamontepulciano.it
-   title: Pia Arciconfraternita di Misericordia di Montepulciano
-Cottolengo di Scarlino — Scarlino (GR)
-   URL:   https://www.comars.org
-   title: Home - Consorzio sociale Comars Onlus
-D. Gandini — Poggibonsi (SI)
-   URL:   https://www.ftsa.it
-   title: FTSA - Fondazione Territori Sociali Altavaldelsa
-Domus Aurea — Castelnuovo di Garfagnana (LU)
-   URL:   https://www.misericordiadicastelnuovo.com
-   title: Misericordia di Castelnuovo di Garfagnana
-Domus Pacis — Marliana (PT)
-   URL:   https://www.gruppocori.it
-   title: Gruppo Cori – 27 Strutture in Toscana | Residenze Anziani, Centri Minori, Disabilità
-Ferrucci — Grosseto (GR)
-   URL:   https://www.coesoareagr.it
-   title: Coeso &#8211; CoesoSDS
-Fivizzano — Fivizzano (MS)
-   URL:   https://www.auroradomus.it
-   title: Servizi per Anziani, Servizi Sanitari, Servizi per la Salute Mentale, Servizi Educativi, Servizi per Minori, Servizi per la Disabilità, Servizi per i Giovani - Auroradomus
-Francesco Bottai — Colle di Val d'Elsa (SI)
-   URL:   https://www.ftsa.it
-   title: FTSA - Fondazione Territori Sociali Altavaldelsa
-Frate Sole — Figline e Incisa Valdarno (FI)
-   URL:   https://www.korian.it
-   title: Residenze per anziani e servizi sanitari | Korian
-G. Meacci — Santa Croce sull'Arno (PI)
-   URL:   https://www.comune.santacroce.pi.it
-   title: Comune di Santa Croce sull&#039;Arno
-Giotto — Borgo San Lorenzo (FI)
-   URL:   https://www.lavillaspa.it
-   title: Gruppo La Villa | Residenze per Anziani e Servizi alla persona
-Guillichini — Arezzo (AR)
-   URL:   https://www.residenzemontenero.it
-   title: Residenze Montenero
-I Girasoli — Livorno (LI)
-   URL:   https://www.sereniorizzonti.it
-   title: Gruppo Sereni Orizzonti S.p.A
-Il Giglio — Firenze (FI)
-   URL:   https://www.korian.it
-   title: Residenze per anziani e servizi sanitari | Korian
-Istituto San Salvatore — Firenze (FI)
-   URL:   https://www.odafirenze.it
-   title: Fondazione ODA
-L'Arcolaio — Firenze (FI)
-   URL:   https://www.sereniorizzonti.it
-   title: Gruppo Sereni Orizzonti S.p.A
-La casa di Marta — Prato (PO)
-   URL:   https://www.astir.it
-   title: Astir &#8211; Consorzio
-La Chiocciola — Firenze (FI)
-   URL:   https://www.consorzio-zenit.it
-   title: (non registrato)
-La Collinella — Montaione (FI)
-   URL:   https://www.coopsarah.it
-   title: Sarah Cooperativa Sociale
-La Mimosa — Campi Bisenzio (FI)
-   URL:   https://www.consorzio-zenit.it
-   title: (non registrato)
-La Veranella — Firenze (FI)
-   URL:   https://www.lavillaspa.it
-   title: Gruppo La Villa | Residenze per Anziani e Servizi alla persona
-Le Magnolie — Firenze (FI)
-   URL:   https://www.korian.it
-   title: Residenze per anziani e servizi sanitari | Korian
-Le Sorgenti — San Giuliano Terme (PI)
-   URL:   https://www.coopselios.com
-   title: Coopselios - Cooperativa sociale per la persona dal 1984
-Le Sughere — Civitella Paganico (GR)
-   URL:   https://www.coesoareagr.it
-   title: Coeso &#8211; CoesoSDS
-Le Vele — Fucecchio (FI)
-   URL:   https://www.colori.it
-   title: Colori.it - Il portale dei colori
-Marina di Levante — Follonica (GR)
-   URL:   https://www.istitutofalusi.org
-   title: www.istitutofalusi.org
-Martini — Anghiari (AR)
-   URL:   https://www.valtiberina.toscana.it
-   title: Unione Montana dei Comuni della Valtiberina Toscana
-Masaccio — Bagno a Ripoli (FI)
-   URL:   https://www.lavillaspa.it
-   title: Gruppo La Villa | Residenze per Anziani e Servizi alla persona
-Michelangelo — Aulla (MS)
-   URL:   https://www.lavillaspa.it
-   title: Gruppo La Villa | Residenze per Anziani e Servizi alla persona
-Monsavano — Pelago (FI)
-   URL:   https://www.sereniorizzonti.it
-   title: Gruppo Sereni Orizzonti S.p.A
-Naldini-Torrigiani — Barberino Tavarnelle (FI)
-   URL:   https://www.rosalibri.it
-   title: Residenze anziani, case di riposo, (rsa) nel Chianti | Firenze
-Nuova Villa Rio — San Godenzo (FI)
-   URL:   https://www.nuovavillario.it
-   title: Nuova Villa Rio - Residenza Sanitaria - Casa di riposo - Firenze - Home
-Nuovi Orizzonti — Bagnone (MS)
-   URL:   https://www.auroradomus.it
-   title: Servizi per Anziani, Servizi Sanitari, Servizi per la Salute Mentale, Servizi Educativi, Servizi per Minori, Servizi per la Disabilità, Servizi per i Giovani - Auroradomus
-Paolo e Isolina Biozzi — Pieve Santo Stefano (AR)
-   URL:   https://www.comune.pievesantostefano.ar.it
-   title: Comune di Pieve Santo Stefano | Comune di Pieve Santo Stefano
-Piero Bargagli — Sarteano (SI)
-   URL:   https://www.misericordiasarteano.com
-   title: Venerabile Arciconfraternita di Misericordia di Sarteano
-Pio Istituto Santa Caterina de' Ricci — Prato (PO)
-   URL:   https://www.coopsarah.it
-   title: Sarah Cooperativa Sociale
-Pontremoli — Pontremoli (MS)
-   URL:   https://www.auroradomus.it
-   title: Servizi per Anziani, Servizi Sanitari, Servizi per la Salute Mentale, Servizi Educativi, Servizi per Minori, Servizi per la Disabilità, Servizi per i Giovani - Auroradomus
-Regina Mundi — Chianciano Terme (SI)
-   URL:   https://www.gruppoanteo.it
-   title: Anteo impresa sociale | Servizi socio-sanitari per anziani e disabili
-Residence degli ulivi — Podenzana (MS)
-   URL:   https://www.coopselios.com
-   title: Coopselios - Cooperativa sociale per la persona dal 1984
-Residenza Alfieri — Camaiore (LU)
-   URL:   https://www.lavillaspa.it
-   title: Gruppo La Villa | Residenze per Anziani e Servizi alla persona
-Roberto Nobili — Sillano Giuncugnano (LU)
-   URL:   https://www.consorziokcs.it
-   title: KCS Caregiver | Dal 1991 ogni giorno, la cura che merita.
-RSA Gonfienti — Prato (PO)
-   URL:   https://www.consorziokcs.it
-   title: KCS Caregiver | Dal 1991 ogni giorno, la cura che merita.
-RSA L'Uliveto — Firenze (FI)
-   URL:   https://www.almarei.it
-   title: Almarei | La prima rete di infermieri, per gli infermieri
-RSA Maria Regina — Castelfranco di Sotto (PI)
-   URL:   https://www.madonnadelsoccorsofauglia.it
-   title: Fondazione Madonna del Soccorso ETS
-RSA Nuova Stella — Pieve a Nievole (PT)
-   URL:   https://www.cooplasalute.it
-   title: HOME - Cooperativa Sociale La Salute
-RSA S.Agnese — Castellina in Chianti (SI)
-   URL:   https://www.gruppocori.it
-   title: Gruppo Cori – 27 Strutture in Toscana | Residenze Anziani, Centri Minori, Disabilità
-RSA San Giovanni Bosco — Castel San Niccolò (AR)
-   URL:   https://www.comars.org
-   title: Home - Consorzio sociale Comars Onlus
-RSA San Romolo - Casa Argia — Figline e Incisa Valdarno (FI)
-   URL:   https://www.aspmartelli.it
-   title: Home - ASP - Centro residenziale &quot;Lodovico Martelli&quot;
-RSA Silvio Silvatici — Vicopisano (PI)
-   URL:   https://www.campostrini.it
-   title: Istituto Campostrini
-RSA Thouar — Firenze (FI)
-   URL:   https://www.montedomini.net
-   title: Azienda Pubblica Servizi alla Persona Montedomini
-RSA Villa Degli Etruschi — Suvereto (LI)
-   URL:   https://www.colisee.it
-   title: Homepage - Colisée Italia
-San Francesco — Poggio a Caiano (PO)
-   URL:   https://www.coopsarah.it
-   title: Sarah Cooperativa Sociale
-San Giovanni Battista — Roccastrada (GR)
-   URL:   https://www.comars.org
-   title: Home - Consorzio sociale Comars Onlus
-San Giuseppe — Pontedera (PI)
-   URL:   https://www.campodelvescovo.it
-   title: Case di riposo per anziani &#8211; CampoDelVescovo
-San Romualdo — Pratovecchio Stia (AR)
-   URL:   https://www.idea2000il.it
-   title: Idea 2000 I.L. &#8211; Hai un problema per un servizio? Noi te lo risolviamo!
-Santa Fina — San Gimignano (SI)
-   URL:   https://www.ftsa.it
-   title: FTSA - Fondazione Territori Sociali Altavaldelsa
-Santa Rita — Cortona (AR)
-   URL:   https://www.emmausitalia.it
-   title: Emmaus | Residenze per Anziani autosufficienti e non
-Sestino G. Bertozzi — Sestino (AR)
-   URL:   https://www.comars.org
-   title: Home - Consorzio sociale Comars Onlus
-Sinalunga — Sinalunga (SI)
-   URL:   https://www.istitutoredditi.it
-   title: Home - APSP Istituto Maria Redditi
-Torrita di Siena — Torrita di Siena (SI)
-   URL:   https://www.istitutoredditi.it
-   title: Home - APSP Istituto Maria Redditi
-Villa Alfieri — Camaiore (LU)
-   URL:   https://www.lavillaspa.it
-   title: Gruppo La Villa | Residenze per Anziani e Servizi alla persona
-Villa Angela — Bagnone (MS)
-   URL:   https://www.lavillaspa.it
-   title: Gruppo La Villa | Residenze per Anziani e Servizi alla persona
-Villa Desiderio — Firenze (FI)
-   URL:   https://www.sereniorizzonti.it
-   title: Gruppo Sereni Orizzonti S.p.A
-Villa Gisella Nuovo Padiglione — Firenze (FI)
-   URL:   https://www.gruppozaffiro.it
-   title: Home Zaffiro - Gruppo Zaffiro
-Villa Gisella Vecchio Padiglione — Firenze (FI)
-   URL:   https://www.gruppozaffiro.it
-   title: Home Zaffiro - Gruppo Zaffiro
-Villa Michelangelo — Lastra a Signa (FI)
-   URL:   https://www.korian.it
-   title: Residenze per anziani e servizi sanitari | Korian
-Villa Olimpia — Bagno a Ripoli (FI)
-   URL:   https://www.villasantamonica.it
-   title: Home Page
-Villa Paradiso — Rapolano Terme (SI)
-   URL:   https://www.emmausitalia.it
-   title: Emmaus | Residenze per Anziani autosufficienti e non
-Villa San Biagio — Dicomano (FI)
-   URL:   https://www.sereniorizzonti.it
-   title: Gruppo Sereni Orizzonti S.p.A
-Villa San Giusto — Prato (PO)
-   URL:   https://www.sereniorizzonti.it
-   title: Gruppo Sereni Orizzonti S.p.A
-Villa Serena — Montaione (FI)
-   URL:   https://www.proges.it
-   title: Proges Cooperativa Sociale
-Villa Serena — San Marcello Piteglio (PT)
-   URL:   https://www.comars.org
-   title: Home - Consorzio sociale Comars Onlus
-Villa Solaria — Sesto Fiorentino (FI)
-   URL:   https://www.proges.it
-   title: Proges Cooperativa Sociale
-Villa Val Verde — Firenzuola (FI)
-   URL:   https://www.sereniorizzonti.it
-   title: Gruppo Sereni Orizzonti S.p.A
-Villa Verde Dott. Gastone Lucchesi — Gallicano (LU)
-   URL:   https://www.misericordiagallicano.it
-   title: Fraternità di Misericordia di Gallicano - Lucca
-Villone Puccini — Pistoia (PT)
-   URL:   https://www.comars.org
-   title: Home - Consorzio sociale Comars Onlus
-Centro Diurno per Anziani - Mattarello - Tn — Trento (TN)
-   URL:   https://www.cooperativasad.it
-   title: Cooperativa SAD - Associazione sociale con professionalità e cura
-Centro Diurno per Anziani - Povo - Tn — Trento (TN)
-   URL:   http://www.apspgrazioli.it
-   title: A.P.S.P. Margherita Grazioli
-Centro Diurno per Anziani - Ravina - Tn — Trento (TN)
-   URL:   https://www.faicoop.com
-   title: Cooperativa sociale FAI Trento assistenza anziani Faicoop
-RSA Bezzecca — Ledro (TN)
-   URL:   https://www.apspgiacomocis.it
-   title: A.P.S.P. Giacomo Cis
-RSA Bleggio Superiore — Bleggio Superiore (TN)
-   URL:   https://www.apspgiudicarieesteriori.it
-   title: A.P.S.P. Giudicarie Esteriori
-RSA Canal S.Bovo — Canal San Bovo (TN)
-   URL:   https://www.apspvalledelvanoi.it
-   title: A.P.S.P. Valle dei Vanoi
-RSA Castello Tesino — Castello Tesino (TN)
-   URL:   https://www.apspsuoragnese.it
-   title: A.P.S.P. Suor Agnese
-RSA Condino — Borgo Chiese (TN)
-   URL:   https://www.rosadeiventi.tn.it
-   title: Home Page
-RSA Dro — Dro (TN)
-   URL:   https://www.residenzamolino.it
-   title: A.P.S.P. Residenza Molino
-RSA Folgaria — Folgaria (TN)
-   URL:   https://www.casalaner.it
-   title: (non registrato)
-RSA Mezzocorona — Mezzocorona (TN)
-   URL:   https://www.upipa.tn.it
-   title: Unione Provinciale Istituzioni Per l'Assistenza - U.P.I.P.A. - società cooperativa
-RSA Mezzolombardo — Mezzolombardo (TN)
-   URL:   https://www.sangiovanni.tn.it
-   title: A.P.S.P. San Giovanni
-RSA Mori — Mori (TN)
-   URL:   https://www.apsp-cesarebenedetti.it
-   title: APSP Cesare Benedetti
-RSA Povo — Trento (TN)
-   URL:   https://www.apspgrazioli.it
-   title: A.P.S.P. Margherita Grazioli
-RSA Predazzo — Predazzo (TN)
-   URL:   https://www.upipa.tn.it
-   title: Unione Provinciale Istituzioni Per l'Assistenza - U.P.I.P.A. - società cooperativa
-RSA Roncegno — Roncegno Terme (TN)
-   URL:   https://www.upipa.tn.it
-   title: Unione Provinciale Istituzioni Per l'Assistenza - U.P.I.P.A. - società cooperativa
-RSA Solatrix - St Gestioni Soc.Coop. Soc. — Rovereto (TN)
-   URL:   https://www.gruppospes.it
-   title: Gruppo Spes - Servizi socio sanitari per anziani: privati o in convenzione
-RSA Tesero — Tesero (TN)
-   URL:   https://www.casadiriposogiovanelli.org
-   title: Casa di Riposo Giovanelli
-RSA Transacqua — Primiero San Martino di Castrozza (TN)
-   URL:   https://www.apsp-primiero.net
-   title: A.P.S.P. San Giuseppe di Primiero
-RSA Valle di Cembra — Cembra Lisignago (TN)
-   URL:   https://www.gruppospes.it
-   title: Gruppo Spes - Servizi socio sanitari per anziani: privati o in convenzione
-BD Service GbR — Narni (TR)
-   URL:   https://www.casaveratr.it
-   title: Casa di Riposo Terni - Residenza per Anziani Casa Vera
-Casa Accoglieza Maria Immacolata — Marsciano (PG)
-   URL:   https://www.fontenuovo.it
-   title: Fontenuovo &#8211; Fondazione onlus
-Casa di Riposo San Giorgio — Orvieto (TR)
-   URL:   https://www.coopquadrifoglio.net
-   title: &quot;Il Quadrifoglio&quot; &#8211; Cooperativa Sociale
-Casa Vincenziana G. Andreoli — San Venanzo (TR)
-   URL:   https://www.effatah.it
-   title: Associazione Comunit� Nazareth
-Centro Residenziale Anziani Casa Benedetta — Sigillo (PG)
-   URL:   https://www.serafico.org
-   title: Home - Serafico di Assisi
-Ente di Assistenza e Servizi alla Persona E.A.S.P. — Gualdo Tadino (PG)
-   URL:   https://www.easp.it
-   title: E.A.S.P &quot;A.Baldassini&quot;
-Residenza Protetta Carlo Amici — Trevi (PG)
-   URL:   https://www.dinamicafoligno.it
-   title: Home - Dinamica Foligno
-RP Animazione Soggiorno Terza Età — Terni (TR)
-   URL:   https://www.casadiriposoaste.com
-   title: Casa di riposo | Terni | ASTE – Residenza Protetta per Anziani
 
 ==============================================================================
-6. PAGINE IRRAGGIUNGIBILI — non toccate, il link resta (72)
+6. PAGINE IRRAGGIUNGIBILI — non toccate, il link resta (4)
 ==============================================================================
 Una pagina che oggi non risponde non prova che il link sia sbagliato.
 
-Alfa Columbus                         https://www.alfacolumbussrl.it                      vietato da robots.txt
-APSS - RSA Psichiatrica               https://www.apss.tn.it                              vietato da robots.txt
-APSS - RSO Tione                      https://www.apss.tn.it                              vietato da robots.txt
-Azienda Pubblica di Servizi alla Per  https://www.casadiriposomosca.com                   vietato da robots.txt
-Badia Tedalda                         https://www.comune.badiatedalda.ar.it               vietato da robots.txt
-Bastia                                https://www.elleuno.it                              HTTP 500
-Casa Accoglienza Anziani Comeana      https://www.casaaccoglienzacomeana-onlus.it         vietato da robots.txt
-Casa del Duca                         https://www.cuoreliburniasociale.it                 HTTP 403
 Casa di Riposo Giulio Gianetti        https://casagianetti.it/                            HTTP 403
-Casa Natività di Maria                https://www.casanativita.effatah.it                 vietato da robots.txt
-Casa San Giuseppe                     https://www.casa-sangiuseppe.com                    HTTP 403
-Casa Santa Maria - Coop. Kaleidoscop  https://www.casasantamaria.trentino.it              vietato da robots.txt
-Casa Santa Maria della Pietà          https://www.casasantamariadellapieta.it             vietato da robots.txt
-Casa Serena di Capodacqua Confratern  https://www.casaripososerena.com                    vietato da robots.txt
-Centro Diurno per Anziani - Clarina   http://www.delfino.coop                             vietato da robots.txt
 Centro Polifunzionale per la Terza E  https://www.bustocare.it/                           HTTP 403
-Don Bachini                           https://www.misericordiacorsagna.it                 vietato da robots.txt
-Fabbri Bicoli                         https://www.comune.bucine.ar.it                     vietato da robots.txt
-Fondazione Cardinale Maffi            https://www.fondazionemaffi.it                      HTTP 403
-Fondazione Casa Cardinale Maffi       https://www.fondazionemaffi.it                      HTTP 403
-Fondazione Opera Casa A. Placci       https://www.casaplacci.it                           vietato da robots.txt
-G. Ascoli                             https://www.casagascoliapsp.it                      vietato da robots.txt
-Gottardo Delfinoni                    https://www.delfinoni.it                            vietato da robots.txt
-Hotel Adda                            https://www.hoteladda.org                           vietato da robots.txt
-I Giunchi                             https://www.residenzaigiunchi.com                   HTTP 403
-I maggi                               https://www.cuoreliburniasociale.it                 HTTP 403
-Il Castello                           https://www.rsailcastello.com                       HTTP 403
-Il Nido delle Rondini                 https://www.nidodellerondinionlus.it                vietato da robots.txt
-Istituto Mater Divinae Gratiae        https://www.case-passioniste.it                     vietato da robots.txt
-L.F. Orvieto                          https://www.case_passioniste.it                     vietato da robots.txt
-Madonna della Fiducia                 https://www.rsamadonnadellafiducia.it               HTTP 404
-Masaccio                              https://www.aspmasaccio.com                         HTTP 403
-Non Ti Scordar di Me                  https://www.benella.it                              vietato da robots.txt
-Opera Pia Muzi Betti Residenza Prote  https://www.muzibetti.it                            vietato da robots.txt
-Pensionato Casa Marini                https://www.usignolo.it                             vietato da robots.txt
-Pensionato Nazzareno                  https://www.ssfspoleto.org                          vietato da robots.txt
-Pietro Fedi                           https://www.casadiriposofedi.it                     HTTP 403
-Poppi                                 https://www.elleuno.it                              HTTP 500
-Regina Elena                          https://www.reginaelenacarrara.it                   vietato da robots.txt
-Residenza Protetta Nuova Villa Maria  https://www.nuovavillamarialuisa.com                vietato da robots.txt
-Rosignano Solvay                      https://www.fondazionemaffi.it                      HTTP 403
-RP Villa Maria Saniter                https://www.casediripososaniter.it                  vietato da robots.txt
-RSA Arco                              https://www.fcda.it                                 vietato da robots.txt
 RSA Belvedere                         https://comune.cassanodadda.mi.it/it/vivere/rsa-be  vietato da robots.txt
-RSA Cavedine                          https://www.residenzavalledeilaghi.it               vietato da robots.txt
-RSA Kos Care SRL                      https://www.sstefano.it                             vietato da robots.txt
-RSA Lavis                             https://www.rsalavis.it                             vietato da robots.txt
-RSA Levico Terme                      https://www.apsplevicoterme.it                      vietato da robots.txt
 RSA Luigi Porro                       https://consorziosanlab.it/contatti/                vietato da robots.txt
-RSA Pelù                              https://www.casagascoliapsp.it                      vietato da robots.txt
-RSA Pieve di Bono                     https://www.apsppievedibono.it                      vietato da robots.txt
-RSA Residenza Argento                 https://www.residenzaargento.it                     HTTP 403
-RSA Riva del Garda                    https://www.csarivadelgarda.it                      vietato da robots.txt
-RSA Villa il Pavone                   https://www.villalpavone.it                         vietato da robots.txt
-Rsao Solatrix                         https://www.casadicurasolatrix.it                   vietato da robots.txt
-S. Saadun Ospizio Israelitico         https://www.ospizioebraico.it                       vietato da robots.txt
-San Giovanni Bosco                    http://www.servedimariariparatrici.it/smr           vietato da robots.txt
-San Giuseppe                          https://www.fondazionemaffi.it                      HTTP 403
-San Giuseppe                          https://www.suoreminme.com                          vietato da robots.txt
-San Rocco                             https://www.cuoreliburniasociale.it                 HTTP 403
-Sanatrix                              https://www.sereniorizzzonti.it                     vietato da robots.txt
-Soggiorno Angelica                    https://www.case-passioniste.it                     vietato da robots.txt
-Villa Amelia                          https://www.villaamelia.it                          vietato da robots.txt
-Villa Canali Residenza Protetta       https://www.villacanali.it                          vietato da robots.txt
-Villa Chiara                          https://www.rsavillachiara.it                       vietato da robots.txt
-Villa dei Fiori                       https://www.villadeifioriviareggio.it               vietato da robots.txt
-Villa del Colle                       https://www.villadelcolle.com                       vietato da robots.txt
-Villa di Riposo Pascoli               https://www.villapascoli.it                         HTTP 404
-Villa Jole                            https://www.villajole.it                            vietato da robots.txt
-Villa le Camelie                      https://www.villalecamelie.it                       vietato da robots.txt
-Villa Magli                           https://www.villamagli.it                           vietato da robots.txt
-Villa Santa Teresa                    https://www.rsavillasantateresa.it                  vietato da robots.txt

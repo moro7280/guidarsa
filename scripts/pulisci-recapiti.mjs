@@ -51,6 +51,7 @@ const AGGREGATORI = [
   "assolombarda.it", "confcommercio.it", "confindustria.it", "biopmed.eu",
   // vetrine, e-commerce, contenuti sponsorizzati, ripubblicatori di PDF
   "globalstoreitalia.com", "readkong.com", "ideaginger.it", "cfsitalia.com",
+  "inprimapagina.com", "siminformatica.it", "idea2000il.it", "almarei.it",
   // testate
   "bresciatoday.it", "milanotoday.it", "ilgiorno.it", "corriere.it", "repubblica.it",
   // aziende sanitarie: sono l'ente che vigila o possiede, non la struttura che
@@ -73,7 +74,7 @@ const inBlacklist = (host) =>
  * un gestore vero — ma /documentazione non e la pagina di quella RSA.
  */
 const PATH_SOSPETTO =
-  /\/(blog|news|notizie|comunicati|comunicato|press|rassegna-stampa|cerca-imprese|cerca-imprese-prodotti|listing|directory|documentazione|documenti|archivio|articolo|articoli|magazine|progetti)(\/|$)/i;
+  /\/(blog|news|notizie|comunicati|comunicato|press|rassegna-stampa|cerca-imprese|cerca-imprese-prodotti|listing|directory|documentazione|documenti|archivio|articolo|articoli|magazine|progetti|projects)(\/|$)/i;
 
 // ============================================================================
 // 3. Telefoni
@@ -227,11 +228,42 @@ const GENERICHE = new Set([
   "geriatrico", "polo", "nuova", "nuovo", "santa", "santo", "piccolo", "cooperativa",
   "sociale", "servizi", "azienda", "pubblica", "persona", "ente", "opera", "pia",
 ]);
+
+const senzaAccenti = (t) =>
+  String(t ?? "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
+
 const parole = (t) =>
-  String(t ?? "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "")
-    .split(/[^a-z0-9]+/).filter((w) => w.length > 3 && !GENERICHE.has(w));
+  senzaAccenti(t).split(/[^a-z0-9]+/).filter((w) => w.length > 3 && !GENERICHE.has(w));
+
+/**
+ * Forma compatta: "Casa di Dio" -> "casadidio", che e quello che si legge in
+ * casadidio.eu. Serve perche i nomi fatti solo di parole generiche non hanno
+ * nessuna parola distintiva, ma il dominio li scrive tutti attaccati.
+ */
+const compatta = (t) => senzaAccenti(t).replace(/[^a-z0-9]+/g, "");
+
+/**
+ * Fonte del campo sito_web. Il controllo di coerenza vale solo per i link
+ * trovati dall'arricchimento automatico: quelli che arrivano da un portale
+ * regionale sono gia verificati alla fonte, e li vale solo la blacklist.
+ */
+const fonteDelSito = (s) => {
+  const f = s.fonte_contatti?.sito_web;
+  if (!f) return null;
+  return typeof f === "string" ? f : (f.fonte ?? null);
+};
+const daArricchimento = (s) => {
+  const f = fonteDelSito(s);
+  return f === "sito_ufficiale" || f === null;
+};
 
 const cache = existsSync(CACHE) ? JSON.parse(readFileSync(CACHE, "utf8")) : {};
+
+/** Quante strutture puntano alla stessa identica URL. */
+const urlCondivise = new Map();
+for (const s of tutte.filter((x) => x.sito_web)) {
+  urlCondivise.set(s.sito_web, (urlCondivise.get(s.sito_web) ?? 0) + 1);
+}
 
 async function giudicaCoerenza(s) {
   if (!(s.sito_web in cache)) {
@@ -251,12 +283,41 @@ async function giudicaCoerenza(s) {
   // non si tocca, e finisce nel report.
   if (!p.ok) return { esito: "irraggiungibile", motivo: p.motivo, title: "" };
 
-  const testo = `${p.title} ${p.h1} ${s.sito_web}`.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "");
-  const chiavi = [...parole(s.nome), ...parole(s.denominazione_gestore)];
-  const trovata = chiavi.find((w) => testo.includes(w));
-  return trovata
-    ? { esito: "ok", title: p.title }
-    : { esito: "rimuovi", motivo: "ne la struttura ne il gestore compaiono in title, H1 o URL", title: p.title };
+  // Si cerca in title, H1, URL e dominio, sia a parole sia tutto attaccato:
+  // "casadidio" non si trova in "casa di dio" separato da spazi.
+  const testo = senzaAccenti(`${p.title} ${p.h1} ${s.sito_web}`);
+  const testoCompatto = compatta(`${p.title} ${p.h1} ${s.sito_web}`);
+
+  // Anche il comune: "Casa di Riposo Chiuro" e il sito giusto di una struttura
+  // che sta a Chiuro, anche se il comune non compare nella denominazione.
+  const distintive = [...new Set([...parole(s.nome), ...parole(s.denominazione_gestore), ...parole(s.comune)])];
+  const compatte = [compatta(s.nome), compatta(s.denominazione_gestore), compatta(s.comune)]
+    .filter((c) => c.length >= 7);
+
+  const trovata =
+    distintive.find((w) => testo.includes(w)) ??
+    compatte.find((c) => testoCompatto.includes(c));
+  if (trovata) return { esito: "ok", title: p.title };
+
+  // Nessuna parola distintiva da cercare — "Casa di Dio", "La Residenza",
+  // "San Giuseppe" sono fatti solo di parole generiche. Qui il controllo non
+  // sa decidere, e non deve inventarsi una risposta: decide una persona.
+  if (distintive.length === 0) {
+    return { esito: "manuale", motivo: "nessuna parola distintiva nel nome", title: p.title };
+  }
+
+  // Se la stessa URL serve piu strutture, e la pagina di un gruppo gestore —
+  // /contatti, /contattaci — non un link sbagliato per distrazione. Non e
+  // ovvio che vada tolta, quindi non la tolgo io.
+  if ((urlCondivise.get(s.sito_web) ?? 0) > 1) {
+    return { esito: "manuale", motivo: "pagina di gruppo, condivisa da piu strutture", title: p.title };
+  }
+
+  return {
+    esito: "rimuovi",
+    motivo: `nessuna delle parole distintive (${distintive.slice(0, 3).join(", ")}) compare in title, H1, URL o dominio`,
+    title: p.title,
+  };
 }
 
 // ============================================================================
@@ -289,8 +350,9 @@ const dubbi = [];
 const cellulari = [];
 const irraggiungibili = [];
 const incoerenti = [];
+const daMano = [];
 
-const daVerificare = strutture.filter((s) => s.sito_web && giudicaSitoSenzaRete(s).esito === "verifica");
+const daVerificare = strutture.filter((s) => s.sito_web && giudicaSitoSenzaRete(s).esito === "verifica" && daArricchimento(s));
 console.log(`siti da verificare in rete: ${daVerificare.length} (con pause per dominio, ci vuole)\n`);
 
 let fatti = 0;
@@ -299,12 +361,16 @@ for (const s of strutture) {
 
   if (s.sito_web) {
     let g = giudicaSitoSenzaRete(s);
-    if (g.esito === "verifica") {
+    if (g.esito === "verifica" && !daArricchimento(s)) {
+      // Fonte ufficiale: passata la blacklist, il link si tiene.
+      g = { esito: "ok" };
+    } else if (g.esito === "verifica") {
       g = await giudicaCoerenza(s);
       fatti += 1;
       if (fatti % 50 === 0) console.log(`  verificati ${fatti}/${daVerificare.length}`);
       if (g.esito === "irraggiungibile") irraggiungibili.push({ s, motivo: g.motivo });
       if (g.esito === "rimuovi") incoerenti.push({ s, title: g.title });
+      if (g.esito === "manuale") daMano.push({ s, title: g.title, motivo: g.motivo });
     }
     if (g.esito === "rimuovi") rimozioni.sito_web = { valore: s.sito_web, motivo: g.motivo };
   }
@@ -331,9 +397,13 @@ if (!prova) {
     const patch = {};
     for (const [campo, { valore, motivo }] of Object.entries(rimozioni)) {
       patch[campo] = null;
+      // La provenienza del campo va conservata insieme al valore, o un
+      // ripristino non sa piu da dove veniva il dato: e un errore che ho gia
+      // fatto una volta, e si paga ricostruendo a mano.
+      const provenienzaPrecedente = fonte[campo] ?? null;
       delete fonte[campo];
       // Reversibilita: il valore tolto resta qui, con il perche e il quando.
-      registro[campo] = { valore, motivo, il: DATA_BONIFICA };
+      registro[campo] = { valore, motivo, il: DATA_BONIFICA, provenienza: provenienzaPrecedente };
     }
     fonte.rimossi = registro;
     const { error } = await supabase.from("strutture")
@@ -448,6 +518,7 @@ console.log(`\nstrutture toccate: ${azioni.length}`);
 console.log(`  siti tolti:     ${azioni.filter((a) => a.rimozioni.sito_web).length}`);
 console.log(`  telefoni tolti: ${azioni.filter((a) => a.rimozioni.telefono).length}`);
 console.log(`scese sotto soglia 60: ${scese.length}`);
+console.log(`da verificare a mano: ${daMano.length}`);
 console.log(`dubbi ${dubbi.length} · cellulari ${cellulari.length} · irraggiungibili ${irraggiungibili.length}`);
 console.log(`scritture: ${prova ? "0 (prova)" : scritte}`);
 console.log(`\nreport in ${REPORT}`);
@@ -577,3 +648,35 @@ if (soloReport) {
   console.log(`\nresoconto complessivo scritto in ${REPORT}`);
   console.log(`strutture bonificate: ${conRegistro.length} · siti ${siti} · telefoni ${telefoni}`);
 }
+
+// ============================================================================
+// Lista da verificare a mano: casi in cui il controllo non sa decidere e non
+// deve inventarsi una risposta. Il link NON viene toccato.
+// ============================================================================
+
+const DA_MANO = "data/bonifica-da-verificare-a-mano.txt";
+const M = [];
+M.push("SITI DA VERIFICARE A MANO — la bonifica non li ha toccati");
+M.push(`data: ${DATA_BONIFICA}   ambito: ${ambito}`);
+M.push("");
+M.push("Due casi finiscono qui:");
+M.push("  - il nome della struttura e fatto solo di parole generiche (Casa di Dio,");
+M.push("    La Residenza, San Giuseppe): non c'e nessuna parola distintiva da cercare,");
+M.push("    e il controllo non deve decidere al posto di una persona");
+M.push("  - la stessa URL serve piu strutture: e la pagina di un gruppo gestore,");
+M.push("    non un link sbagliato per distrazione");
+M.push("");
+M.push("Il link e ancora nel database: queste righe sono da decidere una per una.");
+M.push("");
+M.push("=".repeat(78));
+M.push("");
+for (const { s, title, motivo } of daMano) {
+  M.push(`${s.nome} — ${s.comune} (${s.provincia_sigla})`);
+  M.push(`   URL:    ${s.sito_web}`);
+  M.push(`   title:  ${title || "(nessun title)"}`);
+  M.push(`   perche: ${motivo}`);
+  M.push("");
+}
+M.push(`totale: ${daMano.length}`);
+writeFileSync(DA_MANO, `${M.join("\n")}\n`, "utf8");
+console.log(`lista da verificare a mano in ${DA_MANO} (${daMano.length} righe)`);
