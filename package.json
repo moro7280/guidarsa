@@ -26,7 +26,8 @@
     "import:campania": "node scripts/import-regione.mjs campania",
     "raccogli:emilia-romagna": "node scripts/raccogli/emilia-romagna.mjs",
     "import:emilia-romagna": "node scripts/import-regione.mjs emilia-romagna",
-    "import:calabria": "node scripts/import-regione.mjs calabria"
+    "import:calabria": "node scripts/import-regione.mjs calabria",
+    "pulisci:recapiti": "node scripts/pulisci-recapiti.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.112.3",
