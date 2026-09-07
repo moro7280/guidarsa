@@ -1,0 +1,65 @@
+BONIFICA DEI RECAPITI — REPORT FINALE
+data: 2026-09-07
+
+STATO DOPO LA BONIFICA
+  strutture in database        1773
+  con sito_web                  642   (erano 927)
+  con telefono                 1018   (erano 1041)
+  schede sopra la soglia 60    1047   (erano 1069)
+
+RIMOZIONI DEFINITIVE                                    303 strutture
+  siti tolti                                            285
+    dominio che non e la struttura                      283
+    pagina non istituzionale (path)                       2
+    per incoerenza                                        0
+  telefoni tolti                                         23
+    prefisso di provincia lontana                         9
+    prefisso inesistente                                  7
+    prefisso di un altro comune                           6
+    numero senza prefisso                                 1
+
+PER REGIONE                bonificate   siti   telefoni   scese sotto 60
+  Lombardia                       282    262         20               17
+  Umbria                           16     16          0                5
+  Toscana                           5      2          3                0
+
+NON TOCCATI, SEGNALATI
+  telefoni dubbi (prefisso di provincia confinante)       12
+  cellulari                                               34
+  pagine irraggiungibili (403, timeout, robots.txt)        4
+  link confermati a mano                                  14
+
+DECISIONI PRESE A MANO IL 07/09
+  ripristinati dopo il tuo controllo                     152 + 8
+  URL corrette impostate                                   2  (igm-care.it)
+  confermati e marcati verificato_a_mano                  14
+
+  Le 152 erano state tolte da un controllo di coerenza difettoso: quando dopo
+  aver scartato le parole generiche non restava nessuna parola distintiva, il
+  codice trattava "nessuna chiave trovata" come incoerenza invece di astenersi.
+
+REGOLA DI COERENZA, VERSIONE FINALE
+  Si applica solo ai link trovati dall'arricchimento automatico. Quelli che
+  vengono da un portale regionale, e quelli gia confermati a mano, non si
+  rimettono in discussione: li vale solo la blacklist.
+  Cerca in title, H1, URL e dominio: parole distintive del nome, del gestore e
+  del comune; la forma compatta del nome (casadidio); la sigla del gestore
+  presa dalle iniziali (asmv, cem).
+  Se non resta nessuna parola distintiva, o se la stessa URL serve piu
+  strutture, non decide: la riga va in bonifica-da-verificare-a-mano.txt.
+  Esito attuale: zero rimozioni su 305 siti verificati.
+
+REVERSIBILITA
+  Ogni valore tolto e in fonte_contatti.rimossi con valore, motivo, data e la
+  provenienza che aveva. Nessuna rimozione e definitiva.
+  Il resoconto si rigenera con: npm run pulisci:recapiti -- --report --prova
+
+VERIFICHE
+  sitemap.xml            200, 2270 URL, tutte 200
+  /dati/osm/             200
+  link interni           728 controllati, 0 rotti
+  RLS                    attiva su strutture, leads, iscritti
+  anon su leads          0 righe
+  slug duplicati         0
+  build / lint / tsc     puliti
+  HEAD = GitHub = prod   7805bdeee40befa1ceab64d9bea09d2f125bf18c
