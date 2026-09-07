@@ -1,0 +1,262 @@
+TASK C1 — FAR DIRE QUALCOSA ALLE PAGINE
+Report di chiusura — 7 settembre 2026
+Commit 280134dc17d43c0c47983eeea076591a0f9e7421
+
+
+IN BREVE
+========
+
+Il testo delle schede non viene piu dal database: si compone in pagina, dai
+campi, a ogni build. Prima era una frase salvata al momento dell'import e mai
+piu toccata, e oggi 449 schede su 1.773 dicevano il falso — "non includono i
+recapiti" su una scheda che il telefono ce l'ha, perche il recapito e arrivato
+dopo e la descrizione no. Quelle 449 frasi ora sono vere per costruzione: se il
+dato cambia, cambia la frase.
+
+Nessuna scrittura sul database. Nessuna URL cambiata. Nessuna cancellazione.
+La verifica lo conferma: updated_at massimo fermo a 2026-09-07T11:40:58,
+lo stesso della sessione di bonifica.
+
+
+1. QUANTE SCHEDE HANNO RICEVUTO OGNI FRASE
+==========================================
+
+Su 1.773 schede.
+
+  F1  identita                      1.773   sempre: nome, tipologia, comune (sigla)
+  F2  posti letto                   1.618   manca dove posti_letto e null o zero
+  F3  scala nel complesso             497   solo dove tutte le sorelle hanno i posti
+  F4  nucleo, ramo true                72   "Dichiara un nucleo dedicato alle demenze"
+  F4  nucleo, ramo false              326   nomina la fonte vera di quella struttura
+  F4  nucleo, nessuna frase         1.375   null: l'assenza non e un no
+  F4b accreditamento                1.552   true o false; null tace
+  F4c gestore                       1.128   dove denominazione_gestore c'e
+  F5  retta                           404   dalla stessa funzione del riquadro
+  F6  unita sorelle                   520   in 247 complessi
+  F7  provenienza                   1.773   sempre, e calcolata sui campi di adesso
+
+  Lunghezza media del testo composto: 74 parole per scheda.
+  La descrizione salvata che sostituisce ne aveva 90, ma dentro c'erano nove
+  frasi identiche ripetute su centinaia di pagine — 156 parole di boilerplate
+  in tutto, la piu diffusa presente su 1.038 schede.
+
+  La riga F3 merita una parola: 520 strutture stanno in un complesso, ma la
+  frase sulla scala si scrive solo 497 volte. Nelle altre 23 una delle unita
+  non dichiara i posti letto, e "la piu grande" non sarebbe verificabile.
+  Meglio non dirlo.
+
+
+2. LE UNITA SORELLE
+===================
+
+  Complessi riconosciuti:            247
+  Strutture coinvolte:               520
+  Gruppi oltre le 8 unita:             0   (la soglia esiste, non e scattata)
+
+La chiave e indirizzo normalizzato + comune. Senza numero civico non si
+raggruppa: "Via Sant'Apollonio" senza civico e un indirizzo, non un edificio.
+Le abbreviazioni si appianano prima del confronto (v. / v.le / p.zza / c.so /
+loc. / fraz., "snc" tolto, "45/A" = "45 A"), cosi "Via Brescia, 207" e
+"V. Brescia 207" finiscono nello stesso gruppo.
+
+Il complesso piu grande e Via Brescia 207 a Cremona: 7 unita, tutte con i
+posti dichiarati, tutte linkate fra loro.
+
+
+3. LE SEI SCHEDE DI ESEMPIO, DAL VIVO
+=====================================
+
+Tutte e sei rispondono 200 in produzione sul commit 280134d.
+
+--- 1. https://guidarsa.it/struttura/rsa-somenzi-cremona/   [in sitemap]
+
+  title: RSA Somenzi — RSA a Cremona (CR) | GuidaRSA
+  descr: RSA Somenzi, RSA a Cremona (CR): 121 posti letto. Contatti e servizi.
+
+  RSA Somenzi e una residenza sanitaria assistenziale (RSA) a Cremona (CR).
+  Dispone di 121 posti letto. E la piu grande delle 7 unita di questo
+  indirizzo.
+
+  Risulta accreditata con il servizio sanitario regionale: una parte della
+  retta e coperta dalla Regione, mentre la quota alberghiera resta alla
+  famiglia. E gestita da Azienda Speciale Comunale Cremona Solidale.
+
+  Si trova in un complesso in Via Brescia, 207 a Cremona insieme ad altre 6
+  unita: CDI "Casa Ozanam" (20 posti, centro diurno), CDI "Soldi" (40 posti,
+  centro diurno), CDI Alzheimer (20 posti, centro diurno), R.S.A. "B"
+  (40 posti, RSA), RSA Azzolini (120 posti, RSA), RSA Mainardi (84 posti, RSA).
+
+  I dati vengono dall'elenco open data di Regione Lombardia e non includono
+  le rette.
+
+  [prima diceva "...e non includono recapiti telefonici, sito web e rette",
+   mentre il telefono c'era]
+
+
+--- 2. https://guidarsa.it/struttura/r-s-a-b-cremona/   [noindex, follow]
+
+  La stessa scheda vista dal lato magro del gate: 40 posti, nessun recapito,
+  nessuna retta. Resta raggiungibile, resta linkata dalle sorelle, ma non
+  chiede l'indice. La provenienza lo dice per esteso:
+
+  "I dati vengono dall'elenco open data di Regione Lombardia e non includono
+   i recapiti ne le rette."
+
+  E la prova che la frase si calcola sui campi veri e non su una costante:
+  qui l'assenza e doppia, e la frase la elenca doppia.
+
+
+--- 3. https://guidarsa.it/struttura/casa-famiglia-milano/   [in sitemap]
+
+  descr: Casa Famiglia, RSA a Milano (MI): 20 posti letto, nucleo per le
+         demenze, retta a carico dell'ospite da 3.805 € al mese. Contatti e
+         servizi.
+
+  Casa Famiglia e una residenza sanitaria assistenziale (RSA) a Milano (MI).
+  Dispone di 20 posti letto. E la piu piccola delle 2 unita di questo
+  indirizzo.
+
+  Dichiara un nucleo dedicato alle demenze. Risulta accreditata con il
+  servizio sanitario regionale [...]. E gestita da Istituto dei Ciechi di
+  Milano.
+
+  La carta dei servizi 2026 indica 3.805 € al mese per la retta a carico
+  dell'ospite. Il documento riporta 125 €/giorno (regime non specificato).
+
+  Si trova in un complesso in Via Vivaio, 7 a Milano insieme a Nuova RSA Casa
+  Famiglia (26 posti, RSA).
+
+  [il documento non dice se 125 €/giorno sia tariffa privata o convenzionata,
+   e la frase non lo inventa: "retta a carico dell'ospite", non "retta
+   privata". La description usa la stessa cautela]
+
+
+--- 4. https://guidarsa.it/struttura/nuova-rsa-casa-famiglia-milano/   [in sitemap]
+
+  La gemella, dallo stesso indirizzo: "E la piu grande delle 2 unita di questo
+  indirizzo", e il link torna indietro a Casa Famiglia (20 posti, RSA).
+  Due schede che prima erano indistinguibili ora si spiegano a vicenda.
+
+
+--- 5. https://guidarsa.it/struttura/fondazione-turati-gli-alberi-san-marcello-piteglio/
+       [in sitemap]
+
+  descr: Fondazione Turati Gli Alberi, RSA a San Marcello Piteglio (PT):
+         nucleo per le demenze, retta privata da 3.501 € al mese. Contatti e
+         servizi.
+
+  Dichiara un nucleo dedicato alle demenze. Risulta accreditata con il
+  servizio sanitario regionale [...].
+
+  Il Portale RSA di Regione Toscana riporta 3.501 € al mese per la retta
+  privata e 1.936 € al mese per la quota a carico dell'ospite in regime
+  convenzionato. Gli importi mensili sono calcolati dalle tariffe giornaliere
+  dichiarate — quota sociale a carico dell'ospite 63,59 €/giorno · tariffa
+  privata 115,00 €/giorno — moltiplicate per 30,44 giorni medi.
+
+  Si trova in un complesso in Via Turati, 86 a San Marcello Piteglio insieme a
+  Fondazione Turati I Fiori (40 posti, RSA).
+
+  I dati vengono dal Portale RSA di Regione Toscana.
+
+  [qui si vedono le tre precisazioni tutte insieme: gli importi escono da
+   retteDi(), gli stessi del riquadro; i due regimi restano separati anche in
+   prosa; la description dice "retta privata da 3.501 €" e non "retta da
+   1.936 €", che sarebbe stato il numero piu basso ma di un altro regime.
+   Nessuna frase sui posti letto: posti_letto e zero, e zero non e un dato]
+
+
+--- 6. https://guidarsa.it/struttura/ad-maiores-trieste/   [in sitemap]
+
+  Ad Maiores e una residenza sanitaria assistenziale (RSA) a Trieste (TS).
+  Dispone di 76 posti letto. I dati vengono dall'elenco open data di Regione
+  Friuli-Venezia Giulia e non includono le rette.
+
+  [la scheda povera onesta: tre frasi, tutte vere, e la fonte nominata per
+   esteso. Nessuna frase sul nucleo, perche il Friuli non dichiara il campo:
+   null resta silenzio]
+
+
+4. SITEMAP
+==========
+
+  Totale URL:                      1.364   (era 1.363: +1 per la guida nuova)
+    schede struttura                1.038
+    pagine comune                     264
+    pagine provincia                   44
+    pagine regione                      8
+    guide                               6
+    statiche (/, /guide/, i 3 hub)      5
+
+  lastmod delle schede: 2026-09-07 su tutte e 1.038.
+  E il pavimento max(updated_at, DATA_TESTI), ed e onesto: il testo di quelle
+  pagine e cambiato davvero oggi.
+
+
+5. IL BOILERPLATE CHE SE NE E ANDATO
+====================================
+
+  /guide/come-leggere-una-scheda/   nuova, 200 in produzione
+
+Sette paragrafi che spiegano una volta sola quello che 1.773 schede ripetevano:
+da dove vengono i dati, perche alcune schede sono magre, la differenza fra
+accreditata e convenzionata, perche "informazione non disponibile" non vuol
+dire "no", perche le rette sono indicative, cosa sono le unita sorelle, come
+segnalare una correzione.
+
+Linkata dal footer — al posto del paragrafo "Come verifichiamo", che ripeteva
+le stesse quattro righe su ogni pagina del sito — e in coda a ogni scheda.
+
+
+6. VERIFICA
+===========
+
+  Build                    OK    3.008 pagine, nessun errore di prerender
+  Lint                     OK    eslint pulito
+  Test                     OK    23 su 23 (gate + testi)
+  Tipi                     OK    tsc --noEmit pulito
+
+  Database                 OK    RLS attiva su strutture, leads, iscritti
+                                 anon legge 1.773 strutture, 0 righe su leads
+                                 0 slug duplicati, 0 campi critici vuoti
+                                 0 righe con fonte_dati "demo"
+                                 updated_at massimo 2026-09-07T11:40:58
+                                 (invariato: C1 non ha scritto niente)
+
+  Integrita dei link       OK    1.364 URL in sitemap, tutte 200
+                                 0 pagine noindex dentro la sitemap
+                                 1.068 link interni ulteriori, tutti 200
+                                 0 link rotti su 2.432 pagine toccate
+
+  Tre SHA                  OK    HEAD       280134dc17d43c0c47983eeea076591a0f9e7421
+                                 GitHub     280134dc17d43c0c47983eeea076591a0f9e7421
+                                 produzione 280134dc17d43c0c47983eeea076591a0f9e7421
+                                 (deploy pronto dopo ~160 secondi)
+
+  Sonde runtime            OK    /sitemap.xml   200
+                                 /dati/osm/     200
+                                 1.364 URL in produzione = 1.364 in locale
+
+  Spot-check URL nuove     OK    /guide/come-leggere-una-scheda/  200
+                                 le sei schede di esempio         200
+
+
+7. COSA NON E CAMBIATO
+======================
+
+Nessuna URL. Nessuna riga scritta o cancellata sul database. La colonna
+descrizione e ancora li, intatta: se il testo composto si rivelasse peggiore
+del salvato, si torna indietro rimettendo una riga nel template.
+
+Il gate di indicizzazione e quello di ieri: C1 non ha spostato nessuna scheda
+dentro o fuori dall'indice. Le 1.038 schede in sitemap erano 1.038 anche
+prima.
+
+
+8. LA COSA DA SAPERE PER LA PROSSIMA SESSIONE
+=============================================
+
+DATA_TESTI in src/app/sitemap.ts vale "2026-09-07". E una costante scritta a
+mano, e va alzata solo quando il testo delle schede cambia davvero. Alzarla a
+ogni deploy direbbe a Google che 1.038 pagine sono cambiate quando non e vero,
+ed e il modo piu rapido per non essere creduti la volta che sara vero.
