@@ -253,8 +253,24 @@ const fonteDelSito = (s) => {
   return typeof f === "string" ? f : (f.fonte ?? null);
 };
 const daArricchimento = (s) => {
-  const f = fonteDelSito(s);
-  return f === "sito_ufficiale" || f === null;
+  const f = s.fonte_contatti?.sito_web;
+  // Un link gia confermato da una persona non si rimette in discussione: e
+  // l'unico giudizio che vale piu di qualunque euristica.
+  if (f && typeof f === "object" && f.verificato_a_mano) return false;
+  const fonte = fonteDelSito(s);
+  return fonte === "sito_ufficiale" || fonte === null || String(fonte).startsWith("sito_ufficiale");
+};
+
+/**
+ * Sigla del gestore, dalle iniziali delle parole che contano: "Azienda
+ * Speciale Multiservizi Vigevano" da "asmv", "Comunita Ebraica di Milano" da
+ * "cem". E la forma con cui i gestori registrano il dominio, e senza di essa
+ * asmv.it sembra estraneo all'Istituto de Rodolfi che pero gestisce.
+ */
+const CONNETTIVI = new Set(["di", "de", "del", "della", "dei", "delle", "da", "e", "ed", "il", "lo", "la", "i", "gli", "le", "in", "per", "con", "su", "a", "al"]);
+const sigla = (t) => {
+  const parti = senzaAccenti(t).split(/[^a-z0-9]+/).filter((w) => w && !CONNETTIVI.has(w));
+  return parti.length >= 2 ? parti.map((w) => w[0]).join("") : "";
 };
 
 const cache = existsSync(CACHE) ? JSON.parse(readFileSync(CACHE, "utf8")) : {};
@@ -294,9 +310,14 @@ async function giudicaCoerenza(s) {
   const compatte = [compatta(s.nome), compatta(s.denominazione_gestore), compatta(s.comune)]
     .filter((c) => c.length >= 7);
 
+  let host = "";
+  try { host = new URL(s.sito_web).hostname.replace(/^www\./, ""); } catch { /* gia validata sopra */ }
+  const sigleAmmesse = [sigla(s.denominazione_gestore), sigla(s.nome)].filter((x) => x.length >= 3);
+
   const trovata =
     distintive.find((w) => testo.includes(w)) ??
-    compatte.find((c) => testoCompatto.includes(c));
+    compatte.find((c) => testoCompatto.includes(c)) ??
+    sigleAmmesse.find((x) => host.startsWith(x) || host.includes(`${x}.`) || host.includes(`-${x}`));
   if (trovata) return { esito: "ok", title: p.title };
 
   // Nessuna parola distintiva da cercare — "Casa di Dio", "La Residenza",
@@ -362,7 +383,17 @@ for (const s of strutture) {
   if (s.sito_web) {
     let g = giudicaSitoSenzaRete(s);
     if (g.esito === "verifica" && !daArricchimento(s)) {
-      // Fonte ufficiale: passata la blacklist, il link si tiene.
+      // Fonte ufficiale o link gia confermato da una persona: passata la
+      // blacklist, si tiene. I confermati a mano restano pero elencati, come
+      // memoria di cosa e stato deciso e perche.
+      const f = s.fonte_contatti?.sito_web;
+      if (f && typeof f === "object" && f.verificato_a_mano) {
+        daMano.push({
+          s,
+          title: cache[s.sito_web]?.title ?? "",
+          motivo: `confermato a mano il ${f.verificato_a_mano}: il link resta`,
+        });
+      }
       g = { esito: "ok" };
     } else if (g.esito === "verifica") {
       g = await giudicaCoerenza(s);
@@ -659,12 +690,14 @@ const M = [];
 M.push("SITI DA VERIFICARE A MANO — la bonifica non li ha toccati");
 M.push(`data: ${DATA_BONIFICA}   ambito: ${ambito}`);
 M.push("");
-M.push("Due casi finiscono qui:");
+M.push("Tre casi finiscono qui:");
 M.push("  - il nome della struttura e fatto solo di parole generiche (Casa di Dio,");
 M.push("    La Residenza, San Giuseppe): non c'e nessuna parola distintiva da cercare,");
 M.push("    e il controllo non deve decidere al posto di una persona");
 M.push("  - la stessa URL serve piu strutture: e la pagina di un gruppo gestore,");
 M.push("    non un link sbagliato per distrazione");
+M.push("  - il link e stato confermato a mano: resta, e qui c'e la memoria della");
+M.push("    decisione, cosi non si ridiscute a ogni giro");
 M.push("");
 M.push("Il link e ancora nel database: queste righe sono da decidere una per una.");
 M.push("");

@@ -1,6 +1,6 @@
 BONIFICA DEI RECAPITI — RESOCONTO COMPLESSIVO
 data: 2026-09-07
-strutture in database: 1773   strutture bonificate: 312
+strutture in database: 1773   strutture bonificate: 303
 
 Ricostruito dal registro fonte_contatti.rimossi, quindi copre tutti gli ambiti
 eseguiti: Milano, i 26 comuni sopra le 5 strutture, e l'intero database.
@@ -12,11 +12,11 @@ Per annullarne una basta rileggere fonte_contatti.rimossi.<campo>.valore.
 1. NUMERI FINALI PER REGIONE
 ==============================================================================
 regione                     bonificate   siti tolti   telefoni tolti   scese sotto 60
-Lombardia                          291          277               20             17
+Lombardia                          282          267               20             17
 Umbria                              16           16                0              5
 Toscana                              5            2                3              0
 
-TOTALE   strutture 312 · siti tolti 295 · telefoni tolti 23
+TOTALE   strutture 303 · siti tolti 285 · telefoni tolti 23
 
 motivi delle rimozioni:
     283  dominio che non e la struttura
@@ -24,21 +24,11 @@ motivi delle rimozioni:
       7  prefisso inesistente N
       5  prefisso N dove Milano usa 02
       2  pagina non istituzionale
-      1  nessuna delle parole distintive (cascina, cortenuova, rieducazione) compare in title, H1, URL o dominio
       1  prefisso N dove il comune usa un altro prefisso
-      1  nessuna delle parole distintive (laghi, oasi, cerro) compare in title, H1, URL o dominio
-      1  nessuna delle parole distintive (rodolfi, speciale, multiservizi) compare in title, H1, URL o dominio
-      1  nessuna delle parole distintive (milanese, pastor, angelicus) compare in title, H1, URL o dominio
-      1  nessuna delle parole distintive (dimora, lago, impresa) compare in title, H1, URL o dominio
-      1  nessuna delle parole distintive (arzaga, comunita, ebraica) compare in title, H1, URL o dominio
-      1  nessuna delle parole distintive (ducale, solidarieta, mantova) compare in title, H1, URL o dominio
-      1  nessuna delle parole distintive (lago, maggiore, mariner) compare in title, H1, URL o dominio
       1  numero senza prefisso
-      1  nessuna delle parole distintive (milanese, milano) compare in title, H1, URL o dominio
-      1  nessuna delle parole distintive (giardino, mariner, lavena) compare in title, H1, URL o dominio
 
 stato dei recapiti dopo la bonifica:
-  con sito_web: 632 (erano 927)
+  con sito_web: 642 (erano 927)
   con telefono: 1018 (erano 1041)
   schede sopra la soglia 60: 1047 su 1773
 
@@ -46,7 +36,7 @@ stato dei recapiti dopo la bonifica:
 2. SCHEDE SCESE SOTTO LA SOGLIA 60 — vanno noindex, e voluto
 ==============================================================================
 22 schede sono scese sotto soglia per effetto della bonifica.
-Altre 132 bonificate erano gia sotto prima e ci restano: non le conta questa sezione.
+Altre 130 bonificate erano gia sotto prima e ci restano: non le conta questa sezione.
 
  80 ->  55  Casa di Riposo Giulio Gianetti            Saronno             (VA)  tolto: telefono
  80 ->  55  Casa di Riposo San Giuseppe               Viggiù              (VA)  tolto: telefono
@@ -55,7 +45,7 @@ Altre 132 bonificate erano gia sotto prima e ci restano: non le conta questa sez
  80 ->  55  Fondazione Casa Serena - ETS              Brembate di Sopra   (BG)  tolto: telefono
  80 ->  55  Fondazione San Biagio ONLUS               Cavriana            (MN)  tolto: telefono
  80 ->  55  Greco de Vecchi                           Bellagio            (CO)  tolto: telefono
- 80 ->  55  I Laghi                                   Montorfano          (CO)  tolto: sito_web+telefono
+ 80 ->  55  I Laghi                                   Montorfano          (CO)  tolto: telefono
  80 ->  55  RSA Casa Gesù Maestro                     Cinisello Balsamo   (MI)  tolto: telefono
  80 ->  55  RSA - Fondazione ONLUS Casa di Riposo Be  Calvisano           (BS)  tolto: telefono
  80 ->  40  RSA - Fondazione Ricovero la Memoria ONL  Gavardo             (BS)  tolto: sito_web+telefono

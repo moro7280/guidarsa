@@ -1,12 +1,14 @@
 SITI DA VERIFICARE A MANO — la bonifica non li ha toccati
 data: 2026-09-07   ambito: tutto
 
-Due casi finiscono qui:
+Tre casi finiscono qui:
   - il nome della struttura e fatto solo di parole generiche (Casa di Dio,
     La Residenza, San Giuseppe): non c'e nessuna parola distintiva da cercare,
     e il controllo non deve decidere al posto di una persona
   - la stessa URL serve piu strutture: e la pagina di un gruppo gestore,
     non un link sbagliato per distrazione
+  - il link e stato confermato a mano: resta, e qui c'e la memoria della
+    decisione, cosi non si ridiscute a ogni giro
 
 Il link e ancora nel database: queste righe sono da decidere una per una.
 
@@ -15,21 +17,71 @@ Il link e ancora nel database: queste righe sono da decidere una per una.
 Casa Sacro Cuore — Pianello del Lario (CO)
    URL:    https://casedonguanella.it/contattaci/
    title:  Contattaci - Case Don Guanella
-   perche: pagina di gruppo, condivisa da piu strutture
+   perche: confermato a mano il 2026-09-07: il link resta
 
 Casa San Lorenzo — Ardenno (SO)
    URL:    https://casedonguanella.it/contattaci/
    title:  Contattaci - Case Don Guanella
-   perche: pagina di gruppo, condivisa da piu strutture
+   perche: confermato a mano il 2026-09-07: il link resta
+
+Cascina Cortenuova — Paullo (MI)
+   URL:    https://www.crmsociale.it/anziani-rsa/
+   title:  Anziani RSA &#8211; C.R.M. COOP. SOCIALE ONLUS
+   perche: confermato a mano il 2026-09-07: il link resta
+
+I Laghi — Montorfano (CO)
+   URL:    https://colisee.it/contatti/
+   title:  Contatti - Colisée Italia
+   perche: confermato a mano il 2026-09-07: il link resta
+
+Istituto de Rodolfi — Vigevano (PV)
+   URL:    https://asmv.it/contatti
+   title:  Contatti - Asmv
+   perche: confermato a mano il 2026-09-07: il link resta
+
+Istituto Geriatrico Milanese "Opera Pastor Angelicus" — Milano (MI)
+   URL:    https://www.igm-care.it/service/rsa-opera-pastor-angelicus/
+   title:  (nessun title)
+   perche: confermato a mano il 2026-09-07: il link resta
+
+La Dimora Sul Lago — Vergiate (VA)
+   URL:    https://residenzesantacecilia.it/contatti/
+   title:  Contatti - Residenze Santa Cecilia
+   perche: confermato a mano il 2026-09-07: il link resta
+
+Residenza Anziani Arzaga — Milano (MI)
+   URL:    https://www.mosaico-cem.it/servizi-2/casa-di-riposo/
+   title:  Casa di riposo - Mosaico
+   perche: confermato a mano il 2026-09-07: il link resta
+
+Residenza Ducale — Mantova (MN)
+   URL:    https://www.residenzegreenpark.it/contatti
+   title:  Contatti - Residenze Green Park
+   perche: confermato a mano il 2026-09-07: il link resta
+
+Residenza Lago Maggiore — Porto Valtravaglia (VA)
+   URL:    https://leresidenze.it/contatti/
+   title:  contatti - LE RESIDENZE - Case di Riposo a Milano, Varese e Como.
+   perche: confermato a mano il 2026-09-07: il link resta
 
 Residenza San Celso — Milano (MI)
    URL:    https://www.emeisitalia.it/contatti/
    title:  emeis: i contatti della sede centrale e delle Strutture
-   perche: pagina di gruppo, condivisa da piu strutture
+   perche: confermato a mano il 2026-09-07: il link resta
 
 Residenza San Felice — Segrate (MI)
    URL:    https://www.emeisitalia.it/contatti/
    title:  emeis: i contatti della sede centrale e delle Strutture
-   perche: pagina di gruppo, condivisa da piu strutture
+   perche: confermato a mano il 2026-09-07: il link resta
 
-totale: 4
+RSA Istituto Geriatrico Milanese — Milano (MI)
+   URL:    https://www.igm-care.it/
+   title:  (nessun title)
+   perche: confermato a mano il 2026-09-07: il link resta
+
+RSA Residenza Giardino — Lavena Ponte Tresa (VA)
+   URL:    https://leresidenze.it/
+   title:  Case di riposo a Milano in Lombardia - LE RESIDENZE
+   perche: confermato a mano il 2026-09-07: il link resta
+
+totale: 14
