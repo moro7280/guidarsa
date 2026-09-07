@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import type { Guida } from "./guide";
 import { percorsi } from "./percorsi";
+import { descrizioneScheda } from "./testi-struttura.ts";
 import type { Struttura } from "./types";
 
 export const NOME_SITO = "GuidaRSA";
@@ -72,7 +73,10 @@ export function jsonLdStruttura(struttura: Struttura) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     name: struttura.nome,
-    description: struttura.descrizione,
+    // La stessa descrizione che legge un umano in pagina, non quella salvata
+    // all'import: dare a Google un testo diverso da quello visibile e, nel
+    // migliore dei casi, un'incoerenza che non aiuta.
+    description: descrizioneScheda(struttura),
     url: urlAssoluta(percorsi.struttura(struttura.slug)),
     telephone: struttura.telefono ?? undefined,
     email: struttura.email ?? undefined,

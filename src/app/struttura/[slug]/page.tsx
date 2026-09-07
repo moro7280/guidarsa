@@ -9,11 +9,13 @@ import { BarraMobile, CtaStruttura, PadPerBarra } from "@/components/Cta";
 import { DisponibilitaPortale } from "@/components/DisponibilitaPortale";
 import { JsonLd } from "@/components/JsonLd";
 import { indicizzabile } from "@/lib/completezza";
+import { descrizioneScheda, testiScheda } from "@/lib/testi-struttura";
 import { percorsi } from "@/lib/percorsi";
 import { jsonLdStruttura, metadataPagina } from "@/lib/seo";
 import { slugify } from "@/lib/slug";
-import { getSlugStrutture, getStrutturaBySlug } from "@/lib/strutture";
+import { getSlugStrutture, getStrutturaBySlug, getStrutture } from "@/lib/strutture";
 import { TIPOLOGIE } from "@/lib/tipologie";
+import type { Struttura } from "@/lib/types";
 
 type Parametri = { slug: string };
 
@@ -40,9 +42,22 @@ export async function generateMetadata({
     // dall indice: una pagina povera che si posiziona danneggia il dominio.
     indicizzabile: indicizzabile(struttura),
     titolo: `${struttura.nome} — ${info.singolare} a ${struttura.comune} (${struttura.provincia_sigla})`,
-    descrizione: `${struttura.nome}: ${info.singolare} a ${struttura.comune}, ${struttura.indirizzo}. Contatti, posti letto, convenzione e rette indicative.`,
+    descrizione: descrizioneScheda(struttura),
     percorso: percorsi.struttura(struttura.slug),
   });
+}
+
+
+/** "(40 posti, centro diurno)" — solo i pezzi che distinguono davvero. */
+function descriviSorella(sorella: Struttura): string {
+  const pezzi: string[] = [];
+  if (typeof sorella.posti_letto === "number" && sorella.posti_letto > 0) {
+    pezzi.push(`${sorella.posti_letto} posti`);
+  }
+  const tipologia = TIPOLOGIE[sorella.tipologia]?.singolare;
+  // "RSA" resta maiuscolo: e una sigla, non una parola comune.
+  if (tipologia) pezzi.push(tipologia === tipologia.toUpperCase() ? tipologia : tipologia.toLowerCase());
+  return pezzi.length ? ` (${pezzi.join(", ")})` : "";
 }
 
 export default async function PaginaStruttura({
@@ -59,6 +74,10 @@ export default async function PaginaStruttura({
   const provincia = slugify(struttura.provincia);
   const comune = slugify(struttura.comune);
   const percorsoComune = percorsi.comune(info.slug, regione, provincia, comune);
+  // Il testo si compone qui dai campi veri, non si legge da `descrizione`: il
+  // campo salvato risale all'import e non sa niente degli arricchimenti fatti
+  // dopo.
+  const testi = testiScheda(struttura, await getStrutture());
   const telefonoPulito = struttura.telefono?.replace(/\s/g, "");
 
   return (
@@ -181,9 +200,39 @@ export default async function PaginaStruttura({
 
       <section>
         <h2 className="font-serif text-xl font-semibold">La struttura</h2>
-        <p className="mt-3 max-w-[65ch] leading-relaxed text-inchiostro-medio">
-          {struttura.descrizione}
-        </p>
+        <div className="mt-3 flex max-w-[65ch] flex-col gap-3 leading-relaxed text-inchiostro-medio">
+          {testi.paragrafi.map((paragrafo) => (
+            <p key={paragrafo.slice(0, 40)}>{paragrafo}</p>
+          ))}
+
+          {testi.sorelle.length > 0 && (
+            <p>
+              {`Si trova in un complesso in ${struttura.indirizzo} a ${struttura.comune} insieme ${
+                testi.sorelle.length === 1 ? "a" : `ad altre ${testi.sorelle.length} unità:`
+              } `}
+              {testi.sorelle.map((sorella, i) => (
+                <span key={sorella.slug}>
+                  <Link
+                    href={percorsi.struttura(sorella.slug)}
+                    className="text-verde underline underline-offset-4"
+                  >
+                    {sorella.nome}
+                  </Link>
+                  {descriviSorella(sorella)}
+                  {i < testi.sorelle.length - 1 ? ", " : "."}
+                </span>
+              ))}
+            </p>
+          )}
+
+          <p>{testi.provenienza}</p>
+
+          <p className="text-sm">
+            <Link href="/guide/come-leggere-una-scheda/" className="text-verde underline underline-offset-4">
+              Come leggere questa scheda: da dove vengono i dati e cosa significano
+            </Link>
+          </p>
+        </div>
       </section>
 
       <section>

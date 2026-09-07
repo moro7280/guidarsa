@@ -1,5 +1,5 @@
 import { FONTI_DIRETTE } from "@/lib/fonti";
-import { numero } from "@/lib/formato";
+import { retteDi } from "@/lib/rette";
 import type { Struttura } from "@/lib/types";
 
 /**
@@ -10,17 +10,6 @@ import type { Struttura } from "@/lib/types";
  * - convenzionata e privata sempre distinte, mai mescolate
  */
 
-const ANNI_PER_STORICA = 2;
-
-function formatta(min: number | null, max: number | null): string | null {
-  if (min === null && max === null) return null;
-  if (min !== null && max !== null && min !== max) {
-    return `${numero(min)} - ${numero(max)} €`;
-  }
-  const valore = (min ?? max) as number;
-  return `${numero(valore)} €`;
-}
-
 function dataItaliana(valore: string | null | undefined): string | null {
   if (!valore) return null;
   const data = new Date(valore);
@@ -30,18 +19,18 @@ function dataItaliana(valore: string | null | undefined): string | null {
 }
 
 export function BloccoRette({ struttura }: { struttura: Struttura }) {
-  const privata = formatta(struttura.prezzo_min, struttura.prezzo_max);
-  const convenzionata = formatta(
-    struttura.retta_convenzionata_min ?? null,
-    struttura.retta_convenzionata_max ?? null,
-  );
+  // Gli importi vengono dalla stessa funzione che alimenta la frase in prosa
+  // della scheda: due formattazioni separate sono due occasioni di dire cifre
+  // diverse sullo stesso prezzo.
+  const rette = retteDi(struttura);
+  if (!rette.presenti) return null;
 
-  if (!privata && !convenzionata) return null;
-
-  const anno = struttura.carta_servizi_anno ?? null;
-  const storica = anno !== null && new Date().getFullYear() - anno > ANNI_PER_STORICA;
+  const privata = rette.privata?.testo ?? null;
+  const convenzionata = rette.convenzionata?.testo ?? null;
+  const anno = rette.anno;
+  const storica = rette.storica;
   const controllo = dataItaliana(struttura.carta_servizi_scaricata_il);
-  const regimeNonNoto = struttura.retta_regime === "non_specificato";
+  const regimeNonNoto = rette.regimeNonNoto;
   const diretta = FONTI_DIRETTE[struttura.fonte_dati ?? ""] ?? null;
 
   return (

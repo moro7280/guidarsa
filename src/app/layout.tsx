@@ -96,10 +96,9 @@ export default async function RootLayout({
                 aiutare le famiglie a scegliere.
               </p>
               <p className="max-w-xs text-[0.95rem] leading-relaxed">
-                Come verifichiamo: partiamo dagli elenchi pubblici regionali, controlliamo i
-                contatti sui siti ufficiali delle strutture e pubblichiamo una retta solo quando la
-                struttura la mette per iscritto nella propria carta dei servizi. Dove un dato non ce
-                l&apos;abbiamo, lo scriviamo.
+                <Link href="/guide/come-leggere-una-scheda/" className="underline underline-offset-4">
+                  Come leggiamo e verifichiamo i dati
+                </Link>
               </p>
             </div>
 

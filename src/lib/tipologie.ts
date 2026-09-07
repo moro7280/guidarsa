@@ -7,6 +7,12 @@ export interface InfoTipologia {
   /** Usato all'interno di una frase, in minuscolo. */
   pluraleInFrase: string;
   singolare: string;
+  /**
+   * Il singolare dentro una frase, con l'articolo indeterminativo giusto:
+   * "e **una residenza sanitaria assistenziale** a Cremona". Il campo
+   * `singolare` da solo darebbe "e RSA a Cremona", che non e italiano.
+   */
+  singolareInFrase: string;
   /** Articolo partitivo: "delle case di riposo", "dei centri diurni". */
   articoloDi: string;
   /** "tutte le" / "tutti i", per i link di approfondimento. */
@@ -20,6 +26,7 @@ export const TIPOLOGIE: Record<Tipologia, InfoTipologia> = {
     plurale: "RSA",
     pluraleInFrase: "RSA",
     singolare: "RSA",
+    singolareInFrase: "una residenza sanitaria assistenziale (RSA)",
     articoloDi: "delle",
     tutti: "tutte le",
     descrizione:
@@ -30,6 +37,7 @@ export const TIPOLOGIE: Record<Tipologia, InfoTipologia> = {
     plurale: "Case di riposo",
     pluraleInFrase: "case di riposo",
     singolare: "Casa di riposo",
+    singolareInFrase: "una casa di riposo",
     articoloDi: "delle",
     tutti: "tutte le",
     descrizione:
@@ -40,6 +48,7 @@ export const TIPOLOGIE: Record<Tipologia, InfoTipologia> = {
     plurale: "Centri diurni",
     pluraleInFrase: "centri diurni",
     singolare: "Centro diurno",
+    singolareInFrase: "un centro diurno per anziani",
     articoloDi: "dei",
     tutti: "tutti i",
     descrizione:
@@ -50,6 +59,7 @@ export const TIPOLOGIE: Record<Tipologia, InfoTipologia> = {
     plurale: "Servizi di assistenza domiciliare",
     pluraleInFrase: "servizi di assistenza domiciliare",
     singolare: "Servizio di assistenza domiciliare",
+    singolareInFrase: "un servizio di assistenza domiciliare",
     articoloDi: "dei",
     tutti: "tutti i",
     descrizione:

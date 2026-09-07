@@ -1,0 +1,434 @@
+TASK C1 — FAR DIRE QUALCOSA ALLE SCHEDE
+Piano del 07/09/2026. Nessuna scrittura eseguita.
+
+
+FASE 0 — IL CONFRONTO NON SI PUO RIFARE
+=======================================
+In data/gsc/ ci sono i tre CSV e il LEGGIMI, ma **non lo zip delle pagine
+indicizzate**. Non esiste nemmeno la sottocartella gsc-2026-09-07/: i file
+stanno direttamente in data/gsc/.
+
+Il confronto "rifiutate contro indicizzate vere" resta quindi non calcolabile, e
+tutto quello che segue poggia sull'approssimazione gia dichiarata: le 907 schede
+che passano il gate e che Search Console non ha ne rifiutato ne escluso. Come
+concordato procedo, e questo paragrafo resta nel report finale.
+
+
+UNA SCOPERTA CHE CAMBIA LA PRIORITA
+===================================
+Le descrizioni non stanno nei template: stanno **nel database**, generate una
+volta sola al momento dell'import. Quindi non si aggiornano quando i dati si
+arricchiscono, e oggi molte dicono il falso:
+
+  1.204 descrizioni su 1.773 contengono la frase "...non includono..."
+    di cui **438 dicono "non includono recapiti telefonici, sito web"**
+         mentre la struttura HA un telefono o un sito
+    di cui **54 dicono "non includono le rette"**
+         mentre la struttura HA una retta
+
+RSA Somenzi, l'esempio che mi hai chiesto, chiude cosi: "I dati provengono
+dall'elenco open data di Regione Lombardia e non includono recapiti telefonici,
+sito web e rette." Ha telefono 0372 533511 e un sito.
+
+Sono 492 pagine che si contraddicono da sole, sotto gli occhi di chi legge e di
+Google. Va sistemato in questo task, ed e gratis: basta comporre il testo dai
+campi al momento del render invece di leggerlo dal database.
+
+  CONSEGUENZA DI PROGETTO: le frasi nuove si compongono **nel template**, dalla
+  struttura vera. Il campo `descrizione` resta nel database e continua a
+  servire agli import e al punteggio di completezza, ma la pagina non lo usa
+  piu come unica fonte del testo. Nessuna scrittura sul database, come chiesto,
+  e le pagine si aggiornano da sole a ogni arricchimento — come gia fa il gate.
+
+
+1. LE FRASI E LE LORO CONDIZIONI
+================================
+Ogni frase si scrive solo se il dato c'e. Nessun aggettivo. `null` non e
+`false`.
+
+  F1 — IDENTITA
+     sempre
+     "{Nome} e {un/una} {tipologia estesa} a {Comune} ({SIGLA})."
+
+  F2 — DIMENSIONE
+     solo se posti_letto > 0   (attenzione: 7 strutture hanno posti_letto = 0,
+                                e "dispone di 0 posti" sarebbe assurdo)
+     "Dispone di {N} posti letto."
+
+  F3 — SCALA NEL COMPLESSO
+     solo se la struttura e in un gruppo valido (vedi punto 2)
+     E tutte le unita del gruppo hanno posti_letto > 0
+     "E la piu grande delle {N} unita di questo indirizzo."
+     "E la piu piccola delle {N} unita di questo indirizzo."
+     altrimenti, se non e ne la prima ne l'ultima:
+     "E una delle {N} unita di questo indirizzo."
+     Se i posti non sono noti per tutte, la frase non si scrive: si passa
+     direttamente a F6.
+
+  F4 — NUCLEO PER LE DEMENZE
+     se nucleo_alzheimer === true:
+       "Dichiara un nucleo dedicato alle demenze."
+     se nucleo_alzheimer === false:
+       "L'elenco regionale non indica un nucleo dedicato alle demenze."
+     se null: **nessuna frase**. E la regola gia stabilita: l'assenza di
+     informazione non e un'informazione.
+
+  F5 — RETTA
+     solo se prezzo_min o retta_convenzionata_min non sono null
+     privata e convenzionata sempre in frasi separate, mai sommate:
+       "La carta dei servizi {anno} indica {X} euro al mese per la retta
+        privata."
+       "Per il posto convenzionato la quota a carico dell'ospite e di {Y} euro
+        al mese."
+     dove la fonte e un portale regionale invece della carta:
+       "Al Portale RSA di Regione Toscana la struttura dichiara {X} euro al
+        mese per la retta privata."
+     e dove il mensile e calcolato da una tariffa giornaliera, la frase lo dice,
+     come gia fa BloccoRette.
+
+     NOTA DA DECIDERE: BloccoRette mostra gia gli importi in due riquadri
+     distinti con la disclosure completa. La frase in prosa e quindi una
+     ripetizione. La propongo lo stesso perche il testo continuo e cio che
+     Google legge come contenuto, ma se preferisci evitare il doppione dimmelo
+     e la tolgo: e una riga di codice.
+
+  F6 — LE UNITA SORELLE
+     solo se il gruppo e valido e ha almeno un'altra unita
+     "Si trova in un complesso in {indirizzo} a {Comune} insieme ad {altre N
+      unita}: {elenco con link, posti e tipologia}."
+     L'elenco nomina ogni sorella con i posti quando ci sono e la tipologia
+     quando e diversa dalla propria.
+
+  F7 — PROVENIENZA
+     sempre, ma **calcolata sui campi veri**, non copiata dal database:
+     "I dati vengono da {fonte}. {Cosa manca davvero oggi}."
+     Se oggi la struttura ha telefono, la frase non dice che manca.
+
+  ORDINE IN PAGINA: F1 F2 F3 · F4 · F5 · F6 · F7, spezzato in tre paragrafi
+  (identita e scala · servizi e rette · complesso e provenienza).
+
+
+2. LE UNITA SORELLE: COME SI RICONOSCONO
+========================================
+Chiave di raggruppamento: indirizzo normalizzato + comune. Il comune e
+obbligatorio, altrimenti "Via Roma 1" unirebbe mezza Italia.
+
+  NORMALIZZAZIONE DELL'INDIRIZZO
+    minuscolo, via accenti e punteggiatura
+    abbreviazioni sciolte: v. -> via · v.le -> viale · p.zza/p.za -> piazza
+                           p.le -> piazzale · c.so -> corso · l.go -> largo
+                           s. -> san · loc. -> localita · c.da -> contrada
+    "snc" rimosso (significa "senza numero civico", non e un dato)
+    civico con lettera unificato: "45/A", "45 A", "45a" -> "45a"
+
+  MISURATO SUI DATI VERI
+    gruppi trovati                                    248   (522 strutture)
+    di cui senza numero civico nell'indirizzo           1   (2 strutture)
+    gruppi validi                                     247   (520 strutture)
+    gruppi in cui tutte le unita hanno i posti        237   -> F3 scrivibile
+    dimensione: 227 coppie · 17 terzetti · 2 quartetti · 1 gruppo da sette
+
+  FALSI GRUPPI, COME SI EVITANO
+    a) indirizzo senza numero civico -> gruppo scartato. Ne esiste uno solo nei
+       dati attuali ("Via Sant'Apollonio" a Castel Goffredo, 2 strutture): puo
+       essere lo stesso complesso o due edifici diversi sulla stessa via, e non
+       possiamo saperlo. Meglio non dire niente.
+    b) comune sempre obbligatorio nella chiave.
+    c) gruppi oltre le 8 unita: da segnalare nel report e guardare a mano prima
+       di pubblicarli. Oggi il massimo e 7 (Cremona, via Brescia 207) ed e un
+       complesso vero.
+    d) la frase non afferma mai che sono "la stessa struttura": dice che stanno
+       allo stesso indirizzo, che e cio che i dati sanno.
+
+
+3. TITLE E DESCRIPTION
+======================
+  OGGI
+    title: "{Nome} — {tipologia} a {Comune} ({SIGLA})"
+    description: "{Nome}: {tipologia} a {Comune}, {indirizzo}. Contatti, posti
+                  letto, convenzione e rette indicative."
+    La description e identica nella struttura per tutte e 1.773.
+
+  PROPOSTA — il title non cambia: comune e tipologia restano, e sono le parole
+  che la gente cerca. Cambia la description, che diventa specifica:
+
+    con posti e nucleo:
+      "{Nome}, {tipologia} a {Comune} ({SIGLA}): {N} posti letto, nucleo per le
+       demenze. Contatti e rette."
+    con posti e retta:
+      "{Nome}, {tipologia} a {Comune} ({SIGLA}): {N} posti letto, retta da {X}
+       euro al mese. Contatti e servizi."
+    con solo posti:
+      "{Nome}, {tipologia} a {Comune} ({SIGLA}): {N} posti letto. Contatti,
+       convenzione e servizi."
+    minima, quando non c'e altro:
+      come oggi.
+
+  Limite 155 caratteri, troncato sulla frase intera e non a meta parola.
+
+
+4. IL BOILERPLATE
+=================
+Confrontate due schede lontane (RSA Somenzi e Ad Maiores), sono identiche 14
+stringhe lunghe. Sei sono testo vero ripetuto su tutte e 1.773 le pagine:
+
+  - "Non sai se e la struttura giusta?" + il paragrafo del wizard
+  - "GuidaRSA e gratuito per le famiglie."
+  - "Non gestiamo strutture e non vendiamo posti letto: mettiamo in chiaro i
+     dati per aiutare le famiglie a scegliere."
+  - "Come verifichiamo: partiamo dagli elenchi pubblici regionali, controlliamo
+     i contatti sui siti ufficiali..."
+  - "Gestisci una struttura e vuoi correggere i tuoi dati? Segnalacelo..."
+  - "le informazioni pubblicate hanno scopo informativo e non sostituiscono il
+     contatto diretto con la struttura"
+
+  PROPOSTA
+    Resta sulla scheda, perche serve li:
+      - la riga di disclaimer, ridotta a una frase
+      - il link "come leggiamo e verifichiamo i dati" verso la pagina nuova
+      - la fonte specifica di quella struttura (che varia, non e boilerplate)
+    Si sposta in /guide/come-leggere-una-scheda/, pagina nuova linkata da tutte:
+      - il metodo di verifica per esteso
+      - cosa vuol dire accreditata, convenzionata, nucleo protetto
+      - perche certe schede hanno meno dati
+      - come segnalare una correzione
+    Il blocco CTA del wizard resta ma e gia condizionato al flag di conversione,
+    che in produzione e spento: oggi quelle frasi non compaiono nemmeno.
+
+  Effetto stimato: da circa 90 parole di boilerplate a circa 25 per scheda, e
+  una pagina in piu che ha un contenuto suo.
+
+
+5. SITEMAP: LASTMOD
+===================
+Il testo della scheda cambia davvero, ma `updated_at` no, perche non tocchiamo
+il database. Se lastmod resta quello vecchio, Google non ha motivo di rileggere
+proprio le pagine che abbiamo migliorato.
+
+  PROPOSTA
+    lastmod della scheda = la piu recente fra
+      - struttura.updated_at
+      - DATA_TESTI, una costante nel codice, valorizzata alla data del deploy
+        di questo cambiamento
+    Le pagine geografiche ereditano come oggi, dal massimo delle loro schede.
+
+  La costante e onesta: la pagina e cambiata davvero quel giorno. Va aggiornata
+  a mano solo quando i testi cambiano di nuovo, ed e un gesto deliberato: non e
+  un "oggi" automatico che direbbe il falso a ogni build.
+
+
+6. SEI SCHEDE, COME APPARIREBBERO
+=================================
+
+--- 1. RSA Somenzi — Cremona, Via Brescia 207 -----------------------------
+    dati: rsa · 121 posti · nucleo null · convenzionata true · niente retta
+          telefono 0372 533511 · gruppo da 7, tutte con posti
+
+  title:       RSA Somenzi — RSA a Cremona (CR)
+  description: RSA Somenzi, RSA a Cremona (CR): 121 posti letto. Contatti,
+               convenzione e servizi.
+
+  La struttura
+    RSA Somenzi e una residenza sanitaria assistenziale a Cremona (CR).
+    Dispone di 121 posti letto. E la piu grande delle sette unita di questo
+    indirizzo.
+
+    Risulta accreditata con il servizio sanitario regionale: una parte della
+    retta e coperta dalla Regione, mentre la quota alberghiera resta alla
+    famiglia. E gestita da Azienda Speciale Comunale Cremona Solidale.
+
+    Si trova in un complesso in Via Brescia 207 a Cremona insieme ad altre sei
+    unita: RSA Azzolini (120 posti), RSA Mainardi (84 posti), R.S.A. "B"
+    (40 posti), CDI "Soldi" (40 posti, centro diurno), CDI "Casa Ozanam"
+    (20 posti, centro diurno), CDI Alzheimer (20 posti, centro diurno).
+
+    I dati vengono dall'elenco open data di Regione Lombardia; telefono e sito
+    sono stati verificati sul sito ufficiale.
+
+  [oggi la stessa scheda chiude con "non includono recapiti telefonici, sito
+   web e rette", mentre il telefono ce l'ha]
+
+
+--- 2. R.S.A. "B" — Cremona, Via Brescia 207 ------------------------------
+    dati: rsa · 40 posti · nucleo null · convenzionata true
+          nessun telefono, nessun sito -> NON indicizzabile col gate v2
+
+  title:       R.S.A. "B" — RSA a Cremona (CR)
+  description: R.S.A. "B", RSA a Cremona (CR): 40 posti letto. Contatti,
+               convenzione e servizi.
+
+  La struttura
+    R.S.A. "B" e una residenza sanitaria assistenziale a Cremona (CR).
+    Dispone di 40 posti letto. E una delle sette unita di questo indirizzo.
+
+    Risulta accreditata con il servizio sanitario regionale. E gestita da
+    Azienda Speciale Comunale Cremona Solidale.
+
+    Si trova in un complesso in Via Brescia 207 a Cremona insieme ad altre sei
+    unita: RSA Somenzi (121 posti), RSA Azzolini (120 posti), RSA Mainardi
+    (84 posti), CDI "Soldi" (40 posti, centro diurno), CDI "Casa Ozanam"
+    (20 posti, centro diurno), CDI Alzheimer (20 posti, centro diurno).
+
+    I dati vengono dall'elenco open data di Regione Lombardia e non includono
+    recapiti ne rette.
+
+  [la pagina resta noindex,follow perche non ha recapiti: la frase sulle
+   sorelle serve comunque, perche i link sono `follow` e portano alle altre sei]
+
+
+--- 3. Casa Famiglia — Milano, Via Vivaio 7 -------------------------------
+    dati: rsa · 20 posti · nucleo TRUE · retta privata 3.805 €/mese
+          carta 2026, originale "125 €/giorno (regime non specificato)"
+          sito istciechimilano.it · gruppo da 2
+
+  title:       Casa Famiglia — RSA a Milano (MI)
+  description: Casa Famiglia, RSA a Milano (MI): 20 posti letto, nucleo per le
+               demenze. Contatti e rette.
+
+  La struttura
+    Casa Famiglia e una residenza sanitaria assistenziale a Milano (MI).
+    Dispone di 20 posti letto. E la piu piccola delle due unita di questo
+    indirizzo.
+
+    Dichiara un nucleo dedicato alle demenze. Risulta accreditata con il
+    servizio sanitario regionale. E gestita dall'Istituto dei Ciechi di Milano.
+
+    La carta dei servizi 2026 indica 3.805 euro al mese per la retta a carico
+    dell'ospite; il documento riporta 125 euro al giorno senza specificare il
+    regime.
+
+    Si trova in un complesso in Via Vivaio 7 a Milano insieme a Nuova RSA Casa
+    Famiglia (26 posti).
+
+    I dati vengono dall'elenco open data di Regione Lombardia; la retta dalla
+    carta dei servizi pubblicata dalla struttura.
+
+
+--- 4. Nuova RSA Casa Famiglia — Milano, Via Vivaio 7 ---------------------
+    stessi dati, 26 posti
+
+  title:       Nuova RSA Casa Famiglia — RSA a Milano (MI)
+  description: Nuova RSA Casa Famiglia, RSA a Milano (MI): 26 posti letto,
+               nucleo per le demenze. Contatti e rette.
+
+  La struttura
+    Nuova RSA Casa Famiglia e una residenza sanitaria assistenziale a Milano
+    (MI). Dispone di 26 posti letto. E la piu grande delle due unita di questo
+    indirizzo.
+
+    Dichiara un nucleo dedicato alle demenze. Risulta accreditata con il
+    servizio sanitario regionale. E gestita dall'Istituto dei Ciechi di Milano.
+
+    La carta dei servizi 2026 indica 3.805 euro al mese per la retta a carico
+    dell'ospite; il documento riporta 125 euro al giorno senza specificare il
+    regime.
+
+    Si trova in un complesso in Via Vivaio 7 a Milano insieme a Casa Famiglia
+    (20 posti).
+
+    I dati vengono dall'elenco open data di Regione Lombardia; la retta dalla
+    carta dei servizi pubblicata dalla struttura.
+
+  [le due schede oggi si distinguono solo per il nome e per un numero dentro un
+   paragrafo. Con F3 e F6 si nominano a vicenda e dicono chi e la piu grande]
+
+
+--- 5. Fondazione Turati Gli Alberi — San Marcello Piteglio (PT) ----------
+    toscana con retta e nucleo
+    dati: rsa · posti_letto = 0 (!) · nucleo TRUE · convenzionata true
+          retta privata 3.501 €/mese · convenzionata 1.936 €/mese
+          originale "quota sociale 63,59 €/giorno · tariffa privata 115,00 €/giorno"
+          telefono 0573 66032 · sito fondazioneturati.it · gruppo da 2
+
+  title:       Fondazione Turati Gli Alberi — RSA a San Marcello Piteglio (PT)
+  description: Fondazione Turati Gli Alberi, RSA a San Marcello Piteglio (PT):
+               nucleo per le demenze, retta da 1.936 euro al mese. Contatti e
+               servizi.
+
+  La struttura
+    Fondazione Turati Gli Alberi e una residenza sanitaria assistenziale a San
+    Marcello Piteglio (PT).
+
+    [nessuna frase sui posti: il dato e 0, cioe non dichiarato]
+    [nessuna frase sulla scala: nel gruppo non tutte hanno i posti]
+
+    Dichiara un nucleo dedicato alle demenze. E autorizzata, accreditata e
+    finanziata dal servizio sanitario regionale.
+
+    Al Portale RSA di Regione Toscana la struttura dichiara 3.501 euro al mese
+    per la retta privata e 1.936 euro al mese per la quota a carico
+    dell'ospite in regime convenzionato. Gli importi sono calcolati dalle
+    tariffe giornaliere dichiarate — 115,00 e 63,59 euro al giorno —
+    moltiplicate per 30,44 giorni medi.
+
+    Si trova in un complesso in Via Turati 86 a San Marcello Piteglio insieme a
+    Fondazione Turati I Fiori (40 posti).
+
+    I dati vengono dal Portale RSA di Regione Toscana.
+
+  [mostra due regole insieme: posti_letto = 0 non si scrive, e la scala non si
+   scrive se non tutte le sorelle hanno i posti]
+
+
+--- 6. Ad Maiores — Trieste (TS) ------------------------------------------
+    friulana con solo nome, indirizzo e telefono
+    dati: rsa · 76 posti · nucleo null · convenzionata null · niente retta
+          telefono 040 638200 · nessun sito · nessuna sorella
+
+  title:       Ad Maiores — RSA a Trieste (TS)
+  description: Ad Maiores, RSA a Trieste (TS): 76 posti letto. Contatti,
+               convenzione e servizi.
+
+  La struttura
+    Ad Maiores e una struttura residenziale per anziani a Trieste (TS).
+    Dispone di 76 posti letto.
+
+    [nessuna frase sul nucleo: il dato e null, non false]
+    [nessuna frase sull'accreditamento: convenzionata e null]
+    [nessuna frase sulla retta: non c'e]
+    [nessuna frase sulle sorelle: e sola al suo indirizzo]
+
+    Nella classificazione regionale del Friuli-Venezia Giulia e indicata come
+    "Terzo livello": accoglie persone non autosufficienti con assistenza
+    continuativa. La natura giuridica dichiarata e "privata di mercato".
+
+    I dati vengono dall'elenco open data di Regione Friuli-Venezia Giulia e non
+    includono le rette.
+
+  [e il caso minimo: la scheda resta corta, e giusto cosi. Meglio corta e vera
+   che allungata con frasi vuote — che e esattamente cio che Google punisce]
+
+
+7. QUANTE SCHEDE RICEVONO OGNI FRASE
+====================================
+  F2 dimensione            1.618 su 1.773   (1.625 con posti, meno i 7 a zero)
+  F3 scala nel complesso     ~500 su 520 in gruppo, dove i posti ci sono
+  F4 nucleo, ramo true          72
+  F4 nucleo, ramo false        326
+  F4 nessuna frase           1.375   (null: l'assenza non e informazione)
+  F5 retta                     404   (324 privata + 351 convenzionata, 271 entrambe)
+  F6 sorelle                   520   in 247 gruppi
+  F7 provenienza             1.773   e per 492 di queste sara la prima volta
+                                     che dice il vero
+
+
+8. COSA NON CAMBIA
+==================
+  - nessun URL
+  - nessuna scrittura sul database
+  - il campo `descrizione` resta dov'e: lo usano gli import e il punteggio di
+    completezza, che continua a contare le sue parole
+  - BloccoRette, DisponibilitaPortale, AttribuzioneOsm restano come sono
+  - il gate v2 non si tocca
+
+
+9. TEST PREVISTI PER LA FASE 2
+==============================
+  - gruppo di sorelle riconosciuto: due strutture con "Via Brescia, 207" e
+    "via brescia 207" nello stesso comune fanno gruppo; in comuni diversi no
+  - indirizzo senza civico non fa gruppo
+  - frase assente quando il dato manca: posti null e posti 0 non producono F2
+  - null non e false: nucleo null non produce nessuna frase, false produce la
+    frase negativa, true quella positiva
+  - la scala non si scrive se una sorella non ha i posti
+  - retta privata e convenzionata restano in frasi separate

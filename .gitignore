@@ -43,3 +43,6 @@ next-env.d.ts
 
 # PDF di terzi: archiviati in locale come prova di provenienza, mai ridistribuiti
 data/carte-servizi/*.pdf
+
+# Export di Search Console: dati di analisi locale, non codice
+data/gsc/

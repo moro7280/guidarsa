@@ -15,6 +15,51 @@ export interface Guida {
 
 export const GUIDE: Guida[] = [
   {
+    slug: "come-leggere-una-scheda",
+    titolo: "Come leggere una scheda: da dove vengono i dati e cosa significano",
+    descrizione:
+      "Accreditata, convenzionata, nucleo protetto, retta indicativa: cosa vuol dire ogni voce di una scheda, da dove viene il dato e perché alcune schede ne hanno meno.",
+    pubblicataIl: "2026-09-07",
+    aggiornataIl: "2026-09-07",
+    paragrafi: [
+      {
+        titolo: "Da dove vengono i dati",
+        testo:
+          "Partiamo dagli elenchi pubblici delle Regioni: sono i registri di autorizzazione e accreditamento, gli stessi che usano le aziende sanitarie. Da lì arrivano denominazione, indirizzo, posti letto e, dove la Regione lo dichiara, l'accreditamento. Su quella base cerchiamo il sito ufficiale della struttura e ne leggiamo i recapiti. Non compriamo elenchi e non copiamo da altre directory: ogni scheda dice da quale elenco viene, con il nome della Regione.",
+      },
+      {
+        titolo: "Perché alcune schede hanno meno dati di altre",
+        testo:
+          "Perché le Regioni pubblicano cose diverse. La Toscana dichiara le tariffe struttura per struttura, la Lombardia no; il Friuli non dichiara l'accreditamento, la Campania non pubblica i recapiti. Dove un dato non ce l'abbiamo lo scriviamo, invece di riempire lo spazio con parole generiche. Una scheda corta e vera è più utile di una lunga e vaga.",
+      },
+      {
+        titolo: "Accreditata, convenzionata: cosa cambia per la retta",
+        testo:
+          "Una struttura accreditata ha un rapporto con il servizio sanitario regionale: su un posto convenzionato una parte della retta è coperta dalla Regione e alla famiglia resta la quota alberghiera, che chiamiamo quota a carico dell'ospite. I posti convenzionati però sono contingentati e spesso hanno una lista d'attesa: conviene chiedere quanti ne ha quella struttura e quanti sono liberi. Sul posto privato la retta è interamente a carico della famiglia. Le due cifre non sono confrontabili fra loro, e per questo le teniamo sempre separate.",
+      },
+      {
+        titolo: "Quando scriviamo che l'informazione non è disponibile",
+        testo:
+          "«Informazione non disponibile» non vuol dire «no». Se l'elenco regionale non dichiara l'accreditamento di una struttura, non scriviamo che non è accreditata: scriviamo che il dato non c'è, e va chiesto alla struttura o all'azienda sanitaria. Vale anche per il nucleo dedicato alle demenze, che alcuni elenchi non rilevano affatto.",
+      },
+      {
+        titolo: "Le rette: perché diciamo «indicativa»",
+        testo:
+          "Pubblichiamo una retta solo quando la struttura la mette per iscritto, nella carta dei servizi o in un elenco regionale, e diciamo sempre da dove viene e di che anno è. Se il documento ha più di due anni la chiamiamo tariffa storica. Dove la fonte dichiara una tariffa al giorno, il valore mensile lo calcoliamo moltiplicando per 30,44 giorni medi e lo dichiariamo: è un conto nostro, non un prezzo della struttura. In ogni caso la cifra va verificata al momento del contatto, perché le rette cambiano e dipendono dal livello di assistenza.",
+      },
+      {
+        titolo: "Unità dello stesso complesso",
+        testo:
+          "Molte strutture condividono l'indirizzo con altre: sono nuclei distinti dello stesso complesso, con posti letto e a volte tipologie diverse. Quando succede lo scriviamo e le colleghiamo fra loro, così si capisce che cosa si sta guardando. Il fatto che condividano l'indirizzo non significa che siano la stessa struttura: hanno autorizzazioni separate.",
+      },
+      {
+        titolo: "Come segnalare una correzione",
+        testo:
+          "Se gestisci una struttura e un dato è sbagliato, scrivici: correggiamo citando la fonte. Non chiediamo nulla in cambio e non vendiamo posizioni: la scheda non cambia posto in elenco perché qualcuno paga.",
+      },
+    ],
+  },
+  {
     slug: "come-scegliere-una-rsa",
     titolo: "Come scegliere una RSA: la guida per le famiglie",
     descrizione:

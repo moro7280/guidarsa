@@ -68,3 +68,25 @@ export function chiaveRetta(fonteDati: string | null | undefined): string {
 export function fonteRetta(chiave: string): FonteRetta {
   return FONTI_DIRETTE[chiave] ?? CARTA_SERVIZI;
 }
+
+/**
+ * Nome leggibile della fonte di una struttura, per le frasi che devono dire da
+ * dove viene il dato. "L'elenco regionale" e vero ma non aiuta: chi legge ha
+ * diritto di sapere quale.
+ */
+const NOMI_FONTE: Record<string, string> = {
+  opendata_lombardia: "l'elenco open data di Regione Lombardia",
+  opendata_lombardia_cdi: "l'elenco dei centri diurni integrati di Regione Lombardia",
+  opendata_lombardia_sociale: "l'elenco delle strutture di offerta sociale di Regione Lombardia",
+  opendata_friuli: "l'elenco open data di Regione Friuli-Venezia Giulia",
+  opendata_umbria: "l'elenco open data di Regione Umbria",
+  opendata_trentino: "l'elenco dell'Azienda provinciale per i servizi sanitari di Trento",
+  opendata_campania: "l'elenco delle strutture accreditate di Regione Campania",
+  opendata_emilia_romagna: "la Banca dati dei Presidi socio-assistenziali di Regione Emilia-Romagna",
+  opendata_calabria: "il Registro delle strutture accreditate di Regione Calabria",
+  portale_rsa_toscana: "il Portale RSA di Regione Toscana",
+};
+
+export function nomeFonte(fonteDati: string | null | undefined): string {
+  return NOMI_FONTE[fonteDati ?? ""] ?? "l'elenco regionale di provenienza";
+}

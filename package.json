@@ -28,7 +28,7 @@
     "import:emilia-romagna": "node scripts/import-regione.mjs emilia-romagna",
     "import:calabria": "node scripts/import-regione.mjs calabria",
     "pulisci:recapiti": "node scripts/pulisci-recapiti.mjs",
-    "test": "node --test scripts/test-indicizzabile.mjs"
+    "test": "node --test scripts/test-indicizzabile.mjs scripts/test-testi-struttura.mjs"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.112.3",

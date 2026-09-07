@@ -22,6 +22,19 @@ import type { Struttura } from "@/lib/types";
 export const dynamic = "force-dynamic";
 
 /**
+ * Data dell'ultima riscrittura dei testi delle schede.
+ *
+ * Il testo di una scheda si compone dai campi al momento del render: quando
+ * cambia il modo di comporlo, la pagina cambia davvero, ma `updated_at` no —
+ * perche il database non e stato toccato. Senza questa costante Google non
+ * avrebbe nessun motivo di rileggere proprio le pagine che abbiamo migliorato.
+ *
+ * Si aggiorna a mano, e deve restare un gesto deliberato: un "oggi" automatico
+ * direbbe a ogni build che tutte le pagine sono cambiate, che e falso.
+ */
+const DATA_TESTI = "2026-09-07";
+
+/**
  * Data di ultima modifica per ogni tipo di pagina.
  *
  * Una pagina geografica non ha una data propria: e composta dalle strutture che
@@ -182,7 +195,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     .filter((struttura) => indicizzabile(struttura))
     .map((struttura) => ({
       url: urlAssoluta(percorsi.struttura(struttura.slug)),
-      lastModified: new Date(struttura.updated_at),
+      // La piu recente fra il dato e il testo: entrambi cambiano la pagina.
+      lastModified: piuRecente([struttura.updated_at, DATA_TESTI]),
       changeFrequency: "monthly",
       priority: 0.8,
     }));
